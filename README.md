@@ -56,12 +56,12 @@ Provides detailed information about the current instance.
 ### [OP Plugin](https://github.com/theoplegends/op-plugin)
 **Creator**: [theoplegends](https://github.com/theoplegends)
 
-*Current features as of 21 February 2024:
-Autopearl = aims downwards and throws a pearl so you can phase into blocks
-JakeOrganCrash = crash exploit that crashes jakeorgans server
-HoleEscape = escapes out of 1x1 holes or 2x1 holes
-PaperCrash = old paper server crash exploit try 2200-3000 levels
-TrapESP = wip
+*Current features as of 21 February 2024:<br>
+Autopearl = aims downwards and throws a pearl so you can phase into blocks<br>
+JakeOrganCrash = crash exploit that crashes jakeorgans server<br>
+HoleEscape = escapes out of 1x1 holes or 2x1 holes<br>
+PaperCrash = old paper server crash exploit try 2200-3000 levels<br>
+TrapESP = wip<br>
 
 ---
 
