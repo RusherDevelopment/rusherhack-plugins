@@ -187,7 +187,8 @@ Allows players to change the weather in-game.
 ### [Middleclick Wind Charge](https://github.com/kybe236/rusherhack-middleclick-wind-charge)
 **Creator**: [kybe236](https://github.com/kybe236)
 
-Rusherhack middleclick windcharge plugin - allows you to throw windcharges with middle mouse button and also jump at the same time so you can boost jump.
+Rusherhack middleclick windcharge plugin<br>
+Allows you to throw windcharges with middle mouse button and also jump at the same time so you can boost jump.
 
 ---
 
