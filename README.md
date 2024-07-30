@@ -205,6 +205,13 @@ A RusherHacks Plugin - Spawns Lightning On Totem Pops And Player Deaths - Lightn
 
 ---
 
+<!-- 
+### [Plugin Name](URL_to_plugin)
+**Creator**: [CreatorName](URL_to_creator_profile)
+
+Description of the plugin and its features.
+-->
+
 ## Plugin Examples/Info
 
 Here are some helpful resources and examples for developing RusherHacks plugins:
