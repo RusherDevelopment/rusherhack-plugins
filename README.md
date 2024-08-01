@@ -27,49 +27,49 @@ To enable plugins in RusherHacks:
 ## Plugins List
 
 ### [Example Plugin](https://github.com/RusherDevelopment/example-plugin)
-**Creator**: [RusherDevelopment](https://github.com/RusherDevelopment)
+**Creator**: <img src="https://github.com/RusherDevelopment.png?size=20" width="20" height="20"> [RusherDevelopment](https://github.com/RusherDevelopment)
 
 A basic example plugin demonstrating the structure and capabilities of RusherHacks plugins.
 
 ---
 
 ### [2b2t.vc Rusherhack](https://github.com/rfresh2/2b2t.vc-rusherhack)
-**Creator**: [rfresh2](https://github.com/rfresh2)
+**Creator**: <img src="https://github.com/rfresh2.png?size=20" width="20" height="20"> [rfresh2](https://github.com/rfresh2)
 
 A RusherHacks plugin designed for 2b2t.vc server use.
 
 ---
 
 ### [RusherHack Custom HUDElement](https://github.com/Aspect-404/RusherHack-CustomHUDElement)
-**Creator**: [Aspect-404](https://github.com/Aspect-404)
+**Creator**: <img src="https://github.com/Aspect-404.png?size=20" width="20" height="20"> [Aspect-404](https://github.com/Aspect-404)
 
 Make a customizable text HUD element for Minecraft utility mod RusherHack.
 
 ---
 
 ### [Auto Anvil Rename](https://github.com/IceTank/AutoAnvilRename)
-**Creator**: [IceTank](https://github.com/IceTank)
+**Creator**: <img src="https://github.com/IceTank.png?size=20" width="20" height="20"> [IceTank](https://github.com/IceTank)
 
 Automates the renaming process in anvils.
 
 ---
 
 ### [Queue Manager](https://github.com/GabiRP/QueueManager)
-**Creator**: [GabiRP](https://github.com/GabiRP)
+**Creator**: <img src="https://github.com/GabiRP.png?size=20" width="20" height="20"> [GabiRP](https://github.com/GabiRP)
 
 Manages queue positions and notifies users of their status.
 
 ---
 
 ### [RusherHack Instance Info](https://github.com/John200410/rusherhack-instance-info)
-**Creator**: [John200410](https://github.com/John200410)
+**Creator**: <img src="https://github.com/John200410.png?size=20" width="20" height="20"> [John200410](https://github.com/John200410)
 
 Provides detailed information about the current instance.
 
 ---
 
 ### [OP Plugin](https://github.com/theoplegends/op-plugin)
-**Creator**: [theoplegends](https://github.com/theoplegends)
+**Creator**: <img src="https://github.com/theoplegends.png?size=20" width="20" height="20"> [theoplegends](https://github.com/theoplegends)
 
 *Current features as of 21 February 2024:<br>
 Autopearl = aims downwards and throws a pearl so you can phase into blocks<br>
@@ -81,126 +81,126 @@ TrapESP = wip<br>
 ---
 
 ### [Stash Mover Plugin](https://github.com/xyzbtw/StashMoverPlugin)
-**Creator**: [xyzbtw](https://github.com/xyzbtw)
+**Creator**: <img src="https://github.com/xyzbtw.png?size=20" width="20" height="20"> [xyzbtw](https://github.com/xyzbtw)
 
 A plugin to move stashes using pearls.
 
 ---
 
 ### [Unified Module List](https://github.com/czho/unified-modulelist)
-**Creator**: [czho](https://github.com/czho)
+**Creator**: <img src="https://github.com/czho.png?size=20" width="20" height="20"> [czho](https://github.com/czho)
 
 Rusherhack hudelement that shows active modules from both meteorclient and rusherhack.
 
 ---
 
 ### [Container Tweaks](https://github.com/rfresh2/ContainerTweaks-rusherhack)
-**Creator**: [rfresh2](https://github.com/rfresh2)
+**Creator**: <img src="https://github.com/rfresh2.png?size=20" width="20" height="20"> [rfresh2](https://github.com/rfresh2)
 
 Simple tweaks for quickly moving items in containers.
 
 ---
 
 ### [RusherHack Spotify Integration](https://github.com/John200410/rusherhack-spotify/releases)
-**Creator**: [John200410](https://github.com/John200410)
+**Creator**: <img src="https://github.com/John200410.png?size=20" width="20" height="20"> [John200410](https://github.com/John200410)
 
 Integrates Spotify music playback controls and status into the RusherHacks client.
 
 ---
 
 ### [Vanilla Elytra Flight](https://github.com/FBanna/Rusherhack-Vanilla-Efly)
-**Creator**: [FBanna](https://github.com/FBanna)
+**Creator**: <img src="https://github.com/FBanna.png?size=20" width="20" height="20"> [FBanna](https://github.com/FBanna)
 
 Highly customizable rusher hack efly plugin.
 
 ---
 
 ### [RusherGUI](https://github.com/xyzbtw/rusherGUI)
-**Creator**: [xyzbtw](https://github.com/xyzbtw)
+**Creator**: <img src="https://github.com/xyzbtw.png?size=20" width="20" height="20"> [xyzbtw](https://github.com/xyzbtw)
 
 Rusherhack GUI example plugin.
 
 ---
 
 ### [Rusherhack BookBot](https://github.com/Aspect-404/Rusherhack-BookBot)
-**Creator**: [Aspect-404](https://github.com/Aspect-404)
+**Creator**: <img src="https://github.com/Aspect-404.png?size=20" width="20" height="20"> [Aspect-404](https://github.com/Aspect-404)
 
 Rusherhack plugin for bookbot.
 
 ---
 
 ### [Shay's RusherTweaks](https://github.com/ShayBox/ShaysRusherTweaks)
-**Creator**: [ShayBox](https://github.com/ShayBox)
+**Creator**: <img src="https://github.com/ShayBox.png?size=20" width="20" height="20"> [ShayBox](https://github.com/ShayBox)
 
 A collection of small tweaks and improvements for the RusherHacks client.
 
 ---
 
 ### [Nuker](https://github.com/beanbag44/Nuker/)
-**Creator**: [beanbag44](https://github.com/beanbag44)
+**Creator**: <img src="https://github.com/beanbag44.png?size=20" width="20" height="20"> [beanbag44](https://github.com/beanbag44)
 
 Epic nuker for nuking terrain.
 
 ---
 
 ### [Hold Rusher](https://github.com/cherosin/hold-rusher)
-**Creator**: [cherosin](https://github.com/cherosin)
+**Creator**: <img src="https://github.com/cherosin.png?size=20" width="20" height="20"> [cherosin](https://github.com/cherosin)
 
 Adds a "Hold" flag for all modules, if active keybind will only be toggled while held.
 
 ---
 
 ### [No Walk Animation](https://github.com/Eonexe/NoWalkAnimation)
-**Creator**: [Eonexe](https://github.com/Eonexe)
+**Creator**: <img src="https://github.com/Eonexe.png?size=20" width="20" height="20"> [Eonexe](https://github.com/Eonexe)
 
 Removes the walking animation.
 
 ---
 
 ### [NBT Utils](https://github.com/kybe236/rusherhack-nbt-utils)
-**Creator**: [kybe236](https://github.com/kybe236)
+**Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
 
 Rusher nbt paste and copy.
 
 ---
 
 ### [Rusherhack Executer](https://github.com/kybe236/rusherhack-executer)
-**Creator**: [kybe236](https://github.com/kybe236)
+**Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
 
 Executes commands and resolves `<player>` to every player online.
 
 ---
 
 ### [F3 Spoof](https://github.com/Doogie13/f3-spoof)
-**Creator**: [Doogie13](https://github.com/Doogie13)
+**Creator**: <img src="https://github.com/Doogie13.png?size=20" width="20" height="20"> [Doogie13](https://github.com/Doogie13)
 
 Spoofs the F3 debug screen information.
 
 ---
 
 ### [Open Folder](https://github.com/kybe236/rusherhack-open-folder)
-**Creator**: [kybe236](https://github.com/kybe236)
+**Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
 
 Opens the folder for the module with a button click.
 
 ---
 
 ### [Mace Kill](https://github.com/kybe236/rusherhack-mace-kill)
-**Creator**: [kybe236](https://github.com/kybe236)
+**Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
 
 One shot pretty much all mobs with a mace.
 
 ---
 
 ### [Weather Changing Plugin](https://github.com/Lokfid/WeatherChangingPlugin)
-**Creator**: [Lokfid](https://github.com/Lokfid)
+**Creator**: <img src="https://github.com/Lokfid.png?size=20" width="20" height="20"> [Lokfid](https://github.com/Lokfid)
 
 Allows players to change the weather in-game.
 
 ---
 
 ### [Middleclick Wind Charge](https://github.com/kybe236/rusherhack-middleclick-wind-charge)
-**Creator**: [kybe236](https://github.com/kybe236)
+**Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
 
 Rusherhack middleclick windcharge plugin<br>
 Allows you to throw windcharges with middle mouse button and also jump at the same time so you can boost jump.
@@ -208,14 +208,14 @@ Allows you to throw windcharges with middle mouse button and also jump at the sa
 ---
 
 ### [GarlicSight](https://github.com/GarlicRot/GarlicSight)
-**Creator**: [GarlicRot](https://github.com/GarlicRot)
+**Creator**: <img src="https://github.com/GarlicRot.png?size=20" width="20" height="20"> [GarlicRot](https://github.com/GarlicRot)
 
 A RusherHacks Plugin - Crosshair Info - GarlicSight.
 
 ---
 
 ### [LightningPop](https://github.com/GarlicRot/LightningPop)
-**Creator**: [GarlicRot](https://github.com/GarlicRot)
+**Creator**: <img src="https://github.com/GarlicRot.png?size=20" width="20" height="20"> [GarlicRot](https://github.com/GarlicRot)
 
 A RusherHacks Plugin - Spawns Lightning On Totem Pops And Player Deaths - LightningPop.
 
