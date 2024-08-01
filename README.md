@@ -7,6 +7,7 @@ A list of RusherHacks plugins developed by various creators. This list is ordere
 ## Table of Contents
 - [Installation](#installation)
 - [Plugins List](#plugins-list)
+- [Non Pinned Plugins](#non-pinned-plugins)
 - [Plugin Examples/Info](#plugin-examplesinfo)
 - [Contribute](#contribute)
 
@@ -218,6 +219,51 @@ A RusherHacks Plugin - Crosshair Info - GarlicSight.
 **Creator**: <img src="https://github.com/GarlicRot.png?size=20" width="20" height="20"> [GarlicRot](https://github.com/GarlicRot)
 
 A RusherHacks Plugin - Spawns Lightning On Totem Pops And Player Deaths - LightningPop.
+
+---
+
+## Non Pinned Plugins
+This section lists additional plugins that are not pinned in the Discord plugins-dev channel.
+
+### [NBT Viewer](https://github.com/Gentleman2292/NBT-viewer)
+**Creator**: <img src="https://github.com/Gentleman2292.png?size=20" width="20" height="20"> [Gentleman2292](https://github.com/Gentleman2292)
+
+A plugin to view NBT data in Minecraft.
+
+---
+
+### [Remote Control](https://github.com/kybe236/rusherhack-remote-controle)
+**Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
+
+A plugin for remote controlling RusherHacks.
+
+---
+
+### [Speed Measure](https://github.com/Lokfid/RusherHackSpeedMeasure)
+**Creator**: <img src="https://github.com/Lokfid.png?size=20" width="20" height="20"> [Lokfid](https://github.com/Lokfid)
+
+A plugin to measure speed in RusherHacks.
+
+---
+
+### [TNT Bomber](https://github.com/kybe236/rusher-tnt-bomber)
+**Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
+
+A plugin to automate TNT bombing in Minecraft.
+
+---
+
+### [No Render Entities](https://github.com/John200410/norender-entities)
+**Creator**: <img src="https://github.com/John200410.png?size=20" width="20" height="20"> [John200410](https://github.com/John200410)
+
+A plugin to disable rendering of entities.
+
+---
+
+### [RusherHack Messenger](https://github.com/Gentleman2292/rusherhack-messenger)
+**Creator**: <img src="https://github.com/Gentleman2292.png?size=20" width="20" height="20"> [Gentleman2292](https://github.com/Gentleman2292)
+
+A messaging plugin for RusherHacks.
 
 ---
 
