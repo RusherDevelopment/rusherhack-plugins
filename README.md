@@ -5,9 +5,24 @@
 A list of RusherHacks plugins developed by various creators. This list is ordered from oldest to newest pinned messages in the plugins-dev channel.
 
 ## Table of Contents
+- [Installation](#installation)
 - [Plugins List](#plugins-list)
 - [Plugin Examples/Info](#plugin-examplesinfo)
 - [Contribute](#contribute)
+
+## Installation
+
+**Warning:** DO NOT ENABLE PLUGINS IF YOU DO NOT KNOW WHAT YOU ARE DOING.
+
+To enable plugins in RusherHacks:
+
+1. **Enable Plugins**: Add the JVM flag `-Drusherhack.enablePlugins=true` to your RusherHacks startup options.
+
+2. **Install Plugins**:
+   - Download the desired plugin `.jar` files.
+   - Place them in the `.minecraft/rusherhack/plugins/` directory. You may need to create this folder if it does not exist.
+
+3. **Reload Plugins**: Use the `*reload` command within RusherHacks to reload plugins.
 
 ## Plugins List
 
