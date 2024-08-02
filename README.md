@@ -222,6 +222,13 @@ A RusherHacks Plugin - Spawns Lightning On Totem Pops And Player Deaths - Lightn
 
 ---
 
+### [AutoBucket](https://github.com/GarlicRot/AutoBucket)
+**Creator**: <img src="https://github.com/GarlicRot.png?size=20" width="20" height="20"> [GarlicRot](https://github.com/GarlicRot)
+
+A RusherHacks Plugin - Auto Bucket Entities - AutoBucket
+
+---
+
 ## Non Pinned Plugins
 This section lists additional plugins that are not pinned in the Discord plugins-dev channel.
 
@@ -266,13 +273,6 @@ A plugin to disable rendering of entities.
 A messaging plugin for RusherHacks.
 
 ---
-
-<!-- 
-### [Plugin Name](URL_to_plugin)
-**Creator**: [CreatorName](URL_to_creator_profile)
-
-Description of the plugin and its features.
--->
 
 ## Plugin Examples/Info
 
