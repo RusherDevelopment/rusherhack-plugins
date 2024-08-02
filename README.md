@@ -27,6 +27,9 @@ To enable plugins in RusherHacks:
 
 ## Plugins List
 
+<details>
+  <summary>Show Plugins List</summary>
+
 ### [Example Plugin](https://github.com/RusherDevelopment/example-plugin)
 **Creator**: <img src="https://github.com/RusherDevelopment.png?size=20" width="20" height="20"> [RusherDevelopment](https://github.com/RusherDevelopment)
 
@@ -229,8 +232,12 @@ A RusherHacks Plugin - Auto Bucket Entities - AutoBucket
 
 ---
 
+</details>
+
 ## Non Pinned Plugins
-This section lists additional plugins that are not pinned in the Discord plugins-dev channel.
+
+<details>
+  <summary>Show Non Pinned Plugins</summary>
 
 ### [NBT Viewer](https://github.com/Gentleman2292/NBT-viewer)
 **Creator**: <img src="https://github.com/Gentleman2292.png?size=20" width="20" height="20"> [Gentleman2292](https://github.com/Gentleman2292)
@@ -274,6 +281,8 @@ A messaging plugin for RusherHacks.
 
 ---
 
+</details>
+
 ## Plugin Examples/Info
 
 Here are some helpful resources and examples for developing RusherHacks plugins:
@@ -281,8 +290,6 @@ Here are some helpful resources and examples for developing RusherHacks plugins:
 - [Example Plugin](https://github.com/RusherDevelopment/example-plugin): A basic example plugin demonstrating the structure and capabilities of RusherHacks plugins.
 - [RusherGUI](https://github.com/xyzbtw/rusherGUI): An example plugin showcasing a custom GUI integration with RusherHacks.
 - [RusherHacks API Javadocs](https://rusherhack.org/api-javadocs/): The official API documentation for RusherHacks, providing detailed information on available classes, methods, and usage.
-
----
 
 ## Contribute
 
