@@ -1,6 +1,7 @@
 ![RusherHacks Logo](https://raw.githubusercontent.com/RusherDevelopment/example-plugin/master/src/main/resources/exampleplugin/graphics/rh_head.png)
 
 # RusherHacks Plugin Collection
+[![Pinned Plugins](https://img.shields.io/badge/Pinned%20Plugins-20-green)](#plugins-list) [![Non-Pinned Plugins](https://img.shields.io/badge/Non--Pinned%20Plugins-6-blue)](#non-pinned-plugins) [![Discord RH plugins-dev](https://img.shields.io/badge/Discord-RH%20plugins--dev-7289DA)](https://discord.com/channels/590970327870341143/1166486609479356516)
 
 A list of RusherHacks plugins developed by various creators. This list is ordered from oldest to newest pinned messages in the plugins-dev channel.
 
