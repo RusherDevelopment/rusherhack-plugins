@@ -9,7 +9,8 @@
 <!-- TODO: Fix custom logo not showing up For RusherHacks-->
 
 
-A list of RusherHacks plugins developed by various creators. This list is ordered from oldest to newest pinned messages in the plugins-dev channel.
+A list of plugins developed by various creators. This list is ordered from oldest to newest pinned messages in the plugins-dev channel.
+
 
 ## Table of Contents
 - [Installation](#installation)
@@ -17,6 +18,7 @@ A list of RusherHacks plugins developed by various creators. This list is ordere
 - [Non Pinned Plugins](#non-pinned-plugins)
 - [Plugin Examples/Info](#plugin-examplesinfo)
 - [Contribute](#contribute)
+
 
 ## Installation
 
@@ -31,6 +33,7 @@ To enable plugins in RusherHacks:
    - Place them in the `.minecraft/rusherhack/plugins/` directory. You may need to create this folder if it does not exist.
 
 3. **Reload Plugins**: Use the `*reload` command within RusherHacks to reload plugins.
+
 
 ## Plugins List
 
@@ -241,6 +244,7 @@ A RusherHacks Plugin - Auto Bucket Entities - AutoBucket
 
 </details>
 
+
 ## Non Pinned Plugins
 
 <details>
@@ -290,6 +294,7 @@ A messaging plugin for RusherHacks.
 
 </details>
 
+
 ## Plugin Examples/Info
 
 Here are some helpful resources and examples for developing RusherHacks plugins:
@@ -298,6 +303,7 @@ Here are some helpful resources and examples for developing RusherHacks plugins:
 - [RusherGUI](https://github.com/xyzbtw/rusherGUI): An example plugin showcasing a custom GUI integration with RusherHacks.
 - [RusherHacks API Javadocs](https://rusherhack.org/api-javadocs/): The official API documentation for RusherHacks, providing detailed information on available classes, methods, and usage.
 
+
 ## Contribute
 
-If you have a RusherHacks plugin you'd like to add to this list, please submit a pull request with the plugin details!
+If you have a RusherHacks plugin you'd like to add to this list, please submit a pull request with the plugin details! For more detailed instructions on how to contribute, please see our [Contributing Guide](./CONTRIBUTING.md).
