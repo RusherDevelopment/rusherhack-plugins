@@ -6,6 +6,10 @@ import os
 # Get the GitHub token from the environment variable
 ACCESS_TOKEN = os.getenv('GH_TOKEN')
 
+# Ensure the token is provided
+if not ACCESS_TOKEN:
+    raise ValueError("No access token provided in environment variable 'GH_TOKEN'")
+
 # Load the existing badges.json file from the gh-pages branch
 response = requests.get('https://garlicrot.github.io/RusherHacks-Plugin-Collection/badges.json')
 data = response.json()
