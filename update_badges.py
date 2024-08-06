@@ -52,17 +52,21 @@ g = Github(ACCESS_TOKEN)
 
 # Update the release dates for each repository
 for i, (repo_name, user) in enumerate(repos):
-    repo = g.get_repo(f"{user}/{repo_name}")
-    releases = repo.get_releases()
-    latest_release = releases[0] if releases.totalCount > 0 else None
+    try:
+        repo = g.get_repo(f"{user}/{repo_name}")
+        releases = repo.get_releases()
+        latest_release = releases[0] if releases.totalCount > 0 else None
 
-    if latest_release:
-        release_date = latest_release.published_at.strftime('%Y-%m-%d')
-    else:
-        release_date = "No releases"
+        if latest_release:
+            release_date = latest_release.published_at.strftime('%Y-%m-%d')
+        else:
+            release_date = "No releases"
 
-    # Update the JSON data
-    data['plugins'][i]['releaseDate'] = release_date
+        # Update the JSON data
+        data['plugins'][i]['releaseDate'] = release_date
+
+    except Exception as e:
+        print(f"Failed to update {user}/{repo_name}: {e}")
 
 # Save the updated badges.json file
 with open('badges.json', 'w') as f:
