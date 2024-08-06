@@ -47,42 +47,60 @@ A basic example plugin demonstrating the structure and capabilities of RusherHac
 
 ---
 
-### [2b2t.vc Rusherhack](https://github.com/rfresh2/2b2t.vc-rusherhack)
+### [2b2t.vc Rusherhack](https://github.com/rfresh2/2b2t.vc-rusherhack) <br>
+![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[1].releaseDate&label=Latest%20Release&color=green) <br>
+
+
 **Creator**: <img src="https://github.com/rfresh2.png?size=20" width="20" height="20"> [rfresh2](https://github.com/rfresh2)
 
 A RusherHacks plugin designed for 2b2t.vc server use.
 
 ---
 
-### [RusherHack Custom HUDElement](https://github.com/Aspect-404/RusherHack-CustomHUDElement)
+### [RusherHack Custom HUDElement](https://github.com/Aspect-404/RusherHack-CustomHUDElement) <br>
+![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[2].releaseDate&label=Latest%20Release&color=green) <br>
+
+
 **Creator**: <img src="https://github.com/Aspect-404.png?size=20" width="20" height="20"> [Aspect-404](https://github.com/Aspect-404)
 
 Make a customizable text HUD element for Minecraft utility mod RusherHack.
 
 ---
 
-### [Auto Anvil Rename](https://github.com/IceTank/AutoAnvilRename)
+### [Auto Anvil Rename](https://github.com/IceTank/AutoAnvilRename) <br>
+![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[3].releaseDate&label=Latest%20Release&color=green) <br>
+
+
 **Creator**: <img src="https://github.com/IceTank.png?size=20" width="20" height="20"> [IceTank](https://github.com/IceTank)
 
 Automates the renaming process in anvils.
 
 ---
 
-### [Queue Manager](https://github.com/GabiRP/QueueManager)
+### [Queue Manager](https://github.com/GabiRP/QueueManager) <br>
+![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[4].releaseDate&label=Latest%20Release&color=green) <br>
+
+
 **Creator**: <img src="https://github.com/GabiRP.png?size=20" width="20" height="20"> [GabiRP](https://github.com/GabiRP)
 
 Manages queue positions and notifies users of their status.
 
 ---
 
-### [RusherHack Instance Info](https://github.com/John200410/rusherhack-instance-info)
+### [RusherHack Instance Info](https://github.com/John200410/rusherhack-instance-info) <br>
+![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[5].releaseDate&label=Latest%20Release&color=green) <br>
+
+
 **Creator**: <img src="https://github.com/John200410.png?size=20" width="20" height="20"> [John200410](https://github.com/John200410)
 
 Provides detailed information about the current instance.
 
 ---
 
-### [OP Plugin](https://github.com/theoplegends/op-plugin)
+### [OP Plugin](https://github.com/theoplegends/op-plugin) <br>
+![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[6].releaseDate&label=Latest%20Release&color=green) <br>
+
+
 **Creator**: <img src="https://github.com/theoplegends.png?size=20" width="20" height="20"> [theoplegends](https://github.com/theoplegends)
 
 *Current features as of 21 February 2024:<br>
@@ -94,126 +112,180 @@ TrapESP = wip<br>
 
 ---
 
-### [Stash Mover Plugin](https://github.com/xyzbtw/StashMoverPlugin)
+### [Stash Mover Plugin](https://github.com/xyzbtw/StashMoverPlugin) <br>
+![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[7].releaseDate&label=Latest%20Release&color=green) <br>
+
+
 **Creator**: <img src="https://github.com/xyzbtw.png?size=20" width="20" height="20"> [xyzbtw](https://github.com/xyzbtw)
 
 A plugin to move stashes using pearls.
 
 ---
 
-### [Unified Module List](https://github.com/czho/unified-modulelist)
+### [Unified Module List](https://github.com/czho/unified-modulelist) <br>
+![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[8].releaseDate&label=Latest%20Release&color=green) <br>
+
+
 **Creator**: <img src="https://github.com/czho.png?size=20" width="20" height="20"> [czho](https://github.com/czho)
 
 Rusherhack hudelement that shows active modules from both meteorclient and rusherhack.
 
 ---
 
-### [Container Tweaks](https://github.com/rfresh2/ContainerTweaks-rusherhack)
+### [Container Tweaks](https://github.com/rfresh2/ContainerTweaks-rusherhack) <br>
+![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[9].releaseDate&label=Latest%20Release&color=green) <br>
+
+
 **Creator**: <img src="https://github.com/rfresh2.png?size=20" width="20" height="20"> [rfresh2](https://github.com/rfresh2)
 
 Simple tweaks for quickly moving items in containers.
 
 ---
 
-### [RusherHack Spotify Integration](https://github.com/John200410/rusherhack-spotify/releases)
+### [RusherHack Spotify Integration](https://github.com/John200410/rusherhack-spotify) <br>
+![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[10].releaseDate&label=Latest%20Release&color=green) <br>
+
+
 **Creator**: <img src="https://github.com/John200410.png?size=20" width="20" height="20"> [John200410](https://github.com/John200410)
 
 Integrates Spotify music playback controls and status into the RusherHacks client.
 
 ---
 
-### [Vanilla Elytra Flight](https://github.com/FBanna/Rusherhack-Vanilla-Efly)
+### [Vanilla Elytra Flight](https://github.com/FBanna/Rusherhack-Vanilla-Efly) <br>
+![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[11].releaseDate&label=Latest%20Release&color=green) <br>
+
+
 **Creator**: <img src="https://github.com/FBanna.png?size=20" width="20" height="20"> [FBanna](https://github.com/FBanna)
 
 Highly customizable rusher hack efly plugin.
 
 ---
 
-### [RusherGUI](https://github.com/xyzbtw/rusherGUI)
+### [RusherGUI](https://github.com/xyzbtw/rusherGUI) <br>
+![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[12].releaseDate&label=Latest%20Release&color=green) <br>
+
+
 **Creator**: <img src="https://github.com/xyzbtw.png?size=20" width="20" height="20"> [xyzbtw](https://github.com/xyzbtw)
 
 Rusherhack GUI example plugin.
 
 ---
 
-### [Rusherhack BookBot](https://github.com/Aspect-404/Rusherhack-BookBot)
+### [Rusherhack BookBot](https://github.com/Aspect-404/Rusherhack-BookBot) <br>
+![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[13].releaseDate&label=Latest%20Release&color=green) <br>
+
+
 **Creator**: <img src="https://github.com/Aspect-404.png?size=20" width="20" height="20"> [Aspect-404](https://github.com/Aspect-404)
 
 Rusherhack plugin for bookbot.
 
 ---
 
-### [Shay's RusherTweaks](https://github.com/ShayBox/ShaysRusherTweaks)
+### [Shay's RusherTweaks](https://github.com/ShayBox/ShaysRusherTweaks) <br>
+![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[14].releaseDate&label=Latest%20Release&color=green) <br>
+
+
 **Creator**: <img src="https://github.com/ShayBox.png?size=20" width="20" height="20"> [ShayBox](https://github.com/ShayBox)
 
 A collection of small tweaks and improvements for the RusherHacks client.
 
 ---
 
-### [Nuker](https://github.com/beanbag44/Nuker/)
+### [Nuker](https://github.com/beanbag44/Nuker) <br>
+![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[15].releaseDate&label=Latest%20Release&color=green) <br>
+
+
 **Creator**: <img src="https://github.com/beanbag44.png?size=20" width="20" height="20"> [beanbag44](https://github.com/beanbag44)
 
 Epic nuker for nuking terrain.
 
 ---
 
-### [Hold Rusher](https://github.com/cherosin/hold-rusher)
+### [Hold Rusher](https://github.com/cherosin/hold-rusher) <br>
+![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[16].releaseDate&label=Latest%20Release&color=green) <br>
+
+
 **Creator**: <img src="https://github.com/cherosin.png?size=20" width="20" height="20"> [cherosin](https://github.com/cherosin)
 
 Adds a "Hold" flag for all modules, if active keybind will only be toggled while held.
 
 ---
 
-### [No Walk Animation](https://github.com/Eonexe/NoWalkAnimation)
+### [No Walk Animation](https://github.com/Eonexe/NoWalkAnimation) <br>
+![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[17].releaseDate&label=Latest%20Release&color=green) <br>
+
+
 **Creator**: <img src="https://github.com/Eonexe.png?size=20" width="20" height="20"> [Eonexe](https://github.com/Eonexe)
 
 Removes the walking animation.
 
 ---
 
-### [NBT Utils](https://github.com/kybe236/rusherhack-nbt-utils)
+### [NBT Utils](https://github.com/kybe236/rusherhack-nbt-utils) <br>
+![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[18].releaseDate&label=Latest%20Release&color=green) <br>
+
+
 **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
 
 Rusher nbt paste and copy.
 
 ---
 
-### [Rusherhack Executer](https://github.com/kybe236/rusherhack-executer)
+### [Rusherhack Executer](https://github.com/kybe236/rusherhack-executer) <br>
+![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[19].releaseDate&label=Latest%20Release&color=green) <br>
+
+
 **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
 
 Executes commands and resolves `<player>` to every player online.
 
 ---
 
-### [F3 Spoof](https://github.com/Doogie13/f3-spoof)
+### [F3 Spoof](https://github.com/Doogie13/f3-spoof) <br>
+![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[20].releaseDate&label=Latest%20Release&color=green) <br>
+
+
 **Creator**: <img src="https://github.com/Doogie13.png?size=20" width="20" height="20"> [Doogie13](https://github.com/Doogie13)
 
 Spoofs the F3 debug screen information.
 
 ---
 
-### [Open Folder](https://github.com/kybe236/rusherhack-open-folder)
+### [Open Folder](https://github.com/kybe236/rusherhack-open-folder) <br>
+![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[21].releaseDate&label=Latest%20Release&color=green) <br>
+
+
 **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
 
 Opens the folder for the module with a button click.
 
 ---
 
-### [Mace Kill](https://github.com/kybe236/rusherhack-mace-kill)
+### [Mace Kill](https://github.com/kybe236/rusherhack-mace-kill) <br>
+![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[22].releaseDate&label=Latest%20Release&color=green) <br>
+
+
 **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
 
 One shot pretty much all mobs with a mace.
 
 ---
 
-### [Weather Changing Plugin](https://github.com/Lokfid/WeatherChangingPlugin)
+### [Weather Changing Plugin](https://github.com/Lokfid/WeatherChangingPlugin) <br>
+![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[23].releaseDate&label=Latest%20Release&color=green) <br>
+
+
 **Creator**: <img src="https://github.com/Lokfid.png?size=20" width="20" height="20"> [Lokfid](https://github.com/Lokfid)
 
 Allows players to change the weather in-game.
 
 ---
 
-### [Middleclick Wind Charge](https://github.com/kybe236/rusherhack-middleclick-wind-charge)
+### [Middleclick Wind Charge](https://github.com/kybe236/rusherhack-middleclick-wind-charge) <br>
+![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[24].releaseDate&label=Latest%20Release&color=green) <br>
+
+
 **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
 
 Rusherhack middleclick windcharge plugin<br>
@@ -221,21 +293,30 @@ Allows you to throw windcharges with middle mouse button and also jump at the sa
 
 ---
 
-### [GarlicSight](https://github.com/GarlicRot/GarlicSight)
+### [GarlicSight](https://github.com/GarlicRot/GarlicSight) <br>
+![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[25].releaseDate&label=Latest%20Release&color=green) <br>
+
+
 **Creator**: <img src="https://github.com/GarlicRot.png?size=20" width="20" height="20"> [GarlicRot](https://github.com/GarlicRot)
 
 A RusherHacks Plugin - Crosshair Info - GarlicSight.
 
 ---
 
-### [LightningPop](https://github.com/GarlicRot/LightningPop)
+### [LightningPop](https://github.com/GarlicRot/LightningPop) <br>
+![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[26].releaseDate&label=Latest%20Release&color=green) <br>
+
+
 **Creator**: <img src="https://github.com/GarlicRot.png?size=20" width="20" height="20"> [GarlicRot](https://github.com/GarlicRot)
 
 A RusherHacks Plugin - Spawns Lightning On Totem Pops And Player Deaths - LightningPop.
 
 ---
 
-### [AutoBucket](https://github.com/GarlicRot/AutoBucket)
+### [AutoBucket](https://github.com/GarlicRot/AutoBucket) <br>
+![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[27].releaseDate&label=Latest%20Release&color=green) <br>
+
+
 **Creator**: <img src="https://github.com/GarlicRot.png?size=20" width="20" height="20"> [GarlicRot](https://github.com/GarlicRot)
 
 A RusherHacks Plugin - Auto Bucket Entities - AutoBucket
@@ -250,42 +331,60 @@ A RusherHacks Plugin - Auto Bucket Entities - AutoBucket
 <details>
   <summary>Show Non Pinned Plugins</summary>
 
-### [NBT Viewer](https://github.com/Gentleman2292/NBT-viewer)
+### [NBT Viewer](https://github.com/Gentleman2292/NBT-viewer) <br>
+![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[28].releaseDate&label=Latest%20Release&color=green) <br>
+
+
 **Creator**: <img src="https://github.com/Gentleman2292.png?size=20" width="20" height="20"> [Gentleman2292](https://github.com/Gentleman2292)
 
 A plugin to view NBT data in Minecraft.
 
 ---
 
-### [Remote Control](https://github.com/kybe236/rusherhack-remote-controle)
+### [Remote Control](https://github.com/kybe236/rusherhack-remote-controle) <br>
+![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[29].releaseDate&label=Latest%20Release&color=green) <br>
+
+
 **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
 
 A plugin for remote controlling RusherHacks.
 
 ---
 
-### [Speed Measure](https://github.com/Lokfid/RusherHackSpeedMeasure)
+### [Speed Measure](https://github.com/Lokfid/RusherHackSpeedMeasure) <br>
+![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[30].releaseDate&label=Latest%20Release&color=green) <br>
+
+
 **Creator**: <img src="https://github.com/Lokfid.png?size=20" width="20" height="20"> [Lokfid](https://github.com/Lokfid)
 
 A plugin to measure speed in RusherHacks.
 
 ---
 
-### [TNT Bomber](https://github.com/kybe236/rusher-tnt-bomber)
+### [TNT Bomber](https://github.com/kybe236/rusher-tnt-bomber) <br>
+![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[31].releaseDate&label=Latest%20Release&color=green) <br>
+
+
 **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
 
 A plugin to automate TNT bombing in Minecraft.
 
 ---
 
-### [No Render Entities](https://github.com/John200410/norender-entities)
+### [No Render Entities](https://github.com/John200410/norender-entities) <br>
+![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[32].releaseDate&label=Latest%20Release&color=green) <br>
+
+
 **Creator**: <img src="https://github.com/John200410.png?size=20" width="20" height="20"> [John200410](https://github.com/John200410)
 
 A plugin to disable rendering of entities.
 
 ---
 
-### [RusherHack Messenger](https://github.com/Gentleman2292/rusherhack-messenger)
+### [RusherHack Messenger](https://github.com/Gentleman2292/rusherhack-messenger) <br>
+![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[33].releaseDate&label=Latest%20Release&color=green) <br>
+
+
 **Creator**: <img src="https://github.com/Gentleman2292.png?size=20" width="20" height="20"> [Gentleman2292](https://github.com/Gentleman2292)
 
 A messaging plugin for RusherHacks.
