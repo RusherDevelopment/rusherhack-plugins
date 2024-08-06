@@ -5,7 +5,7 @@ on:
     - cron: '0 0 * * 5'  # Runs every Friday at midnight
   push:
     branches:
-      - main  # You can change this to any branch you want to trigger the action
+      - main  # Trigger the action on the main branch
 
 jobs:
   update-badges:
@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -23,12 +23,12 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install PyGithub requests
+          pip install PyGithub
 
       - name: Run update script
-        env:
-          BADGES: ${{ secrets.BADGES }}
         run: python update_badges.py
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
       - name: Commit and push changes
         run: |
@@ -38,4 +38,4 @@ jobs:
           git commit -m 'Update badges'
           git push
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
