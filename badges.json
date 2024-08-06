@@ -16,6 +16,246 @@
   "rusherHacks": {
     "message": "v2.0.5",
     "color": "blue",
-    "logoSvg": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOsAAADqCAYAAABDVrJwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAnnSURBVHhe7d0xjx1XGcbxnRUkQUE4Ekj+AqvUqaCMBClooKKAzhJtOiLRuIGIloiI0kTuEBIVoqDhK7ijc0NppUIoQWEt38yxZq3rdx5rX58z98w8c/+/6E1GzsyZOTPz+Pgc390d3n/v6nDR2Te+OUxbfT297t7Vi48+/mTa2r9Hjx5NW/v39798Nm31czn9F8DGEVbABGEFTOTDehjne7GwP+WxxnLTow9l2aW2KjGyAiYIK2CCsAImCCtgIh/WYZwZx6rVYwFAKZccCy/bwz3q0Qf1DmerEiMrYIKwAiYIK2CCsAIm1glrjwUARU32l7yWJdvqQd2PrVvyemNbre1lVb4njKyACcIKmCCsgAnCCphYPqyVk+fVLLnIoNpS1aKlvXhcj2cVz1mqxZLXG9tqbS9L3ZPEdTCyAiYIK2CCsAImCCtgYvGwDuNkOdZM+bVYexUXDl6xeJDW0l7tcS3iOXud100iD4ysgAnCCpggrICJ4YPvv7vnGePqfvWbP0xbR9Qd38Fc7unTp9NWP7/99YfT1kLUcxDP6ztvvzFt9cPICpggrIAJwgqYIKyACcK6pOO/+L8pJbtf1s1fpB/XVmz52pQNXy9hBUwQVsAEYQVMEFbABGFd0lqLE7ULVi3Xq45VVXttmCGsgAnCCpggrIAJwgqYIKxZe1wkiX16nX6pY1WdE7XAtiDCCpggrIAJwgqYIKyACcKadcKFg9XEPu2lX2s58QIbYQVMEFbABGEFTBBWwARhPWcnXhDZFNVXVT1ULuwRVsAEYQVMEFbABGEFTAzfe+ed2fT2cJjPeOXce8jNyA/hx58Ph9PP5GUfLsV5n4nZveiXai/K3qNMW8+J30rVvZN9TZxX7ZMl+7Dw9SrpexeoZ39Qz14YRL8Oz6aNhWR6z8gKmCCsgAnCCpggrIAJucDUIrN4kF6cUJP45IJNZoHldWT6oBYJ6s+Y70P1fup+iLZkx5ILc2lhEbJQizipPijZaxPtqTOo1uR+LfckYGQFTBBWwARhBUwQVsBE0wJT7YJNy+S8ZYFFLmJVfpoqex1qwUIudrTspyTuibxedUqxmJRdOMm+I7XPOvscstehtPRVHqnai8eKfRhZAROEFTBBWAEThBUwkV5gapmgx98S0os66pzJxYPaBYsi01fZg4ZzSgv3f9Ze9joU8Ymjiw5f+piReX5F+jlsBCMrYIKwAiYIK2Bi+O6dO7M/4Ms/yS/45/umeVyD6rldEfZrmRfJY9Vvm+qrTqb/viR5jngtS96P5xr2E0fqawla+pA9Z/ZZK6oHmfOqczKyAiYIK2CCsAImCCtgQn8oQs3Ps195oSbjcT812Re/bbR8f+HsooA8Q6Zf2b4Laq/swoa855WWXjhR9yTbhzX6mm5fHCvvnBr6Kr+/sLo2RlbABGEFTBBWwARhBUws/m1d5KQ97pec2LcsgCjqBwxlv1Kk9lp+/+mn09YtVPPJ9Q/ls08+nrb6+de/P5+2jogFFtlV8U7I92v67wuZ963I7qck39e07PUFjKyACcIKmCCsgAnCCphYPKxlUSBWlNmnKFPuWFnq2PKDjmaVvZZhuLWaxIttbE46cfvy/pZfD9Vy72btDeMziyX2m/V9LL3f+D9iCfK9EaX2G//P/LwJjKyACcIKmCCsgAnCCphoCqtaKFB1cflylSl7rHHmPasy8Y6lyHOqEsqvxlLXEkstHHRRTp"
-  }
+    "logoSvg": ""
+  },
+  "plugins": [
+    {
+      "name": "Example Plugin",
+      "url": "https://github.com/RusherDevelopment/example-plugin",
+      "releaseUrl": "https://github.com/RusherDevelopment/example-plugin/releases",
+      "releaseDate": "2023-01-01",
+      "color": "green"
+    },
+    {
+      "name": "2b2t.vc Rusherhack",
+      "url": "https://github.com/rfresh2/2b2t.vc-rusherhack",
+      "releaseUrl": "https://github.com/rfresh2/2b2t.vc-rusherhack/releases",
+      "releaseDate": "2023-01-02",
+      "color": "green"
+    },
+    {
+      "name": "RusherHack Custom HUDElement",
+      "url": "https://github.com/Aspect-404/RusherHack-CustomHUDElement",
+      "releaseUrl": "https://github.com/Aspect-404/RusherHack-CustomHUDElement/releases",
+      "releaseDate": "2023-01-03",
+      "color": "green"
+    },
+    {
+      "name": "Auto Anvil Rename",
+      "url": "https://github.com/IceTank/AutoAnvilRename",
+      "releaseUrl": "https://github.com/IceTank/AutoAnvilRename/releases",
+      "releaseDate": "2023-01-04",
+      "color": "green"
+    },
+    {
+      "name": "Queue Manager",
+      "url": "https://github.com/GabiRP/QueueManager",
+      "releaseUrl": "https://github.com/GabiRP/QueueManager/releases",
+      "releaseDate": "2023-01-05",
+      "color": "green"
+    },
+    {
+      "name": "RusherHack Instance Info",
+      "url": "https://github.com/John200410/rusherhack-instance-info",
+      "releaseUrl": "https://github.com/John200410/rusherhack-instance-info/releases",
+      "releaseDate": "2023-01-06",
+      "color": "green"
+    },
+    {
+      "name": "OP Plugin",
+      "url": "https://github.com/theoplegends/op-plugin",
+      "releaseUrl": "https://github.com/theoplegends/op-plugin/releases",
+      "releaseDate": "2023-01-07",
+      "color": "green"
+    },
+    {
+      "name": "Stash Mover Plugin",
+      "url": "https://github.com/xyzbtw/StashMoverPlugin",
+      "releaseUrl": "https://github.com/xyzbtw/StashMoverPlugin/releases",
+      "releaseDate": "2023-01-08",
+      "color": "green"
+    },
+    {
+      "name": "Unified Module List",
+      "url": "https://github.com/czho/unified-modulelist",
+      "releaseUrl": "https://github.com/czho/unified-modulelist/releases",
+      "releaseDate": "2023-01-09",
+      "color": "green"
+    },
+    {
+      "name": "Container Tweaks",
+      "url": "https://github.com/rfresh2/ContainerTweaks-rusherhack",
+      "releaseUrl": "https://github.com/rfresh2/ContainerTweaks-rusherhack/releases",
+      "releaseDate": "2023-01-10",
+      "color": "green"
+    },
+    {
+      "name": "RusherHack Spotify Integration",
+      "url": "https://github.com/John200410/rusherhack-spotify",
+      "releaseUrl": "https://github.com/John200410/rusherhack-spotify/releases",
+      "releaseDate": "2023-01-11",
+      "color": "green"
+    },
+    {
+      "name": "Vanilla Elytra Flight",
+      "url": "https://github.com/FBanna/Rusherhack-Vanilla-Efly",
+      "releaseUrl": "https://github.com/FBanna/Rusherhack-Vanilla-Efly/releases",
+      "releaseDate": "2023-01-12",
+      "color": "green"
+    },
+    {
+      "name": "RusherGUI",
+      "url": "https://github.com/xyzbtw/rusherGUI",
+      "releaseUrl": "https://github.com/xyzbtw/rusherGUI/releases",
+      "releaseDate": "2023-01-13",
+      "color": "green"
+    },
+    {
+      "name": "Rusherhack BookBot",
+      "url": "https://github.com/Aspect-404/Rusherhack-BookBot",
+      "releaseUrl": "https://github.com/Aspect-404/Rusherhack-BookBot/releases",
+      "releaseDate": "2023-01-14",
+      "color": "green"
+    },
+    {
+      "name": "Shay's RusherTweaks",
+      "url": "https://github.com/ShayBox/ShaysRusherTweaks",
+      "releaseUrl": "https://github.com/ShayBox/ShaysRusherTweaks/releases",
+      "releaseDate": "2023-01-15",
+      "color": "green"
+    },
+    {
+      "name": "Nuker",
+      "url": "https://github.com/beanbag44/Nuker",
+      "releaseUrl": "https://github.com/beanbag44/Nuker/releases",
+      "releaseDate": "2023-01-16",
+      "color": "green"
+    },
+    {
+      "name": "Hold Rusher",
+      "url": "https://github.com/cherosin/hold-rusher",
+      "releaseUrl": "https://github.com/cherosin/hold-rusher/releases",
+      "releaseDate": "2023-01-17",
+      "color": "green"
+    },
+    {
+      "name": "No Walk Animation",
+      "url": "https://github.com/Eonexe/NoWalkAnimation",
+      "releaseUrl": "https://github.com/Eonexe/NoWalkAnimation/releases",
+      "releaseDate": "2023-01-18",
+      "color": "green"
+    },
+    {
+      "name": "NBT Utils",
+      "url": "https://github.com/kybe236/rusherhack-nbt-utils",
+      "releaseUrl": "https://github.com/kybe236/rusherhack-nbt-utils/releases",
+      "releaseDate": "2023-01-19",
+      "color": "green"
+    },
+    {
+      "name": "Rusherhack Executer",
+      "url": "https://github.com/kybe236/rusherhack-executer",
+      "releaseUrl": "https://github.com/kybe236/rusherhack-executer/releases",
+      "releaseDate": "2023-01-20",
+      "color": "green"
+    },
+    {
+      "name": "F3 Spoof",
+      "url": "https://github.com/Doogie13/f3-spoof",
+      "releaseUrl": "https://github.com/Doogie13/f3-spoof/releases",
+      "releaseDate": "2023-01-21",
+      "color": "green"
+    },
+    {
+      "name": "Open Folder",
+      "url": "https://github.com/kybe236/rusherhack-open-folder",
+      "releaseUrl": "https://github.com/kybe236/rusherhack-open-folder/releases",
+      "releaseDate": "2023-01-22",
+      "color": "green"
+    },
+    {
+      "name": "Mace Kill",
+      "url": "https://github.com/kybe236/rusherhack-mace-kill",
+      "releaseUrl": "https://github.com/kybe236/rusherhack-mace-kill/releases",
+      "releaseDate": "2023-01-23",
+      "color": "green"
+    },
+    {
+      "name": "Weather Changing Plugin",
+      "url": "https://github.com/Lokfid/WeatherChangingPlugin",
+      "releaseUrl": "https://github.com/Lokfid/WeatherChangingPlugin/releases",
+      "releaseDate": "2023-01-24",
+      "color": "green"
+    },
+    {
+      "name": "Middleclick Wind Charge",
+      "url": "https://github.com/kybe236/rusherhack-middleclick-wind-charge",
+      "releaseUrl": "https://github.com/kybe236/rusherhack-middleclick-wind-charge/releases",
+      "releaseDate": "2023-01-25",
+      "color": "green"
+    },
+    {
+      "name": "GarlicSight",
+      "url": "https://github.com/GarlicRot/GarlicSight",
+      "releaseUrl": "https://github.com/GarlicRot/GarlicSight/releases",
+      "releaseDate": "2023-01-26",
+      "color": "green"
+    },
+    {
+      "name": "LightningPop",
+      "url": "https://github.com/GarlicRot/LightningPop",
+      "releaseUrl": "https://github.com/GarlicRot/LightningPop/releases",
+      "releaseDate": "2023-01-27",
+      "color": "green"
+    },
+    {
+      "name": "AutoBucket",
+      "url": "https://github.com/GarlicRot/AutoBucket",
+      "releaseUrl": "https://github.com/GarlicRot/AutoBucket/releases",
+      "releaseDate": "2023-01-28",
+      "color": "green"
+    },
+    {
+      "name": "NBT Viewer",
+      "url": "https://github.com/Gentleman2292/NBT-viewer",
+      "releaseUrl": "https://github.com/Gentleman2292/NBT-viewer/releases",
+      "releaseDate": "2023-01-29",
+      "color": "green"
+    },
+    {
+      "name": "Remote Control",
+      "url": "https://github.com/kybe236/rusherhack-remote-controle",
+      "releaseUrl": "https://github.com/kybe236/rusherhack-remote-controle/releases",
+      "releaseDate": "2023-01-30",
+      "color": "green"
+    },
+    {
+      "name": "Speed Measure",
+      "url": "https://github.com/Lokfid/RusherHackSpeedMeasure",
+      "releaseUrl": "https://github.com/Lokfid/RusherHackSpeedMeasure/releases",
+      "releaseDate": "2023-01-31",
+      "color": "green"
+    },
+    {
+      "name": "TNT Bomber",
+      "url": "https://github.com/kybe236/rusher-tnt-bomber",
+      "releaseUrl": "https://github.com/kybe236/rusher-tnt-bomber/releases",
+      "releaseDate": "2023-02-01",
+      "color": "green"
+    },
+    {
+      "name": "No Render Entities",
+      "url": "https://github.com/John200410/norender-entities",
+      "releaseUrl": "https://github.com/John200410/norender-entities/releases",
+      "releaseDate": "2023-02-02",
+      "color": "green"
+    },
+    {
+      "name": "RusherHack Messenger",
+      "url": "https://github.com/Gentleman2292/rusherhack-messenger",
+      "releaseUrl": "https://github.com/Gentleman2292/rusherhack-messenger/releases",
+      "releaseDate": "2023-02-03",
+      "color": "green"
+    }
+  ]
 }
