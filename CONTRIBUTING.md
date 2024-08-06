@@ -1,6 +1,7 @@
 # Contributing to RusherHacks Plugin Collection
 
-Thank you for considering contributing to the RusherHacks Plugin Collection! Your contributions are what make this project great.
+Thank you for considering contributing to the RusherHacks Plugin Collection! <br>
+Your contributions are what make this project great.
 
 ## How to Contribute
 
@@ -26,7 +27,10 @@ Thank you for considering contributing to the RusherHacks Plugin Collection! You
    Push your changes to your forked repository.
 
 7. **Open a pull request**  
-   Open a pull request to the main repository. Go to the "Pull Requests" tab on the main repository and click "New Pull Request".
+   Open a pull request to the main repository. Go to the "Pull Requests" tab on the main repository. <br>
+   <img src="https://github.com/GarlicRot/RusherHacks-Plugin-Collection/blob/main/Assets/PullRequestsTab.png" alt="Pull Request Tab" width="150"> <br>
+   Click "New Pull Request". <br>
+   <img src="https://github.com/GarlicRot/RusherHacks-Plugin-Collection/blob/main/Assets/NewPullRequest.png" alt="New Pull Request" width="150"> 
 
 8. **Describe your changes**  
    Clearly describe the changes you have made and any relevant context in the pull request description.
