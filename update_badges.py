@@ -4,11 +4,11 @@ from github import Github
 import os
 
 # Get the GitHub token from the environment variable
-ACCESS_TOKEN = os.getenv('GH_TOKEN')
+ACCESS_TOKEN = os.getenv('BADGES')
 
 # Ensure the token is provided
 if not ACCESS_TOKEN:
-    raise ValueError("No access token provided in environment variable 'GH_TOKEN'")
+    raise ValueError("No access token provided in environment variable 'BADGES'")
 
 # Load the existing badges.json file from the gh-pages branch
 response = requests.get('https://garlicrot.github.io/RusherHacks-Plugin-Collection/badges.json')
@@ -56,21 +56,17 @@ g = Github(ACCESS_TOKEN)
 
 # Update the release dates for each repository
 for i, (repo_name, user) in enumerate(repos):
-    try:
-        repo = g.get_repo(f"{user}/{repo_name}")
-        releases = repo.get_releases()
-        latest_release = releases[0] if releases.totalCount > 0 else None
+    repo = g.get_repo(f"{user}/{repo_name}")
+    releases = repo.get_releases()
+    latest_release = releases[0] if releases.totalCount > 0 else None
 
-        if latest_release:
-            release_date = latest_release.published_at.strftime('%Y-%m-%d')
-        else:
-            release_date = "No releases"
+    if latest_release:
+        release_date = latest_release.published_at.strftime('%Y-%m-%d')
+    else:
+        release_date = "No releases"
 
-        # Update the JSON data
-        data['plugins'][i]['releaseDate'] = release_date
-
-    except Exception as e:
-        print(f"Failed to update {user}/{repo_name}: {e}")
+    # Update the JSON data
+    data['plugins'][i]['releaseDate'] = release_date
 
 # Save the updated badges.json file
 with open('badges.json', 'w') as f:
