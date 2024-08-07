@@ -37,13 +37,23 @@ Your contributions are what make this project great.
 
 ## Example Plugin Layout
 
+Replace 'Plugin Name', 'username', 'plugin-repo', and 'INDEX' with the appropriate values for each plugin. This template includes the badge that links to the latest release of the plugin.
+
 ```
-### [Plugin Name](https://github.com/username/plugin-repo)
-**Creator**: <img src="https://github.com/username.png?size=20" width="20" height="20">
-[username](https://github.com/username)
+### [Plugin Name](https://github.com/username/plugin-repo) <br>
+[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[INDEX].releaseDate&label=Latest%20Release&color=green)](https://github.com/username/plugin-repo/releases) <br>
+
+**Creator**: <img src="https://github.com/username.png?size=20" width="20" height="20"> [username](https://github.com/username)
 
 A brief description of the plugin and its functionality.
 ```
+
+<details>
+  <summary>Explanation of INDEX</summary>
+  The `INDEX` in the URL for the badge is the position of the plugin in the `badges.json` file. This index is used to retrieve the latest release date for the specific plugin from the JSON data. Make sure to replace `INDEX` with the appropriate number that corresponds to the plugin's position in the `badges.json` file. The first plugin in the list would have an `INDEX` of 0, the second would have an `INDEX` of 1, and so on.
+
+  For example, if your plugin is the third plugin in the `badges.json` file, you would replace `INDEX` with `2`.
+</details>
 
 ---
 
