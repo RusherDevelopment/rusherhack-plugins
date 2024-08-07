@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "pinnedPlugins": {
-    "message": "28",
+    "message": "29",
     "color": "green"
   },
   "nonPinnedPlugins": {
@@ -22,240 +22,282 @@
     {
       "name": "Example Plugin",
       "url": "https://github.com/RusherDevelopment/example-plugin",
-      "releaseUrl": "https://github.com/rfresh2/2b2t.vc-rusherhack/releases",
+      "releaseUrl": "https://github.com/RusherDevelopment/example-plugin/releases",
       "releaseDate": "No releases",
-      "color": "green"
+      "color": "green",
+      "description": "A basic example plugin demonstrating the structure and capabilities of RusherHacks plugins."
     },
     {
       "name": "2b2t.vc Rusherhack",
       "url": "https://github.com/rfresh2/2b2t.vc-rusherhack",
-      "releaseUrl": "https://github.com/Aspect-404/RusherHack-CustomHUDElement/releases",
+      "releaseUrl": "https://github.com/rfresh2/2b2t.vc-rusherhack/releases",
       "releaseDate": "July 15, 2024",
-      "color": "green"
+      "color": "green",
+      "description": "A RusherHacks plugin designed for 2b2t.vc server use."
     },
     {
       "name": "RusherHack Custom HUDElement",
       "url": "https://github.com/Aspect-404/RusherHack-CustomHUDElement",
-      "releaseUrl": "https://github.com/IceTank/AutoAnvilRename/releases",
+      "releaseUrl": "https://github.com/Aspect-404/RusherHack-CustomHUDElement/releases",
       "releaseDate": "November 03, 2023",
-      "color": "green"
+      "color": "green",
+      "description": "Make a customizable text HUD element for Minecraft utility mod RusherHack."
     },
     {
       "name": "Auto Anvil Rename",
       "url": "https://github.com/IceTank/AutoAnvilRename",
-      "releaseUrl": "https://github.com/GabiRP/QueueManager/releases",
+      "releaseUrl": "https://github.com/IceTank/AutoAnvilRename/releases",
       "releaseDate": "December 04, 2023",
-      "color": "green"
+      "color": "green",
+      "description": "Automates the renaming process in anvils."
     },
     {
       "name": "Queue Manager",
       "url": "https://github.com/GabiRP/QueueManager",
-      "releaseUrl": "https://github.com/John200410/rusherhack-instance-info/releases",
+      "releaseUrl": "https://github.com/GabiRP/QueueManager/releases",
       "releaseDate": "December 10, 2023",
-      "color": "green"
+      "color": "green",
+      "description": "Manages queue positions and notifies users of their status."
     },
     {
       "name": "RusherHack Instance Info",
       "url": "https://github.com/John200410/rusherhack-instance-info",
-      "releaseUrl": "https://github.com/theoplegends/op-plugin/releases",
+      "releaseUrl": "https://github.com/John200410/rusherhack-instance-info/releases",
       "releaseDate": "August 05, 2024",
-      "color": "green"
+      "color": "green",
+      "description": "Provides detailed information about the current instance."
     },
     {
       "name": "OP Plugin",
       "url": "https://github.com/theoplegends/op-plugin",
-      "releaseUrl": "https://github.com/xyzbtw/StashMoverPlugin/releases",
+      "releaseUrl": "https://github.com/theoplegends/op-plugin/releases",
       "releaseDate": "January 24, 2024",
-      "color": "green"
+      "color": "green",
+      "description": "Current features: Autopearl, JakeOrganCrash, HoleEscape, PaperCrash, TrapESP."
     },
     {
       "name": "Stash Mover Plugin",
       "url": "https://github.com/xyzbtw/StashMoverPlugin",
-      "releaseUrl": "https://github.com/czho/unified-modulelist/releases",
+      "releaseUrl": "https://github.com/xyzbtw/StashMoverPlugin/releases",
       "releaseDate": "July 15, 2024",
-      "color": "green"
+      "color": "green",
+      "description": "A plugin to move stashes using pearls."
     },
     {
       "name": "Unified Module List",
       "url": "https://github.com/czho/unified-modulelist",
-      "releaseUrl": "https://github.com/rfresh2/ContainerTweaks-rusherhack/releases",
+      "releaseUrl": "https://github.com/czho/unified-modulelist/releases",
       "releaseDate": "No releases",
-      "color": "green"
+      "color": "green",
+      "description": "Rusherhack HUD element that shows active modules from both meteorclient and rusherhack."
     },
     {
       "name": "Container Tweaks",
       "url": "https://github.com/rfresh2/ContainerTweaks-rusherhack",
-      "releaseUrl": "https://github.com/John200410/rusherhack-spotify/releases",
+      "releaseUrl": "https://github.com/rfresh2/ContainerTweaks-rusherhack/releases",
       "releaseDate": "June 26, 2024",
-      "color": "green"
+      "color": "green",
+      "description": "Simple tweaks for quickly moving items in containers."
     },
     {
       "name": "RusherHack Spotify Integration",
       "url": "https://github.com/John200410/rusherhack-spotify",
-      "releaseUrl": "https://github.com/FBanna/Rusherhack-Vanilla-Efly/releases",
+      "releaseUrl": "https://github.com/John200410/rusherhack-spotify/releases",
       "releaseDate": "July 29, 2024",
-      "color": "green"
+      "color": "green",
+      "description": "Integrates Spotify music playback controls and status into the RusherHacks client."
     },
     {
       "name": "Vanilla Elytra Flight",
       "url": "https://github.com/FBanna/Rusherhack-Vanilla-Efly",
-      "releaseUrl": "https://github.com/xyzbtw/rusherGUI/releases",
+      "releaseUrl": "https://github.com/FBanna/Rusherhack-Vanilla-Efly/releases",
       "releaseDate": "March 31, 2024",
-      "color": "green"
+      "color": "green",
+      "description": "Highly customizable rusher hack elytra flight plugin."
     },
     {
       "name": "RusherGUI",
       "url": "https://github.com/xyzbtw/rusherGUI",
-      "releaseUrl": "https://github.com/Aspect-404/Rusherhack-BookBot/releases",
+      "releaseUrl": "https://github.com/xyzbtw/rusherGUI/releases",
       "releaseDate": "April 26, 2024",
-      "color": "green"
+      "color": "green",
+      "description": "Rusherhack GUI example plugin."
     },
     {
       "name": "Rusherhack BookBot",
       "url": "https://github.com/Aspect-404/Rusherhack-BookBot",
-      "releaseUrl": "https://github.com/ShayBox/ShaysRusherTweaks/releases",
+      "releaseUrl": "https://github.com/Aspect-404/Rusherhack-BookBot/releases",
       "releaseDate": "April 27, 2024",
-      "color": "green"
+      "color": "green",
+      "description": "Rusherhack plugin for bookbot."
     },
     {
       "name": "Shay's RusherTweaks",
       "url": "https://github.com/ShayBox/ShaysRusherTweaks",
-      "releaseUrl": "https://github.com/beanbag44/Nuker/releases",
+      "releaseUrl": "https://github.com/ShayBox/ShaysRusherTweaks/releases",
       "releaseDate": "July 06, 2024",
-      "color": "green"
+      "color": "green",
+      "description": "A collection of small tweaks and improvements for the RusherHacks client."
     },
     {
       "name": "Nuker",
       "url": "https://github.com/beanbag44/Nuker",
-      "releaseUrl": "https://github.com/cherosin/hold-rusher/releases",
+      "releaseUrl": "https://github.com/beanbag44/Nuker/releases",
       "releaseDate": "June 02, 2024",
-      "color": "green"
+      "color": "green",
+      "description": "Epic nuker for nuking terrain."
     },
     {
       "name": "Hold Rusher",
       "url": "https://github.com/cherosin/hold-rusher",
-      "releaseUrl": "https://github.com/Eonexe/NoWalkAnimation/releases",
+      "releaseUrl": "https://github.com/cherosin/hold-rusher/releases",
       "releaseDate": "June 02, 2024",
-      "color": "green"
+      "color": "green",
+      "description": "Adds a \"Hold\" flag for all modules, if active keybind will only be toggled while held."
     },
     {
       "name": "No Walk Animation",
       "url": "https://github.com/Eonexe/NoWalkAnimation",
-      "releaseUrl": "https://github.com/kybe236/rusherhack-nbt-utils/releases",
+      "releaseUrl": "https://github.com/Eonexe/NoWalkAnimation/releases",
       "releaseDate": "June 26, 2024",
-      "color": "green"
+      "color": "green",
+      "description": "Removes the walking animation."
     },
     {
       "name": "NBT Utils",
       "url": "https://github.com/kybe236/rusherhack-nbt-utils",
-      "releaseUrl": "https://github.com/kybe236/rusherhack-executer/releases",
+      "releaseUrl": "https://github.com/kybe236/rusherhack-nbt-utils/releases",
       "releaseDate": "July 06, 2024",
-      "color": "green"
+      "color": "green",
+      "description": "Rusher nbt paste and copy."
     },
     {
       "name": "Rusherhack Executer",
       "url": "https://github.com/kybe236/rusherhack-executer",
-      "releaseUrl": "https://github.com/Doogie13/f3-spoof/releases",
+      "releaseUrl": "https://github.com/kybe236/rusherhack-executer/releases",
       "releaseDate": "July 15, 2024",
-      "color": "green"
+      "color": "green",
+      "description": "Executes commands and resolves `<player>` to every player online."
     },
     {
       "name": "F3 Spoof",
       "url": "https://github.com/Doogie13/f3-spoof",
-      "releaseUrl": "https://github.com/kybe236/rusherhack-open-folder/releases",
+      "releaseUrl": "https://github.com/Doogie13/f3-spoof/releases",
       "releaseDate": "No releases",
-      "color": "green"
+      "color": "green",
+      "description": "Spoofs the F3 debug screen information."
     },
     {
       "name": "Open Folder",
       "url": "https://github.com/kybe236/rusherhack-open-folder",
-      "releaseUrl": "https://github.com/kybe236/rusherhack-mace-kill/releases",
+      "releaseUrl": "https://github.com/kybe236/rusherhack-open-folder/releases",
       "releaseDate": "July 23, 2024",
-      "color": "green"
+      "color": "green",
+      "description": "Opens the folder for the module with a button click."
     },
     {
       "name": "Mace Kill",
       "url": "https://github.com/kybe236/rusherhack-mace-kill",
-      "releaseUrl": "https://github.com/Lokfid/WeatherChangingPlugin/releases",
+      "releaseUrl": "https://github.com/kybe236/rusherhack-mace-kill/releases",
       "releaseDate": "July 22, 2024",
-      "color": "green"
+      "color": "green",
+      "description": "One shot pretty much all mobs with a mace."
     },
     {
       "name": "Weather Changing Plugin",
       "url": "https://github.com/Lokfid/WeatherChangingPlugin",
-      "releaseUrl": "https://github.com/kybe236/rusherhack-middleclick-wind-charge/releases",
+      "releaseUrl": "https://github.com/Lokfid/WeatherChangingPlugin/releases",
       "releaseDate": "July 24, 2024",
-      "color": "green"
+      "color": "green",
+      "description": "Allows players to change the weather in-game."
     },
     {
       "name": "Middleclick Wind Charge",
       "url": "https://github.com/kybe236/rusherhack-middleclick-wind-charge",
-      "releaseUrl": "https://github.com/GarlicRot/GarlicSight/releases",
+      "releaseUrl": "https://github.com/kybe236/rusherhack-middleclick-wind-charge/releases",
       "releaseDate": "July 26, 2024",
-      "color": "green"
+      "color": "green",
+      "description": "Allows you to throw windcharges with middle mouse button and also jump at the same time so you can boost jump."
     },
     {
       "name": "GarlicSight",
       "url": "https://github.com/GarlicRot/GarlicSight",
-      "releaseUrl": "https://github.com/GarlicRot/LightningPop/releases",
+      "releaseUrl": "https://github.com/GarlicRot/GarlicSight/releases",
       "releaseDate": "July 29, 2024",
-      "color": "green"
+      "color": "green",
+      "description": "A RusherHacks Plugin - Crosshair Info - GarlicSight."
     },
     {
       "name": "LightningPop",
       "url": "https://github.com/GarlicRot/LightningPop",
-      "releaseUrl": "https://github.com/GarlicRot/AutoBucket/releases",
+      "releaseUrl": "https://github.com/GarlicRot/LightningPop/releases",
       "releaseDate": "July 30, 2024",
-      "color": "green"
+      "color": "green",
+      "description": "A RusherHacks Plugin - Spawns Lightning On Totem Pops And Player Deaths - LightningPop."
     },
     {
       "name": "AutoBucket",
       "url": "https://github.com/GarlicRot/AutoBucket",
-      "releaseUrl": "https://github.com/Gentleman2292/NBT-viewer/releases",
+      "releaseUrl": "https://github.com/GarlicRot/AutoBucket/releases",
       "releaseDate": "August 05, 2024",
-      "color": "green"
+      "color": "green",
+      "description": "A RusherHacks Plugin - Auto Bucket Entities - AutoBucket."
+    },
+    {
+      "name": "rusherNodusTheme",
+      "url": "https://github.com/bakjedev/rusherNodusTheme",
+      "releaseUrl": "https://github.com/bakjedev/rusherNodusTheme/releases",
+      "releaseDate": "No releases",
+      "color": "green",
+      "description": "Nodus - Best theme evaAAAA. code is terrible. blame xyzbtw!"
     },
     {
       "name": "NBT Viewer",
       "url": "https://github.com/Gentleman2292/NBT-viewer",
-      "releaseUrl": "https://github.com/kybe236/rusherhack-remote-controle/releases",
+      "releaseUrl": "https://github.com/Gentleman2292/NBT-viewer/releases",
       "releaseDate": "October 26, 2023",
-      "color": "blue"
+      "color": "blue",
+      "description": "A plugin to view NBT data in Minecraft."
     },
     {
       "name": "Remote Control",
       "url": "https://github.com/kybe236/rusherhack-remote-controle",
-      "releaseUrl": "https://github.com/Lokfid/RusherHackSpeedMeasure/releases",
+      "releaseUrl": "https://github.com/kybe236/rusherhack-remote-controle/releases",
       "releaseDate": "July 19, 2024",
-      "color": "blue"
+      "color": "blue",
+      "description": "A plugin for remote controlling RusherHacks."
     },
     {
       "name": "Speed Measure",
       "url": "https://github.com/Lokfid/RusherHackSpeedMeasure",
-      "releaseUrl": "https://github.com/kybe236/rusher-tnt-bomber/releases",
+      "releaseUrl": "https://github.com/Lokfid/RusherHackSpeedMeasure/releases",
       "releaseDate": "May 22, 2024",
-      "color": "blue"
+      "color": "blue",
+      "description": "A plugin to measure speed in RusherHacks."
     },
     {
       "name": "TNT Bomber",
       "url": "https://github.com/kybe236/rusher-tnt-bomber",
-      "releaseUrl": "https://github.com/John200410/norender-entities/releases",
+      "releaseUrl": "https://github.com/kybe236/rusher-tnt-bomber/releases",
       "releaseDate": "July 09, 2024",
-      "color": "blue"
+      "color": "blue",
+      "description": "A plugin to automate TNT bombing in Minecraft."
     },
     {
       "name": "No Render Entities",
       "url": "https://github.com/John200410/norender-entities",
-      "releaseUrl": "https://github.com/Gentleman2292/rusherhack-messenger/releases",
+      "releaseUrl": "https://github.com/John200410/norender-entities/releases",
       "releaseDate": "November 20, 2023",
-      "color": "blue"
+      "color": "blue",
+      "description": "A plugin to disable rendering of entities."
     },
     {
       "name": "RusherHack Messenger",
       "url": "https://github.com/Gentleman2292/rusherhack-messenger",
       "releaseUrl": "https://github.com/Gentleman2292/rusherhack-messenger/releases",
       "releaseDate": "April 16, 2024",
-      "color": "blue"
+      "color": "blue",
+      "description": "A messaging plugin for RusherHacks."
     }
   ]
 }
