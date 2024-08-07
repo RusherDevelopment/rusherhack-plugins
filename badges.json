@@ -271,9 +271,14 @@
       "name": "Speed Measure",
       "url": "https://github.com/Lokfid/RusherHackSpeedMeasure",
       "releaseUrl": "https://github.com/Lokfid/RusherHackSpeedMeasure/releases",
-      "releaseDate": "May 22, 2024",
-      "color": "blue",
-      "description": "A plugin to measure speed in RusherHacks."
+      "releaseDate": "No releases",
+      "color": "red",
+      "description": "A plugin to measure speed in RusherHacks.",
+      "status": "broken",
+      "originalCreator": {
+        "name": "IceTank",
+        "url": "https://github.com/IceTank"
+      }
     },
     {
       "name": "TNT Bomber",
