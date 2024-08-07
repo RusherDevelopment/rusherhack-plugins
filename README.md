@@ -297,6 +297,15 @@ Allows you to throw windcharges with middle mouse button and also jump at the sa
 
 A RusherHacks Plugin - Crosshair Info - GarlicSight.
 
+<details>
+  <summary>Show Screenshots</summary>
+  <p align="center">
+    <img src="./Assets/GarlicSight/hudinfo.png" alt="blockinfo" border="0" width="250">
+    <img src="./Assets/GarlicSight/blockinfo.png" alt="hudinfo" border="0" width="300">
+    <img src="./Assets/GarlicSight/entityinfo.png" alt="entityinfo" border="0" width="300">
+  </p>
+</details>
+
 ---
 
 ### [LightningPop](https://github.com/GarlicRot/LightningPop) <br>
