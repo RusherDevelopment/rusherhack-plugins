@@ -316,6 +316,14 @@ A RusherHacks Plugin - Crosshair Info - GarlicSight.
 
 A RusherHacks Plugin - Spawns Lightning On Totem Pops And Player Deaths - LightningPop.
 
+
+<details>
+  <summary>Show Screenshots</summary>
+  <p align="center">
+    <img src="./Assets/LightningPop/Module.png" alt="LightningPop Module" border="0" width="250">
+  </p>
+</details>
+
 ---
 
 ### [AutoBucket](https://github.com/GarlicRot/AutoBucket) <br>
