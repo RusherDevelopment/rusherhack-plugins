@@ -5,7 +5,7 @@
 [![Pinned Plugins](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=$.pinnedPlugins.message&label=Pinned%20Plugins&color=green)](#plugins-list)
 [![Non-Pinned Plugins](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=$.nonPinnedPlugins.message&label=Non-Pinned%20Plugins&color=blue)](#non-pinned-plugins)
 [![Discord RH plugins-dev](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=$.discord.label&label=Discord&color=7289DA&logo=discord)](https://discord.com/channels/590970327870341143/1166486609479356516)
-[![RusherHacks v2.0.5](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=$.rusherHacks.message&label=RusherHacks&color=purple&logoSvg=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOsAAADqCAYAAABDVrJwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAnnSURBVHhe7d0xjx1XGcbxnRUkQUE4Ekj+AqvUqaCMBClooKKAzhJtOiLRuIGIloiI0kTuEBIVoqDhK7ijc0NppUIoQWEt38yxZq3rdx5rX58z98w8c/+/6E1GzsyZOTPz+Pgc390d3n/v6nDR2Te+OUxbfT297t7Vi48+/mTa2r9Hjx5NW/v39798Nm31czn9F8DGEVbABGEFTOTDehjne7GwP+WxxnLTow9l2aW2KjGyAiYIK2CCsAImCCtgIh/WYZwZx6rVYwFAKZccCy/bwz3q0Qf1DmerEiMrYIKwAiYIK2CCsAIm1glrjwUARU32l7yWJdvqQd2PrVvyemNbre1lVb4njKyACcIKmCCsgAnCCphYPqyVk+fVLLnIoNpS1aKlvXhcj2cVz1mqxZLXG9tqbS9L3ZPEdTCyAiYIK2CCsAImCCtgYvGwDuNkOdZM+bVYexUXDl6xeJDW0l7tcS3iOXud100iD4ysgAnCCpggrICJ4YPvv7vnGePqfvWbP0xbR9Qd38Fc7unTp9NWP7/99YfT1kLUcxDP6ztvvzFt9cPICpggrIAJwgqYIKyACcK6pOO/+L8pJbtf1s1fpB/XVmz52pQNXy9hBUwQVsAEYQVMEFbABGFd0lqLE7ULVi3Xq45VVXttmCGsgAnCCpggrIAJwgqYIKxZe1wkiX16nX6pY1WdE7XAtiDCCpggrIAJwgqYIKyACcKadcKFg9XEPu2lX2s58QIbYQVMEFbABGEFTBBWwARhPWcnXhDZFNVXVT1ULuwRVsAEYQVMEFbABGEFTAzfe+ed2fT2cJjPeOXce8jNyA/hx58Ph9PP5GUfLsV5n4nZveiXai/K3qNMW8+J30rVvZN9TZxX7ZMl+7Dw9SrpexeoZ39Qz14YRL8Oz6aNhWR6z8gKmCCsgAnCCpggrIAJucDUIrN4kF6cUJP45IJNZoHldWT6oBYJ6s+Y70P1fup+iLZkx5ILc2lhEbJQizipPijZaxPtqTOo1uR+LfckYGQFTBBWwARhBUwQVsBE0wJT7YJNy+S8ZYFFLmJVfpoqex1qwUIudrTspyTuibxedUqxmJRdOMm+I7XPOvscstehtPRVHqnai8eKfRhZAROEFTBBWAEThBUwkV5gapmgx98S0os66pzJxYPaBYsi01fZg4ZzSgv3f9Ze9joU8Ymjiw5f+piReX5F+jlsBCMrYIKwAiYIK2Bi+O6dO7M/4Ms/yS/45/umeVyD6rldEfZrmRfJY9Vvm+qrTqb/viR5jngtS96P5xr2E0fqawla+pA9Z/ZZK6oHmfOqczKyAiYIK2CCsAImCCtgQn8oQs3Ps195oSbjcT812Re/bbR8f+HsooA8Q6Zf2b4Laq/swoa855WWXjhR9yTbhzX6mm5fHCvvnBr6Kr+/sLo2RlbABGEFTBBWwARhBUws/m1d5KQ97pec2LcsgCjqBwxlv1Kk9lp+/+mn09YtVPPJ9Q/ls08+nrb6+de/P5+2jogFFtlV8U7I92v67wuZ963I7qck39e07PUFjKyACcIKmCCsgAnCCphYPKxlUSBWlNmnKFPuWFnq2PKDjmaVvZZhuLWaxIttbE46cfvy/pZfD9Vy72btDeMziyX2m/V9LL3f+D9iCfK9EaX2G//P/LwJjKyACcIKmCCsgAnCCphoCqtaKFB1cflylSl7rHHmPasy8Y6lyHOqEsqvxlLXEkstHHRRTp)](https://rusherhack.org/changelog.html)
+[![RusherHacks v2.0.5](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=$.rusherHacks.message&label=RusherHacks&color=purple)](https://rusherhack.org/changelog.html)
 <!-- TODO: Fix custom logo not showing up For RusherHacks-->
 
 
@@ -332,7 +332,7 @@ A RusherHacks Plugin - Auto Bucket Entities - AutoBucket
   <summary>Show Non Pinned Plugins</summary>
 
 ### [NBT Viewer](https://github.com/Gentleman2292/NBT-viewer) <br>
-![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[28].releaseDate&label=Latest%20Release&color=green) <br>
+![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[28].releaseDate&label=Latest%20Release&color=blue) <br>
 
 
 **Creator**: <img src="https://github.com/Gentleman2292.png?size=20" width="20" height="20"> [Gentleman2292](https://github.com/Gentleman2292)
@@ -342,7 +342,7 @@ A plugin to view NBT data in Minecraft.
 ---
 
 ### [Remote Control](https://github.com/kybe236/rusherhack-remote-controle) <br>
-![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[29].releaseDate&label=Latest%20Release&color=green) <br>
+![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[29].releaseDate&label=Latest%20Release&color=blue) <br>
 
 
 **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
@@ -352,7 +352,7 @@ A plugin for remote controlling RusherHacks.
 ---
 
 ### [Speed Measure](https://github.com/Lokfid/RusherHackSpeedMeasure) <br>
-![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[30].releaseDate&label=Latest%20Release&color=green) <br>
+![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[30].releaseDate&label=Latest%20Release&color=blue) <br>
 
 
 **Creator**: <img src="https://github.com/Lokfid.png?size=20" width="20" height="20"> [Lokfid](https://github.com/Lokfid)
@@ -362,7 +362,7 @@ A plugin to measure speed in RusherHacks.
 ---
 
 ### [TNT Bomber](https://github.com/kybe236/rusher-tnt-bomber) <br>
-![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[31].releaseDate&label=Latest%20Release&color=green) <br>
+![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[31].releaseDate&label=Latest%20Release&color=blue) <br>
 
 
 **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
@@ -372,7 +372,7 @@ A plugin to automate TNT bombing in Minecraft.
 ---
 
 ### [No Render Entities](https://github.com/John200410/norender-entities) <br>
-![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[32].releaseDate&label=Latest%20Release&color=green) <br>
+![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[32].releaseDate&label=Latest%20Release&color=blue) <br>
 
 
 **Creator**: <img src="https://github.com/John200410.png?size=20" width="20" height="20"> [John200410](https://github.com/John200410)
@@ -382,7 +382,7 @@ A plugin to disable rendering of entities.
 ---
 
 ### [RusherHack Messenger](https://github.com/Gentleman2292/rusherhack-messenger) <br>
-![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[33].releaseDate&label=Latest%20Release&color=green) <br>
+![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[33].releaseDate&label=Latest%20Release&color=blue) <br>
 
 
 **Creator**: <img src="https://github.com/Gentleman2292.png?size=20" width="20" height="20"> [Gentleman2292](https://github.com/Gentleman2292)
@@ -405,4 +405,4 @@ Here are some helpful resources and examples for developing RusherHacks plugins:
 
 ## Contribute
 
-If you have a RusherHacks plugin you'd like to add to this list, please submit a pull request with the plugin details! For more detailed instructions on how to contribute, please see our [Contributing Guide](./CONTRIBUTING.md).
+If you have a RusherHacks plugin you'd like to add to this list, please submit a pull request with the plugin details! For more detailed instructions on how to contribute, please see the [Contributing Guide](./CONTRIBUTING.md).
