@@ -23,105 +23,105 @@
       "name": "Example Plugin",
       "url": "https://github.com/RusherDevelopment/example-plugin",
       "releaseUrl": "https://github.com/rfresh2/2b2t.vc-rusherhack/releases",
-      "releaseDate": "July 15, 2024",
+      "releaseDate": "No releases",
       "color": "green"
     },
     {
       "name": "2b2t.vc Rusherhack",
       "url": "https://github.com/rfresh2/2b2t.vc-rusherhack",
       "releaseUrl": "https://github.com/Aspect-404/RusherHack-CustomHUDElement/releases",
-      "releaseDate": "November 03, 2023",
+      "releaseDate": "July 15, 2024",
       "color": "green"
     },
     {
       "name": "RusherHack Custom HUDElement",
       "url": "https://github.com/Aspect-404/RusherHack-CustomHUDElement",
       "releaseUrl": "https://github.com/IceTank/AutoAnvilRename/releases",
-      "releaseDate": "December 04, 2023",
+      "releaseDate": "November 03, 2023",
       "color": "green"
     },
     {
       "name": "Auto Anvil Rename",
       "url": "https://github.com/IceTank/AutoAnvilRename",
       "releaseUrl": "https://github.com/GabiRP/QueueManager/releases",
-      "releaseDate": "December 10, 2023",
+      "releaseDate": "December 04, 2023",
       "color": "green"
     },
     {
       "name": "Queue Manager",
       "url": "https://github.com/GabiRP/QueueManager",
       "releaseUrl": "https://github.com/John200410/rusherhack-instance-info/releases",
-      "releaseDate": "August 05, 2024",
+      "releaseDate": "December 10, 2023",
       "color": "green"
     },
     {
       "name": "RusherHack Instance Info",
       "url": "https://github.com/John200410/rusherhack-instance-info",
       "releaseUrl": "https://github.com/theoplegends/op-plugin/releases",
-      "releaseDate": "January 24, 2024",
+      "releaseDate": "August 05, 2024",
       "color": "green"
     },
     {
       "name": "OP Plugin",
       "url": "https://github.com/theoplegends/op-plugin",
       "releaseUrl": "https://github.com/xyzbtw/StashMoverPlugin/releases",
-      "releaseDate": "July 15, 2024",
+      "releaseDate": "January 24, 2024",
       "color": "green"
     },
     {
       "name": "Stash Mover Plugin",
       "url": "https://github.com/xyzbtw/StashMoverPlugin",
       "releaseUrl": "https://github.com/czho/unified-modulelist/releases",
-      "releaseDate": "No releases",
+      "releaseDate": "July 15, 2024",
       "color": "green"
     },
     {
       "name": "Unified Module List",
       "url": "https://github.com/czho/unified-modulelist",
       "releaseUrl": "https://github.com/rfresh2/ContainerTweaks-rusherhack/releases",
-      "releaseDate": "June 26, 2024",
+      "releaseDate": "No releases",
       "color": "green"
     },
     {
       "name": "Container Tweaks",
       "url": "https://github.com/rfresh2/ContainerTweaks-rusherhack",
       "releaseUrl": "https://github.com/John200410/rusherhack-spotify/releases",
-      "releaseDate": "July 29, 2024",
+      "releaseDate": "June 26, 2024",
       "color": "green"
     },
     {
       "name": "RusherHack Spotify Integration",
       "url": "https://github.com/John200410/rusherhack-spotify",
       "releaseUrl": "https://github.com/FBanna/Rusherhack-Vanilla-Efly/releases",
-      "releaseDate": "March 31, 2024",
+      "releaseDate": "July 29, 2024",
       "color": "green"
     },
     {
       "name": "Vanilla Elytra Flight",
       "url": "https://github.com/FBanna/Rusherhack-Vanilla-Efly",
       "releaseUrl": "https://github.com/xyzbtw/rusherGUI/releases",
-      "releaseDate": "April 26, 2024",
+      "releaseDate": "March 31, 2024",
       "color": "green"
     },
     {
       "name": "RusherGUI",
       "url": "https://github.com/xyzbtw/rusherGUI",
       "releaseUrl": "https://github.com/Aspect-404/Rusherhack-BookBot/releases",
-      "releaseDate": "April 27, 2024",
+      "releaseDate": "April 26, 2024",
       "color": "green"
     },
     {
       "name": "Rusherhack BookBot",
       "url": "https://github.com/Aspect-404/Rusherhack-BookBot",
       "releaseUrl": "https://github.com/ShayBox/ShaysRusherTweaks/releases",
-      "releaseDate": "July 06, 2024",
+      "releaseDate": "April 27, 2024",
       "color": "green"
     },
     {
       "name": "Shay's RusherTweaks",
       "url": "https://github.com/ShayBox/ShaysRusherTweaks",
       "releaseUrl": "https://github.com/beanbag44/Nuker/releases",
-      "releaseDate": "June 02, 2024",
+      "releaseDate": "July 06, 2024",
       "color": "green"
     },
     {
@@ -135,126 +135,126 @@
       "name": "Hold Rusher",
       "url": "https://github.com/cherosin/hold-rusher",
       "releaseUrl": "https://github.com/Eonexe/NoWalkAnimation/releases",
-      "releaseDate": "June 26, 2024",
+      "releaseDate": "June 02, 2024",
       "color": "green"
     },
     {
       "name": "No Walk Animation",
       "url": "https://github.com/Eonexe/NoWalkAnimation",
       "releaseUrl": "https://github.com/kybe236/rusherhack-nbt-utils/releases",
-      "releaseDate": "July 06, 2024",
+      "releaseDate": "June 26, 2024",
       "color": "green"
     },
     {
       "name": "NBT Utils",
       "url": "https://github.com/kybe236/rusherhack-nbt-utils",
       "releaseUrl": "https://github.com/kybe236/rusherhack-executer/releases",
-      "releaseDate": "July 15, 2024",
+      "releaseDate": "July 06, 2024",
       "color": "green"
     },
     {
       "name": "Rusherhack Executer",
       "url": "https://github.com/kybe236/rusherhack-executer",
       "releaseUrl": "https://github.com/Doogie13/f3-spoof/releases",
-      "releaseDate": "No releases",
+      "releaseDate": "July 15, 2024",
       "color": "green"
     },
     {
       "name": "F3 Spoof",
       "url": "https://github.com/Doogie13/f3-spoof",
       "releaseUrl": "https://github.com/kybe236/rusherhack-open-folder/releases",
-      "releaseDate": "July 23, 2024",
+      "releaseDate": "No releases",
       "color": "green"
     },
     {
       "name": "Open Folder",
       "url": "https://github.com/kybe236/rusherhack-open-folder",
       "releaseUrl": "https://github.com/kybe236/rusherhack-mace-kill/releases",
-      "releaseDate": "July 22, 2024",
+      "releaseDate": "July 23, 2024",
       "color": "green"
     },
     {
       "name": "Mace Kill",
       "url": "https://github.com/kybe236/rusherhack-mace-kill",
       "releaseUrl": "https://github.com/Lokfid/WeatherChangingPlugin/releases",
-      "releaseDate": "July 24, 2024",
+      "releaseDate": "July 22, 2024",
       "color": "green"
     },
     {
       "name": "Weather Changing Plugin",
       "url": "https://github.com/Lokfid/WeatherChangingPlugin",
       "releaseUrl": "https://github.com/kybe236/rusherhack-middleclick-wind-charge/releases",
-      "releaseDate": "July 26, 2024",
+      "releaseDate": "July 24, 2024",
       "color": "green"
     },
     {
       "name": "Middleclick Wind Charge",
       "url": "https://github.com/kybe236/rusherhack-middleclick-wind-charge",
       "releaseUrl": "https://github.com/GarlicRot/GarlicSight/releases",
-      "releaseDate": "July 29, 2024",
+      "releaseDate": "July 26, 2024",
       "color": "green"
     },
     {
       "name": "GarlicSight",
       "url": "https://github.com/GarlicRot/GarlicSight",
       "releaseUrl": "https://github.com/GarlicRot/LightningPop/releases",
-      "releaseDate": "July 30, 2024",
+      "releaseDate": "July 29, 2024",
       "color": "green"
     },
     {
       "name": "LightningPop",
       "url": "https://github.com/GarlicRot/LightningPop",
       "releaseUrl": "https://github.com/GarlicRot/AutoBucket/releases",
-      "releaseDate": "August 05, 2024",
+      "releaseDate": "July 30, 2024",
       "color": "green"
     },
     {
       "name": "AutoBucket",
       "url": "https://github.com/GarlicRot/AutoBucket",
       "releaseUrl": "https://github.com/Gentleman2292/NBT-viewer/releases",
-      "releaseDate": "October 26, 2023",
+      "releaseDate": "August 05, 2024",
       "color": "green"
     },
     {
       "name": "NBT Viewer",
       "url": "https://github.com/Gentleman2292/NBT-viewer",
       "releaseUrl": "https://github.com/kybe236/rusherhack-remote-controle/releases",
-      "releaseDate": "July 19, 2024",
+      "releaseDate": "October 26, 2023",
       "color": "blue"
     },
     {
       "name": "Remote Control",
       "url": "https://github.com/kybe236/rusherhack-remote-controle",
       "releaseUrl": "https://github.com/Lokfid/RusherHackSpeedMeasure/releases",
-      "releaseDate": "May 22, 2024",
+      "releaseDate": "July 19, 2024",
       "color": "blue"
     },
     {
       "name": "Speed Measure",
       "url": "https://github.com/Lokfid/RusherHackSpeedMeasure",
       "releaseUrl": "https://github.com/kybe236/rusher-tnt-bomber/releases",
-      "releaseDate": "July 09, 2024",
+      "releaseDate": "May 22, 2024",
       "color": "blue"
     },
     {
       "name": "TNT Bomber",
       "url": "https://github.com/kybe236/rusher-tnt-bomber",
       "releaseUrl": "https://github.com/John200410/norender-entities/releases",
-      "releaseDate": "November 20, 2023",
+      "releaseDate": "July 09, 2024",
       "color": "blue"
     },
     {
       "name": "No Render Entities",
       "url": "https://github.com/John200410/norender-entities",
       "releaseUrl": "https://github.com/Gentleman2292/rusherhack-messenger/releases",
-      "releaseDate": "April 16, 2024",
+      "releaseDate": "November 20, 2023",
       "color": "blue"
     },
     {
       "name": "RusherHack Messenger",
       "url": "https://github.com/Gentleman2292/rusherhack-messenger",
       "releaseUrl": "https://github.com/Gentleman2292/rusherhack-messenger/releases",
-      "releaseDate": "04/16/2024",
+      "releaseDate": "April 16, 2024",
       "color": "blue"
     }
   ]
