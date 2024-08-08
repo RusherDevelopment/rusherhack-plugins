@@ -271,10 +271,9 @@
       "name": "Speed Measure",
       "url": "https://github.com/Lokfid/RusherHackSpeedMeasure",
       "releaseUrl": "https://github.com/Lokfid/RusherHackSpeedMeasure/releases",
-      "releaseDate": "No releases",
+      "releaseDate": "Broken",
       "color": "red",
       "description": "A plugin to measure speed in RusherHacks.",
-      "status": "broken",
       "originalCreator": {
         "name": "IceTank",
         "url": "https://github.com/IceTank"
