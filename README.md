@@ -60,6 +60,14 @@ A basic example plugin demonstrating the structure and capabilities of RusherHac
 
 A RusherHacks plugin designed for 2b2t.vc server use.
 
+<details>
+  <summary>Show Screenshots</summary>
+  <p align="center">
+    <img src="./Assets/2b2t.vc Rusherhack/HudSettings.png" alt="Hud Settings" border="0" width="250">
+    <img src="./Assets/2b2t.vc Rusherhack/HudDisplay.png" alt="Hud Display w/2b2t Queue" border="0" width="550">
+  </p>
+</details>
+
 ---
 
 ### [RusherHack Custom HUDElement](https://github.com/Aspect-404/RusherHack-CustomHUDElement) <br>
@@ -148,6 +156,13 @@ Rusherhack HUD element that shows active modules from both meteorclient and rush
 **Creator**: <img src="https://github.com/rfresh2.png?size=20" width="20" height="20"> [rfresh2](https://github.com/rfresh2)
 
 Simple tweaks for quickly moving items in containers.
+
+<details>
+  <summary>Show Screenshots</summary>
+  <p align="center">
+    <img src="./Assets/ContainerTweaks/ModuleSettings.png" alt="Module Settings" border="0" width="250">
+  </p>
+</details>
 
 ---
 
