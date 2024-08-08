@@ -95,7 +95,7 @@
       "name": "Container Tweaks",
       "url": "https://github.com/rfresh2/ContainerTweaks-rusherhack",
       "releaseUrl": "https://github.com/rfresh2/ContainerTweaks-rusherhack/releases",
-      "releaseDate": "June 26, 2024",
+      "releaseDate": "June 25, 2024",
       "color": "green",
       "description": "Simple tweaks for quickly moving items in containers."
     },
@@ -103,7 +103,7 @@
       "name": "RusherHack Spotify Integration",
       "url": "https://github.com/John200410/rusherhack-spotify",
       "releaseUrl": "https://github.com/John200410/rusherhack-spotify/releases",
-      "releaseDate": "July 29, 2024",
+      "releaseDate": "July 28, 2024",
       "color": "green",
       "description": "Integrates Spotify music playback controls and status into the RusherHacks client."
     },
@@ -119,7 +119,7 @@
       "name": "RusherGUI",
       "url": "https://github.com/xyzbtw/rusherGUI",
       "releaseUrl": "https://github.com/xyzbtw/rusherGUI/releases",
-      "releaseDate": "April 26, 2024",
+      "releaseDate": "May 29, 2024",
       "color": "green",
       "description": "Rusherhack GUI example plugin."
     },
@@ -143,7 +143,7 @@
       "name": "Nuker",
       "url": "https://github.com/beanbag44/Nuker",
       "releaseUrl": "https://github.com/beanbag44/Nuker/releases",
-      "releaseDate": "June 02, 2024",
+      "releaseDate": "June 01, 2024",
       "color": "green",
       "description": "Epic nuker for nuking terrain."
     },
@@ -151,7 +151,7 @@
       "name": "Hold Rusher",
       "url": "https://github.com/cherosin/hold-rusher",
       "releaseUrl": "https://github.com/cherosin/hold-rusher/releases",
-      "releaseDate": "June 02, 2024",
+      "releaseDate": "June 01, 2024",
       "color": "green",
       "description": "Adds a \"Hold\" flag for all modules, if active keybind will only be toggled while held."
     },
@@ -223,7 +223,7 @@
       "name": "GarlicSight",
       "url": "https://github.com/GarlicRot/GarlicSight",
       "releaseUrl": "https://github.com/GarlicRot/GarlicSight/releases",
-      "releaseDate": "July 29, 2024",
+      "releaseDate": "July 28, 2024",
       "color": "green",
       "description": "A RusherHacks Plugin - Crosshair Info - GarlicSight."
     },
@@ -231,7 +231,7 @@
       "name": "LightningPop",
       "url": "https://github.com/GarlicRot/LightningPop",
       "releaseUrl": "https://github.com/GarlicRot/LightningPop/releases",
-      "releaseDate": "July 30, 2024",
+      "releaseDate": "July 29, 2024",
       "color": "green",
       "description": "A RusherHacks Plugin - Spawns Lightning On Totem Pops And Player Deaths - LightningPop."
     },
