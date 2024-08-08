@@ -420,7 +420,7 @@ Nodus - Best theme evaAAAA. code is terrible. blame xyzbtw!
 
 ### [NBT Viewer](https://github.com/Gentleman2292/NBT-viewer) <br>
 
-[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[0].releaseDate&label=Latest%20Release&color=orange)](https://github.com/Gentleman2292/NBT-viewer/releases) <br>
+[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[29].releaseDate&label=Latest%20Release&color=orange)](https://github.com/Gentleman2292/NBT-viewer/releases) <br>
 
 **Creator**: <img src="https://github.com/Gentleman2292.png?size=20" width="20" height="20"> [Gentleman2292](https://github.com/Gentleman2292)
 
@@ -437,7 +437,7 @@ A plugin to view NBT data in Minecraft.
 
 ### [Remote Control](https://github.com/kybe236/rusherhack-remote-controle) <br>
 
-[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[1].releaseDate&label=Latest%20Release&color=blue)](https://github.com/kybe236/rusherhack-remote-controle/releases) <br>
+[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[30].releaseDate&label=Latest%20Release&color=blue)](https://github.com/kybe236/rusherhack-remote-controle/releases) <br>
 
 **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
 
@@ -447,7 +447,7 @@ A plugin for remote controlling RusherHacks.
 
 ### [Speed Measure](https://github.com/Lokfid/RusherHackSpeedMeasure) <br>
 
-[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[2].releaseDate&label=Latest%20Release&color=red&link=https://github.com/Lokfid/RusherHackSpeedMeasure/releases)](https://github.com/Lokfid/RusherHackSpeedMeasure/releases) <br>
+[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[31].releaseDate&label=Latest%20Release&color=red&link=https://github.com/Lokfid/RusherHackSpeedMeasure/releases)](https://github.com/Lokfid/RusherHackSpeedMeasure/releases) <br>
 
 **Creator**: <img src="https://github.com/Lokfid.png?size=20" width="20" height="20"> [Lokfid](https://github.com/Lokfid)
 
@@ -459,7 +459,7 @@ A plugin to measure speed in RusherHacks.
 
 ### [TNT Bomber](https://github.com/kybe236/rusher-tnt-bomber) <br>
 
-[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[3].releaseDate&label=Latest%20Release&color=blue)](https://github.com/kybe236/rusher-tnt-bomber/releases) <br>
+[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[32].releaseDate&label=Latest%20Release&color=blue)](https://github.com/kybe236/rusher-tnt-bomber/releases) <br>
 
 **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
 
@@ -469,7 +469,7 @@ A plugin to automate TNT bombing in Minecraft.
 
 ### [No Render Entities](https://github.com/John200410/norender-entities) <br>
 
-[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[4].releaseDate&label=Latest%20Release&color=blue)](https://github.com/John200410/norender-entities/releases) <br>
+[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[33].releaseDate&label=Latest%20Release&color=blue)](https://github.com/John200410/norender-entities/releases) <br>
 
 **Creator**: <img src="https://github.com/John200410.png?size=20" width="20" height="20"> [John200410](https://github.com/John200410)
 
@@ -479,7 +479,7 @@ A plugin to disable rendering of entities.
 
 ### [RusherHack Messenger](https://github.com/Gentleman2292/rusherhack-messenger) <br>
 
-[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[5].releaseDate&label=Latest%20Release&color=blue)](https://github.com/Gentleman2292/rusherhack-messenger/releases) <br>
+[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[34].releaseDate&label=Latest%20Release&color=blue)](https://github.com/Gentleman2292/rusherhack-messenger/releases) <br>
 
 **Creator**: <img src="https://github.com/Gentleman2292.png?size=20" width="20" height="20"> [Gentleman2292](https://github.com/Gentleman2292)
 
