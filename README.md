@@ -451,7 +451,6 @@ A plugin for remote controlling RusherHacks.
 
 **Creator**: <img src="https://github.com/Lokfid.png?size=20" width="20" height="20"> [Lokfid](https://github.com/Lokfid)
 
-Status: **Broken** <br>
 A plugin to measure speed in RusherHacks.
 
 **Original Creator**: <img src="https://github.com/IceTank.png?size=20" width="20" height="20"> [IceTank](https://github.com/IceTank)
