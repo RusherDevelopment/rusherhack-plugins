@@ -420,7 +420,7 @@ Nodus - Best theme evaAAAA. code is terrible. blame xyzbtw!
 
 ### [NBT Viewer](https://github.com/Gentleman2292/NBT-viewer) <br>
 
-[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[29].releaseDate&label=Latest%20Release&color=orange)](https://github.com/Gentleman2292/NBT-viewer/releases) <br>
+[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[29].releaseDate&label=Latest%20Release&color=blue)](https://github.com/Gentleman2292/NBT-viewer/releases) <br>
 
 **Creator**: <img src="https://github.com/Gentleman2292.png?size=20" width="20" height="20"> [Gentleman2292](https://github.com/Gentleman2292)
 
