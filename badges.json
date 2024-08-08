@@ -18,7 +18,7 @@
     "color": "blue",
     "logoSvg": ""
   },
-  "plugins": [
+  "pinnedPluginsData": [
     {
       "name": "Example Plugin",
       "url": "https://github.com/RusherDevelopment/example-plugin",
@@ -250,7 +250,9 @@
       "releaseDate": "August 07, 2024",
       "color": "green",
       "description": "Nodus - Best theme evaAAAA. code is terrible. blame xyzbtw!"
-    },
+    }
+  ],
+  "nonPinnedPluginsData": [
     {
       "name": "NBT Viewer",
       "url": "https://github.com/Gentleman2292/NBT-viewer",
