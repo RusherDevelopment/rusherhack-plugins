@@ -7,15 +7,15 @@ Your contributions are what make this project great.
 
 1. **Fork the repository**  
    Click the "Fork" button on the top right of the repository page to create a copy of this repository on your GitHub account.  
-   <img src="https://github.com/GarlicRot/RusherHacks-Plugin-Collection/blob/main/Assets/Fork.png" alt="Fork Button" width="125">  
+   <img src="./Assets/Contributing/Fork.png" alt="Fork Button" width="125">
 
 2. **Clone the repository**  
    Clone the forked repository to your local machine.  
-   <img src="https://github.com/GarlicRot/RusherHacks-Plugin-Collection/blob/main/Assets/Clone.jpg" alt="Clone Button" width="250">  
+   <img src="./Assets/Contributing/Clone.jpg" alt="Clone Button" width="250">
 
 3. **Create a new branch**  
    Create a new branch for your contribution.  
-   <img src="https://github.com/GarlicRot/RusherHacks-Plugin-Collection/blob/main/Assets/NewBranch.png" alt="Create Branch" width="100">  
+   <img src="./Assets/Contributing/NewBranch.png" alt="Create Branch" width="100">
 
 4. **Make changes**  
    Make your changes to the codebase. Ensure your code follows the existing style and conventions.
@@ -28,9 +28,9 @@ Your contributions are what make this project great.
 
 7. **Open a pull request**  
    Open a pull request to the main repository. Go to the "Pull Requests" tab on the main repository. <br>
-   <img src="https://github.com/GarlicRot/RusherHacks-Plugin-Collection/blob/main/Assets/PullRequestsTab.png" alt="Pull Request Tab" width="150"> <br>
+   <img src="./Assets/Contributing/PullRequestsTab.png" alt="Pull Request Tab" width="150"> <br>
    Click "New Pull Request". <br>
-   <img src="https://github.com/GarlicRot/RusherHacks-Plugin-Collection/blob/main/Assets/NewPullRequest.png" alt="New Pull Request" width="150"> 
+   <img src="./Assets/Contributing/NewPullRequest.png" alt="New Pull Request" width="150">
 
 8. **Describe your changes**  
    Clearly describe the changes you have made and any relevant context in the pull request description.
@@ -52,7 +52,8 @@ A brief description of the plugin and its functionality.
   <summary>Explanation of INDEX</summary>
   The `INDEX` in the URL for the badge is the position of the plugin in the `badges.json` file. This index is used to retrieve the latest release date for the specific plugin from the JSON data. Make sure to replace `INDEX` with the appropriate number that corresponds to the plugin's position in the `badges.json` file. The first plugin in the list would have an `INDEX` of 0, the second would have an `INDEX` of 1, and so on.
 
-  For example, if your plugin is the third plugin in the `badges.json` file, you would replace `INDEX` with `2`.
+For example, if your plugin is the third plugin in the `badges.json` file, you would replace `INDEX` with `2`.
+
 </details>
 
 ---

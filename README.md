@@ -13,7 +13,7 @@ A list of plugins developed by various creators. This list is ordered from oldes
 
 - [Installation](#installation)
 - [Plugins List](#plugins-list)
-- [Non Pinned Plugins](#non-pinned-plugins)
+- [Non-Pinned Plugins](#non-pinned-plugins)
 - [Plugin Examples/Info](#plugin-examplesinfo)
 - [Contribute](#contribute)
 
@@ -26,12 +26,13 @@ A list of plugins developed by various creators. This list is ordered from oldes
 > 1. **Enable Plugins**: Add the JVM flag `-Drusherhack.enablePlugins=true` to your RusherHacks startup options.
 >
 > 2. **Install Plugins**:
+>
 >    - Download the desired plugin `.jar` files.
 >    - Place them in the `.minecraft/rusherhack/plugins/` directory. You may need to create this folder if it does not exist.
 >
 > 3. **Reload Plugins**: Use the `*reload` command within RusherHacks to reload plugins.
 >
-> — John200410 **RusherHacks Owner*
+> — John200410 \*_RusherHacks Owner_
 
 ## Plugins List
 
@@ -39,9 +40,11 @@ A list of plugins developed by various creators. This list is ordered from oldes
 <details>
   <summary>Show Plugins List</summary>
 
+---
+
 ### [Example Plugin](https://github.com/RusherDevelopment/example-plugin) <br>
 
-[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[0].releaseDate&label=Latest%20Release&color=green)](https://github.com/RusherDevelopment/example-plugin/releases) <br>
+[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[0].releaseDate&label=Latest%20Release&color=orange)](https://github.com/RusherDevelopment/example-plugin/releases) <br>
 
 **Creator**: <img src="https://github.com/RusherDevelopment.png?size=20" width="20" height="20"> [RusherDevelopment](https://github.com/RusherDevelopment)
 
@@ -117,11 +120,20 @@ Current features: Autopearl, JakeOrganCrash, HoleEscape, PaperCrash, TrapESP.
 
 A plugin to move stashes using pearls.
 
+<details>
+  <summary>Show Screenshots</summary>
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=gfnNFyRQavA">
+    <img src="https://img.youtube.com/vi/gfnNFyRQavA/0.jpg" alt="Stash Mover Demo">
+  </a>
+</p>
+</details>
+
 ---
 
 ### [Unified Module List](https://github.com/czho/unified-modulelist) <br>
 
-[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[8].releaseDate&label=Latest%20Release&color=green)](https://github.com/czho/unified-modulelist/releases) <br>
+[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[8].releaseDate&label=Latest%20Release&color=orange)](https://github.com/czho/unified-modulelist/releases) <br>
 
 **Creator**: <img src="https://github.com/czho.png?size=20" width="20" height="20"> [czho](https://github.com/czho)
 
@@ -197,6 +209,15 @@ A collection of small tweaks and improvements for the RusherHacks client.
 
 Epic nuker for nuking terrain.
 
+<details>
+  <summary>Show Screenshots</summary>
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=JUhgqLYdONs">
+    <img src="https://img.youtube.com/vi/JUhgqLYdONs/0.jpg" alt="Nuker Demo">
+  </a>
+</p>
+</details>
+
 ---
 
 ### [Hold Rusher](https://github.com/cherosin/hold-rusher) <br>
@@ -241,7 +262,7 @@ Executes commands and resolves `<player>` to every player online.
 
 ### [F3 Spoof](https://github.com/Doogie13/f3-spoof) <br>
 
-[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[20].releaseDate&label=Latest%20Release&color=green)](https://github.com/Doogie13/f3-spoof/releases) <br>
+[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[20].releaseDate&label=Latest%20Release&color=orange)](https://github.com/Doogie13/f3-spoof/releases) <br>
 
 **Creator**: <img src="https://github.com/Doogie13.png?size=20" width="20" height="20"> [Doogie13](https://github.com/Doogie13)
 
@@ -257,6 +278,15 @@ Spoofs the F3 debug screen information.
 
 Opens the folder for the module with a button click.
 
+<details>
+  <summary>Show Screenshots</summary>
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=m_O0ruTdto8">
+    <img src="https://img.youtube.com/vi/m_O0ruTdto8/0.jpg" alt="Open Folder Demo">
+  </a>
+</p>
+</details>
+
 ---
 
 ### [Mace Kill](https://github.com/kybe236/rusherhack-mace-kill) <br>
@@ -266,6 +296,15 @@ Opens the folder for the module with a button click.
 **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
 
 One shot pretty much all mobs with a mace.
+
+<details>
+  <summary>Show Screenshots</summary>
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=seP5OqcnFT4">
+    <img src="https://img.youtube.com/vi/seP5OqcnFT4/0.jpg" alt="Mace Kill Demo">
+  </a>
+</p>
+</details>
 
 ---
 
@@ -285,7 +324,16 @@ Allows players to change the weather in-game.
 
 **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
 
-Allows you to throw windcharges with middle mouse button and also jump at the same time so you can boost jump.
+Allows you to throw windcharges with the middle mouse button and also jump at the same time so you can boost jump.
+
+<details>
+  <summary>Show Screenshots</summary>
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=kaFZWN27RaY">
+    <img src="https://img.youtube.com/vi/kaFZWN27RaY/0.jpg" alt="Middleclick Wind Charge Demo">
+  </a>
+</p>
+</details>
 
 ---
 
@@ -316,7 +364,6 @@ A RusherHacks Plugin - Crosshair Info - GarlicSight.
 
 A RusherHacks Plugin - Spawns Lightning On Totem Pops And Player Deaths - LightningPop.
 
-
 <details>
   <summary>Show Screenshots</summary>
   <p align="center">
@@ -334,6 +381,13 @@ A RusherHacks Plugin - Spawns Lightning On Totem Pops And Player Deaths - Lightn
 
 A RusherHacks Plugin - Auto Bucket Entities - AutoBucket.
 
+<details>
+  <summary>Show Screenshots</summary>
+  <p align="center">
+    <img src="./Assets/AutoBucket/module.png" alt="AutoBucket Module" border="0" width="250">
+  </p>
+</details>
+
 ---
 
 ### [rusherNodusTheme](https://github.com/bakjedev/rusherNodusTheme) <br>
@@ -343,6 +397,13 @@ A RusherHacks Plugin - Auto Bucket Entities - AutoBucket.
 **Creator**: <img src="https://github.com/bakjedev.png?size=20" width="20" height="20"> [bakjedev](https://github.com/bakjedev)
 
 Nodus - Best theme evaAAAA. code is terrible. blame xyzbtw!
+
+<details>
+  <summary>Show Screenshots</summary>
+  <p align="center">
+    <img src="./Assets/rusherNodusTheme/NodusGUI.png" alt="AutoBucket Module" border="0" width="750">
+  </p>
+</details>
 
 ---
 
@@ -355,13 +416,22 @@ Nodus - Best theme evaAAAA. code is terrible. blame xyzbtw!
 <details>
   <summary>Show Plugins List</summary>
 
+---
+
 ### [NBT Viewer](https://github.com/Gentleman2292/NBT-viewer) <br>
 
-[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[0].releaseDate&label=Latest%20Release&color=blue)](https://github.com/Gentleman2292/NBT-viewer/releases) <br>
+[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[0].releaseDate&label=Latest%20Release&color=orange)](https://github.com/Gentleman2292/NBT-viewer/releases) <br>
 
 **Creator**: <img src="https://github.com/Gentleman2292.png?size=20" width="20" height="20"> [Gentleman2292](https://github.com/Gentleman2292)
 
 A plugin to view NBT data in Minecraft.
+
+<details>
+  <summary>Show Screenshots</summary>
+  <p align="center">
+    <img src="./Assets/NBT-viewer/NBT-viewer.png" alt="NBT-viewer" border="0" width="750">
+  </p>
+</details>
 
 ---
 
@@ -376,10 +446,10 @@ A plugin for remote controlling RusherHacks.
 ---
 
 ### [Speed Measure](https://github.com/Lokfid/RusherHackSpeedMeasure) <br>
+
 [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[1].releaseDate&label=Latest%20Release&color=red&link=https://github.com/Lokfid/RusherHackSpeedMeasure/releases)](https://github.com/Lokfid/RusherHackSpeedMeasure/releases) <br>
 
 **Creator**: <img src="https://github.com/Lokfid.png?size=20" width="20" height="20"> [Lokfid](https://github.com/Lokfid)
-
 
 Status: **Broken** <br>
 A plugin to measure speed in RusherHacks.
@@ -415,6 +485,15 @@ A plugin to disable rendering of entities.
 **Creator**: <img src="https://github.com/Gentleman2292.png?size=20" width="20" height="20"> [Gentleman2292](https://github.com/Gentleman2292)
 
 A messaging plugin for RusherHacks.
+
+<details>
+  <summary>Show Screenshots</summary>
+<p align="center">
+  <a href="https://rusherhack.org/i/14z9f6ewlu.mp4">
+    <img src="./Assets/rusherhack-messenger/rusherhack-messenger-demo.jpg" alt="rusherhack-messenger Demo">
+  </a>
+</p>
+</details>
 
 ---
 
