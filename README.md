@@ -1,4 +1,4 @@
-![RusherHacks Logo](https://raw.githubusercontent.com/RusherDevelopment/example-plugin/master/src/main/resources/exampleplugin/graphics/rh_head.png)
+![RusherHacks Logo](./Assets/RusherHacks/rh_head.png)
 
 # RusherHacks Plugin Collection
 
