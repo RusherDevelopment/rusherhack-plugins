@@ -252,6 +252,14 @@
       "description": "Nodus - Best theme evaAAAA. code is terrible. blame xyzbtw!"
     },
     {
+      "name": "nhack Theme",
+      "url": "https://github.com/h1tm4nqq/Nhack-theme",
+      "releaseUrl": "https://github.com/h1tm4nqq/Nhack-theme/releases",
+      "releaseDate": "In Development",
+      "color": "yellow",
+      "description": "A theme like Nhack 2015 for rh"
+    },
+    {
       "name": "NBT Viewer",
       "url": "https://github.com/Gentleman2292/NBT-viewer",
       "releaseUrl": "https://github.com/Gentleman2292/NBT-viewer/releases",
@@ -277,7 +285,7 @@
       "originalCreator": {
         "name": "IceTank",
         "url": "https://github.com/IceTank"
-      }
+    }
     },
     {
       "name": "TNT Bomber",
