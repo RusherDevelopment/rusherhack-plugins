@@ -5,7 +5,7 @@
     "color": "green"
   },
   "nonPinnedPlugins": {
-    "message": "6",
+    "message": "7",
     "color": "blue"
   },
   "discord": {
@@ -313,6 +313,14 @@
       "releaseDate": "April 16, 2024",
       "color": "blue",
       "description": "A messaging plugin for RusherHacks."
+    },
+    {
+      "name": "RusherHack Instance Info (Fork)",
+      "url": "https://github.com/GarlicRot/rusherhack-instance-info",
+      "releaseUrl": "https://github.com/GarlicRot/rusherhack-instance-info/releases",
+      "releaseDate": "August 11, 2024",
+      "color": "blue",
+      "description": "Forked version with additional features."
     }
   ]
 }
