@@ -154,7 +154,7 @@ Current features: Autopearl, JakeOrganCrash, HoleEscape, PaperCrash, TrapESP.
 A plugin to move stashes using pearls.
 
 <details>
-  <summary>Show Screenshots</summary>
+  <summary>Show Screenshots/Videos</summary>
 <p align="center">
   <a href="https://www.youtube.com/watch?v=gfnNFyRQavA">
     <img src="https://img.youtube.com/vi/gfnNFyRQavA/0.jpg" alt="Stash Mover Demo">
@@ -258,7 +258,7 @@ A collection of small tweaks and improvements for the RusherHacks client.
 Epic nuker for nuking terrain.
 
 <details>
-  <summary>Show Screenshots</summary>
+  <summary>Show Screenshots/Videos</summary>
 <p align="center">
   <a href="https://www.youtube.com/watch?v=JUhgqLYdONs">
     <img src="https://img.youtube.com/vi/JUhgqLYdONs/0.jpg" alt="Nuker Demo">
@@ -327,7 +327,7 @@ Spoofs the F3 debug screen information.
 Opens the folder for the module with a button click.
 
 <details>
-  <summary>Show Screenshots</summary>
+  <summary>Show Screenshots/Videos</summary>
 <p align="center">
   <a href="https://www.youtube.com/watch?v=m_O0ruTdto8">
     <img src="https://img.youtube.com/vi/m_O0ruTdto8/0.jpg" alt="Open Folder Demo">
@@ -346,7 +346,7 @@ Opens the folder for the module with a button click.
 One shot pretty much all mobs with a mace.
 
 <details>
-  <summary>Show Screenshots</summary>
+  <summary>Show Screenshots/Videos</summary>
 <p align="center">
   <a href="https://www.youtube.com/watch?v=seP5OqcnFT4">
     <img src="https://img.youtube.com/vi/seP5OqcnFT4/0.jpg" alt="Mace Kill Demo">
@@ -375,7 +375,7 @@ Allows players to change the weather in-game.
 Allows you to throw windcharges with the middle mouse button and also jump at the same time so you can boost jump.
 
 <details>
-  <summary>Show Screenshots</summary>
+  <summary>Show Screenshots/Videos</summary>
 <p align="center">
   <a href="https://www.youtube.com/watch?v=kaFZWN27RaY">
     <img src="https://img.youtube.com/vi/kaFZWN27RaY/0.jpg" alt="Middleclick Wind Charge Demo">
@@ -465,6 +465,25 @@ A theme like Nhack 2015 for rh
 
 ---
 
+### [RusherHack-BoatExecute](https://github.com/PhilipPanda/RusherHack-BoatExecute) <br>
+
+[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[30].releaseDate&label=Latest%20Release&color=green)](https://github.com/PhilipPanda/RusherHack-BoatExecute/releases) <br>
+
+**Creator**: <img src="https://github.com/PhilipPanda.png?size=20" width="20" height="20"> [PhilipPanda](https://github.com/PhilipPanda)
+
+A RusherHack module plugin for 1.20.4 that exploits boat movement packets to instantly kill all passengers.
+
+<details>
+  <summary>Show Screenshots/Videos</summary>
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=h35gKz9ZQK4&t=31s">
+    <img src="https://img.youtube.com/vi/h35gKz9ZQK4/0.jpg" alt="BoatExecute Demo">
+  </a>
+</p>
+</details>
+
+---
+
 <!-- END PLUGINS LIST -->
 </details>
 
@@ -478,7 +497,7 @@ A theme like Nhack 2015 for rh
 
 ### [NBT Viewer](https://github.com/Gentleman2292/NBT-viewer) <br>
 
-[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[30].releaseDate&label=Latest%20Release&color=blue)](https://github.com/Gentleman2292/NBT-viewer/releases) <br>
+[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[31].releaseDate&label=Latest%20Release&color=blue)](https://github.com/Gentleman2292/NBT-viewer/releases) <br>
 
 **Creator**: <img src="https://github.com/Gentleman2292.png?size=20" width="20" height="20"> [Gentleman2292](https://github.com/Gentleman2292)
 
@@ -495,7 +514,7 @@ A plugin to view NBT data in Minecraft.
 
 ### [Remote Control](https://github.com/kybe236/rusherhack-remote-controle) <br>
 
-[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[31].releaseDate&label=Latest%20Release&color=blue)](https://github.com/kybe236/rusherhack-remote-controle/releases) <br>
+[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[32].releaseDate&label=Latest%20Release&color=blue)](https://github.com/kybe236/rusherhack-remote-controle/releases) <br>
 
 **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
 
@@ -505,7 +524,7 @@ A plugin for remote controlling RusherHacks.
 
 ### [Speed Measure](https://github.com/Lokfid/RusherHackSpeedMeasure) <br>
 
-[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[32].releaseDate&label=Latest%20Release&color=red&link=https://github.com/Lokfid/RusherHackSpeedMeasure/releases)](https://github.com/Lokfid/RusherHackSpeedMeasure/releases) <br>
+[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[33].releaseDate&label=Latest%20Release&color=red&link=https://github.com/Lokfid/RusherHackSpeedMeasure/releases)](https://github.com/Lokfid/RusherHackSpeedMeasure/releases) <br>
 
 **Creator**: <img src="https://github.com/Lokfid.png?size=20" width="20" height="20"> [Lokfid](https://github.com/Lokfid)
 
@@ -517,7 +536,7 @@ A plugin to measure speed in RusherHacks.
 
 ### [TNT Bomber](https://github.com/kybe236/rusher-tnt-bomber) <br>
 
-[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[33].releaseDate&label=Latest%20Release&color=blue)](https://github.com/kybe236/rusher-tnt-bomber/releases) <br>
+[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[34].releaseDate&label=Latest%20Release&color=blue)](https://github.com/kybe236/rusher-tnt-bomber/releases) <br>
 
 **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
 
@@ -527,7 +546,7 @@ A plugin to automate TNT bombing in Minecraft.
 
 ### [No Render Entities](https://github.com/John200410/norender-entities) <br>
 
-[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[34].releaseDate&label=Latest%20Release&color=blue)](https://github.com/John200410/norender-entities/releases) <br>
+[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[35].releaseDate&label=Latest%20Release&color=blue)](https://github.com/John200410/norender-entities/releases) <br>
 
 **Creator**: <img src="https://github.com/John200410.png?size=20" width="20" height="20"> [John200410](https://github.com/John200410)
 
@@ -537,14 +556,14 @@ A plugin to disable rendering of entities.
 
 ### [RusherHack Messenger](https://github.com/Gentleman2292/rusherhack-messenger) <br>
 
-[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[35].releaseDate&label=Latest%20Release&color=blue)](https://github.com/Gentleman2292/rusherhack-messenger/releases) <br>
+[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[36].releaseDate&label=Latest%20Release&color=blue)](https://github.com/Gentleman2292/rusherhack-messenger/releases) <br>
 
 **Creator**: <img src="https://github.com/Gentleman2292.png?size=20" width="20" height="20"> [Gentleman2292](https://github.com/Gentleman2292)
 
 A messaging plugin for RusherHacks.
 
 <details>
-  <summary>Show Screenshots</summary>
+  <summary>Show Screenshots/Videos</summary>
 <p align="center">
   <a href="https://rusherhack.org/i/14z9f6ewlu.mp4">
     <img src="./Assets/rusherhack-messenger/rusherhack-messenger-demo.jpg" alt="rusherhack-messenger Demo">
