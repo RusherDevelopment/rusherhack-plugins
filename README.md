@@ -573,6 +573,25 @@ A messaging plugin for RusherHacks.
 
 ---
 
+### [RusherHack Instance Info (Fork)](https://github.com/GarlicRot/rusherhack-instance-info) <br>
+
+[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[37].releaseDate&label=Latest%20Release&color=blue)](https://github.com/GarlicRot/rusherhack-instance-info/releases) <br>
+
+**Creator**: <img src="https://github.com/GarlicRot.png?size=20" width="20" height="20"> [GarlicRot](https://github.com/GarlicRot)
+
+A forked version of the [original plugin](https://github.com/John200410/rusherhack-instance-info) with custom settings.
+
+<details>
+  <summary>Show Screenshots</summary>
+  <p align="center">
+    <img src="./Assets/rusherhack-instance-info-fork/Module.png" alt="Module" border="0" width="350">
+    <img src="./Assets/rusherhack-instance-info-fork/PlayerHead.png" alt="Player Head Info" border="0" width="250">
+    <img src="./Assets/rusherhack-instance-info-fork/WindowInfo.png" alt="Player Head Info" border="0" width="550">
+  </p>
+</details>
+
+---
+
 <!-- END NON-PINNED PLUGINS LIST -->
 </details>
 
