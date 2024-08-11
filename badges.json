@@ -255,6 +255,14 @@
       "description": "A theme like Nhack 2015 for rh"
     },
     {
+      "name": "RusherHack-BoatExecute",
+      "url": "https://github.com/PhilipPanda/RusherHack-BoatExecute",
+      "releaseUrl": "https://github.com/PhilipPanda/RusherHack-BoatExecute/releases",
+      "releaseDate": "August 11, 2024",
+      "color": "green",
+      "description": "A RusherHack module plugin for 1.20.4 that exploits boat movement packets to instantly kill all passengers."
+    },
+    {
       "name": "NBT Viewer",
       "url": "https://github.com/Gentleman2292/NBT-viewer",
       "releaseUrl": "https://github.com/Gentleman2292/NBT-viewer/releases",
