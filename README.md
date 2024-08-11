@@ -63,7 +63,7 @@ A RusherHacks plugin designed for 2b2t.vc server use.
 <details>
   <summary>Show Screenshots</summary>
   <p align="center">
-    <img src="./Assets/2b2t.vc Rusherhack/HudSettings.png" alt="Hud Settings" border="0" width="250">
+    <img src="./Assets/2b2t.vc Rusherhack/HudSettings.png" alt="Hud Setting" border="0" width="250">
     <img src="./Assets/2b2t.vc Rusherhack/HudDisplay.png" alt="Hud Display w/2b2t Queue" border="0" width="550">
   </p>
 </details>
@@ -78,6 +78,14 @@ A RusherHacks plugin designed for 2b2t.vc server use.
 
 Make a customizable text HUD element for Minecraft utility mod RusherHack.
 
+<details>
+  <summary>Show Screenshots</summary>
+  <p align="center">
+    <img src="./Assets/RusherHack-CustomHUDElement/HudSettings.png" alt="Hud Setting" border="0" width="250">
+    <img src="./Assets/RusherHack-CustomHUDElement/HudElement.png" alt="Hud Element" border="0" width="550">
+  </p>
+</details>
+
 ---
 
 ### [Auto Anvil Rename](https://github.com/IceTank/AutoAnvilRename) <br>
@@ -87,6 +95,14 @@ Make a customizable text HUD element for Minecraft utility mod RusherHack.
 **Creator**: <img src="https://github.com/IceTank.png?size=20" width="20" height="20"> [IceTank](https://github.com/IceTank)
 
 Automates the renaming process in anvils.
+
+<details>
+  <summary>Show Screenshots</summary>
+  <p align="center">
+    <img src="./Assets/AutoAnvilRename/Module.png" alt="Module" border="0" width="250">
+    <img src="./Assets/AutoAnvilRename/ModuleInfo.png" alt="Module Info" border="0" width="450">
+  </p>
+</details>
 
 ---
 
@@ -107,6 +123,15 @@ Manages queue positions and notifies users of their status.
 **Creator**: <img src="https://github.com/John200410.png?size=20" width="20" height="20"> [John200410](https://github.com/John200410)
 
 Provides detailed information about the current instance.
+
+<details>
+  <summary>Show Screenshots</summary>
+  <p align="center">
+    <img src="./Assets/rusherhack-instance-info/Module.png" alt="Module" border="0" width="350">
+    <img src="./Assets/rusherhack-instance-info/PlayerHead.png" alt="Player Head Info" border="0" width="250">
+    <img src="./Assets/rusherhack-instance-info/WindowInfo.png" alt="Player Head Info" border="0" width="550">
+  </p>
+</details>
 
 ---
 
@@ -160,7 +185,7 @@ Simple tweaks for quickly moving items in containers.
 <details>
   <summary>Show Screenshots</summary>
   <p align="center">
-    <img src="./Assets/ContainerTweaks/ModuleSettings.png" alt="Module Settings" border="0" width="250">
+    <img src="./Assets/ContainerTweaks/ModuleSettings.png" alt="Module" border="0" width="250">
   </p>
 </details>
 
@@ -173,6 +198,14 @@ Simple tweaks for quickly moving items in containers.
 **Creator**: <img src="https://github.com/John200410.png?size=20" width="20" height="20"> [John200410](https://github.com/John200410)
 
 Integrates Spotify music playback controls and status into the RusherHacks client.
+
+<details>
+  <summary>Show Screenshots</summary>
+  <p align="center">
+    <img src="./Assets/spotify/Module.png" alt="Module" border="0" width="250">
+    <img src="./Assets/spotify/HudElement.png" alt="Spotify Hud Element" border="0" width="450">
+  </p>
+</details>
 
 ---
 
@@ -363,9 +396,9 @@ A RusherHacks Plugin - Crosshair Info - GarlicSight.
 <details>
   <summary>Show Screenshots</summary>
   <p align="center">
-    <img src="./Assets/GarlicSight/hudinfo.png" alt="blockinfo" border="0" width="250">
-    <img src="./Assets/GarlicSight/blockinfo.png" alt="hudinfo" border="0" width="300">
-    <img src="./Assets/GarlicSight/entityinfo.png" alt="entityinfo" border="0" width="300">
+    <img src="./Assets/GarlicSight/hudinfo.png" alt="Hud Element" border="0" width="250">
+    <img src="./Assets/GarlicSight/blockinfo.png" alt="Block Info" border="0" width="300">
+    <img src="./Assets/GarlicSight/entityinfo.png" alt="Entity Info" border="0" width="300">
   </p>
 </details>
 
@@ -382,7 +415,7 @@ A RusherHacks Plugin - Spawns Lightning On Totem Pops And Player Deaths - Lightn
 <details>
   <summary>Show Screenshots</summary>
   <p align="center">
-    <img src="./Assets/LightningPop/Module.png" alt="LightningPop Module" border="0" width="250">
+    <img src="./Assets/LightningPop/Module.png" alt="Module" border="0" width="250">
   </p>
 </details>
 
@@ -399,7 +432,7 @@ A RusherHacks Plugin - Auto Bucket Entities - AutoBucket.
 <details>
   <summary>Show Screenshots</summary>
   <p align="center">
-    <img src="./Assets/AutoBucket/module.png" alt="AutoBucket Module" border="0" width="250">
+    <img src="./Assets/AutoBucket/module.png" alt="Module" border="0" width="250">
   </p>
 </details>
 
@@ -416,7 +449,7 @@ Nodus - Best theme evaAAAA. code is terrible. blame xyzbtw!
 <details>
   <summary>Show Screenshots</summary>
   <p align="center">
-    <img src="./Assets/rusherNodusTheme/NodusGUI.png" alt="AutoBucket Module" border="0" width="750">
+    <img src="./Assets/rusherNodusTheme/NodusGUI.png" alt="Module" border="0" width="750">
   </p>
 </details>
 
@@ -435,7 +468,7 @@ A theme like Nhack 2015 for rh
 <!-- END PLUGINS LIST -->
 </details>
 
-## Non Pinned Plugins
+## Non-Pinned Plugins
 
 <!-- START NON-PINNED PLUGINS LIST -->
 <details>
