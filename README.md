@@ -529,7 +529,7 @@ A plugin for remote controlling RusherHacks.
 
 ### [Speed Measure](https://github.com/Lokfid/RusherHackSpeedMeasure) <br>
 
-[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[33].releaseDate&label=Latest%20Release&color=green&link=https://github.com/Lokfid/RusherHackSpeedMeasure/releases)](https://github.com/Lokfid/RusherHackSpeedMeasure/releases) ![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/Lokfid/RusherHackSpeedMeasure/total)<br>
+[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgarlicrot.github.io%2FRusherHacks-Plugin-Collection%2Fbadges.json&query=%24.plugins[33].releaseDate&label=Latest%20Release&color=blue&link=https://github.com/Lokfid/RusherHackSpeedMeasure/releases)](https://github.com/Lokfid/RusherHackSpeedMeasure/releases) ![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/Lokfid/RusherHackSpeedMeasure/total)<br>
 
 **Creator**: <img src="https://github.com/Lokfid.png?size=20" width="20" height="20"> [Lokfid](https://github.com/Lokfid)
 
