@@ -606,7 +606,7 @@ Here are some helpful resources and examples for developing RusherHacks plugins:
 
 - [Example Plugin](https://github.com/RusherDevelopment/example-plugin): A basic example plugin demonstrating the structure and capabilities of RusherHacks plugins.
 - [RusherGUI](https://github.com/xyzbtw/rusherGUI): An example plugin showcasing a custom GUI integration with RusherHacks.
-- [RusherHacks API Javadocs](javadocs.rusherhack.org): The official API documentation for RusherHacks, provides detailed information on available classes, methods, and usage.
+- [RusherHacks API Javadocs](https://javadocs.rusherhack.org): The official API documentation for RusherHacks, provides detailed information on available classes, methods, and usage.
 
 ## Contribute
 
