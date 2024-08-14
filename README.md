@@ -601,6 +601,26 @@ A forked version of the [original plugin](https://github.com/John200410/rusherha
 
 ---
 
+### [RusherHack NoteBot](https://github.com/Lokfid/RusherHackNoteBot) <br>
+
+[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[38].releaseDate&label=Latest%20Release&color=green)](https://github.com/Lokfid/RusherHackNoteBot/releases) ![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/Lokfid/RusherHackNoteBot/total)<br>
+
+**Creator**: <img src="https://github.com/Lokfid.png?size=20" width="20" height="20"> [Lokfid](https://github.com/Lokfid)
+
+A RusherHacks plugin for playing note blocks in Minecraft.
+
+---
+
+### [ShulkerViewer](https://github.com/xyzbtw/ShulkerViewer) <br>
+
+[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[39].releaseDate&label=Latest%20Release&color=green)](https://github.com/xyzbtw/ShulkerViewer/releases) ![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/xyzbtw/ShulkerViewer/total)<br>
+
+**Creator**: <img src="https://github.com/xyzbtw.png?size=20" width="20" height="20"> [xyzbtw](https://github.com/xyzbtw)
+
+A RusherHacks plugin to view the contents of Shulker boxes in the inventory.
+
+---
+
 <!-- END PLUGINS LIST -->
 </details>
 
