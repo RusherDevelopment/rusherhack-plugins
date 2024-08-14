@@ -333,6 +333,14 @@
       "releaseDate": "August 13, 2024",
       "color": "green",
       "description": "A RusherHacks plugin to view the contents of Shulker boxes in the inventory."
+    },
+    {
+      "name": "RusherWebPlugin",
+      "url": "https://github.com/Lokfid/RusherWebPlugin",
+      "releaseUrl": "https://github.com/Lokfid/RusherWebPlugin/releases",
+      "releaseDate": "In Development ",
+      "color": "green",
+      "description": "Web Browser for rh"
     }
   ]
 }
