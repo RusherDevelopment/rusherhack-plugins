@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "plugins": {
-    "message": "38",
+  "totalPlugins": {
+    "message": "40",
     "color": "green"
   },
   "discord": {
