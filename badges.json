@@ -1,12 +1,8 @@
 {
   "schemaVersion": 1,
-  "pinnedPlugins": {
-    "message": "31",
+  "plugins": {
+    "message": "38",
     "color": "green"
-  },
-  "nonPinnedPlugins": {
-    "message": "7",
-    "color": "blue"
   },
   "discord": {
     "label": "RH plugins-dev",
@@ -212,7 +208,7 @@
       "releaseUrl": "https://github.com/kybe236/rusherhack-middleclick-wind-charge/releases",
       "releaseDate": "July 26, 2024",
       "color": "green",
-      "description": "Allows you to throw windcharges with middle mouse button and also jump at the same time so you can boost jump."
+      "description": "Allows you to throw windcharges with the middle mouse button and also jump at the same time so you can boost jump."
     },
     {
       "name": "GarlicSight",
@@ -267,7 +263,7 @@
       "url": "https://github.com/Gentleman2292/NBT-viewer",
       "releaseUrl": "https://github.com/Gentleman2292/NBT-viewer/releases",
       "releaseDate": "October 26, 2023",
-      "color": "blue",
+      "color": "green",
       "description": "A plugin to view NBT data in Minecraft."
     },
     {
@@ -275,7 +271,7 @@
       "url": "https://github.com/kybe236/rusherhack-remote-controle",
       "releaseUrl": "https://github.com/kybe236/rusherhack-remote-controle/releases",
       "releaseDate": "July 19, 2024",
-      "color": "blue",
+      "color": "green",
       "description": "A plugin for remote controlling RusherHacks."
     },
     {
@@ -283,7 +279,7 @@
       "url": "https://github.com/Lokfid/RusherHackSpeedMeasure",
       "releaseUrl": "https://github.com/Lokfid/RusherHackSpeedMeasure/releases",
       "releaseDate": "August 12, 2024",
-      "color": "blue",
+      "color": "green",
       "description": "A plugin to measure speed in RusherHacks.",
       "originalCreator": {
         "name": "IceTank",
@@ -295,7 +291,7 @@
       "url": "https://github.com/kybe236/rusher-tnt-bomber",
       "releaseUrl": "https://github.com/kybe236/rusher-tnt-bomber/releases",
       "releaseDate": "July 09, 2024",
-      "color": "blue",
+      "color": "green",
       "description": "A plugin to automate TNT bombing in Minecraft."
     },
     {
@@ -303,7 +299,7 @@
       "url": "https://github.com/John200410/norender-entities",
       "releaseUrl": "https://github.com/John200410/norender-entities/releases",
       "releaseDate": "November 20, 2023",
-      "color": "blue",
+      "color": "green",
       "description": "A plugin to disable rendering of entities."
     },
     {
@@ -311,7 +307,7 @@
       "url": "https://github.com/Gentleman2292/rusherhack-messenger",
       "releaseUrl": "https://github.com/Gentleman2292/rusherhack-messenger/releases",
       "releaseDate": "April 16, 2024",
-      "color": "blue",
+      "color": "green",
       "description": "A messaging plugin for RusherHacks."
     },
     {
@@ -319,8 +315,24 @@
       "url": "https://github.com/GarlicRot/rusherhack-instance-info",
       "releaseUrl": "https://github.com/GarlicRot/rusherhack-instance-info/releases",
       "releaseDate": "August 11, 2024",
-      "color": "blue",
+      "color": "green",
       "description": "Forked version with additional features."
+    },
+    {
+      "name": "RusherHack NoteBot",
+      "url": "https://github.com/Lokfid/RusherHackNoteBot",
+      "releaseUrl": "https://github.com/Lokfid/RusherHackNoteBot/releases",
+      "releaseDate": "August 13, 2024",
+      "color": "green",
+      "description": "A RusherHacks plugin for playing note blocks in Minecraft."
+    },
+    {
+      "name": "ShulkerViewer",
+      "url": "https://github.com/xyzbtw/ShulkerViewer",
+      "releaseUrl": "https://github.com/xyzbtw/ShulkerViewer/releases",
+      "releaseDate": "August 13, 2024",
+      "color": "green",
+      "description": "A RusherHacks plugin to view the contents of Shulker boxes in the inventory."
     }
   ]
 }
