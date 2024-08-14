@@ -37,8 +37,6 @@ Installing plugins:
 Plugins in the plugins folder will be loaded on startup. 
 You can reload and load new plugins while in-game by using the `*reload` command
 
----
-
 ## Plugin Examples/Info
 
 Here are some helpful resources and examples for developing RusherHack plugins:
@@ -47,15 +45,9 @@ Here are some helpful resources and examples for developing RusherHack plugins:
 - [RusherGUI](https://github.com/xyzbtw/rusherGUI): An example plugin showcasing a custom theme with RusherHack.
 - [RusherHack API Javadocs](https://javadocs.rusherhack.org): The official documentation for RusherHack's API, provides detailed information on available classes, methods, and usage.
 
----
-
 ## Plugins List
 
 <!-- START PLUGINS LIST -->
-<details>
-  <summary>Show Plugins List</summary>
-
----
 
 ### [Example Plugin](https://github.com/RusherDevelopment/example-plugin) <br>
 
@@ -625,15 +617,11 @@ A RusherHacks plugin to view the contents of Shulker boxes in the inventory.
 
 [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[40].releaseDate&label=Latest%20Release&color=yellow)](https://github.com/Lokfid/RusherWebPlugin/releases) ![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/Lokfid/RusherWebPlugin/total)<br>
 
-**Creator**: <img src="https://github.com/xyzbtw.png?size=20" width="20" height="20"> [xyzbtw](https://github.com/Lokfid)
+**Creator**: <img src="https://github.com/Lokfid.png?size=20" width="20" height="20"> [Lokfid](https://github.com/Lokfid)
 
 Web Browser for rh.
 
----
-
 <!-- END PLUGINS LIST -->
-</details>
-
 
 ## Contribute
 
