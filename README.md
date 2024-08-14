@@ -621,6 +621,16 @@ A RusherHacks plugin to view the contents of Shulker boxes in the inventory.
 
 ---
 
+### [RusherWebPlugin](https://github.com/Lokfid/RusherWebPlugin) <br>
+
+[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[40].releaseDate&label=Latest%20Release&color=yellow)](https://github.com/Lokfid/RusherWebPlugin/releases) ![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/Lokfid/RusherWebPlugin/total)<br>
+
+**Creator**: <img src="https://github.com/xyzbtw.png?size=20" width="20" height="20"> [xyzbtw](https://github.com/Lokfid)
+
+Web Browser for rh.
+
+---
+
 <!-- END PLUGINS LIST -->
 </details>
 
