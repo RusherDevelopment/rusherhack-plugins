@@ -615,11 +615,21 @@ A RusherHacks plugin to view the contents of Shulker boxes in the inventory.
 
 ### [RusherWebPlugin](https://github.com/Lokfid/RusherWebPlugin) <br>
 
-[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[40].releaseDate&label=Latest%20Release&color=yellow)](https://github.com/Lokfid/RusherWebPlugin/releases) ![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/Lokfid/RusherWebPlugin/total)<br>
+[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[40].releaseDate&label=Latest%20Release&color=green)](https://github.com/Lokfid/RusherWebPlugin/releases) ![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/Lokfid/RusherWebPlugin/total)<br>
 
 **Creator**: <img src="https://github.com/Lokfid.png?size=20" width="20" height="20"> [Lokfid](https://github.com/Lokfid)
 
 Web Browser for rh.
+
+---
+
+### [RHP Plugin](https://github.com/kybe236/rhp) <br>
+
+[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[41].releaseDate&label=Latest%20Release&color=green)](https://github.com/kybe236/rhp/releases) ![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/kybe236/rhp/total)<br>
+
+**Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
+
+Installs Rusherhack plugin for you and sets the needed flags.
 
 <!-- END PLUGINS LIST -->
 
