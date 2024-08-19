@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "totalPlugins": {
-    "message": "41",
+    "message": "42",
     "color": "green"
   },
   "discord": {
@@ -341,6 +341,14 @@
       "releaseDate": "In Development ",
       "color": "green",
       "description": "Web Browser for rh"
-    }
+    },
+    {
+      "name": "RHP Plugin",
+      "url": "https://github.com/kybe236/rhp",
+      "releaseUrl": "https://github.com/kybe236/rhp/releases",
+      "releaseDate": "August 19, 2024",
+      "color": "green",
+      "description": "Installs Rusherhack plugins for you and sets the needed flags."
+     }
   ]
 }
