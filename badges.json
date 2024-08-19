@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "totalPlugins": {
-    "message": "42",
+    "message": "41",  
     "color": "green"
   },
   "discord": {
@@ -9,6 +9,16 @@
     "color": "7289DA",
     "logo": "discord"
   },
+  "devTools": [
+    {
+      "name": "RHP Plugin",
+      "url": "https://github.com/kybe236/rhp",
+      "releaseUrl": "https://github.com/kybe236/rhp/releases",
+      "releaseDate": "August 19, 2024",
+      "color": "green",
+      "description": "Installs Rusherhack plugins for you and sets the needed flags."
+    }
+  ],
   "plugins": [
     {
       "name": "Example Plugin",
@@ -341,14 +351,6 @@
       "releaseDate": "August 19, 2024",
       "color": "green",
       "description": "Web Browser for rh"
-    },
-    {
-      "name": "RHP Plugin",
-      "url": "https://github.com/kybe236/rhp",
-      "releaseUrl": "https://github.com/kybe236/rhp/releases",
-      "releaseDate": "August 19, 2024",
-      "color": "green",
-      "description": "Installs Rusherhack plugins for you and sets the needed flags."
-     }
+    }
   ]
 }
