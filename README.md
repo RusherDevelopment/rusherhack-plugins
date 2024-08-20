@@ -638,6 +638,16 @@ A RusherHacks plugin to view the contents of Shulker boxes in the inventory.
 
 Web Browser for rh.
 
+---
+
+### [UpdatedNCPEfly](https://github.com/xyzbtw/UpdatedNCPEfly) <br>
+
+[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[41].releaseDate&label=Latest%20Release&color=green)](https://github.com/xyzbtw/UpdatedNCPEfly/releases) ![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/xyzbtw/UpdatedNCPEfly/total)<br>
+
+**Creator**: <img src="https://github.com/xyzbtw.png?size=20" width="20" height="20"> [xyzbtw](https://github.com/xyzbtw)
+
+A plugin for an updated version of NCPEfly.
+
 <!-- END PLUGINS LIST -->
 
 ## Contribute
