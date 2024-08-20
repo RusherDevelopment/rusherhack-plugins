@@ -60,6 +60,14 @@ These tools can assist in managing and developing RusherHack plugins:
 
 ## Plugins List
 
+<details>
+  <summary>Badge Info</summary>
+  
+  - **Latest Release Date**: Clicking on this badge will take you to the releases page for the plugin.
+  - **Downloads Badge**: Clicking on the downloads badge will directly download the latest version of the plugin.
+  
+</details>
+
 <!-- START PLUGINS LIST -->
 
 ### [Example Plugin](https://github.com/RusherDevelopment/example-plugin) <br>
