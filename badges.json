@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "totalPlugins": {
-    "message": "42",  
+    "message": "42",
     "color": "green"
   },
   "discord": {
@@ -14,7 +14,7 @@
       "name": "RHP Plugin",
       "url": "https://github.com/kybe236/rhp",
       "releaseUrl": "https://github.com/kybe236/rhp/releases",
-      "releaseDate": "August 20, 2024",
+      "releaseDate": "August 21, 2024",
       "color": "green",
       "description": "Installs Rusherhack plugins for you and sets the needed flags."
     }
@@ -80,7 +80,7 @@
       "name": "Stash Mover Plugin",
       "url": "https://github.com/xyzbtw/StashMoverPlugin",
       "releaseUrl": "https://github.com/xyzbtw/StashMoverPlugin/releases",
-      "releaseDate": "July 15, 2024",
+      "releaseDate": "August 21, 2024",
       "color": "green",
       "description": "A plugin to move stashes using pearls."
     },
@@ -96,7 +96,7 @@
       "name": "Container Tweaks",
       "url": "https://github.com/rfresh2/ContainerTweaks-rusherhack",
       "releaseUrl": "https://github.com/rfresh2/ContainerTweaks-rusherhack/releases",
-      "releaseDate": "June 25, 2024",
+      "releaseDate": "June 26, 2024",
       "color": "green",
       "description": "Simple tweaks for quickly moving items in containers."
     },
@@ -104,7 +104,7 @@
       "name": "RusherHack Spotify Integration",
       "url": "https://github.com/John200410/rusherhack-spotify",
       "releaseUrl": "https://github.com/John200410/rusherhack-spotify/releases",
-      "releaseDate": "July 28, 2024",
+      "releaseDate": "July 29, 2024",
       "color": "green",
       "description": "Integrates Spotify music playback controls and status into the RusherHacks client."
     },
@@ -144,7 +144,7 @@
       "name": "Nuker",
       "url": "https://github.com/beanbag44/Nuker",
       "releaseUrl": "https://github.com/beanbag44/Nuker/releases",
-      "releaseDate": "June 01, 2024",
+      "releaseDate": "June 02, 2024",
       "color": "green",
       "description": "Epic nuker for nuking terrain."
     },
@@ -152,7 +152,7 @@
       "name": "Hold Rusher",
       "url": "https://github.com/cherosin/hold-rusher",
       "releaseUrl": "https://github.com/cherosin/hold-rusher/releases",
-      "releaseDate": "June 01, 2024",
+      "releaseDate": "June 02, 2024",
       "color": "green",
       "description": "Adds a \"Hold\" flag for all modules, if active keybind will only be toggled while held."
     },
@@ -224,7 +224,7 @@
       "name": "GarlicSight",
       "url": "https://github.com/GarlicRot/GarlicSight",
       "releaseUrl": "https://github.com/GarlicRot/GarlicSight/releases",
-      "releaseDate": "July 28, 2024",
+      "releaseDate": "July 29, 2024",
       "color": "green",
       "description": "A RusherHacks Plugin - Crosshair Info - GarlicSight."
     },
@@ -232,7 +232,7 @@
       "name": "LightningPop",
       "url": "https://github.com/GarlicRot/LightningPop",
       "releaseUrl": "https://github.com/GarlicRot/LightningPop/releases",
-      "releaseDate": "August 08, 2024",
+      "releaseDate": "August 09, 2024",
       "color": "green",
       "description": "A RusherHacks Plugin - Spawns Lightning On Totem Pops And Player Deaths - LightningPop."
     },
@@ -240,7 +240,7 @@
       "name": "AutoBucket",
       "url": "https://github.com/GarlicRot/AutoBucket",
       "releaseUrl": "https://github.com/GarlicRot/AutoBucket/releases",
-      "releaseDate": "August 11, 2024",
+      "releaseDate": "August 22, 2024",
       "color": "green",
       "description": "A RusherHacks Plugin - Auto Bucket Entities - AutoBucket."
     },
@@ -256,7 +256,7 @@
       "name": "nhack Theme",
       "url": "https://github.com/h1tm4nqq/Nhack-theme",
       "releaseUrl": "https://github.com/h1tm4nqq/Nhack-theme/releases",
-      "releaseDate": "In Development",
+      "releaseDate": "August 18, 2024",
       "color": "yellow",
       "description": "A theme like Nhack 2015 for rh"
     },
@@ -294,7 +294,7 @@
       "originalCreator": {
         "name": "IceTank",
         "url": "https://github.com/IceTank"
-    }
+      }
     },
     {
       "name": "TNT Bomber",
@@ -340,7 +340,7 @@
       "name": "ShulkerViewer",
       "url": "https://github.com/xyzbtw/ShulkerViewer",
       "releaseUrl": "https://github.com/xyzbtw/ShulkerViewer/releases",
-      "releaseDate": "August 13, 2024",
+      "releaseDate": "August 14, 2024",
       "color": "green",
       "description": "A RusherHacks plugin to view the contents of Shulker boxes in the inventory."
     },
@@ -359,6 +359,6 @@
       "releaseDate": "No releases",
       "color": "green",
       "description": "A plugin for an updated version of NCPEfly."
-     }
+    }
   ]
 }
