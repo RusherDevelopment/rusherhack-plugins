@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "totalPlugins": {
-    "message": "42",
+    "message": "43",
     "color": "green"
   },
   "discord": {
@@ -359,6 +359,14 @@
       "releaseDate": "No releases",
       "color": "green",
       "description": "A plugin for an updated version of NCPEfly."
+    },
+    {
+      "name": "dc-chat-logger",
+      "url": "https://github.com/kybe236/dc-chat-logger",
+      "releaseUrl": "https://github.com/kybe236/dc-chat-logger/releases",
+      "releaseDate": "August 22, 2024",
+      "color": "green",
+      "description": "A plugin for logging Discord chat messages."
     }
   ]
 }
