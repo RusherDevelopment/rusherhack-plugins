@@ -648,6 +648,16 @@ Web Browser for rh.
 
 A plugin for an updated version of NCPEfly.
 
+---
+
+### [dc-chat-logger](https://github.com/kybe236/dc-chat-logger) <br>
+
+[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[43].releaseDate&label=Latest%20Release&color=green)](https://github.com/kybe236/dc-chat-logger/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/kybe236/dc-chat-logger/total)](https://github.com/kybe236/dc-chat-logger/releases/download/1.0.0/dc-chat-logger-1.0.0.jar)<br>
+
+**Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
+
+A plugin for logging Discord chat messages.
+
 <!-- END PLUGINS LIST -->
 
 ## Contribute
