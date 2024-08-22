@@ -8,8 +8,8 @@
 
 A collection of third-party plugins developed by various developers.
 
-### WARNING: None of the plugins here have been verified or are confirmed to be safe. Use at your own risk!
-### NOTICE: The plugins listed here are not affiliated with Rusher Development LLC.
+### ⚠️ WARNING: None of the plugins here have been verified or are confirmed to be safe. Use at your own risk!
+### ❗ NOTICE: The plugins listed here are not affiliated with Rusher Development LLC.
 
 ## Table of Contents
 
@@ -17,6 +17,7 @@ A collection of third-party plugins developed by various developers.
 - [Plugin Examples/Info](#plugin-examplesinfo)
 - [Dev Tools](#dev-tools)
 - [Plugins List](#plugins-list)
+- [Reporting Issues](#reporting-issues)
 - [Contribute](#contribute)
 
 ## Installation
@@ -25,7 +26,7 @@ A collection of third-party plugins developed by various developers.
 
 *Eventually in rusherhack v2.1 there will be an in-game plugin manager and repository for verified plugins.
 
-**WARNING: DO NOT ENABLE PLUGINS IF YOU DO NOT KNOW WHAT YOU ARE DOING.**
+**⚠️ WARNING: DO NOT ENABLE PLUGINS IF YOU DO NOT KNOW WHAT YOU ARE DOING.**
 
 Enabling plugins in rusherhack 2.0:
 - Add the JVM flag `-Drusherhack.enablePlugins=true` to the game's JVM arguments.
@@ -659,6 +660,10 @@ A plugin for an updated version of NCPEfly.
 A plugin for logging Discord chat messages.
 
 <!-- END PLUGINS LIST -->
+
+## Reporting Issues
+
+If you encounter issues with any of the plugins listed here, please contact the plugin's creator or open an issue in their respective repository.
 
 ## Contribute
 
