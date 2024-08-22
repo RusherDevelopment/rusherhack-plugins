@@ -659,7 +659,7 @@ A plugin for an updated version of NCPEfly.
 
 **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
 
-A plugin for logging Discord chat messages.
+A plugin for logging chat messages to discord.
 
 <!-- END PLUGINS LIST -->
 
