@@ -40,7 +40,7 @@ Your contributions are what make this project great.
   - LATEST_VERSION: The version number of your latest release
   - SCREENSHOT1.png, SCREENSHOT2.png: The filenames of your screenshot images
   - SCREENSHOT1_DESCRIPTION, SCREENSHOT2_DESCRIPTION: Brief descriptions of your screenshots
-  - LATEST_RELEASE_DATE: The date of your latest release in the format "YYYY-MM-DD"
+  - LATEST_RELEASE_DATE: The date of your latest release in the format "MM-DD-YYY"
 </details>
 
 ### README.md without Screenshots
