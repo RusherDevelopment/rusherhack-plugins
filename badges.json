@@ -14,7 +14,7 @@
       "name": "RHP Plugin",
       "url": "https://github.com/kybe236/rhp",
       "releaseUrl": "https://github.com/kybe236/rhp/releases",
-      "releaseDate": "August 21, 2024",
+      "releaseDate": "August 24, 2024",
       "color": "green",
       "description": "Installs Rusherhack plugins for you and sets the needed flags."
     }
