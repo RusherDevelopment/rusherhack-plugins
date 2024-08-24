@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "totalPlugins": {
-    "message": "43",
+    "message": "44",
     "color": "green"
   },
   "discord": {
@@ -367,6 +367,14 @@
       "releaseDate": "August 22, 2024",
       "color": "green",
       "description": "A plugin for logging Discord chat messages."
+    },
+    {
+      "name": "rusherhack-nightvision-plugin",
+      "url": "https://github.com/John200410/rusherhack-nightvision-plugin",
+      "releaseUrl": "https://github.com/John200410/rusherhack-nightvision-plugin/releases",
+      "releaseDate": "August 24, 2024",
+      "color": "green",
+      "description": "A replacement for FullBright when using shaders"
     }
   ]
 }
