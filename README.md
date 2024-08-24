@@ -661,6 +661,17 @@ A plugin for an updated version of NCPEfly.
 
 A plugin for logging chat messages to discord.
 
+---
+
+### [rusherhack-nightvision-plugin](https://github.com/John200410/rusherhack-nightvision-plugin) <br>
+
+[![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[43].releaseDate&label=Latest%20Release&color=green)](https://github.com/John200410/rusherhack-nightvision-plugin/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/John200410/rusherhack-nightvision-plugin/total)](https://github.com/John200410/rusherhack-nightvision-plugin/releases/download/v1.0.0/nightvision-1.0.0-1.21.jar)<br>
+
+**Creator**: <img src="https://github.com/John200410.png?size=20" width="20" height="20"> [John200410](https://github.com/John200410)
+
+A replacement for FullBright when using shaders.
+
+
 <!-- END PLUGINS LIST -->
 
 ## Reporting Issues
