@@ -55,7 +55,7 @@ These tools can assist in managing and developing RusherHack plugins:
 
 - ### [RHP](https://github.com/kybe236/rhp) <br>
   
-  [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.devTools[0].releaseDate&label=Latest%20Release&color=green)](https://github.com/kybe236/rhp/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/kybe236/rhp/total)](https://github.com/kybe236/rhp/releases/download/0.0.9/rhp.exe)<br>
+  [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.devTools[0].releaseDate&label=Latest%20Release&color=green)](https://github.com/kybe236/rhp/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/kybe236/rhp/total)](https://github.com/kybe236/rhp/releases/download/0.0.10/rhp.exe)<br>
   
   **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
 
