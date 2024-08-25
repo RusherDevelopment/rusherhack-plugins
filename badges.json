@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "totalPlugins": {
-    "message": "44",
+    "message": "45",
     "color": "green"
   },
   "discord": {
@@ -375,6 +375,14 @@
       "releaseDate": "August 24, 2024",
       "color": "green",
       "description": "A replacement for FullBright when using shaders"
+    },
+    {
+      "name": "AutoShiller",
+      "url": "https://github.com/xyzbtw/AutoShiller",
+      "releaseUrl": "https://github.com/xyzbtw/AutoShiller/releases",
+      "releaseDate": "No releases",
+      "color": "green",
+      "description": "A plugin that automatically promotes or \"shills\" content in Minecraft."
     }
   ]
 }
