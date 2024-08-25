@@ -671,6 +671,16 @@ These tools can assist in managing and developing RusherHack plugins:
 
    A replacement for FullBright when using shaders.
 
+---
+
+- ### [AutoShiller](https://github.com/xyzbtw/AutoShiller) <br>
+
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[44].releaseDate&label=Latest%20Release&color=orange)](https://github.com/xyzbtw/AutoShiller/releases) ![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/xyzbtw/AutoShiller/total)<br>
+
+   **Creator**: <img src="https://github.com/xyzbtw.png?size=20" width="20" height="20"> [xyzbtw](https://github.com/xyzbtw)
+
+   A plugin for automatic shilling in chat based on predefined messages.
+
 <!-- END PLUGINS LIST -->
 
 ## Reporting Issues
