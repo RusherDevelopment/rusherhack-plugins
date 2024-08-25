@@ -380,9 +380,9 @@
       "name": "AutoShiller",
       "url": "https://github.com/xyzbtw/AutoShiller",
       "releaseUrl": "https://github.com/xyzbtw/AutoShiller/releases",
-      "releaseDate": "No releases",
+      "releaseDate": "August 24, 2024",
       "color": "green",
-      "description": "A plugin that automatically promotes or \"shills\" content in Minecraft."
+      "description": "A plugin that automatically promotes content in Minecraft."
     }
   ]
 }
