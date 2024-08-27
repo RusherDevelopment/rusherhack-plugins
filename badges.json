@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "totalPlugins": {
-    "message": "44",
+    "message": "45",
     "color": "green"
   },
   "discord": {
@@ -375,6 +375,14 @@
       "releaseDate": "August 24, 2024",
       "color": "green",
       "description": "A replacement for FullBright when using shaders"
+    },
+    {
+      "name": "AutoNetherite",
+      "url": "https://github.com/xyzbtw/AutoNetherite",
+      "releaseUrl": "https://github.com/xyzbtw/AutoNetherite/releases",
+      "releaseDate": "August 24, 2024",
+      "color": "green",
+      "description": "A plugin that automates the process of upgrading gear to Netherite in Minecraft."
     }
   ]
 }
