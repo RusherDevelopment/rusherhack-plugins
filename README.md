@@ -55,7 +55,7 @@ These tools can assist in managing and developing RusherHack plugins:
 
 - ### [RHP](https://github.com/kybe236/rhp) <br>
   
-  [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.devTools[0].releaseDate&label=Latest%20Release&color=green)](https://github.com/kybe236/rhp/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/kybe236/rhp/total)](https://github.com/kybe236/rhp/releases/download/0.0.10/rhp.exe)<br>
+  [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.devTools[0].releaseDate&label=Latest%20Release&color=green)](https://github.com/kybe236/rhp/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/kybe236/rhp/total)](https://github.com/kybe236/rhp/releases/download/0.0.11/rhp.exe)<br>
   
   **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
 
@@ -645,11 +645,11 @@ These tools can assist in managing and developing RusherHack plugins:
 
 - ### [UpdatedNCPEfly](https://github.com/xyzbtw/UpdatedNCPEfly) <br>
 
-  [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[41].releaseDate&label=Latest%20Release&color=green)](https://github.com/xyzbtw/UpdatedNCPEfly/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/xyzbtw/UpdatedNCPEfly/total)](https://github.com/xyzbtw/UpdatedNCPEfly/releases/download/release/NCP-ElytraFlight-1.0.0.jar)<br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[41].releaseDate&label=Latest%20Release&color=green)](https://github.com/xyzbtw/UpdatedNCPEfly/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/xyzbtw/UpdatedNCPEfly/total)](https://github.com/xyzbtw/UpdatedNCPEfly/releases/download/release/NCP-ElytraFlight-1.0.0.jar)<br>
 
-  **Creator**: <img src="https://github.com/xyzbtw.png?size=20" width="20" height="20"> [xyzbtw](https://github.com/xyzbtw)
+   **Creator**: <img src="https://github.com/xyzbtw.png?size=20" width="20" height="20"> [xyzbtw](https://github.com/xyzbtw)
 
-  A plugin for an updated version of NCPEfly.
+   A plugin for an updated version of NCPEfly.
 
 ---
 
