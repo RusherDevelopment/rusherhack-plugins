@@ -681,6 +681,18 @@ These tools can assist in managing and developing RusherHack plugins:
 
    A plugin that automates the process of upgrading gear to Netherite in Minecraft.
 
+---
+
+- ### [OldSignsPlugin](https://github.com/xyzbtw/OldSignsPlugin) <br>
+
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[45].releaseDate&label=Latest%20Release&color=green)](https://github.com/xyzbtw/OldSignsPlugin/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/xyzbtw/OldSignsPlugin/total)](https://github.com/xyzbtw/OldSignsPlugin/releases/download/release/oldsigns-1.0.0.jar)<br>
+
+   **Creator**: <img src="https://github.com/xyzbtw.png?size=20" width="20" height="20"> [xyzbtw](https://github.com/xyzbtw)
+
+   A plugin that brings back old sign functionalities in Minecraft.
+
+---
+
 <!-- END PLUGINS LIST -->
 
 ## Reporting Issues
