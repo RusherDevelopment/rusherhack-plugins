@@ -691,8 +691,6 @@ These tools can assist in managing and developing RusherHack plugins:
 
    A plugin that brings back old sign functionalities in Minecraft.
 
----
-
 <!-- END PLUGINS LIST -->
 
 ## Reporting Issues
