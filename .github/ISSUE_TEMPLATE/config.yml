@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "Plugin Information Issue"
+    url: "/RusherDevelopment/rusherhack-plugins/issues/new?template=plugin_info_issue_template.md"
+    about: "Report incorrect plugin information, broken links, or formatting errors in the collection repository."
