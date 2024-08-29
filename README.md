@@ -695,7 +695,7 @@ These tools can assist in managing and developing RusherHack plugins:
 
 ## Reporting Issues
 
-If you encounter issues with any of the plugins listed here, please contact the plugin's creator or open an issue in their respective repository. For issues related to the collection repository itself, such as incorrect plugin information, broken links, or formatting errors, please use the [Plugin Information Issue](https://github.com/RusherDevelopment/rusherhack-plugins/issues/new?assignees=&labels=&template=plugin_info_issue_template.md&title=%5BISSUE%5D) tracker.
+If you encounter issues with any of the plugins listed here, please contact the plugin's creator or open an issue in their respective repository. For issues related to the collection repository itself, such as incorrect plugin information, broken links, or formatting errors, please use the [Plugin Information Issue](https://github.com/RusherDevelopment/rusherhack-plugins/issues/new?assignees=&labels=&template=plugin-information-issue.md&title=%5BISSUE%5D) tracker.
 
 ## Contribute
 
