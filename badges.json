@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "totalPlugins": {
-    "message": "45",
+    "message": "46",
     "color": "green"
   },
   "discord": {
@@ -383,6 +383,14 @@
       "releaseDate": "August 26, 2024",
       "color": "green",
       "description": "A plugin that automates the process of upgrading gear to Netherite in Minecraft."
+    },
+    {
+      "name": "OldSignsPlugin",
+      "url": "https://github.com/xyzbtw/OldSignsPlugin",
+      "releaseUrl": "https://github.com/xyzbtw/OldSignsPlugin/releases",
+      "releaseDate": "August 28, 2024",
+      "color": "green",
+      "description": "A plugin that brings back old sign functionalities in Minecraft."
     }
   ]
 }
