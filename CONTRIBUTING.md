@@ -79,4 +79,4 @@ YOUR_PLUGIN_DESCRIPTION
 ```
 
 ## Reporting Issues
-If you encounter any typos, errors, or have suggestions for improvements, please open an issue on the GitHub repository with as much detail as possible.
+If you encounter any typos, errors, or have suggestions for improvements, please use the [Plugin Information Issue](https://github.com/RusherDevelopment/rusherhack-plugins/issues/new?assignees=&labels=&template=plugin-information-issue.md&title=%5BISSUE%5D) template to report them. Providing as much detail as possible will help us address the issue more effectively.
