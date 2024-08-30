@@ -691,6 +691,16 @@ These tools can assist in managing and developing RusherHack plugins:
 
    A plugin that brings back old sign functionalities in Minecraft.
 
+---
+
+- ### [StashHunter-rusherhack](https://github.com/CherkaSSH/StashHunter-rusherhack) <br>
+
+   [![Latest Release Date](https://img.shields.io/badge/Latest%20Release-No%20Releases-red)](https://github.com/CherkaSSH/StashHunter-rusherhack/releases) ![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/CherkaSSH/StashHunter-rusherhack/total)<br>
+
+   **Creator**: <img src="https://github.com/CherkaSSH.png?size=20" width="20" height="20"> [CherkaSSH](https://github.com/CherkaSSH)
+
+   A plugin to help locate stashes in Minecraft using RusherHack.
+
 <!-- END PLUGINS LIST -->
 
 ## Reporting Issues
