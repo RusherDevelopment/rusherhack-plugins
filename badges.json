@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "totalPlugins": {
-    "message": "46",
+    "message": "47",
     "color": "green"
   },
   "discord": {
@@ -391,6 +391,14 @@
       "releaseDate": "August 28, 2024",
       "color": "green",
       "description": "A plugin that brings back old sign functionalities in Minecraft."
+    },
+    {
+      "name": "StashHunter-rusherhack",
+      "url": "https://github.com/CherkaSSH/StashHunter-rusherhack",
+      "releaseUrl": "https://github.com/CherkaSSH/StashHunter-rusherhack/releases",
+      "releaseDate": "No releases",
+      "color": "red",
+      "description": "A plugin to help locate stashes in Minecraft using RusherHack."
     }
   ]
 }
