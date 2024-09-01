@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "totalPlugins": {
-    "message": "47",
+    "message": "48",
     "color": "green"
   },
   "discord": {
@@ -399,6 +399,14 @@
       "releaseDate": "No releases",
       "color": "red",
       "description": "A plugin to help locate stashes in Minecraft using RusherHack."
+    },
+    {
+      "name": "rusher-elytra-eta",
+      "url": "https://github.com/kybe236/rusher-elytra-eta",
+      "releaseUrl": "https://github.com/kybe236/rusher-elytra-eta/releases",
+      "releaseDate": "August 28, 2024",
+      "color": "green",
+      "description": "A plugin that estimates the time of arrival (ETA) when using an Elytra in Minecraft."
     }
   ]
 }
