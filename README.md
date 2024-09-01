@@ -701,6 +701,22 @@ These tools can assist in managing and developing RusherHack plugins:
 
    A plugin to help locate stashes in Minecraft using RusherHack.
 
+---
+
+- ### [rusher-elytra-eta](https://github.com/kybe236/rusher-elytra-eta) <br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[47].releaseDate&label=Latest%20Release&color=red)](https://github.com/kybe236/rusher-elytra-eta/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/kybe236/rusher-elytra-eta/total)](https://github.com/kybe236/rusher-elytra-eta/releases/download/1.0.0/rusher-elytra-eta-1.0.0.jar)<br>
+
+   **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
+
+   A rusherhack plugin that allows you to see the ETA of all Elytras in the player's inventory.
+
+   <details>
+    <summary>Show Screenshots</summary>
+     <p align="center">
+      <img src="./Assets/rusher-elytra-eta/HudElement.png" alt="The hud Element" border="0" width="250">
+    </p>
+   </details>
+
 <!-- END PLUGINS LIST -->
 
 ## Reporting Issues
