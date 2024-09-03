@@ -725,7 +725,7 @@ These tools can assist in managing and developing RusherHack plugins:
 
    **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
 
-   A plugin that allows silently closing inventory or GUI screens in Minecraft without triggering any sound or notification.
+   Keeps Container GUI open
 
 ---
 
