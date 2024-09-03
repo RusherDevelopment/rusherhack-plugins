@@ -717,6 +717,28 @@ These tools can assist in managing and developing RusherHack plugins:
     </p>
    </details>
 
+---
+
+- ### [rusher-silent-close](https://github.com/kybe236/rusher-silent-close) <br>
+
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[48].releaseDate&label=Latest%20Release&color=green)](https://github.com/kybe236/rusher-silent-close/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/kybe236/rusher-silent-close/total)](https://github.com/kybe236/rusher-silent-close/releases/download/1.0.0/silent-close-1.0.0.jar)<br>
+
+   **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
+
+   A plugin that allows silently closing inventory or GUI screens in Minecraft without triggering any sound or notification.
+
+---
+
+- ### [AFKBoostEfly](https://github.com/miles352/AFKBoostEfly) <br>
+
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[49].releaseDate&label=Latest%20Release&color=green)](https://github.com/miles352/AFKBoostEfly/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/miles352/AFKBoostEfly/total)](https://github.com/miles352/AFKBoostEfly/releases/download/1.0.0/AFK-boost-fly-1.0.0.jar)<br>
+
+   **Creator**: <img src="https://github.com/miles352.png?size=20" width="20" height="20"> [miles352](https://github.com/miles352)
+
+   A plugin that automates boosting Elytra flight while AFK.
+
+
+
 <!-- END PLUGINS LIST -->
 
 ## Reporting Issues
