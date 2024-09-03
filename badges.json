@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "totalPlugins": {
-    "message": "50",
+    "message": "51",
     "color": "green"
   },
   "discord": {
@@ -423,6 +423,14 @@
       "releaseDate": "August 28, 2024",
       "color": "green",
       "description": "A plugin that automates boosting Elytra flight while AFK."
+    },
+    {
+      "name": "rusher-gtranslate",
+      "url": "https://github.com/kybe236/rusher-gtranslate",
+      "releaseUrl": "https://github.com/kybe236/rusher-gtranslate/releases",
+      "releaseDate": "August 28, 2024",
+      "color": "green",
+      "description": "A plugin that integrates Google Translate into RusherHack for translating chat messages."
     }
   ]
 }
