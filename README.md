@@ -741,7 +741,7 @@ These tools can assist in managing and developing RusherHack plugins:
 
 - ### [rusher-gtranslate](https://github.com/kybe236/rusher-gtranslate) <br>
 
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[52].releaseDate&label=Latest%20Release&color=green)](https://github.com/kybe236/rusher-gtranslate/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/kybe236/rusher-gtranslate/total)](https://github.com/kybe236/rusher-gtranslate/releases/download/1.0.0/kybe-gtranslate-1.0.0.jar)<br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[50].releaseDate&label=Latest%20Release&color=green)](https://github.com/kybe236/rusher-gtranslate/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/kybe236/rusher-gtranslate/total)](https://github.com/kybe236/rusher-gtranslate/releases/download/1.0.0/kybe-gtranslate-1.0.0.jar)<br>
 
    **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
 
