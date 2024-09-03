@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "totalPlugins": {
-    "message": "48",
+    "message": "50",
     "color": "green"
   },
   "discord": {
@@ -407,6 +407,22 @@
       "releaseDate": "August 28, 2024",
       "color": "green",
       "description": "A plugin that estimates the time of arrival (ETA) when using an Elytra in Minecraft."
+    },
+    {
+      "name": "rusher-silent-close",
+      "url": "https://github.com/kybe236/rusher-silent-close",
+      "releaseUrl": "https://github.com/kybe236/rusher-silent-close/releases",
+      "releaseDate": "August 28, 2024",
+      "color": "green",
+      "description": "A plugin that allows silently closing inventory or GUI screens in Minecraft without triggering any sound or notification."
+    },
+    {
+      "name": "AFKBoostEfly",
+      "url": "https://github.com/miles352/AFKBoostEfly",
+      "releaseUrl": "https://github.com/miles352/AFKBoostEfly/releases",
+      "releaseDate": "August 28, 2024",
+      "color": "green",
+      "description": "A plugin that automates boosting Elytra flight while AFK."
     }
   ]
 }
