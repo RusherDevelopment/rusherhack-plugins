@@ -441,12 +441,12 @@
       "description": "No Fall by setting isFalling flag in movement packets to false (tested on 6b6t)."
     },
     {
-      "name": "rusher-auto",
-      "url": "https://github.com/kybe236/rusher-auto",
-      "releaseUrl": "https://github.com/kybe236/rusher-auto/releases",
+      "name": "rusher-autoportal",
+      "url": "https://github.com/kybe236/rusher-autoportal",
+      "releaseUrl": "https://github.com/kybe236/rusher-autoportal/releases",
       "releaseDate": "No releases",
-      "color": "red",
-      "description": "Automaticly breaks block to places obsidian and activate nether ."
+      "color": "green",
+      "description": "A plugin that automates portal creation in Minecraft."
     }
   ]
 }
