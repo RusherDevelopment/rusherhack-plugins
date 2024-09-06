@@ -747,6 +747,22 @@ These tools can assist in managing and developing RusherHack plugins:
 
    A plugin that integrates Google Translate into RusherHack for translating chat messages.
 
+---
+
+- ### [rusher-matrix-nofall](https://github.com/kybe236/rusher-matrix-nofall) <br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[51].releaseDate&label=Latest%20Release&color=green)](https://github.com/kybe236/rusher-matrix-nofall/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/kybe236/rusher-matrix-nofall/total)](https://github.com/kybe236/rusher-matrix-nofall/releases/download/1.0.0/kybe-nofall-1.0.0.jar) <br>
+   **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
+  
+   No Fall by setting isFalling flag in movement packets to false (tested on 6b6t).
+
+---
+
+- ### [rusher-autoportal](https://github.com/kybe236/rusher-autoportal) <br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[52].releaseDate&label=Latest%20Release&color=red)](https://github.com/kybe236/rusher-autoportal/releases) ![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/kybe236/rusher-autoportal/total) <br>
+   **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
+  
+   Automaticly breaks block to places obsidian and activate nether portal.
+
 <!-- END PLUGINS LIST -->
 
 ## Reporting Issues
