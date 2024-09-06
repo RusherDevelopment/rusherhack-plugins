@@ -103,7 +103,7 @@
     {
       "name": "RusherHack Spotify Integration",
       "url": "https://github.com/John200410/rusherhack-spotify",
-      "releaseUrl": "https://github.com/John200410/rusherhack-spotify/releases",rusher-autoportal
+      "releaseUrl": "https://github.com/John200410/rusherhack-spotify/releases",
       "releaseDate": "July 29, 2024",
       "color": "green",
       "description": "Integrates Spotify music playback controls and status into the RusherHacks client."
@@ -441,12 +441,12 @@
       "description": "No Fall by setting isFalling flag in movement packets to false (tested on 6b6t)."
     },
     {
-      "name": "rusher-autoportal",
-      "url": "https://github.com/kybe236/rusher-autoportal",
-      "releaseUrl": "https://github.com/kybe236/rusher-autoportal/releases",
+      "name": "rusher-auto",
+      "url": "https://github.com/kybe236/rusher-auto",
+      "releaseUrl": "https://github.com/kybe236/rusher-auto/releases",
       "releaseDate": "No releases",
       "color": "red",
-      "description": "Automaticly breaks block to places obsidian and activate nether portal."
+      "description": "Automaticly breaks block to places obsidian and activate nether ."
     }
   ]
 }
