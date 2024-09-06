@@ -431,6 +431,22 @@
       "releaseDate": "August 28, 2024",
       "color": "green",
       "description": "A plugin that integrates Google Translate into RusherHack for translating chat messages."
+    },
+    {
+      "name": "rusher-matrix-nofall",
+      "url": "https://github.com/kybe236/rusher-matrix-nofall",
+      "releaseUrl": "https://github.com/kybe236/rusher-matrix-nofall/releases",
+      "releaseDate": "September 5, 2024",
+      "color": "green",
+      "description": "No Fall by setting isFalling flag in movement packets to false (tested on 6b6t)."
+    },
+    {
+      "name": "rusher-auto",
+      "url": "https://github.com/kybe236/rusher-auto",
+      "releaseUrl": "https://github.com/kybe236/rusher-auto/releases",
+      "releaseDate": "No releases",
+      "color": "red",
+      "description": "Automaticly breaks block to places obsidian and activate nether ."
     }
   ]
 }
