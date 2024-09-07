@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "totalPlugins": {
-    "message": "53",
+    "message": "54",
     "color": "green"
   },
   "discord": {
@@ -447,6 +447,14 @@
       "releaseDate": "No releases",
       "color": "green",
       "description": "A plugin that automates portal creation in Minecraft."
+    },
+    {
+      "name": "rusher-air-place",
+      "url": "https://github.com/kybe236/rusher-air-place",
+      "releaseUrl": "https://github.com/kybe236/rusher-air-place/releases",
+      "releaseDate": "August 28, 2024",
+      "color": "green",
+      "description": "A plugin that allows placing blocks in the air in Minecraft."
     }
   ]
 }
