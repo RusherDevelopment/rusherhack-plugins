@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "totalPlugins": {
-    "message": "54",
+    "message": "55",
     "color": "green"
   },
   "discord": {
@@ -455,6 +455,14 @@
       "releaseDate": "August 28, 2024",
       "color": "green",
       "description": "A plugin that allows placing blocks in the air in Minecraft."
+    },
+    {
+      "name": "rusher-hold-spamm-space",
+      "url": "https://github.com/kybe236/rusher-hold-spamm-space",
+      "releaseUrl": "https://github.com/kybe236/rusher-hold-spamm-space/releases",
+      "releaseDate": "August 28, 2024",
+      "color": "green",
+      "description": "A plugin that automatically spams or holds the space bar."
     }
   ]
 }
