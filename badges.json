@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "totalPlugins": {
-    "message": "55",
+    "message": "56",
     "color": "green"
   },
   "discord": {
@@ -463,6 +463,14 @@
       "releaseDate": "August 28, 2024",
       "color": "green",
       "description": "A plugin that automatically spams or holds the space bar."
+    },
+    {
+      "name": "rusher-auto-bed-bomber",
+      "url": "https://github.com/kybe236/rusher-auto-bed-bomber",
+      "releaseUrl": "https://github.com/kybe236/rusher-auto-bed-bomber/releases",
+      "releaseDate": "No releases",
+      "color": "red",
+      "description": "A plugin that automates bed bombing."
     }
   ]
 }
