@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "totalPlugins": {
-    "message": "56",
+    "message": "57",
     "color": "green"
   },
   "discord": {
@@ -471,6 +471,14 @@
       "releaseDate": "No releases",
       "color": "red",
       "description": "A plugin that automates bed bombing."
+    },
+    {
+      "name": "rusher-crystal-spin",
+      "url": "https://github.com/kybe236/rusher-crystal-spin",
+      "releaseUrl": "https://github.com/kybe236/rusher-crystal-spin/releases",
+      "releaseDate": "August 28, 2024",
+      "color": "green",
+      "description": "A plugin that automates spinning during crystal PvP in Minecraft."
     }
   ]
 }
