@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "totalPlugins": {
-    "message": "57",
+    "message": "58",
     "color": "green"
   },
   "discord": {
@@ -479,6 +479,14 @@
       "releaseDate": "August 28, 2024",
       "color": "green",
       "description": "A plugin that automates spinning during crystal PvP in Minecraft."
+    },
+    {
+      "name": "AutoPumpkinShear",
+      "url": "https://github.com/AlphaxHax/AutoPumpkinShear",
+      "releaseUrl": "https://github.com/AlphaxHax/AutoPumpkinShear/releases",
+      "releaseDate": "No releases",
+      "color": "red",
+      "description": "A plugin that automates shearing pumpkins in Minecraft."
     }
   ]
 }
