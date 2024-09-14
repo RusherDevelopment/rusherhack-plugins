@@ -803,8 +803,6 @@ These tools can assist in managing and developing RusherHack plugins:
 
    A plugin that automates spinning during crystal PvP in Minecraft.
 
----
-
 <!-- END PLUGINS LIST -->
 
 ## Reporting Issues
