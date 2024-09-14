@@ -807,11 +807,18 @@ These tools can assist in managing and developing RusherHack plugins:
 
 - ### [AutoPumpkinShear](https://github.com/AlphaxHax/AutoPumpkinShear) <br>
 
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[57].releaseDate&label=Latest%20Release&color=red)](https://github.com/AlphaxHax/AutoPumpkinShear/releases) ![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/AlphaxHax/AutoPumpkinShear/total)<br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[57].releaseDate&label=Latest%20Release&color=red)](https://github.com/AlphaxHax/AutoPumpkinShear/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/AlphaxHax/AutoPumpkinShear/total)](https://github.com/AlphaxHax/AutoPumpkinShear/releases)<br>
 
    **Creator**: <img src="https://github.com/AlphaxHax.png?size=20" width="20" height="20"> [AlphaxHax](https://github.com/AlphaxHax)
 
-   A plugin that automates shearing pumpkins in Minecraft.
+   A plugin that automates shearing pumpkins in Minecraft. [Watch Video Tutorial](https://youtu.be/44b4QO6l1Pc)
+
+   <details>
+     <summary>Show Video</summary>
+     <p align="center">
+       <a href="https://youtu.be/44b4QO6l1Pc"><img src="https://img.youtube.com/vi/44b4QO6l1Pc/0.jpg" alt="Video Tutorial" width="300"></a>
+     </p>
+   </details>
 
 <!-- END PLUGINS LIST -->
 
