@@ -803,6 +803,16 @@ These tools can assist in managing and developing RusherHack plugins:
 
    A plugin that automates spinning during crystal PvP in Minecraft.
 
+---
+
+- ### [AutoPumpkinShear](https://github.com/AlphaxHax/AutoPumpkinShear) <br>
+
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[57].releaseDate&label=Latest%20Release&color=red)](https://github.com/AlphaxHax/AutoPumpkinShear/releases) ![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/AlphaxHax/AutoPumpkinShear/total)<br>
+
+   **Creator**: <img src="https://github.com/AlphaxHax.png?size=20" width="20" height="20"> [AlphaxHax](https://github.com/AlphaxHax)
+
+   A plugin that automates shearing pumpkins in Minecraft.
+
 <!-- END PLUGINS LIST -->
 
 ## Reporting Issues
