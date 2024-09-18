@@ -811,7 +811,7 @@ These tools can assist in managing and developing RusherHack plugins:
 
    **Creator**: <img src="https://github.com/AlphaxHax.png?size=20" width="20" height="20"> [AlphaxHax](https://github.com/AlphaxHax)
 
-   A plugin that automates shearing pumpkins in Minecraft. [Watch Video Tutorial](https://youtu.be/44b4QO6l1Pc)
+   A plugin that automates shearing pumpkins in Minecraft.
 
    <details>
      <summary>Show Video</summary>
