@@ -820,6 +820,16 @@ These tools can assist in managing and developing RusherHack plugins:
      </p>
    </details>
 
+---
+
+- ### [Rusher2b2tVelocity](https://github.com/Lokfid/Rusher2b2tVelocity) <br>
+
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[58].releaseDate&label=Latest%20Release&color=green)](https://github.com/Lokfid/Rusher2b2tVelocity/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/Lokfid/Rusher2b2tVelocity/total)](https://github.com/Lokfid/Rusher2b2tVelocity/releases/download/1.0.0fixfix/VelocityPlus-1.0.0.jar)<br>
+
+   **Creator**: <img src="https://github.com/Lokfid.png?size=20" width="20" height="20"> [Lokfid](https://github.com/Lokfid)
+
+   A plugin that adds enhanced velocity control for RusherHacks on the 2b2t server.
+
 <!-- END PLUGINS LIST -->
 
 ## Reporting Issues
