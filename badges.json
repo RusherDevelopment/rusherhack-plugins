@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "totalPlugins": {
-    "message": "58",
+    "message": "59",
     "color": "green"
   },
   "discord": {
@@ -487,6 +487,14 @@
       "releaseDate": "No releases",
       "color": "red",
       "description": "A plugin that automates shearing pumpkins in Minecraft."
+    },
+    {
+      "name": "Rusher2b2tVelocity",
+      "url": "https://github.com/Lokfid/Rusher2b2tVelocity",
+      "releaseUrl": "https://github.com/Lokfid/Rusher2b2tVelocity/releases",
+      "releaseDate": "August 28, 2024",
+      "color": "green",
+      "description": "A plugin that adds enhanced velocity control for RusherHacks on the 2b2t server."
     }
   ]
 }
