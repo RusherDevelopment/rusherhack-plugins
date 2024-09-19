@@ -417,12 +417,12 @@
       "description": "A plugin that allows silently closing inventory or GUI screens in Minecraft without triggering any sound or notification."
     },
     {
-      "name": "AFKBoostEfly",
-      "url": "https://github.com/miles352/AFKBoostEfly",
-      "releaseUrl": "https://github.com/miles352/AFKBoostEfly/releases",
+      "name": "rusherhack-addons",
+      "url": "https://github.com/miles352/rusherhack-addons",
+      "releaseUrl": "https://github.com/miles352/rusherhack-addons/releases",
       "releaseDate": "August 28, 2024",
       "color": "green",
-      "description": "A plugin that automates boosting Elytra flight while AFK."
+      "description": "A collection of RusherHacks addons that includes AFKBoostFly for boost flying while AFK, and MapCopy for copying maps in your inventory."
     },
     {
       "name": "rusher-gtranslate",
