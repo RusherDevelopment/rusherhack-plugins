@@ -729,13 +729,15 @@ These tools can assist in managing and developing RusherHack plugins:
 
 ---
 
-- ### [AFKBoostEfly](https://github.com/miles352/AFKBoostEfly) <br>
+- ### [rusherhack-addons](https://github.com/miles352/rusherhack-addons) <br>
 
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[49].releaseDate&label=Latest%20Release&color=green)](https://github.com/miles352/AFKBoostEfly/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/miles352/AFKBoostEfly/total)](https://github.com/miles352/AFKBoostEfly/releases/download/1.0.0/AFK-boost-fly-1.0.0.jar)<br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[49].releaseDate&label=Latest%20Release&color=green)](https://github.com/miles352/rusherhack-addons/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/miles352/rusherhack-addons/total)](https://github.com/miles352/rusherhack-addons/releases/download/1.0.0/rusherhack-addons-1.0.0.jar)<br>
 
    **Creator**: <img src="https://github.com/miles352.png?size=20" width="20" height="20"> [miles352](https://github.com/miles352)
 
-   A plugin that automates boosting Elytra flight while AFK.
+   A collection of RusherHacks addons including:
+   - **AFKBoostFly**: Enables boost flying while AFK by looking up and down to gain momentum.
+   - **MapCopy**: Allows you to copy maps in your inventory.
 
 ---
 
