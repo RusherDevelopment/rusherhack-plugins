@@ -489,7 +489,7 @@ These tools can assist in managing and developing RusherHack plugins:
 
 - ### [nhack-theme](https://github.com/h1tm4nqq/Nhack-theme) <br>
 
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[29].releaseDate&label=Latest%20Release&color=green)](https://github.com/h1tm4nqq/Nhack-theme/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/h1tm4nqq/Nhack-theme/total)](https://github.com/h1tm4nqq/Nhack-theme/releases/latest/download/nhack-theme-1.0.0.jar)<br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[29].releaseDate&label=Latest%20Release&color=green)](https://github.com/h1tm4nqq/Nhack-theme/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/h1tm4nqq/Nhack-theme/total)](https://github.com/h1tm4nqq/Nhack-theme/releases/download/1.0.1/nhack-theme-1.0.1.jar)<br>
 
    **Creator**: <img src="https://github.com/h1tm4nqq.png?size=20" width="20" height="20"> [h1tm4nqq](https://github.com/h1tm4nqq)
 
