@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "totalPlugins": {
-    "message": "59",
+    "message": "60",
     "color": "green"
   },
   "discord": {
@@ -495,6 +495,14 @@
       "releaseDate": "August 28, 2024",
       "color": "green",
       "description": "A plugin that adds enhanced velocity control for RusherHacks on the 2b2t server."
+    },
+    {
+      "name": "rusher-autokit",
+      "url": "https://github.com/kybe236/rusher-autokit",
+      "releaseUrl": "https://github.com/kybe236/rusher-autokit/releases",
+      "releaseDate": "August 28, 2024",
+      "color": "green",
+      "description": "A plugin that automatically equips your preferred kit."
     }
   ]
 }
