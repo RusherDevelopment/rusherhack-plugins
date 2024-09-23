@@ -388,7 +388,7 @@
       "name": "OldSignsPlugin",
       "url": "https://github.com/xyzbtw/OldSignsPlugin",
       "releaseUrl": "https://github.com/xyzbtw/OldSignsPlugin/releases",
-      "releaseDate": "August 28, 2024",
+      "releaseDate": "August 29, 2024",
       "color": "green",
       "description": "A plugin that brings back old sign functionalities in Minecraft."
     },
@@ -404,7 +404,7 @@
       "name": "rusher-elytra-eta",
       "url": "https://github.com/kybe236/rusher-elytra-eta",
       "releaseUrl": "https://github.com/kybe236/rusher-elytra-eta/releases",
-      "releaseDate": "August 28, 2024",
+      "releaseDate": "September 1, 2024",
       "color": "green",
       "description": "A plugin that estimates the time of arrival (ETA) when using an Elytra in Minecraft."
     },
@@ -412,7 +412,7 @@
       "name": "rusher-silent-close",
       "url": "https://github.com/kybe236/rusher-silent-close",
       "releaseUrl": "https://github.com/kybe236/rusher-silent-close/releases",
-      "releaseDate": "August 28, 2024",
+      "releaseDate": "September 2, 2024",
       "color": "green",
       "description": "A plugin that allows silently closing inventory or GUI screens in Minecraft without triggering any sound or notification."
     },
@@ -420,7 +420,7 @@
       "name": "rusherhack-addons",
       "url": "https://github.com/miles352/rusherhack-addons",
       "releaseUrl": "https://github.com/miles352/rusherhack-addons/releases",
-      "releaseDate": "August 28, 2024",
+      "releaseDate": "September 20, 2024",
       "color": "green",
       "description": "A collection of RusherHacks addons that includes AFKBoostFly for boost flying while AFK, and MapCopy for copying maps in your inventory."
     },
@@ -428,7 +428,7 @@
       "name": "rusher-gtranslate",
       "url": "https://github.com/kybe236/rusher-gtranslate",
       "releaseUrl": "https://github.com/kybe236/rusher-gtranslate/releases",
-      "releaseDate": "August 28, 2024",
+      "releaseDate": "September 3, 2024",
       "color": "green",
       "description": "A plugin that integrates Google Translate into RusherHack for translating chat messages."
     },
@@ -452,7 +452,7 @@
       "name": "rusher-air-place",
       "url": "https://github.com/kybe236/rusher-air-place",
       "releaseUrl": "https://github.com/kybe236/rusher-air-place/releases",
-      "releaseDate": "August 28, 2024",
+      "releaseDate": "September 7, 2024",
       "color": "green",
       "description": "A plugin that allows placing blocks in the air in Minecraft."
     },
@@ -460,7 +460,7 @@
       "name": "rusher-hold-spamm-space",
       "url": "https://github.com/kybe236/rusher-hold-spamm-space",
       "releaseUrl": "https://github.com/kybe236/rusher-hold-spamm-space/releases",
-      "releaseDate": "August 28, 2024",
+      "releaseDate": "September 7, 2024",
       "color": "green",
       "description": "A plugin that automatically spams or holds the space bar."
     },
@@ -476,7 +476,7 @@
       "name": "rusher-crystal-spin",
       "url": "https://github.com/kybe236/rusher-crystal-spin",
       "releaseUrl": "https://github.com/kybe236/rusher-crystal-spin/releases",
-      "releaseDate": "August 28, 2024",
+      "releaseDate": "September 13, 2024",
       "color": "green",
       "description": "A plugin that automates spinning during crystal PvP in Minecraft."
     },
@@ -492,7 +492,7 @@
       "name": "Rusher2b2tVelocity",
       "url": "https://github.com/Lokfid/Rusher2b2tVelocity",
       "releaseUrl": "https://github.com/Lokfid/Rusher2b2tVelocity/releases",
-      "releaseDate": "August 28, 2024",
+      "releaseDate": "September 18, 2024",
       "color": "green",
       "description": "A plugin that adds enhanced velocity control for RusherHacks on the 2b2t server."
     },
@@ -500,7 +500,7 @@
       "name": "rusher-autokit",
       "url": "https://github.com/kybe236/rusher-autokit",
       "releaseUrl": "https://github.com/kybe236/rusher-autokit/releases",
-      "releaseDate": "August 28, 2024",
+      "releaseDate": "September 23, 2024",
       "color": "green",
       "description": "A plugin that automatically equips your preferred kit."
     }
