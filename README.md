@@ -633,7 +633,7 @@ These tools can assist in managing and developing RusherHack plugins:
 
 ---
 
-- ### [RusherWebPlugin](https://github.com/Lokfid/RusherWebPlugin) <br>
+- ### [RusherWebPlu`gin](https://github.com/Lokfid/RusherWebPlugin) <br>
 
    [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[40].releaseDate&label=Latest%20Release&color=green)](https://github.com/Lokfid/RusherWebPlugin/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/Lokfid/RusherWebPlugin/total)](https://github.com/Lokfid/RusherWebPlugin/releases/latest/download/web-1.1.1.jar)<br>
 
@@ -655,7 +655,7 @@ These tools can assist in managing and developing RusherHack plugins:
 
 - ### [dc-chat-logger](https://github.com/kybe236/dc-chat-logger) <br>
 
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[42].releaseDate&label=Latest%20Release&color=green)](https://github.com/kybe236/dc-chat-logger/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/kybe236/dc-chat-logger/total)](https://github.com/kybe236/dc-chat-logger/releases/download/1.0.0/dc-chat-logger-1.0.0.jar)<br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[42].releaseDate&label=Latest%20Release&color=green)](https://github.com/kybe236/dc-chat-logger/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/kybe236/dc-chat-logger/total)](https://github.com/kybe236/dc-chat-logger/releases/download/3.0.0/dc-chat-logger-3.0.0.jar)<br>
 
    **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
 
