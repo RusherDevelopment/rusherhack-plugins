@@ -633,7 +633,7 @@ These tools can assist in managing and developing RusherHack plugins:
 
 ---
 
-- ### [RusherWebPlu`gin](https://github.com/Lokfid/RusherWebPlugin) <br>
+- ### [RusherWebPlugin](https://github.com/Lokfid/RusherWebPlugin) <br>
 
    [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[40].releaseDate&label=Latest%20Release&color=green)](https://github.com/Lokfid/RusherWebPlugin/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/Lokfid/RusherWebPlugin/total)](https://github.com/Lokfid/RusherWebPlugin/releases/latest/download/web-1.1.1.jar)<br>
 
