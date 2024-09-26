@@ -481,12 +481,12 @@
       "description": "A plugin that automates spinning during crystal PvP in Minecraft."
     },
     {
-      "name": "AutoPumpkinShear",
-      "url": "https://github.com/AlphaxHax/AutoPumpkinShear",
-      "releaseUrl": "https://github.com/AlphaxHax/AutoPumpkinShear/releases",
+      "name": "AutoShear",
+      "url": "https://github.com/oisin404/AutoShear",
+      "releaseUrl": "https://github.com/oisin404/AutoShear/releases",
       "releaseDate": "No releases",
       "color": "red",
-      "description": "A plugin that automates shearing pumpkins in Minecraft."
+      "description": "A plugin that automates shearing in Minecraft."
     },
     {
       "name": "Rusher2b2tVelocity",
