@@ -789,11 +789,11 @@ These tools can assist in managing and developing RusherHack plugins:
 
 - ### [rusher-auto-bed-bomber](https://github.com/kybe236/rusher-auto-bed-bomber) <br>
 
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[55].releaseDate&label=Latest%20Release&color=red)](https://github.com/kybe236/rusher-auto-bed-bomber/releases) ![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/kybe236/rusher-auto-bed-bomber/total)<br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[55].releaseDate&label=Latest%20Release&color=green)](https://github.com/kybe236/rusher-auto-bed-bomber/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/kybe236/rusher-auto-bed-bomber/total)](https://github.com/kybe236/rusher-auto-bed-bomber/releases/download/idk/kybe-auto-bed-bomb-1.0.0.jar)<br>
 
    **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
 
-   A plugin that automates bed bombing.
+   A plugin that automates bed bombing in Minecraft.
 
 ---
 
