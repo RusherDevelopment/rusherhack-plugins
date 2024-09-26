@@ -807,13 +807,13 @@ These tools can assist in managing and developing RusherHack plugins:
 
 ---
 
-- ### [AutoPumpkinShear](https://github.com/AlphaxHax/AutoPumpkinShear) <br>
+- ### [AutoShear](https://github.com/oisin404/AutoShear) <br>
 
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[57].releaseDate&label=Latest%20Release&color=red)](https://github.com/AlphaxHax/AutoPumpkinShear/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/AlphaxHax/AutoPumpkinShear/total)](https://github.com/AlphaxHax/AutoPumpkinShear/releases)<br>
+   [![Latest Release Date](https://img.shields.io/badge/Latest%20Release-No%20Releases-red)](https://github.com/oisin404/AutoShear/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/oisin404/AutoShear/total)](https://github.com/oisin404/AutoShear/releases)<br>
 
-   **Creator**: <img src="https://github.com/AlphaxHax.png?size=20" width="20" height="20"> [AlphaxHax](https://github.com/AlphaxHax)
+   **Creator**: <img src="https://github.com/oisin404.png?size=20" width="20" height="20"> [oisin404](https://github.com/oisin404)
 
-   A plugin that automates shearing pumpkins in Minecraft.
+   A plugin that automates shearing in Minecraft.
 
    <details>
      <summary>Show Video</summary>
