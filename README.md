@@ -809,7 +809,7 @@ These tools can assist in managing and developing RusherHack plugins:
 
 - ### [AutoShear](https://github.com/oisin404/AutoShear) <br>
 
-   [![Latest Release Date](https://img.shields.io/badge/Latest%20Release-No%20Releases-red)](https://github.com/oisin404/AutoShear/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/oisin404/AutoShear/total)](https://github.com/oisin404/AutoShear/releases)<br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[57].releaseDate&label=Latest%20Release&color=green)](https://github.com/oisin404/AutoShear/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/oisin404/AutoShear/total)](https://github.com/oisin404/AutoShear/releases/download/1.0.2/auto-shear-1.0.2.jar)<br>
 
    **Creator**: <img src="https://github.com/oisin404.png?size=20" width="20" height="20"> [oisin404](https://github.com/oisin404)
 
