@@ -695,7 +695,7 @@ These tools can assist in managing and developing RusherHack plugins:
 
 - ### [StashHunter-rusherhack](https://github.com/CherkaSSH/StashHunter-rusherhack) <br>
 
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[46].releaseDate&label=Latest%20Release&color=red)](https://github.com/CherkaSSH/StashHunter-rusherhack/releases) ![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/CherkaSSH/StashHunter-rusherhack/total)<br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[46].releaseDate&label=Latest%20Release&color=green)](https://github.com/CherkaSSH/StashHunter-rusherhack/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/CherkaSSH/StashHunter-rusherhack/total)](https://github.com/CherkaSSH/StashHunter-rusherhack/releases/download/hehe/StashHunter-rusherhack-1.0.jar)<br>
 
    **Creator**: <img src="https://github.com/CherkaSSH.png?size=20" width="20" height="20"> [CherkaSSH](https://github.com/CherkaSSH)
 
