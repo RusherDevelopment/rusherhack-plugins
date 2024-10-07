@@ -625,7 +625,7 @@ These tools can assist in managing and developing RusherHack plugins:
 
 - ### [ShulkerViewer](https://github.com/xyzbtw/ShulkerViewer) <br>
 
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[39].releaseDate&label=Latest%20Release&color=green)](https://github.com/xyzbtw/ShulkerViewer/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/xyzbtw/ShulkerViewer/total)](https://github.com/xyzbtw/ShulkerViewer/releases/latest/download/shulker-viewer-1.0.0.jar)<br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[39].releaseDate&label=Latest%20Release&color=green)](https://github.com/xyzbtw/ShulkerViewer/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/xyzbtw/ShulkerViewer/total)](https://github.com/xyzbtw/ShulkerViewer/releases/download/1.21.1/shulker-viewer-1.21.1.jar)<br>
 
    **Creator**: <img src="https://github.com/xyzbtw.png?size=20" width="20" height="20"> [xyzbtw](https://github.com/xyzbtw)
 
@@ -760,10 +760,10 @@ These tools can assist in managing and developing RusherHack plugins:
 ---
 
 - ### [rusher-autoportal](https://github.com/kybe236/rusher-autoportal) <br>
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[52].releaseDate&label=Latest%20Release&color=red)](https://github.com/kybe236/rusher-autoportal/releases) ![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/kybe236/rusher-autoportal/total) <br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[52].releaseDate&label=Latest%20Release&color=green)](https://github.com/kybe236/rusher-autoportal/releases) ![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/kybe236/rusher-autoportal/total) <br>
    **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
   
-   Automaticly breaks block to places obsidian and activate nether portal.
+   Automatically breaks blocks to place obsidian and activate the nether portal.
 
 ---
 
