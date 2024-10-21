@@ -37,12 +37,12 @@
       "description": "A RusherHacks plugin designed for 2b2t.vc server use."
     },
     {
-      "name": "RusherHack Custom HUDElement",
-      "url": "https://github.com/Aspect-404/RusherHack-CustomHUDElement",
-      "releaseUrl": "https://github.com/Aspect-404/RusherHack-CustomHUDElement/releases",
-      "releaseDate": "November 03, 2023",
+      "name": "RusherHack-HudElement",
+      "url": "https://github.com/Aspect-404/RusherHack-HudElement",
+      "releaseUrl": "https://github.com/Aspect-404/RusherHack-HudElement/releases",
+      "releaseDate": "October 19, 2024",
       "color": "green",
-      "description": "Make a customizable text HUD element for Minecraft utility mod RusherHack."
+      "description": "Create a customizable HUD element for Minecraft utility mod RusherHack."
     },
     {
       "name": "Auto Anvil Rename",
