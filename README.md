@@ -101,19 +101,19 @@ These tools can assist in managing and developing RusherHack plugins:
 
 ---
 
-- ### [RusherHack Custom HUDElement](https://github.com/Aspect-404/RusherHack-CustomHUDElement) <br>
+- ### [RusherHack-HudElement](https://github.com/Aspect-404/RusherHack-HudElement) <br>
 
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[2].releaseDate&label=Latest%20Release&color=green)](https://github.com/Aspect-404/RusherHack-CustomHUDElement/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/Aspect-404/RusherHack-CustomHUDElement/total)](https://github.com/Aspect-404/RusherHack-CustomHUDElement/releases/latest/download/CustomHUDElement-1.0.jar)<br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[2].releaseDate&label=Latest%20Release&color=green)](https://github.com/Aspect-404/RusherHack-HudElement/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/Aspect-404/RusherHack-HudElement/total)](https://github.com/Aspect-404/RusherHack-HudElement/releases/download/Release/HudElement.jar)<br>
 
    **Creator**: <img src="https://github.com/Aspect-404.png?size=20" width="20" height="20"> [Aspect-404](https://github.com/Aspect-404)
 
-   Make a customizable text HUD element for Minecraft utility mod RusherHack.
+   Create a customizable HUD element for Minecraft utility mod RusherHack.
 
    <details>
      <summary>Show Screenshots</summary>
      <p align="center">
-       <img src="./Assets/RusherHack-CustomHUDElement/HudSettings.png" alt="Hud Setting" border="0" width="250">
-       <img src="./Assets/RusherHack-CustomHUDElement/HudElement.png" alt="Hud Element" border="0" width="550">
+       <img src="./Assets/RusherHack-HudElement/HudSettings.png" alt="Hud Setting" border="0" width="250">
+       <img src="./Assets/RusherHack-HudElement/HudElement.png" alt="Hud Element" border="0" width="550">
      </p>
    </details>
 
