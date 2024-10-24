@@ -503,6 +503,14 @@
       "releaseDate": "September 24, 2024",
       "color": "green",
       "description": "A plugin that automatically equips your preferred kit."
+    },
+    {
+      "name": "AutoTorch",
+      "url": "https://github.com/NinetyUnderScore/AutoTorch",
+      "releaseUrl": "https://github.com/NinetyUnderScore/AutoTorch/releases",
+      "releaseDate": "October 23, 2024",
+      "color": "green",
+      "description": "Automatically places torches to light up areas in Minecraft."
     }
   ]
 }
