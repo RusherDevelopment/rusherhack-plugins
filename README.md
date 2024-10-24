@@ -842,6 +842,16 @@ These tools can assist in managing and developing RusherHack plugins:
 
    A plugin that automatically equips your preferred kit.
 
+---
+
+- ### [AutoTorch](https://github.com/NinetyUnderScore/AutoTorch) <br>
+
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[58].releaseDate&label=Latest%20Release&color=green)](https://github.com/NinetyUnderScore/AutoTorch/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/NinetyUnderScore/AutoTorch/total)](https://github.com/NinetyUnderScore/AutoTorch/releases/download/Release/autotorch-plugin-1.0.0.jar)<br>
+
+   **Creator**: <img src="https://github.com/NinetyUnderScore.png?size=20" width="20" height="20"> [NinetyUnderScore](https://github.com/NinetyUnderScore)
+
+   Automatically places torches to light up areas in Minecraft.
+
 <!-- END PLUGINS LIST -->
 
 ## Reporting Issues
