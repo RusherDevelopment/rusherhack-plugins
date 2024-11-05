@@ -478,7 +478,7 @@
       "releaseUrl": "https://github.com/kybe236/rusher-crystal-spin/releases",
       "releaseDate": "September 13, 2024",
       "color": "green",
-      "description": "A plugin that automates spinning during crystal PvP in Minecraft."
+      "description": "A plugin that makes end crystals spin faster or slower."
     },
     {
       "name": "AutoShear",
