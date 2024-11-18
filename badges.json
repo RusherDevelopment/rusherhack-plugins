@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "totalPlugins": {
-    "message": "61",
+    "message": "60",
     "color": "green"
   },
   "discord": {
@@ -67,14 +67,6 @@
       "releaseDate": "August 05, 2024",
       "color": "green",
       "description": "Provides detailed information about the current instance."
-    },
-    {
-      "name": "OP Plugin",
-      "url": "https://github.com/theoplegends/op-plugin",
-      "releaseUrl": "https://github.com/theoplegends/op-plugin/releases",
-      "releaseDate": "January 24, 2024",
-      "color": "green",
-      "description": "Current features: Autopearl, JakeOrganCrash, HoleEscape, PaperCrash, TrapESP."
     },
     {
       "name": "Stash Mover Plugin",
