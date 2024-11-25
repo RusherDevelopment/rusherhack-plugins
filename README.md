@@ -842,6 +842,14 @@ These tools can assist in managing and developing RusherHack plugins:
 
    Automatically places torches to light up areas in Minecraft.
 
+---
+
+- ### [Elytra Swap](https://github.com/cmg-divined/elytra-swap) <br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[61].releaseDate&label=Latest%20Release&color=orange)](https://github.com/cmg-divined/elytra-swap/releases) ![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/cmg-divined/elytra-swap/total)<br>
+   **Creator**: <img src="https://github.com/cmg-divined.png?size=20" width="20" height="20"> [cmg-divined](https://github.com/cmg-divined)
+
+   Automatically swaps fully repaired Elytras with damaged ones for efficient XP farm repairs.
+
 <!-- END PLUGINS LIST -->
 
 ## Reporting Issues
