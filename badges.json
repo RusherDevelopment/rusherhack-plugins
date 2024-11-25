@@ -511,7 +511,6 @@
       "releaseDate": "No Releases",
       "color": "red",
       "description": "Automatically swaps fully repaired Elytras with damaged ones for efficient XP farm repairs."
-}
-
+    }
   ]
 }
