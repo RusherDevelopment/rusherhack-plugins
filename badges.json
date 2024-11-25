@@ -510,7 +510,7 @@
       "releaseUrl": "https://github.com/cmg-divined/elytra-swap",
       "releaseDate": "No Releases",
       "color": "red",
-      "description": "A plugin to swap your chest piece with an Elytra automatically."
+      "description": "Automatically swaps fully repaired Elytras with damaged ones for efficient XP farm repairs."
 }
 
   ]
