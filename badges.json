@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "totalPlugins": {
-    "message": "60",
+    "message": "61",
     "color": "green"
   },
   "discord": {
@@ -25,7 +25,7 @@
       "url": "https://github.com/RusherDevelopment/example-plugin",
       "releaseUrl": "https://github.com/RusherDevelopment/example-plugin/releases",
       "releaseDate": "No releases",
-      "color": "green",
+      "color": "red",
       "description": "A basic example plugin demonstrating the structure and capabilities of RusherHacks plugins."
     },
     {
@@ -81,7 +81,7 @@
       "url": "https://github.com/czho/unified-modulelist",
       "releaseUrl": "https://github.com/czho/unified-modulelist/releases",
       "releaseDate": "No releases",
-      "color": "green",
+      "color": "red",
       "description": "Rusherhack HUD element that shows active modules from both meteorclient and rusherhack."
     },
     {
@@ -177,7 +177,7 @@
       "url": "https://github.com/Doogie13/f3-spoof",
       "releaseUrl": "https://github.com/Doogie13/f3-spoof/releases",
       "releaseDate": "No releases",
-      "color": "green",
+      "color": "red",
       "description": "Spoofs the F3 debug screen information."
     },
     {
@@ -503,6 +503,15 @@
       "releaseDate": "October 23, 2024",
       "color": "green",
       "description": "Automatically places torches to light up areas in Minecraft."
-    }
+    },
+    {
+      "name": "Elytra Swap",
+      "url": "https://github.com/cmg-divined/elytra-swap",
+      "releaseUrl": "https://github.com/cmg-divined/elytra-swap",
+      "releaseDate": "No Releases",
+      "color": "red",
+      "description": "A plugin to swap your chest piece with an Elytra automatically."
+}
+
   ]
 }
