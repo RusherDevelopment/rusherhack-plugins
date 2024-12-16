@@ -865,6 +865,32 @@ These tools can assist in managing and developing RusherHack plugins:
   </p>
    </details>
 
+---
+
+- ### [CoordFollower](https://github.com/CherkaSSH/CoordFollower-plugin) <br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[62].releaseDate&label=Latest%20Release&color=red)](https://github.com/CherkaSSH/CoordFollower-plugin/releases) ![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/CherkaSSH/CoordFollower-plugin/total)<br>
+   **Creator**: <img src="https://github.com/CherkaSSH.png?size=20" width="20" height="20"> [CherkaSSH](https://github.com/CherkaSSH)
+
+   A plugin that allows you to save, manage, and follow coordinates with ease.
+
+   <details>
+  <summary>Show Usage Instructions</summary>
+  <ul>
+    <li><strong>add</strong>: Adds coordinates to the list.  
+        <br> - Use <code>add</code> to add your current coordinates.  
+    </li>
+    <li><strong>del</strong>: Deletes coordinates from the list.  
+        <br> - Use <code>del &lt;n&gt;</code> to delete the coordinate at position <code>n</code>.  
+        <br> - Use <code>del</code> without parameters to delete the last coordinate in the list.  
+    </li>
+    <li><strong>list</strong>: Displays all saved coordinates.</li>
+    <li><strong>save/load</strong>: Saves or loads the coordinate list to/from an encrypted file.  
+        <br> - Files are saved as <code>name.coords</code>.  
+        <br> - Files are encrypted using a password (<code>pass</code>).
+    </li>
+  </ul>
+</details>
+
 <!-- END PLUGINS LIST -->
 
 ## Reporting Issues
