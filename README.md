@@ -891,6 +891,14 @@ These tools can assist in managing and developing RusherHack plugins:
   </ul>
 </details>
 
+---
+
+- ### [Rusher Chess TUI](https://github.com/CherkaSSH/rusher-chess-tui) <br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[63].releaseDate&label=Latest%20Release&color=red)](https://github.com/CherkaSSH/rusher-chess-tui/releases) ![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/CherkaSSH/rusher-chess-tui/total)<br>
+   **Creator**: <img src="https://github.com/CherkaSSH.png?size=20" width="20" height="20"> [CherkaSSH](https://github.com/CherkaSSH)
+
+     Chess module for RusherHacks, powered by [ChessLib](https://github.com/bhlangonijr/chesslib).
+
 <!-- END PLUGINS LIST -->
 
 ## Reporting Issues
