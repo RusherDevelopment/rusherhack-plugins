@@ -517,7 +517,7 @@
       "url": "https://github.com/CherkaSSH/hdisabler",
       "releaseUrl": "https://github.com/CherkaSSH/hdisabler/releases",
       "releaseDate": "No Release",
-      "color": "orange",
+      "color": "red",
       "description": "Disables certain HUD elements for a cleaner user interface."
     }
   ]
