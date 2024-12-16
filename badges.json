@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "totalPlugins": {
-    "message": "62",
+    "message": "63",
     "color": "green"
   },
   "discord": {
@@ -519,6 +519,14 @@
       "releaseDate": "No Release",
       "color": "red",
       "description": "Disables certain HUD elements for a cleaner user interface."
+    },
+    {
+      "name": "CoordFollower",
+      "url": "https://github.com/CherkaSSH/CoordFollower-plugin",
+      "releaseUrl": "https://github.com/CherkaSSH/CoordFollower-plugin/releases",
+      "releaseDate": "No releases",
+      "color": "red",
+      "description": "A plugin that allows you to save, manage, and follow coordinates with ease."
     }
   ]
 }
