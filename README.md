@@ -845,10 +845,25 @@ These tools can assist in managing and developing RusherHack plugins:
 ---
 
 - ### [Elytra Swap](https://github.com/cmg-divined/elytra-swap) <br>
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[60].releaseDate&label=Latest%20Release&color=orange)](https://github.com/cmg-divined/elytra-swap/releases) ![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/cmg-divined/elytra-swap/total)<br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[60].releaseDate&label=Latest%20Release&color=red)](https://github.com/cmg-divined/elytra-swap/releases) ![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/cmg-divined/elytra-swap/total)<br>
    **Creator**: <img src="https://github.com/cmg-divined.png?size=20" width="20" height="20"> [cmg-divined](https://github.com/cmg-divined)
 
    Automatically swaps fully repaired Elytras with damaged ones for efficient XP farm repairs.
+
+---
+
+- ### [HDisabler](https://github.com/CherkaSSH/hdisabler) <br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[61].releaseDate&label=Latest%20Release&color=red)](https://github.com/CherkaSSH/hdisabler/releases) ![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/CherkaSSH/hdisabler/total)<br>
+   **Creator**: <img src="https://github.com/CherkaSSH.png?size=20" width="20" height="20"> [CherkaSSH](https://github.com/CherkaSSH)
+  
+   2b2t fast bypass.
+  
+   <details>
+   <summary>Show Screenshots</summary>
+  <p align="center">
+    <img src="https://private-user-images.githubusercontent.com/72939961/396092825-6be27563-0ef5-4d75-922e-b8e4d4764555.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzQzNjIyNjksIm5iZiI6MTczNDM2MTk2OSwicGF0aCI6Ii83MjkzOTk2MS8zOTYwOTI4MjUtNmJlMjc1NjMtMGVmNS00ZDc1LTkyMmUtYjhlNGQ0NzY0NTU1LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEyMTYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMjE2VDE1MTI0OVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWEzOTI5Mzk1NDE0YmU4MTk2YjhjYzNkMTFkZTcwYTBkNTZhMTczNDA2OGI1ZjU0YjExMjIyMTA1OTRiNjZlODImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.7phOo1R7C_vIHNHvPuswEv0jxbJkuhP0p_oiFU664TU" alt="HDisabler Screenshot" border="0" width="550">
+  </p>
+   </details>
 
 <!-- END PLUGINS LIST -->
 
