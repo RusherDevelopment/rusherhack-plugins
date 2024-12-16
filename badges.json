@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "totalPlugins": {
-    "message": "61",
+    "message": "62",
     "color": "green"
   },
   "discord": {
@@ -511,6 +511,14 @@
       "releaseDate": "No Releases",
       "color": "red",
       "description": "Automatically swaps fully repaired Elytras with damaged ones for efficient XP farm repairs."
+    },
+    {
+      "name": "HDisabler",
+      "url": "https://github.com/CherkaSSH/hdisabler",
+      "releaseUrl": "https://github.com/CherkaSSH/hdisabler/releases",
+      "releaseDate": "No Release",
+      "color": "orange",
+      "description": "Disables certain HUD elements for a cleaner user interface."
     }
   ]
 }
