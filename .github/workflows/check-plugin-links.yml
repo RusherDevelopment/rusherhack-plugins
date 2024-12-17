@@ -3,19 +3,17 @@ name: Validate Plugin Download Links
 on:
   push:
     branches:
-      - main  # Runs on every push to the main branch
-  workflow_dispatch:  # Allows manual triggering of the workflow
+      - main
+  workflow_dispatch:
 
 jobs:
   validate-links:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout code
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Step 2: Fetch `badges.json` from the gh-pages branch
       - name: Fetch `badges.json` from gh-pages
         run: |
           git fetch origin gh-pages:gh-pages || echo "gh-pages branch does not exist."
@@ -27,18 +25,17 @@ jobs:
             exit 1
           fi
 
-      # Step 3: Set up Node.js environment
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: "18"
 
-      # Step 4: Install Axios for HTTP requests
       - name: Install Dependencies
         run: npm install axios
 
-      # Step 5: Validate plugin download links
       - name: Validate Download Links
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           node <<'EOF'
           const axios = require('axios');
@@ -62,10 +59,13 @@ jobs:
 
                 // Fetch the latest release information
                 const response = await axios.get(apiUrl, {
-                  headers: { 'User-Agent': 'GitHub Actions', Accept: 'application/vnd.github.v3+json' }
+                  headers: {
+                    'User-Agent': 'GitHub Actions',
+                    Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
+                    Accept: 'application/vnd.github.v3+json',
+                  },
                 });
 
-                // Extract the download URL of the latest release's asset
                 const latestDownloadUrl = response.data.assets[0]?.browser_download_url || null;
 
                 if (!latestDownloadUrl) {
@@ -84,10 +84,18 @@ jobs:
                   hasErrors = true;
                 }
               } catch (error) {
-                // Handle errors during API call
-                console.error(`⚠️ Error checking ${plugin.name}: ${error.message}`);
-                console.log(`::error file=badges.json,line=1::${plugin.name} encountered an error: ${error.message}`);
-                hasErrors = true;
+                if (error.response?.status === 404) {
+                  console.warn(`⚠️ ${plugin.name}: No releases found (404).`);
+                  console.log(`::warning file=badges.json,line=1::${plugin.name} has no releases.`);
+                } else if (error.response?.status === 403) {
+                  console.error(`⚠️ ${plugin.name}: Rate limited or access denied (403).`);
+                  console.log(`::error file=badges.json,line=1::${plugin.name} encountered an access issue.`);
+                  hasErrors = true;
+                } else {
+                  console.error(`⚠️ Error checking ${plugin.name}: ${error.message}`);
+                  console.log(`::error file=badges.json,line=1::${plugin.name} encountered an error: ${error.message}`);
+                  hasErrors = true;
+                }
               }
             }
 
@@ -99,5 +107,3 @@ jobs:
           validateLinks().catch(err => {
             console.error("Unhandled error:", err.message);
             process.exit(1);
-          });
-          EOF
