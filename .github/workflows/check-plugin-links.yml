@@ -59,7 +59,7 @@ jobs:
 
               try {
                 const repoName = repoUrl.replace('https://github.com/', '');
-                const apiUrl = \`https://api.github.com/repos/\${repoName}/releases/latest\`;
+                const apiUrl = `https://api.github.com/repos/${repoName}/releases/latest`;
 
                 await sleep(2000); // Throttle requests to avoid hitting the API rate limit
                 console.log(`Fetching latest release info for ${pluginName}...`);
@@ -73,8 +73,8 @@ jobs:
                 const latestReleaseUrl = response.data.assets[0]?.browser_download_url;
 
                 if (!latestReleaseUrl) {
-                  console.warn(\`⚠️ ${pluginName}: No downloadable asset found in the latest release.\`);
-                  console.log(\`::warning file=README.md,line=1::${pluginName} has no downloadable asset in its latest release.\`);
+                  console.warn(`⚠️ ${pluginName}: No downloadable asset found in the latest release.`);
+                  console.log(`::warning file=README.md,line=1::${pluginName} has no downloadable asset in its latest release.`);
                   continue;
                 }
 
