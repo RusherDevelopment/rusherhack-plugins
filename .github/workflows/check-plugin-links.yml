@@ -16,8 +16,13 @@ jobs:
 
       - name: Fetch `badges.json` from gh-pages
         run: |
-          git fetch origin gh-pages
-          git checkout gh-pages -- badges.json
+          git fetch origin gh-pages:gh-pages || echo "gh-pages branch does not exist."
+          if [ -f badges.json ]; then
+            echo "badges.json successfully fetched from gh-pages."
+          else
+            echo "No badges.json file found in gh-pages branch."
+            exit 1
+          fi
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
