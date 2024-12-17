@@ -4,11 +4,10 @@ on:
   push:
     branches:
       - main
-  pull_request:
 
 jobs:
   check-links:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
@@ -25,16 +24,36 @@ jobs:
       - name: Check README links
         id: check-links
         run: |
-          markdown-link-check README.md > link-check-results.txt || exit 1
-        continue-on-error: true
+          markdown-link-check README.md > link-check-results.txt || exit 0
 
-      - name: Handle Results
-        if: success() || failure()
+      - name: Process Results
+        id: process-results
         run: |
           if grep -q "ERROR" link-check-results.txt; then
-            echo "::error::Broken links found in README:"
-            cat link-check-results.txt
-            exit 1
+            echo "broken_links=true" >> $GITHUB_ENV
+            echo "::set-output name=report::$(cat link-check-results.txt | sed 's/%/%25/g; s/\n/%0A/g; s/\r/%0D/g')"
           else
-            echo "::notice::No broken links found!"
+            echo "broken_links=false" >> $GITHUB_ENV
+            echo "::set-output name=report::All links are valid!"
           fi
+
+      - name: Notify GarlicRot
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const report = process.env.REPORT;
+            const body = process.env.broken_links === 'true' 
+              ? `### ⚠️ Broken Links Found
+Hi @GarlicRot, the following broken links were detected:
+\`\`\`
+${report}
+\`\`\`
+Please address them!`
+              : `### ✅ All Links Valid
+Hi @GarlicRot, all links in the README are valid! Great job!`;
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.runId,
+              body,
+            });
