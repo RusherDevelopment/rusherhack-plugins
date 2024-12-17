@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch: # Allow manual runs
+  workflow_dispatch:
 
 jobs:
   check-latest-release:
@@ -106,7 +106,7 @@ jobs:
       uses: actions/github-script@v6
       with:
         script: |
-          const annotations = JSON.parse(fs.readFileSync("annotations.json", "utf8")).annotations;
+          const annotations = JSON.parse(require('fs').readFileSync("annotations.json", "utf8")).annotations;
           github.checks.create({
             owner: context.repo.owner,
             repo: context.repo.repo,
