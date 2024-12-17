@@ -43,14 +43,8 @@ jobs:
           script: |
             const report = process.env.REPORT;
             const body = process.env.broken_links === 'true' 
-              ? `### ⚠️ Broken Links Found
-Hi @GarlicRot, the following broken links were detected:
-\`\`\`
-${report}
-\`\`\`
-Please address them!`
-              : `### ✅ All Links Valid
-Hi @GarlicRot, all links in the README are valid! Great job!`;
+              ? `### ⚠️ Broken Links Found\nHi @GarlicRot, the following broken links were detected:\n\`\`\`\n${report}\n\`\`\`\nPlease address them!`
+              : `### ✅ All Links Valid\nHi @GarlicRot, all links in the README are valid! Great job!`;
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
