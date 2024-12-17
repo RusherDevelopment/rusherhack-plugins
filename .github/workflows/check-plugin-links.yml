@@ -11,93 +11,122 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Checkout the repository
       - name: Checkout code
         uses: actions/checkout@v3
 
+      # Fetch the README.md file
       - name: Fetch README.md from the main branch
         run: |
           if [ ! -f README.md ]; then
-            echo "README.md not found in the repository."
+            echo "::error::README.md not found in the repository."
             exit 1
           fi
 
+      # Print the README content for debugging purposes
       - name: Print README Content
         run: cat README.md
 
+      # Set up Node.js environment
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "18"
+          node-version: '18'
 
+      # Install required dependencies
       - name: Install Dependencies
-        run: npm install axios
+        run: |
+          npm init -y
+          npm install axios
 
+      # Run the validation script
       - name: Run Validation Script
         run: |
           node <<'EOF'
-          const axios = require('axios');
-          const fs = require('fs');
+          const axios = require("axios");
+          const fs = require("fs");
 
-          const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+          const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
           async function validateReadmeLinks() {
             let hasErrors = false;
 
-            console.log("Loading README content...");
-            const readmeContent = fs.readFileSync('./README.md', 'utf-8');
-            console.log("README content loaded successfully");
+            // Read the README file
+            const readmeContent = fs.readFileSync("./README.md", "utf-8");
 
-            const pluginRegex = /### \(.*?)\\(.*?)\.*?\!\Latest Release Date\\.*?\\\(.*?)\/gs;
-            console.log("Searching for plugin entries...");
+            // Regex to parse plugin entries
+            const pluginRegex =
+              /### (.*?)(.*?).*?!Latest Release Date.*?(.*?).*?!GitHub Downloads.*?(.*?)/gs;
 
             let match;
             while ((match = pluginRegex.exec(readmeContent)) !== null) {
-              console.log(`Found plugin: ${match[1]}`);
               const pluginName = match[1];
               const repoUrl = match[2];
-              const readmeReleaseUrl = match[3];
+              const releasePageUrl = match[3];
+              const downloadUrlInReadme = match[4];
 
               try {
-                const repoName = repoUrl.replace('https://github.com/', '');
+                const repoName = repoUrl.replace("https://github.com/", "");
                 const apiUrl = `https://api.github.com/repos/${repoName}/releases/latest`;
 
-                await sleep(2000); // Throttle requests to avoid hitting the API rate limit
-                console.log(`Fetching latest release info for ${pluginName}...`);
+                console.log(`Fetching latest release for: ${pluginName}`);
+                await sleep(2000); // Throttle API requests
                 const response = await axios.get(apiUrl, {
                   headers: {
-                    'User-Agent': 'GitHub Actions',
-                    Accept: 'application/vnd.github.v3+json'
-                  }
+                    "User-Agent": "GitHub Actions",
+                    Accept: "application/vnd.github.v3+json",
+                  },
                 });
 
-                const latestReleaseUrl = response.data.assets[0]?.browser_download_url;
+                const latestAsset = response.data.assets[0];
+                const latestDownloadUrl = latestAsset?.browser_download_url;
 
-                if (!latestReleaseUrl) {
-                  console.warn(`⚠️ ${pluginName}: No downloadable asset found in the latest release.`);
-                  console.log(`::warning file=README.md,line=1::${pluginName} has no downloadable asset in its latest release.`);
+                if (!latestDownloadUrl) {
+                  console.warn(
+                    `⚠️ ${pluginName}: No downloadable asset found in the latest release.`
+                  );
+                  console.log(
+                    `::warning file=README.md,line=1::${pluginName} has no downloadable asset in its latest release.`
+                  );
                   continue;
                 }
 
-                if (readmeReleaseUrl === latestReleaseUrl) {
-                  console.log(`✅ ${pluginName}: Latest release URL in README matches the actual latest release.`);
+                if (downloadUrlInReadme === latestDownloadUrl) {
+                  console.log(
+                    `✅ ${pluginName}: Latest release URL in README matches the actual latest release.`
+                  );
                 } else {
-                  console.error(`❌ ${pluginName}: Latest release URL in README is outdated.`);
-                  console.error(`   Expected: ${latestReleaseUrl}`);
-                  console.error(`   Found: ${readmeReleaseUrl}`);
-                  console.log(`::error file=README.md,line=1::${pluginName} has an outdated latest release URL.`);
+                  console.error(
+                    `❌ ${pluginName}: Latest release URL in README is outdated.`
+                  );
+                  console.error(`   Expected: ${latestDownloadUrl}`);
+                  console.error(`   Found: ${downloadUrlInReadme}`);
+                  console.log(
+                    `::error file=README.md,line=1::${pluginName} has an outdated latest release URL.`
+                  );
                   hasErrors = true;
                 }
               } catch (error) {
                 if (error.response?.status === 404) {
                   console.warn(`⚠️ ${pluginName}: No releases found (404).`);
-                  console.log(`::warning file=README.md,line=1::${pluginName} has no releases.`);
+                  console.log(
+                    `::warning file=README.md,line=1::${pluginName} has no releases.`
+                  );
                 } else if (error.response?.status === 403) {
-                  console.error(`⚠️ ${pluginName}: Rate limited or access denied (403).`);
-                  console.log(`::error file=README.md,line=1::${pluginName} encountered a rate limit or access issue.`);
+                  console.error(
+                    `⚠️ ${pluginName}: Rate limited or access denied (403).`
+                  );
+                  console.log(
+                    `::error file=README.md,line=1::${pluginName} encountered a rate limit or access issue.`
+                  );
                   hasErrors = true;
                 } else {
-                  console.error(`⚠️ Error checking ${pluginName}: ${error.message}`);
-                  console.log(`::error file=README.md,line=1::${pluginName} encountered an error: ${error.message}`);
+                  console.error(
+                    `⚠️ Error checking ${pluginName}: ${error.message}`
+                  );
+                  console.log(
+                    `::error file=README.md,line=1::${pluginName} encountered an error: ${error.message}`
+                  );
                   hasErrors = true;
                 }
               }
@@ -108,8 +137,9 @@ jobs:
             }
           }
 
-          validateReadmeLinks().catch(err => {
-            console.error('Unhandled error:', err.message);
+          // Run the validation
+          validateReadmeLinks().catch((err) => {
+            console.error("Unhandled error:", err.message);
             process.exit(1);
           });
           EOF
