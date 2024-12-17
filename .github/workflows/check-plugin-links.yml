@@ -1,4 +1,4 @@
-name: Validate Plugin Download Links
+name: Validate Plugin Download Links from README
 
 on:
   push:
@@ -7,19 +7,17 @@ on:
   workflow_dispatch:
 
 jobs:
-  validate-links:
+  validate-readme-links:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Fetch `badges.json` from gh-pages
+      - name: Fetch README.md from the main branch
         run: |
-          git fetch origin gh-pages:gh-pages || echo "gh-pages branch does not exist."
-          git checkout gh-pages || echo "Failed to checkout gh-pages."
-          if [ ! -f badges.json ]; then
-            echo "No badges.json file found in gh-pages branch."
+          if [ ! -f README.md ]; then
+            echo "README.md not found in the repository."
             exit 1
           fi
 
@@ -34,60 +32,64 @@ jobs:
       - name: Add and Run Validation Script
         run: |
           echo "Adding and running validation script"
-          cat <<EOF > validate-links.js
+          cat <<EOF > validate-readme-links.js
           const axios = require('axios');
           const fs = require('fs');
 
           const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
-          const badges = JSON.parse(fs.readFileSync('./badges.json', 'utf-8'));
-          const plugins = badges.plugins;
-
-          async function validateLinks() {
+          async function validateReadmeLinks() {
             let hasErrors = false;
 
-            for (const plugin of plugins) {
-              const repoUrl = plugin.url;
-              const releaseUrl = plugin.releaseUrl;
+            const readmeContent = fs.readFileSync('./README.md', 'utf-8');
+            const pluginRegex = /### \(.*?)\\(.*?)\.*?\\\!\Latest Release Date\\(.*?)\\\(.*?)\/gs;
+
+            let match;
+            while ((match = pluginRegex.exec(readmeContent)) !== null) {
+              const pluginName = match[1];
+              const repoUrl = match[2];
+              const readmeReleaseUrl = match[4];
 
               try {
                 const repoName = repoUrl.replace('https://github.com/', '');
                 const apiUrl = \`https://api.github.com/repos/\${repoName}/releases/latest\`;
 
-                await sleep(2000); // Throttle requests with 2 seconds delay
-
+                await sleep(2000); // Throttle requests to avoid hitting the API rate limit
                 const response = await axios.get(apiUrl, {
                   headers: {
                     'User-Agent': 'GitHub Actions',
-                    Accept: 'application/vnd.github.v3+json',
-                  },
+                    Accept: 'application/vnd.github.v3+json'
+                  }
                 });
 
-                const latestDownloadUrl = response.data.assets[0]?.browser_download_url || null;
+                const latestReleaseUrl = response.data.assets[0]?.browser_download_url;
 
-                if (!latestDownloadUrl) {
-                  console.warn(\`⚠️ \${plugin.name}: No downloadable asset found in the latest release.\`);
-                  console.log(\`::warning file=badges.json,line=1::\${plugin.name} has no downloadable asset in its latest release.\`);
-                } else if (releaseUrl === latestDownloadUrl) {
-                  console.log(\`✅ \${plugin.name}: Download link is up-to-date.\`);
+                if (!latestReleaseUrl) {
+                  console.warn(\`⚠️ \${pluginName}: No downloadable asset found in the latest release.\`);
+                  console.log(\`::warning file=README.md,line=1::\${pluginName} has no downloadable asset in its latest release.\`);
+                  continue;
+                }
+
+                if (readmeReleaseUrl === latestReleaseUrl) {
+                  console.log(\`✅ \${pluginName}: Latest release URL in README matches the actual latest release.\`);
                 } else {
-                  console.error(\`❌ \${plugin.name}: Download link is outdated.\`);
-                  console.error(\`   Expected: \${latestDownloadUrl}\`);
-                  console.error(\`   Found: \${releaseUrl}\`);
-                  console.log(\`::error file=badges.json,line=1::\${plugin.name} has an outdated download link.\`);
+                  console.error(\`❌ \${pluginName}: Latest release URL in README is outdated.\`);
+                  console.error(\`   Expected: \${latestReleaseUrl}\`);
+                  console.error(\`   Found: \${readmeReleaseUrl}\`);
+                  console.log(\`::error file=README.md,line=1::\${pluginName} has an outdated latest release URL.\`);
                   hasErrors = true;
                 }
               } catch (error) {
                 if (error.response?.status === 404) {
-                  console.warn(\`⚠️ \${plugin.name}: No releases found (404).\`);
-                  console.log(\`::warning file=badges.json,line=1::\${plugin.name} has no releases.\`);
+                  console.warn(\`⚠️ \${pluginName}: No releases found (404).\`);
+                  console.log(\`::warning file=README.md,line=1::\${pluginName} has no releases.\`);
                 } else if (error.response?.status === 403) {
-                  console.error(\`⚠️ \${plugin.name}: Rate limited or access denied (403).\`);
-                  console.log(\`::error file=badges.json,line=1::\${plugin.name} encountered an access issue.\`);
+                  console.error(\`⚠️ \${pluginName}: Rate limited or access denied (403).\`);
+                  console.log(\`::error file=README.md,line=1::\${pluginName} encountered a rate limit or access issue.\`);
                   hasErrors = true;
                 } else {
-                  console.error(\`⚠️ Error checking \${plugin.name}: \${error.message}\`);
-                  console.log(\`::error file=badges.json,line=1::\${plugin.name} encountered an error: \${error.message}\`);
+                  console.error(\`⚠️ Error checking \${pluginName}: \${error.message}\`);
+                  console.log(\`::error file=README.md,line=1::\${pluginName} encountered an error: \${error.message}\`);
                   hasErrors = true;
                 }
               }
@@ -98,10 +100,10 @@ jobs:
             }
           }
 
-          validateLinks().catch(err => {
+          validateReadmeLinks().catch(err => {
             console.error('Unhandled error:', err.message);
             process.exit(1);
           });
           EOF
 
-          node validate-links.js
+          node validate-readme-links.js
