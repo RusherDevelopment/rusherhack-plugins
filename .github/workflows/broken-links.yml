@@ -1,0 +1,40 @@
+name: Check README for Broken Links
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      - name: Install markdown-link-check
+        run: npm install -g markdown-link-check
+
+      - name: Check README links
+        id: check-links
+        run: |
+          markdown-link-check README.md > link-check-results.txt || exit 1
+        continue-on-error: true
+
+      - name: Handle Results
+        if: success() || failure()
+        run: |
+          if grep -q "ERROR" link-check-results.txt; then
+            echo "::error::Broken links found in README:"
+            cat link-check-results.txt
+            exit 1
+          else
+            echo "::notice::No broken links found!"
+          fi
