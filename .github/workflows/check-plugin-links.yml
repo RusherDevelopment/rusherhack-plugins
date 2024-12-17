@@ -18,9 +18,7 @@ jobs:
         run: |
           git fetch origin gh-pages:gh-pages || echo "gh-pages branch does not exist."
           git checkout gh-pages || echo "Failed to checkout gh-pages."
-          if [ -f badges.json ]; then
-            echo "badges.json successfully fetched from gh-pages."
-          else
+          if [ ! -f badges.json ]; then
             echo "No badges.json file found in gh-pages branch."
             exit 1
           fi
@@ -35,7 +33,8 @@ jobs:
 
       - name: Validate Download Links
         run: |
-          node <<EOF
+          echo 'Starting validation script'
+          echo "
           const axios = require('axios');
           const fs = require('fs');
 
@@ -52,14 +51,11 @@ jobs:
               const releaseUrl = plugin.releaseUrl;
 
               try {
-                // Generate API URL for the repository's latest release
                 const repoName = repoUrl.replace('https://github.com/', '');
                 const apiUrl = `https://api.github.com/repos/${repoName}/releases/latest`;
 
-                // Add a delay to throttle requests
-                await sleep(2000); // 2 seconds delay between requests
+                await sleep(2000); // Throttle requests with 2 seconds delay
 
-                // Fetch the latest release information
                 const response = await axios.get(apiUrl, {
                   headers: {
                     'User-Agent': 'GitHub Actions',
@@ -70,28 +66,28 @@ jobs:
                 const latestDownloadUrl = response.data.assets[0]?.browser_download_url || null;
 
                 if (!latestDownloadUrl) {
-                  console.warn(`⚠️ ${plugin.name}: No downloadable asset found in the latest release.`);
-                  console.log(`::warning file=badges.json,line=1::${plugin.name} has no downloadable asset in its latest release.`);
+                  console.warn(\`⚠️ ${plugin.name}: No downloadable asset found in the latest release.\`);
+                  console.log(\`::warning file=badges.json,line=1::${plugin.name} has no downloadable asset in its latest release.\`);
                 } else if (releaseUrl === latestDownloadUrl) {
-                  console.log(`✅ ${plugin.name}: Download link is up-to-date.`);
+                  console.log(\`✅ ${plugin.name}: Download link is up-to-date.\`);
                 } else {
-                  console.error(`❌ ${plugin.name}: Download link is outdated.`);
-                  console.error(`   Expected: ${latestDownloadUrl}`);
-                  console.error(`   Found: ${releaseUrl}`);
-                  console.log(`::error file=badges.json,line=1::${plugin.name} has an outdated download link.`);
+                  console.error(\`❌ ${plugin.name}: Download link is outdated.\`);
+                  console.error(\`   Expected: ${latestDownloadUrl}\`);
+                  console.error(\`   Found: ${releaseUrl}\`);
+                  console.log(\`::error file=badges.json,line=1::${plugin.name} has an outdated download link.\`);
                   hasErrors = true;
                 }
               } catch (error) {
                 if (error.response?.status === 404) {
-                  console.warn(`⚠️ ${plugin.name}: No releases found (404).`);
-                  console.log(`::warning file=badges.json,line=1::${plugin.name} has no releases.`);
+                  console.warn(\`⚠️ ${plugin.name}: No releases found (404).\`);
+                  console.log(\`::warning file=badges.json,line=1::${plugin.name} has no releases.\`);
                 } else if (error.response?.status === 403) {
-                  console.error(`⚠️ ${plugin.name}: Rate limited or access denied (403).`);
-                  console.log(`::error file=badges.json,line=1::${plugin.name} encountered an access issue.`);
+                  console.error(\`⚠️ ${plugin.name}: Rate limited or access denied (403).\`);
+                  console.log(\`::error file=badges.json,line=1::${plugin.name} encountered an access issue.\`);
                   hasErrors = true;
                 } else {
-                  console.error(`⚠️ Error checking ${plugin.name}: ${error.message}`);
-                  console.log(`::error file=badges.json,line=1::${plugin.name} encountered an error: ${error.message}`);
+                  console.error(\`⚠️ Error checking ${plugin.name}: ${error.message}\`);
+                  console.log(\`::error file=badges.json,line=1::${plugin.name} encountered an error: ${error.message}\`);
                   hasErrors = true;
                 }
               }
@@ -103,7 +99,8 @@ jobs:
           }
 
           validateLinks().catch(err => {
-            console.error("Unhandled error:", err.message);
+            console.error('Unhandled error:', err.message);
             process.exit(1);
           });
-          EOF
+          " > validate.js
+          node validate.js
