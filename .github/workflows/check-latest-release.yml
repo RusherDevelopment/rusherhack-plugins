@@ -25,21 +25,21 @@ jobs:
     - name: Run release URL checker
       run: |
         node <<'EOF'
-        const { Octokit } = require("@octokit/rest");
         const fs = require("fs");
-
-        const octokit = new Octokit();
-        const readme = fs.readFileSync("README.md", "utf-8");
-
-        const regex = /- ### (.*?)(https:\/\/github\.com\/.*?).*?\n.*?!.*?(https:\/\/github\.com\/.*?\/releases.*?)/g;
-        let match;
-
-        let allCorrect = true;
-        let annotations = [];
 
         const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
         const checkLatestRelease = async () => {
+          const { Octokit } = await import("@octokit/rest");
+          const octokit = new Octokit();
+          const readme = fs.readFileSync("README.md", "utf-8");
+
+          const regex = /- ### (.*?)(https:\/\/github\.com\/.*?).*?\n.*?!.*?(https:\/\/github\.com\/.*?\/releases.*?)/g;
+          let match;
+
+          let allCorrect = true;
+          let annotations = [];
+
           while ((match = regex.exec(readme)) !== null) {
             const pluginName = match[1];
             const repoUrl = match[2];
