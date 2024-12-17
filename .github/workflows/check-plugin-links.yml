@@ -31,9 +31,8 @@ jobs:
       - name: Install Dependencies
         run: npm install axios
 
-      - name: Add Validation Script
+      - name: Validate Download Links
         run: |
-          echo "
           const axios = require('axios');
           const fs = require('fs');
 
@@ -101,7 +100,3 @@ jobs:
             console.error('Unhandled error:', err.message);
             process.exit(1);
           });
-          " > validate.js
-
-      - name: Run Validation Script
-        run: node validate.js
