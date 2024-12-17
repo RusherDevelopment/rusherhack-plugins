@@ -46,9 +46,22 @@ jobs:
             const body = brokenLinks
               ? `### ⚠️ Broken Links Found\nHi @GarlicRot, the following broken links were detected:\n\`\`\`\n${report}\n\`\`\`\nPlease address them!`
               : `### ✅ All Links Valid\nHi @GarlicRot, all links in the README are valid! Great job!`;
-            await github.rest.issues.createComment({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: context.payload.head_commit.id,
-              body: body,
-            });
+            
+            if (github.event_name === 'push') {
+              // Comment on the commit
+              await github.rest.repos.createCommitComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                commit_sha: context.sha,
+                body: body,
+              });
+            } else if (github.event_name === 'pull_request') {
+              // Comment on the PR
+              const issue_number = context.payload.pull_request.number;
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue_number,
+                body: body,
+              });
+            }
