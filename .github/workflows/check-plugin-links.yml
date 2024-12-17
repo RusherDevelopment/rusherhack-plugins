@@ -44,6 +44,7 @@ jobs:
           const axios = require('axios');
           const fs = require('fs');
 
+          // Read and parse the badges.json file
           const badges = JSON.parse(fs.readFileSync('./badges.json', 'utf-8'));
           const plugins = badges.plugins;
 
@@ -55,19 +56,27 @@ jobs:
               const releaseUrl = plugin.releaseUrl;
 
               try {
+                // Generate API URL for the repository's latest release
                 const repoName = repoUrl.replace('https://github.com/', '');
                 const apiUrl = `https://api.github.com/repos/${repoName}/releases/latest`;
+
+                // Fetch the latest release information
                 const response = await axios.get(apiUrl, {
                   headers: { 'User-Agent': 'GitHub Actions', Accept: 'application/vnd.github.v3+json' }
                 });
+
+                // Extract the download URL of the latest release's asset
                 const latestDownloadUrl = response.data.assets[0]?.browser_download_url || null;
 
                 if (!latestDownloadUrl) {
+                  // No downloadable asset in the latest release
                   console.warn(`⚠️ ${plugin.name}: No downloadable asset found in the latest release.`);
                   console.log(`::warning file=badges.json,line=1::${plugin.name} has no downloadable asset in its latest release.`);
                 } else if (releaseUrl === latestDownloadUrl) {
+                  // Download link matches the latest release
                   console.log(`✅ ${plugin.name}: Download link is up-to-date.`);
                 } else {
+                  // Download link is outdated
                   console.error(`❌ ${plugin.name}: Download link is outdated.`);
                   console.error(`   Expected: ${latestDownloadUrl}`);
                   console.error(`   Found: ${releaseUrl}`);
@@ -75,6 +84,7 @@ jobs:
                   hasErrors = true;
                 }
               } catch (error) {
+                // Handle errors during API call
                 console.error(`⚠️ Error checking ${plugin.name}: ${error.message}`);
                 console.log(`::error file=badges.json,line=1::${plugin.name} encountered an error: ${error.message}`);
                 hasErrors = true;
@@ -86,5 +96,8 @@ jobs:
             }
           }
 
-          validateLinks();
+          validateLinks().catch(err => {
+            console.error("Unhandled error:", err.message);
+            process.exit(1);
+          });
           EOF
