@@ -7,7 +7,7 @@ on:
 
 jobs:
   check-links:
-    runs-on: ubuntu-22.04  # Updated to explicitly specify Ubuntu 22.04
+    runs-on: ubuntu-22.04
 
     steps:
       - name: Checkout code
@@ -24,34 +24,20 @@ jobs:
       - name: Check README links
         id: check-links
         run: |
-          markdown-link-check README.md > link-check-results.txt || true  # Avoid failing the workflow
+          markdown-link-check README.md > link-check-results.txt || true
 
-      - name: Process Results
-        id: process-results
+      - name: Display Results
+        run: |
+          echo "#### Link Check Results ####"
+          cat link-check-results.txt
+
+      - name: Fail if Broken Links Found
+        if: always()
         run: |
           if grep -q "ERROR" link-check-results.txt; then
-            echo "broken_links=true" >> $GITHUB_ENV
-            echo "$(cat link-check-results.txt)" > broken-links-report.txt
+            echo "Broken links were found:"
+            cat link-check-results.txt
+            exit 1
           else
-            echo "broken_links=false" >> $GITHUB_ENV
-            echo "All links are valid!" > broken-links-report.txt
+            echo "No broken links found! All links are valid."
           fi
-
-      - name: Notify GarlicRot
-        if: always()  # Ensure this runs even if previous steps fail
-        uses: actions/github-script@v6
-        with:
-          script: |
-            const fs = require('fs');
-            const report = fs.readFileSync('broken-links-report.txt', 'utf8');
-            const brokenLinks = process.env.broken_links === 'true';
-            const body = brokenLinks
-              ? `### ⚠️ Broken Links Found\nHi @GarlicRot, the following broken links were detected:\n\`\`\`\n${report}\n\`\`\`\nPlease address them!`
-              : `### ✅ All Links Valid\nHi @GarlicRot, all links in the README are valid! Great job!`;
-            
-            await github.rest.repos.createCommitComment({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              commit_sha: context.sha,
-              body: body,
-            });
