@@ -11,12 +11,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Step 1: Checkout code
       - name: Checkout code
         uses: actions/checkout@v3
 
+      # Step 2: Fetch `badges.json` from the gh-pages branch
       - name: Fetch `badges.json` from gh-pages
         run: |
           git fetch origin gh-pages:gh-pages || echo "gh-pages branch does not exist."
+          git checkout gh-pages || echo "Failed to checkout gh-pages."
           if [ -f badges.json ]; then
             echo "badges.json successfully fetched from gh-pages."
           else
@@ -24,14 +27,17 @@ jobs:
             exit 1
           fi
 
+      # Step 3: Set up Node.js environment
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: "18"
 
+      # Step 4: Install Axios for HTTP requests
       - name: Install Dependencies
         run: npm install axios
 
+      # Step 5: Validate plugin download links
       - name: Validate Download Links
         run: |
           node <<EOF
