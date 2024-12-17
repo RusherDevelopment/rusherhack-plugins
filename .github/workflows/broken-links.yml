@@ -7,7 +7,7 @@ on:
 
 jobs:
   check-links:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04  # Updated to explicitly specify Ubuntu 22.04
 
     steps:
       - name: Checkout code
@@ -24,44 +24,34 @@ jobs:
       - name: Check README links
         id: check-links
         run: |
-          markdown-link-check README.md > link-check-results.txt || exit 0
+          markdown-link-check README.md > link-check-results.txt || true  # Avoid failing the workflow
 
       - name: Process Results
         id: process-results
         run: |
           if grep -q "ERROR" link-check-results.txt; then
             echo "broken_links=true" >> $GITHUB_ENV
-            echo "::set-output name=report::$(cat link-check-results.txt | sed 's/%/%25/g; s/\n/%0A/g; s/\r/%0D/g')"
+            echo "$(cat link-check-results.txt)" > broken-links-report.txt
           else
             echo "broken_links=false" >> $GITHUB_ENV
-            echo "::set-output name=report::All links are valid!"
+            echo "All links are valid!" > broken-links-report.txt
           fi
 
       - name: Notify GarlicRot
+        if: always()  # Ensure this runs even if previous steps fail
         uses: actions/github-script@v6
         with:
           script: |
-            const report = process.env.REPORT;
+            const fs = require('fs');
+            const report = fs.readFileSync('broken-links-report.txt', 'utf8');
             const brokenLinks = process.env.broken_links === 'true';
             const body = brokenLinks
               ? `### ⚠️ Broken Links Found\nHi @GarlicRot, the following broken links were detected:\n\`\`\`\n${report}\n\`\`\`\nPlease address them!`
               : `### ✅ All Links Valid\nHi @GarlicRot, all links in the README are valid! Great job!`;
             
-            if (github.event_name === 'push') {
-              // Comment on the commit
-              await github.rest.repos.createCommitComment({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                commit_sha: context.sha,
-                body: body,
-              });
-            } else if (github.event_name === 'pull_request') {
-              // Comment on the PR
-              const issue_number = context.payload.pull_request.number;
-              await github.rest.issues.createComment({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: issue_number,
-                body: body,
-              });
-            }
+            await github.rest.repos.createCommitComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              commit_sha: context.sha,
+              body: body,
+            });
