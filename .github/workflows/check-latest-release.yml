@@ -24,7 +24,7 @@ jobs:
 
     - name: Run release URL checker
       run: |
-        node <<EOF
+        node <<'EOF'
         const { Octokit } = require("@octokit/rest");
         const fs = require("fs");
 
