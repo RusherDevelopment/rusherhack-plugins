@@ -27,9 +27,9 @@ jobs:
           markdown-link-check README.md > link-check-results.txt || true
 
       - name: Annotate Results
-        if: always()
         run: |
           if grep -q "ERROR" link-check-results.txt; then
             echo "::error title=Broken Links Found::$(cat link-check-results.txt | sed 's/%/%25/g; s/\n/%0A/g; s/\r/%0D/g')"
           else
             echo "::notice title=No Broken Links Found::All links are valid in the README."
+          fi
