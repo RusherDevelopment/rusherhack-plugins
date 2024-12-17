@@ -29,10 +29,10 @@ jobs:
       - name: Install Dependencies
         run: npm install axios
 
-      - name: Add and Run Validation Script
+      - name: Run Validation Script
         run: |
-          echo "Adding and running validation script"
-          cat <<EOF > validate-readme-links.js
+          echo "Running validation script"
+          node <<EOF
           const axios = require('axios');
           const fs = require('fs');
 
@@ -42,13 +42,13 @@ jobs:
             let hasErrors = false;
 
             const readmeContent = fs.readFileSync('./README.md', 'utf-8');
-            const pluginRegex = /### \(.*?)\\(.*?)\.*?\\\!\Latest Release Date\\(.*?)\\\(.*?)\/gs;
+            const pluginRegex = /### \(.*?)\\(.*?)\.*?\!\Latest Release Date\\.*?\\\(.*?)\/gs;
 
             let match;
             while ((match = pluginRegex.exec(readmeContent)) !== null) {
               const pluginName = match[1];
               const repoUrl = match[2];
-              const readmeReleaseUrl = match[4];
+              const readmeReleaseUrl = match[3];
 
               try {
                 const repoName = repoUrl.replace('https://github.com/', '');
@@ -105,5 +105,3 @@ jobs:
             process.exit(1);
           });
           EOF
-
-          node validate-readme-links.js
