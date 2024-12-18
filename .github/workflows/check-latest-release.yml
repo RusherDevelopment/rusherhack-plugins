@@ -71,11 +71,11 @@ jobs:
               }
             }
 
-            console.log(
-              `\n${allCorrect ? '✅ All plugins are up-to-date.' : '❌ Some plugins are outdated.'}`
-            );
-
-            if (!allCorrect) {
+            if (allCorrect) {
+              console.log('✅ All plugins are up-to-date.');
+              console.log('::notice file=README.md::All plugins are verified and up-to-date.');
+            } else {
+              console.log('❌ Some plugins are outdated.');
               process.exit(1);
             }
           };
