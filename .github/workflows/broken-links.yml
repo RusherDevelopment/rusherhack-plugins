@@ -36,10 +36,10 @@ jobs:
           cat link-check-results.txt
           echo "::endgroup::"
 
-      # Step 5: Analyze the results and annotate them
+      # Step 5: Analyze and Annotate Results
       - name: Annotate Results
         run: |
-          # Extract broken links and exclude any links from ./Assets
+          # Extract broken links, excluding any from ./Assets
           broken_links=$(grep -B 1 "✖" link-check-results.txt | grep -v "./Assets" || true)
 
           # Count total links and broken links
