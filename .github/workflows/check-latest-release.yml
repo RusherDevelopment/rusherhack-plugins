@@ -27,13 +27,13 @@ jobs:
       - name: Check README for latest release URLs
         run: |
           node <<EOF
-          const fs = require('fs');
-          const { Octokit } = require('@octokit/rest');
+          import { readFileSync } from 'fs';
+          import { Octokit } from '@octokit/rest';
 
           const octokit = new Octokit(); // Unauthenticated for public API calls
 
           (async () => {
-            const readme = fs.readFileSync('README.md', 'utf-8');
+            const readme = readFileSync('README.md', 'utf-8');
 
             const regex = /- (.*?) \(https:\\/\\/github\\.com\\/.*?)\.*?\(.*?)\\(https:\\/\\/github\\.com\\/.*?\\/releases\\/.*)\/g;
             let match;
