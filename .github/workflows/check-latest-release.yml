@@ -32,7 +32,7 @@ jobs:
 
           const checkLatestRelease = async () => {
             const readme = readFileSync('README.md', 'utf-8');
-            const regex = /- ### (.*?)(https:\/\/github\.com\/.*?).*?\n.*?https:\/\/github\.com\/.*?\/releases\/(latest|tag\/v.*)/g;
+            const regex = /- ### (.*?)\n.*?(.*?)(https:\/\/github\.com\/.*?)\n.*?Download Latest Release(https:\/\/github\.com\/.*?\/releases\/tag\/.*?)/g;
             let match;
             let allCorrect = true;
 
@@ -40,8 +40,8 @@ jobs:
 
             while ((match = regex.exec(readme)) !== null) {
               const pluginName = match[1];
-              const repoUrl = match[2];
-              const currentReleaseUrl = match[3];
+              const repoUrl = match[3];
+              const currentReleaseUrl = match[4];
               const repoPath = repoUrl.replace('https://github.com/', '');
 
               console.log(`\n🛠 Checking plugin: ${pluginName}`);
@@ -54,10 +54,10 @@ jobs:
                   repo: repoPath.split('/')[1],
                 });
 
-                const latestReleaseUrl = latestRelease.html_url;
+                const latestReleaseUrl = `https://github.com/${repoPath}/releases/tag/${latestRelease.tag_name}`;
 
                 console.log(`   ➤ Latest Release URL: ${latestReleaseUrl}`);
-                if (`https://github.com/${repoPath}/releases/${latestRelease.tag_name}` === currentReleaseUrl) {
+                if (currentReleaseUrl === latestReleaseUrl) {
                   console.log(`✅ ${pluginName} is up-to-date.`);
                 } else {
                   console.log(`❌ ${pluginName} is outdated. Update the URL to ${latestReleaseUrl}`);
