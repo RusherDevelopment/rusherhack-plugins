@@ -252,7 +252,7 @@ These tools can assist in managing and developing RusherHack plugins:
 
 - ### [Rusherhack BookBot](https://github.com/Aspect-404/Rusherhack-BookBot) <br>
 
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[12].releaseDate&label=Latest%20Release&color=green)](https://github.com/Aspect-404/Rusherhack-BookBot/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/Aspect-404/Rusherhack-BookBot/total)](https://github.com/Aspect-404/Rusherhack-BookBot/releases/latest/download/Bookbot-0.1.jar)<br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[12].releaseDate&label=Latest%20Release&color=green)](https://github.com/Aspect-404/Rusherhack-BookBot/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/Aspect-404/Rusherhack-BookBot/total)](https://github.com/Aspect-404/Rusherhack-BookBot/releases/download/Release/BookBot.jar)<br>
 
    **Creator**: <img src="https://github.com/Aspect-404.png?size=20" width="20" height="20"> [Aspect-404](https://github.com/Aspect-404)
 
@@ -361,7 +361,7 @@ These tools can assist in managing and developing RusherHack plugins:
 
 - ### [Mace Kill](https://github.com/kybe236/rusherhack-mace-kill) <br>
 
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[21].releaseDate&label=Latest%20Release&color=green)](https://github.com/kybe236/rusherhack-mace-kill/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/kybe236/rusherhack-mace-kill/total)](https://github.com/kybe236/rusherhack-mace-kill/releases/latest/download/kybe-mace-killer-1.0.0.jar)<br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[21].releaseDate&label=Latest%20Release&color=green)](https://github.com/kybe236/rusherhack-mace-kill/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/kybe236/rusherhack-mace-kill/total)](https://github.com/kybe236/rusherhack-mace-kill/releases/download/1.21.1%2C1.21/kybe-mace-killer-1.1.0.jar)<br>
 
    **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
 
@@ -685,7 +685,7 @@ These tools can assist in managing and developing RusherHack plugins:
 
 - ### [StashHunter-rusherhack](https://github.com/CherkaSSH/StashHunter-rusherhack) <br>
 
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[45].releaseDate&label=Latest%20Release&color=green)](https://github.com/CherkaSSH/StashHunter-rusherhack/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/CherkaSSH/StashHunter-rusherhack/total)](https://github.com/CherkaSSH/StashHunter-rusherhack/releases/download/hehe2/StashHunter-rusherhack-1.0.1jar)<br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[45].releaseDate&label=Latest%20Release&color=green)](https://github.com/CherkaSSH/StashHunter-rusherhack/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/CherkaSSH/StashHunter-rusherhack/total)](https://github.com/CherkaSSH/StashHunter-rusherhack/releases/download/hehe2/StashHunter-rusherhack-1.0.1.jar)<br>
 
    **Creator**: <img src="https://github.com/CherkaSSH.png?size=20" width="20" height="20"> [CherkaSSH](https://github.com/CherkaSSH)
 
@@ -721,7 +721,7 @@ These tools can assist in managing and developing RusherHack plugins:
 
 - ### [rusherhack-addons](https://github.com/miles352/rusherhack-addons) <br>
 
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[48].releaseDate&label=Latest%20Release&color=green)](https://github.com/miles352/rusherhack-addons/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/miles352/rusherhack-addons/total)](https://github.com/miles352/rusherhack-addons/releases/download/1.0.0/rusherhack-addons-1.0.0.jar)<br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[48].releaseDate&label=Latest%20Release&color=green)](https://github.com/miles352/rusherhack-addons/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/miles352/rusherhack-addons/total)](https://github.com/miles352/rusherhack-addons/releases/download/1.20.4/jefffmod-1.0.0.jar)<br>
 
    **Creator**: <img src="https://github.com/miles352.png?size=20" width="20" height="20"> [miles352](https://github.com/miles352)
 
