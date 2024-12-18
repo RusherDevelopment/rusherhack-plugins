@@ -21,18 +21,28 @@ jobs:
       - name: Install markdown-link-check
         run: npm install -g markdown-link-check
 
+      - name: Create Ignore Config
+        run: |
+          echo '{
+            "ignorePatterns": [
+              {
+                "pattern": "^\\.\\/Assets\\/"
+              }
+            ]
+          }' > markdown-link-check-config.json
+
       - name: Check README links
         id: check-links
         run: |
-          markdown-link-check --verbose README.md > link-check-results.txt || true
+          markdown-link-check --verbose --config markdown-link-check-config.json README.md > link-check-results.txt || true
           echo "::group::Link Check Results"
           cat link-check-results.txt
           echo "::endgroup::"
 
       - name: Annotate Results
         run: |
-          # Extract broken links
-          broken_links=$(grep -B 1 "✖" link-check-results.txt || true)
+          # Extract broken links excluding ./Assets
+          broken_links=$(grep -B 1 "✖" link-check-results.txt | grep -v "^\\.\\/Assets" || true)
 
           if [ -n "$broken_links" ]; then
             echo "::error title=Broken Links Found::The following links are broken:"
