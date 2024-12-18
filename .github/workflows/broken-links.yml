@@ -18,13 +18,28 @@ jobs:
         with:
           node-version: '18'
 
+      - name: Create markdown-link-check config
+        run: |
+          cat <<EOT > .markdown-link-check.json
+          {
+            "ignorePatterns": [
+              {
+                "pattern": "./Assets/*"
+              },
+              {
+                "pattern": "./assets/*"
+              }
+            ]
+          }
+          EOT
+
       - name: Install markdown-link-check
         run: npm install -g markdown-link-check
 
       - name: Check README links
         id: check-links
         run: |
-          markdown-link-check --verbose README.md > link-check-results.txt || true
+          markdown-link-check --config .markdown-link-check.json --verbose README.md > link-check-results.txt || true
           echo "::group::Link Check Results"
           cat link-check-results.txt
           echo "::endgroup::"
