@@ -1,122 +1,70 @@
 name: Check Latest Release URLs
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
-  workflow_dispatch:
+  pull_request:
+    branches:
+      - main
 
 jobs:
-  check-latest-release:
+  check-readme:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
+      - name: Check out repository
+        uses: actions/checkout@v3
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: "18"
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
 
-    - name: Install dependencies
-      run: npm install @octokit/rest js-yaml
+      - name: Install dependencies
+        run: npm install @octokit/rest
 
-    - name: Run release URL checker
-      run: |
-        node <<'EOF'
-        const fs = require("fs");
+      - name: Check README for latest release URLs
+        run: node <<EOF
+          const fs = require('fs');
+          const { Octokit } = require('@octokit/rest');
 
-        const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+          const octokit = new Octokit(); // Unauthenticated for public API calls
+          const readme = fs.readFileSync('README.md', 'utf-8');
 
-        const checkLatestRelease = async () => {
-          const { Octokit } = await import("@octokit/rest");
-          const octokit = new Octokit();
-          const readme = fs.readFileSync("README.md", "utf-8");
-
-          const regex = /- ### (.*?)(https:\/\/github\.com\/.*?).*?\n.*?!.*?(https:\/\/github\.com\/.*?\/releases.*?)/g;
+          // Regular expression to match plugin name, repo URL, and release URL
+          const regex = /- (.*?) \(https:\\/\\/github\\.com\\/.*?)\.*?\(.*?)\\(https:\\/\\/github\\.com\\/.*?\\/releases\\/.*)\/g;
           let match;
-
           let allCorrect = true;
-          let annotations = [];
 
+          console.log('Checking README for outdated release URLs...');
           while ((match = regex.exec(readme)) !== null) {
             const pluginName = match[1];
             const repoUrl = match[2];
-            const currentReleaseUrl = match[3];
+            const currentReleaseUrl = match[4];
 
-            const repoPath = repoUrl.replace("https://github.com/", "");
+            const repoPath = repoUrl.replace('https://github.com/', '');
 
             try {
-              console.log(`Checking ${pluginName}...`);
-              const { data: latestRelease } = await octokit.rest.repos.getLatestRelease({
-                owner: repoPath.split("/")[0],
-                repo: repoPath.split("/")[1],
+              const { data: latestRelease } = await octokit.repos.getLatestRelease({
+                owner: repoPath.split('/')[0],
+                repo: repoPath.split('/')[1],
               });
 
               const latestReleaseUrl = latestRelease.html_url;
               if (currentReleaseUrl !== latestReleaseUrl) {
-                annotations.push({
-                  path: "README.md",
-                  start_line: 1,
-                  end_line: 1,
-                  annotation_level: "warning",
-                  message: `❌ ${pluginName} is outdated. Update the release URL to ${latestReleaseUrl}`,
-                });
+                console.log(`❌ ${pluginName} is outdated. Update the URL to ${latestReleaseUrl}`);
                 allCorrect = false;
               } else {
-                annotations.push({
-                  path: "README.md",
-                  start_line: 1,
-                  end_line: 1,
-                  annotation_level: "notice",
-                  message: `✅ ${pluginName} is up-to-date.`,
-                });
+                console.log(`✅ ${pluginName} is up-to-date.`);
               }
             } catch (error) {
-              annotations.push({
-                path: "README.md",
-                start_line: 1,
-                end_line: 1,
-                annotation_level: "failure",
-                message: `❌ Failed to check ${pluginName}. ${error.message}`,
-              });
+              console.log(`⚠️ Failed to fetch latest release for ${pluginName}. Error: ${error.message}`);
               allCorrect = false;
             }
-
-            // Delay to avoid hitting rate limits
-            await delay(3000); // 3 seconds
           }
-
-          const annotationsJson = JSON.stringify({ annotations });
-          fs.writeFileSync("annotations.json", annotationsJson);
 
           if (!allCorrect) {
-            throw new Error("Some plugins are outdated or failed to verify. Check annotations for details.");
+            process.exit(1); // Exit with error code if any plugin is outdated
           }
-        };
-
-        checkLatestRelease().catch((err) => {
-          console.error(err);
-          process.exit(1);
-        });
         EOF
-
-    - name: Upload Annotations
-      uses: actions/github-script@v6
-      with:
-        script: |
-          const annotations = JSON.parse(require('fs').readFileSync("annotations.json", "utf8")).annotations;
-          github.checks.create({
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-            name: "Release URL Check",
-            head_sha: context.sha,
-            status: "completed",
-            conclusion: annotations.some(a => a.annotation_level === "failure") ? "failure" : "success",
-            output: {
-              title: "Release URL Check",
-              summary: `${annotations.length} plugins checked. ${annotations.filter(a => a.annotation_level === "warning").length} outdated, ${annotations.filter(a => a.annotation_level === "failure").length} failed.`,
-              annotations,
-            },
-          });
