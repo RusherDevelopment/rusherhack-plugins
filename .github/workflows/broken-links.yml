@@ -31,11 +31,17 @@ jobs:
 
       - name: Annotate Results
         run: |
-          if grep -q "✖" link-check-results.txt; then
+          # Extract broken links
+          broken_links=$(grep -B 1 "✖" link-check-results.txt || true)
+
+          if [ -n "$broken_links" ]; then
             echo "::error title=Broken Links Found::The following links are broken:"
-            grep -B 1 "✖" link-check-results.txt | sed 's/%/%25/g; s/\n/%0A/g; s/\r/%0D/g'
-            echo "Full Details:"
-            cat link-check-results.txt | grep -B 1 "✖"
+            echo "$broken_links" | sed 's/%/%25/g; s/\n/%0A/g; s/\r/%0D/g'
+
+            # Print broken links in console for debugging
+            echo "Broken Links Details:"
+            echo "$broken_links"
+
             exit 1
           else
             echo "::notice title=All Links Valid::All links in the README are valid."
