@@ -32,7 +32,7 @@ jobs:
 
           const checkLatestRelease = async () => {
             const readme = readFileSync('README.md', 'utf-8');
-            const regex = /- (.*?) (https:\/\/github\.com\/.*?).*?(https:\/\/github\.com\/.*?\/releases\/.*)/g;
+            const regex = /- ### (.*?)(https:\/\/github\.com\/.*?).*?.*?(https:\/\/github\.com\/.*?\/releases\/.*?)/g;
             let match;
             let allCorrect = true;
 
