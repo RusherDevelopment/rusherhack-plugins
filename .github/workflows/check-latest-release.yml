@@ -32,7 +32,7 @@ jobs:
 
           const checkLatestRelease = async () => {
             const readme = readFileSync('README.md', 'utf-8');
-            const regex = /- ### (.*?)(https:\/\/github\.com\/.*?)\s*<br>.*?!.*?(.*?).*?Download Latest Release(.*?)/gs;
+            const regex = /- ### \[(.*?)\]\((https:\/\/github\.com\/.*?)\) <br>.*?\[!\[Latest Release Date\]\(.*?\)\]\((.*?)\)/g;
             let match;
             let allCorrect = true;
 
@@ -41,8 +41,7 @@ jobs:
             while ((match = regex.exec(readme)) !== null) {
               const pluginName = match[1];
               const repoUrl = match[2];
-              const releaseBadgeUrl = match[3];
-              const currentReleaseUrl = match[4];
+              const currentReleaseUrl = match[3];
               const repoPath = repoUrl.replace('https://github.com/', '');
 
               console.log(`\n🛠 Checking plugin: ${pluginName}`);
