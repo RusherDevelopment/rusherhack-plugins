@@ -25,46 +25,49 @@ jobs:
         run: npm install @octokit/rest
 
       - name: Check README for latest release URLs
-        run: node <<EOF
+        run: |
+          node <<EOF
           const fs = require('fs');
           const { Octokit } = require('@octokit/rest');
 
           const octokit = new Octokit(); // Unauthenticated for public API calls
-          const readme = fs.readFileSync('README.md', 'utf-8');
 
-          // Regular expression to match plugin name, repo URL, and release URL
-          const regex = /- (.*?) \(https:\\/\\/github\\.com\\/.*?)\.*?\(.*?)\\(https:\\/\\/github\\.com\\/.*?\\/releases\\/.*)\/g;
-          let match;
-          let allCorrect = true;
+          (async () => {
+            const readme = fs.readFileSync('README.md', 'utf-8');
 
-          console.log('Checking README for outdated release URLs...');
-          while ((match = regex.exec(readme)) !== null) {
-            const pluginName = match[1];
-            const repoUrl = match[2];
-            const currentReleaseUrl = match[4];
+            const regex = /- (.*?) \(https:\\/\\/github\\.com\\/.*?)\.*?\(.*?)\\(https:\\/\\/github\\.com\\/.*?\\/releases\\/.*)\/g;
+            let match;
+            let allCorrect = true;
 
-            const repoPath = repoUrl.replace('https://github.com/', '');
+            console.log('Checking README for outdated release URLs...');
+            while ((match = regex.exec(readme)) !== null) {
+              const pluginName = match[1];
+              const repoUrl = match[2];
+              const currentReleaseUrl = match[4];
 
-            try {
-              const { data: latestRelease } = await octokit.repos.getLatestRelease({
-                owner: repoPath.split('/')[0],
-                repo: repoPath.split('/')[1],
-              });
+              const repoPath = repoUrl.replace('https://github.com/', '');
 
-              const latestReleaseUrl = latestRelease.html_url;
-              if (currentReleaseUrl !== latestReleaseUrl) {
-                console.log(`❌ ${pluginName} is outdated. Update the URL to ${latestReleaseUrl}`);
+              try {
+                const { data: latestRelease } = await octokit.repos.getLatestRelease({
+                  owner: repoPath.split('/')[0],
+                  repo: repoPath.split('/')[1],
+                });
+
+                const latestReleaseUrl = latestRelease.html_url;
+                if (currentReleaseUrl !== latestReleaseUrl) {
+                  console.log(`❌ ${pluginName} is outdated. Update the URL to ${latestReleaseUrl}`);
+                  allCorrect = false;
+                } else {
+                  console.log(`✅ ${pluginName} is up-to-date.`);
+                }
+              } catch (error) {
+                console.log(`⚠️ Failed to fetch latest release for ${pluginName}. Error: ${error.message}`);
                 allCorrect = false;
-              } else {
-                console.log(`✅ ${pluginName} is up-to-date.`);
               }
-            } catch (error) {
-              console.log(`⚠️ Failed to fetch latest release for ${pluginName}. Error: ${error.message}`);
-              allCorrect = false;
             }
-          }
 
-          if (!allCorrect) {
-            process.exit(1); // Exit with error code if any plugin is outdated
-          }
-        EOF
+            if (!allCorrect) {
+              process.exit(1);
+            }
+          })();
+          EOF
