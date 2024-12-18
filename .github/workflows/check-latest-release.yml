@@ -11,21 +11,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout the repository
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Step 2: Set up Node.js environment
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
 
-      # Step 3: Install dependencies
       - name: Install dependencies
         run: npm install @octokit/rest
 
-      # Step 4: Check README for outdated release URLs
       - name: Check README for outdated release URLs
         run: |
           node --input-type=module <<'EOF'
@@ -61,19 +57,16 @@ jobs:
                 const latestReleaseUrl = latestRelease.html_url;
 
                 console.log(`   ➤ Latest Release URL: ${latestReleaseUrl}`);
-                console.log(
-                  currentReleaseUrl === latestReleaseUrl
-                    ? `✅ ${pluginName} is up-to-date.`
-                    : `❌ ${pluginName} is outdated. Please update the URL to ${latestReleaseUrl}.`
-                );
-
-                if (currentReleaseUrl !== latestReleaseUrl) {
+                if (currentReleaseUrl === latestReleaseUrl) {
+                  console.log(`✅ ${pluginName} is up-to-date.`);
+                } else {
+                  console.log(`❌ ${pluginName} is outdated. Update the URL to ${latestReleaseUrl}`);
+                  console.log(`::warning file=README.md::${pluginName} is outdated. Update the URL to ${latestReleaseUrl}`);
                   allCorrect = false;
                 }
               } catch (error) {
-                console.error(
-                  `⚠️ Failed to fetch the latest release for ${pluginName}. Error: ${error.message}`
-                );
+                console.error(`⚠️ Failed to fetch latest release for ${pluginName}. Error: ${error.message}`);
+                console.log(`::error file=README.md::Failed to fetch latest release for ${pluginName}: ${error.message}`);
                 allCorrect = false;
               }
             }
