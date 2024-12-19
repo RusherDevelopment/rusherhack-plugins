@@ -50,7 +50,10 @@ jobs:
           // Extract GitHub URLs from the plugin section
           const pluginRegex = /https:\/\/github\.com\/([\w-]+)\/([\w-]+)/g;
           const matches = [...pluginSection.matchAll(pluginRegex)];
-          const plugins = matches.map(match => ({ owner: match[1], repo: match[2] }));
+          const plugins = matches.map(match => ({
+            owner: match[1],
+            repo: match[2],
+          })).filter(plugin => plugin.owner && plugin.repo); // Ensure valid entries
 
           // Function to check latest releases
           async function checkPlugins(plugins) {
@@ -60,8 +63,8 @@ jobs:
                 const response = await axios.get(`https://api.github.com/repos/${owner}/${repo}/releases/latest`, {
                   headers: { 'Accept': 'application/vnd.github.v3+json' }
                 });
-                const latestVersion = response.data.tag_name;
-                const releaseDate = response.data.published_at;
+                const latestVersion = response.data.tag_name || 'No tag';
+                const releaseDate = response.data.published_at || 'Unknown';
 
                 results.push({ repo: `${owner}/${repo}`, latestVersion, releaseDate, status: 'Up-to-date' });
               } catch (error) {
