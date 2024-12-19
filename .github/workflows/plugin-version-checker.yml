@@ -1,4 +1,32 @@
-- name: Check Plugins
+name: Check Plugin Versions
+
+on:
+  push:
+    branches:
+      - main # Trigger when commits are pushed to the main branch
+  workflow_dispatch: # Allows manual trigger if needed
+
+jobs:
+  check-plugins:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      # Step 3: Install Dependencies
+      - name: Install Dependencies
+        run: npm install axios
+
+      # Step 4: Check Plugin Versions
+      - name: Check Plugins
         id: check-plugins
         run: |
           node -e "
@@ -20,17 +48,10 @@
               process.exit(1);
             }
 
-            // Debug: Log the plugin section
-            console.log('Plugin Section:', pluginSection);
-
             // Extract GitHub URLs from the plugin section
             const pluginRegex = /https:\/\/github\.com\/([\w-]+)\/([\w-]+)/g;
             const matches = [...pluginSection.matchAll(pluginRegex)];
             const plugins = matches.map(match => ({ owner: match[1], repo: match[2] }));
-
-            // Debug: Log matches and plugins
-            console.log('Matches Found:', matches);
-            console.log('Parsed Plugins:', plugins);
 
             if (plugins.length === 0) {
               console.error('Error: No valid plugins found in the README file.');
