@@ -37,10 +37,10 @@ jobs:
           const pluginsSectionStart = '<!-- START PLUGINS LIST -->';
           const pluginsSectionEnd = '<!-- END PLUGINS LIST -->';
 
-          // Read README file
+          // Read the README file
           const readmeContent = fs.readFileSync(readmePath, 'utf8');
 
-          // Extract plugin section
+          // Extract the plugins section
           const pluginSection = readmeContent.split(pluginsSectionStart)[1]?.split(pluginsSectionEnd)[0];
           if (!pluginSection) {
             console.error('Plugins section not found in the README file.');
@@ -48,45 +48,45 @@ jobs:
           }
 
           // Extract GitHub URLs from the plugin section
-          const pluginRegex = /https:\/\/github\.com\/([^\s)]+)/g;
+          const pluginRegex = /https:\/\/github\.com\/([\w-]+)\/([\w-]+)/g;
           const matches = [...pluginSection.matchAll(pluginRegex)];
-          const plugins = matches.map(match => match[1]);
+          const plugins = matches.map(match => ({ owner: match[1], repo: match[2] }));
 
-          // Check latest releases
+          // Function to check latest releases
           async function checkPlugins(plugins) {
             const results = [];
-            for (const plugin of plugins) {
+            for (const { owner, repo } of plugins) {
               try {
-                const [owner, repo] = plugin.split('/');
                 const response = await axios.get(`https://api.github.com/repos/${owner}/${repo}/releases/latest`, {
                   headers: { 'Accept': 'application/vnd.github.v3+json' }
                 });
                 const latestVersion = response.data.tag_name;
+                const releaseDate = response.data.published_at;
 
-                results.push({ repo, latestVersion, status: 'Up-to-date' });
+                results.push({ repo: `${owner}/${repo}`, latestVersion, releaseDate, status: 'Up-to-date' });
               } catch (error) {
-                results.push({ repo: plugin, status: 'Error or No Releases Found', error: error.message });
+                results.push({ repo: `${owner}/${repo}`, status: 'Error or No Releases Found', error: error.message });
               }
             }
             return results;
           }
 
-          checkPlugins(plugins)
-            .then(results => {
-              console.log('Plugin Version Check Results:');
-              console.table(results);
+          // Run the check and display results
+          (async () => {
+            const results = await checkPlugins(plugins);
+            console.log('Plugin Version Check Results:');
+            console.table(results);
 
-              // Check for outdated plugins
-              const outdated = results.filter(result => result.status !== 'Up-to-date');
-              if (outdated.length > 0) {
-                console.error('Outdated or Unverified Plugins:', outdated);
-                process.exit(1);
-              } else {
-                console.log('All plugins are up-to-date.');
-              }
-            })
-            .catch(err => {
-              console.error('Error during plugin check:', err);
+            // Identify outdated or problematic plugins
+            const problematicPlugins = results.filter(result => result.status !== 'Up-to-date');
+            if (problematicPlugins.length > 0) {
+              console.error('Outdated or Unverified Plugins:', problematicPlugins);
               process.exit(1);
-            });
+            } else {
+              console.log('All plugins are up-to-date.');
+            }
+          })().catch(err => {
+            console.error('Unexpected Error:', err);
+            process.exit(1);
+          });
           EOF
