@@ -29,73 +29,74 @@ jobs:
       - name: Check Plugins
         id: check-plugins
         run: |
-          node <<EOF
-const fs = require('fs');
-const axios = require('axios');
+          node -e "
+          const fs = require('fs');
+          const axios = require('axios');
 
-const readmePath = 'README.md';
-const pluginsSectionStart = '<!-- START PLUGINS LIST -->';
-const pluginsSectionEnd = '<!-- END PLUGINS LIST -->';
+          const readmePath = 'README.md';
+          const pluginsSectionStart = '<!-- START PLUGINS LIST -->';
+          const pluginsSectionEnd = '<!-- END PLUGINS LIST -->';
 
-// Read the README file
-const readmeContent = fs.readFileSync(readmePath, 'utf8');
+          // Read the README file
+          const readmeContent = fs.readFileSync(readmePath, 'utf8');
 
-// Extract the plugins section
-const pluginSection = readmeContent.split(pluginsSectionStart)[1]?.split(pluginsSectionEnd)[0];
-if (!pluginSection) {
-  console.error('Plugins section not found in the README file.');
-  process.exit(1);
-}
+          // Extract the plugins section
+          const pluginSection = readmeContent.split(pluginsSectionStart)[1]?.split(pluginsSectionEnd)[0];
+          if (!pluginSection) {
+            console.error('Plugins section not found in the README file.');
+            process.exit(1);
+          }
 
-// Extract GitHub URLs from the plugin section
-const pluginRegex = /https:\/\/github\.com\/([\w-]+)\/([\w-]+)/g;
-const matches = [...pluginSection.matchAll(pluginRegex)];
-const plugins = matches
-  .map(match => ({ owner: match[1], repo: match[2] }))
-  .filter(plugin => plugin.owner && plugin.repo); // Ensure valid entries
+          // Extract GitHub URLs from the plugin section
+          const pluginRegex = /https:\/\/github\.com\/([\w-]+)\/([\w-]+)/g;
+          const matches = [...pluginSection.matchAll(pluginRegex)];
+          const plugins = matches
+            .map(match => ({ owner: match[1], repo: match[2] }))
+            .filter(plugin => plugin.owner && plugin.repo); // Ensure valid entries
 
-// Debugging: Log extracted plugins
-if (plugins.length === 0) {
-  console.error('No valid plugins found in the README file.');
-  process.exit(1);
-}
-console.log('Extracted Plugins:', plugins);
+          // Debugging: Log extracted plugins
+          if (plugins.length === 0) {
+            console.error('No valid plugins found in the README file.');
+            process.exit(1);
+          }
+          console.log('Extracted Plugins:', plugins);
 
-// Function to check latest releases
-async function checkPlugins(plugins) {
-  const results = [];
-  for (const { owner, repo } of plugins) {
-    try {
-      const response = await axios.get(`https://api.github.com/repos/${owner}/${repo}/releases/latest`, {
-        headers: { 'Accept': 'application/vnd.github.v3+json' }
-      });
-      const latestVersion = response.data.tag_name || 'No tag';
-      const releaseDate = response.data.published_at || 'Unknown';
+          // Function to check latest releases
+          async function checkPlugins(plugins) {
+            const results = [];
+            for (const { owner, repo } of plugins) {
+              try {
+                const response = await axios.get(
+                  \`https://api.github.com/repos/${owner}/${repo}/releases/latest\`, 
+                  { headers: { 'Accept': 'application/vnd.github.v3+json' } }
+                );
+                const latestVersion = response.data.tag_name || 'No tag';
+                const releaseDate = response.data.published_at || 'Unknown';
 
-      results.push({ repo: `${owner}/${repo}`, latestVersion, releaseDate, status: 'Up-to-date' });
-    } catch (error) {
-      results.push({ repo: `${owner}/${repo}`, status: 'Error or No Releases Found', error: error.message });
-    }
-  }
-  return results;
-}
+                results.push({ repo: `${owner}/${repo}`, latestVersion, releaseDate, status: 'Up-to-date' });
+              } catch (error) {
+                results.push({ repo: `${owner}/${repo}`, status: 'Error or No Releases Found', error: error.message });
+              }
+            }
+            return results;
+          }
 
-// Run the check and display results
-(async () => {
-  const results = await checkPlugins(plugins);
-  console.log('Plugin Version Check Results:');
-  console.table(results);
+          // Run the check and display results
+          (async () => {
+            const results = await checkPlugins(plugins);
+            console.log('Plugin Version Check Results:');
+            console.table(results);
 
-  // Identify outdated or problematic plugins
-  const problematicPlugins = results.filter(result => result.status !== 'Up-to-date');
-  if (problematicPlugins.length > 0) {
-    console.error('Outdated or Unverified Plugins:', problematicPlugins);
-    process.exit(1);
-  } else {
-    console.log('All plugins are up-to-date.');
-  }
-})().catch(err => {
-  console.error('Unexpected Error:', err);
-  process.exit(1);
-});
-EOF
+            // Identify outdated or problematic plugins
+            const problematicPlugins = results.filter(result => result.status !== 'Up-to-date');
+            if (problematicPlugins.length > 0) {
+              console.error('Outdated or Unverified Plugins:', problematicPlugins);
+              process.exit(1);
+            } else {
+              console.log('All plugins are up-to-date.');
+            }
+          })().catch(err => {
+            console.error('Unexpected Error:', err);
+            process.exit(1);
+          });
+          "
