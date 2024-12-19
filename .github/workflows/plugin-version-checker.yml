@@ -3,8 +3,8 @@ name: Check Plugin Versions
 on:
   push:
     branches:
-      - main # Trigger when commits are pushed to the main branch
-  workflow_dispatch: # Allows manual trigger if needed
+      - main # Trigger on main branch updates
+  workflow_dispatch: # Allows manual trigger
 
 jobs:
   check-plugins:
@@ -33,70 +33,74 @@ jobs:
           const fs = require('fs');
           const axios = require('axios');
 
-          const readmePath = 'README.md';
-          const pluginsSectionStart = '<!-- START PLUGINS LIST -->';
-          const pluginsSectionEnd = '<!-- END PLUGINS LIST -->';
+          try {
+            const readmePath = 'README.md';
+            const pluginsSectionStart = '<!-- START PLUGINS LIST -->';
+            const pluginsSectionEnd = '<!-- END PLUGINS LIST -->';
 
-          // Read the README file
-          const readmeContent = fs.readFileSync(readmePath, 'utf8');
+            // Read the README file
+            const readmeContent = fs.readFileSync(readmePath, 'utf8');
 
-          // Extract the plugins section
-          const pluginSection = readmeContent.split(pluginsSectionStart)[1]?.split(pluginsSectionEnd)[0];
-          if (!pluginSection) {
-            console.error('Plugins section not found in the README file.');
-            process.exit(1);
-          }
-
-          // Extract GitHub URLs from the plugin section
-          const pluginRegex = /https:\/\/github\.com\/([\w-]+)\/([\w-]+)/g;
-          const matches = [...pluginSection.matchAll(pluginRegex)];
-          const plugins = matches
-            .map(match => ({ owner: match[1], repo: match[2] }))
-            .filter(plugin => plugin.owner && plugin.repo); // Ensure valid entries
-
-          // Debugging: Log extracted plugins
-          if (plugins.length === 0) {
-            console.error('No valid plugins found in the README file.');
-            process.exit(1);
-          }
-          console.log('Extracted Plugins:', plugins);
-
-          // Function to check latest releases
-          async function checkPlugins(plugins) {
-            const results = [];
-            for (const { owner, repo } of plugins) {
-              try {
-                const response = await axios.get(
-                  \`https://api.github.com/repos/${owner}/${repo}/releases/latest\`, 
-                  { headers: { 'Accept': 'application/vnd.github.v3+json' } }
-                );
-                const latestVersion = response.data.tag_name || 'No tag';
-                const releaseDate = response.data.published_at || 'Unknown';
-
-                results.push({ repo: `${owner}/${repo}`, latestVersion, releaseDate, status: 'Up-to-date' });
-              } catch (error) {
-                results.push({ repo: `${owner}/${repo}`, status: 'Error or No Releases Found', error: error.message });
-              }
-            }
-            return results;
-          }
-
-          // Run the check and display results
-          (async () => {
-            const results = await checkPlugins(plugins);
-            console.log('Plugin Version Check Results:');
-            console.table(results);
-
-            // Identify outdated or problematic plugins
-            const problematicPlugins = results.filter(result => result.status !== 'Up-to-date');
-            if (problematicPlugins.length > 0) {
-              console.error('Outdated or Unverified Plugins:', problematicPlugins);
+            // Extract the plugins section
+            const pluginSection = readmeContent.split(pluginsSectionStart)[1]?.split(pluginsSectionEnd)[0];
+            if (!pluginSection) {
+              console.error('Error: Plugins section not found in the README file.');
               process.exit(1);
-            } else {
-              console.log('All plugins are up-to-date.');
             }
-          })().catch(err => {
-            console.error('Unexpected Error:', err);
+
+            // Extract GitHub URLs from the plugin section
+            const pluginRegex = /https:\/\/github\.com\/([\w-]+)\/([\w-]+)/g;
+            const matches = [...pluginSection.matchAll(pluginRegex)];
+            const plugins = matches.map(match => ({ owner: match[1], repo: match[2] }));
+
+            if (plugins.length === 0) {
+              console.error('Error: No valid plugins found in the README file.');
+              process.exit(1);
+            }
+
+            console.log('Extracted Plugins:', plugins);
+
+            // Function to check latest releases
+            async function checkPlugins(plugins) {
+              const results = [];
+              for (const { owner, repo } of plugins) {
+                if (!owner || !repo) {
+                  results.push({ repo: `${owner}/${repo}`, status: 'Invalid Data' });
+                  continue;
+                }
+                try {
+                  const response = await axios.get(
+                    `https://api.github.com/repos/${owner}/${repo}/releases/latest`,
+                    { headers: { Accept: 'application/vnd.github.v3+json' } }
+                  );
+                  const latestVersion = response.data.tag_name || 'No tag';
+                  const releaseDate = response.data.published_at || 'Unknown';
+                  results.push({ repo: `${owner}/${repo}`, latestVersion, releaseDate, status: 'Up-to-date' });
+                } catch (error) {
+                  results.push({ repo: `${owner}/${repo}`, status: 'Error or No Releases Found', error: error.message });
+                }
+              }
+              return results;
+            }
+
+            // Run the check and display results
+            (async () => {
+              const results = await checkPlugins(plugins);
+              console.table(results);
+
+              const problematicPlugins = results.filter(result => result.status !== 'Up-to-date');
+              if (problematicPlugins.length > 0) {
+                console.error('Outdated or Problematic Plugins:', problematicPlugins);
+                process.exit(1);
+              } else {
+                console.log('All plugins are up-to-date.');
+              }
+            })().catch(err => {
+              console.error('Unexpected Error:', err);
+              process.exit(1);
+            });
+          } catch (err) {
+            console.error('Script Error:', err);
             process.exit(1);
-          });
+          }
           "
