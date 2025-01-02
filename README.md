@@ -18,6 +18,7 @@ This repository is a collection of third-party plugins developed for the RusherH
 - [Installation](#installation)
 - [Plugin Examples/Info](#plugin-examplesinfo)
 - [Dev Tools](#dev-tools)
+- [Themes](#themes)
 - [Plugins List](#plugins-list)
 - [Reporting Issues](#reporting-issues)
 - [Contribute](#contribute)
@@ -51,6 +52,14 @@ Here are some helpful resources and examples for developing RusherHack plugins:
 
 ## Dev Tools
 
+<details>
+  <summary>Badge Info</summary>
+  
+  - **Latest Release**: Clicking on this badge will take you to the releases page for the plugin.
+  - **Downloads**: Clicking on the downloads badge will directly download the latest version of the plugin.
+  
+</details>
+
 These tools can assist in managing and developing RusherHack plugins:
 
 - ### [RHP](https://github.com/kybe236/rhp) <br>
@@ -61,17 +70,46 @@ These tools can assist in managing and developing RusherHack plugins:
 
   A package manager that installs RusherHack plugins for you and sets the needed flags.
 
-## Plugins List
-
-<details>
-  <summary>Badge Info</summary>
-  
-  - **Latest Release**: Clicking on this badge will take you to the releases page for the plugin.
-  - **Downloads**: Clicking on the downloads badge will directly download the latest version of the plugin.
-  
-</details>
+## Themes
 
 <!-- START PLUGINS LIST -->
+
+- ### [rusherNodusTheme](https://github.com/bakjedev/rusherNodusTheme) <br>
+
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[27].releaseDate&label=Latest%20Release&color=green)](https://github.com/bakjedev/rusherNodusTheme/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/bakjedev/rusherNodusTheme/total)](https://github.com/bakjedev/rusherNodusTheme/releases/latest/download/rushergui-1.0.0.jar)<br>
+
+   **Creator**: <img src="https://github.com/bakjedev.png?size=20" width="20" height="20"> [bakjedev](https://github.com/bakjedev)
+
+   Nodus - Best theme evaAAAA. Code is terrible. Blame xyzbtw!
+
+   <details>
+     <summary>Show Screenshots</summary>
+     <p align="center">
+       <img src="./Assets/rusherNodusTheme/NodusGUI.png" alt="Module" border="0" width="750">
+     </p>
+   </details>
+
+---
+
+- ### [nhack Theme](https://github.com/h1tm4nqq/Nhack-theme) <br>
+
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[28].releaseDate&label=Latest%20Release&color=green)](https://github.com/h1tm4nqq/Nhack-theme/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/h1tm4nqq/Nhack-theme/total)](https://github.com/h1tm4nqq/Nhack-theme/releases/latest/download/rushergui-1.0.0.jar)<br>
+
+   **Creator**: <img src="https://github.com/h1tm4nqq.png?size=20" width="20" height="20"> [h1tm4nqq](https://github.com/h1tm4nqq)
+
+   A theme like Nhack 2015 for RH.
+
+---
+
+- ### [RusherGUI](https://github.com/xyzbtw/rusherGUI) <br>
+
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[29].releaseDate&label=Latest%20Release&color=green)](https://github.com/xyzbtw/rusherGUI/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/xyzbtw/rusherGUI/total)](https://github.com/xyzbtw/rusherGUI/releases/latest/download/rushergui-1.0.0.jar)<br>
+
+   **Creator**: <img src="https://github.com/xyzbtw.png?size=20" width="20" height="20"> [xyzbtw](https://github.com/xyzbtw)
+
+   An example plugin showcasing how to create custom themes with RusherHack.
+
+## Plugins List
 
 - ### [Example Plugin](https://github.com/RusherDevelopment/example-plugin) <br>
 
@@ -457,33 +495,6 @@ These tools can assist in managing and developing RusherHack plugins:
        <img src="./Assets/AutoBucket/module.png" alt="Module" border="0" width="250">
      </p>
    </details>
-
----
-
-- ### [rusherNodusTheme](https://github.com/bakjedev/rusherNodusTheme) <br>
-
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[27].releaseDate&label=Latest%20Release&color=green)](https://github.com/bakjedev/rusherNodusTheme/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/bakjedev/rusherNodusTheme/total)](https://github.com/bakjedev/rusherNodusTheme/releases/latest/download/rushergui-1.0.0.jar)<br>
-
-   **Creator**: <img src="https://github.com/bakjedev.png?size=20" width="20" height="20"> [bakjedev](https://github.com/bakjedev)
-
-   Nodus - Best theme evaAAAA. code is terrible. blame xyzbtw!
-
-   <details>
-     <summary>Show Screenshots</summary>
-     <p align="center">
-       <img src="./Assets/rusherNodusTheme/NodusGUI.png" alt="Module" border="0" width="750">
-     </p>
-   </details>
-
----
-
-- ### [nhack-theme](https://github.com/h1tm4nqq/Nhack-theme) <br>
-
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[28].releaseDate&label=Latest%20Release&color=green)](https://github.com/h1tm4nqq/Nhack-theme/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/h1tm4nqq/Nhack-theme/total)](https://github.com/h1tm4nqq/Nhack-theme/releases/download/1.0.1/nhack-theme-1.0.1.jar)<br>
-
-   **Creator**: <img src="https://github.com/h1tm4nqq.png?size=20" width="20" height="20"> [h1tm4nqq](https://github.com/h1tm4nqq)
-
-   A theme like Nhack 2015 for rh.
 
 ---
 
