@@ -32,12 +32,18 @@ jobs:
         run: |
           git config --local user.name "GitHub Actions Bot"
           git config --local user.email "actions@github.com"
-          git checkout -b update-releases
-          git add badges.json README.md
-          git commit -m "Update badges.json and README.md with latest release URLs"
 
-      - name: Push changes
-        run: git push origin update-releases
+          # Switch to gh-pages and commit badges.json changes
+          git checkout gh-pages
+          git add badges.json
+          git commit -m "Update badges.json with latest release URLs" || echo "No changes to commit for badges.json"
+          git push origin gh-pages
+
+          # Switch to main and commit README.md changes
+          git checkout main
+          git add README.md
+          git commit -m "Update README.md with updated GitHub download links" || echo "No changes to commit for README.md"
+          git push origin main
 
       - name: Create pull request
         uses: peter-evans/create-pull-request@v5
