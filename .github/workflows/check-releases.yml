@@ -25,7 +25,7 @@ jobs:
 
       - name: Check and update latest releases
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: \${{ secrets.GITHUB_TOKEN }}
         run: node check-releases.js
 
       - name: Commit changes
@@ -48,7 +48,7 @@ jobs:
       - name: Create pull request
         uses: peter-evans/create-pull-request@v5
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: \${{ secrets.GITHUB_TOKEN }}
           base: main
           branch: update-releases
           title: "Update badges.json and README.md"
@@ -56,7 +56,5 @@ jobs:
             This pull request updates:
             - `badges.json` with the latest release URLs.
             - `README.md` with updated GitHub download links.
-          labels: 
-            - automated update
-          assignees: 
-            - Garlicrot
+          labels: "automated update"
+          assignees: "Garlicrot"
