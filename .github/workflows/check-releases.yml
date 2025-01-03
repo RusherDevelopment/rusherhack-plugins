@@ -15,43 +15,34 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Switch to gh-pages branch
-        run: git checkout gh-pages
-
-      - name: Copy check-releases.js and README.md from main branch
-        run: git checkout main -- check-releases.js README.md
-
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18'
 
       - name: Install dependencies
-        run: npm install axios
+        run: npm ci
 
       - name: Check and update latest releases
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node check-releases.js
 
-      - name: Commit changes to gh-pages
+      - name: Commit and push changes
         run: |
           git config --local user.name "GitHub Actions Bot"
           git config --local user.email "actions@github.com"
+          
+          # Create and switch to a temporary branch
+          git checkout -b update-releases
 
-          git add badges.json
-          git commit -m "Update badges.json with latest release URLs" || echo "No changes to commit for badges.json"
-          git push origin gh-pages
+          # Stage and commit changes
+          git add badges.json README.md
+          git commit -m "Update badges.json and README.md with latest release URLs" || echo "No changes to commit"
 
-      - name: Switch to main branch
-        run: git checkout main
-
-      - name: Commit README.md changes
-        run: |
-          git add README.md
-          git commit -m "Update README.md with updated GitHub download links" || echo "No changes to commit for README.md"
-          git push origin main
-
+          # Push changes and create a pull request
+          git push origin update-releases
+          
       - name: Create pull request
         uses: peter-evans/create-pull-request@v5
         with:
