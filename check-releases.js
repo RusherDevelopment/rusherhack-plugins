@@ -12,13 +12,30 @@ const axiosInstance = axios.create({
 const badgesPath = './badges.json';
 const readmePath = './README.md';
 
-let badges = JSON.parse(fs.readFileSync(badgesPath, 'utf8'));
+// Parse command-line arguments
+const args = process.argv.slice(2);
+const badgesOnly = args.includes('--badges-only');
+const readmeOnly = args.includes('--readme-only');
+
+if (badgesOnly) {
+    checkAndUpdateBadges();
+} else if (readmeOnly) {
+    updateReadme();
+} else {
+    checkAndUpdateReleases();
+}
 
 async function checkAndUpdateReleases() {
+    await checkAndUpdateBadges();
+    updateReadme();
+}
+
+async function checkAndUpdateBadges() {
+    let badges = JSON.parse(fs.readFileSync(badgesPath, 'utf8'));
     let updated = false;
 
     for (const plugin of badges.plugins) {
-        if (plugin.latestReleaseUrl === "null") continue; // Skip plugins with no releases
+        if (plugin.latestReleaseUrl === "null") continue;
 
         const repoUrl = plugin.url.replace('https://github.com/', '');
         const apiUrl = `https://api.github.com/repos/${repoUrl}/releases/latest`;
@@ -31,9 +48,9 @@ async function checkAndUpdateReleases() {
             let newReleaseUrl = null;
 
             if (jarFiles.length === 1) {
-                newReleaseUrl = jarFiles[0].browser_download_url; // Single .jar file
+                newReleaseUrl = jarFiles[0].browser_download_url;
             } else if (jarFiles.length > 1) {
-                newReleaseUrl = latestRelease.html_url; // Multiple files, use tag URL
+                newReleaseUrl = latestRelease.html_url;
             }
 
             if (plugin.latestReleaseUrl !== newReleaseUrl) {
@@ -55,18 +72,17 @@ async function checkAndUpdateReleases() {
     if (updated) {
         fs.writeFileSync(badgesPath, JSON.stringify(badges, null, 4));
         console.log('Updated badges.json.');
-
-        updateReadme();
     } else {
-        console.log('No updates found.');
+        console.log('No updates found for badges.json.');
     }
 }
 
 function updateReadme() {
+    let badges = JSON.parse(fs.readFileSync(badgesPath, 'utf8'));
     let readmeContent = fs.readFileSync(readmePath, 'utf8');
 
     badges.plugins.forEach((plugin) => {
-        const badgeRegex = new RegExp(`\\\!\GitHub Downloads \all releases\\\[^\]+\\\[^\]+\`, 'g');
+        const badgeRegex = new RegExp(`\!\GitHub Downloads \all releases\\\[^\]+\\\[^\]+\`, 'g');
         const newBadge = `[![GitHub Downloads (all releases)](${plugin.latestReleaseUrl})](${plugin.latestReleaseUrl})`;
         readmeContent = readmeContent.replace(badgeRegex, newBadge);
         console.log(`Updated badge for ${plugin.name} in README.md.`);
@@ -75,7 +91,3 @@ function updateReadme() {
     fs.writeFileSync(readmePath, readmeContent);
     console.log('Updated README.md.');
 }
-
-checkAndUpdateReleases().then(() => {
-    console.log('Release check complete.');
-});
