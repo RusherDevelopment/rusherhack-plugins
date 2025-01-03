@@ -1,0 +1,53 @@
+name: Check and Update Releases
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Runs daily at midnight UTC
+  workflow_dispatch: # Allows manual trigger
+
+jobs:
+  check-releases:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # Ensure all branches are fetched
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install axios
+
+      - name: Check and update latest releases
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node check-releases.js
+
+      - name: Commit changes
+        run: |
+          git config --local user.name "GitHub Actions Bot"
+          git config --local user.email "actions@github.com"
+          git checkout -b update-releases
+          git add badges.json README.md
+          git commit -m "Update badges.json and README.md with latest release URLs"
+
+      - name: Push changes
+        run: git push origin update-releases
+
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: update-releases
+          title: "Update badges.json and README.md"
+          body: |
+            This pull request updates:
+            - `badges.json` with the latest release URLs.
+            - `README.md` with updated GitHub download links.
+          labels: ["automated update"]
+          assignees: ["Garlicrot"]
