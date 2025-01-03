@@ -18,6 +18,9 @@ jobs:
       - name: Switch to gh-pages branch
         run: git checkout gh-pages
 
+      - name: Copy check-releases.js from main branch
+        run: git checkout main -- check-releases.js
+
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
