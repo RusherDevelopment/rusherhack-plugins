@@ -49,11 +49,14 @@ jobs:
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          base: main
           branch: update-releases
           title: "Update badges.json and README.md"
           body: |
             This pull request updates:
             - `badges.json` with the latest release URLs.
             - `README.md` with updated GitHub download links.
-          labels: ["automated update"]
-          assignees: ["Garlicrot"]
+          labels: 
+            - automated update
+          assignees: 
+            - Garlicrot
