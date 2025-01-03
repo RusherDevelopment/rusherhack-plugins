@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "totalPlugins": {
-    "message": "67",
+    "message": "66",
     "color": "green"
   },
   "discord": {
@@ -551,15 +551,6 @@
       "releaseDate": "January 2, 2025",
       "color": "green",
       "description": "Sends notifications from RusherHacks to a Discord channel."
-    },
-    {
-      "name": "RusherGUI",
-      "url": "https://github.com/xyzbtw/rusherGUI",
-      "releaseUrl": "https://github.com/xyzbtw/rusherGUI/releases",
-      "latestReleaseUrl": "https://github.com/xyzbtw/rusherGUI/releases/download/release/rushergui-1.0.0.jar",
-      "releaseDate": "May 29, 2024",
-      "color": "green",
-      "description": "An example plugin showcasing how to create custom themes with RusherHack."
     }
   ]
 }
