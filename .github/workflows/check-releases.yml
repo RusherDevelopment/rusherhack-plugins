@@ -15,6 +15,10 @@ jobs:
         with:
           fetch-depth: 0
 
+      # Step 1: Check badges.json on gh-pages
+      - name: Switch to gh-pages branch
+        run: git checkout gh-pages
+
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
@@ -23,26 +27,38 @@ jobs:
       - name: Install dependencies
         run: npm install axios
 
-      - name: Check and update latest releases
+      - name: Check and update badges.json
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node check-releases.js
 
-      - name: Commit and push changes
+      # Step 2: Switch to main branch for README.md
+      - name: Switch to main branch
+        run: git checkout main
+
+      - name: Copy updated badges.json from gh-pages
+        run: git checkout gh-pages -- badges.json
+
+      - name: Check and update README.md
+        run: node check-releases.js --readme-only
+
+      - name: Commit and push changes to gh-pages
         run: |
+          git checkout gh-pages
           git config --local user.name "GitHub Actions Bot"
           git config --local user.email "actions@github.com"
-          
-          # Create and switch to a temporary branch
-          git checkout -b update-releases
+          git add badges.json
+          git commit -m "Update badges.json with latest release URLs" || echo "No changes to commit for badges.json"
+          git push origin gh-pages
 
-          # Stage and commit changes
-          git add badges.json README.md
-          git commit -m "Update badges.json and README.md with latest release URLs" || echo "No changes to commit"
+      - name: Commit and push changes to main
+        run: |
+          git checkout main
+          git add README.md
+          git commit -m "Update README.md with updated GitHub download links" || echo "No changes to commit for README.md"
+          git push origin main
 
-          # Push changes and create a pull request
-          git push origin update-releases
-          
+      # Step 3: Create a pull request
       - name: Create pull request
         uses: peter-evans/create-pull-request@v5
         with:
