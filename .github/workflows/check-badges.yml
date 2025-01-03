@@ -1,0 +1,53 @@
+name: Update Badges on gh-pages
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Runs daily at midnight UTC
+  workflow_dispatch: # Allows manual trigger
+
+jobs:
+  update-badges:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Switch to gh-pages branch
+        run: git checkout gh-pages
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install axios
+
+      - name: Run check-releases.js to update badges.json
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node check-releases.js
+
+      - name: Create new branch for gh-pages update
+        run: |
+          git checkout -b update-badges-gh-pages
+          git add badges.json
+          git commit -m "Update badges.json with latest release URLs"
+
+      - name: Push changes to new branch
+        run: git push origin update-badges-gh-pages
+
+      - name: Create pull request for gh-pages
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          base: gh-pages
+          branch: update-badges-gh-pages
+          title: "Update badges.json"
+          body: |
+            This pull request updates `badges.json` with the latest release URLs.
+          labels: "automated update"
+          assignees: "Garlicrot"
