@@ -543,6 +543,14 @@
       "releaseDate": "December 22, 2024",
       "color": "green",
       "description": "Detects activated spawners and provides visual feedback in RusherHacks."
+    },
+    {
+      "name": "Rusher Discord Notifications",
+      "url": "https://github.com/kybe236/rusher-discord-notifications",
+      "releaseUrl": "https://github.com/kybe236/rusher-discord-notifications/releases",
+      "releaseDate": "January 2, 2025",
+      "color": "green",
+      "description": "Sends notifications from RusherHacks to a Discord channel."
     }
   ]
 }
