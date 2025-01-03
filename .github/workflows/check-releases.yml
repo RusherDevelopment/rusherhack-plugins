@@ -15,6 +15,9 @@ jobs:
         with:
           fetch-depth: 0 # Ensure all branches are fetched
 
+      - name: Switch to gh-pages branch
+        run: git checkout gh-pages
+
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
@@ -25,7 +28,7 @@ jobs:
 
       - name: Check and update latest releases
         env:
-          GITHUB_TOKEN: \${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node check-releases.js
 
       - name: Commit changes
@@ -33,14 +36,16 @@ jobs:
           git config --local user.name "GitHub Actions Bot"
           git config --local user.email "actions@github.com"
 
-          # Switch to gh-pages and commit badges.json changes
-          git checkout gh-pages
+          # Commit badges.json changes
           git add badges.json
           git commit -m "Update badges.json with latest release URLs" || echo "No changes to commit for badges.json"
           git push origin gh-pages
 
-          # Switch to main and commit README.md changes
-          git checkout main
+      - name: Switch to main branch
+        run: git checkout main
+
+      - name: Commit README.md changes
+        run: |
           git add README.md
           git commit -m "Update README.md with updated GitHub download links" || echo "No changes to commit for README.md"
           git push origin main
@@ -48,7 +53,7 @@ jobs:
       - name: Create pull request
         uses: peter-evans/create-pull-request@v5
         with:
-          token: \${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           base: main
           branch: update-releases
           title: "Update badges.json and README.md"
