@@ -1,4 +1,4 @@
-name: Update Badges on gh-pages
+name: Check and Update Badges
 
 on:
   schedule:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch: # Allows manual trigger
 
 jobs:
-  update-badges:
+  check-badges:
     runs-on: ubuntu-latest
 
     steps:
@@ -26,28 +26,31 @@ jobs:
       - name: Install dependencies
         run: npm install axios
 
-      - name: Run check-releases.js to update badges.json
+      - name: Check and update badges.json
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: node check-releases.js
+        run: node check-badges.js
 
-      - name: Create new branch for gh-pages update
+      - name: Create a new branch for the PR
         run: |
-          git checkout -b update-badges-gh-pages
+          git checkout -b update-badges-$(date +%Y%m%d%H%M%S)
           git add badges.json
           git commit -m "Update badges.json with latest release URLs"
 
-      - name: Push changes to new branch
-        run: git push origin update-badges-gh-pages
+      - name: Push the new branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: git push origin HEAD
 
-      - name: Create pull request for gh-pages
+      - name: Create a pull request
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           base: gh-pages
-          branch: update-badges-gh-pages
+          branch: update-badges-${{ github.run_id }}
           title: "Update badges.json"
           body: |
             This pull request updates `badges.json` with the latest release URLs.
+            Please review and merge if everything looks correct.
           labels: "automated update"
           assignees: "Garlicrot"
