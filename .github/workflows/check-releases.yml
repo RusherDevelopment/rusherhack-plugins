@@ -15,7 +15,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      # Step 1: Check badges.json on gh-pages
+      # Step 1: Check and update badges.json on gh-pages
       - name: Switch to gh-pages branch
         run: git checkout gh-pages
 
@@ -30,45 +30,30 @@ jobs:
       - name: Check and update badges.json
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: node check-releases.js
+        run: node check-releases.js --badges-only
 
-      # Step 2: Switch to main branch for README.md
-      - name: Switch to main branch
-        run: git checkout main
-
-      - name: Copy updated badges.json from gh-pages
-        run: git checkout gh-pages -- badges.json
-
-      - name: Check and update README.md
-        run: node check-releases.js --readme-only
-
-      - name: Commit and push changes to gh-pages
+      - name: Commit and push badges.json changes
         run: |
-          git checkout gh-pages
           git config --local user.name "GitHub Actions Bot"
           git config --local user.email "actions@github.com"
           git add badges.json
           git commit -m "Update badges.json with latest release URLs" || echo "No changes to commit for badges.json"
           git push origin gh-pages
 
-      - name: Commit and push changes to main
+      # Step 2: Switch to main branch and update README.md
+      - name: Switch to main branch
+        run: git checkout main
+
+      - name: Copy updated badges.json from gh-pages
+        run: git checkout gh-pages -- badges.json
+
+      - name: Update README.md
+        run: node check-releases.js --readme-only
+
+      - name: Commit and push README.md changes
         run: |
-          git checkout main
+          git config --local user.name "GitHub Actions Bot"
+          git config --local user.email "actions@github.com"
           git add README.md
           git commit -m "Update README.md with updated GitHub download links" || echo "No changes to commit for README.md"
           git push origin main
-
-      # Step 3: Create a pull request
-      - name: Create pull request
-        uses: peter-evans/create-pull-request@v5
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          base: main
-          branch: update-releases
-          title: "Update badges.json and README.md"
-          body: |
-            This pull request updates:
-            - `badges.json` with the latest release URLs.
-            - `README.md` with updated GitHub download links.
-          labels: "automated update"
-          assignees: "Garlicrot"
