@@ -16,7 +16,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          ref: gh-pages
           fetch-depth: 0
 
       - name: Create Pull Request
@@ -24,7 +23,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           base: gh-pages
-          branch: ${{ github.event.workflow_run.outputs.commit_branch.branch_name }}
+          branch: ${{ github.event.workflow_run.conclusion == 'success' && 'update-badges-' + github.run_id }}
           title: "Update badges.json"
           body: |
             This pull request updates `badges.json` with the latest release URLs.
