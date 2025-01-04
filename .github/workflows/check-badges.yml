@@ -36,29 +36,35 @@ jobs:
           rm -rf node_modules package-lock.json package.json
 
       - name: Check for changes
+        id: check_changes
         run: |
           git add badges.json
           if git diff --cached --quiet; then
             echo "No changes detected."
+            echo "skip=true" >> $GITHUB_ENV
             exit 0
           fi
 
       - name: Set Git user identity
+        if: env.skip != 'true'
         run: |
           git config --local user.name "GitHub Actions Bot"
           git config --local user.email "actions@github.com"
 
       - name: Create a new branch for the PR
+        if: env.skip != 'true'
         run: |
           git checkout -b update-badges-${{ github.run_id }}
           git commit -m "Update badges.json with latest release URLs"
 
       - name: Push the new branch
+        if: env.skip != 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: git push origin HEAD
 
       - name: Create a pull request
+        if: env.skip != 'true'
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
