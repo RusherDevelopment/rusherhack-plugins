@@ -31,6 +31,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node check-badges.js
 
+      - name: Clean up untracked files
+        run: |
+          rm -rf node_modules package-lock.json package.json
+
       - name: Check for changes
         run: |
           git add badges.json
