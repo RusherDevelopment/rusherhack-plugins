@@ -20,7 +20,7 @@ jobs:
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          base: gh-pages
+          base: gh-pages  # Target branch for the PR
           branch: update-badges-${{ github.run_id }}
           title: "Update badges.json"
           body: |
