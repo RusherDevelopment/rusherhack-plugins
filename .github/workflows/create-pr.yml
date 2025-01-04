@@ -19,11 +19,12 @@ jobs:
           fetch-depth: 0
 
       - name: Create Pull Request
+        if: ${{ github.event.workflow_run.conclusion == 'success' }}
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           base: gh-pages
-          branch: ${{ github.event.workflow_run.conclusion == 'success' && 'update-badges-' + github.run_id }}
+          branch: ${{ format('update-badges-{0}', github.event.workflow_run.run_id) }}
           title: "Update badges.json"
           body: |
             This pull request updates `badges.json` with the latest release URLs.
