@@ -31,6 +31,14 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node check-badges.js
 
+      - name: Check for changes
+        run: |
+          git add badges.json
+          if git diff --cached --quiet; then
+            echo "No changes detected."
+            exit 0
+          fi
+
       - name: Set Git user identity
         run: |
           git config --local user.name "GitHub Actions Bot"
@@ -38,12 +46,7 @@ jobs:
 
       - name: Create a new branch for the PR
         run: |
-          git checkout -b update-badges-$(date +%Y%m%d%H%M%S)
-          if git diff --cached --quiet; then
-            echo "No changes to commit."
-            exit 0
-          fi
-          git add badges.json
+          git checkout -b update-badges-${{ github.run_id }}
           git commit -m "Update badges.json with latest release URLs"
 
       - name: Push the new branch
