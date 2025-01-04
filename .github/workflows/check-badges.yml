@@ -1,4 +1,4 @@
-name: Check and Update Badges
+name: Check and Create PR for Badges
 
 on:
   schedule:
@@ -8,6 +8,9 @@ on:
 jobs:
   check-badges:
     runs-on: ubuntu-22.04
+
+    outputs:
+      branch_name: ${{ steps.set-branch-name.outputs.branch_name }}
 
     steps:
       - name: Checkout repository
@@ -55,22 +58,18 @@ jobs:
 
       - name: Commit changes and create a new branch
         if: env.skip != 'true'
-        id: commit_branch
+        id: set-branch-name
         run: |
           git config --local user.name "GitHub Actions Bot"
           git config --local user.email "actions@github.com"
           BRANCH_NAME="update-badges-${{ github.run_id }}"
+          echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_ENV
           echo "$BRANCH_NAME" > branch-name.txt
           git checkout -b $BRANCH_NAME
           git commit -m "Update badges.json with latest release URLs"
           git push origin HEAD
+          echo "::set-output name=branch_name::$BRANCH_NAME"
           echo "::notice::Changes committed and branch pushed."
-
-      - name: Verify branch name file
-        if: env.skip != 'true'
-        run: |
-          ls -la
-          cat branch-name.txt
 
       - name: Upload branch name artifact
         if: env.skip != 'true'
@@ -78,3 +77,32 @@ jobs:
         with:
           name: branch-name
           path: branch-name.txt
+
+  create-pr:
+    runs-on: ubuntu-22.04
+    needs: check-badges
+    if: needs.check-badges.outputs.branch_name != ''
+    steps:
+      - name: Download branch name artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: branch-name
+
+      - name: Load branch name
+        run: |
+          BRANCH_NAME=$(cat branch-name.txt)
+          echo "Loaded branch name: $BRANCH_NAME"
+          echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_ENV
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          base: gh-pages
+          branch: ${{ env.BRANCH_NAME }}
+          title: "Update badges.json"
+          body: |
+            This pull request updates `badges.json` with the latest release URLs.
+            Please review and merge if everything looks correct.
+          labels: "automated update"
+          assignees: "Garlicrot"
