@@ -16,19 +16,29 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          ref: gh-pages  # Ensure the base branch is correctly checked out
+          ref: gh-pages
 
       - name: Fetch all branches
         run: |
           git fetch --all
-          git checkout update-badges-${{ github.run_id }}
+
+      - name: Create Pull Request
+        env:
+          BRANCH_NAME: update-badges-${{ github.run_id }}
+        run: |
+          if git rev-parse --verify origin/$BRANCH_NAME; then
+            echo "::notice::Branch $BRANCH_NAME exists, creating PR."
+          else
+            echo "::error::Branch $BRANCH_NAME not found."
+            exit 1
+          fi
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           base: gh-pages
-          branch: update-badges-${{ github.run_id }}
+          branch: ${{ env.BRANCH_NAME }}
           title: "Update badges.json"
           body: |
             This pull request updates `badges.json` with the latest release URLs.
