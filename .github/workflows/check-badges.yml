@@ -68,7 +68,7 @@ jobs:
 
       - name: Upload branch name artifact
         if: env.skip != 'true'
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: branch-name
           path: branch-name.txt
