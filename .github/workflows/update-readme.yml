@@ -46,7 +46,7 @@ jobs:
           echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_ENV
           echo "$BRANCH_NAME" > branch-name.txt
           git checkout -b $BRANCH_NAME
-          git add README.md
+          git add README.md branch-name.txt
           git commit -m "Update README with latest download URLs"
           git push origin HEAD
           echo "::notice::Changes committed and branch pushed."
