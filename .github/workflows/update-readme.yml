@@ -15,14 +15,9 @@ jobs:
 
       - name: Fetch badges.json from gh-pages branch
         run: |
-          git fetch origin gh-pages:gh-pages-temp
-          git checkout gh-pages-temp -- badges.json
+          git fetch origin gh-pages
+          git checkout origin/gh-pages -- badges.json
           echo "::notice::badges.json fetched from gh-pages branch."
-
-      - name: Switch back to main branch
-        run: |
-          git checkout main
-          echo "::notice::Switched back to main branch."
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
