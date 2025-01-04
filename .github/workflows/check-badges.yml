@@ -55,11 +55,12 @@ jobs:
 
       - name: Commit changes and create a new branch
         if: env.skip != 'true'
+        id: commit_branch
         run: |
           git config --local user.name "GitHub Actions Bot"
           git config --local user.email "actions@github.com"
           BRANCH_NAME="update-badges-${{ github.run_id }}"
-          echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_ENV
+          echo "$BRANCH_NAME" > branch-name.txt
           git checkout -b $BRANCH_NAME
           git commit -m "Update badges.json with latest release URLs"
           git push origin HEAD
@@ -70,4 +71,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: branch-name
-          path: $GITHUB_ENV
+          path: branch-name.txt
