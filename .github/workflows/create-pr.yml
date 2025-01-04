@@ -24,7 +24,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           base: gh-pages
-          branch: ${{ github.event.workflow_run.outputs.branch_name }}
+          branch: ${{ github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.outputs.branch_name }}
           title: "Update badges.json"
           body: |
             This pull request updates `badges.json` with the latest release URLs.
