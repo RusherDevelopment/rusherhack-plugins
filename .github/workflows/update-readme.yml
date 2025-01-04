@@ -13,10 +13,10 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Fetch badges.json from gh-pages branch
+      - name: Fetch badges.json from gh-pages branch (temporary)
         run: |
           git fetch origin gh-pages
-          git checkout origin/gh-pages -- badges.json
+          git show origin/gh-pages:badges.json > badges.json
           echo "::notice::badges.json fetched from gh-pages branch."
 
       - name: Set up Node.js
