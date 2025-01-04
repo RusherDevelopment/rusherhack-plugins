@@ -70,13 +70,20 @@ jobs:
           git push origin HEAD
           echo "::notice::Changes committed and branch pushed."
 
-      - name: Verify branch creation for PR
-        if: env.skip != 'true'
-        run: |
-          BRANCH_EXIST=$(git ls-remote --heads origin update-badges-${{ github.run_id }} | wc -l)
-          if [ "$BRANCH_EXIST" -eq 0 ]; then
-            echo "::error::Failed to push the branch. Ensure changes are correctly committed."
-            exit 1
-          else
-            echo "::notice::Branch update-badges-${{ github.run_id }} exists and is ready for PR creation."
-          fi
+  create-pr:
+    runs-on: ubuntu-22.04
+    needs: check-badges
+    if: needs.check-badges.outputs.branch_name != ''
+    steps:
+      - name: Create a pull request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          base: gh-pages
+          head: ${{ needs.check-badges.outputs.branch_name }}
+          title: Update badges.json
+          body: |
+            This pull request updates `badges.json` with the latest release URLs.
+            Please review and merge if everything looks correct.
+          labels: automated update
+          assignees: Garlicrot
