@@ -33,6 +33,11 @@ jobs:
           node update-readme.js
           echo "::notice::README updated with latest download URLs."
 
+      - name: Remove temporary badges.json
+        run: |
+          rm badges.json
+          echo "::notice::Temporary badges.json removed."
+
       - name: Commit changes and create a new branch
         run: |
           git config --local user.name "GitHub Actions Bot"
