@@ -1,0 +1,30 @@
+name: Create Pull Request for Badge Updates
+
+on:
+  workflow_run:
+    workflows: ["Check and Update Badges"]  # Name of the first workflow
+    types:
+      - completed
+
+jobs:
+  create-pr:
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          base: gh-pages
+          branch: update-badges-${{ github.run_id }}
+          title: "Update badges.json"
+          body: |
+            This pull request updates `badges.json` with the latest release URLs.
+            Please review and merge if everything looks correct.
+          labels: "automated update"
+          assignees: "Garlicrot"
