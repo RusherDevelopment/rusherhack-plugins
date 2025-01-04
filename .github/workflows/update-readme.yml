@@ -24,7 +24,7 @@ jobs:
       - name: Update README download URLs
         id: update-readme
         run: |
-          node update-download-urls.js
+          node update-readme.js
           echo "::notice::README updated with latest download URLs."
 
       - name: Commit changes and create a new branch
