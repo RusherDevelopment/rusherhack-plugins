@@ -20,7 +20,9 @@ jobs:
 
       - name: Load branch name
         run: |
-          source $(cat branch-name | grep BRANCH_NAME | cut -d= -f2)
+          BRANCH_NAME=$(cat branch-name.txt)
+          echo "Loaded branch name: $BRANCH_NAME"
+          echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_ENV
 
       - name: Checkout repository
         uses: actions/checkout@v3
