@@ -39,8 +39,15 @@ async function checkAndUpdateBadges() {
                 newReleaseUrl = latestRelease.html_url;
             }
 
-            // Only update if there's a real change in the release URL
-            if (plugin.latestReleaseUrl !== newReleaseUrl) {
+            // Debug log to ensure newReleaseUrl is set correctly
+            console.log(`Found release URL for ${plugin.name}: ${newReleaseUrl}`);
+
+            // Handle case when newReleaseUrl is null
+            if (newReleaseUrl === null && plugin.latestReleaseUrl !== "null") {
+                console.log(`Setting ${plugin.name} latestReleaseUrl to "null"`);
+                plugin.latestReleaseUrl = "null";
+                updated = true;
+            } else if (plugin.latestReleaseUrl !== newReleaseUrl) {
                 console.log(`Updating ${plugin.name}: ${plugin.latestReleaseUrl} -> ${newReleaseUrl}`);
                 plugin.latestReleaseUrl = newReleaseUrl;
                 updated = true;
@@ -70,4 +77,5 @@ async function checkAndUpdateBadges() {
 
 checkAndUpdateBadges().then(() => {
     console.log('Badge check complete.');
+    process.exit(0); // Explicitly exit the process
 });
