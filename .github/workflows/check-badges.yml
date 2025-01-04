@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-22.04
 
     outputs:
-      branch_name: ${{ steps.set-branch-name.outputs.branch_name }}
+      branch_name: ${{ steps.commit_branch.outputs.branch_name }}
 
     steps:
       - name: Checkout repository
@@ -58,13 +58,13 @@ jobs:
 
       - name: Commit changes and create a new branch
         if: env.skip != 'true'
-        id: set-branch-name
+        id: commit_branch
         run: |
           git config --local user.name "GitHub Actions Bot"
           git config --local user.email "actions@github.com"
           BRANCH_NAME="update-badges-${{ github.run_id }}"
           echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_ENV
-          echo "::set-output name=branch_name::$BRANCH_NAME"
+          echo "::set-output name=branch_name::$BRANCH_NAME"  # Set output
           git checkout -b $BRANCH_NAME
           git commit -m "Update badges.json with latest release URLs"
           git push origin HEAD
