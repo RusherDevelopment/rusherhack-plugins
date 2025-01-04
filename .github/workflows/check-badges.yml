@@ -66,6 +66,12 @@ jobs:
           git push origin HEAD
           echo "::notice::Changes committed and branch pushed."
 
+      - name: Verify branch name file
+        if: env.skip != 'true'
+        run: |
+          ls -la
+          cat branch-name.txt
+
       - name: Upload branch name artifact
         if: env.skip != 'true'
         uses: actions/upload-artifact@v4
