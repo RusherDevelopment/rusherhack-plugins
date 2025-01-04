@@ -2,7 +2,7 @@ name: Create Pull Request for Badge Updates
 
 on:
   workflow_run:
-    workflows: ["Check and Update Badges"]  # Ensure this matches the exact name of the first workflow
+    workflows: ["Check and Update Badges"]
     types:
       - completed
 
@@ -16,15 +16,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          ref: gh-pages  # Ensure it checks out the correct branch
+          ref: gh-pages
           fetch-depth: 0
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          base: gh-pages  # Base branch for the PR
-          branch: ${{ env.BRANCH_NAME }}  # Dynamically reference the branch name
+          base: gh-pages
+          branch: ${{ github.event.workflow_run.outputs.branch_name }}
           title: "Update badges.json"
           body: |
             This pull request updates `badges.json` with the latest release URLs.
