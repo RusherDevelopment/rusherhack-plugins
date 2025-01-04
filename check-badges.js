@@ -39,16 +39,21 @@ async function checkAndUpdateBadges() {
                 newReleaseUrl = latestRelease.html_url;
             }
 
+            // Only update if there's a real change in the release URL
             if (plugin.latestReleaseUrl !== newReleaseUrl) {
                 console.log(`Updating ${plugin.name}: ${plugin.latestReleaseUrl} -> ${newReleaseUrl}`);
                 plugin.latestReleaseUrl = newReleaseUrl;
                 updated = true;
+            } else {
+                console.log(`No update needed for ${plugin.name}.`);
             }
         } catch (error) {
             if (error.response && error.response.status === 404) {
                 console.warn(`No releases found for ${plugin.name}.`);
-                plugin.latestReleaseUrl = "null";
-                updated = true;
+                if (plugin.latestReleaseUrl !== "null") {
+                    plugin.latestReleaseUrl = "null";
+                    updated = true;
+                }
             } else {
                 console.error(`Error fetching release for ${plugin.name}: ${error.message}`);
             }
@@ -56,7 +61,7 @@ async function checkAndUpdateBadges() {
     }
 
     if (updated) {
-        fs.writeFileSync(badgesPath, JSON.stringify(badges, null, 4));
+        fs.writeFileSync(badgesPath, JSON.stringify(badges, null, 4)); // Keep consistent formatting
         console.log('Updated badges.json.');
     } else {
         console.log('No updates found for badges.json.');
