@@ -60,5 +60,16 @@ jobs:
           git config --local user.email "actions@github.com"
           git checkout -b update-badges-${{ github.run_id }}
           git commit -m "Update badges.json with latest release URLs"
-          git push origin HEAD
+          git push origin update-badges-${{ github.run_id }}
           echo "::notice::Changes committed and branch pushed."
+
+      - name: Verify branch creation for PR
+        if: env.skip != 'true'
+        run: |
+          BRANCH_EXIST=$(git ls-remote --heads origin update-badges-${{ github.run_id }} | wc -l)
+          if [ "$BRANCH_EXIST" -eq 0 ]; then
+            echo "::error::Failed to push the branch. Ensure changes are correctly committed."
+            exit 1
+          else
+            echo "::notice::Branch update-badges-${{ github.run_id }} exists and is ready for PR creation."
+          fi
