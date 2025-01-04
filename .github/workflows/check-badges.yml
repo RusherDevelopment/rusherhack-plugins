@@ -31,6 +31,11 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node check-badges.js
 
+      - name: Set Git user identity
+        run: |
+          git config --local user.name "GitHub Actions Bot"
+          git config --local user.email "actions@github.com"
+
       - name: Create a new branch for the PR
         run: |
           git checkout -b update-badges-$(date +%Y%m%d%H%M%S)
