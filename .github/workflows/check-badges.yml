@@ -66,7 +66,16 @@ jobs:
           git push origin HEAD
           echo "::notice::Changes committed and branch pushed."
 
-      - name: Notify manual pull request needed
+      - name: Create GitHub Issue for PR Notification
         if: env.skip != 'true'
-        run: |
-          echo "A new branch '$BRANCH_NAME' was created. Please open a pull request manually."
+        uses: peter-evans/create-issue@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          title: "PR Needed: Update Badges"
+          body: |
+            A new branch has been created: **${{ env.BRANCH_NAME }}**.
+            
+            Please review the changes and open a pull request from this branch.
+
+            **Compare Changes:** [View on GitHub](https://github.com/${{ github.repository }}/compare/gh-pages...${{ env.BRANCH_NAME }})
+          labels: "automated notification"
