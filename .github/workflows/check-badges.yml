@@ -53,38 +53,12 @@ jobs:
             echo "::notice::Changes detected in badges.json."
           fi
 
-      - name: Set Git user identity
+      - name: Commit changes
         if: env.skip != 'true'
         run: |
           git config --local user.name "GitHub Actions Bot"
           git config --local user.email "actions@github.com"
-          echo "::notice::Git user identity set."
-
-      - name: Create a new branch for the PR
-        if: env.skip != 'true'
-        run: |
           git checkout -b update-badges-${{ github.run_id }}
           git commit -m "Update badges.json with latest release URLs"
-          echo "::notice::New branch created for PR."
-
-      - name: Push the new branch
-        if: env.skip != 'true'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
           git push origin HEAD
-          echo "::notice::Branch pushed successfully."
-
-      - name: Create a pull request
-        if: env.skip != 'true'
-        uses: peter-evans/create-pull-request@v5
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          base: gh-pages
-          branch: update-badges-${{ github.run_id }}
-          title: "Update badges.json"
-          body: |
-            This pull request updates `badges.json` with the latest release URLs.
-            Please review and merge if everything looks correct.
-          labels: "automated update"
-          assignees: "Garlicrot"
+          echo "::notice::Changes committed and branch pushed."
