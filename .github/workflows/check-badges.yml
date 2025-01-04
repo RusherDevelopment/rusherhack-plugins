@@ -9,9 +9,6 @@ jobs:
   check-badges:
     runs-on: ubuntu-22.04
 
-    outputs:
-      branch_name: ${{ env.BRANCH_NAME }}
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -58,7 +55,6 @@ jobs:
 
       - name: Commit changes and create a new branch
         if: env.skip != 'true'
-        id: commit_branch
         run: |
           git config --local user.name "GitHub Actions Bot"
           git config --local user.email "actions@github.com"
@@ -69,20 +65,9 @@ jobs:
           git push origin HEAD
           echo "::notice::Changes committed and branch pushed."
 
-  create-pr:
-    runs-on: ubuntu-22.04
-    needs: check-badges
-    if: needs.check-badges.outputs.branch_name != ''
-    steps:
-      - name: Create a pull request
-        uses: peter-evans/create-pull-request@v5
+      - name: Upload branch name artifact
+        if: env.skip != 'true'
+        uses: actions/upload-artifact@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          base: gh-pages
-          branch: ${{ needs.check-badges.outputs.branch_name }}
-          title: Update badges.json
-          body: |
-            This pull request updates `badges.json` with the latest release URLs.
-            Please review and merge if everything looks correct.
-          labels: automated update
-          assignees: Garlicrot
+          name: branch-name
+          path: $GITHUB_ENV
