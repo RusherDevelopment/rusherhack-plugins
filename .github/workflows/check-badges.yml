@@ -58,9 +58,11 @@ jobs:
         run: |
           git config --local user.name "GitHub Actions Bot"
           git config --local user.email "actions@github.com"
-          git checkout -b update-badges-${{ github.run_id }}
+          BRANCH_NAME="update-badges-${{ github.run_id }}"
+          echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_ENV
+          git checkout -b $BRANCH_NAME
           git commit -m "Update badges.json with latest release URLs"
-          git push origin update-badges-${{ github.run_id }}
+          git push origin HEAD
           echo "::notice::Changes committed and branch pushed."
 
       - name: Verify branch creation for PR
