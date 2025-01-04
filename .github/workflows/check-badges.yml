@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-22.04
 
     outputs:
-      branch_name: ${{ steps.commit_branch.outputs.branch_name }}
+      branch_name: ${{ env.BRANCH_NAME }}
 
     steps:
       - name: Checkout repository
@@ -64,7 +64,6 @@ jobs:
           git config --local user.email "actions@github.com"
           BRANCH_NAME="update-badges-${{ github.run_id }}"
           echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_ENV
-          echo "::set-output name=branch_name::$BRANCH_NAME"  # Set output
           git checkout -b $BRANCH_NAME
           git commit -m "Update badges.json with latest release URLs"
           git push origin HEAD
@@ -80,7 +79,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           base: gh-pages
-          head: ${{ needs.check-badges.outputs.branch_name }}
+          branch: ${{ needs.check-badges.outputs.branch_name }}
           title: Update badges.json
           body: |
             This pull request updates `badges.json` with the latest release URLs.
