@@ -32,22 +32,15 @@ async function checkAndUpdateBadges() {
             const jarFiles = latestRelease.assets.filter(asset => asset.name.endsWith('.jar'));
 
             let newReleaseUrl = null;
-
-            if (jarFiles.length === 1) {
+            if (jarFiles.length > 0) {
                 newReleaseUrl = jarFiles[0].browser_download_url;
-            } else if (jarFiles.length > 1) {
+            } else {
                 newReleaseUrl = latestRelease.html_url;
             }
 
-            // Debug log to ensure newReleaseUrl is set correctly
             console.log(`Found release URL for ${plugin.name}: ${newReleaseUrl}`);
 
-            // Handle case when newReleaseUrl is null
-            if (newReleaseUrl === null && plugin.latestReleaseUrl !== "null") {
-                console.log(`Setting ${plugin.name} latestReleaseUrl to "null"`);
-                plugin.latestReleaseUrl = "null";
-                updated = true;
-            } else if (plugin.latestReleaseUrl !== newReleaseUrl) {
+            if (plugin.latestReleaseUrl !== newReleaseUrl) {
                 console.log(`Updating ${plugin.name}: ${plugin.latestReleaseUrl} -> ${newReleaseUrl}`);
                 plugin.latestReleaseUrl = newReleaseUrl;
                 updated = true;
@@ -68,14 +61,20 @@ async function checkAndUpdateBadges() {
     }
 
     if (updated) {
-        fs.writeFileSync(badgesPath, JSON.stringify(badges, null, 4)); // Keep consistent formatting
+        fs.writeFileSync(`${badgesPath}.bak`, JSON.stringify(badges, null, 4)); // Backup
+        fs.writeFileSync(badgesPath, JSON.stringify(badges, null, 4)); // Update file
         console.log('Updated badges.json.');
     } else {
         console.log('No updates found for badges.json.');
     }
 }
 
-checkAndUpdateBadges().then(() => {
-    console.log('Badge check complete.');
-    process.exit(0); // Explicitly exit the process
-});
+checkAndUpdateBadges()
+    .then(() => {
+        console.log('Badge check complete.');
+        process.exit(0);
+    })
+    .catch(error => {
+        console.error('Unexpected error:', error.message);
+        process.exit(1);
+    });
