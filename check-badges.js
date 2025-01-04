@@ -31,10 +31,16 @@ async function checkAndUpdateBadges() {
             const latestRelease = response.data;
             const jarFiles = latestRelease.assets.filter(asset => asset.name.endsWith('.jar'));
 
-            let newReleaseUrl = null;
-            if (jarFiles.length > 0) {
+            let newReleaseUrl;
+
+            if (jarFiles.length === 1) {
+                // Only one jar file, use it directly
                 newReleaseUrl = jarFiles[0].browser_download_url;
+            } else if (jarFiles.length > 1) {
+                // Multiple jar files, use the tag URL for user selection
+                newReleaseUrl = latestRelease.html_url;
             } else {
+                // No jar files, fall back to release URL
                 newReleaseUrl = latestRelease.html_url;
             }
 
