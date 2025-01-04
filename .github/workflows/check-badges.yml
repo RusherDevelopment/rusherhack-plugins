@@ -18,30 +18,29 @@ jobs:
       - name: Switch to gh-pages branch
         run: |
           git checkout gh-pages
-          echo "::notice::Switched to gh-pages branch."
+          echo "Switched to gh-pages branch."
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-        run: echo "::notice::Node.js set up successfully."
 
       - name: Install dependencies
         run: |
           npm install axios
-          echo "::notice::Dependencies installed successfully."
+          echo "Dependencies installed successfully."
 
       - name: Check and update badges.json
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           node check-badges.js
-          echo "::notice::Badge check completed."
+          echo "Badge check completed."
 
       - name: Clean up untracked files
         run: |
           rm -rf node_modules package-lock.json package.json
-          echo "::notice::Cleaned up untracked files."
+          echo "Cleaned up untracked files."
 
       - name: Check for changes
         id: check_changes
@@ -49,12 +48,9 @@ jobs:
           git add badges.json
           if git diff --cached --quiet; then
             echo "No changes detected."
-            echo "::notice::No changes detected. Skipping PR creation."
             echo "skip=true" >> $GITHUB_ENV
-            exit 0
           else
             echo "Changes detected."
-            echo "::notice::Changes detected. Proceeding with PR creation."
           fi
 
       - name: Set Git user identity
@@ -62,14 +58,14 @@ jobs:
         run: |
           git config --local user.name "GitHub Actions Bot"
           git config --local user.email "actions@github.com"
-          echo "::notice::Git user identity set."
+          echo "Git user identity set."
 
       - name: Create a new branch for the PR
         if: env.skip != 'true'
         run: |
           git checkout -b update-badges-${{ github.run_id }}
           git commit -m "Update badges.json with latest release URLs"
-          echo "::notice::New branch created for PR."
+          echo "New branch created for PR."
 
       - name: Push the new branch
         if: env.skip != 'true'
@@ -77,7 +73,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git push origin HEAD
-          echo "::notice::Branch pushed successfully."
+          echo "Branch pushed successfully."
 
       - name: Create a pull request
         if: env.skip != 'true'
