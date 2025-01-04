@@ -30,7 +30,7 @@ jobs:
           npm install axios
           echo "::notice::Dependencies installed."
 
-      - name: Check and update badges.json
+      - name: Check and update only latest release URLs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -42,7 +42,7 @@ jobs:
           rm -rf node_modules package-lock.json package.json
           echo "::notice::Cleaned up untracked files."
 
-      - name: Check for changes
+      - name: Check for changes in badges.json
         id: check_changes
         run: |
           git add badges.json
