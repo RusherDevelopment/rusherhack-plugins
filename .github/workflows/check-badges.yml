@@ -14,51 +14,35 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
-        run: echo "::notice::Repository checked out successfully."
 
       - name: Switch to gh-pages branch
-        run: |
-          git checkout gh-pages
-          echo "::notice::Switched to gh-pages branch."
+        run: git checkout gh-pages
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-        run: echo "::notice::Node.js set up successfully."
 
       - name: Install dependencies
-        run: |
-          npm install axios
-          echo "::notice::Dependencies installed successfully."
+        run: npm install axios
 
       - name: Check and update badges.json
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          node check-badges.js
-          echo "::notice::Badge check completed."
+        run: node check-badges.js
 
       - name: Clean up untracked files
         run: |
           rm -rf node_modules package-lock.json package.json
-          echo "::notice::Cleaned up untracked files."
 
-      - name: Check for changes and set result
+      - name: Check for changes
         id: check_changes
         run: |
           git add badges.json
-          git diff --cached --quiet
-          echo "skip=$?" >> $GITHUB_ENV
-        continue-on-error: true
-
-      - name: Log result of change check
-        run: |
-          if [ "$skip" -eq "0" ]; then
-            echo "::notice::No changes detected. Skipping PR creation."
+          if git diff --cached --quiet; then
+            echo "No changes detected."
             echo "skip=true" >> $GITHUB_ENV
-          else
-            echo "::notice::Changes detected. Proceeding with PR creation."
+            exit 0
           fi
 
       - name: Set Git user identity
@@ -66,22 +50,18 @@ jobs:
         run: |
           git config --local user.name "GitHub Actions Bot"
           git config --local user.email "actions@github.com"
-          echo "::notice::Git user identity set."
 
       - name: Create a new branch for the PR
         if: env.skip != 'true'
         run: |
           git checkout -b update-badges-${{ github.run_id }}
           git commit -m "Update badges.json with latest release URLs"
-          echo "::notice::New branch created for PR."
 
       - name: Push the new branch
         if: env.skip != 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          git push origin HEAD
-          echo "::notice::Branch pushed successfully."
+        run: git push origin HEAD
 
       - name: Create a pull request
         if: env.skip != 'true'
