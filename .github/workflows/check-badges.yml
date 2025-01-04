@@ -53,7 +53,7 @@ jobs:
             echo "::notice::Changes detected in badges.json."
           fi
 
-      - name: Commit changes
+      - name: Commit changes and create a new branch
         if: env.skip != 'true'
         run: |
           git config --local user.name "GitHub Actions Bot"
