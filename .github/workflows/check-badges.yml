@@ -18,7 +18,7 @@ jobs:
       - name: Switch to gh-pages branch
         run: |
           git checkout gh-pages
-          echo "Switched to gh-pages branch."
+          echo "✅ Switched to gh-pages branch."
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
@@ -28,19 +28,19 @@ jobs:
       - name: Install dependencies
         run: |
           npm install axios
-          echo "Dependencies installed successfully."
+          echo "✅ Dependencies installed."
 
       - name: Check and update badges.json
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           node check-badges.js
-          echo "Badge check completed."
+          echo "✅ Badge check script completed."
 
       - name: Clean up untracked files
         run: |
           rm -rf node_modules package-lock.json package.json
-          echo "Cleaned up untracked files."
+          echo "✅ Cleaned up untracked files."
 
       - name: Check for changes
         id: check_changes
@@ -50,7 +50,15 @@ jobs:
             echo "No changes detected."
             echo "skip=true" >> $GITHUB_ENV
           else
-            echo "Changes detected."
+            echo "Changes detected in badges.json."
+          fi
+
+      - name: Log result
+        run: |
+          if [ "${{ env.skip }}" == "true" ]; then
+            echo "ℹ️ Workflow completed: No changes detected."
+          else
+            echo "🔄 Workflow completed: Changes detected, creating PR."
           fi
 
       - name: Set Git user identity
@@ -58,14 +66,14 @@ jobs:
         run: |
           git config --local user.name "GitHub Actions Bot"
           git config --local user.email "actions@github.com"
-          echo "Git user identity set."
+          echo "✅ Git user identity set."
 
       - name: Create a new branch for the PR
         if: env.skip != 'true'
         run: |
           git checkout -b update-badges-${{ github.run_id }}
           git commit -m "Update badges.json with latest release URLs"
-          echo "New branch created for PR."
+          echo "✅ New branch created for PR."
 
       - name: Push the new branch
         if: env.skip != 'true'
@@ -73,7 +81,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git push origin HEAD
-          echo "Branch pushed successfully."
+          echo "✅ Branch pushed successfully."
 
       - name: Create a pull request
         if: env.skip != 'true'
