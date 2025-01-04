@@ -19,6 +19,11 @@ jobs:
           ref: gh-pages
           fetch-depth: 0
 
+      - name: Verify git repository state
+        run: |
+          git status
+          git branch
+
       - name: Create Pull Request
         if: ${{ github.event.workflow_run.conclusion == 'success' }}
         uses: peter-evans/create-pull-request@v5
