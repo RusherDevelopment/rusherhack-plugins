@@ -50,12 +50,12 @@ jobs:
         run: |
           node update-readme.js parsed-badges.json
           if [ $? -eq 0 ]; then
+            echo "::set-output name=changes-found::true"
             echo "changes-found=true" >> $GITHUB_ENV
           else
+            echo "::set-output name=changes-found::false"
             echo "changes-found=false" >> $GITHUB_ENV
           fi
-          echo "::notice::Checked and updated README if changes were found."
-        continue-on-error: true
 
       # Step 6: Commit changes and create a new branch (only if changes were found)
       - name: Commit changes and create a new branch
