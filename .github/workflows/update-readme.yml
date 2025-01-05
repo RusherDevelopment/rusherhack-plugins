@@ -78,7 +78,7 @@ jobs:
   create-pr:
     runs-on: ubuntu-22.04
     needs: check-and-update-readme
-    if: ${{ needs.check-and-update-readme.result == 'success' }}
+    if: always() && needs.check-and-update-readme.result == 'success'
     steps:
       - name: Download branch name artifact
         uses: actions/download-artifact@v4
