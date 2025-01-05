@@ -82,7 +82,7 @@ jobs:
   create-pr:
     runs-on: ubuntu-22.04
     needs: check-and-update-readme
-    if: needs.check-and-update-readme.outputs.changes-found == 'true'
+    if: needs.check-and-update-readme.outputs['changes-found'] == 'true'
     steps:
       - name: Download branch name artifact
         uses: actions/download-artifact@v4
