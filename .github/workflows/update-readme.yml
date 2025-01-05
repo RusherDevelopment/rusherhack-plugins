@@ -19,56 +19,43 @@ jobs:
           git show origin/gh-pages:badges.json > badges.json
           echo "::notice::Fetched badges.json from gh-pages branch."
 
-      - name: Parse badges.json and save artifact
+      - name: Parse badges.json
         run: |
           node parse-badges.js
-          echo "::notice::Parsed badges.json and saved artifact."
+          echo "::notice::Parsed badges.json."
 
       - name: Clean up badges.json
         run: |
           rm -f badges.json
           echo "::notice::Removed badges.json after parsing."
 
-      - name: Upload parsed badges artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: parsed-badges
-          path: parsed-badges.json
-
-      - name: Download parsed badges artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: parsed-badges
-
       - name: Update README if changes are found
         id: update-readme
         run: |
           node update-readme.js parsed-badges.json
           if [ $? -eq 0 ]; then
-            echo "changes-found=true" >> $GITHUB_OUTPUT
+            echo "changes-found=true" >> $GITHUB_ENV
           else
-            echo "changes-found=false" >> $GITHUB_OUTPUT
+            echo "changes-found=false" >> $GITHUB_ENV
           fi
           echo "::notice::Checked and updated README if changes were found."
-
-    outputs:
-      changes-found: ${{ steps.update-readme.outputs.changes-found }}
 
   create-pr:
     runs-on: ubuntu-22.04
     needs: check-and-update-readme
-    if: needs.check-and-update-readme.outputs.changes-found == 'true'
+    if: env.changes-found == 'true'
     steps:
-      - name: Download branch name artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: branch-name
-
-      - name: Load branch name
+      - name: Create branch and commit changes
         run: |
-          BRANCH_NAME=$(cat branch-name.txt)
-          echo "Loaded branch name: $BRANCH_NAME"
+          git config --local user.name "GitHub Actions Bot"
+          git config --local user.email "actions@github.com"
+          BRANCH_NAME="update-readme-${{ github.run_id }}"
           echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_ENV
+          git checkout -b $BRANCH_NAME
+          git add README.md
+          git commit -m "Update README with latest download URLs"
+          git push origin HEAD
+          echo "::notice::Changes committed and branch pushed."
 
       - name: Create issue content file
         run: |
