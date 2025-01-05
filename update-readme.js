@@ -17,7 +17,7 @@ let changesMade = false;
 // Loop through each plugin and update README if necessary
 parsedBadges.forEach(plugin => {
   const downloadBadgeRegex = new RegExp(
-    `\!\GitHub Downloads \all releases\\\https://img\\.shields\\.io/github/downloads/${plugin.repo}/total\\\.*?\`,
+    `\\!\GitHub Downloads \all releases\\\https://img\\.shields\\.io/github/downloads/${plugin.repo}/total\.*?\`,
     'g'
   );
 
