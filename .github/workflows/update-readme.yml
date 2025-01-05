@@ -1,0 +1,106 @@
+name: Update README After Badge Changes
+
+on:
+  workflow_dispatch: # Manual trigger only for now
+
+jobs:
+  check-and-update-readme:
+    runs-on: ubuntu-22.04
+
+    steps:
+      # Step 1: Checkout repository and fetch gh-pages branch
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Fetch badges.json from gh-pages branch
+        run: |
+          git fetch origin gh-pages
+          git checkout origin/gh-pages -- badges.json
+          echo "::notice::Fetched badges.json from gh-pages branch."
+
+      # Step 2: Parse badges.json and save artifact
+      - name: Parse badges.json and save artifact
+        run: |
+          node parse-badges.js
+          echo "::notice::Parsed badges.json and saved artifact."
+
+      - name: Upload parsed badges artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: parsed-badges
+          path: parsed-badges.json
+
+      # Step 3: Switch back to main branch
+      - name: Switch back to main branch
+        run: |
+          git checkout main
+          echo "::notice::Switched back to main branch."
+
+      # Step 4: Download parsed badges artifact
+      - name: Download parsed badges artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: parsed-badges
+
+      # Step 5: Update README if necessary
+      - name: Update README if changes are found
+        id: update-readme
+        run: |
+          node update-readme.js parsed-badges.json
+          echo "::notice::Checked and updated README if changes were found."
+
+      # Step 6: Commit changes and create a new branch
+      - name: Commit changes and create a new branch
+        if: ${{ steps.update-readme.outputs.changes_found == 'true' }}
+        run: |
+          git config --local user.name "GitHub Actions Bot"
+          git config --local user.email "actions@github.com"
+          BRANCH_NAME="update-readme-${{ github.run_id }}"
+          echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_ENV
+          echo "$BRANCH_NAME" > branch-name.txt
+          git checkout -b $BRANCH_NAME
+          git add README.md
+          git commit -m "Update README with latest download URLs"
+          git push origin HEAD
+          echo "::notice::Changes committed and branch pushed."
+
+      - name: Upload branch name artifact
+        if: ${{ steps.update-readme.outputs.changes_found == 'true' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: branch-name
+          path: branch-name.txt
+
+  create-pr:
+    runs-on: ubuntu-22.04
+    needs: check-and-update-readme
+    if: ${{ needs.check-and-update-readme.result == 'success' }}
+    steps:
+      - name: Download branch name artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: branch-name
+
+      - name: Load branch name
+        run: |
+          BRANCH_NAME=$(cat branch-name.txt)
+          echo "Loaded branch name: $BRANCH_NAME"
+          echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_ENV
+
+      - name: Create issue content file
+        run: |
+          echo "A new branch has been created: **${{ env.BRANCH_NAME }}**." > issue-content.md
+          echo "" >> issue-content.md
+          echo "Please review the changes and open a pull request from this branch." >> issue-content.md
+          echo "" >> issue-content.md
+          echo "**Compare Changes:** [View on GitHub](https://github.com/RusherDevelopment/rusherhack-plugins/compare/gh-pages...${{ env.BRANCH_NAME }})" >> issue-content.md
+
+      - name: Create an issue notification
+        uses: peter-evans/create-issue-from-file@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          title: "PR Needed: Update README"
+          content-filepath: issue-content.md
+          labels: "automated notification"
