@@ -38,3 +38,5 @@ if (updatedReadmeContent !== readmeContent) {
   console.log('No changes made to README.');
   process.exit(1); // Indicate no changes were made
 }
+
+console.log('::set-output name=changes-found::true');
