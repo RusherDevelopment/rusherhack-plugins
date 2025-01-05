@@ -8,84 +8,56 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
-      # Step 1: Checkout repository
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
-      # Step 2: Fetch badges.json content from gh-pages branch without tracking it
       - name: Fetch badges.json from gh-pages branch
         run: |
           git fetch origin gh-pages
           git show origin/gh-pages:badges.json > badges.json
           echo "::notice::Fetched badges.json from gh-pages branch."
 
-      # Step 3: Parse badges.json and save artifact
       - name: Parse badges.json and save artifact
         run: |
           node parse-badges.js
           echo "::notice::Parsed badges.json and saved artifact."
 
-      # Step 4: Remove badges.json after parsing
       - name: Clean up badges.json
         run: |
           rm -f badges.json
           echo "::notice::Removed badges.json after parsing."
 
-      # Step 5: Upload parsed badges artifact
       - name: Upload parsed badges artifact
         uses: actions/upload-artifact@v4
         with:
           name: parsed-badges
           path: parsed-badges.json
 
-      # Step 6: Download parsed badges artifact
       - name: Download parsed badges artifact
         uses: actions/download-artifact@v4
         with:
           name: parsed-badges
 
-      # Step 7: Update README if necessary
       - name: Update README if changes are found
         id: update-readme
         run: |
           node update-readme.js parsed-badges.json
           if [ $? -eq 0 ]; then
-            echo "::set-output name=changes-found::true"
-            echo "changes-found=true" >> $GITHUB_ENV
+            echo "changes-found=true" >> $GITHUB_OUTPUT
           else
-            echo "::set-output name=changes-found::false"
-            echo "changes-found=false" >> $GITHUB_ENV
+            echo "changes-found=false" >> $GITHUB_OUTPUT
           fi
           echo "::notice::Checked and updated README if changes were found."
 
-      # Step 8: Commit changes and create a new branch (only if changes were found)
-      - name: Commit changes and create a new branch
-        if: env.changes-found == 'true'
-        run: |
-          git config --local user.name "GitHub Actions Bot"
-          git config --local user.email "actions@github.com"
-          BRANCH_NAME="update-readme-${{ github.run_id }}"
-          echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_ENV
-          echo "$BRANCH_NAME" > branch-name.txt
-          git checkout -b $BRANCH_NAME
-          git add README.md  # Explicitly add only README.md
-          git commit -m "Update README with latest download URLs"
-          git push origin HEAD
-          echo "::notice::Changes committed and branch pushed."
-
-      - name: Upload branch name artifact
-        if: env.changes-found == 'true'
-        uses: actions/upload-artifact@v4
-        with:
-          name: branch-name
-          path: branch-name.txt
+    outputs:
+      changes-found: ${{ steps.update-readme.outputs.changes-found }}
 
   create-pr:
     runs-on: ubuntu-22.04
     needs: check-and-update-readme
-    if: needs.check-and-update-readme.outputs['changes-found'] == 'true'
+    if: needs.check-and-update-readme.outputs.changes-found == 'true'
     steps:
       - name: Download branch name artifact
         uses: actions/download-artifact@v4
