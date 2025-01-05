@@ -7,7 +7,7 @@ const badges = JSON.parse(fs.readFileSync('badges.json', 'utf8'));
 const parsedData = badges.plugins.map(plugin => ({
   name: plugin.name,
   repo: plugin.repo,
-  releaseUrl: plugin.releaseUrl
+  latestReleaseUrl: plugin.latestReleaseUrl // Correct key for latest release URL
 }));
 
 // Save parsed data to parsed-badges.json
