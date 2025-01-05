@@ -22,9 +22,15 @@ parsedBadges.forEach((plugin) => {
 
   const newBadgeLine = `[![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/${plugin.repo}/total)](${plugin.latestReleaseUrl})`;
 
+  console.log(`Checking plugin: ${plugin.name}`);
+  console.log(`Expected badge line: ${newBadgeLine}`);
+
   if (badgeRegex.test(readmeContent)) {
+    console.log(`Badge found for ${plugin.name}. Updating...`);
     readmeContent = readmeContent.replace(badgeRegex, newBadgeLine);
     changesMade = true;
+  } else {
+    console.log(`No matching badge found for ${plugin.name}.`);
   }
 });
 
