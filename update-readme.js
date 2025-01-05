@@ -1,26 +1,36 @@
 const fs = require('fs');
 
-// Load parsed badges and README content
-const parsedBadges = JSON.parse(fs.readFileSync('parsed-badges.json', 'utf8'));
-let readmeContent = fs.readFileSync('README.md', 'utf8');
+const parsedBadgesPath = process.argv[2];
+const readmePath = 'README.md';
 
-// Define regex to match each plugin's download badge in README
-parsedBadges.forEach(plugin => {
-  const downloadBadgeRegex = new RegExp(
-    `\\\!\GitHub Downloads \all releases\\\https:\\/\\/img\\.shields\\.io\\/github\\/downloads\\/${plugin.repo}\\/total\\\https:\\/\\/github\\.com\\/${plugin.repo}\\/releases\\/download.*?\`,
+if (!fs.existsSync(parsedBadgesPath)) {
+  console.error(`Error: Parsed badges file not found at ${parsedBadgesPath}`);
+  process.exit(1);
+}
+
+// Load parsed badges and README content
+const parsedBadges = JSON.parse(fs.readFileSync(parsedBadgesPath, 'utf8'));
+let readmeContent = fs.readFileSync(readmePath, 'utf8');
+
+let changesMade = false;
+
+parsedBadges.forEach((plugin) => {
+  const badgeRegex = new RegExp(
+    `\\\!\GitHub Downloads \all releases\\\https:\\/\\/img\\.shields\\.io\\/github\\/downloads\\/${plugin.repo}\\/total\\\https:\\/\\/github\\.com\\/${plugin.repo}\\/releases\\/download\\/.*\`,
     'g'
   );
 
-  const newDownloadBadge = `[![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/${plugin.repo}/total)](${plugin.latestReleaseUrl})`;
+  const newBadgeLine = `[![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/${plugin.repo}/total)](${plugin.latestReleaseUrl})`;
 
-  // Replace the old badge with the new one if it differs
-  readmeContent = readmeContent.replace(downloadBadgeRegex, newDownloadBadge);
+  if (badgeRegex.test(readmeContent)) {
+    readmeContent = readmeContent.replace(badgeRegex, newBadgeLine);
+    changesMade = true;
+  }
 });
 
-// Check if changes were made
-if (readmeContent !== fs.readFileSync('README.md', 'utf8')) {
-  fs.writeFileSync('README.md', readmeContent);
-  console.log('README updated with the latest download URLs.');
+if (changesMade) {
+  fs.writeFileSync(readmePath, readmeContent);
+  console.log('README updated with latest download URLs.');
   process.exit(0); // Indicate changes were made
 } else {
   console.log('No changes made to README.');
