@@ -49,13 +49,16 @@ jobs:
         id: update-readme
         run: |
           node update-readme.js parsed-badges.json
-          echo "::set-output name=changes-found::true"
+          if [ $? -eq 0 ]; then
+            echo "changes-found=true" >> $GITHUB_ENV
+          else
+            echo "changes-found=false" >> $GITHUB_ENV
+          fi
           echo "::notice::Checked and updated README if changes were found."
-        continue-on-error: true
 
       # Step 6: Commit changes and create a new branch
       - name: Commit changes and create a new branch
-        if: ${{ steps.update-readme.outcome == 'success' }}
+        if: env.changes-found == 'true'
         run: |
           git config --local user.name "GitHub Actions Bot"
           git config --local user.email "actions@github.com"
@@ -69,7 +72,7 @@ jobs:
           echo "::notice::Changes committed and branch pushed."
 
       - name: Upload branch name artifact
-        if: ${{ steps.update-readme.outcome == 'success' }}
+        if: env.changes-found == 'true'
         uses: actions/upload-artifact@v4
         with:
           name: branch-name
@@ -78,7 +81,7 @@ jobs:
   create-pr:
     runs-on: ubuntu-22.04
     needs: check-and-update-readme
-    if: always() && needs.check-and-update-readme.result == 'success'
+    if: needs.check-and-update-readme.outputs.changes-found == 'true'
     steps:
       - name: Download branch name artifact
         uses: actions/download-artifact@v4
