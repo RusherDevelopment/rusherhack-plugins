@@ -47,7 +47,10 @@ parsedBadges.forEach(({ name, latestReleaseUrl }) => {
   const pluginEntry = readmePlugins.get(normalizedPluginName);
 
   if (pluginEntry) {
-    console.log(`Matching plugin found in README for ${name}`);
+    console.log(`\nChecking plugin: ${name}`);
+    console.log(`Current download URL: ${pluginEntry.currentDownloadUrl}`);
+    console.log(`Latest release URL: ${latestReleaseUrl}`);
+
     const expectedBadgeUrl = `https://img.shields.io/github/downloads/${name}/total`;
 
     // Check if URLs need updating
@@ -61,6 +64,8 @@ parsedBadges.forEach(({ name, latestReleaseUrl }) => {
 
       readmeContent = readmeContent.replace(oldEntry, newEntry);
       changesMade = true;
+    } else {
+      console.log(`No update needed for ${name}, URLs match.`);
     }
   } else {
     console.log(`No matching plugin found in README for ${name}`);
@@ -69,7 +74,7 @@ parsedBadges.forEach(({ name, latestReleaseUrl }) => {
 
 // Write updated README if changes were made
 if (changesMade) {
-  console.log('Changes detected, updating README...');
+  console.log('\nChanges detected, updating README...');
   fs.writeFileSync('README.md', readmeContent, 'utf8');
   console.log('README updated successfully.');
 } else {
