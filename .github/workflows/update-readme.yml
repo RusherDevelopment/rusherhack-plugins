@@ -28,7 +28,6 @@ jobs:
         id: update-readme
         run: |
           node update-readme.js badges.json
-        continue-on-error: true # Allow job to continue even if no changes are found
 
     outputs:
       changes-found: ${{ steps.update-readme.outcome == 'success' }}
@@ -36,7 +35,7 @@ jobs:
   create-pr:
     runs-on: ubuntu-22.04
     needs: check-and-update-readme
-    if: needs.check-and-update-readme.outputs['changes-found'] == 'true'
+    if: always()
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
