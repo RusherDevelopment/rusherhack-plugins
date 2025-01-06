@@ -14,7 +14,7 @@ if (!sectionMatch) {
 
 const pluginsListContent = sectionMatch[1].trim();
 
-// Regex to match individual plugin entries and their download URLs
+// Regex to match individual plugin entries
 const pluginRegex = /- ### (.+?).*?!GitHub Downloads all releases(https:\/\/img\.shields\.io\/github\/downloads\/.+?\/total)(.+?)/g;
 const readmePlugins = new Map();
 let match;
