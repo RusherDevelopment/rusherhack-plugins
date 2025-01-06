@@ -15,8 +15,8 @@ if (!sectionMatch) {
 const pluginsListContent = sectionMatch[1].trim();
 console.log('Extracted plugins list content:\n', pluginsListContent);
 
-// Regex to match individual plugin entries
-const pluginRegex = /- ### (.+?)/g;
+// Updated regex to match plugin entries
+const pluginRegex = /- ### ([^]+)/g;
 const pluginNames = [];
 let match;
 
