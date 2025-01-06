@@ -13,6 +13,7 @@ if (!sectionMatch) {
 }
 
 const pluginsListContent = sectionMatch[1].trim();
+console.log('Extracted plugins list content:\n', pluginsListContent);
 
 // Regex to match individual plugin entries
 const pluginRegex = /- ### (.+?)/g;
@@ -44,18 +45,18 @@ let changesMade = false;
 // Iterate over parsed badges to find matching plugins in the README
 parsedBadges.forEach(({ name, latestReleaseUrl }) => {
   const normalizedPluginName = name.toLowerCase();
-  const pluginEntry = readmePlugins.get(normalizedPluginName);
+  console.log(`\nChecking plugin: ${name}`);
+  console.log(`Latest release URL from badges.json: ${latestReleaseUrl}`);
 
-  if (pluginEntry) {
-    console.log(`\nChecking plugin: ${name}`);
-    console.log(`Latest release URL from badges.json: ${latestReleaseUrl}`);
+  if (readmePlugins.has(normalizedPluginName)) {
+    console.log(`Matching plugin found in README for ${name}`);
 
     // Construct the expected badge URL
     const expectedBadgeUrl = `https://img.shields.io/github/downloads/${name}/total`;
 
     // Regex to find the current entry in README
     const badgeRegex = new RegExp(
-      `- ### \${pluginEntry}\ \!\GitHub Downloads \all releases\\\https://img\\.shields\\.io/github/downloads/${name}/total\\\.*?\`,
+      `- ### \${readmePlugins.get(normalizedPluginName)}\ \!\GitHub Downloads \all releases\\\https://img\\.shields\\.io/github/downloads/.+?/total\\\.*?\`,
       'g'
     );
 
@@ -65,7 +66,7 @@ parsedBadges.forEach(({ name, latestReleaseUrl }) => {
       console.log(`Updating download URL for ${name}`);
 
       // Construct the new entry
-      const newEntry = `- ### [${pluginEntry}] [![GitHub Downloads (all releases)](${expectedBadgeUrl})](${latestReleaseUrl})`;
+      const newEntry = `- ### [${readmePlugins.get(normalizedPluginName)}] [![GitHub Downloads (all releases)](${expectedBadgeUrl})](${latestReleaseUrl})`;
 
       // Replace the old entry with the new one in the README
       readmeContent = readmeContent.replace(badgeRegex, newEntry);
