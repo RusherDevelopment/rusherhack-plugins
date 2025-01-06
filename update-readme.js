@@ -15,10 +15,11 @@ if (!sectionMatch) {
 const pluginsListContent = sectionMatch[1].trim();
 
 // Regex to match individual plugin entries
-const pluginRegex = /- ### \[(.+?)\]/g;
+const pluginRegex = /- ### (.+?)/g;
 const pluginNames = [];
 let match;
 
+// Extract plugin names from README
 while ((match = pluginRegex.exec(pluginsListContent)) !== null) {
   pluginNames.push(match[1].trim());
 }
@@ -43,26 +44,34 @@ let changesMade = false;
 // Iterate over parsed badges to find matching plugins in the README
 parsedBadges.forEach(({ name, latestReleaseUrl }) => {
   const normalizedPluginName = name.toLowerCase();
-  console.log(`Checking plugin: ${name}`);
-  console.log(`Latest release URL: ${latestReleaseUrl}`);
+  const pluginEntry = readmePlugins.get(normalizedPluginName);
 
-  if (readmePlugins.has(normalizedPluginName)) {
-    console.log(`Matching plugin found in README for ${name}`);
+  if (pluginEntry) {
+    console.log(`\nChecking plugin: ${name}`);
+    console.log(`Latest release URL from badges.json: ${latestReleaseUrl}`);
 
     // Construct the expected badge URL
-    const expectedBadgeUrl = `https://img.shields.io/github/downloads/${normalizedPluginName}/total`;
+    const expectedBadgeUrl = `https://img.shields.io/github/downloads/${name}/total`;
 
-    // Regex to find and replace badge and download URL
+    // Regex to find the current entry in README
     const badgeRegex = new RegExp(
-      `\\[!\\[GitHub Downloads \\(all releases\\)\\]\\(https://img\\.shields\\.io/github/downloads/.+?/total\\)\\]\\(.*?\\)`,
+      `- ### \${pluginEntry}\ \!\GitHub Downloads \all releases\\\https://img\\.shields\\.io/github/downloads/${name}/total\\\.*?\`,
       'g'
     );
-    const newBadge = `[![GitHub Downloads (all releases)](${expectedBadgeUrl})](${latestReleaseUrl})`;
-    const updatedContent = readmeContent.replace(badgeRegex, newBadge);
 
-    if (updatedContent !== readmeContent) {
-      readmeContent = updatedContent;
+    // Check if the current download URL in README differs from the latest release URL
+    const currentEntry = readmeContent.match(badgeRegex);
+    if (currentEntry && !currentEntry[0].includes(latestReleaseUrl)) {
+      console.log(`Updating download URL for ${name}`);
+
+      // Construct the new entry
+      const newEntry = `- ### [${pluginEntry}] [![GitHub Downloads (all releases)](${expectedBadgeUrl})](${latestReleaseUrl})`;
+
+      // Replace the old entry with the new one in the README
+      readmeContent = readmeContent.replace(badgeRegex, newEntry);
       changesMade = true;
+    } else {
+      console.log(`No update needed for ${name}`);
     }
   } else {
     console.log(`No matching plugin found in README for ${name}`);
@@ -71,9 +80,9 @@ parsedBadges.forEach(({ name, latestReleaseUrl }) => {
 
 // Write updated README if changes were made
 if (changesMade) {
-  console.log('Changes detected, updating README...');
+  console.log('\nChanges detected, updating README...');
   fs.writeFileSync('README.md', readmeContent, 'utf8');
   console.log('README updated successfully.');
 } else {
-  console.log('No changes made to README.');
+  console.log('\nNo changes made to README.');
 }
