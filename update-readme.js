@@ -32,15 +32,16 @@ if (pluginNames.length === 0) {
 }
 
 // Load parsed badges
-const parsedBadges = JSON.parse(fs.readFileSync(process.argv[2], 'utf8'));
+const parsedBadges = JSON.parse(fs.readFileSync(process.argv[2], 'utf8')).plugins;
 
 // Map plugin names from the README for easier matching
-const readmePlugins = new Map(pluginNames.map((name) => [name.toLowerCase(), name]));
+const readmePlugins = new Map(pluginNames.map(name => [name.toLowerCase(), name]));
 
 // Flag to track changes
 let changesMade = false;
 
-parsedBadges.forEach(({ name, repo, latestReleaseUrl }) => {
+// Iterate over parsed badges to find matching plugins in the README
+parsedBadges.forEach(({ name, latestReleaseUrl }) => {
   const normalizedPluginName = name.toLowerCase();
   console.log(`Checking plugin: ${name}`);
   console.log(`Latest release URL: ${latestReleaseUrl}`);
@@ -49,21 +50,19 @@ parsedBadges.forEach(({ name, repo, latestReleaseUrl }) => {
     console.log(`Matching plugin found in README for ${name}`);
 
     // Construct the expected badge URL
-    const expectedBadgeUrl = `https://img.shields.io/github/downloads/${repo}/total`;
+    const expectedBadgeUrl = `https://img.shields.io/github/downloads/${normalizedPluginName}/total`;
 
     // Regex to find and replace badge and download URL
     const badgeRegex = new RegExp(
-      `\\[!\\[GitHub Downloads \\(all releases\\)\\]\\(https://img\\.shields\\.io/github/downloads/${repo}/total\\)\\]\\(.*?\\)`,
+      `\\[!\\[GitHub Downloads \\(all releases\\)\\]\\(https://img\\.shields\\.io/github/downloads/.+?/total\\)\\]\\(.*?\\)`,
       'g'
     );
     const newBadge = `[![GitHub Downloads (all releases)](${expectedBadgeUrl})](${latestReleaseUrl})`;
-
     const updatedContent = readmeContent.replace(badgeRegex, newBadge);
 
     if (updatedContent !== readmeContent) {
       readmeContent = updatedContent;
       changesMade = true;
-      console.log(`Updated badge and download URL for ${name}`);
     }
   } else {
     console.log(`No matching plugin found in README for ${name}`);
