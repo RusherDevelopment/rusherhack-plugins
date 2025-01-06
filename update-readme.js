@@ -6,6 +6,7 @@ let readmeContent = fs.readFileSync('README.md', 'utf8');
 // Regex to match the plugins list section in the README
 const sectionRegex = /<!-- START PLUGINS LIST -->([\s\S]*?)<!-- END PLUGINS LIST -->/;
 const sectionMatch = sectionRegex.exec(readmeContent);
+
 if (!sectionMatch) {
   console.error('Error: Could not find the plugins list section in the README.');
   process.exit(1);
@@ -17,12 +18,14 @@ const pluginsListContent = sectionMatch[1].trim();
 const pluginRegex = /- ### \[(.+?)\]/g;
 const pluginNames = [];
 let match;
+
 while ((match = pluginRegex.exec(pluginsListContent)) !== null) {
   pluginNames.push(match[1].trim());
 }
 
 // Log parsed plugin names from README
 console.log('Parsed plugin names from README:', pluginNames);
+
 if (pluginNames.length === 0) {
   console.error('No plugins were found. Please check the README format.');
   process.exit(1);
@@ -32,7 +35,7 @@ if (pluginNames.length === 0) {
 const parsedBadges = JSON.parse(fs.readFileSync(process.argv[2], 'utf8'));
 
 // Map plugin names from the README for easier matching
-const readmePlugins = new Map(pluginNames.map(name => [name.toLowerCase(), name]));
+const readmePlugins = new Map(pluginNames.map((name) => [name.toLowerCase(), name]));
 
 // Flag to track changes
 let changesMade = false;
@@ -41,10 +44,10 @@ parsedBadges.forEach(({ name, repo, latestReleaseUrl }) => {
   const normalizedPluginName = name.toLowerCase();
   console.log(`Checking plugin: ${name}`);
   console.log(`Latest release URL: ${latestReleaseUrl}`);
-  
+
   if (readmePlugins.has(normalizedPluginName)) {
     console.log(`Matching plugin found in README for ${name}`);
-    
+
     // Construct the expected badge URL
     const expectedBadgeUrl = `https://img.shields.io/github/downloads/${repo}/total`;
 
@@ -60,6 +63,7 @@ parsedBadges.forEach(({ name, repo, latestReleaseUrl }) => {
     if (updatedContent !== readmeContent) {
       readmeContent = updatedContent;
       changesMade = true;
+      console.log(`Updated badge and download URL for ${name}`);
     }
   } else {
     console.log(`No matching plugin found in README for ${name}`);
