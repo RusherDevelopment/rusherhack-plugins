@@ -15,22 +15,18 @@ if (!sectionMatch) {
 const pluginsListContent = sectionMatch[1].trim();
 
 // Regex to match individual plugin entries
-const pluginRegex = /- ### (.+?)\s*!GitHub Downloads all releases(https:\/\/img\.shields\.io\/github\/downloads\/.+?\/total)(.+?)/g;
-const readmePlugins = new Map();
+const pluginRegex = /- ### (.+?)/g;
+const pluginNames = [];
 let match;
 
-// Extract plugin names and URLs from README
 while ((match = pluginRegex.exec(pluginsListContent)) !== null) {
-  const pluginName = match[1].trim();
-  const currentBadgeUrl = match[2].trim();
-  const currentDownloadUrl = match[3].trim();
-  readmePlugins.set(pluginName.toLowerCase(), { pluginName, currentBadgeUrl, currentDownloadUrl });
+  pluginNames.push(match[1].trim());
 }
 
 // Log parsed plugin names from README
-console.log('Parsed plugin names from README:', Array.from(readmePlugins.keys()));
+console.log('Parsed plugin names from README:', pluginNames);
 
-if (readmePlugins.size === 0) {
+if (pluginNames.length === 0) {
   console.error('No plugins were found. Please check the README format.');
   process.exit(1);
 }
@@ -38,35 +34,35 @@ if (readmePlugins.size === 0) {
 // Load parsed badges
 const parsedBadges = JSON.parse(fs.readFileSync(process.argv[2], 'utf8')).plugins;
 
+// Map plugin names from the README for easier matching
+const readmePlugins = new Map(pluginNames.map(name => [name.toLowerCase(), name]));
+
 // Flag to track changes
 let changesMade = false;
 
 // Iterate over parsed badges to find matching plugins in the README
 parsedBadges.forEach(({ name, latestReleaseUrl }) => {
   const normalizedPluginName = name.toLowerCase();
-  const pluginEntry = readmePlugins.get(normalizedPluginName);
+  console.log(`Checking plugin: ${name}`);
+  console.log(`Latest release URL: ${latestReleaseUrl}`);
 
-  if (pluginEntry) {
-    console.log(`\nChecking plugin: ${name}`);
-    console.log(`Current download URL in README: ${pluginEntry.currentDownloadUrl}`);
-    console.log(`Latest release URL from badges.json: ${latestReleaseUrl}`);
+  if (readmePlugins.has(normalizedPluginName)) {
+    console.log(`Matching plugin found in README for ${name}`);
 
-    // Check if the download URL needs updating
-    if (pluginEntry.currentDownloadUrl !== latestReleaseUrl) {
-      console.log(`Updating download URL for ${name}`);
+    // Construct the expected badge URL
+    const expectedBadgeUrl = `https://img.shields.io/github/downloads/${name}/total`;
 
-      const expectedBadgeUrl = `https://img.shields.io/github/downloads/${name}/total`;
-      const newBadge = `[![GitHub Downloads (all releases)](${expectedBadgeUrl})](${latestReleaseUrl})`;
+    // Regex to find and replace badge and download URL
+    const badgeRegex = new RegExp(
+      `\!\GitHub Downloads \all releases\\\https://img\\.shields\\.io/github/downloads/.+?/total\\\.*?\`,
+      'g'
+    );
+    const newBadge = `[![GitHub Downloads (all releases)](${expectedBadgeUrl})](${latestReleaseUrl})`;
+    const updatedContent = readmeContent.replace(badgeRegex, newBadge);
 
-      // Construct the old and new plugin entries
-      const oldEntry = `- ### [${pluginEntry.pluginName}] [![GitHub Downloads (all releases)](${pluginEntry.currentBadgeUrl})](${pluginEntry.currentDownloadUrl})`;
-      const newEntry = `- ### [${pluginEntry.pluginName}] ${newBadge}`;
-
-      // Replace the old entry with the new one in the README
-      readmeContent = readmeContent.replace(oldEntry, newEntry);
+    if (updatedContent !== readmeContent) {
+      readmeContent = updatedContent;
       changesMade = true;
-    } else {
-      console.log(`No update needed for ${name}`);
     }
   } else {
     console.log(`No matching plugin found in README for ${name}`);
