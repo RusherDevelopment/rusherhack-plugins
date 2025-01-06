@@ -15,7 +15,7 @@ if (!sectionMatch) {
 const pluginsListContent = sectionMatch[1].trim();
 
 // Regex to match individual plugin entries
-const pluginRegex = /- ### \[(.+?)\]/g;
+const pluginRegex = /- ### (.+?)/g;
 const pluginNames = [];
 let match;
 
@@ -50,11 +50,11 @@ parsedBadges.forEach(({ name, latestReleaseUrl }) => {
     console.log(`Matching plugin found in README for ${name}`);
 
     // Construct the expected badge URL
-    const expectedBadgeUrl = `https://img.shields.io/github/downloads/${normalizedPluginName}/total`;
+    const expectedBadgeUrl = `https://img.shields.io/github/downloads/${name}/total`;
 
     // Regex to find and replace badge and download URL
     const badgeRegex = new RegExp(
-      `\\[!\\[GitHub Downloads \\(all releases\\)\\]\\(https://img\\.shields\\.io/github/downloads/.+?/total\\)\\]\\(.*?\\)`,
+      `\!\GitHub Downloads \all releases\\\https://img\\.shields\\.io/github/downloads/.+?/total\\\.*?\`,
       'g'
     );
     const newBadge = `[![GitHub Downloads (all releases)](${expectedBadgeUrl})](${latestReleaseUrl})`;
