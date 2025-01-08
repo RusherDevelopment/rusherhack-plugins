@@ -1,7 +1,7 @@
 {
     "schemaVersion": 1,
     "totalPlugins": {
-        "message": "66",
+        "message": "67",
         "color": "green"
     },
     "discord": {
@@ -618,6 +618,15 @@
             "releaseDate": "January 2, 2025",
             "color": "green",
             "description": "Sends notifications from RusherHacks to a Discord channel."
+        },
+        {
+            "name": "AutoBonemeal",
+            "url": "https://github.com/John200410/rusherhack-autobonemeal",
+            "releaseUrl": "https://github.com/John200410/rusherhack-autobonemeal/releases",
+            "latestReleaseUrl": "https://github.com/John200410/rusherhack-autobonemeal/releases/download/v1.0.0/auto-bonemeal-1.0.0.jar",
+            "releaseDate": "January 08, 2025",
+            "color": "green",
+            "description": "A RusherHacks plugin for automatically applying bonemeal to crops."
         }
     ]
 }
