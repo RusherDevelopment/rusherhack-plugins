@@ -920,6 +920,17 @@ These tools can assist in managing and developing RusherHack plugins:
 
    Sends notifications from RusherHacks to a Discord channel.
 
+---
+
+- ### [AutoBonemeal](https://github.com/John200410/rusherhack-autobonemeal) <br>
+
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[66].releaseDate&label=Latest%20Release&color=green)](https://github.com/John200410/rusherhack-autobonemeal/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/John200410/rusherhack-autobonemeal/total)](https://github.com/John200410/rusherhack-autobonemeal/releases/download/v1.0.0/auto-bonemeal-1.0.0.jar)<br>
+
+   **Creator**: <img src="https://github.com/John200410.png?size=20" width="20" height="20"> [John200410](https://github.com/John200410)
+
+   A RusherHacks plugin for automatically applying bonemeal to crops.
+
+
 <!-- END PLUGINS LIST -->
 
 ## Reporting Issues
