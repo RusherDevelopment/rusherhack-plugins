@@ -52,7 +52,7 @@ jobs:
           echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_ENV
           git checkout -b $BRANCH_NAME
           git commit -m "Update README with latest plugins list"
-          git push origin HEAD
+          git push origin $BRANCH_NAME
 
       - name: Create issue content file
         run: |
