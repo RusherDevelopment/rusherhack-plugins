@@ -1,10 +1,13 @@
-name: Update README After Badge Changes
+name: Update README with Plugins List
 
 on:
-  workflow_dispatch: # Manual trigger only for now
+  push:
+    paths:
+      - 'badges.json' # Trigger only when badges.json is updated
+  workflow_dispatch: # Allows manual trigger
 
 jobs:
-  check-and-update-readme:
+  update-readme:
     runs-on: ubuntu-22.04
 
     steps:
@@ -12,60 +15,57 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
-
-      - name: Fetch badges.json from gh-pages branch
-        run: |
-          git fetch origin gh-pages
-          git show origin/gh-pages:badges.json > badges.json
-          echo "::notice::Fetched badges.json from gh-pages branch."
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18'
 
-      - name: Update README if changes are found
-        id: update-readme
+      - name: Install dependencies
+        run: npm install axios
+
+      - name: Generate new README
+        run: node update-readme.js
+
+      - name: Check for changes in README.md
+        id: check_changes
         run: |
-          node update-readme.js badges.json
+          git add README.md
+          if git diff --cached --quiet; then
+            echo "::notice::No changes detected in README.md."
+            echo "skip=true" >> $GITHUB_ENV
+          else
+            echo "::notice::Changes detected in README.md."
+          fi
 
-    outputs:
-      changes-found: ${{ steps.update-readme.outcome == 'success' }}
-
-  create-pr:
-    runs-on: ubuntu-22.04
-    needs: check-and-update-readme
-    if: always()
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-
-      - name: Create branch and commit changes
+      - name: Commit changes and create a new branch
+        if: env.skip != 'true'
+        id: set-branch-name
         run: |
-          git config user.name "GitHub Actions Bot"
-          git config user.email "actions@github.com"
+          git config --local user.name "GitHub Actions Bot"
+          git config --local user.email "actions@github.com"
           BRANCH_NAME="update-readme-${{ github.run_id }}"
           echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_ENV
           git checkout -b $BRANCH_NAME
-          git add README.md
-          git commit -m "Update README with latest download URLs"
+          git commit -m "Update README with latest plugins list"
           git push origin HEAD
-          echo "::notice::Changes committed and branch pushed."
 
       - name: Create issue content file
         run: |
-          echo "A new branch has been created: **${{ env.BRANCH_NAME }}**." > issue-content.md
+          echo "**PR Needed: Update README**" > issue-content.md
+          echo "" >> issue-content.md
+          echo "A new branch has been created: **${{ env.BRANCH_NAME }}**." >> issue-content.md
           echo "" >> issue-content.md
           echo "Please review the changes and open a pull request from this branch." >> issue-content.md
           echo "" >> issue-content.md
-          echo "**Compare Changes:** [View on GitHub](https://github.com/RusherDevelopment/rusherhack-plugins/compare/gh-pages...${{ env.BRANCH_NAME }})" >> issue-content.md
+          echo "**Compare Changes:** [View on GitHub](https://github.com/${{ github.repository }}/compare/gh-pages...${{ env.BRANCH_NAME }})" >> issue-content.md
 
-      - name: Create an issue notification
+      - name: Create GitHub Issue for PR Notification
+        if: env.skip != 'true'
         uses: peter-evans/create-issue-from-file@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           title: "PR Needed: Update README"
           content-filepath: issue-content.md
           labels: "automated notification"
+          repository: ${{ github.repository }}
