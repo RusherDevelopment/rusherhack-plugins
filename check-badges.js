@@ -32,7 +32,6 @@ async function checkAndUpdateBadges() {
             const jarFiles = latestRelease.assets.filter(asset => asset.name.endsWith('.jar'));
 
             let newReleaseUrl;
-
             if (jarFiles.length === 1) {
                 newReleaseUrl = jarFiles[0].browser_download_url;
             } else if (jarFiles.length > 1) {
@@ -64,7 +63,7 @@ async function checkAndUpdateBadges() {
     }
 
     // Update totalPlugins count
-    badges.totalPlugins.message = badges.plugins.length.toString();
+    badges.totalPlugins.message = (badges.plugins.length + badges.devTools.length).toString();
 
     if (updated) {
         fs.writeFileSync(`${badgesPath}.bak`, JSON.stringify(badges, null, 4)); // Backup
