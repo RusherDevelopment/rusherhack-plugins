@@ -34,14 +34,11 @@ async function checkAndUpdateBadges() {
             let newReleaseUrl;
 
             if (jarFiles.length === 1) {
-                // Only one jar file, use it directly
                 newReleaseUrl = jarFiles[0].browser_download_url;
             } else if (jarFiles.length > 1) {
-                // Multiple jar files, use the tag URL for user selection
                 newReleaseUrl = latestRelease.html_url;
             } else {
-                // No jar files, fall back to release URL
-                newReleaseUrl = latestRelease.html_url;
+                newReleaseUrl = "null";
             }
 
             console.log(`Found release URL for ${plugin.name}: ${newReleaseUrl}`);
@@ -65,6 +62,9 @@ async function checkAndUpdateBadges() {
             }
         }
     }
+
+    // Update totalPlugins count
+    badges.totalPlugins.message = badges.plugins.length.toString();
 
     if (updated) {
         fs.writeFileSync(`${badgesPath}.bak`, JSON.stringify(badges, null, 4)); // Backup
