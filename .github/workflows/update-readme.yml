@@ -17,16 +17,18 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
+          ref: main # Checkout the main branch first
 
-      - name: Switch to main branch
+      - name: Fetch gh-pages branch
         run: |
-          git checkout main
-          echo "::notice::Checked out main branch."
-
-      - name: Pull badges.json from gh-pages
-        run: |
+          git fetch origin gh-pages:gh-pages
           git checkout gh-pages -- badges.json
           echo "::notice::Pulled badges.json from gh-pages branch."
+
+      - name: Switch back to main branch
+        run: |
+          git checkout main
+          echo "::notice::Switched back to main branch."
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
