@@ -15,7 +15,7 @@
             "url": "https://github.com/kybe236/rhp",
             "releaseUrl": "https://github.com/kybe236/rhp/releases",
             "latestReleaseUrl": "https://github.com/kybe236/rhp/releases/tag/0.0.11",
-            "releaseDate": "August 24, 2024",
+            "releaseDate": "2024-08-24",
             "color": "green",
             "description": "Installs Rusherhack plugins for you and sets the needed flags."
         }
@@ -25,372 +25,747 @@
             "name": "Example Plugin",
             "url": "https://github.com/RusherDevelopment/example-plugin",
             "releaseUrl": "https://github.com/RusherDevelopment/example-plugin/releases",
-            "latestReleaseUrl": "null",
-            "releaseDate": "No releases",
-            "color": "red",
-            "description": "A basic example plugin demonstrating the structure and capabilities of RusherHacks plugins."
+            "latestReleaseUrl": "https://github.com/RusherDevelopment/example-plugin/releases/latest/download/example-plugin-1.0.0.jar",
+            "releaseDate": "2024-11-15",
+            "color": "orange",
+            "description": "A basic example plugin demonstrating the structure and capabilities of RusherHacks plugins.",
+            "creator": {
+                "name": "RusherDevelopment",
+                "url": "https://github.com/RusherDevelopment",
+                "avatarUrl": "https://github.com/RusherDevelopment.png?size=20"
+            }
         },
         {
             "name": "2b2t.vc Rusherhack",
             "url": "https://github.com/rfresh2/2b2t.vc-rusherhack",
             "releaseUrl": "https://github.com/rfresh2/2b2t.vc-rusherhack/releases",
             "latestReleaseUrl": "https://github.com/rfresh2/2b2t.vc-rusherhack/releases/download/1.11/2b2t.vc-rusherhack-1.11.jar",
-            "releaseDate": "July 15, 2024",
+            "releaseDate": "2024-07-15",
             "color": "green",
-            "description": "A RusherHacks plugin designed for 2b2t.vc server use."
+            "description": "A RusherHacks plugin designed for 2b2t.vc server use.",
+            "creator": {
+                "name": "rfresh2",
+                "url": "https://github.com/rfresh2",
+                "avatarUrl": "https://github.com/rfresh2.png?size=20"
+            }
         },
         {
             "name": "RusherHack-HudElement",
             "url": "https://github.com/Aspect-404/RusherHack-HudElement",
             "releaseUrl": "https://github.com/Aspect-404/RusherHack-HudElement/releases",
             "latestReleaseUrl": "https://github.com/Aspect-404/RusherHack-HudElement/releases/download/Release/HudElement.jar",
-            "releaseDate": "October 19, 2024",
+            "releaseDate": "2024-10-19",
             "color": "green",
-            "description": "Create a customizable HUD element for Minecraft utility mod RusherHack."
+            "description": "Create a customizable HUD element for Minecraft utility mod RusherHack.",
+            "creator": {
+                "name": "Aspect-404",
+                "url": "https://github.com/Aspect-404",
+                "avatarUrl": "https://github.com/Aspect-404.png?size=20"
+            },
+            "screenshots": [
+                {
+                    "url": "./Assets/RusherHack-HudElement/HudSettings.png",
+                    "alt": "Hud Setting",
+                    "width": "250"
+                },
+                {
+                    "url": "./Assets/RusherHack-HudElement/HudElement.png",
+                    "alt": "Hud Element",
+                    "width": "550"
+                }
+            ]
         },
         {
             "name": "Auto Anvil Rename",
             "url": "https://github.com/IceTank/AutoAnvilRename",
             "releaseUrl": "https://github.com/IceTank/AutoAnvilRename/releases",
             "latestReleaseUrl": "https://github.com/IceTank/AutoAnvilRename/releases/download/v0.1/AutoAnvilRename-v0.1.jar",
-            "releaseDate": "December 04, 2023",
+            "releaseDate": "2023-12-04",
             "color": "green",
-            "description": "Automates the renaming process in anvils."
+            "description": "Automates the renaming process in anvils.",
+            "creator": {
+                "name": "IceTank",
+                "url": "https://github.com/IceTank",
+                "avatarUrl": "https://github.com/IceTank.png?size=20"
+            },
+            "screenshots": [
+                {
+                    "url": "./Assets/AutoAnvilRename/Module.png",
+                    "alt": "Module",
+                    "width": "250"
+                },
+                {
+                    "url": "./Assets/AutoAnvilRename/ModuleInfo.png",
+                    "alt": "Module Info",
+                    "width": "450"
+                }
+            ]
         },
         {
             "name": "Queue Manager",
             "url": "https://github.com/GabiRP/QueueManager",
             "releaseUrl": "https://github.com/GabiRP/QueueManager/releases",
-            "latestReleaseUrl": "https://github.com/GabiRP/QueueManager/releases/download/1.0.0/QueueManager.Rusher-1.0-SNAPSHOT.jar",
-            "releaseDate": "December 10, 2023",
+            "latestReleaseUrl": "https://github.com/GabiRP/QueueManager/releases/latest/download/QueueManager.Rusher-1.0-SNAPSHOT.jar",
+            "releaseDate": "2023-12-10",
             "color": "green",
-            "description": "Manages queue positions and notifies users of their status."
+            "description": "Manages queue positions and notifies users of their status.",
+            "creator": {
+                "name": "GabiRP",
+                "url": "https://github.com/GabiRP",
+                "avatarUrl": "https://github.com/GabiRP.png?size=20"
+            }
         },
         {
             "name": "RusherHack Instance Info",
             "url": "https://github.com/John200410/rusherhack-instance-info",
             "releaseUrl": "https://github.com/John200410/rusherhack-instance-info/releases",
             "latestReleaseUrl": "https://github.com/John200410/rusherhack-instance-info/releases/download/v1.2.1/instance-info-1.2.1.jar",
-            "releaseDate": "August 05, 2024",
+            "releaseDate": "2024-08-05",
             "color": "green",
-            "description": "Provides detailed information about the current instance."
+            "description": "Provides detailed information about the current instance.",
+            "creator": {
+                "name": "John200410",
+                "url": "https://github.com/John200410",
+                "avatarUrl": "https://github.com/John200410.png?size=20"
+            },
+            "screenshots": [
+                {
+                    "alt": "Module",
+                    "width": 350,
+                    "url": "./Assets/rusherhack-instance-info/Module.png"
+                },
+                {
+                    "alt": "Player Head Info",
+                    "width": 250,
+                    "url": "./Assets/rusherhack-instance-info/PlayerHead.png"
+                },
+                {
+                    "alt": "Window Info",
+                    "width": 550,
+                    "url": "./Assets/rusherhack-instance-info/WindowInfo.png"
+                }
+            ]
         },
         {
             "name": "Stash Mover Plugin",
             "url": "https://github.com/xyzbtw/StashMoverPlugin",
             "releaseUrl": "https://github.com/xyzbtw/StashMoverPlugin/releases",
             "latestReleaseUrl": "https://github.com/xyzbtw/StashMoverPlugin/releases/tag/FINAL",
-            "releaseDate": "August 23, 2024",
+            "releaseDate": "2024-08-23",
             "color": "green",
-            "description": "A plugin to move stashes using pearls."
+            "description": "A plugin to move stashes using pearls.",
+            "creator": {
+                "name": "xyzbtw",
+                "url": "https://github.com/xyzbtw",
+                "avatarUrl": "https://github.com/xyzbtw.png?size=20"
+            },
+            "screenshots": [
+                {
+                    "type": "video",
+                    "thumbnail": "https://img.youtube.com/vi/gfnNFyRQavA/0.jpg",
+                    "alt": "Stash Mover Demo",
+                    "url": "https://www.youtube.com/watch?v=gfnNFyRQavA"
+                }
+            ]
         },
         {
             "name": "Unified Module List",
             "url": "https://github.com/czho/unified-modulelist",
             "releaseUrl": "https://github.com/czho/unified-modulelist/releases",
+            "latestReleaseUrl": "",
             "releaseDate": "No releases",
-            "latestReleaseUrl": "null",
             "color": "red",
-            "description": "Rusherhack HUD element that shows active modules from both meteorclient and rusherhack."
+            "description": "Rusherhack HUD element that shows active modules from both meteorclient and rusherhack.",
+            "creator": {
+                "name": "czho",
+                "url": "https://github.com/czho",
+                "avatarUrl": "https://github.com/czho.png?size=20"
+            }
         },
         {
             "name": "Container Tweaks",
             "url": "https://github.com/rfresh2/ContainerTweaks-rusherhack",
             "releaseUrl": "https://github.com/rfresh2/ContainerTweaks-rusherhack/releases",
             "latestReleaseUrl": "https://github.com/rfresh2/ContainerTweaks-rusherhack/releases/download/1.9/ContainerTweaks-rusherhack-1.9.jar",
-            "releaseDate": "August 29, 2024",
+            "releaseDate": "2024-08-29",
             "color": "green",
-            "description": "Simple tweaks for quickly moving items in containers."
+            "description": "Simple tweaks for quickly moving items in containers.",
+            "creator": {
+                "name": "rfresh2",
+                "url": "https://github.com/rfresh2",
+                "avatarUrl": "https://github.com/rfresh2.png?size=20"
+            },
+            "screenshots": [
+                {
+                    "alt": "Module",
+                    "width": "250",
+                    "url": "./Assets/ContainerTweaks/ModuleSettings.png"
+                }
+            ]
         },
         {
             "name": "RusherHack Spotify Integration",
             "url": "https://github.com/John200410/rusherhack-spotify",
             "releaseUrl": "https://github.com/John200410/rusherhack-spotify/releases",
             "latestReleaseUrl": "https://github.com/John200410/rusherhack-spotify/releases/download/1.1.8/rusherhack-spotify-1.1.8.jar",
-            "releaseDate": "July 29, 2024",
+            "releaseDate": "2024-07-29",
             "color": "green",
-            "description": "Integrates Spotify music playback controls and status into the RusherHacks client."
+            "description": "Integrates Spotify music playback controls and status into the RusherHacks client.",
+            "creator": {
+                "name": "John200410",
+                "url": "https://github.com/John200410",
+                "avatarUrl": "https://github.com/John200410.png?size=20"
+            },
+            "screenshots": [
+                {
+                    "alt": "Module",
+                    "width": "250",
+                    "url": "./Assets/spotify/Module.png"
+                },
+                {
+                    "alt": "Spotify Hud Element",
+                    "width": "450",
+                    "url": "./Assets/spotify/HudElement.png"
+                }
+            ]
         },
         {
             "name": "Vanilla Elytra Flight",
             "url": "https://github.com/FBanna/Rusherhack-Vanilla-Efly",
             "releaseUrl": "https://github.com/FBanna/Rusherhack-Vanilla-Efly/releases",
-            "latestReleaseUrl": "https://github.com/FBanna/Rusherhack-Vanilla-Efly/releases/download/1.1.0_1.20.1/FBanna.s-efly-1.20.1-1.1.0.jar",
-            "releaseDate": "March 31, 2024",
+            "latestReleaseUrl": "https://github.com/FBanna/Rusherhack-Vanilla-Efly/releases/download/1.1.0_1.20.4/FBanna.s-efly-1.20.4-1.1.0.jar",
+            "releaseDate": "2024-03-31",
             "color": "green",
-            "description": "Highly customizable rusher hack elytra flight plugin."
+            "description": "Highly customizable RusherHacks elytra flight plugin.",
+            "creator": {
+                "name": "FBanna",
+                "url": "https://github.com/FBanna",
+                "avatarUrl": "https://github.com/FBanna.png?size=20"
+            }
         },
         {
             "name": "RusherGUI",
             "url": "https://github.com/xyzbtw/rusherGUI",
             "releaseUrl": "https://github.com/xyzbtw/rusherGUI/releases",
-            "latestReleaseUrl": "https://github.com/xyzbtw/rusherGUI/releases/download/rusherhack/rushergui-1.0.0.jar",
-            "releaseDate": "May 29, 2024",
+            "latestReleaseUrl": "https://github.com/xyzbtw/rusherGUI/releases/latest/download/rushergui-1.0.0.jar",
+            "releaseDate": "2024-05-29",
             "color": "green",
-            "description": "Rusherhack GUI example plugin."
+            "description": "An example plugin showcasing how to create custom themes with RusherHack.",
+            "creator": {
+                "name": "xyzbtw",
+                "url": "https://github.com/xyzbtw",
+                "avatarUrl": "https://github.com/xyzbtw.png?size=20"
+            }
         },
         {
             "name": "Rusherhack BookBot",
             "url": "https://github.com/Aspect-404/Rusherhack-BookBot",
             "releaseUrl": "https://github.com/Aspect-404/Rusherhack-BookBot/releases",
             "latestReleaseUrl": "https://github.com/Aspect-404/Rusherhack-BookBot/releases/download/Release/BookBot.jar",
-            "releaseDate": "April 27, 2024",
+            "releaseDate": "2024-04-27",
             "color": "green",
-            "description": "Rusherhack plugin for bookbot."
+            "description": "Rusherhack plugin for bookbot.",
+            "creator": {
+                "name": "Aspect-404",
+                "url": "https://github.com/Aspect-404",
+                "avatarUrl": "https://github.com/Aspect-404.png?size=20"
+            }
         },
         {
             "name": "Shay's RusherTweaks",
             "url": "https://github.com/ShayBox/ShaysRusherTweaks",
             "releaseUrl": "https://github.com/ShayBox/ShaysRusherTweaks/releases",
             "latestReleaseUrl": "https://github.com/ShayBox/ShaysRusherTweaks/releases/tag/0.10.2",
-            "releaseDate": "July 06, 2024",
+            "releaseDate": "2024-07-06",
             "color": "green",
-            "description": "A collection of small tweaks and improvements for the RusherHacks client."
+            "description": "A collection of small tweaks and improvements for the RusherHacks client.",
+            "creator": {
+                "name": "ShayBox",
+                "url": "https://github.com/ShayBox",
+                "avatarUrl": "https://github.com/ShayBox.png?size=20"
+            }
         },
         {
             "name": "Nuker",
             "url": "https://github.com/beanbag44/Nuker",
             "releaseUrl": "https://github.com/beanbag44/Nuker/releases",
-            "latestReleaseUrl": "https://github.com/beanbag44/Nuker/releases/download/Release-1.0.9/nuker-1.0.9.jar",
-            "releaseDate": "June 02, 2024",
+            "latestReleaseUrl": "https://github.com/beanbag44/Nuker/releases/latest/download/nuker-1.0.9.jar",
+            "releaseDate": "2024-06-02",
             "color": "green",
-            "description": "Epic nuker for nuking terrain."
+            "description": "Epic nuker for nuking terrain.",
+            "creator": {
+                "name": "beanbag44",
+                "url": "https://github.com/beanbag44",
+                "avatarUrl": "https://github.com/beanbag44.png?size=20"
+            },
+            "screenshots": [
+                {
+                    "type": "video",
+                    "url": "https://www.youtube.com/watch?v=JUhgqLYdONs",
+                    "thumbnail": "https://img.youtube.com/vi/JUhgqLYdONs/0.jpg",
+                    "alt": "Nuker Demo"
+                }
+            ]
         },
         {
             "name": "Hold Rusher",
             "url": "https://github.com/cherosin/hold-rusher",
             "releaseUrl": "https://github.com/cherosin/hold-rusher/releases",
             "latestReleaseUrl": "https://github.com/cherosin/hold-rusher/releases/download/1.0.0/hold-rusher-1.0.0.jar",
-            "releaseDate": "June 02, 2024",
+            "releaseDate": "2024-06-02",
             "color": "green",
-            "description": "Adds a \"Hold\" flag for all modules, if active keybind will only be toggled while held."
+            "description": "Adds a 'Hold' flag for all modules, if active keybind will only be toggled while held.",
+            "creator": {
+                "name": "cherosin",
+                "url": "https://github.com/cherosin",
+                "avatarUrl": "https://github.com/cherosin.png?size=20"
+            }
         },
         {
             "name": "No Walk Animation",
             "url": "https://github.com/Eonexe/NoWalkAnimation",
             "releaseUrl": "https://github.com/Eonexe/NoWalkAnimation/releases",
-            "latestReleaseUrl": "https://github.com/Eonexe/NoWalkAnimation/releases/download/0.1.2/no-walk-animations-0.1.2.jar",
-            "releaseDate": "June 26, 2024",
+            "latestReleaseUrl": "https://github.com/Eonexe/NoWalkAnimation/releases/download/1.20.6/no-walk-animations-0.1.0.jar",
+            "releaseDate": "2024-06-26",
             "color": "green",
-            "description": "Removes the walking animation."
+            "description": "Removes the walking animation.",
+            "creator": {
+                "name": "Eonexe",
+                "url": "https://github.com/Eonexe",
+                "avatarUrl": "https://github.com/Eonexe.png?size=20"
+            }
         },
         {
             "name": "NBT Utils",
             "url": "https://github.com/kybe236/rusherhack-nbt-utils",
             "releaseUrl": "https://github.com/kybe236/rusherhack-nbt-utils/releases",
-            "latestReleaseUrl": "https://github.com/kybe236/rusherhack-nbt-utils/releases/download/1.20.4-0.1.0/nbt-reader-0.1.0.jar",
-            "releaseDate": "July 06, 2024",
+            "latestReleaseUrl": "https://github.com/kybe236/rusherhack-nbt-utils/releases/latest/download/nbt-reader-0.1.0.jar",
+            "releaseDate": "2024-07-06",
             "color": "green",
-            "description": "Rusher nbt paste and copy."
+            "description": "Rusher nbt paste and copy.",
+            "creator": {
+                "name": "kybe236",
+                "url": "https://github.com/kybe236",
+                "avatarUrl": "https://github.com/kybe236.png?size=20"
+            }
         },
         {
             "name": "Rusherhack Executer",
             "url": "https://github.com/kybe236/rusherhack-executer",
             "releaseUrl": "https://github.com/kybe236/rusherhack-executer/releases",
-            "latestReleaseUrl": "https://github.com/kybe236/rusherhack-executer/releases/download/1.20.4-5.0.0/kybes-executer-5.0.0.jar",
-            "releaseDate": "July 15, 2024",
+            "latestReleaseUrl": "https://github.com/kybe236/rusherhack-executer/releases/latest/download/kybes-executer-5.0.0.jar",
+            "releaseDate": "2024-07-15",
             "color": "green",
-            "description": "Executes commands and resolves `<player>` to every player online."
+            "description": "Executes commands and resolves `<player>` to every player online.",
+            "creator": {
+                "name": "kybe236",
+                "url": "https://github.com/kybe236",
+                "avatarUrl": "https://github.com/kybe236.png?size=20"
+            }
         },
         {
             "name": "F3 Spoof",
             "url": "https://github.com/Doogie13/f3-spoof",
             "releaseUrl": "https://github.com/Doogie13/f3-spoof/releases",
-            "latestReleaseUrl": "null",
+            "latestReleaseUrl": "",
             "releaseDate": "No releases",
-            "color": "red",
-            "description": "Spoofs the F3 debug screen information."
+            "color": "orange",
+            "description": "Spoofs the F3 debug screen information.",
+            "creator": {
+                "name": "Doogie13",
+                "url": "https://github.com/Doogie13",
+                "avatarUrl": "https://github.com/Doogie13.png?size=20"
+            }
         },
         {
             "name": "Open Folder",
             "url": "https://github.com/kybe236/rusherhack-open-folder",
             "releaseUrl": "https://github.com/kybe236/rusherhack-open-folder/releases",
-            "latestReleaseUrl": "https://github.com/kybe236/rusherhack-open-folder/releases/download/1.21/open-folder-0.0.9.jar",
-            "releaseDate": "July 23, 2024",
+            "latestReleaseUrl": "https://github.com/kybe236/rusherhack-open-folder/releases/latest/download/open-folder-0.0.9.jar",
+            "releaseDate": "2024-07-23",
             "color": "green",
-            "description": "Opens the folder for the module with a button click."
+            "description": "Opens the folder for the module with a button click.",
+            "creator": {
+                "name": "kybe236",
+                "url": "https://github.com/kybe236",
+                "avatarUrl": "https://github.com/kybe236.png?size=20"
+            },
+            "screenshots": [
+                {
+                    "type": "video",
+                    "url": "https://www.youtube.com/watch?v=m_O0ruTdto8",
+                    "thumbnail": "https://img.youtube.com/vi/m_O0ruTdto8/0.jpg",
+                    "alt": "Open Folder Demo"
+                }
+            ]
         },
         {
             "name": "Mace Kill",
             "url": "https://github.com/kybe236/rusherhack-mace-kill",
             "releaseUrl": "https://github.com/kybe236/rusherhack-mace-kill/releases",
             "latestReleaseUrl": "https://github.com/kybe236/rusherhack-mace-kill/releases/download/1.21.1%2C1.21/kybe-mace-killer-1.1.0.jar",
-            "releaseDate": "July 22, 2024",
+            "releaseDate": "2024-07-02",
             "color": "green",
-            "description": "One shot pretty much all mobs with a mace."
+            "description": "One shot pretty much all mobs with a mace.",
+            "creator": {
+                "name": "kybe236",
+                "url": "https://github.com/kybe236",
+                "avatarUrl": "https://github.com/kybe236.png?size=20"
+            },
+            "screenshots": [
+                {
+                    "type": "video",
+                    "url": "https://www.youtube.com/watch?v=seP5OqcnFT4",
+                    "thumbnail": "https://img.youtube.com/vi/seP5OqcnFT4/0.jpg",
+                    "alt": "Mace Kill Demo"
+                }
+            ]
         },
         {
             "name": "Weather Changing Plugin",
             "url": "https://github.com/Lokfid/WeatherChangingPlugin",
             "releaseUrl": "https://github.com/Lokfid/WeatherChangingPlugin/releases",
-            "latestReleaseUrl": "https://github.com/Lokfid/WeatherChangingPlugin/releases/download/1.0.2/WeatherPlugin-1.0.2.jar",
-            "releaseDate": "July 24, 2024",
+            "latestReleaseUrl": "https://github.com/Lokfid/WeatherChangingPlugin/releases/latest/download/WeatherPlugin-1.0.2.jar",
+            "releaseDate": "2024-07-24",
             "color": "green",
-            "description": "Allows players to change the weather in-game."
+            "description": "Allows players to change the weather in-game.",
+            "creator": {
+                "name": "Lokfid",
+                "url": "https://github.com/Lokfid",
+                "avatarUrl": "https://github.com/Lokfid.png?size=20"
+            }
         },
         {
             "name": "Middleclick Wind Charge",
             "url": "https://github.com/kybe236/rusherhack-middleclick-wind-charge",
             "releaseUrl": "https://github.com/kybe236/rusherhack-middleclick-wind-charge/releases",
             "latestReleaseUrl": "https://github.com/kybe236/rusherhack-middleclick-wind-charge/releases/download/1.21-1.0.1/rusherhack-middleclick-wind-charge-1.0.1.jar",
-            "releaseDate": "July 26, 2024",
+            "releaseDate": "2024-07-26",
             "color": "green",
-            "description": "Allows you to throw windcharges with the middle mouse button and also jump at the same time so you can boost jump."
+            "description": "Allows you to throw windcharges with the middle mouse button and also jump at the same time so you can boost jump.",
+            "creator": {
+                "name": "kybe236",
+                "url": "https://github.com/kybe236",
+                "avatarUrl": "https://github.com/kybe236.png?size=20"
+            },
+            "screenshots": [
+                {
+                    "type": "video",
+                    "url": "https://www.youtube.com/watch?v=kaFZWN27RaY",
+                    "thumbnail": "https://img.youtube.com/vi/kaFZWN27RaY/0.jpg",
+                    "alt": "Middleclick Wind Charge Demo"
+                }
+            ]
         },
         {
             "name": "GarlicSight",
             "url": "https://github.com/GarlicRot/GarlicSight",
             "releaseUrl": "https://github.com/GarlicRot/GarlicSight/releases",
-            "latestReleaseUrl": "https://github.com/GarlicRot/GarlicSight/releases/download/v1.0.2/Garlic-Sight-1.0.2.jar",
-            "releaseDate": "August 28, 2024",
+            "latestReleaseUrl": "https://github.com/GarlicRot/GarlicSight/releases/latest/download/Garlic-Sight-1.0.2.jar",
+            "releaseDate": "2024-08-28",
             "color": "green",
-            "description": "A RusherHacks Plugin - Crosshair Info - GarlicSight."
+            "description": "A RusherHacks Plugin - Crosshair Info - GarlicSight.",
+            "creator": {
+                "name": "GarlicRot",
+                "url": "https://github.com/GarlicRot",
+                "avatarUrl": "https://github.com/GarlicRot.png?size=20"
+            },
+            "screenshots": [
+                {
+                    "type": "image",
+                    "url": "./Assets/GarlicSight/hudinfo.png",
+                    "alt": "Hud Element",
+                    "width": 250
+                },
+                {
+                    "type": "image",
+                    "url": "./Assets/GarlicSight/blockinfo.png",
+                    "alt": "Block Info",
+                    "width": 300
+                },
+                {
+                    "type": "image",
+                    "url": "./Assets/GarlicSight/entityinfo.png",
+                    "alt": "Entity Info",
+                    "width": 300
+                }
+            ]
         },
         {
             "name": "LightningPop",
             "url": "https://github.com/GarlicRot/LightningPop",
             "releaseUrl": "https://github.com/GarlicRot/LightningPop/releases",
-            "latestReleaseUrl": "https://github.com/GarlicRot/LightningPop/releases/download/v1.0.3/LightningPop-1.0.3.jar",
-            "releaseDate": "August 09, 2024",
+            "latestReleaseUrl": "https://github.com/GarlicRot/LightningPop/releases/download/v1.0.3/LightningPop-1.0.3jar",
+            "releaseDate": "2024-08-09",
             "color": "green",
-            "description": "A RusherHacks Plugin - Spawns Lightning On Totem Pops And Player Deaths - LightningPop."
+            "description": "A RusherHacks Plugin - Spawns Lightning On Totem Pops And Player Deaths - LightningPop.",
+            "creator": {
+                "name": "GarlicRot",
+                "url": "https://github.com/GarlicRot",
+                "avatarUrl": "https://github.com/GarlicRot.png?size=20"
+            },
+            "screenshots": [
+                {
+                    "type": "image",
+                    "url": "./Assets/LightningPop/Module.png",
+                    "alt": "Module",
+                    "width": 250
+                }
+            ]
         },
         {
             "name": "AutoBucket",
             "url": "https://github.com/GarlicRot/AutoBucket",
             "releaseUrl": "https://github.com/GarlicRot/AutoBucket/releases",
             "latestReleaseUrl": "https://github.com/GarlicRot/AutoBucket/releases/download/v1.0.4/AutoBucket-1.0.4.jar",
-            "releaseDate": "August 22, 2024",
+            "releaseDate": "2024-08-22",
             "color": "green",
-            "description": "A RusherHacks Plugin - Auto Bucket Entities - AutoBucket."
+            "description": "A RusherHacks Plugin - Auto Bucket Entities - AutoBucket.",
+            "creator": {
+                "name": "GarlicRot",
+                "url": "https://github.com/GarlicRot",
+                "avatarUrl": "https://github.com/GarlicRot.png?size=20"
+            },
+            "screenshots": [
+                {
+                    "type": "image",
+                    "url": "./Assets/AutoBucket/module.png",
+                    "alt": "Module",
+                    "width": 250
+                }
+            ]
         },
         {
             "name": "rusherNodusTheme",
             "url": "https://github.com/bakjedev/rusherNodusTheme",
             "releaseUrl": "https://github.com/bakjedev/rusherNodusTheme/releases",
-            "latestReleaseUrl": "https://github.com/bakjedev/rusherNodusTheme/releases/download/releease2/rushergui-1.0.0.jar",
-            "releaseDate": "August 07, 2024",
+            "latestReleaseUrl": "https://github.com/bakjedev/rusherNodusTheme/releases/latest/download/rushergui-1.0.0.jar",
+            "releaseDate": "2024-08-07",
             "color": "green",
-            "description": "Nodus - Best theme evaAAAA. code is terrible. blame xyzbtw!"
-        },
-        {
-            "name": "nhack Theme",
-            "url": "https://github.com/h1tm4nqq/Nhack-theme",
-            "releaseUrl": "https://github.com/h1tm4nqq/Nhack-theme/releases",
-            "latestReleaseUrl": "https://github.com/h1tm4nqq/Nhack-theme/releases/download/1.0.1/nhack-theme-1.0.1.jar",
-            "releaseDate": "August 18, 2024",
-            "color": "green",
-            "description": "A theme like Nhack 2015 for rh"
+            "description": "Nodus - Best theme evaAAAA. Code is terrible. Blame xyzbtw!",
+            "creator": {
+                "name": "bakjedev",
+                "url": "https://github.com/bakjedev",
+                "avatarUrl": "https://github.com/bakjedev.png?size=20"
+            },
+            "screenshots": [
+                {
+                    "type": "image",
+                    "url": "./Assets/rusherNodusTheme/NodusGUI.png",
+                    "alt": "Module",
+                    "width": 750
+                }
+            ]
         },
         {
             "name": "RusherHack-BoatExecute",
             "url": "https://github.com/PhilipPanda/RusherHack-BoatExecute",
             "releaseUrl": "https://github.com/PhilipPanda/RusherHack-BoatExecute/releases",
-            "latestReleaseUrl": "https://github.com/PhilipPanda/RusherHack-BoatExecute/releases/download/Release-1.20.4/boatexecute-1.20.4.jar",
-            "releaseDate": "August 11, 2024",
+            "latestReleaseUrl": "https://github.com/PhilipPanda/RusherHack-BoatExecute/releases/latest/download/boatexecute-1.20.4.jar",
+            "releaseDate": "2024-08-11",
             "color": "green",
-            "description": "A RusherHack module plugin for 1.20.4 that exploits boat movement packets to instantly kill all passengers."
+            "description": "A RusherHack module plugin for 1.20.4 that exploits boat movement packets to instantly kill all passengers.",
+            "creator": {
+                "name": "PhilipPanda",
+                "url": "https://github.com/PhilipPanda",
+                "avatarUrl": "https://github.com/PhilipPanda.png?size=20"
+            },
+            "screenshots": [
+                {
+                    "type": "video",
+                    "url": "https://www.youtube.com/watch?v=h35gKz9ZQK4&t=31s",
+                    "thumbnail": "https://img.youtube.com/vi/h35gKz9ZQK4/0.jpg",
+                    "alt": "BoatExecute Demo"
+                }
+            ]
         },
         {
             "name": "NBT Viewer",
             "url": "https://github.com/Gentleman2292/NBT-viewer",
             "releaseUrl": "https://github.com/Gentleman2292/NBT-viewer/releases",
-            "latestReleaseUrl": "https://github.com/Gentleman2292/NBT-viewer/releases/download/1.2/NBTViewer-plugin-1.2-release.jar",
-            "releaseDate": "October 26, 2023",
+            "latestReleaseUrl": "https://github.com/Gentleman2292/NBT-viewer/releases/latest/download/NBTViewer-plugin-1.2-release.jar",
+            "releaseDate": "2023-10-26",
             "color": "green",
-            "description": "A plugin to view NBT data in Minecraft."
+            "description": "A plugin to view NBT data in Minecraft.",
+            "creator": {
+                "name": "Gentleman2292",
+                "url": "https://github.com/Gentleman2292",
+                "avatarUrl": "https://github.com/Gentleman2292.png?size=20"
+            },
+            "screenshots": [
+                {
+                    "type": "image",
+                    "url": "./Assets/NBT-viewer/NBT-viewer.png",
+                    "alt": "NBT-viewer",
+                    "width": 750
+                }
+            ]
         },
         {
             "name": "Remote Control",
             "url": "https://github.com/kybe236/rusherhack-remote-controle",
             "releaseUrl": "https://github.com/kybe236/rusherhack-remote-controle/releases",
-            "latestReleaseUrl": "https://github.com/kybe236/rusherhack-remote-controle/releases/download/1.20.4-1.0.0/remote-control-1.0.0.jar",
-            "releaseDate": "July 19, 2024",
+            "latestReleaseUrl": "https://github.com/kybe236/rusherhack-remote-controle/releases/latest/download/remote-control-1.0.0.jar",
+            "releaseDate": "2024-07-19",
             "color": "green",
-            "description": "A plugin for remote controlling RusherHacks."
+            "description": "A plugin for remote controlling RusherHacks.",
+            "creator": {
+                "name": "kybe236",
+                "url": "https://github.com/kybe236",
+                "avatarUrl": "https://github.com/kybe236.png?size=20"
+            }
         },
         {
             "name": "Speed Measure",
             "url": "https://github.com/Lokfid/RusherHackSpeedMeasure",
             "releaseUrl": "https://github.com/Lokfid/RusherHackSpeedMeasure/releases",
-            "latestReleaseUrl": "https://github.com/Lokfid/RusherHackSpeedMeasure/releases/download/1.0.1/SpeedMeasure-1.0.1.jar",
-            "releaseDate": "August 12, 2024",
+            "latestReleaseUrl": "https://github.com/Lokfid/RusherHackSpeedMeasure/releases/latest/download/SpeedMeasure-1.0.1.jar",
+            "releaseDate": "2024-08-12",
             "color": "green",
             "description": "A plugin to measure speed in RusherHacks.",
+            "creator": {
+                "name": "Lokfid",
+                "url": "https://github.com/Lokfid",
+                "avatarUrl": "https://github.com/Lokfid.png?size=20"
+            },
             "originalCreator": {
                 "name": "IceTank",
-                "url": "https://github.com/IceTank"
+                "url": "https://github.com/IceTank",
+                "avatarUrl": "https://github.com/IceTank.png?size=20"
             }
         },
         {
             "name": "TNT Bomber",
             "url": "https://github.com/kybe236/rusher-tnt-bomber",
             "releaseUrl": "https://github.com/kybe236/rusher-tnt-bomber/releases",
-            "latestReleaseUrl": "https://github.com/kybe236/rusher-tnt-bomber/releases/download/1.20.4/tnt-nuker-1.0.0.jar",
-            "releaseDate": "July 09, 2024",
+            "latestReleaseUrl": "https://github.com/kybe236/rusher-tnt-bomber/releases/latest/download/tnt-nuker-1.0.0.jar",
+            "releaseDate": "2024-07-09",
             "color": "green",
-            "description": "A plugin to automate TNT bombing in Minecraft."
+            "description": "A plugin to automate TNT bombing in Minecraft.",
+            "creator": {
+                "name": "kybe236",
+                "url": "https://github.com/kybe236",
+                "avatarUrl": "https://github.com/kybe236.png?size=20"
+            }
         },
         {
             "name": "No Render Entities",
             "url": "https://github.com/John200410/norender-entities",
             "releaseUrl": "https://github.com/John200410/norender-entities/releases",
             "latestReleaseUrl": "https://github.com/John200410/norender-entities/releases/download/v1.0/norender-entities-1.0-SNAPSHOT.jar",
-            "releaseDate": "November 20, 2023",
+            "releaseDate": "2023-11-20",
             "color": "green",
-            "description": "A plugin to disable rendering of entities."
+            "description": "A plugin to disable rendering of entities.",
+            "creator": {
+                "name": "John200410",
+                "url": "https://github.com/John200410",
+                "avatarUrl": "https://github.com/John200410.png?size=20"
+            }
         },
         {
             "name": "RusherHack Messenger",
             "url": "https://github.com/Gentleman2292/rusherhack-messenger",
             "releaseUrl": "https://github.com/Gentleman2292/rusherhack-messenger/releases",
-            "latestReleaseUrl": "https://github.com/Gentleman2292/rusherhack-messenger/releases/download/1.0.3/messenger-plugin-1.0.3.jar",
-            "releaseDate": "April 16, 2024",
+            "latestReleaseUrl": "https://github.com/Gentleman2292/rusherhack-messenger/releases/latest/download/messenger-plugin-1.0.3.jar",
+            "releaseDate": "2024-04-16",
             "color": "green",
-            "description": "A messaging plugin for RusherHacks."
+            "description": "A messaging plugin for RusherHacks.",
+            "creator": {
+                "name": "Gentleman2292",
+                "url": "https://github.com/Gentleman2292",
+                "avatarUrl": "https://github.com/Gentleman2292.png?size=20"
+            },
+            "screenshots": [
+                {
+                    "type": "video",
+                    "url": "https://rusherhack.org/i/14z9f6ewlu.mp4",
+                    "thumbnail": "./Assets/rusherhack-messenger/rusherhack-messenger-demo.jpg",
+                    "alt": "rusherhack-messenger Demo"
+                }
+            ]
         },
         {
             "name": "RusherHack Instance Info (Fork)",
             "url": "https://github.com/GarlicRot/rusherhack-instance-info",
             "releaseUrl": "https://github.com/GarlicRot/rusherhack-instance-info/releases",
-            "latestReleaseUrl": "https://github.com/GarlicRot/rusherhack-instance-info/releases/download/v1.3/instance-info-1.3.jar",
-            "releaseDate": "August 11, 2024",
+            "latestReleaseUrl": "https://github.com/GarlicRot/rusherhack-instance-info/releases/latest/download/instance-info-1.3.jar",
+            "releaseDate": "2024-08-11",
             "color": "green",
-            "description": "Forked version with additional features."
+            "description": "A forked version of the original plugin with custom settings.",
+            "creator": {
+                "name": "GarlicRot",
+                "url": "https://github.com/GarlicRot",
+                "avatarUrl": "https://github.com/GarlicRot.png?size=20"
+            },
+            "screenshots": [
+                {
+                    "type": "image",
+                    "url": "./Assets/rusherhack-instance-info-fork/Module.png",
+                    "alt": "Module",
+                    "width": "350"
+                },
+                {
+                    "type": "image",
+                    "url": "./Assets/rusherhack-instance-info-fork/PlayerHead.png",
+                    "alt": "Player Head Info",
+                    "width": "250"
+                },
+                {
+                    "type": "image",
+                    "url": "./Assets/rusherhack-instance-info-fork/WindowInfo.png",
+                    "alt": "Player Head Info",
+                    "width": "550"
+                }
+            ]
         },
         {
             "name": "RusherHack NoteBot",
             "url": "https://github.com/Lokfid/RusherHackNoteBot",
             "releaseUrl": "https://github.com/Lokfid/RusherHackNoteBot/releases",
-            "latestReleaseUrl": "https://github.com/Lokfid/RusherHackNoteBot/releases/download/1.0.2.1/NoteBotPlugin-1.0.2.jar",
-            "releaseDate": "August 13, 2024",
+            "latestReleaseUrl": "https://github.com/Lokfid/RusherHackNoteBot/releases/latest/download/NoteBotPlugin-1.0.2.jar",
+            "releaseDate": "2024-08-13",
             "color": "green",
-            "description": "A RusherHacks plugin for playing note blocks in Minecraft."
+            "description": "A RusherHacks plugin for playing note blocks in Minecraft.",
+            "creator": {
+                "name": "Lokfid",
+                "url": "https://github.com/Lokfid",
+                "avatarUrl": "https://github.com/Lokfid.png?size=20"
+            }
         },
         {
             "name": "ShulkerViewer",
             "url": "https://github.com/xyzbtw/ShulkerViewer",
             "releaseUrl": "https://github.com/xyzbtw/ShulkerViewer/releases",
             "latestReleaseUrl": "https://github.com/xyzbtw/ShulkerViewer/releases/download/1.20.6/shulker-viewer-1.0.0.jar",
-            "releaseDate": "October 27, 2024",
+            "releaseDate": "2024-10-27",
             "color": "green",
-            "description": "A RusherHacks plugin to view the contents of Shulker boxes in the inventory."
+            "description": "A RusherHacks plugin to view the contents of Shulker boxes in the inventory.",
+            "creator": {
+                "name": "xyzbtw",
+                "url": "https://github.com/xyzbtw",
+                "avatarUrl": "https://github.com/xyzbtw.png?size=20"
+            }
         },
         {
             "name": "RusherWebPlugin",
             "url": "https://github.com/Lokfid/RusherWebPlugin",
             "releaseUrl": "https://github.com/Lokfid/RusherWebPlugin/releases",
-            "latestReleaseUrl": "https://github.com/Lokfid/RusherWebPlugin/releases/download/1.1.1/web-1.1.1.jar",
-            "releaseDate": "August 21, 2024",
+            "latestReleaseUrl": "https://github.com/Lokfid/RusherWebPlugin/releases/latest/download/web-1.1.1.jar",
+            "releaseDate": "2024-08-21",
             "color": "green",
-            "description": "Web Browser for rh"
+            "description": "Web Browser for rh.",
+            "creator": {
+                "name": "Lokfid",
+                "url": "https://github.com/Lokfid",
+                "avatarUrl": "https://github.com/Lokfid.png?size=20"
+            }
         },
         {
             "name": "UpdatedNCPEfly",
             "url": "https://github.com/xyzbtw/UpdatedNCPEfly",
             "releaseUrl": "https://github.com/xyzbtw/UpdatedNCPEfly/releases",
             "latestReleaseUrl": "https://github.com/xyzbtw/UpdatedNCPEfly/releases/download/release/NCP-ElytraFlight-1.0.0.jar",
-            "releaseDate": "August 27, 2024",
+            "releaseDate": "2024-08-27",
             "color": "green",
             "description": "A plugin for an updated version of NCPEfly."
         },
@@ -399,234 +774,411 @@
             "url": "https://github.com/kybe236/dc-chat-logger",
             "releaseUrl": "https://github.com/kybe236/dc-chat-logger/releases",
             "latestReleaseUrl": "https://github.com/kybe236/dc-chat-logger/releases/download/3.0.0/dc-chat-logger-3.0.0.jar",
-            "releaseDate": "August 22, 2024",
+            "releaseDate": "2024-08-22",
             "color": "green",
-            "description": "A plugin for logging Discord chat messages."
+            "description": "A plugin for logging chat messages to discord.",
+            "creator": {
+                "name": "kybe236",
+                "url": "https://github.com/kybe236",
+                "avatarUrl": "https://github.com/kybe236.png?size=20"
+            }
         },
         {
             "name": "rusherhack-nightvision-plugin",
             "url": "https://github.com/John200410/rusherhack-nightvision-plugin",
             "releaseUrl": "https://github.com/John200410/rusherhack-nightvision-plugin/releases",
             "latestReleaseUrl": "https://github.com/John200410/rusherhack-nightvision-plugin/releases/download/v1.0.0/nightvision-1.0.0-1.21.jar",
-            "releaseDate": "August 24, 2024",
+            "releaseDate": "2024-08-24",
             "color": "green",
-            "description": "A replacement for FullBright when using shaders"
+            "description": "A replacement for FullBright when using shaders.",
+            "creator": {
+                "name": "John200410",
+                "url": "https://github.com/John200410",
+                "avatarUrl": "https://github.com/John200410.png?size=20"
+            }
         },
         {
             "name": "AutoNetherite",
             "url": "https://github.com/xyzbtw/AutoNetherite",
             "releaseUrl": "https://github.com/xyzbtw/AutoNetherite/releases",
             "latestReleaseUrl": "https://github.com/xyzbtw/AutoNetherite/releases/download/release/autonetherite-release.jar",
-            "releaseDate": "August 26, 2024",
+            "releaseDate": "2024-08-26",
             "color": "green",
-            "description": "A plugin that automates the process of upgrading gear to Netherite in Minecraft."
+            "description": "A plugin that automates the process of upgrading gear to Netherite in Minecraft.",
+            "creator": {
+                "name": "xyzbtw",
+                "url": "https://github.com/xyzbtw",
+                "avatarUrl": "https://github.com/xyzbtw.png?size=20"
+            }
         },
         {
             "name": "OldSignsPlugin",
             "url": "https://github.com/xyzbtw/OldSignsPlugin",
             "releaseUrl": "https://github.com/xyzbtw/OldSignsPlugin/releases",
             "latestReleaseUrl": "https://github.com/xyzbtw/OldSignsPlugin/releases/download/release/oldsigns-1.0.0.jar",
-            "releaseDate": "August 29, 2024",
+            "releaseDate": "2024-08-29",
             "color": "green",
-            "description": "A plugin that brings back old sign functionalities in Minecraft."
+            "description": "A plugin that brings back old sign functionalities in Minecraft.",
+            "creator": {
+                "name": "xyzbtw",
+                "url": "https://github.com/xyzbtw",
+                "avatarUrl": "https://github.com/xyzbtw.png?size=20"
+            }
         },
         {
             "name": "StashHunter-rusherhack",
             "url": "https://github.com/CherkaSSH/StashHunter-rusherhack",
             "releaseUrl": "https://github.com/CherkaSSH/StashHunter-rusherhack/releases",
             "latestReleaseUrl": "https://github.com/CherkaSSH/StashHunter-rusherhack/releases/download/hehe2/StashHunter-rusherhack-1.0.1.jar",
-            "releaseDate": "September 28, 2024",
+            "releaseDate": "2024-09-28",
             "color": "green",
-            "description": "A plugin to help locate stashes in Minecraft using RusherHack."
+            "description": "A plugin to help locate stashes in Minecraft using RusherHack.",
+            "creator": {
+                "name": "CherkaSSH",
+                "url": "https://github.com/CherkaSSH",
+                "avatarUrl": "https://github.com/CherkaSSH.png?size=20"
+            }
         },
         {
             "name": "rusher-elytra-eta",
             "url": "https://github.com/kybe236/rusher-elytra-eta",
             "releaseUrl": "https://github.com/kybe236/rusher-elytra-eta/releases",
             "latestReleaseUrl": "https://github.com/kybe236/rusher-elytra-eta/releases/download/1.0.0/rusher-elytra-eta-1.0.0.jar",
-            "releaseDate": "September 1, 2024",
+            "releaseDate": "2024-09-01",
             "color": "green",
-            "description": "A plugin that estimates the time of arrival (ETA) when using an Elytra in Minecraft."
+            "description": "A rusherhack plugin that allows you to see the ETA of all Elytras in the player's inventory.",
+            "creator": {
+                "name": "kybe236",
+                "url": "https://github.com/kybe236",
+                "avatarUrl": "https://github.com/kybe236.png?size=20"
+            },
+            "screenshots": [
+                {
+                    "type": "image",
+                    "url": "./Assets/rusher-elytra-eta/HudElement.png",
+                    "alt": "The hud Element",
+                    "width": 250
+                }
+            ]
         },
         {
             "name": "rusher-silent-close",
             "url": "https://github.com/kybe236/rusher-silent-close",
             "releaseUrl": "https://github.com/kybe236/rusher-silent-close/releases",
             "latestReleaseUrl": "https://github.com/kybe236/rusher-silent-close/releases/download/1.0.0/silent-close-1.0.0.jar",
-            "releaseDate": "September 2, 2024",
+            "releaseDate": "2024-09-02",
             "color": "green",
-            "description": "A plugin that allows silently closing inventory or GUI screens in Minecraft without triggering any sound or notification."
+            "description": "Keeps Container GUI open.",
+            "creator": {
+                "name": "kybe236",
+                "url": "https://github.com/kybe236",
+                "avatarUrl": "https://github.com/kybe236.png?size=20"
+            }
         },
         {
             "name": "rusherhack-addons",
             "url": "https://github.com/miles352/rusherhack-addons",
             "releaseUrl": "https://github.com/miles352/rusherhack-addons/releases",
             "latestReleaseUrl": "https://github.com/miles352/rusherhack-addons/releases/download/1.21.1/jefffmod-1.0.0.jar",
-            "releaseDate": "September 20, 2024",
+            "releaseDate": "2024-09-20",
             "color": "green",
-            "description": "A collection of RusherHacks addons that includes AFKBoostFly for boost flying while AFK, and MapCopy for copying maps in your inventory."
+            "description": "A collection of RusherHacks addons including:\n- **AFKBoostFly**: Enables boost flying while AFK by looking up and down to gain momentum.\n- **MapCopy**: Allows you to copy maps in your inventory.",
+            "creator": {
+                "name": "miles352",
+                "url": "https://github.com/miles352",
+                "avatarUrl": "https://github.com/miles352.png?size=20"
+            }
         },
         {
             "name": "rusher-gtranslate",
             "url": "https://github.com/kybe236/rusher-gtranslate",
             "releaseUrl": "https://github.com/kybe236/rusher-gtranslate/releases",
             "latestReleaseUrl": "https://github.com/kybe236/rusher-gtranslate/releases/download/1.0.0/kybe-gtranslate-1.0.0.jar",
-            "releaseDate": "September 3, 2024",
+            "releaseDate": "2024-09-03",
             "color": "green",
-            "description": "A plugin that integrates Google Translate into RusherHack for translating chat messages."
+            "description": "A plugin that integrates Google Translate into RusherHack for translating chat messages.",
+            "creator": {
+                "name": "kybe236",
+                "url": "https://github.com/kybe236",
+                "avatarUrl": "https://github.com/kybe236.png?size=20"
+            }
         },
         {
             "name": "rusher-matrix-nofall",
             "url": "https://github.com/kybe236/rusher-matrix-nofall",
             "releaseUrl": "https://github.com/kybe236/rusher-matrix-nofall/releases",
             "latestReleaseUrl": "https://github.com/kybe236/rusher-matrix-nofall/releases/download/1.0.0/kybe-nofall-1.0.0.jar",
-            "releaseDate": "September 5, 2024",
+            "releaseDate": "2024-09-05",
             "color": "green",
-            "description": "No Fall by setting isFalling flag in movement packets to false (tested on 6b6t)."
+            "description": "No Fall by setting isFalling flag in movement packets to false (tested on 6b6t).",
+            "creator": {
+                "name": "kybe236",
+                "url": "https://github.com/kybe236",
+                "avatarUrl": "https://github.com/kybe236.png?size=20"
+            }
         },
         {
             "name": "rusher-autoportal",
             "url": "https://github.com/kybe236/rusher-autoportal",
             "releaseUrl": "https://github.com/kybe236/rusher-autoportal/releases",
-            "latestReleaseUrl": "https://github.com/kybe236/rusher-autoportal/releases/download/1.20.6/kybe-portal-maker-1.0.0.jar",
-            "releaseDate": "October 6, 2024",
+            "latestReleaseUrl": "https://github.com/kybe236/rusher-autoportal/releases/download/1.0.0/rusher-autoportal-1.0.0.jar",
+            "releaseDate": "2024-10-06",
             "color": "green",
-            "description": "A plugin that automates portal creation in Minecraft."
+            "description": "Automatically breaks blocks to place obsidian and activate the nether portal.",
+            "creator": {
+                "name": "kybe236",
+                "url": "https://github.com/kybe236",
+                "avatarUrl": "https://github.com/kybe236.png?size=20"
+            }
         },
         {
             "name": "rusher-air-place",
             "url": "https://github.com/kybe236/rusher-air-place",
             "releaseUrl": "https://github.com/kybe236/rusher-air-place/releases",
             "latestReleaseUrl": "https://github.com/kybe236/rusher-air-place/releases/download/1.0.0/kybe-airplace-1.0.0.jar",
-            "releaseDate": "September 7, 2024",
+            "releaseDate": "2024-09-07",
             "color": "green",
-            "description": "A plugin that allows placing blocks in the air in Minecraft."
+            "description": "A plugin that allows placing blocks in the air in Minecraft.",
+            "creator": {
+                "name": "kybe236",
+                "url": "https://github.com/kybe236",
+                "avatarUrl": "https://github.com/kybe236.png?size=20"
+            }
         },
         {
             "name": "rusher-hold-spamm-space",
             "url": "https://github.com/kybe236/rusher-hold-spamm-space",
             "releaseUrl": "https://github.com/kybe236/rusher-hold-spamm-space/releases",
             "latestReleaseUrl": "https://github.com/kybe236/rusher-hold-spamm-space/releases/download/1.0.0.1/kybe-holdspace-1.0.0.jar",
-            "releaseDate": "October 13, 2024",
+            "releaseDate": "2024-10-13",
             "color": "green",
-            "description": "A plugin that automatically spams or holds the space bar."
+            "description": "A plugin that automatically spams or holds the space bar.",
+            "creator": {
+                "name": "kybe236",
+                "url": "https://github.com/kybe236",
+                "avatarUrl": "https://github.com/kybe236.png?size=20"
+            }
         },
         {
             "name": "rusher-auto-bed-bomber",
             "url": "https://github.com/kybe236/rusher-auto-bed-bomber",
             "releaseUrl": "https://github.com/kybe236/rusher-auto-bed-bomber/releases",
             "latestReleaseUrl": "https://github.com/kybe236/rusher-auto-bed-bomber/releases/download/idk/kybe-auto-bed-bomb-1.0.0.jar",
-            "releaseDate": "September 26, 2024",
+            "releaseDate": "2024-09-26",
             "color": "green",
-            "description": "A plugin that automates bed bombing."
+            "description": "A plugin that automates bed bombing in Minecraft.",
+            "creator": {
+                "name": "kybe236",
+                "url": "https://github.com/kybe236",
+                "avatarUrl": "https://github.com/kybe236.png?size=20"
+            }
         },
         {
             "name": "rusher-crystal-spin",
             "url": "https://github.com/kybe236/rusher-crystal-spin",
             "releaseUrl": "https://github.com/kybe236/rusher-crystal-spin/releases",
             "latestReleaseUrl": "https://github.com/kybe236/rusher-crystal-spin/releases/download/1.0.0/kybe-holdspace-1.0.0.jar",
-            "releaseDate": "September 13, 2024",
+            "releaseDate": "2024-09-23",
             "color": "green",
-            "description": "A plugin that makes end crystals spin faster or slower."
+            "description": "A plugin that makes end crystals spin faster or slower.",
+            "creator": {
+                "name": "kybe236",
+                "url": "https://github.com/kybe236",
+                "avatarUrl": "https://github.com/kybe236.png?size=20"
+            }
         },
         {
             "name": "AutoShear",
             "url": "https://github.com/oisin404/AutoShear",
             "releaseUrl": "https://github.com/oisin404/AutoShear/releases",
             "latestReleaseUrl": "https://github.com/oisin404/AutoShear/releases/download/1.0.2/auto-shear-1.0.2.jar",
-            "releaseDate": "September 26, 2024",
+            "releaseDate": "2024-09-26",
             "color": "green",
-            "description": "A plugin that automates shearing in Minecraft."
+            "description": "A plugin that automates shearing in Minecraft.",
+            "creator": {
+                "name": "oisin404",
+                "url": "https://github.com/oisin404",
+                "avatarUrl": "https://github.com/oisin404.png?size=20"
+            },
+            "screenshots": [
+                {
+                    "type": "video",
+                    "url": "https://youtu.be/44b4QO6l1Pc",
+                    "thumbnail": "https://img.youtube.com/vi/44b4QO6l1Pc/0.jpg",
+                    "alt": "Video Tutorial"
+                }
+            ]
         },
         {
             "name": "Rusher2b2tVelocity",
             "url": "https://github.com/Lokfid/Rusher2b2tVelocity",
             "releaseUrl": "https://github.com/Lokfid/Rusher2b2tVelocity/releases",
-            "latestReleaseUrl": "https://github.com/Lokfid/Rusher2b2tVelocity/releases/download/1.0.0redo/VelocityPlus-1.0.0.jar",
-            "releaseDate": "September 18, 2024",
+            "latestReleaseUrl": "https://github.com/Lokfid/Rusher2b2tVelocity/releases/download/1.0.0fixfix/VelocityPlus-1.0.0.jar",
+            "releaseDate": "2024-09-18",
             "color": "green",
-            "description": "A plugin that adds enhanced velocity control for RusherHacks on the 2b2t server."
+            "description": "A plugin that adds enhanced velocity control for RusherHacks on the 2b2t server.",
+            "creator": {
+                "name": "Lokfid",
+                "url": "https://github.com/Lokfid",
+                "avatarUrl": "https://github.com/Lokfid.png?size=20"
+            }
         },
         {
             "name": "rusher-autokit",
             "url": "https://github.com/kybe236/rusher-autokit",
             "releaseUrl": "https://github.com/kybe236/rusher-autokit/releases",
             "latestReleaseUrl": "https://github.com/kybe236/rusher-autokit/releases/download/1.0.0/kybe-autokit-1.0.0.jar",
-            "releaseDate": "September 24, 2024",
+            "releaseDate": "2024-09-24",
             "color": "green",
-            "description": "A plugin that automatically equips your preferred kit."
+            "description": "A plugin that automatically equips your preferred kit.",
+            "creator": {
+                "name": "kybe236",
+                "url": "https://github.com/kybe236",
+                "avatarUrl": "https://github.com/kybe236.png?size=20"
+            }
         },
         {
             "name": "AutoTorch",
             "url": "https://github.com/NinetyUnderScore/AutoTorch",
             "releaseUrl": "https://github.com/NinetyUnderScore/AutoTorch/releases",
             "latestReleaseUrl": "https://github.com/NinetyUnderScore/AutoTorch/releases/download/Release/autotorch-plugin-1.0.0.jar",
-            "releaseDate": "October 23, 2024",
+            "releaseDate": "2024-10-23",
             "color": "green",
-            "description": "Automatically places torches to light up areas in Minecraft."
+            "description": "Automatically places torches to light up areas in Minecraft.",
+            "creator": {
+                "name": "NinetyUnderScore",
+                "url": "https://github.com/NinetyUnderScore",
+                "avatarUrl": "https://github.com/NinetyUnderScore.png?size=20"
+            }
         },
         {
             "name": "Elytra Swap",
             "url": "https://github.com/cmg-divined/elytra-swap",
-            "releaseUrl": "https://github.com/cmg-divined/elytra-swap",
-            "latestReleaseUrl": "null",
-            "releaseDate": "No Releases",
-            "color": "red",
-            "description": "Automatically swaps fully repaired Elytras with damaged ones for efficient XP farm repairs."
+            "releaseUrl": "https://github.com/cmg-divined/elytra-swap/releases",
+            "latestReleaseUrl": "",
+            "releaseDate": "No releases",
+            "color": "orange",
+            "description": "Automatically swaps fully repaired Elytras with damaged ones for efficient XP farm repairs.",
+            "creator": {
+                "name": "cmg-divined",
+                "url": "https://github.com/cmg-divined",
+                "avatarUrl": "https://github.com/cmg-divined.png?size=20"
+            }
         },
         {
             "name": "HDisabler",
             "url": "https://github.com/CherkaSSH/hdisabler",
             "releaseUrl": "https://github.com/CherkaSSH/hdisabler/releases",
-            "latestReleaseUrl": "null",
-            "releaseDate": "No Release",
-            "color": "red",
-            "description": "Disables certain HUD elements for a cleaner user interface."
+            "latestReleaseUrl": "",
+            "releaseDate": "No releases",
+            "color": "orange",
+            "description": "2b2t fast bypass.",
+            "creator": {
+                "name": "CherkaSSH",
+                "url": "https://github.com/CherkaSSH",
+                "avatarUrl": "https://github.com/CherkaSSH.png?size=20"
+            },
+            "screenshots": [
+                {
+                    "type": "image",
+                    "url": "./Assets/HDisabler/HDisabler.png",
+                    "alt": "Hud Setting",
+                    "width": 250
+                }
+            ]
         },
         {
             "name": "CoordFollower",
             "url": "https://github.com/CherkaSSH/CoordFollower-plugin",
             "releaseUrl": "https://github.com/CherkaSSH/CoordFollower-plugin/releases",
-            "latestReleaseUrl": "null",
+            "latestReleaseUrl": "",
             "releaseDate": "No releases",
-            "color": "red",
-            "description": "A plugin that allows you to save, manage, and follow coordinates with ease."
+            "color": "orange",
+            "description": "A plugin that allows you to save, manage, and follow coordinates with ease.",
+            "creator": {
+                "name": "CherkaSSH",
+                "url": "https://github.com/CherkaSSH",
+                "avatarUrl": "https://github.com/CherkaSSH.png?size=20"
+            },
+            "usage": [
+                {
+                    "command": "add",
+                    "description": "Adds coordinates to the list. Use `add` to add your current coordinates."
+                },
+                {
+                    "command": "del",
+                    "description": "Deletes coordinates from the list. Use `del <n>` to delete the coordinate at position `n`. Use `del` without parameters to delete the last coordinate in the list."
+                },
+                {
+                    "command": "list",
+                    "description": "Displays all saved coordinates."
+                },
+                {
+                    "command": "save/load",
+                    "description": "Saves or loads the coordinate list to/from an encrypted file. Files are saved as `name.coords`. Files are encrypted using a password (`pass`)."
+                }
+            ],
+            "screenshots": []
         },
         {
             "name": "Rusher Chess TUI",
             "url": "https://github.com/CherkaSSH/rusher-chess-tui",
             "releaseUrl": "https://github.com/CherkaSSH/rusher-chess-tui/releases",
-            "latestReleaseUrl": "null",
+            "latestReleaseUrl": "",
             "releaseDate": "No releases",
-            "color": "red",
-            "description": "Chess module for RusherHacks, powered by ChessLib."
+            "color": "orange",
+            "description": "Chess module for RusherHacks, powered by ChessLib.",
+            "creator": {
+                "name": "CherkaSSH",
+                "url": "https://github.com/CherkaSSH",
+                "avatarUrl": "https://github.com/CherkaSSH.png?size=20"
+            },
+            "screenshots": []
         },
         {
             "name": "ActivatedSpawnerDetector",
             "url": "https://github.com/un0x9/ActivatedSpawnerDetector",
             "releaseUrl": "https://github.com/un0x9/ActivatedSpawnerDetector/releases",
             "latestReleaseUrl": "https://github.com/un0x9/ActivatedSpawnerDetector/releases/download/v1.2.2/ActivatedSpawnerDetector-1.2.2.jar",
-            "releaseDate": "December 22, 2024",
+            "releaseDate": "2024-12-22",
             "color": "green",
-            "description": "Detects activated spawners and provides visual feedback in RusherHacks."
+            "description": "Detects activated spawners and provides visual feedback in RusherHacks.",
+            "creator": {
+                "name": "un0x9",
+                "url": "https://github.com/un0x9",
+                "avatarUrl": "https://github.com/un0x9.png?size=20"
+            },
+            "screenshots": []
         },
         {
             "name": "Rusher Discord Notifications",
             "url": "https://github.com/kybe236/rusher-discord-notifications",
             "releaseUrl": "https://github.com/kybe236/rusher-discord-notifications/releases",
             "latestReleaseUrl": "https://github.com/kybe236/rusher-discord-notifications/releases/download/1.0.0/discord-notifier-1.0.0.jar",
-            "releaseDate": "January 2, 2025",
+            "releaseDate": "2025-01-02",
             "color": "green",
-            "description": "Sends notifications from RusherHacks to a Discord channel."
+            "description": "Sends notifications from RusherHacks to a Discord channel.",
+            "creator": {
+                "name": "kybe236",
+                "url": "https://github.com/kybe236",
+                "avatarUrl": "https://github.com/kybe236.png?size=20"
+            },
+            "screenshots": []
         },
-        {
+                {
             "name": "AutoBonemeal",
             "url": "https://github.com/John200410/rusherhack-autobonemeal",
             "releaseUrl": "https://github.com/John200410/rusherhack-autobonemeal/releases",
             "latestReleaseUrl": "https://github.com/John200410/rusherhack-autobonemeal/releases/download/v1.0.0/auto-bonemeal-1.0.0.jar",
-            "releaseDate": "January 08, 2025",
+            "releaseDate": "2025-01-08",
             "color": "green",
-            "description": "A RusherHacks plugin for automatically applying bonemeal to crops."
-        }
+            "description": "A RusherHacks plugin for automatically applying bonemeal to crops.",
+            "creator": {
+                "name": "John200410",
+                "url": "https://github.com/John200410",
+                "avatarUrl": "https://github.com/John200410.png?size=20"
+            },
+            "screenshots": []
+        },
     ]
 }
