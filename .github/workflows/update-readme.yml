@@ -2,8 +2,10 @@ name: Update README with Plugins List
 
 on:
   push:
+    branches:
+      - gh-pages
     paths:
-      - 'badges.json' # Trigger only when badges.json is updated
+      - 'badges.json'
   workflow_dispatch: # Allows manual trigger
 
 jobs:
@@ -16,13 +18,20 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Switch to main branch
+        run: |
+          git checkout main
+          echo "::notice::Checked out main branch."
+
+      - name: Pull badges.json from gh-pages
+        run: |
+          git checkout gh-pages -- badges.json
+          echo "::notice::Pulled badges.json from gh-pages branch."
+
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-
-      - name: Install dependencies
-        run: npm install axios
 
       - name: Generate new README
         run: node update-readme.js
@@ -58,7 +67,7 @@ jobs:
           echo "" >> issue-content.md
           echo "Please review the changes and open a pull request from this branch." >> issue-content.md
           echo "" >> issue-content.md
-          echo "**Compare Changes:** [View on GitHub](https://github.com/${{ github.repository }}/compare/gh-pages...${{ env.BRANCH_NAME }})" >> issue-content.md
+          echo "**Compare Changes:** [View on GitHub](https://github.com/${{ github.repository }}/compare/main...${{ env.BRANCH_NAME }})" >> issue-content.md
 
       - name: Create GitHub Issue for PR Notification
         if: env.skip != 'true'
