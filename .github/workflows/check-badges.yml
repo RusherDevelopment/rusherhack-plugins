@@ -34,7 +34,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          node check-badges.js
+          set -e
+          node check-badges.js || { echo "Badge check failed!"; exit 1; }
           echo "::notice::Badge check script completed."
 
       - name: Clean up untracked files
@@ -61,8 +62,9 @@ jobs:
           git config --local user.email "actions@github.com"
           BRANCH_NAME="update-badges-${{ github.run_id }}"
           echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_ENV
+          TOTAL_PLUGINS=$(jq '.totalPlugins.message' badges.json)
           git checkout -b $BRANCH_NAME
-          git commit -m "Update badges.json with latest release URLs"
+          git commit -m "Update badges.json with latest release URLs (Total Plugins: $TOTAL_PLUGINS)"
           git push origin HEAD
           echo "::notice::Changes committed and branch pushed."
 
@@ -85,5 +87,3 @@ jobs:
           content-filepath: issue-content.md
           labels: "automated notification"
           repository: ${{ github.repository }}
-
-
