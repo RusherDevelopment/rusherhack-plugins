@@ -1,8 +1,6 @@
 name: Check and Update Badges
 
 on:
-  schedule:
-    - cron: '0 0 * * *' # Runs daily at midnight UTC
   workflow_dispatch: # Allows manual trigger
 
 jobs:
