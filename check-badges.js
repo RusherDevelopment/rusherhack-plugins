@@ -12,15 +12,22 @@ const axiosInstance = axios.create({
 
 const badgesPath = './badges.json';
 
+// Function to sort keys in an object to maintain consistent order
+function sortKeys(obj) {
+    return Object.keys(obj).sort().reduce((sorted, key) => {
+        sorted[key] = obj[key];
+        return sorted;
+    }, {});
+}
+
 async function checkAndUpdateBadges() {
     if (!fs.existsSync(badgesPath)) {
         console.error('Error: badges.json not found.');
         process.exit(1);
     }
 
-    // Load and deep clone the original badges data for later comparison
     let badges = JSON.parse(fs.readFileSync(badgesPath, 'utf8'));
-    let originalBadges = JSON.parse(JSON.stringify(badges));
+    let originalBadges = JSON.parse(JSON.stringify(badges)); // Deep clone for comparison
     let updated = false;
 
     for (const plugin of badges.plugins) {
@@ -46,7 +53,7 @@ async function checkAndUpdateBadges() {
             console.log(`Found release URL for ${plugin.name}: ${newReleaseUrl}`);
             console.log(`Found release date for ${plugin.name}: ${releaseDate}`);
 
-            // Check if either the latest release URL or release date has changed
+            // Check for changes before updating
             if (plugin.latestReleaseUrl !== newReleaseUrl || plugin.releaseDate !== releaseDate) {
                 plugin.latestReleaseUrl = newReleaseUrl;
                 plugin.releaseDate = releaseDate;
@@ -68,9 +75,12 @@ async function checkAndUpdateBadges() {
     // Update totalPlugins count (only count plugins, not dev tools)
     badges.totalPlugins.message = badges.plugins.length.toString();
 
-    // Write changes only if the badges object is different from the original
+    // Sort keys in each plugin to maintain consistent formatting
+    badges.plugins = badges.plugins.map(sortKeys);
+
+    // Compare with the original file to decide whether to write changes
     if (!deepEqual(badges, originalBadges)) {
-        fs.writeFileSync(badgesPath, JSON.stringify(badges, null, 4)); // Update file only if changes exist
+        fs.writeFileSync(badgesPath, JSON.stringify(badges, null, 4) + '\n'); // Ensure newline at EOF
         console.log('Updated badges.json.');
     } else {
         console.log('No updates found for badges.json.');
