@@ -1,6 +1,6 @@
 const fs = require('fs');
 const axios = require('axios');
-const deepEqual = require('fast-deep-equal');
+const readline = require('readline');
 
 const GH_TOKEN = process.env.GITHUB_TOKEN;
 const axiosInstance = axios.create({
@@ -38,14 +38,8 @@ async function checkAndUpdateBadges() {
 
             const releaseDate = new Date(latestRelease.published_at).toISOString().split('T')[0];
 
-            console.log(`Checking ${plugin.name}...`);
-            console.log(`- Current URL: ${plugin.latestReleaseUrl}`);
-            console.log(`- New URL: ${newReleaseUrl}`);
-            console.log(`- Current Date: ${plugin.releaseDate}`);
-            console.log(`- New Date: ${releaseDate}`);
-
             if (plugin.latestReleaseUrl !== newReleaseUrl || plugin.releaseDate !== releaseDate) {
-                console.log(`- Updating ${plugin.name}`);
+                console.log(`Updating ${plugin.name}`);
                 plugin.latestReleaseUrl = newReleaseUrl;
                 plugin.releaseDate = releaseDate;
                 updated = true;
@@ -63,12 +57,36 @@ async function checkAndUpdateBadges() {
         }
     }
 
-    // Update totalPlugins count (only count plugins, not dev tools)
-    badges.totalPlugins.message = badges.plugins.length.toString();
-
     if (updated) {
-        fs.writeFileSync(badgesPath, JSON.stringify(badges, null, 4));
-        console.log('Updated badges.json with minimal changes.');
+        const rl = readline.createInterface({
+            input: fs.createReadStream(badgesPath),
+            output: fs.createWriteStream(`${badgesPath}.tmp`),
+            terminal: false
+        });
+
+        rl.on('line', (line) => {
+            let modifiedLine = line;
+
+            // Update totalPlugins count line
+            if (line.includes('"totalPlugins":')) {
+                modifiedLine = `    "totalPlugins": ${badges.plugins.length},`;
+            }
+
+            // Update only lines with changed latestReleaseUrl
+            for (const plugin of badges.plugins) {
+                if (line.includes(`"name": "${plugin.name}"`)) {
+                    rl.output.write(line + '\n'); // Write the name line
+                    modifiedLine = `        "latestReleaseUrl": "${plugin.latestReleaseUrl}",`;
+                }
+            }
+
+            rl.output.write(modifiedLine + '\n');
+        });
+
+        rl.on('close', () => {
+            fs.renameSync(`${badgesPath}.tmp`, badgesPath);
+            console.log('Updated badges.json with minimal changes.');
+        });
     } else {
         console.log('No updates found for badges.json.');
     }
