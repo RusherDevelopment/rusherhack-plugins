@@ -19,7 +19,7 @@ async function checkAndUpdateBadges() {
     }
 
     let badges = JSON.parse(fs.readFileSync(badgesPath, 'utf8'));
-    let originalBadges = JSON.parse(JSON.stringify(badges)); // Deep clone for comparison
+    let originalPlugins = JSON.parse(JSON.stringify(badges.plugins)); // Clone original plugins section
     let updated = false;
 
     for (const plugin of badges.plugins) {
@@ -65,13 +65,14 @@ async function checkAndUpdateBadges() {
     }
 
     // Update totalPlugins count (only count plugins, not dev tools)
-    badges.totalPlugins.message = badges.plugins.length.toString();
+    const totalPluginsCount = badges.plugins.length;
+    if (badges.totalPlugins.message !== totalPluginsCount.toString()) {
+        badges.totalPlugins.message = totalPluginsCount.toString();
+        updated = true;
+    }
 
-    // Compare only the plugins section and totalPlugins count before writing changes
-    if (
-        !deepEqual(originalBadges.plugins, badges.plugins) ||
-        originalBadges.totalPlugins.message !== badges.totalPlugins.message
-    ) {
+    // Write back only if any plugin entries or totalPlugins count were updated
+    if (!deepEqual(originalPlugins, badges.plugins) || updated) {
         fs.writeFileSync(badgesPath, JSON.stringify(badges, null, 4));
         console.log('Updated badges.json with necessary changes.');
     } else {
