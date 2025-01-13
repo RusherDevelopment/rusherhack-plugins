@@ -1,6 +1,5 @@
 const fs = require('fs');
 const axios = require('axios');
-const deepEqual = require('fast-deep-equal');
 
 const GH_TOKEN = process.env.GITHUB_TOKEN;
 const axiosInstance = axios.create({
@@ -19,7 +18,6 @@ async function checkAndUpdateBadges() {
     }
 
     let badges = JSON.parse(fs.readFileSync(badgesPath, 'utf8'));
-    let originalBadges = JSON.parse(JSON.stringify(badges)); // Clone for comparison
     let updated = false;
 
     for (const plugin of badges.plugins) {
@@ -71,21 +69,19 @@ async function checkAndUpdateBadges() {
     }
 
     if (updated) {
-        // Preserve original formatting by writing only modified parts
-        const output = JSON.stringify(badges, null, 4);
-        const originalOutput = fs.readFileSync(badgesPath, 'utf8');
+        // Read original file line by line to preserve formatting
+        const originalLines = fs.readFileSync(badgesPath, 'utf8').split('\n');
+        const updatedContent = JSON.stringify(badges, null, 4).split('\n');
 
-        // Compare line by line to preserve unmodified sections
-        const newLines = output.split('\n');
-        const originalLines = originalOutput.split('\n');
-
-        let finalOutput = [];
-        for (let i = 0; i < newLines.length; i++) {
-            if (newLines[i] !== originalLines[i]) {
-                finalOutput.push(newLines[i]); // Add modified line
+        const finalOutput = [];
+        let i = 0;
+        for (const line of originalLines) {
+            if (updatedContent[i] !== line) {
+                finalOutput.push(updatedContent[i]); // Use updated line if different
             } else {
-                finalOutput.push(originalLines[i]); // Preserve original line
+                finalOutput.push(line); // Preserve original line if unchanged
             }
+            i++;
         }
 
         fs.writeFileSync(badgesPath, finalOutput.join('\n'));
