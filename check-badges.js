@@ -1,5 +1,6 @@
 const fs = require('fs');
 const axios = require('axios');
+const deepEqual = require('fast-deep-equal');
 
 const GH_TOKEN = process.env.GITHUB_TOKEN;
 const axiosInstance = axios.create({
@@ -18,6 +19,7 @@ async function checkAndUpdateBadges() {
     }
 
     let badges = JSON.parse(fs.readFileSync(badgesPath, 'utf8'));
+    let originalBadges = JSON.parse(JSON.stringify(badges)); // Deep clone for comparison
     let updated = false;
 
     for (const plugin of badges.plugins) {
@@ -31,13 +33,11 @@ async function checkAndUpdateBadges() {
             const latestRelease = response.data;
             const jarFiles = latestRelease.assets.filter(asset => asset.name.endsWith('.jar'));
 
-            let newReleaseUrl;
+            let newReleaseUrl = "";
             if (jarFiles.length === 1) {
                 newReleaseUrl = jarFiles[0].browser_download_url;
             } else if (jarFiles.length > 1) {
                 newReleaseUrl = latestRelease.html_url;
-            } else {
-                newReleaseUrl = ""; // No JAR files found
             }
 
             const releaseDate = new Date(latestRelease.published_at).toISOString().split('T')[0];
@@ -45,13 +45,11 @@ async function checkAndUpdateBadges() {
             console.log(`Found release URL for ${plugin.name}: ${newReleaseUrl}`);
             console.log(`Found release date for ${plugin.name}: ${releaseDate}`);
 
+            // Check for changes before updating
             if (plugin.latestReleaseUrl !== newReleaseUrl || plugin.releaseDate !== releaseDate) {
-                console.log(`Updating ${plugin.name}: ${plugin.latestReleaseUrl} -> ${newReleaseUrl}`);
                 plugin.latestReleaseUrl = newReleaseUrl;
                 plugin.releaseDate = releaseDate;
                 updated = true;
-            } else {
-                console.log(`No update needed for ${plugin.name}.`);
             }
         } catch (error) {
             if (error.response && error.response.status === 404) {
@@ -66,12 +64,12 @@ async function checkAndUpdateBadges() {
         }
     }
 
-    // Update totalPlugins count
-    badges.totalPlugins.message = (badges.plugins.length + badges.devTools.length).toString();
+    // Update totalPlugins count (only count plugins, not dev tools)
+    badges.totalPlugins.message = badges.plugins.length.toString();
 
-    if (updated) {
-        fs.writeFileSync(`${badgesPath}.bak`, JSON.stringify(badges, null, 4)); // Backup
-        fs.writeFileSync(badgesPath, JSON.stringify(badges, null, 4)); // Update file
+    // Compare with the original file to decide whether to write changes
+    if (!deepEqual(badges, originalBadges)) {
+        fs.writeFileSync(badgesPath, JSON.stringify(badges, null, 4)); // Update file only if changes exist
         console.log('Updated badges.json.');
     } else {
         console.log('No updates found for badges.json.');
