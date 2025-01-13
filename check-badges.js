@@ -1,5 +1,6 @@
 const fs = require('fs');
 const axios = require('axios');
+const deepEqual = require('fast-deep-equal');
 
 const GH_TOKEN = process.env.GITHUB_TOKEN;
 const axiosInstance = axios.create({
@@ -18,6 +19,7 @@ async function checkAndUpdateBadges() {
     }
 
     let badges = JSON.parse(fs.readFileSync(badgesPath, 'utf8'));
+    let originalBadges = JSON.parse(JSON.stringify(badges)); // Deep clone for comparison
     let updated = false;
 
     for (const plugin of badges.plugins) {
@@ -43,6 +45,7 @@ async function checkAndUpdateBadges() {
             console.log(`Found release URL for ${plugin.name}: ${newReleaseUrl}`);
             console.log(`Found release date for ${plugin.name}: ${releaseDate}`);
 
+            // Check for changes before updating
             if (plugin.latestReleaseUrl !== newReleaseUrl || plugin.releaseDate !== releaseDate) {
                 plugin.latestReleaseUrl = newReleaseUrl;
                 plugin.releaseDate = releaseDate;
@@ -62,30 +65,16 @@ async function checkAndUpdateBadges() {
     }
 
     // Update totalPlugins count (only count plugins, not dev tools)
-    const totalPluginsCount = badges.plugins.length;
-    if (badges.totalPlugins.message !== totalPluginsCount.toString()) {
-        badges.totalPlugins.message = totalPluginsCount.toString();
-        updated = true;
-    }
+    badges.totalPlugins.message = badges.plugins.length.toString();
 
-    if (updated) {
-        // Read original file line by line to preserve formatting
-        const originalLines = fs.readFileSync(badgesPath, 'utf8').split('\n');
-        const updatedContent = JSON.stringify(badges, null, 4).split('\n');
-
-        const finalOutput = [];
-        let i = 0;
-        for (const line of originalLines) {
-            if (updatedContent[i] !== line) {
-                finalOutput.push(updatedContent[i]); // Use updated line if different
-            } else {
-                finalOutput.push(line); // Preserve original line if unchanged
-            }
-            i++;
+    // Compare with the original file to decide whether to write changes
+    if (!deepEqual(badges, originalBadges)) {
+        const originalContent = fs.readFileSync(badgesPath, 'utf8');
+        const updatedContent = JSON.stringify(badges, null, 4);
+        if (originalContent !== updatedContent) {
+            fs.writeFileSync(badgesPath, updatedContent);
+            console.log('Updated badges.json.');
         }
-
-        fs.writeFileSync(badgesPath, finalOutput.join('\n'));
-        console.log('Updated badges.json with necessary changes.');
     } else {
         console.log('No updates found for badges.json.');
     }
