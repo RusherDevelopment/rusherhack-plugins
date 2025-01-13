@@ -21,7 +21,7 @@ async function checkAndUpdateBadges() {
     let updated = false;
 
     for (const plugin of badges.plugins) {
-        if (plugin.latestReleaseUrl === "null") continue;
+        if (!plugin.latestReleaseUrl) continue; // Skip if latestReleaseUrl is missing or empty
 
         const repoUrl = plugin.url.replace('https://github.com/', '');
         const apiUrl = `https://api.github.com/repos/${repoUrl}/releases/latest`;
@@ -37,14 +37,18 @@ async function checkAndUpdateBadges() {
             } else if (jarFiles.length > 1) {
                 newReleaseUrl = latestRelease.html_url;
             } else {
-                newReleaseUrl = "null";
+                newReleaseUrl = ""; // No JAR files found
             }
 
-            console.log(`Found release URL for ${plugin.name}: ${newReleaseUrl}`);
+            const releaseDate = new Date(latestRelease.published_at).toISOString().split('T')[0];
 
-            if (plugin.latestReleaseUrl !== newReleaseUrl) {
+            console.log(`Found release URL for ${plugin.name}: ${newReleaseUrl}`);
+            console.log(`Found release date for ${plugin.name}: ${releaseDate}`);
+
+            if (plugin.latestReleaseUrl !== newReleaseUrl || plugin.releaseDate !== releaseDate) {
                 console.log(`Updating ${plugin.name}: ${plugin.latestReleaseUrl} -> ${newReleaseUrl}`);
                 plugin.latestReleaseUrl = newReleaseUrl;
+                plugin.releaseDate = releaseDate;
                 updated = true;
             } else {
                 console.log(`No update needed for ${plugin.name}.`);
@@ -52,8 +56,8 @@ async function checkAndUpdateBadges() {
         } catch (error) {
             if (error.response && error.response.status === 404) {
                 console.warn(`No releases found for ${plugin.name}.`);
-                if (plugin.latestReleaseUrl !== "null") {
-                    plugin.latestReleaseUrl = "null";
+                if (plugin.latestReleaseUrl !== "") {
+                    plugin.latestReleaseUrl = "";
                     updated = true;
                 }
             } else {
