@@ -60,7 +60,7 @@ jobs:
           git config --local user.email "actions@github.com"
           BRANCH_NAME="update-badges-${{ github.run_id }}"
           echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_ENV
-          TOTAL_PLUGINS=$(jq '.totalPlugins.message' badges.json)
+          TOTAL_PLUGINS=$(jq -r '.totalPlugins.message' badges.json)
           git checkout -b $BRANCH_NAME
           git commit -m "Update badges.json with latest release URLs (Total Plugins: $TOTAL_PLUGINS)"
           git push origin HEAD
