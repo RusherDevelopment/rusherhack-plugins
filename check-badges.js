@@ -1,6 +1,5 @@
 const fs = require('fs');
 const axios = require('axios');
-const deepEqual = require('fast-deep-equal');
 
 const GH_TOKEN = process.env.GITHUB_TOKEN;
 const axiosInstance = axios.create({
@@ -12,25 +11,48 @@ const axiosInstance = axios.create({
 
 const badgesPath = './badges.json';
 
-// Function to sort keys in an object to maintain consistent order
-function sortKeys(obj) {
-    return Object.keys(obj).sort().reduce((sorted, key) => {
-        sorted[key] = obj[key];
-        return sorted;
-    }, {});
-}
-
-async function checkAndUpdateBadges() {
+// Helper function to read JSON file and return parsed data
+function readBadgesFile() {
     if (!fs.existsSync(badgesPath)) {
         console.error('Error: badges.json not found.');
         process.exit(1);
     }
+    return JSON.parse(fs.readFileSync(badgesPath, 'utf8'));
+}
 
-    let badges = JSON.parse(fs.readFileSync(badgesPath, 'utf8'));
-    let originalBadges = JSON.parse(JSON.stringify(badges)); // Deep clone for comparison
-    let updated = false;
+// Helper function to write only changed lines back to the file
+function writeUpdatedBadges(originalBadges, updatedBadges) {
+    const updatedLines = [];
+    let changesMade = false;
 
-    for (const plugin of badges.plugins) {
+    originalBadges.plugins.forEach((originalPlugin, index) => {
+        const updatedPlugin = updatedBadges.plugins[index];
+
+        // Compare each plugin's relevant fields
+        if (
+            originalPlugin.latestReleaseUrl !== updatedPlugin.latestReleaseUrl ||
+            originalPlugin.releaseDate !== updatedPlugin.releaseDate
+        ) {
+            changesMade = true;
+            updatedLines.push(JSON.stringify(updatedPlugin, null, 4));
+        } else {
+            updatedLines.push(JSON.stringify(originalPlugin, null, 4));
+        }
+    });
+
+    if (changesMade) {
+        fs.writeFileSync(badgesPath, `{\n  "plugins": [\n${updatedLines.join(',\n')}\n  ]\n}\n`);
+        console.log('Updated only the necessary lines in badges.json.');
+    } else {
+        console.log('No updates found for badges.json.');
+    }
+}
+
+async function checkAndUpdateBadges() {
+    const originalBadges = readBadgesFile();
+    const updatedBadges = JSON.parse(JSON.stringify(originalBadges)); // Deep clone for modification
+
+    for (const plugin of updatedBadges.plugins) {
         if (!plugin.latestReleaseUrl) continue; // Skip if latestReleaseUrl is missing or empty
 
         const repoUrl = plugin.url.replace('https://github.com/', '');
@@ -53,18 +75,16 @@ async function checkAndUpdateBadges() {
             console.log(`Found release URL for ${plugin.name}: ${newReleaseUrl}`);
             console.log(`Found release date for ${plugin.name}: ${releaseDate}`);
 
-            // Check for changes before updating
+            // Update the plugin fields if changes are detected
             if (plugin.latestReleaseUrl !== newReleaseUrl || plugin.releaseDate !== releaseDate) {
                 plugin.latestReleaseUrl = newReleaseUrl;
                 plugin.releaseDate = releaseDate;
-                updated = true;
             }
         } catch (error) {
             if (error.response && error.response.status === 404) {
                 console.warn(`No releases found for ${plugin.name}.`);
                 if (plugin.latestReleaseUrl !== "") {
                     plugin.latestReleaseUrl = "";
-                    updated = true;
                 }
             } else {
                 console.error(`Error fetching release for ${plugin.name}: ${error.message}`);
@@ -73,18 +93,10 @@ async function checkAndUpdateBadges() {
     }
 
     // Update totalPlugins count (only count plugins, not dev tools)
-    badges.totalPlugins.message = badges.plugins.length.toString();
+    updatedBadges.totalPlugins.message = updatedBadges.plugins.length.toString();
 
-    // Sort keys in each plugin to maintain consistent formatting
-    badges.plugins = badges.plugins.map(sortKeys);
-
-    // Compare with the original file to decide whether to write changes
-    if (!deepEqual(badges, originalBadges)) {
-        fs.writeFileSync(badgesPath, JSON.stringify(badges, null, 4) + '\n'); // Ensure newline at EOF
-        console.log('Updated badges.json.');
-    } else {
-        console.log('No updates found for badges.json.');
-    }
+    // Write only the necessary changes back to the file
+    writeUpdatedBadges(originalBadges, updatedBadges);
 }
 
 checkAndUpdateBadges()
