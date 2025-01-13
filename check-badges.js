@@ -19,12 +19,9 @@ async function checkAndUpdateBadges() {
     }
 
     let badges = JSON.parse(fs.readFileSync(badgesPath, 'utf8'));
-    let originalBadges = JSON.parse(JSON.stringify(badges)); // Deep clone for comparison
     let updated = false;
 
     for (const plugin of badges.plugins) {
-        if (!plugin.latestReleaseUrl) continue; // Skip if latestReleaseUrl is missing or empty
-
         const repoUrl = plugin.url.replace('https://github.com/', '');
         const apiUrl = `https://api.github.com/repos/${repoUrl}/releases/latest`;
 
@@ -33,20 +30,22 @@ async function checkAndUpdateBadges() {
             const latestRelease = response.data;
             const jarFiles = latestRelease.assets.filter(asset => asset.name.endsWith('.jar'));
 
-            let newReleaseUrl = "";
-            if (jarFiles.length === 1) {
-                newReleaseUrl = jarFiles[0].browser_download_url;
-            } else if (jarFiles.length > 1) {
-                newReleaseUrl = latestRelease.html_url;
-            }
+            let newReleaseUrl = jarFiles.length === 1
+                ? jarFiles[0].browser_download_url
+                : jarFiles.length > 1
+                ? latestRelease.html_url
+                : "";
 
             const releaseDate = new Date(latestRelease.published_at).toISOString().split('T')[0];
 
-            console.log(`Found release URL for ${plugin.name}: ${newReleaseUrl}`);
-            console.log(`Found release date for ${plugin.name}: ${releaseDate}`);
+            console.log(`Checking ${plugin.name}...`);
+            console.log(`- Current URL: ${plugin.latestReleaseUrl}`);
+            console.log(`- New URL: ${newReleaseUrl}`);
+            console.log(`- Current Date: ${plugin.releaseDate}`);
+            console.log(`- New Date: ${releaseDate}`);
 
-            // Check for changes before updating
             if (plugin.latestReleaseUrl !== newReleaseUrl || plugin.releaseDate !== releaseDate) {
+                console.log(`- Updating ${plugin.name}`);
                 plugin.latestReleaseUrl = newReleaseUrl;
                 plugin.releaseDate = releaseDate;
                 updated = true;
@@ -67,14 +66,9 @@ async function checkAndUpdateBadges() {
     // Update totalPlugins count (only count plugins, not dev tools)
     badges.totalPlugins.message = badges.plugins.length.toString();
 
-    // Compare with the original file to decide whether to write changes
-    if (!deepEqual(badges, originalBadges)) {
-        const originalContent = fs.readFileSync(badgesPath, 'utf8');
-        const updatedContent = JSON.stringify(badges, null, 4);
-        if (originalContent !== updatedContent) {
-            fs.writeFileSync(badgesPath, updatedContent);
-            console.log('Updated badges.json.');
-        }
+    if (updated) {
+        fs.writeFileSync(badgesPath, JSON.stringify(badges, null, 4));
+        console.log('Updated badges.json with minimal changes.');
     } else {
         console.log('No updates found for badges.json.');
     }
