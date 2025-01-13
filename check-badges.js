@@ -19,7 +19,7 @@ async function checkAndUpdateBadges() {
     }
 
     let badges = JSON.parse(fs.readFileSync(badgesPath, 'utf8'));
-    let originalPlugins = JSON.parse(JSON.stringify(badges.plugins)); // Clone original plugins section
+    let originalBadges = JSON.parse(JSON.stringify(badges)); // Clone for comparison
     let updated = false;
 
     for (const plugin of badges.plugins) {
@@ -45,7 +45,6 @@ async function checkAndUpdateBadges() {
             console.log(`Found release URL for ${plugin.name}: ${newReleaseUrl}`);
             console.log(`Found release date for ${plugin.name}: ${releaseDate}`);
 
-            // Check for changes before updating
             if (plugin.latestReleaseUrl !== newReleaseUrl || plugin.releaseDate !== releaseDate) {
                 plugin.latestReleaseUrl = newReleaseUrl;
                 plugin.releaseDate = releaseDate;
@@ -71,9 +70,25 @@ async function checkAndUpdateBadges() {
         updated = true;
     }
 
-    // Write back only if any plugin entries or totalPlugins count were updated
-    if (!deepEqual(originalPlugins, badges.plugins) || updated) {
-        fs.writeFileSync(badgesPath, JSON.stringify(badges, null, 4));
+    if (updated) {
+        // Preserve original formatting by writing only modified parts
+        const output = JSON.stringify(badges, null, 4);
+        const originalOutput = fs.readFileSync(badgesPath, 'utf8');
+
+        // Compare line by line to preserve unmodified sections
+        const newLines = output.split('\n');
+        const originalLines = originalOutput.split('\n');
+
+        let finalOutput = [];
+        for (let i = 0; i < newLines.length; i++) {
+            if (newLines[i] !== originalLines[i]) {
+                finalOutput.push(newLines[i]); // Add modified line
+            } else {
+                finalOutput.push(originalLines[i]); // Preserve original line
+            }
+        }
+
+        fs.writeFileSync(badgesPath, finalOutput.join('\n'));
         console.log('Updated badges.json with necessary changes.');
     } else {
         console.log('No updates found for badges.json.');
