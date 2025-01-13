@@ -18,8 +18,9 @@ async function checkAndUpdateBadges() {
         process.exit(1);
     }
 
+    // Load and deep clone the original badges data for later comparison
     let badges = JSON.parse(fs.readFileSync(badgesPath, 'utf8'));
-    let originalBadges = JSON.parse(JSON.stringify(badges)); // Deep clone for comparison
+    let originalBadges = JSON.parse(JSON.stringify(badges));
     let updated = false;
 
     for (const plugin of badges.plugins) {
@@ -45,7 +46,7 @@ async function checkAndUpdateBadges() {
             console.log(`Found release URL for ${plugin.name}: ${newReleaseUrl}`);
             console.log(`Found release date for ${plugin.name}: ${releaseDate}`);
 
-            // Check for changes before updating
+            // Check if either the latest release URL or release date has changed
             if (plugin.latestReleaseUrl !== newReleaseUrl || plugin.releaseDate !== releaseDate) {
                 plugin.latestReleaseUrl = newReleaseUrl;
                 plugin.releaseDate = releaseDate;
@@ -67,7 +68,7 @@ async function checkAndUpdateBadges() {
     // Update totalPlugins count (only count plugins, not dev tools)
     badges.totalPlugins.message = badges.plugins.length.toString();
 
-    // Compare with the original file to decide whether to write changes
+    // Write changes only if the badges object is different from the original
     if (!deepEqual(badges, originalBadges)) {
         fs.writeFileSync(badgesPath, JSON.stringify(badges, null, 4)); // Update file only if changes exist
         console.log('Updated badges.json.');
