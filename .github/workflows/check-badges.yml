@@ -25,7 +25,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          npm install axios
+          npm install axios fast-deep-equal
           echo "::notice::Dependencies installed."
 
       - name: Check and update only latest release URLs
