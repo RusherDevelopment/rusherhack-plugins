@@ -20,7 +20,7 @@
       "description": "Installs Rusherhack plugins for you and sets the needed flags."
     }
   ],
-  "plugins": [
+  "themes": [
     {
       "name": "rusherNodusTheme",
       "url": "https://github.com/bakjedev/rusherNodusTheme",
@@ -71,8 +71,11 @@
         "url": "https://github.com/xyzbtw",
         "avatarUrl": "https://github.com/xyzbtw.png?size=20"
       }
-    },
+    }
+  ],
+  "plugins": [
     {
+      "name": "rusherNodusTheme",
       "name": "Example Plugin",
       "url": "https://github.com/RusherDevelopment/example-plugin",
       "releaseUrl": "https://github.com/RusherDevelopment/example-plugin/releases",
