@@ -73,7 +73,7 @@ These tools can assist in managing and developing RusherHack plugins:
 
 ## Themes
 
-<!-- START THEMES LIST -->
+<!-- START PLUGIN LIST -->
 
 - ### [rusherNodusTheme](https://github.com/bakjedev/rusherNodusTheme) <br>
 
