@@ -79,7 +79,6 @@
   ],
   "plugins": [
     {
-      "name": "rusherNodusTheme",
       "name": "Example Plugin",
       "url": "https://github.com/RusherDevelopment/example-plugin",
       "releaseUrl": "https://github.com/RusherDevelopment/example-plugin/releases",
