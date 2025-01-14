@@ -1,7 +1,11 @@
 {
   "schemaVersion": 1,
   "totalPlugins": {
-    "message": "67",
+    "message": "64",
+    "color": "green"
+  },
+  "totalThemes": {
+    "message": "3",
     "color": "green"
   },
   "discord": {
