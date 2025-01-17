@@ -931,6 +931,16 @@ These tools can assist in managing and developing RusherHack plugins:
 
    A RusherHacks plugin for automatically applying bonemeal to crops.
 
+---
+
+- ### [Rocket3](https://github.com/PK268/Rocket3) <br>
+
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[63].releaseDate&label=Latest%20Release&color=green)](https://github.com/PK268/Rocket3/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/PK268/Rocket3/total)](https://github.com/PK268/Rocket3/releases/download/v1.2.0/rocket3-1.2.0.jar)<br>
+
+   **Creator**: <img src="https://github.com/PK268.png?size=20" width="20" height="20"> [PK268](https://github.com/PK268)
+
+   A RusherHacks plugin for crafting duration 3 rockets.
+
 
 <!-- END PLUGINS LIST -->
 
