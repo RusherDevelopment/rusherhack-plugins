@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "totalPlugins": {
-    "message": "64",
+    "message": "65",
     "color": "green"
   },
   "totalThemes": {
@@ -1200,6 +1200,21 @@
         "avatarUrl": "https://github.com/John200410.png?size=20"
       },
       "screenshots": []
-    }
+    },
+    {
+      "name": "Rocket3",
+      "url": "https://github.com/PK268/Rocket3",
+      "releaseUrl": "https://github.com/PK268/Rocket3/releases",
+      "latestReleaseUrl": "https://github.com/PK268/Rocket3/releases/download/v1.2.0/rocket3-1.2.0.jar",
+      "releaseDate": "2025-01-16",
+      "color": "green",
+      "description": "A RusherHacks plugin for crafting duration 3 rockets.",
+      "creator": {
+        "name": "PK268",
+        "url": "https://github.com/PK268",
+        "avatarUrl": "https://github.com/PK268.png?size=20"
+    },
+      "screenshots": []
+},
   ]
 }
