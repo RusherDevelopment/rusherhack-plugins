@@ -23,11 +23,13 @@ jobs:
         run: sudo apt-get install jq
 
       - name: Check Latest Release URLs
+        id: check-releases
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Use GitHub Actions built-in token
         run: |
           BADGES_FILE="../badges.json"
           OUTDATED_PLUGINS=0
+          REPORT="### 📢 Outdated Plugin Report\n\n@GarlicRot, some plugins have outdated release URLs!\n\n"
 
           echo "🔍 Checking latest releases for themes and plugins..."
 
@@ -80,8 +82,9 @@ jobs:
               # Compare stored latest release URL with actual one
               if [[ "$LATEST_STORED" != "$LATEST_RELEASE" ]]; then
                 echo "::error file=badges.json,title=Outdated Plugin::$OWNER/$REPO is outdated."
-                echo "::error file=badges.json,title=Expected::$LATEST_STORED"
-                echo "::error file=badges.json,title=Latest::$LATEST_RELEASE"
+                REPORT+="🚨 **$OWNER/$REPO**\n"
+                REPORT+="🔹 **Stored:** [$LATEST_STORED]($LATEST_STORED)\n"
+                REPORT+="🔹 **Latest:** [$LATEST_RELEASE]($LATEST_RELEASE)\n\n"
                 echo "-----------------------------------"
                 OUTDATED_PLUGINS=1
               fi
@@ -90,5 +93,14 @@ jobs:
 
           if [[ $OUTDATED_PLUGINS -eq 1 ]]; then
             echo "::error:: Some plugins/themes have outdated release URLs! Check annotations for details."
-            exit 1
+            echo "$REPORT" > outdated_plugins_report.md
+            echo "outdated=true" >> $GITHUB_ENV
           fi
+
+      - name: Create GitHub Issue Notification
+        if: env.outdated == 'true'
+        uses: peter-evans/create-issue-from-file@v4
+        with:
+          title: "🚨 Outdated Plugin Report"
+          content-filepath: outdated_plugins_report.md
+          labels: bug
