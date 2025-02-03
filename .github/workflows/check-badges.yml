@@ -46,31 +46,25 @@ jobs:
               # Fetch latest release info (with authentication)
               RESPONSE=$(curl -s -H "Authorization: token $GITHUB_TOKEN" -H "Accept: application/vnd.github.v3+json" $API_URL)
 
-              # Log full response if needed for debugging
-              echo "API Response: $RESPONSE" 
-
-              # Check if response contains assets
-              ASSETS_CHECK=$(echo "$RESPONSE" | jq -r '.assets | length')
-
-              if [[ "$ASSETS_CHECK" == "null" || "$ASSETS_CHECK" -eq 0 ]]; then
-                echo "::warning file=badges.json,title=No JAR File Found::$OWNER/$REPO has no assets in the latest release."
+              # Ensure the API response is valid
+              if [[ "$RESPONSE" == "null" || -z "$RESPONSE" ]]; then
+                echo "⚠️ Failed to fetch release data for $OWNER/$REPO."
                 continue
               fi
 
-              # Extract the first .jar file URL
+              # Extract the latest .jar file URL
               LATEST_RELEASE=$(echo "$RESPONSE" | jq -r '[.assets[] | select(.name | endswith(".jar"))][0].browser_download_url')
 
-              # Validate extracted URL
+              # Skip if no JAR file is found
               if [[ "$LATEST_RELEASE" == "null" || -z "$LATEST_RELEASE" ]]; then
-                echo "::warning file=badges.json,title=No JAR File Found::$OWNER/$REPO does not have a .jar file in its latest release."
                 continue
               fi
 
               # Compare stored latest release URL with actual one
               if [[ "$LATEST_STORED" != "$LATEST_RELEASE" ]]; then
-                echo "::error file=badges.json,title=Outdated Release::$OWNER/$REPO"
-                echo "::error file=badges.json,title=Stored URL::$LATEST_STORED"
-                echo "::error file=badges.json,title=Latest JAR URL::$LATEST_RELEASE"
+                echo "::error file=badges.json,title=Outdated Plugin::$OWNER/$REPO is outdated."
+                echo "::error file=badges.json,title=Expected::$LATEST_STORED"
+                echo "::error file=badges.json,title=Latest::$LATEST_RELEASE"
                 echo "-----------------------------------"
                 OUTDATED_PLUGINS=1
               fi
