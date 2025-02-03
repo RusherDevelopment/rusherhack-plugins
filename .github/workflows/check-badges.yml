@@ -43,28 +43,34 @@ jobs:
               echo "Checking: $OWNER/$REPO"
 
               # Fetch latest release info
-              LATEST_RELEASE=$(curl -s $API_URL | jq -r '.assets[0].browser_download_url')
+              RESPONSE=$(curl -s $API_URL)
+              LATEST_RELEASE=$(echo $RESPONSE | jq -r '.assets[0].browser_download_url')
+
+              # Fallback: Use the release page URL if no direct asset download is available
+              if [[ "$LATEST_RELEASE" == "null" || -z "$LATEST_RELEASE" ]]; then
+                LATEST_RELEASE=$(echo $RESPONSE | jq -r '.html_url')
+              fi
 
               if [[ "$LATEST_RELEASE" == "null" || -z "$LATEST_RELEASE" ]]; then
-                echo "⚠️ No release found for $OWNER/$REPO"
+                echo "::warning file=badges.json::No releases found for $OWNER/$REPO"
                 continue
               fi
 
               if [[ "$LATEST_STORED" != "$LATEST_RELEASE" ]]; then
-                echo "❌ Outdated release for $OWNER/$REPO"
-                echo "Stored URL:  $LATEST_STORED"
-                echo "Latest URL:  $LATEST_RELEASE"
+                echo "::error file=badges.json::Outdated release for $OWNER/$REPO"
+                echo "::error file=badges.json::Stored URL: $LATEST_STORED"
+                echo "::error file=badges.json::Latest URL: $LATEST_RELEASE"
                 echo "-----------------------------------"
                 OUTDATED_PLUGINS=1
               else
-                echo "✅ Up to date: $OWNER/$REPO"
+                echo "::notice file=badges.json::✅ Up to date: $OWNER/$REPO"
               fi
             done
           done
 
           if [[ $OUTDATED_PLUGINS -eq 1 ]]; then
-            echo "::error:: Some plugins/themes have outdated release URLs! Check the logs for details."
+            echo "::error:: Some plugins/themes have outdated release URLs! Check annotations for details."
             exit 1
           else
-            echo "✅ All repositories are up to date."
+            echo "::notice:: ✅ All repositories are up to date."
           fi
