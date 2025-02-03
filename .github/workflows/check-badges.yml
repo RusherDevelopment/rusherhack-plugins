@@ -48,23 +48,20 @@ jobs:
               # Get latest release tag
               RELEASE_TAG=$(echo $RESPONSE | jq -r '.tag_name')
 
-              # Get the first downloadable asset URL (if exists)
-              LATEST_RELEASE=$(echo $RESPONSE | jq -r '.assets[0].browser_download_url')
+              # Extract the first .jar file asset URL from the release
+              LATEST_RELEASE=$(echo $RESPONSE | jq -r '[.assets[] | select(.name | endswith(".jar"))][0].browser_download_url')
 
-              # Fallback: Use the release page if no direct download is available
+              # If no .jar file is found, skip this repo
               if [[ "$LATEST_RELEASE" == "null" || -z "$LATEST_RELEASE" ]]; then
-                if [[ "$RELEASE_TAG" != "null" && -n "$RELEASE_TAG" ]]; then
-                  LATEST_RELEASE="https://github.com/$OWNER/$REPO/releases/tag/$RELEASE_TAG"
-                else
-                  echo "::warning file=badges.json,title=No Releases Found::$OWNER/$REPO has no releases."
-                  continue
-                fi
+                echo "::warning file=badges.json,title=No JAR File Found::$OWNER/$REPO has no JAR file in its latest release."
+                continue
               fi
 
+              # Compare stored latest release URL with the actual one
               if [[ "$LATEST_STORED" != "$LATEST_RELEASE" ]]; then
                 echo "::error file=badges.json,title=Outdated Release::$OWNER/$REPO"
                 echo "::error file=badges.json,title=Stored URL::$LATEST_STORED"
-                echo "::error file=badges.json,title=Latest URL::$LATEST_RELEASE"
+                echo "::error file=badges.json,title=Latest JAR URL::$LATEST_RELEASE"
                 echo "-----------------------------------"
                 OUTDATED_PLUGINS=1
               fi
