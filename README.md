@@ -941,6 +941,15 @@ These tools can assist in managing and developing RusherHack plugins:
 
    A RusherHacks plugin for crafting duration 3 rockets.
 
+---
+
+- ### [GarlicBreeder](https://github.com/GarlicRot/GarlicBreeder) <br>
+
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[XX].releaseDate&label=Latest%20Release&color=green)](https://github.com/GarlicRot/GarlicBreeder/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/GarlicRot/GarlicBreeder/total)](https://github.com/GarlicRot/GarlicBreeder/releases/download/v1.0.0/GarlicBreeder-1.20.4.jar)<br>
+
+   **Creator**: <img src="https://github.com/GarlicRot.png?size=20" width="20" height="20"> [GarlicRot](https://github.com/GarlicRot)
+
+   A RusherHacks plugin that automates the breeding of mobs in Minecraft.
 
 <!-- END PLUGINS LIST -->
 
