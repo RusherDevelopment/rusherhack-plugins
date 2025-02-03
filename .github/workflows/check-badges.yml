@@ -44,11 +44,15 @@ jobs:
 
               # Fetch latest release info
               RESPONSE=$(curl -s $API_URL)
+              
+              # Get the tag name of the latest release
+              RELEASE_TAG=$(echo $RESPONSE | jq -r '.tag_name')
+
+              # Get the download URL (fallback to release page if no assets exist)
               LATEST_RELEASE=$(echo $RESPONSE | jq -r '.assets[0].browser_download_url')
 
-              # Fallback: Use the release page URL if no direct asset download is available
               if [[ "$LATEST_RELEASE" == "null" || -z "$LATEST_RELEASE" ]]; then
-                LATEST_RELEASE=$(echo $RESPONSE | jq -r '.html_url')
+                LATEST_RELEASE="https://github.com/$OWNER/$REPO/releases/tag/$RELEASE_TAG"
               fi
 
               if [[ "$LATEST_RELEASE" == "null" || -z "$LATEST_RELEASE" ]]; then
@@ -62,8 +66,6 @@ jobs:
                 echo "::error file=badges.json::Latest URL: $LATEST_RELEASE"
                 echo "-----------------------------------"
                 OUTDATED_PLUGINS=1
-              else
-                echo "::notice file=badges.json::✅ Up to date: $OWNER/$REPO"
               fi
             done
           done
@@ -71,6 +73,4 @@ jobs:
           if [[ $OUTDATED_PLUGINS -eq 1 ]]; then
             echo "::error:: Some plugins/themes have outdated release URLs! Check annotations for details."
             exit 1
-          else
-            echo "::notice:: ✅ All repositories are up to date."
           fi
