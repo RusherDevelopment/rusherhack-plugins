@@ -23,6 +23,8 @@ jobs:
         run: sudo apt-get install jq
 
       - name: Check Latest Release URLs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Use GitHub Actions built-in token
         run: |
           BADGES_FILE="../badges.json"
           OUTDATED_PLUGINS=0
@@ -41,19 +43,16 @@ jobs:
 
               echo "Checking: $OWNER/$REPO"
 
-              # Fetch latest release info
-              RESPONSE=$(curl -s -H "Accept: application/vnd.github.v3+json" $API_URL)
+              # Fetch latest release info (with authentication)
+              RESPONSE=$(curl -s -H "Authorization: token $GITHUB_TOKEN" -H "Accept: application/vnd.github.v3+json" $API_URL)
 
-              # Handle invalid API response
-              if [[ "$RESPONSE" == "null" || -z "$RESPONSE" ]]; then
-                echo "::warning file=badges.json,title=GitHub API Error::Failed to fetch release data for $OWNER/$REPO."
-                continue
-              fi
+              # Log full response if needed for debugging
+              echo "API Response: $RESPONSE" 
 
-              # Check if the release has assets
-              ASSETS_EXIST=$(echo "$RESPONSE" | jq -r '.assets | length')
+              # Check if response contains assets
+              ASSETS_CHECK=$(echo "$RESPONSE" | jq -r '.assets | length')
 
-              if [[ "$ASSETS_EXIST" == "null" || "$ASSETS_EXIST" -eq 0 ]]; then
+              if [[ "$ASSETS_CHECK" == "null" || "$ASSETS_CHECK" -eq 0 ]]; then
                 echo "::warning file=badges.json,title=No JAR File Found::$OWNER/$REPO has no assets in the latest release."
                 continue
               fi
