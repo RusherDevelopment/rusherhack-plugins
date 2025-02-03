@@ -48,15 +48,32 @@ jobs:
 
               # Ensure the API response is valid
               if [[ "$RESPONSE" == "null" || -z "$RESPONSE" ]]; then
-                echo "⚠️ Failed to fetch release data for $OWNER/$REPO."
+                echo "⚠️ GitHub API returned null response for $OWNER/$REPO. Skipping..."
                 continue
               fi
 
-              # Extract the latest .jar file URL
+              # Check if the repository has any releases
+              RELEASE_CHECK=$(echo "$RESPONSE" | jq -r 'if .tag_name then "exists" else "no_release" end')
+
+              if [[ "$RELEASE_CHECK" == "no_release" ]]; then
+                echo "⚠️ No releases found for $OWNER/$REPO. Skipping..."
+                continue
+              fi
+
+              # Ensure assets exist before trying to extract them
+              ASSETS_EXIST=$(echo "$RESPONSE" | jq -r 'if .assets then "exists" else "no_assets" end')
+
+              if [[ "$ASSETS_EXIST" == "no_assets" ]]; then
+                echo "⚠️ No assets found in the latest release for $OWNER/$REPO. Skipping..."
+                continue
+              fi
+
+              # Extract the first .jar file URL
               LATEST_RELEASE=$(echo "$RESPONSE" | jq -r '[.assets[] | select(.name | endswith(".jar"))][0].browser_download_url')
 
               # Skip if no JAR file is found
               if [[ "$LATEST_RELEASE" == "null" || -z "$LATEST_RELEASE" ]]; then
+                echo "⚠️ No JAR file found for $OWNER/$REPO. Skipping..."
                 continue
               fi
 
