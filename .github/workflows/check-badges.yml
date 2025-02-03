@@ -15,15 +15,16 @@ jobs:
 
       - name: Fetch badges.json from gh-pages
         run: |
-          git fetch origin gh-pages
-          git checkout gh-pages -- badges.json
+          git fetch --all
+          git checkout --track origin/gh-pages || git checkout gh-pages
+          cp badges.json ../badges.json  # Move file to main working directory
 
       - name: Install jq
         run: sudo apt-get install jq
 
       - name: Check Latest Release URLs
         run: |
-          BADGES_FILE="badges.json"
+          BADGES_FILE="../badges.json"
           OUTDATED_PLUGINS=0
 
           echo "🔍 Checking latest releases for themes and plugins..."
