@@ -29,7 +29,6 @@ jobs:
 
           echo "🔍 Checking latest releases for themes and plugins..."
 
-          # Process themes and plugins separately
           for SECTION in "themes" "plugins"; do
             cat $BADGES_FILE | jq -c --arg section "$SECTION" '.[$section][]' | while read entry; do
               NAME=$(echo $entry | jq -r '.name')
@@ -45,19 +44,30 @@ jobs:
               # Fetch latest release info
               RESPONSE=$(curl -s -H "Accept: application/vnd.github.v3+json" $API_URL)
 
-              # Get latest release tag
-              RELEASE_TAG=$(echo $RESPONSE | jq -r '.tag_name')
-
-              # Extract the first .jar file asset URL from the release
-              LATEST_RELEASE=$(echo $RESPONSE | jq -r '[.assets[] | select(.name | endswith(".jar"))][0].browser_download_url')
-
-              # If no .jar file is found, skip this repo
-              if [[ "$LATEST_RELEASE" == "null" || -z "$LATEST_RELEASE" ]]; then
-                echo "::warning file=badges.json,title=No JAR File Found::$OWNER/$REPO has no JAR file in its latest release."
+              # Handle invalid API response
+              if [[ "$RESPONSE" == "null" || -z "$RESPONSE" ]]; then
+                echo "::warning file=badges.json,title=GitHub API Error::Failed to fetch release data for $OWNER/$REPO."
                 continue
               fi
 
-              # Compare stored latest release URL with the actual one
+              # Check if the release has assets
+              ASSETS_EXIST=$(echo "$RESPONSE" | jq -r '.assets | length')
+
+              if [[ "$ASSETS_EXIST" == "null" || "$ASSETS_EXIST" -eq 0 ]]; then
+                echo "::warning file=badges.json,title=No JAR File Found::$OWNER/$REPO has no assets in the latest release."
+                continue
+              fi
+
+              # Extract the first .jar file URL
+              LATEST_RELEASE=$(echo "$RESPONSE" | jq -r '[.assets[] | select(.name | endswith(".jar"))][0].browser_download_url')
+
+              # Validate extracted URL
+              if [[ "$LATEST_RELEASE" == "null" || -z "$LATEST_RELEASE" ]]; then
+                echo "::warning file=badges.json,title=No JAR File Found::$OWNER/$REPO does not have a .jar file in its latest release."
+                continue
+              fi
+
+              # Compare stored latest release URL with actual one
               if [[ "$LATEST_STORED" != "$LATEST_RELEASE" ]]; then
                 echo "::error file=badges.json,title=Outdated Release::$OWNER/$REPO"
                 echo "::error file=badges.json,title=Stored URL::$LATEST_STORED"
