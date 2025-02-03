@@ -43,27 +43,28 @@ jobs:
               echo "Checking: $OWNER/$REPO"
 
               # Fetch latest release info
-              RESPONSE=$(curl -s $API_URL)
-              
-              # Get the tag name of the latest release
+              RESPONSE=$(curl -s -H "Accept: application/vnd.github.v3+json" $API_URL)
+
+              # Get latest release tag
               RELEASE_TAG=$(echo $RESPONSE | jq -r '.tag_name')
 
-              # Get the download URL (fallback to release page if no assets exist)
+              # Get the first downloadable asset URL (if exists)
               LATEST_RELEASE=$(echo $RESPONSE | jq -r '.assets[0].browser_download_url')
 
+              # Fallback: Use the release page if no direct download is available
               if [[ "$LATEST_RELEASE" == "null" || -z "$LATEST_RELEASE" ]]; then
-                LATEST_RELEASE="https://github.com/$OWNER/$REPO/releases/tag/$RELEASE_TAG"
-              fi
-
-              if [[ "$LATEST_RELEASE" == "null" || -z "$LATEST_RELEASE" ]]; then
-                echo "::warning file=badges.json::No releases found for $OWNER/$REPO"
-                continue
+                if [[ "$RELEASE_TAG" != "null" && -n "$RELEASE_TAG" ]]; then
+                  LATEST_RELEASE="https://github.com/$OWNER/$REPO/releases/tag/$RELEASE_TAG"
+                else
+                  echo "::warning file=badges.json,title=No Releases Found::$OWNER/$REPO has no releases."
+                  continue
+                fi
               fi
 
               if [[ "$LATEST_STORED" != "$LATEST_RELEASE" ]]; then
-                echo "::error file=badges.json::Outdated release for $OWNER/$REPO"
-                echo "::error file=badges.json::Stored URL: $LATEST_STORED"
-                echo "::error file=badges.json::Latest URL: $LATEST_RELEASE"
+                echo "::error file=badges.json,title=Outdated Release::$OWNER/$REPO"
+                echo "::error file=badges.json,title=Stored URL::$LATEST_STORED"
+                echo "::error file=badges.json,title=Latest URL::$LATEST_RELEASE"
                 echo "-----------------------------------"
                 OUTDATED_PLUGINS=1
               fi
