@@ -1,0 +1,69 @@
+name: Validate Latest Release URLs
+
+on:
+  workflow_dispatch:  # Allows manual triggering
+
+jobs:
+  check-badges:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Ensures full branch history
+
+      - name: Fetch badges.json from gh-pages
+        run: |
+          git fetch origin gh-pages
+          git checkout gh-pages -- badges.json
+
+      - name: Install jq
+        run: sudo apt-get install jq
+
+      - name: Check Latest Release URLs
+        run: |
+          BADGES_FILE="badges.json"
+          OUTDATED_PLUGINS=0
+
+          echo "🔍 Checking latest releases for themes and plugins..."
+
+          # Process themes and plugins separately
+          for SECTION in "themes" "plugins"; do
+            cat $BADGES_FILE | jq -c --arg section "$SECTION" '.[$section][]' | while read entry; do
+              NAME=$(echo $entry | jq -r '.name')
+              REPO_URL=$(echo $entry | jq -r '.url')
+              LATEST_STORED=$(echo $entry | jq -r '.latestReleaseUrl')
+
+              OWNER=$(echo $REPO_URL | awk -F '/' '{print $(NF-1)}')
+              REPO=$(echo $REPO_URL | awk -F '/' '{print $NF}')
+              API_URL="https://api.github.com/repos/$OWNER/$REPO/releases/latest"
+
+              echo "Checking: $OWNER/$REPO"
+
+              # Fetch latest release info
+              LATEST_RELEASE=$(curl -s $API_URL | jq -r '.assets[0].browser_download_url')
+
+              if [[ "$LATEST_RELEASE" == "null" || -z "$LATEST_RELEASE" ]]; then
+                echo "⚠️ No release found for $OWNER/$REPO"
+                continue
+              fi
+
+              if [[ "$LATEST_STORED" != "$LATEST_RELEASE" ]]; then
+                echo "❌ Outdated release for $OWNER/$REPO"
+                echo "Stored URL:  $LATEST_STORED"
+                echo "Latest URL:  $LATEST_RELEASE"
+                echo "-----------------------------------"
+                OUTDATED_PLUGINS=1
+              else
+                echo "✅ Up to date: $OWNER/$REPO"
+              fi
+            done
+          done
+
+          if [[ $OUTDATED_PLUGINS -eq 1 ]]; then
+            echo "::error:: Some plugins/themes have outdated release URLs! Check the logs for details."
+            exit 1
+          else
+            echo "✅ All repositories are up to date."
+          fi
