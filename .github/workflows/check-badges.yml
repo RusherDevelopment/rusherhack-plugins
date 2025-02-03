@@ -91,14 +91,11 @@ jobs:
             done
           done
 
-          if [[ $OUTDATED_PLUGINS -eq 1 ]]; then
-            echo "::error:: Some plugins/themes have outdated release URLs! Check annotations for details."
-            echo "$REPORT" > outdated_plugins_report.md
-            echo "outdated=true" >> $GITHUB_ENV
-          fi
+          echo "$REPORT" > outdated_plugins_report.md
+          echo "outdated=$OUTDATED_PLUGINS" >> $GITHUB_ENV
 
       - name: Create GitHub Issue Notification
-        if: env.outdated == 'true'
+        if: env.outdated == '1'
         uses: peter-evans/create-issue-from-file@v4
         with:
           title: "🚨 Outdated Plugin Report"
