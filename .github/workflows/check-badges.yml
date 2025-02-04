@@ -28,10 +28,13 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Use GitHub Actions built-in token
         run: |
           BADGES_FILE="../badges.json"
-          OUTDATED_PLUGINS=0
+          OUTDATED_PLUGINS_FILE="/tmp/outdated_plugins_flag"
           REPORT="### 📢 Outdated Plugin Report\n\n@GarlicRot, some plugins have outdated release URLs!\n\n"
 
           echo "🔍 Checking latest releases for themes and plugins..."
+
+          # Initialize the flag file
+          echo "0" > $OUTDATED_PLUGINS_FILE
 
           for SECTION in "themes" "plugins"; do
             cat $BADGES_FILE | jq -c --arg section "$SECTION" '.[$section][]' | while read entry; do
@@ -86,15 +89,15 @@ jobs:
                 REPORT+="🔹 **Stored:** [$LATEST_STORED]($LATEST_STORED)\n"
                 REPORT+="🔹 **Latest:** [$LATEST_RELEASE]($LATEST_RELEASE)\n\n"
                 echo "-----------------------------------"
-                OUTDATED_PLUGINS=1
+                echo "1" > $OUTDATED_PLUGINS_FILE
               fi
             done
           done
 
           echo "$REPORT" > outdated_plugins_report.md
 
-          # Explicitly set the `outdated` environment variable
-          if [[ $OUTDATED_PLUGINS -eq 1 ]]; then
+          # Export the outdated flag
+          if [[ $(cat $OUTDATED_PLUGINS_FILE) == "1" ]]; then
             echo "outdated=1" >> $GITHUB_ENV
           else
             echo "outdated=0" >> $GITHUB_ENV
