@@ -935,7 +935,7 @@ These tools can assist in managing and developing RusherHack plugins:
 
 - ### [Rocket3](https://github.com/PK268/Rocket3) <br>
 
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[63].releaseDate&label=Latest%20Release&color=green)](https://github.com/PK268/Rocket3/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/PK268/Rocket3/total)](https://github.com/PK268/Rocket3/releases/download/v1.2.0/rocket3-1.2.0.jar)<br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[64].releaseDate&label=Latest%20Release&color=green)](https://github.com/PK268/Rocket3/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/PK268/Rocket3/total)](https://github.com/PK268/Rocket3/releases/download/v1.2.0/rocket3-1.2.0.jar)<br>
 
    **Creator**: <img src="https://github.com/PK268.png?size=20" width="20" height="20"> [PK268](https://github.com/PK268)
 
@@ -945,7 +945,7 @@ These tools can assist in managing and developing RusherHack plugins:
 
 - ### [GarlicBreeder](https://github.com/GarlicRot/GarlicBreeder) <br>
 
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[64].releaseDate&label=Latest%20Release&color=green)](https://github.com/GarlicRot/GarlicBreeder/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/GarlicRot/GarlicBreeder/total)](https://github.com/GarlicRot/GarlicBreeder/releases/download/v1.0.0/GarlicBreeder-1.20.4.jar)<br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[65].releaseDate&label=Latest%20Release&color=green)](https://github.com/GarlicRot/GarlicBreeder/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/GarlicRot/GarlicBreeder/total)](https://github.com/GarlicRot/GarlicBreeder/releases/download/v1.0.0/GarlicBreeder-1.20.4.jar)<br>
 
    **Creator**: <img src="https://github.com/GarlicRot.png?size=20" width="20" height="20"> [GarlicRot](https://github.com/GarlicRot)
 
