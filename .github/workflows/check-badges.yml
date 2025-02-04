@@ -92,6 +92,8 @@ jobs:
           done
 
           echo "$REPORT" > outdated_plugins_report.md
+
+          # Explicitly set the `outdated` environment variable
           if [[ $OUTDATED_PLUGINS -eq 1 ]]; then
             echo "outdated=1" >> $GITHUB_ENV
           else
