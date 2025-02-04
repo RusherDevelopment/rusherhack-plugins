@@ -29,7 +29,7 @@ jobs:
         run: |
           BADGES_FILE="../badges.json"
           OUTDATED_PLUGINS_FILE="/tmp/outdated_plugins_flag"
-          REPORT="### 📢 Outdated Plugin Report\n\n@GarlicRot, some plugins have outdated release URLs!\n\n"
+          REPORT="### 📢 Outdated Plugin Report\n\n@GarlicRot, the following plugins have outdated release URLs:\n\n"
 
           echo "🔍 Checking latest releases for themes and plugins..."
 
@@ -85,9 +85,9 @@ jobs:
               # Compare stored latest release URL with actual one
               if [[ "$LATEST_STORED" != "$LATEST_RELEASE" ]]; then
                 echo "::error file=badges.json,title=Outdated Plugin::$OWNER/$REPO is outdated."
-                REPORT+="🚨 **$OWNER/$REPO**\n"
-                REPORT+="🔹 **Stored:** [$LATEST_STORED]($LATEST_STORED)\n"
-                REPORT+="🔹 **Latest:** [$LATEST_RELEASE]($LATEST_RELEASE)\n\n"
+                REPORT+="🔹 **Plugin Name**: $NAME\n"
+                REPORT+="🔹 **Stored URL**: [$LATEST_STORED]($LATEST_STORED)\n"
+                REPORT+="🔹 **Latest URL**: [$LATEST_RELEASE]($LATEST_RELEASE)\n\n"
                 echo "-----------------------------------"
                 echo "1" > $OUTDATED_PLUGINS_FILE
               fi
