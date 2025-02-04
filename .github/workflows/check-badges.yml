@@ -85,6 +85,8 @@ jobs:
               # Compare stored latest release URL with actual one
               if [[ "$LATEST_STORED" != "$LATEST_RELEASE" ]]; then
                 echo "::error file=badges.json,title=Outdated Plugin::$OWNER/$REPO is outdated."
+                # Append plugin details to REPORT
+                echo "Appending details for: $NAME"
                 REPORT+="🔹 **Plugin Name**: $NAME\n"
                 REPORT+="🔹 **Stored URL**: [$LATEST_STORED]($LATEST_STORED)\n"
                 REPORT+="🔹 **Latest URL**: [$LATEST_RELEASE]($LATEST_RELEASE)\n\n"
@@ -95,6 +97,8 @@ jobs:
           done
 
           echo "$REPORT" > outdated_plugins_report.md
+          echo "Generated Report:"
+          cat outdated_plugins_report.md
 
           # Export the outdated flag
           if [[ $(cat $OUTDATED_PLUGINS_FILE) == "1" ]]; then
