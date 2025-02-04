@@ -29,12 +29,17 @@ jobs:
         run: |
           BADGES_FILE="../badges.json"
           OUTDATED_PLUGINS_FILE="/tmp/outdated_plugins_flag"
-          REPORT="### 📢 Outdated Plugin Report\n\n@GarlicRot, the following plugins have outdated release URLs:\n\n"
-
-          echo "🔍 Checking latest releases for themes and plugins..."
+          REPORT_FILE="outdated_plugins_report.md"
 
           # Initialize the flag file
           echo "0" > $OUTDATED_PLUGINS_FILE
+
+          # Initialize the report file
+          echo "### 📢 Outdated Plugin Report" > $REPORT_FILE
+          echo "@GarlicRot, the following plugins have outdated release URLs:" >> $REPORT_FILE
+          echo "" >> $REPORT_FILE
+
+          echo "🔍 Checking latest releases for themes and plugins..."
 
           for SECTION in "themes" "plugins"; do
             cat $BADGES_FILE | jq -c --arg section "$SECTION" '.[$section][]' | while read entry; do
@@ -85,20 +90,22 @@ jobs:
               # Compare stored latest release URL with actual one
               if [[ "$LATEST_STORED" != "$LATEST_RELEASE" ]]; then
                 echo "::error file=badges.json,title=Outdated Plugin::$OWNER/$REPO is outdated."
-                # Append plugin details to REPORT
-                echo "Appending details for: $NAME"
-                REPORT+="🔹 **Plugin Name**: $NAME\n"
-                REPORT+="🔹 **Stored URL**: [$LATEST_STORED]($LATEST_STORED)\n"
-                REPORT+="🔹 **Latest URL**: [$LATEST_RELEASE]($LATEST_RELEASE)\n\n"
-                echo "-----------------------------------"
+
+                # Append plugin details to the report file
+                echo "🔹 **Plugin Name**: $NAME" >> $REPORT_FILE
+                echo "🔹 **Stored URL**: [$LATEST_STORED]($LATEST_STORED)" >> $REPORT_FILE
+                echo "🔹 **Latest URL**: [$LATEST_RELEASE]($LATEST_RELEASE)" >> $REPORT_FILE
+                echo "" >> $REPORT_FILE
+
+                # Set the outdated flag
                 echo "1" > $OUTDATED_PLUGINS_FILE
               fi
             done
           done
 
-          echo "$REPORT" > outdated_plugins_report.md
+          # Debug: Print the report to console
           echo "Generated Report:"
-          cat outdated_plugins_report.md
+          cat $REPORT_FILE
 
           # Export the outdated flag
           if [[ $(cat $OUTDATED_PLUGINS_FILE) == "1" ]]; then
