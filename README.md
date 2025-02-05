@@ -951,16 +951,6 @@ These tools can assist in managing and developing RusherHack plugins:
 
    A RusherHacks plugin that automates the breeding of mobs in Minecraft.
 
----
-
-- ### [Chest Swap](https://github.com/Meow-Development/chest-swap) <br>
-
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[66].releaseDate&label=Latest%20Release&color=orange)](https://github.com/Meow-Development/chest-swap/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/Meow-Development/chest-swap/total)](https://github.com/Meow-Development/chest-swap/releases)<br>
-
-   **Creator**: <img src="https://github.com/Meow-Development.png?size=20" width="20" height="20"> [Meow-Development](https://github.com/Meow-Development)
-
-   A RusherHacks plugin that allows you to swap between chestplate and elytra.
-
 <!-- END PLUGINS LIST -->
 
 ## Reporting Issues
