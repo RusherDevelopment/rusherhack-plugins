@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "totalPlugins": {
-    "message": "66",
+    "message": "67",
     "color": "green"
   },
   "totalThemes": {
@@ -1228,6 +1228,21 @@
          "name": "GarlicRot",
          "url": "https://github.com/GarlicRot",
          "avatarUrl": "https://github.com/GarlicRot.png?size=20"
+      },
+      "screenshots": []
+    },
+    {
+      "name": "Chest Swap",
+      "url": "https://github.com/Meow-Development/chest-swap",
+      "releaseUrl": "https://github.com/Meow-Development/chest-swap/releases",
+      "latestReleaseUrl": "null",
+      "releaseDate": "No releases",
+      "color": "orange",
+      "description": "A RusherHacks plugin that allows you to swap between chestplate and elytra.",
+      "creator": {
+         "name": "Meow-Development",
+         "url": "https://github.com/Meow-Development",
+         "avatarUrl": "https://github.com/Meow-Development.png?size=20"
       },
       "screenshots": []
     }
