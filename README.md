@@ -55,13 +55,13 @@ Here are some helpful resources and examples for developing RusherHack plugins:
 
 Community-created plugins to extend RusherHack’s functionality.
 
-Full list: **[Plugins](./plugins.md)**
+Full list: **[Plugins](./PLUGINS.md)**
 
 ## Themes
 
 Themes modify RusherHack’s appearance, changing colors, fonts, and UI elements.
 
-Full list: **[Themes](./themes.md)**
+Full list: **[Themes](./THEMES.md)**
 
 
 ## Reporting Issues
