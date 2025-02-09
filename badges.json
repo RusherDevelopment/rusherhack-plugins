@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "totalPlugins": {
-    "message": "66",
+    "message": "68",
     "color": "green"
   },
   "totalThemes": {
@@ -1228,6 +1228,36 @@
          "name": "GarlicRot",
          "url": "https://github.com/GarlicRot",
          "avatarUrl": "https://github.com/GarlicRot.png?size=20"
+      },
+      "screenshots": []
+    },
+    {
+      "name": "Rusher Item Saver",
+      "url": "https://github.com/kybe236/rusher-item-saver",
+      "releaseUrl": "https://github.com/kybe236/rusher-item-saver/releases",
+      "latestReleaseUrl": "https://github.com/kybe236/rusher-item-saver/releases/download/multiversion/item-saver-1.0.0.jar",
+      "releaseDate": "2025-02-08",
+      "color": "green",
+      "description": "A RusherHacks plugin that saves items from being lost.",
+      "creator": {
+        "name": "kybe236",
+        "url": "https://github.com/kybe236",
+        "avatarUrl": "https://github.com/kybe236.png?size=20"
+      },
+      "screenshots": []
+    },
+    {
+      "name": "RusherHack Mace Swap",
+      "url": "https://github.com/kybe236/rusherhack-mace-swap",
+      "releaseUrl": "https://github.com/kybe236/rusherhack-mace-swap/releases",
+      "latestReleaseUrl": "https://github.com/kybe236/rusherhack-mace-swap/releases/download/fix1/mace-swap-1.0.0.jar",
+      "releaseDate": "2025-02-08",
+      "color": "green",
+      "description": "A RusherHacks plugin that automatically swaps to a mace when attacking.",
+      "creator": {
+        "name": "kybe236",
+        "url": "https://github.com/kybe236",
+        "avatarUrl": "https://github.com/kybe236.png?size=20"
       },
       "screenshots": []
     }
