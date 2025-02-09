@@ -5,7 +5,7 @@
 
 Community-created plugins to extend RusherHack’s functionality.
 
-### **📌 Tip: Easily Find a Plugin**
+## **📌 Tip: Easily Find a Plugin**
 On GitHub, you can use the **Outline on the right side of this page** (on desktop) to quickly navigate to a specific plugin. You can also use **Ctrl + F** to search for a plugin name directly.
 
 <details>
@@ -13,7 +13,6 @@ On GitHub, you can use the **Outline on the right side of this page** (on deskto
   
   - **Latest Release**: Clicking on this badge will take you to the releases page for the plugin.
   - **Downloads**: Clicking on the downloads badge will directly download the latest version of the plugin.
-  - **Last Updated**: Shows the date of the most recent commit to this repository.
   
 </details>
 

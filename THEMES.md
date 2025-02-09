@@ -10,7 +10,6 @@ Themes modify RusherHack’s appearance, changing colors, fonts, and UI elements
   
   - **Latest Release**: Clicking on this badge will take you to the releases page for the plugin.
   - **Downloads**: Clicking on the downloads badge will directly download the latest version of the plugin.
-  - **Last Updated**: Shows the date of the most recent commit to this repository.
   
 </details>
 
