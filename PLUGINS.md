@@ -5,6 +5,9 @@
 
 Community-created plugins to extend RusherHack’s functionality.
 
+### **📌 Tip: Easily Find a Plugin**
+On GitHub, you can use the **Outline on the right side of this page** (on desktop) to quickly navigate to a specific plugin. You can also use **Ctrl + F** to search for a plugin name directly.
+
 <details>
   <summary>Badge Info</summary>
   
