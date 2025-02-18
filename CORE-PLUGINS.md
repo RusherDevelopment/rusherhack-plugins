@@ -22,3 +22,29 @@ Core plugins extend RusherHack’s functionality with deeper integration and mix
    **Creator**: <img src="https://github.com/RusherDevelopment.png?size=20" width="20" height="20"> [RusherDevelopment](https://github.com/RusherDevelopment)
 
    A core plugin example demonstrating mixin support in RusherHack.
+
+---
+
+- ### [Crystal Modifier RH](https://github.com/xyzbtw/CrystalModifierRH) <br>
+
+   [![Latest Release Date](https://img.shields.io/badge/No%20Releases-red)](https://github.com/xyzbtw/CrystalModifierRH)  
+   **Creator**: <img src="https://github.com/xyzbtw.png?size=20" width="20" height="20"> [xyzbtw](https://github.com/xyzbtw)  
+
+   A core plugin for modifying the rendering of end crystals in Minecraft using mixins in RusherHack.
+
+---
+
+- ### [Tablist Hats](https://github.com/rfresh2/TablistHats-rusherhack) <br>
+
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.corePlugins[1].releaseDate&label=Latest%20Release&color=green)](https://github.com/rfresh2/TablistHats-rusherhack/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/rfresh2/TablistHats-rusherhack/total)](https://github.com/rfresh2/TablistHats-rusherhack/releases/download/1.0/TablistHats-1.0.jar)<br>
+
+   **Creator**: <img src="https://github.com/rfresh2.png?size=20" width="20" height="20"> [rfresh2](https://github.com/rfresh2)  
+
+   A core plugin that adds custom hats to the tablist in RusherHack.
+
+   <details>
+     <summary>Show Screenshot</summary>
+     <p align="center">
+       <img src="https://i.imgur.com/HEfpmLw.png" alt="Tablist Hats Example" border="0" width="300">
+     </p>
+   </details>
