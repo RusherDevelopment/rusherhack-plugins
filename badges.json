@@ -108,7 +108,7 @@
       "latestReleaseUrl": "https://github.com/rfresh2/TablistHats-rusherhack/releases/download/1.0/TablistHats-1.0.jar",
       "releaseDate": "2025-02-18",
       "color": "green",
-      "description": "A core plugin that adds custom hats to the tablist in RusherHack.",
+      "description": "Enables hat layer rendering for player heads on the tablist, even if the player isn't in render distance.",
       "creator": {
         "name": "rfresh2",
         "url": "https://github.com/rfresh2",
