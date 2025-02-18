@@ -8,22 +8,15 @@
     "message": "3",
     "color": "green"
   },
+  "totalCorePlugins": {
+  "message": "1",
+  "color": "green"
+  },
   "discord": {
     "label": "RH plugins-dev",
     "color": "7289DA",
     "logo": "discord"
   },
-  "devTools": [
-    {
-      "name": "RHP Plugin",
-      "url": "https://github.com/kybe236/rhp",
-      "releaseUrl": "https://github.com/kybe236/rhp/releases",
-      "latestReleaseUrl": "https://github.com/kybe236/rhp/releases/tag/0.0.11",
-      "releaseDate": "2024-08-24",
-      "color": "green",
-      "description": "Installs Rusherhack plugins for you and sets the needed flags."
-    }
-  ],
   "themes": [
     {
       "name": "rusherNodusTheme",
@@ -75,6 +68,23 @@
         "url": "https://github.com/xyzbtw",
         "avatarUrl": "https://github.com/xyzbtw.png?size=20"
       }
+    }
+  ],
+  "corePlugins": [
+    {
+      "name": "Example Core Plugin",
+      "url": "https://github.com/RusherDevelopment/example-core-plugin",
+      "releaseUrl": "https://github.com/RusherDevelopment/example-core-plugin/releases",
+      "latestReleaseUrl": "https://github.com/RusherDevelopment/example-core-plugin/releases/download/v1.0.0/example-core-plugin-1.0.0.jar",
+      "releaseDate": "2025-02-18",
+      "color": "green",
+      "description": "A core plugin example demonstrating mixin support in RusherHack.",
+      "creator": {
+        "name": "RusherDevelopment",
+        "url": "https://github.com/RusherDevelopment",
+        "avatarUrl": "https://github.com/RusherDevelopment.png?size=20"
+      },
+      "screenshots": []
     }
   ],
   "plugins": [
