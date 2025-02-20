@@ -895,7 +895,7 @@ On GitHub, you can use the **Outline on the right side of this page** (on deskto
 
 - ### [Example Core Plugin](https://github.com/RusherDevelopment/example-core-plugin)
 
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[68].releaseDate&label=Latest%20Release&color=green)](https://github.com/RusherDevelopment/example-core-plugin/releases) ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/RusherDevelopment/example-core-plugin/total)](https://github.com/RusherDevelopment/example-core-plugin/releases/download/v1.0.0/example-core-plugin-1.0.0.jar)  
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[68].releaseDate&label=Latest%20Release&color=red)](https://github.com/RusherDevelopment/example-core-plugin/releases) ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/RusherDevelopment/example-core-plugin/total)](https://github.com/RusherDevelopment/example-core-plugin/releases/download/v1.0.0/example-core-plugin-1.0.0.jar)  
 
    **Creator**: <img src="https://github.com/RusherDevelopment.png?size=20" width="20" height="20"> [RusherDevelopment](https://github.com/RusherDevelopment)  
 
