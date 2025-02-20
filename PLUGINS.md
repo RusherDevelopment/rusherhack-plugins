@@ -5,6 +5,18 @@
 
 Community-created plugins to extend RusherHack’s functionality.
 
+### Plugins
+
+Regular plugins extend RusherHack’s functionality without modifying the game's internal behavior. These plugins can:
+- Be reloaded in-game using `*reload` in chat or `reload` in the RusherHack console (`~` key).
+- Be added or removed from the plugins folder while the game is running.
+
+### Core Plugins
+
+Core plugins provide deeper integration with RusherHack by modifying the game's internals using mixins. Unlike regular plugins:
+- **Core plugins cannot be reloaded** using `*reload`.  
+- They must be placed in the `.minecraft/rusherhack/plugins/` folder before launching the game.
+
 ## **📌 Tip: Easily Find a Plugin**
 On GitHub, you can use the **Outline on the right side of this page** (on desktop) to quickly navigate to a specific plugin. You can also use **Ctrl + F** to search for a plugin name directly.
 
@@ -880,6 +892,41 @@ On GitHub, you can use the **Outline on the right side of this page** (on deskto
    A RusherHacks plugin that automatically swaps to a mace when attacking.
 
 ---
+
+- ### [Example Core Plugin](https://github.com/RusherDevelopment/example-core-plugin)
+
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[68].releaseDate&label=Latest%20Release&color=green)](https://github.com/RusherDevelopment/example-core-plugin/releases) ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/RusherDevelopment/example-core-plugin/total)](https://github.com/RusherDevelopment/example-core-plugin/releases/download/v1.0.0/example-core-plugin-1.0.0.jar)  
+
+   **Creator**: <img src="https://github.com/RusherDevelopment.png?size=20" width="20" height="20"> [RusherDevelopment](https://github.com/RusherDevelopment)  
+
+   A core plugin example demonstrating mixin support in RusherHack.
+
+---
+
+- ### [CrystalModifierRH](https://github.com/xyzbtw/CrystalModifierRH)
+
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[69].releaseDate&label=Latest%20Release&color=red)](https://github.com/xyzbtw/CrystalModifierRH) ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/xyzbtw/CrystalModifierRH/total)](https://github.com/xyzbtw/CrystalModifierRH/releases)  
+
+   **Creator**: <img src="https://github.com/xyzbtw.png?size=20" width="20" height="20"> [xyzbtw](https://github.com/xyzbtw)  
+
+   A plugin for modifying the rendering of end crystals in Minecraft using mixins in RusherHack.
+
+---
+
+- ### [Tablist Hats](https://github.com/rfresh2/TablistHats-rusherhack)
+
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[70].releaseDate&label=Latest%20Release&color=green)](https://github.com/rfresh2/TablistHats-rusherhack/releases) ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/rfresh2/TablistHats-rusherhack/total)](https://github.com/rfresh2/TablistHats-rusherhack/releases/download/1.0/TablistHats-1.0.jar)  
+
+   **Creator**: <img src="https://github.com/rfresh2.png?size=20" width="20" height="20"> [rfresh2](https://github.com/rfresh2)  
+
+   Enables hat layer rendering for player heads on the tablist, even if the player isn't in render distance.
+
+   <details>
+     <summary>Show Screenshot</summary>
+     <p align="center">
+       <img src="https://i.imgur.com/HEfpmLw.png" alt="Tablist Hats Example" border="0" width="300">
+     </p>
+   </details>
 
 [![Back to Top](https://img.shields.io/badge/↑-Back%20to%20Top-blue?style=flat)](#plugins-list)
 
