@@ -928,5 +928,25 @@ On GitHub, you can use the **Outline on the right side of this page** (on deskto
      </p>
    </details>
 
+---
+
+- ### [NoSound](https://github.com/John200410/nosound)
+
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[71].releaseDate&label=Latest%20Release&color=red)](https://github.com/John200410/nosound) ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/John200410/nosound/total)](https://github.com/John200410/nosound/releases)  
+
+   **Creator**: <img src="https://github.com/John200410.png?size=20" width="20" height="20"> [John200410](https://github.com/John200410)  
+
+   A core plugin that disables specific in-game sounds in RusherHack.
+
+---
+
+- ### [RusherHack Coord Spoofer](https://github.com/kybe236/rusherhack-coord-spoofer)
+
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[72].releaseDate&label=Latest%20Release&color=green)](https://github.com/kybe236/rusherhack-coord-spoofer/releases) ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/kybe236/rusherhack-coord-spoofer/total)](https://github.com/kybe236/rusherhack-coord-spoofer/releases/download/1.21%2B/coord-spoofer-1.0.0.jar)  
+
+   **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)  
+
+   A core plugin for spoofing player coordinates in RusherHack.
+
 [![Back to Top](https://img.shields.io/badge/↑-Back%20to%20Top-blue?style=flat)](#plugins-list)
 
