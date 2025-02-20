@@ -1,16 +1,12 @@
 {
   "schemaVersion": 1,
   "totalPlugins": {
-    "message": "68",
+    "message": "71",
     "color": "green"
   },
   "totalThemes": {
     "message": "3",
     "color": "green"
-  },
-  "totalCorePlugins": {
-  "message": "3",
-  "color": "green"
   },
   "discord": {
     "label": "RH plugins-dev",
@@ -68,60 +64,6 @@
         "url": "https://github.com/xyzbtw",
         "avatarUrl": "https://github.com/xyzbtw.png?size=20"
       }
-    }
-  ],
-"corePlugins": [
-    {
-      "name": "Example Core Plugin",
-      "url": "https://github.com/RusherDevelopment/example-core-plugin",
-      "releaseUrl": "https://github.com/RusherDevelopment/example-core-plugin/releases",
-      "latestReleaseUrl": "https://github.com/RusherDevelopment/example-core-plugin/releases/download/v1.0.0/example-core-plugin-1.0.0.jar",
-      "releaseDate": "No releases",
-      "color": "green",
-      "description": "A core plugin example demonstrating mixin support in RusherHack.",
-      "creator": {
-        "name": "RusherDevelopment",
-        "url": "https://github.com/RusherDevelopment",
-        "avatarUrl": "https://github.com/RusherDevelopment.png?size=20"
-      },
-      "screenshots": []
-    },
-    {
-      "name": "Crystal Modifier RH",
-      "url": "https://github.com/xyzbtw/CrystalModifierRH",
-      "releaseUrl": "https://github.com/xyzbtw/CrystalModifierRH/releases",
-      "latestReleaseUrl": "null",
-      "releaseDate": "No releases",
-      "color": "red",
-      "description": "A core plugin for modifying crystal mechanics in RusherHack.",
-      "creator": {
-        "name": "xyzbtw",
-        "url": "https://github.com/xyzbtw",
-        "avatarUrl": "https://github.com/xyzbtw.png?size=20"
-      },
-      "screenshots": []
-    },
-    {
-      "name": "Tablist Hats",
-      "url": "https://github.com/rfresh2/TablistHats-rusherhack",
-      "releaseUrl": "https://github.com/rfresh2/TablistHats-rusherhack/releases",
-      "latestReleaseUrl": "https://github.com/rfresh2/TablistHats-rusherhack/releases/download/1.0/TablistHats-1.0.jar",
-      "releaseDate": "2025-02-18",
-      "color": "green",
-      "description": "Enables hat layer rendering for player heads on the tablist, even if the player isn't in render distance.",
-      "creator": {
-        "name": "rfresh2",
-        "url": "https://github.com/rfresh2",
-        "avatarUrl": "https://github.com/rfresh2.png?size=20"
-      },
-      "screenshots": [
-        {
-          "type": "image",
-          "url": "https://i.imgur.com/HEfpmLw.png",
-          "alt": "Tablist Hats Example",
-          "width": 300
-        }
-      ]
     }
   ],
   "plugins": [
@@ -1307,6 +1249,58 @@
         "avatarUrl": "https://github.com/kybe236.png?size=20"
       },
       "screenshots": []
+    },
+    {
+      "name": "Example Core Plugin",
+      "url": "https://github.com/RusherDevelopment/example-core-plugin",
+      "releaseUrl": "https://github.com/RusherDevelopment/example-core-plugin/releases",
+      "latestReleaseUrl": "https://github.com/RusherDevelopment/example-core-plugin/releases/download/v1.0.0/example-core-plugin-1.0.0.jar",
+      "releaseDate": "No releases",
+      "color": "green",
+      "description": "A core plugin example demonstrating mixin support in RusherHack.",
+      "creator": {
+        "name": "RusherDevelopment",
+        "url": "https://github.com/RusherDevelopment",
+        "avatarUrl": "https://github.com/RusherDevelopment.png?size=20"
+      },
+      "screenshots": []
+    },
+    {
+      "name": "Crystal Modifier RH",
+      "url": "https://github.com/xyzbtw/CrystalModifierRH",
+      "releaseUrl": "https://github.com/xyzbtw/CrystalModifierRH/releases",
+      "latestReleaseUrl": "null",
+      "releaseDate": "No releases",
+      "color": "red",
+      "description": "A core plugin for modifying crystal mechanics in RusherHack.",
+      "creator": {
+        "name": "xyzbtw",
+        "url": "https://github.com/xyzbtw",
+        "avatarUrl": "https://github.com/xyzbtw.png?size=20"
+      },
+      "screenshots": []
+    },
+    {
+      "name": "Tablist Hats",
+      "url": "https://github.com/rfresh2/TablistHats-rusherhack",
+      "releaseUrl": "https://github.com/rfresh2/TablistHats-rusherhack/releases",
+      "latestReleaseUrl": "https://github.com/rfresh2/TablistHats-rusherhack/releases/download/1.0/TablistHats-1.0.jar",
+      "releaseDate": "2025-02-18",
+      "color": "green",
+      "description": "Enables hat layer rendering for player heads on the tablist, even if the player isn't in render distance.",
+      "creator": {
+        "name": "rfresh2",
+        "url": "https://github.com/rfresh2",
+        "avatarUrl": "https://github.com/rfresh2.png?size=20"
+      },
+      "screenshots": [
+        {
+          "type": "image",
+          "url": "https://i.imgur.com/HEfpmLw.png",
+          "alt": "Tablist Hats Example",
+          "width": 300
+        }
+      ]
     }
   ]
 }
