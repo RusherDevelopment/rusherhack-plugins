@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "totalPlugins": {
-    "message": "71",
+    "message": "73",
     "color": "green"
   },
   "totalThemes": {
@@ -1280,7 +1280,7 @@
       },
       "screenshots": []
     },
-    {
+{
       "name": "Tablist Hats",
       "url": "https://github.com/rfresh2/TablistHats-rusherhack",
       "releaseUrl": "https://github.com/rfresh2/TablistHats-rusherhack/releases",
@@ -1300,6 +1300,37 @@
           "alt": "Tablist Hats Example",
           "width": 300
         }
+      ]
+    },
+    {
+      "name": "NoSound",
+      "url": "https://github.com/John200410/nosound",
+      "releaseUrl": "https://github.com/John200410/nosound/releases",
+      "releaseDate": "N/A",
+      "color": "red",
+      "description": "A core plugin that disables specific in-game sounds in RusherHack.",
+      "creator": {
+        "name": "John200410",
+        "url": "https://github.com/John200410",
+        "avatarUrl": "https://github.com/John200410.png?size=20"
+      },
+      "screenshots": []
+    },
+    {
+      "name": "RusherHack Coord Spoofer",
+      "url": "https://github.com/kybe236/rusherhack-coord-spoofer",
+      "releaseUrl": "https://github.com/kybe236/rusherhack-coord-spoofer/releases",
+      "latestReleaseUrl": "https://github.com/kybe236/rusherhack-coord-spoofer/releases/download/1.21%2B/coord-spoofer-1.0.0.jar",
+      "releaseDate": "2025-02-20",
+      "color": "green",
+      "description": "A core plugin for spoofing player coordinates in RusherHack.",
+      "creator": {
+        "name": "kybe236",
+        "url": "https://github.com/kybe236",
+        "avatarUrl": "https://github.com/kybe236.png?size=20"
+      },
+      "screenshots": []
+      }
       ]
     }
   ]
