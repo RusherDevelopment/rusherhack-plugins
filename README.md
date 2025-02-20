@@ -19,8 +19,8 @@ This repository is a collection of third-party plugins developed for the RusherH
 - [Installation](#installation)
 - [Plugin Types](#plugin-types)
 - [Plugin Examples/Info](#plugin-examplesinfo)
-- [Plugins](#plugins)
 - [Themes](#themes)
+- [Plugins](#plugins)
 - [Reporting Issues](#reporting-issues)
 - [Contribute](#contribute)
 
@@ -77,7 +77,6 @@ Full list: **[Plugins](./PLUGINS.md)**
 Themes modify RusherHack’s appearance, changing colors, fonts, and UI elements.
 
 Full list: **[Themes](./THEMES.md)**
-
 
 ## Reporting Issues
 
