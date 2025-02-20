@@ -19,8 +19,8 @@ This repository is a collection of third-party plugins developed for the RusherH
 - [Installation](#installation)
 - [Plugin Types](#plugin-types)
 - [Plugin Examples/Info](#plugin-examplesinfo)
-- [Themes](#themes)
-- [Plugins](#plugins)
+- [Plugins](#plugins-list)
+- [Themes](#themes-list)
 - [Reporting Issues](#reporting-issues)
 - [Contribute](#contribute)
 
@@ -66,13 +66,13 @@ Here are some helpful resources and examples for developing RusherHack plugins:
 - [RusherGUI](https://github.com/xyzbtw/rusherGUI): An example plugin showcasing a custom theme with RusherHack.
 - [RusherHack API Javadocs](https://javadocs.rusherhack.org): The official documentation for RusherHack's API, providing detailed information on available classes, methods, and usage.
 
-## Plugins
+## Plugins List
 
 Community-created plugins to extend RusherHack’s functionality.
 
 Full list: **[Plugins](./PLUGINS.md)**
 
-## Themes
+## Themes List
 
 Themes modify RusherHack’s appearance, changing colors, fonts, and UI elements.
 
