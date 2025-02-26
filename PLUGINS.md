@@ -219,7 +219,7 @@ On GitHub, you can use the **Outline on the right side of this page** (on deskto
 
 - ### [Nuker](https://github.com/beanbag44/Nuker) <br>
 
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[13].releaseDate&label=Latest%20Release&color=green)](https://github.com/beanbag44/Nuker/releases) [![GitHub Downloads (all releases)](https://github.com/beanbag44/Nuker/releases/download/Release-2.0.0/nuker-1.20.4-2.0.0.jar)<br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[13].releaseDate&label=Latest%20Release&color=green)](https://github.com/beanbag44/Nuker/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/beanbag44/Nuker/total)](https://github.com/beanbag44/Nuker/releases)<br>
 
    **Creator**: <img src="https://github.com/beanbag44.png?size=20" width="20" height="20"> [beanbag44](https://github.com/beanbag44)
 
@@ -356,7 +356,7 @@ On GitHub, you can use the **Outline on the right side of this page** (on deskto
 
 - ### [GarlicSight](https://github.com/GarlicRot/GarlicSight) <br>
 
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[23].releaseDate&label=Latest%20Release&color=green)](https://github.com/GarlicRot/GarlicSight/releases) [![GitHub Downloads (all releases)](https://github.com/GarlicRot/GarlicSight/releases/download/v1.0.4/GarlicSight-1.20.4.jar)<br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[23].releaseDate&label=Latest%20Release&color=green)](https://github.com/GarlicRot/GarlicSight/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/GarlicRot/GarlicSight/total)](https://github.com/GarlicRot/GarlicSight/releases)<br>
 
    **Creator**: <img src="https://github.com/GarlicRot.png?size=20" width="20" height="20"> [GarlicRot](https://github.com/GarlicRot)
 
@@ -375,7 +375,7 @@ On GitHub, you can use the **Outline on the right side of this page** (on deskto
 
 - ### [LightningPop](https://github.com/GarlicRot/LightningPop) <br>
 
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[24].releaseDate&label=Latest%20Release&color=green)](https://github.com/GarlicRot/LightningPop/releases) [![GitHub Downloads (all releases)](https://github.com/GarlicRot/LightningPop/releases/download/v1.0.6/LightningPop-1.20.4.jar)<br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[24].releaseDate&label=Latest%20Release&color=green)](https://github.com/GarlicRot/LightningPop/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/GarlicRot/LightningPop/total)](https://github.com/GarlicRot/LightningPop/releases)<br>
 
    **Creator**: <img src="https://github.com/GarlicRot.png?size=20" width="20" height="20"> [GarlicRot](https://github.com/GarlicRot)
 
@@ -392,7 +392,7 @@ On GitHub, you can use the **Outline on the right side of this page** (on deskto
 
 - ### [AutoBucket](https://github.com/GarlicRot/AutoBucket) <br>
 
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[25].releaseDate&label=Latest%20Release&color=green)](https://github.com/GarlicRot/AutoBucket/releases) [![GitHub Downloads (all releases)](https://github.com/GarlicRot/AutoBucket/releases/download/v1.0.6/AutoBucket-1.20.4.jar)<br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[25].releaseDate&label=Latest%20Release&color=green)](https://github.com/GarlicRot/AutoBucket/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/GarlicRot/AutoBucket/total)](https://github.com/GarlicRot/AutoBucket/releases)<br>
 
    **Creator**: <img src="https://github.com/GarlicRot.png?size=20" width="20" height="20"> [GarlicRot](https://github.com/GarlicRot)
 
