@@ -948,5 +948,25 @@ On GitHub, you can use the **Outline on the right side of this page** (on deskto
 
    A core plugin for spoofing player coordinates in RusherHack.
 
+---
+
+- ### [Rusher Auto Item Frame Dupe](https://github.com/kybe236/rusher-auto-item-frame-dupe)
+
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[73].releaseDate&label=Latest%20Release&color=green)](https://github.com/kybe236/rusher-auto-item-frame-dupe/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/kybe236/rusher-auto-item-frame-dupe/total)](https://github.com/kybe236/rusher-auto-item-frame-dupe/releases/download/1.21%2B/auto-item-frame-dupe-1.0.0.jar)
+
+   **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
+
+   A plugin for automating item frame duplication in RusherHack.
+
+---
+
+- ### [RusherMoji](https://github.com/Lokfid/RusherMoji)
+
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[74].releaseDate&label=Latest%20Release&color=green)](https://github.com/Lokfid/RusherMoji/releases) ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/Lokfid/RusherMoji/total)](https://github.com/Lokfid/RusherMoji/releases/download/1.21%2B/rushermoji-1.0.0.jar)
+
+   **Creator**: <img src="https://github.com/Lokfid.png?size=20" width="20" height="20"> [Lokfid](https://github.com/Lokfid)
+
+   A core plugin for adding custom emoji functionality in RusherHack.
+
 [![Back to Top](https://img.shields.io/badge/↑-Back%20to%20Top-blue?style=flat)](#plugins-list)
 
