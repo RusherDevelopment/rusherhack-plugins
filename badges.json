@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "totalPlugins": {
-    "message": "73",
+    "message": "75",
     "color": "green"
   },
   "totalThemes": {
@@ -1332,4 +1332,34 @@
       "screenshots": []
       }
      ]
+    },
+    {
+      "name": "Rusher Auto Item Frame Dupe",
+      "url": "https://github.com/kybe236/rusher-auto-item-frame-dupe",
+      "releaseUrl": "https://github.com/kybe236/rusher-auto-item-frame-dupe/releases",
+      "latestReleaseUrl": "https://github.com/kybe236/rusher-auto-item-frame-dupe/releases/download/1.21%2B/auto-item-frame-dupe-1.0.0.jar",
+      "releaseDate": "2025-04-15",
+      "color": "green",
+      "description": "A plugin for automating item frame duplication in RusherHack.",
+      "creator": {
+        "name": "kybe236",
+        "url": "https://github.com/kybe236",
+        "avatarUrl": "https://github.com/kybe236.png?size=20"
+      },
+      "screenshots": []
+    },
+    {
+      "name": "RusherMoji",
+      "url": "https://github.com/Lokfid/RusherMoji",
+      "releaseUrl": "https://github.com/Lokfid/RusherMoji/releases",
+      "latestReleaseUrl": "https://github.com/Lokfid/RusherMoji/releases/download/1.21%2B/rushermoji-1.0.0.jar",
+      "releaseDate": "2025-04-15",
+      "color": "green",
+      "description": "A core plugin for adding custom emoji functionality in RusherHack.",
+      "creator": {
+        "name": "Lokfid",
+        "url": "https://github.com/Lokfid",
+        "avatarUrl": "https://github.com/Lokfid.png?size=20"
+      },
+      "screenshots": []
     }
