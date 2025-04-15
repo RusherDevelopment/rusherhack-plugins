@@ -63,6 +63,8 @@ Whether you're submitting a new plugin, fixing typos, or enhancing existing entr
    YOUR_PLUGIN_DESCRIPTION
 ```
 
+---
+
 ### README.md with Screenshots
 ```markdown
 - ### [PLUGIN_NAME](https://github.com/YOUR_USERNAME/YOUR_PLUGIN_REPO) <br>
@@ -79,6 +81,29 @@ Whether you're submitting a new plugin, fixing typos, or enhancing existing entr
    </p>
    </details>
 ```
+---
+
+### Core Plugin Badge
+
+If your plugin is a **Core Plugin**, add the following badge manually in the README entry after the release badge:
+
+`![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)`
+
+#### Example Core Plugin Entry
+
+```
+- ### [PLUGIN_NAME](https://github.com/YOUR_USERNAME/YOUR_PLUGIN_REPO)
+
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[PLUGIN_INDEX].releaseDate&label=Latest%20Release&color=BADGE_COLOR)](https://github.com/YOUR_USERNAME/YOUR_PLUGIN_REPO/releases) ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/YOUR_USERNAME/YOUR_PLUGIN_REPO/total)](https://github.com/YOUR_USERNAME/YOUR_PLUGIN_REPO/releases/download/LATEST_VERSION/YOUR_PLUGIN_NAME-LATEST_VERSION.jar)
+
+   **Creator**: <img src="https://github.com/YOUR_USERNAME.png?size=20" width="20" height="20"> [YOUR_USERNAME](https://github.com/YOUR_USERNAME)
+
+   YOUR_PLUGIN_DESCRIPTION
+```
+
+> **Note:** You do **not** need to modify the `badges.json` for core plugins. The badge is for display in the `README.md` only.
+
+---
 
 ### badges.json Plugin Example
 ```json
