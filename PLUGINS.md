@@ -31,7 +31,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraft�
 > [!WARNING]
 > Core plugins modify game internals, which may increase the risk of crashes or incompatibilities. Review the plugin’s documentation and ensure compatibility with your RusherHack version.
 
-## 📌 Finding Plugins
+## Finding Plugins
 
 > [!TIP]
 > Use the **Outline** on the right side of this page (on desktop) to quickly navigate to a specific plugin. Alternatively, press **Ctrl + F** to search for a plugin name directly.
