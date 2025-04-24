@@ -131,5 +131,5 @@ If you find any typos, incorrect information, or have suggestions for improvemen
 
 ---
 
-> [!INFO]  
+> [!NOTE]  
 > Providing detailed info will help us fix issues faster and keep the plugin list accurate.
