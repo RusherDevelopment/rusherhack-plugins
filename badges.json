@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "totalPlugins": {
-    "message": "75",
+    "message": "76",
     "color": "green"
   },
   "totalThemes": {
@@ -1358,6 +1358,21 @@
         "name": "Lokfid",
         "url": "https://github.com/Lokfid",
         "avatarUrl": "https://github.com/Lokfid.png?size=20"
+      },
+      "screenshots": []
+    },
+        {
+      "name": "RusherHack Piston Pusher",
+      "url": "https://github.com/kybe236/rusherhack-piston-pusher",
+      "releaseUrl": "https://github.com/kybe236/rusherhack-piston-pusher/releases",
+      "latestReleaseUrl": "https://github.com/kybe236/rusherhack-piston-pusher/releases/download/1.21%2B/rusherhack-piston-pusher-1.0.0.jar",
+      "releaseDate": "2025-04-23",
+      "color": "green",
+      "description": "A plugin that automates pushing end crystals with pistons to attack players in RusherHack.",
+      "creator": {
+        "name": "kybe236",
+        "url": "https://github.com/kybe236",
+        "avatarUrl": "https://github.com/kybe236.png?size=20"
       },
       "screenshots": []
     }
