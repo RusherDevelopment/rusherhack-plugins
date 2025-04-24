@@ -61,23 +61,18 @@ Whether you're submitting a new plugin, fixing typos, or enhancing existing entr
 - **CREATOR_URL**: Creator's GitHub URL  
 </details>
 
-### **PLUGINS.md Format**
-
-#### **Without Screenshots**
-```markdown
-- ### [PLUGIN_NAME](https://github.com/YOUR_USERNAME/YOUR_PLUGIN_REPO) <br>
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[PLUGIN_INDEX].releaseDate&label=Latest%20Release&color=BADGE_COLOR)](https://github.com/YOUR_USERNAME/YOUR_PLUGIN_REPO/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/YOUR_USERNAME/YOUR_PLUGIN_REPO/total)](https://github.com/YOUR_USERNAME/YOUR_PLUGIN_REPO/releases/download/LATEST_VERSION/YOUR_PLUGIN_NAME-LATEST_VERSION.jar) <br>
-   **Creator**: <img src="https://github.com/YOUR_USERNAME.png?size=20" width="20" height="20"> [YOUR_USERNAME](https://github.com/YOUR_USERNAME)
-
-   YOUR_PLUGIN_DESCRIPTION
-```
-
 ---
 
-### PLUGINS.md with Screenshots
+### **PLUGINS.md Format**
+
+#### **Plugin Entry (with or without Screenshots)**
+
 ```markdown
 - ### [PLUGIN_NAME](https://github.com/YOUR_USERNAME/YOUR_PLUGIN_REPO) <br>
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[PLUGIN_INDEX].releaseDate&label=Latest%20Release&color=BADGE_COLOR)](https://github.com/YOUR_USERNAME/YOUR_PLUGIN_REPO/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/YOUR_USERNAME/YOUR_PLUGIN_REPO/total)](https://github.com/YOUR_USERNAME/YOUR_PLUGIN_REPO/releases/download/LATEST_VERSION/YOUR_PLUGIN_NAME-LATEST_VERSION.jar) <br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[PLUGIN_INDEX].releaseDate&label=Latest%20Release&color=BADGE_COLOR)](https://github.com/YOUR_USERNAME/YOUR_PLUGIN_REPO/releases)
+   [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/YOUR_USERNAME/YOUR_PLUGIN_REPO/total)](https://github.com/YOUR_USERNAME/YOUR_PLUGIN_REPO/releases/download/LATEST_VERSION/YOUR_PLUGIN_NAME-LATEST_VERSION.jar)  
+   ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue) <!-- Only include this if it's a core plugin -->
+
    **Creator**: <img src="https://github.com/YOUR_USERNAME.png?size=20" width="20" height="20"> [YOUR_USERNAME](https://github.com/YOUR_USERNAME)
 
    YOUR_PLUGIN_DESCRIPTION
@@ -91,33 +86,14 @@ Whether you're submitting a new plugin, fixing typos, or enhancing existing entr
    </details>
 ```
 
----
-
-### Core Plugin Badge
-
-If your plugin is a **Core Plugin**, add this badge manually:
-
-```md
-![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)
-```
-
-#### Example Core Plugin Entry
-```markdown
-- ### [PLUGIN_NAME](https://github.com/YOUR_USERNAME/YOUR_PLUGIN_REPO)
-
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[PLUGIN_INDEX].releaseDate&label=Latest%20Release&color=BADGE_COLOR)](https://github.com/YOUR_USERNAME/YOUR_PLUGIN_REPO/releases) ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/YOUR_USERNAME/YOUR_PLUGIN_REPO/total)](https://github.com/YOUR_USERNAME/YOUR_PLUGIN_REPO/releases/download/LATEST_VERSION/YOUR_PLUGIN_NAME-LATEST_VERSION.jar)
-
-   **Creator**: <img src="https://github.com/YOUR_USERNAME.png?size=20" width="20" height="20"> [YOUR_USERNAME](https://github.com/YOUR_USERNAME)
-
-   YOUR_PLUGIN_DESCRIPTION
-```
-
-> [!IMPORTANT]  
-> You do **not** need to modify the `badges.json` for core plugins. This badge is for visual display in the `PLUGINS.md` only.
+> [!TIP]  
+> If your plugin is a **Core Plugin**, add the Core Plugin badge after the release badge like this:  
+> `![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)`
 
 ---
 
 ### badges.json Plugin Example
+
 ```json
 {
   "name": "PLUGIN_NAME",
@@ -153,7 +129,7 @@ If your plugin is a **Core Plugin**, add this badge manually:
 
 If you find any typos, incorrect information, or have suggestions for improvements, submit an issue using the [Plugin Information Issue](https://github.com/RusherDevelopment/rusherhack-plugins/issues/new?template=plugin-information-issue.md).
 
+---
 
 > [!INFO]  
 > Providing detailed info will help us fix issues faster and keep the plugin list accurate.
-
