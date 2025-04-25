@@ -68,7 +68,7 @@ Core plugins integrate deeply with RusherHack by modifying Minecraft’s interna
 - Must be placed in the `.minecraft/rusherhack/plugins/` folder before launching the game.
 
 > [!WARNING]
-> Core plugins modify game internals, which may increase the risk of crashes or incompatibilities. Ensure compatibility with your RusherHack version before use.
+> Core plugins modify game internals, which may increase the risk of crashes or incompatibilities. Ensure compatibility with your Plugin version before use.
 
 ## Plugin Examples/Info
 
