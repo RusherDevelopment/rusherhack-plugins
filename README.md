@@ -101,7 +101,7 @@ If you encounter issues with a specific plugin, contact the plugin’s creator o
 For issues with this repository (e.g., incorrect plugin details, broken links, or formatting errors), use the [Plugin Information Issue](https://github.com/RusherDevelopment/rusherhack-plugins/issues/new?assignees=&labels=&template=plugin-information-issue.md&title=%5BISSUE%5D) tracker.
 
 > [!NOTE]
-> Clearly describe the issue and include relevant details (e.g., plugin version, RusherHack version, or error logs) to help resolve problems faster.
+> Clearly describe the issue and include relevant details (e.g., plugin version or error logs) to help resolve problems faster.
 
 ## Contribute
 
