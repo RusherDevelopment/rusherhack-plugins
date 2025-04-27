@@ -1024,6 +1024,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
      </p>
    </details>
 
+---
 
 [![Back to Top](https://img.shields.io/badge/â†‘-Back%20to%20Top-blue?style=flat)](#plugins-list)
 
