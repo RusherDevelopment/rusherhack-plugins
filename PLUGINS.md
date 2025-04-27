@@ -51,6 +51,20 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 > [!NOTE]
 > The following plugins are community contributions. Always verify the source code and test plugins in a safe environment before using them in your main game.
 
+## Top 5 Downloaded Plugins
+
+<details>
+<summary>View Top 5 Plugins</summary>
+
+| Name | Creator | Description | Downloads |
+|------|---------|-------------|-----------|
+| [RusherHack Spotify Integration](https://github.com/John200410/rusherhack-spotify) | <img src="https://github.com/John200410.png" width="20" style="vertical-align: middle;"> John200410 | Integrates Spotify music playback controls and status into the RusherHacks client. | ![GitHub Downloads](https://img.shields.io/github/downloads/John200410/rusherhack-spotify/total) |
+| [Container Tweaks](https://github.com/rfresh2/ContainerTweaks-rusherhack) | <img src="https://github.com/rfresh2.png" width="20" style="vertical-align: middle;"> rfresh2 | Simple tweaks for quickly moving items in containers. | ![GitHub Downloads](https://img.shields.io/github/downloads/rfresh2/ContainerTweaks-rusherhack/total) |
+| [Shay's RusherTweaks](https://github.com/ShayBox/ShaysRusherTweaks) | <img src="https://github.com/ShayBox.png" width="20" style="vertical-align: middle;"> ShayBox | A collection of small tweaks and improvements for the RusherHacks client. | ![GitHub Downloads](https://img.shields.io/github/downloads/ShayBox/ShaysRusherTweaks/total) |
+| [Nuker](https://github.com/beanbag44/Nuker) | <img src="https://github.com/beanbag44.png" width="20" style="vertical-align: middle;"> beanbag44 | Epic nuker for nuking terrain. | ![GitHub Downloads](https://img.shields.io/github/downloads/beanbag44/Nuker/total) |
+| [RusherHack Instance Info](https://github.com/John200410/rusherhack-instance-info) | <img src="https://github.com/John200410.png" width="20" style="vertical-align: middle;"> John200410 | Provides detailed information about the current instance. | ![GitHub Downloads](https://img.shields.io/github/downloads/John200410/rusherhack-instance-info/total) |
+</details>
+
 ---
 
 - ### [Example Plugin](https://github.com/RusherDevelopment/example-plugin) <br>
