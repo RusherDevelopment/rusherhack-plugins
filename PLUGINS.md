@@ -1002,5 +1002,25 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
    A plugin that automates pushing end crystals with pistons to attack players in RusherHack.
 
+---
+
+- ### [RusherUtils](https://github.com/0tterware/RusherUtils)
+
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[76].releaseDate&label=Latest%20Release&color=green)](https://github.com/0tterware/RusherUtils/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/0tterware/RusherUtils/total)](https://github.com/0tterware/RusherUtils/releases/download/v1.0.0/RusherUtils-v1.0.0.jar)
+
+   **Creator**: <img src="https://github.com/0tterware.png?size=20" width="20" height="20"> [0tterware](https://github.com/0tterware)
+
+   RusherUtils automates Wither and TNT tasks with HUD counters for RusherHack.
+
+   <details>
+     <summary>Show Screenshots/Videos</summary>
+     <p align="center">
+       <a href="https://www.youtube.com/watch?v=yv-WR1HddAw">
+         <img src="https://img.youtube.com/vi/yv-WR1HddAw/0.jpg" alt="RusherUtils Demo">
+       </a>
+     </p>
+   </details>
+
+
 [![Back to Top](https://img.shields.io/badge/â†‘-Back%20to%20Top-blue?style=flat)](#plugins-list)
 
