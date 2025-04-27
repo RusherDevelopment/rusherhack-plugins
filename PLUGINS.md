@@ -31,25 +31,12 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 > [!WARNING]
 > Core plugins modify game internals, which may increase the risk of crashes or incompatibilities. Review the pluginâ€™s documentation and ensure compatibility with your RusherHack version.
 
-## Finding Plugins
-
-> [!TIP]
-> Use the **Outline** on the right side of this page (on desktop) to quickly navigate to a specific plugin. Alternatively, press **Ctrl + F** to search for a plugin name directly.
-
-> [!NOTE]
-> Check the pluginâ€™s repository for detailed installation instructions, compatibility details, and usage guides.
-
 ## Badge Info
 
 > [!TIP]
 > Badges provide quick access to plugin resources:
 > - **Latest Release**: Links to the pluginâ€™s releases page.
 > - **Downloads**: Directly downloads the latest plugin version.
-
-## Plugin List
-
-> [!NOTE]
-> The following plugins are community contributions. Always verify the source code and test plugins in a safe environment before using them in your main game.
 
 ## Top 5 Downloaded Plugins
 
@@ -65,7 +52,15 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 | [RusherHack Instance Info](https://github.com/John200410/rusherhack-instance-info) | <img src="https://github.com/John200410.png" width="20" style="vertical-align: middle;"> John200410 | Provides detailed information about the current instance. | ![GitHub Downloads](https://img.shields.io/github/downloads/John200410/rusherhack-instance-info/total) |
 </details>
 
+## Plugin List
+
+> [!NOTE]
+> The following plugins are community contributions. Always verify the source code and test plugins in a safe environment before using them in your main game.
+
 ---
+
+> [!TIP]
+> Use the **Outline** on the right side of this page to quickly navigate to a specific plugin. Alternatively, press **Ctrl + F** to search for a plugin name directly.
 
 - ### [Example Plugin](https://github.com/RusherDevelopment/example-plugin) <br>
 
