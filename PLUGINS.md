@@ -18,18 +18,12 @@ Regular plugins extend RusherHack’s functionality without modifying Minecraft'
 - Can be reloaded in-game using `*reload` in chat or `reload` in the RusherHack console (`~` key).
 - Can be added or removed from the `.minecraft/rusherhack/plugins/` folder while the game is running.
 
-> [!NOTE]
-> Regular plugins are ideal for adding features like UI enhancements or utility tools without altering core game mechanics.
-
 ## Core Plugins
 
 Core plugins provide deeper integration with RusherHack by modifying Minecraft’s internals using mixins. Key differences:
 
 - **Cannot be reloaded** using `*reload`.
 - Must be placed in the `.minecraft/rusherhack/plugins/` folder before launching the game.
-
-> [!WARNING]
-> Core plugins modify game internals, which may increase the risk of crashes or incompatibilities. Review the plugin’s documentation and ensure compatibility with your RusherHack version.
 
 ## Badge Info
 
@@ -57,10 +51,10 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraft�
 > [!NOTE]
 > The following plugins are community contributions. Always verify the source code and test plugins in a safe environment before using them in your main game.
 
----
-
 > [!TIP]
 > Use the **Outline** on the right side of this page to quickly navigate to a specific plugin. Alternatively, press **Ctrl + F** to search for a plugin name directly.
+
+---
 
 - ### [Example Plugin](https://github.com/RusherDevelopment/example-plugin) <br>
 
