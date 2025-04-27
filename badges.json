@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "totalPlugins": {
-    "message": "76",
+    "message": "77",
     "color": "green"
   },
   "totalThemes": {
@@ -1375,6 +1375,21 @@
         "avatarUrl": "https://github.com/kybe236.png?size=20"
       },
       "screenshots": []
-    }
+    },
+    {
+    "name": "RusherUtils",
+    "url": "https://github.com/0tterware/RusherUtils",
+    "releaseUrl": "https://github.com/0tterware/RusherUtils/releases",
+    "latestReleaseUrl": "https://github.com/0tterware/RusherUtils/releases/download/v1.0.0/RusherUtils-v1.0.0.jar",
+    "releaseDate": "2025-04-26",
+    "color": "green",
+    "description": "RusherUtils automates Wither and TNT tasks with HUD counters for RusherHack.",
+    "creator": {
+        "name": "0tterware",
+        "url": "https://github.com/0tterware",
+        "avatarUrl": "https://github.com/0tterware.png?size=20"
+    },
+    "screenshots": []
+   }
   ]
 }
