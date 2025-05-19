@@ -195,29 +195,29 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 ---
 
-- ### [RusherHack Spotify Integration](https://github.com/John200410/rusherhack-spotify) <br>
+- ### [RusherHack Spotify Integration](https://github.com/John200410/rusherhack-spotify) <br>  
 
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[9].releaseDate&label=Latest%20Release&color=green)](https://github.com/John200410/rusherhack-spotify/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/John200410/rusherhack-spotify/total)](https://github.com/John200410/rusherhack-spotify/releases/download/1.1.8/rusherhack-spotify-1.1.8.jar)<br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[9].releaseDate&label=Latest%20Release&color=green)](https://github.com/John200410/rusherhack-spotify/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/John200410/rusherhack-spotify/total)](https://github.com/John200410/rusherhack-spotify/releases/download/1.2.1/rusherhack-spotify-1.2.1.jar)<br>  
 
-   **Creator**: <img src="https://github.com/John200410.png?size=20" width="20" height="20"> [John200410](https://github.com/John200410)
+   **Creator**: <img src="https://github.com/John200410.png?size=20" width="20" height="20"> [John200410](https://github.com/John200410)  
 
-   Integrates Spotify music playback controls and status into the RusherHacks client.
+   Integrates Spotify music playback controls and status into the RusherHacks client.  
 
-   <details>
-     <summary>Show Screenshots</summary>
-     <p align="center">
-       <img src="./Assets/spotify/Module.png" alt="Module" border="0" width="250">
-       <img src="./Assets/spotify/HudElement.png" alt="Spotify Hud Element" border="0" width="450">
-     </p>
+   <details>  
+     <summary>Show Screenshots</summary>  
+     <p align="center">  
+       <img src="./Assets/spotify/Module.png" alt="Module" border="0" width="250">  
+       <img src="./Assets/spotify/HudElement.png" alt="Spotify Hud Element" border="0" width="450">  
+     </p>  
    </details>
 
 ---
 
-- ### [Vanilla Elytra Flight](https://github.com/FBanna/Rusherhack-Vanilla-Efly) <br>
+- ### [Vanilla Elytra Flight](https://github.com/FBanna/Rusherhack-Vanilla-Efly) <br>  
 
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[10].releaseDate&label=Latest%20Release&color=green)](https://github.com/FBanna/Rusherhack-Vanilla-Efly/releases) [![Download Latest Version](https://img.shields.io/github/downloads/FBanna/Rusherhack-Vanilla-Efly/total)](https://github.com/FBanna/Rusherhack-Vanilla-Efly/releases/download/2.1.2%2B1.21.1/FBanna.s-efly-1.21.1-2.1.2.jar)
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[10].releaseDate&label=Latest%20Release&color=green)](https://github.com/FBanna/Rusherhack-Vanilla-Efly/releases) [![Download Latest Version](https://img.shields.io/github/downloads/FBanna/Rusherhack-Vanilla-Efly/total)](https://github.com/FBanna/Rusherhack-Vanilla-Efly/releases/download/2.1.2%2B1.21.4/FBanna.s-efly-2.1.2.jar)  
 
-   **Creator**: <img src="https://github.com/FBanna.png?size=20" width="20" height="20"> [FBanna](https://github.com/FBanna)
+   **Creator**: <img src="https://github.com/FBanna.png?size=20" width="20" height="20"> [FBanna](https://github.com/FBanna)  
 
    Highly customizable rusher hack elytra flight plugin.
 
@@ -262,11 +262,11 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 ---
 
-- ### [Hold Rusher](https://github.com/cherosin/hold-rusher) <br>
+- ### [Hold Rusher](https://github.com/cherosin/hold-rusher) <br>  
 
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[14].releaseDate&label=Latest%20Release&color=green)](https://github.com/cherosin/hold-rusher/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/cherosin/hold-rusher/total)](https://github.com/cherosin/hold-rusher/releases/download/1.0.0/hold-rusher-1.0.0.jar)<br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[14].releaseDate&label=Latest%20Release&color=green)](https://github.com/cherosin/hold-rusher/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/cherosin/hold-rusher/total)](https://github.com/cherosin/hold-rusher/releases/download/1.0.1/hold-rusher-1.0.1.jar)<br>  
 
-   **Creator**: <img src="https://github.com/cherosin.png?size=20" width="20" height="20"> [cherosin](https://github.com/cherosin)
+   **Creator**: <img src="https://github.com/cherosin.png?size=20" width="20" height="20"> [cherosin](https://github.com/cherosin)  
 
    Adds a "Hold" flag for all modules, if active keybind will only be toggled while held.
 
@@ -332,21 +332,21 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 ---
 
-- ### [Mace Kill](https://github.com/kybe236/rusherhack-mace-kill) <br>
+- ### [Mace Kill](https://github.com/kybe236/rusherhack-mace-kill) <br>  
 
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[20].releaseDate&label=Latest%20Release&color=green)](https://github.com/kybe236/rusherhack-mace-kill/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/kybe236/rusherhack-mace-kill/total)](https://github.com/kybe236/rusherhack-mace-kill/releases/download/1.21.1%2C1.21/kybe-mace-killer-1.1.0.jar)<br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[20].releaseDate&label=Latest%20Release&color=green)](https://github.com/kybe236/rusherhack-mace-kill/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/kybe236/rusherhack-mace-kill/total)](https://github.com/kybe236/rusherhack-mace-kill/releases/download/1.21.4/mace-kill-1.0.0.jar)<br>  
 
-   **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
+   **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)  
 
-   One shot pretty much all mobs with a mace.
+   One shot pretty much all mobs with a mace.  
 
-   <details>
-     <summary>Show Screenshots/Videos</summary>
-     <p align="center">
-       <a href="https://www.youtube.com/watch?v=seP5OqcnFT4">
-         <img src="https://img.youtube.com/vi/seP5OqcnFT4/0.jpg" alt="Mace Kill Demo">
-       </a>
-     </p>
+   <details>  
+     <summary>Show Screenshots/Videos</summary>  
+     <p align="center">  
+       <a href="https://www.youtube.com/watch?v=seP5OqcnFT4">  
+         <img src="https://img.youtube.com/vi/seP5OqcnFT4/0.jpg" alt="Mace Kill Demo">  
+       </a>  
+     </p>  
    </details>
 
 ---
@@ -549,11 +549,11 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 ---
 
-- ### [RusherHack NoteBot](https://github.com/Lokfid/RusherHackNoteBot) <br>
+- ### [RusherHack NoteBot](https://github.com/Lokfid/RusherHackNoteBot) <br>  
 
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[34].releaseDate&label=Latest%20Release&color=green)](https://github.com/Lokfid/RusherHackNoteBot/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/Lokfid/RusherHackNoteBot/total)](https://github.com/Lokfid/RusherHackNoteBot/releases/latest/download/NoteBotPlugin-1.0.2.jar)<br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[34].releaseDate&label=Latest%20Release&color=green)](https://github.com/Lokfid/RusherHackNoteBot/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/Lokfid/RusherHackNoteBot/total)](https://github.com/Lokfid/RusherHackNoteBot/releases/download/1.0.3/NoteBotPlugin-1.0.3.jar)<br>  
 
-   **Creator**: <img src="https://github.com/Lokfid.png?size=20" width="20" height="20"> [Lokfid](https://github.com/Lokfid)
+   **Creator**: <img src="https://github.com/Lokfid.png?size=20" width="20" height="20"> [Lokfid](https://github.com/Lokfid)  
 
    A RusherHacks plugin for playing note blocks in Minecraft.
 
@@ -569,11 +569,11 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 ---
 
-- ### [RusherWebPlugin](https://github.com/Lokfid/RusherWebPlugin) <br>
+- ### [RusherWebPlugin](https://github.com/Lokfid/RusherWebPlugin) <br>  
 
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[36].releaseDate&label=Latest%20Release&color=green)](https://github.com/Lokfid/RusherWebPlugin/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/Lokfid/RusherWebPlugin/total)](https://github.com/Lokfid/RusherWebPlugin/releases/latest/download/web-1.1.1.jar)<br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[36].releaseDate&label=Latest%20Release&color=green)](https://github.com/Lokfid/RusherWebPlugin/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/Lokfid/RusherWebPlugin/total)](https://github.com/Lokfid/RusherWebPlugin/releases/download/1.2/web-1.2.jar)<br>  
 
-   **Creator**: <img src="https://github.com/Lokfid.png?size=20" width="20" height="20"> [Lokfid](https://github.com/Lokfid)
+   **Creator**: <img src="https://github.com/Lokfid.png?size=20" width="20" height="20"> [Lokfid](https://github.com/Lokfid)  
 
    Web Browser for rh.
 
@@ -677,11 +677,11 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 ---
 
-- ### [rusher-gtranslate](https://github.com/kybe236/rusher-gtranslate) <br>
+- ### [rusher-gtranslate](https://github.com/kybe236/rusher-gtranslate) <br>  
 
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[46].releaseDate&label=Latest%20Release&color=green)](https://github.com/kybe236/rusher-gtranslate/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/kybe236/rusher-gtranslate/total)](https://github.com/kybe236/rusher-gtranslate/releases/download/1.0.0/kybe-gtranslate-1.0.0.jar)<br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[46].releaseDate&label=Latest%20Release&color=green)](https://github.com/kybe236/rusher-gtranslate/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/kybe236/rusher-gtranslate/total)](https://github.com/kybe236/rusher-gtranslate/releases/download/2.0.0/gtranslate-v2-1.0.0.jar)<br>  
 
-   **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
+   **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)  
 
    A plugin that integrates Google Translate into RusherHack for translating chat messages.
 
@@ -695,10 +695,12 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 ---
 
-- ### [rusher-autoportal](https://github.com/kybe236/rusher-autoportal) <br>
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[48].releaseDate&label=Latest%20Release&color=green)](https://github.com/kybe236/rusher-autoportal/releases) ![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/kybe236/rusher-autoportal/total) <br>
-   **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
-  
+- ### [rusher-autoportal](https://github.com/kybe236/rusher-autoportal) <br>  
+
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[48].releaseDate&label=Latest%20Release&color=green)](https://github.com/kybe236/rusher-autoportal/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/kybe236/rusher-autoportal/total)](https://github.com/kybe236/rusher-autoportal/releases/download/1.20.6-1.21.1/kybe-portal-maker-1.0.0.jar)<br>  
+
+   **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)  
+
    Automatically breaks blocks to place obsidian and activate the nether portal.
 
 ---
@@ -976,52 +978,52 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 ---
 
-- ### [Rusher Auto Item Frame Dupe](https://github.com/kybe236/rusher-auto-item-frame-dupe)
+- ### [Rusher Auto Item Frame Dupe](https://github.com/kybe236/rusher-auto-item-frame-dupe)  
 
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[73].releaseDate&label=Latest%20Release&color=green)](https://github.com/kybe236/rusher-auto-item-frame-dupe/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/kybe236/rusher-auto-item-frame-dupe/total)](https://github.com/kybe236/rusher-auto-item-frame-dupe/releases/download/1.21%2B/auto-item-frame-dupe-1.0.0.jar)
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[73].releaseDate&label=Latest%20Release&color=green)](https://github.com/kybe236/rusher-auto-item-frame-dupe/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/kybe236/rusher-auto-item-frame-dupe/total)](https://github.com/kybe236/rusher-auto-item-frame-dupe/releases/download/1.21.1-1.21.4/rusher-auto-item-frame-dupe-1.0.0.jar)  
 
-   **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
+   **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)  
 
    A plugin for automating item frame duplication in RusherHack.
 
 ---
 
-- ### [RusherMoji](https://github.com/Lokfid/RusherMoji)
+- ### [RusherMoji](https://github.com/Lokfid/RusherMoji)  
 
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[74].releaseDate&label=Latest%20Release&color=green)](https://github.com/Lokfid/RusherMoji/releases) ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/Lokfid/RusherMoji/total)](https://github.com/Lokfid/RusherMoji/releases/download/1.21%2B/rushermoji-1.0.0.jar)
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[74].releaseDate&label=Latest%20Release&color=green)](https://github.com/Lokfid/RusherMoji/releases) ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/Lokfid/RusherMoji/total)](https://github.com/Lokfid/RusherMoji/releases/download/1.0.4/emoji-1.0.4.jar)  
 
-   **Creator**: <img src="https://github.com/Lokfid.png?size=20" width="20" height="20"> [Lokfid](https://github.com/Lokfid)
+   **Creator**: <img src="https://github.com/Lokfid.png?size=20" width="20" height="20"> [Lokfid](https://github.com/Lokfid)  
 
    A core plugin for adding custom emoji functionality in RusherHack.
 
 ---
 
 
-- ### [RusherHack Piston Pusher](https://github.com/kybe236/rusherhack-piston-pusher)
+- ### [RusherHack Piston Pusher](https://github.com/kybe236/rusherhack-piston-pusher)  
 
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[75].releaseDate&label=Latest%20Release&color=green)](https://github.com/kybe236/rusherhack-piston-pusher/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/kybe236/rusherhack-piston-pusher/total)](https://github.com/kybe236/rusherhack-piston-pusher/releases/download/1.21%2B/rusherhack-piston-pusher-1.0.0.jar)
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[75].releaseDate&label=Latest%20Release&color=green)](https://github.com/kybe236/rusherhack-piston-pusher/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/kybe236/rusherhack-piston-pusher/total)](https://github.com/kybe236/rusherhack-piston-pusher/releases/download/1.21.4/crystal-pusher-1.0.0.jar)  
 
-   **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)
+   **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)  
 
    A plugin that automates pushing end crystals with pistons to attack players in RusherHack.
 
 ---
 
-- ### [RusherUtils](https://github.com/0tterware/RusherUtils)
+- ### [RusherUtils](https://github.com/0tterware/RusherUtils)  
 
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[76].releaseDate&label=Latest%20Release&color=green)](https://github.com/0tterware/RusherUtils/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/0tterware/RusherUtils/total)](https://github.com/0tterware/RusherUtils/releases/download/v1.0.0/RusherUtils-v1.0.0.jar)
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[76].releaseDate&label=Latest%20Release&color=green)](https://github.com/0tterware/RusherUtils/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/0tterware/RusherUtils/total)](https://github.com/0tterware/RusherUtils/releases/download/v0.1/rusher-utils-0.1-1.21.4.jar)  
 
-   **Creator**: <img src="https://github.com/0tterware.png?size=20" width="20" height="20"> [0tterware](https://github.com/0tterware)
+   **Creator**: <img src="https://github.com/0tterware.png?size=20" width="20" height="20"> [0tterware](https://github.com/0tterware)  
 
-   RusherUtils automates Wither and TNT tasks with HUD counters for RusherHack.
+   RusherUtils automates Wither and TNT tasks with HUD counters for RusherHack.  
 
-   <details>
-     <summary>Show Screenshots/Videos</summary>
-     <p align="center">
-       <a href="https://www.youtube.com/watch?v=yv-WR1HddAw">
-         <img src="https://img.youtube.com/vi/yv-WR1HddAw/0.jpg" alt="RusherUtils Demo">
-       </a>
-     </p>
+   <details>  
+     <summary>Show Screenshots/Videos</summary>  
+     <p align="center">  
+       <a href="https://www.youtube.com/watch?v=yv-WR1HddAw">  
+         <img src="https://img.youtube.com/vi/yv-WR1HddAw/0.jpg" alt="RusherUtils Demo">  
+       </a>  
+     </p>  
    </details>
 
 ---
