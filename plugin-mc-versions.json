@@ -1,310 +1,708 @@
 [
   {
     "name": "Example Plugin",
-    "versions": []
+    "versions": [],
+    "badge_version": "N/A"
   },
   {
     "name": "2b2t.vc",
-    "versions": ["1.20.1", "1.20.2", "1.20.4", "1.20.6", "1.21", "1.21.1", "1.21.2", "1.21.3", "1.21.4"]
+    "versions": [
+      "1.20.1",
+      "1.20.2",
+      "1.20.4",
+      "1.20.6",
+      "1.21",
+      "1.21.1",
+      "1.21.2",
+      "1.21.3",
+      "1.21.4"
+    ],
+    "badge_version": "1.20.1-1.21.4"
   },
   {
     "name": "RusherHack-HudElement",
-    "versions": ["1.20.4", "1.21"]
+    "versions": [
+      "1.20.4",
+      "1.21"
+    ],
+    "badge_version": "1.20.4-1.21"
   },
   {
     "name": "Auto Anvil Rename",
-    "versions": ["1.20.1", "1.20.2", "1.20.3", "1.20.4", "1.21.1"]
+    "versions": [
+      "1.20.1",
+      "1.20.2",
+      "1.20.3",
+      "1.20.4",
+      "1.21.1"
+    ],
+    "badge_version": "1.20.1-1.21.1"
   },
   {
     "name": "Queue Manager",
-    "versions": ["1.20.1"]
+    "versions": [
+      "1.20.1"
+    ],
+    "badge_version": "1.20.1"
   },
   {
     "name": "RusherHack Instance Info",
-    "versions": ["1.20.1", "1.20.2", "1.20.3", "1.20.4", "1.20.5", "1.20.6", "1.21", "1.21.1", "1.21.2", "1.21.3", "1.21.4"]
+    "versions": [
+      "1.20.1",
+      "1.20.2",
+      "1.20.3",
+      "1.20.4",
+      "1.20.5",
+      "1.20.6",
+      "1.21",
+      "1.21.1",
+      "1.21.2",
+      "1.21.3",
+      "1.21.4"
+    ],
+    "badge_version": "1.20.1-1.21.4"
   },
   {
     "name": "Stash Mover Plugin",
-    "versions": ["1.20.1", "1.20.4", "1.20.6", "1.21", "1.21.1"]
+    "versions": [
+      "1.20.1",
+      "1.20.4",
+      "1.20.6",
+      "1.21",
+      "1.21.1"
+    ],
+    "badge_version": "1.20.1-1.21.1"
   },
   {
     "name": "Unified Module List",
-    "versions": ["1.20.2", "1.20.3", "1.20.4"]
+    "versions": [
+      "1.20.2",
+      "1.20.3",
+      "1.20.4"
+    ],
+    "badge_version": "1.20.2-1.20.4"
   },
   {
     "name": "Container Tweaks",
-    "versions": ["1.20.1", "1.20.2", "1.20.4", "1.20.6", "1.21", "1.21.1"]
+    "versions": [
+      "1.20.1",
+      "1.20.2",
+      "1.20.4",
+      "1.20.6",
+      "1.21",
+      "1.21.1"
+    ],
+    "badge_version": "1.20.1-1.21.1"
   },
   {
     "name": "RusherHack Spotify Integration",
-    "versions": ["1.20.1", "1.20.2", "1.20.3", "1.20.4", "1.20.5", "1.20.6", "1.21", "1.21.1", "1.21.2", "1.21.3", "1.21.4"]
+    "versions": [
+      "1.20.1",
+      "1.20.2",
+      "1.20.3",
+      "1.20.4",
+      "1.20.5",
+      "1.20.6",
+      "1.21",
+      "1.21.1",
+      "1.21.2",
+      "1.21.3",
+      "1.21.4"
+    ],
+    "badge_version": "1.20.1-1.21.4"
   },
   {
     "name": "Vanilla Elytra Flight",
-    "versions": ["1.21.4"]
+    "versions": [
+      "1.21.4"
+    ],
+    "badge_version": "1.21.4"
   },
   {
     "name": "Rusherhack BookBot",
-    "versions": ["1.20.1", "1.20.2", "1.20.3", "1.20.4", "1.20.5", "1.20.6", "1.21", "1.21.1", "1.21.2", "1.21.3", "1.21.4"]
+    "versions": [
+      "1.20.1",
+      "1.20.2",
+      "1.20.3",
+      "1.20.4",
+      "1.20.5",
+      "1.20.6",
+      "1.21",
+      "1.21.1",
+      "1.21.2",
+      "1.21.3",
+      "1.21.4"
+    ],
+    "badge_version": "1.20.1-1.21.4"
   },
   {
     "name": "Shay's RusherTweaks",
-    "versions": ["1.20.1", "1.20.2", "1.20.4", "1.20.6", "1.21"]
+    "versions": [
+      "1.20.1",
+      "1.20.2",
+      "1.20.4",
+      "1.20.6",
+      "1.21"
+    ],
+    "badge_version": "1.20.1-1.21"
   },
   {
     "name": "Nuker",
-    "versions": ["1.20.4"]
+    "versions": [
+      "1.20.4"
+    ],
+    "badge_version": "1.20.4"
   },
   {
     "name": "Hold Rusher",
-    "versions": ["1.20.1", "1.20.2", "1.20.3", "1.20.4", "1.20.5", "1.20.6", "1.21", "1.21.1"]
+    "versions": [
+      "1.20.1",
+      "1.20.2",
+      "1.20.3",
+      "1.20.4",
+      "1.20.5",
+      "1.20.6",
+      "1.21",
+      "1.21.1"
+    ],
+    "badge_version": "1.20.1-1.21.1"
   },
   {
     "name": "No Walk Animation",
-    "versions": ["1.20.4", "1.20.6", "1.21"]
+    "versions": [
+      "1.20.4",
+      "1.20.6",
+      "1.21"
+    ],
+    "badge_version": "1.20.4-1.21"
   },
   {
     "name": "NBT Utils",
-    "versions": ["1.20.4"]
+    "versions": [
+      "1.20.4"
+    ],
+    "badge_version": "1.20.4"
   },
   {
     "name": "Rusherhack Executer",
-    "versions": ["1.20.4"]
+    "versions": [
+      "1.20.4"
+    ],
+    "badge_version": "1.20.4"
   },
   {
     "name": "F3 Spoof",
-    "versions": ["1.20.4", "1.21"]
+    "versions": [
+      "1.20.4",
+      "1.21"
+    ],
+    "badge_version": "1.20.4-1.21"
   },
   {
     "name": "Open Folder",
-    "versions": ["1.21"]
+    "versions": [
+      "1.21"
+    ],
+    "badge_version": "1.21"
   },
   {
     "name": "Mace Kill",
-    "versions": ["1.21.4"]
+    "versions": [
+      "1.21.4"
+    ],
+    "badge_version": "1.21.4"
   },
   {
     "name": "Weather Changing Plugin",
-    "versions": ["1.20.4"]
+    "versions": [
+      "1.20.4"
+    ],
+    "badge_version": "1.20.4"
   },
   {
     "name": "Middleclick Wind Charge",
-    "versions": ["1.21"]
+    "versions": [
+      "1.21"
+    ],
+    "badge_version": "1.21"
   },
   {
     "name": "GarlicSight",
-    "versions": ["1.20.5", "1.20.6", "1.21", "1.21.1", "1.21.2", "1.21.3", "1.21.4"]
+    "versions": [
+      "1.20.5",
+      "1.20.6",
+      "1.21",
+      "1.21.1",
+      "1.21.2",
+      "1.21.3",
+      "1.21.4"
+    ],
+    "badge_version": "1.20.5-1.21.4"
   },
   {
     "name": "LightningPop",
-    "versions": ["1.20.5", "1.20.6", "1.21", "1.21.1", "1.21.2", "1.21.3", "1.21.4"]
+    "versions": [
+      "1.20.5",
+      "1.20.6",
+      "1.21",
+      "1.21.1",
+      "1.21.2",
+      "1.21.3",
+      "1.21.4"
+    ],
+    "badge_version": "1.20.5-1.21.4"
   },
   {
     "name": "AutoBucket",
-    "versions": ["1.20.5", "1.20.6", "1.21", "1.21.1", "1.21.2", "1.21.3", "1.21.4"]
+    "versions": [
+      "1.20.5",
+      "1.20.6",
+      "1.21",
+      "1.21.1",
+      "1.21.2",
+      "1.21.3",
+      "1.21.4"
+    ],
+    "badge_version": "1.20.5-1.21.4"
   },
   {
     "name": "RusherHack-BoatExecute",
-    "versions": ["1.20.4"]
+    "versions": [
+      "1.20.4"
+    ],
+    "badge_version": "1.20.4"
   },
   {
     "name": "NBT Viewer",
-    "versions": ["1.20.1", "1.20.2", "1.20.3", "1.20.4"]
+    "versions": [
+      "1.20.1",
+      "1.20.2",
+      "1.20.3",
+      "1.20.4"
+    ],
+    "badge_version": "1.20.1-1.20.4"
   },
   {
     "name": "Remote Control",
-    "versions": ["1.20.4"]
+    "versions": [
+      "1.20.4"
+    ],
+    "badge_version": "1.20.4"
   },
   {
     "name": "Speed Measure",
-    "versions": ["1.20.4"]
+    "versions": [
+      "1.20.4"
+    ],
+    "badge_version": "1.20.4"
   },
   {
     "name": "TNT Bomber",
-    "versions": ["1.20.4"]
+    "versions": [
+      "1.20.4"
+    ],
+    "badge_version": "1.20.4"
   },
   {
     "name": "No Render Entities",
-    "versions": ["1.20.1"]
+    "versions": [
+      "1.20.1"
+    ],
+    "badge_version": "1.20.1"
   },
   {
     "name": "RusherHack Messenger",
-    "versions": ["1.20.1", "1.20.2", "1.20.3", "1.20.4"]
+    "versions": [
+      "1.20.1",
+      "1.20.2",
+      "1.20.3",
+      "1.20.4"
+    ],
+    "badge_version": "1.20.1-1.20.4"
   },
   {
     "name": "RusherHack Instance Info (Fork)",
-    "versions": ["1.20.1", "1.20.2", "1.20.3", "1.20.4", "1.20.5", "1.20.6", "1.21"]
+    "versions": [
+      "1.20.1",
+      "1.20.2",
+      "1.20.3",
+      "1.20.4",
+      "1.20.5",
+      "1.20.6",
+      "1.21"
+    ],
+    "badge_version": "1.20.1-1.21"
   },
   {
     "name": "RusherHack NoteBot",
-    "versions": ["1.20.4", "1.21", "1.21.1", "1.21.4"]
+    "versions": [
+      "1.20.4",
+      "1.21",
+      "1.21.1",
+      "1.21.4"
+    ],
+    "badge_version": "1.20.4-1.21.4"
   },
   {
     "name": "ShulkerViewer",
-    "versions": ["1.20.1", "1.20.2", "1.20.4", "1.21", "1.21.1"]
+    "versions": [
+      "1.20.1",
+      "1.20.2",
+      "1.20.4",
+      "1.21",
+      "1.21.1"
+    ],
+    "badge_version": "1.20.1-1.21.1"
   },
   {
     "name": "RusherWebPlugin",
-    "versions": ["1.21", "1.20.1", "1.20.2", "1.20.3", "1.20.4", "1.20.5", "1.20.6", "1.21.1"]
+    "versions": [
+      "1.21",
+      "1.20.1",
+      "1.20.2",
+      "1.20.3",
+      "1.20.4",
+      "1.20.5",
+      "1.20.6",
+      "1.21.1"
+    ],
+    "badge_version": "1.20.1-1.21.1"
   },
   {
     "name": "UpdatedNCPEfly",
-    "versions": ["1.20.4", "1.20.6"]
+    "versions": [
+      "1.20.4",
+      "1.20.6"
+    ],
+    "badge_version": "1.20.4-1.20.6"
   },
   {
     "name": "dc-chat-logger",
-    "versions": ["1.21"]
+    "versions": [
+      "1.21"
+    ],
+    "badge_version": "1.21"
   },
   {
     "name": "rusherhack-nightvision-plugin",
-    "versions": ["1.21", "1.21.1"]
+    "versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "badge_version": "1.21-1.21.1"
   },
   {
     "name": "AutoNetherite",
-    "versions": ["1.20.4", "1.20.6", "1.21", "1.21.1"]
+    "versions": [
+      "1.20.4",
+      "1.20.6",
+      "1.21",
+      "1.21.1"
+    ],
+    "badge_version": "1.20.4-1.21.1"
   },
   {
     "name": "OldSignsPlugin",
-    "versions": ["1.20.4"]
+    "versions": [
+      "1.20.4"
+    ],
+    "badge_version": "1.20.4"
   },
   {
     "name": "StashHunter-rusherhack",
-    "versions": ["1.20.1", "1.20.2", "1.20.3", "1.20.4", "1.20.5", "1.20.6", "1.21", "1.21.1"]
+    "versions": [
+      "1.20.1",
+      "1.20.2",
+      "1.20.3",
+      "1.20.4",
+      "1.20.5",
+      "1.20.6",
+      "1.21",
+      "1.21.1"
+    ],
+    "badge_version": "1.20.1-1.21.1"
   },
   {
     "name": "rusher-elytra-eta",
-    "versions": ["1.21"]
+    "versions": [
+      "1.21"
+    ],
+    "badge_version": "1.21"
   },
   {
     "name": "rusher-silent-close",
-    "versions": ["1.21"]
+    "versions": [
+      "1.21"
+    ],
+    "badge_version": "1.21"
   },
   {
     "name": "rusherhack-addons",
-    "versions": ["1.20.4"]
+    "versions": [
+      "1.20.4"
+    ],
+    "badge_version": "1.20.4"
   },
   {
     "name": "rusher-gtranslate",
-    "versions": ["1.21.4"]
+    "versions": [
+      "1.21.4"
+    ],
+    "badge_version": "1.21.4"
   },
   {
     "name": "rusher-matrix-nofall",
-    "versions": ["1.21"]
+    "versions": [
+      "1.21"
+    ],
+    "badge_version": "1.21"
   },
   {
     "name": "rusher-autoportal",
-    "versions": ["1.21", "1.21.1", "1.20.4", "1.20.6"]
+    "versions": [
+      "1.21",
+      "1.21.1",
+      "1.20.4",
+      "1.20.6"
+    ],
+    "badge_version": "1.20.4-1.21.1"
   },
   {
     "name": "rusher-air-place",
-    "versions": ["1.21.1", "1.21", "1.20.4", "1.20.2", "1.20.1"]
+    "versions": [
+      "1.21.1",
+      "1.21",
+      "1.20.4",
+      "1.20.2",
+      "1.20.1"
+    ],
+    "badge_version": "1.20.1-1.21.1"
   },
   {
     "name": "rusher-hold-spamm-space",
-    "versions": ["1.21", "1.21.1"]
+    "versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "badge_version": "1.21-1.21.1"
   },
   {
     "name": "rusher-auto-bed-bomber",
-    "versions": ["1.21"]
+    "versions": [
+      "1.21"
+    ],
+    "badge_version": "1.21"
   },
   {
     "name": "rusher-crystal-spin",
-    "versions": ["1.21"]
+    "versions": [
+      "1.21"
+    ],
+    "badge_version": "1.21"
   },
   {
     "name": "AutoShear",
-    "versions": ["1.21", "1.21.1"]
+    "versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "badge_version": "1.21-1.21.1"
   },
   {
     "name": "Rusher2b2tVelocity",
-    "versions": ["1.20.4"]
+    "versions": [
+      "1.20.4"
+    ],
+    "badge_version": "1.20.4"
   },
   {
     "name": "rusher-autokit",
-    "versions": ["1.20.4"]
+    "versions": [
+      "1.20.4"
+    ],
+    "badge_version": "1.20.4"
   },
   {
     "name": "AutoTorch",
-    "versions": ["1.20.1"]
+    "versions": [
+      "1.20.1"
+    ],
+    "badge_version": "1.20.1"
   },
   {
     "name": "Elytra Swap",
-    "versions": ["1.20.4", "1.21"]
+    "versions": [
+      "1.20.4",
+      "1.21"
+    ],
+    "badge_version": "1.20.4-1.21"
   },
   {
     "name": "HDisabler",
-    "versions": ["1.21.1", "1.21.2", "1.21.3"]
+    "versions": [
+      "1.21.1",
+      "1.21.2",
+      "1.21.3"
+    ],
+    "badge_version": "1.21.1-1.21.3"
   },
   {
     "name": "CoordFollower",
-    "versions": ["1.20.4"]
+    "versions": [
+      "1.20.4"
+    ],
+    "badge_version": "1.20.4"
   },
   {
     "name": "Rusher Chess TUI",
-    "versions": ["1.20.1", "1.20.2", "1.20.4"]
+    "versions": [
+      "1.20.1",
+      "1.20.2",
+      "1.20.4"
+    ],
+    "badge_version": "1.20.1-1.20.4"
   },
   {
     "name": "ActivatedSpawnerDetector",
-    "versions": ["1.21", "1.21.1"]
+    "versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "badge_version": "1.21-1.21.1"
   },
   {
     "name": "Rusher Discord Notifications",
-    "versions": ["1.20.1"]
+    "versions": [
+      "1.20.1"
+    ],
+    "badge_version": "1.20.1"
   },
   {
     "name": "AutoBonemeal",
-    "versions": ["1.20.4"]
+    "versions": [
+      "1.20.4"
+    ],
+    "badge_version": "1.20.4"
   },
   {
     "name": "Rocket3",
-    "versions": ["1.20.1", "1.20.4", "1.20.6"]
+    "versions": [
+      "1.20.1",
+      "1.20.4",
+      "1.20.6"
+    ],
+    "badge_version": "1.20.1-1.20.6"
   },
   {
     "name": "GarlicBreeder",
-    "versions": ["1.20.4"]
+    "versions": [
+      "1.20.4"
+    ],
+    "badge_version": "1.20.4"
   },
   {
     "name": "Rusher Item Saver",
-    "versions": ["1.21.1", "1.21.2", "1.21.3", "1.21.4"]
+    "versions": [
+      "1.21.1",
+      "1.21.2",
+      "1.21.3",
+      "1.21.4"
+    ],
+    "badge_version": "1.21.1-1.21.4"
   },
   {
     "name": "RusherHack Mace Swap",
-    "versions": ["1.21.1", "1.21.2", "1.21.3", "1.21.4"]
+    "versions": [
+      "1.21.1",
+      "1.21.2",
+      "1.21.3",
+      "1.21.4"
+    ],
+    "badge_version": "1.21.1-1.21.4"
   },
   {
     "name": "Example Core Plugin",
-    "versions": []
+    "versions": [],
+    "badge_version": "N/A"
   },
   {
     "name": "CrystalModifierRH",
-    "versions": ["1.21.1"]
+    "versions": [
+      "1.21.1"
+    ],
+    "badge_version": "1.21.1"
   },
   {
     "name": "Tablist Hats",
-    "versions": ["1.20.1", "1.20.2", "1.20.4", "1.20.6", "1.21", "1.21.1", "1.21.4"]
+    "versions": [
+      "1.20.1",
+      "1.20.2",
+      "1.20.4",
+      "1.20.6",
+      "1.21",
+      "1.21.1",
+      "1.21.4"
+    ],
+    "badge_version": "1.20.1-1.21.4"
   },
   {
     "name": "NoSound",
-    "versions": ["1.20.1", "1.20.2", "1.20.3", "1.20.4", "1.20.5", "1.20.6", "1.21", "1.21.1"]
+    "versions": [
+      "1.20.1",
+      "1.20.2",
+      "1.20.3",
+      "1.20.4",
+      "1.20.5",
+      "1.20.6",
+      "1.21",
+      "1.21.1"
+    ],
+    "badge_version": "1.20.1-1.21.1"
   },
   {
     "name": "RusherHack Coord Spoofer",
-    "versions": ["1.21.2", "1.21.3", "1.21.4"]
+    "versions": [
+      "1.21.2",
+      "1.21.3",
+      "1.21.4"
+    ],
+    "badge_version": "1.21.2-1.21.4"
   },
   {
     "name": "Rusher Auto Item Frame Dupe",
-    "versions": ["1.21.4", "1.21.3", "1.21.2", "1.21.1"]
+    "versions": [
+      "1.21.4",
+      "1.21.3",
+      "1.21.2",
+      "1.21.1"
+    ],
+    "badge_version": "1.21.1-1.21.4"
   },
   {
     "name": "RusherMoji",
-    "versions": ["1.20.4"]
+    "versions": [
+      "1.20.4"
+    ],
+    "badge_version": "1.20.4"
   },
   {
     "name": "RusherHack Piston Pusher",
-    "versions": ["1.21.4"]
+    "versions": [
+      "1.21.4"
+    ],
+    "badge_version": "1.21.4"
   },
   {
     "name": "RusherUtils",
-    "versions": ["1.20.1", "1.20.2", "1.20.4", "1.20.6", "1.21", "1.21.1", "1.21.4"]
+    "versions": [
+      "1.20.1",
+      "1.20.2",
+      "1.20.4",
+      "1.20.6",
+      "1.21",
+      "1.21.1",
+      "1.21.4"
+    ],
+    "badge_version": "1.20.1-1.21.4"
   }
 ]
