@@ -1,402 +1,310 @@
-{
-  "Example Plugin": [],
-  "2b2t.vc": [
-    "1.20.1",
-    "1.20.2",
-    "1.20.4",
-    "1.20.6",
-    "1.21",
-    "1.21.1",
-    "1.21.2",
-    "1.21.3",
-    "1.21.4"
-  ],
-  "RusherHack-HudElement": [
-    "1.20.4",
-    "1.21"
-  ],
-  "Auto Anvil Rename": [
-    "1.20.1",
-    "1.20.2",
-    "1.20.3",
-    "1.20.4",
-    "1.21.1"
-  ],
-  "Queue Manager": [
-    "1.20.1"
-  ],
-  "RusherHack Instance Info": [
-    "1.20.1",
-    "1.20.2",
-    "1.20.3",
-    "1.20.4",
-    "1.20.5",
-    "1.20.6",
-    "1.21",
-    "1.21.1",
-    "1.21.2",
-    "1.21.3",
-    "1.21.4"
-  ],
-  "Stash Mover Plugin": [
-    "1.20.1",
-    "1.20.4",
-    "1.20.6",
-    "1.21",
-    "1.21.1"
-  ],
-  "Unified Module List": [
-    "1.20.2",
-    "1.20.3",
-    "1.20.4"
-      ],
-  "Container Tweaks": [
-    "1.20.1",
-    "1.20.2",
-    "1.20.4",
-    "1.20.6",
-    "1.21",
-    "1.21.1"
-  ],
-  "RusherHack Spotify Integration": [
-    "1.20.1",
-    "1.20.2",
-    "1.20.3",
-    "1.20.4",
-    "1.20.5",
-    "1.20.6",
-    "1.21",
-    "1.21.1",
-    "1.21.2",
-    "1.21.3",
-    "1.21.4"
-      ],
-  "Vanilla Elytra Flight": [
-      "1.21.4"
-      ],
-  "Rusherhack BookBot": [
-    "1.20.1",
-    "1.20.2",
-    "1.20.3",
-    "1.20.4",
-    "1.20.5",
-    "1.20.6",
-    "1.21",
-    "1.21.1",
-    "1.21.2",
-    "1.21.3",
-    "1.21.4"
-      ],
-  "Shay's RusherTweaks": [
-    "1.20.1",
-    "1.20.2",
-    "1.20.4",
-    "1.20.6",
-    "1.21",
-      ],
-  "Nuker": [
-      "1.20.4"
-      ],
-  "Hold Rusher": [
-    "1.20.1",
-    "1.20.2",
-    "1.20.3",
-    "1.20.4",
-    "1.20.5",
-    "1.20.6",
-    "1.21",
-    "1.21.1"
-      ],
-  "No Walk Animation": [
-    "1.20.4",
-    "1.20.6",
-    "1.21"
-      ],
-  "NBT Utils": [
-      "1.20.4"
-      ],
-  "Rusherhack Executer": [
-      "1.20.4"
-      ],
-  "F3 Spoof": [
-    "1.20.4",
-    "1.21"
-      ],
-  "Open Folder": [
-      "1.21"
-      ],
-  "Mace Kill": [
-      "1.21.4"
-      ],
-  "Weather Changing Plugin": [
-      "1.20.4"
-      ],
-  "Middleclick Wind Charge": [
-      "1.21"
-      ],
-  "GarlicSight": [
-    "1.20.5",
-    "1.20.6",
-    "1.21",
-    "1.21.1",
-    "1.21.2",
-    "1.21.3",
-    "1.21.4"
-      ],
-  "LightningPop": [
-    "1.20.5",
-    "1.20.6",
-    "1.21",
-    "1.21.1",
-    "1.21.2",
-    "1.21.3",
-    "1.21.4"
-      ],
-  "AutoBucket": [
-    "1.20.5",
-    "1.20.6",
-    "1.21",
-    "1.21.1",
-    "1.21.2",
-    "1.21.3",
-    "1.21.4"
-      ],
-  "RusherHack-BoatExecute": [
-      "1.20.4"
-      ],
-  "NBT Viewer": [
-    "1.20.1",
-    "1.20.2",
-    "1.20.3",
-    "1.20.4"
-      ],
-  "Remote Control": [
-      "1.20.4"
-      ],
-  "Speed Measure": [
-      "1.20.4"
-      ],
-  "TNT Bomber": [
-      "1.20.4"
-      ],
-  "No Render Entities": [
-      "1.20.1"
-      ],
-  "RusherHack Messenger": [
-    "1.20.1",
-    "1.20.2",
-    "1.20.3",
-    "1.20.4""
-      ],
-  "RusherHack Instance Info (Fork)": [
-    "1.20.1",
-    "1.20.2",
-    "1.20.3",
-    "1.20.4",
-    "1.20.5",
-    "1.20.6",
-    "1.21"
-      ],
-  "RusherHack NoteBot": [
-    "1.20.4",
-    "1.21",
-    "1.21.1",
-    "1.21.4"
-      ],
-  "ShulkerViewer": [
-    "1.20.1",
-    "1.20.2",
-    "1.20.4",
-    "1.21.1",
-    "1.21"
-      ],
-  "RusherWebPlugin": [
-    "1.21",
-    "1.20.1",
-    "1.20.2",
-    "1.20.3",
-    "1.20.4",
-    "1.20.5",
-    "1.20.6",
-    "1.21.1"
-      ],
-  "UpdatedNCPEfly": [
-    "1.20.4",
-    "1.20.6"
-      ],
-  "dc-chat-logger": [
-      "1.21"
-      ],
-  "rusherhack-nightvision-plugin": [
-    "1.21",
-    "1.21.1"
-      ],
-  "AutoNetherite": [
-    "1.20.4",
-    "1.20.6",
-    "1.21",
-    "1.21.1"
-      ],
-  "OldSignsPlugin": [
-      "1.20.4"
-      ],
-  "StashHunter-rusherhack": [
-    "1.20.1",
-    "1.20.2",
-    "1.20.3",
-    "1.20.4",
-    "1.20.5",
-    "1.20.6",
-    "1.21",
-    "1.21.1"
-      ],
-  "rusher-elytra-eta": [
-      "1.21"
-      ],
-  "rusher-silent-close": [
-      "1.21"
-      ],
-  "rusherhack-addons": [
-      "1.20.4"
-      ],
-  "rusher-gtranslate": [
-      "1.21.4"
-      ],
-  "rusher-matrix-nofall": [
-      "1.21"
-      ],
-  "rusher-autoportal": [
-    "1.21",
-    "1.21.1",
-    "1.20.4",
-    "1.20.6"
-      ],
-  "rusher-air-place": [
-    "1.21.1",
-    "1.21",
-    "1.20.4",
-    "1.20.2",
-    "1.20.1"
-      ],
-  "rusher-hold-spamm-space": [
-    "1.21",
-    "1.21.1"
-      ],
-  "rusher-auto-bed-bomber": [
-      "1.21"
-      ],
-  "rusher-crystal-spin": [
-      "1.21"
-      ],
-  "AutoShear": [
-    "1.21",
-    "1.21.1"
-      ],
-  "Rusher2b2tVelocity": [
-      "1.20.4"
-      ],
-  "rusher-autokit": [
-      "1.20.4"
-      ],
-  "AutoTorch": [
-      "1.20.1"
-      ],
-  "Elytra Swap": [
-    "1.20.4",
-    "1.21"
-      ],
-  "HDisabler": [
-    "1.21.1",
-    "1.21.2",
-    "1.21.3"
-      ],
-  "CoordFollower": [
-      "1.20.4"
-      ],
-  "Rusher Chess TUI": [
-    "1.20.1",
-    "1.20.2",
-    "1.20.4"
-      ],
-  "ActivatedSpawnerDetector": [
-    "1.21",
-    "1.21.1"
-      ],
-  "Rusher Discord Notifications": [
-      "1.20.1"
-      ],
-  "AutoBonemeal": [
-      "1.20.4"
-      ],
-  "Rocket3": [
-    "1.20.1",
-    "1.20.4",
-    "1.20.6"
-      ],
-  "GarlicBreeder": [
-      "1.20.4"
-      ],
-  "Rusher Item Saver": [
-    "1.21.1",
-    "1.21.2",
-    "1.21.3",
-    "1.21.4"
-      ],
-  "RusherHack Mace Swap": [
-    "1.21.1",
-    "1.21.2",
-    "1.21.3",
-    "1.21.4"
-      ],
-  "Example Core Plugin": [
-      
-      ],
-  "CrystalModifierRH": [
-      "1.21.1"
-      ],
-  "Tablist Hats": [
-    "1.20.1",
-    "1.20.2",
-    "1.20.4",
-    "1.20.6",
-    "1.21",
-    "1.21.1",
-    "1.21.4"
-      ],
-  "NoSound": [
-    "1.20.1",
-    "1.20.2",
-    "1.20.3",
-    "1.20.4",
-    "1.20.5",
-    "1.20.6",
-    "1.21",
-    "1.21.1"
-      ],
-  "RusherHack Coord Spoofer": [
-    "1.21.2",
-    "1.21.3",
-    "1.21.4"
-      ],
-  "Rusher Auto Item Frame Dupe": [
-      "1.21.4"
-    "1.21.3",
-    "1.21.2",
-    "1.21.1"
-      ],
-  "RusherMoji": [
-      "1.20.4"
-      ],
-  "RusherHack Piston Pusher": [
-      "1.21.4"
-      ],
-  "RusherUtils": [
-    "1.20.1",
-    "1.20.2",
-    "1.20.4",
-    "1.20.6",
-    "1.21",
-    "1.21.1",
-    "1.21.4"
-      ]
-}
+[
+  {
+    "name": "Example Plugin",
+    "versions": []
+  },
+  {
+    "name": "2b2t.vc",
+    "versions": ["1.20.1", "1.20.2", "1.20.4", "1.20.6", "1.21", "1.21.1", "1.21.2", "1.21.3", "1.21.4"]
+  },
+  {
+    "name": "RusherHack-HudElement",
+    "versions": ["1.20.4", "1.21"]
+  },
+  {
+    "name": "Auto Anvil Rename",
+    "versions": ["1.20.1", "1.20.2", "1.20.3", "1.20.4", "1.21.1"]
+  },
+  {
+    "name": "Queue Manager",
+    "versions": ["1.20.1"]
+  },
+  {
+    "name": "RusherHack Instance Info",
+    "versions": ["1.20.1", "1.20.2", "1.20.3", "1.20.4", "1.20.5", "1.20.6", "1.21", "1.21.1", "1.21.2", "1.21.3", "1.21.4"]
+  },
+  {
+    "name": "Stash Mover Plugin",
+    "versions": ["1.20.1", "1.20.4", "1.20.6", "1.21", "1.21.1"]
+  },
+  {
+    "name": "Unified Module List",
+    "versions": ["1.20.2", "1.20.3", "1.20.4"]
+  },
+  {
+    "name": "Container Tweaks",
+    "versions": ["1.20.1", "1.20.2", "1.20.4", "1.20.6", "1.21", "1.21.1"]
+  },
+  {
+    "name": "RusherHack Spotify Integration",
+    "versions": ["1.20.1", "1.20.2", "1.20.3", "1.20.4", "1.20.5", "1.20.6", "1.21", "1.21.1", "1.21.2", "1.21.3", "1.21.4"]
+  },
+  {
+    "name": "Vanilla Elytra Flight",
+    "versions": ["1.21.4"]
+  },
+  {
+    "name": "Rusherhack BookBot",
+    "versions": ["1.20.1", "1.20.2", "1.20.3", "1.20.4", "1.20.5", "1.20.6", "1.21", "1.21.1", "1.21.2", "1.21.3", "1.21.4"]
+  },
+  {
+    "name": "Shay's RusherTweaks",
+    "versions": ["1.20.1", "1.20.2", "1.20.4", "1.20.6", "1.21"]
+  },
+  {
+    "name": "Nuker",
+    "versions": ["1.20.4"]
+  },
+  {
+    "name": "Hold Rusher",
+    "versions": ["1.20.1", "1.20.2", "1.20.3", "1.20.4", "1.20.5", "1.20.6", "1.21", "1.21.1"]
+  },
+  {
+    "name": "No Walk Animation",
+    "versions": ["1.20.4", "1.20.6", "1.21"]
+  },
+  {
+    "name": "NBT Utils",
+    "versions": ["1.20.4"]
+  },
+  {
+    "name": "Rusherhack Executer",
+    "versions": ["1.20.4"]
+  },
+  {
+    "name": "F3 Spoof",
+    "versions": ["1.20.4", "1.21"]
+  },
+  {
+    "name": "Open Folder",
+    "versions": ["1.21"]
+  },
+  {
+    "name": "Mace Kill",
+    "versions": ["1.21.4"]
+  },
+  {
+    "name": "Weather Changing Plugin",
+    "versions": ["1.20.4"]
+  },
+  {
+    "name": "Middleclick Wind Charge",
+    "versions": ["1.21"]
+  },
+  {
+    "name": "GarlicSight",
+    "versions": ["1.20.5", "1.20.6", "1.21", "1.21.1", "1.21.2", "1.21.3", "1.21.4"]
+  },
+  {
+    "name": "LightningPop",
+    "versions": ["1.20.5", "1.20.6", "1.21", "1.21.1", "1.21.2", "1.21.3", "1.21.4"]
+  },
+  {
+    "name": "AutoBucket",
+    "versions": ["1.20.5", "1.20.6", "1.21", "1.21.1", "1.21.2", "1.21.3", "1.21.4"]
+  },
+  {
+    "name": "RusherHack-BoatExecute",
+    "versions": ["1.20.4"]
+  },
+  {
+    "name": "NBT Viewer",
+    "versions": ["1.20.1", "1.20.2", "1.20.3", "1.20.4"]
+  },
+  {
+    "name": "Remote Control",
+    "versions": ["1.20.4"]
+  },
+  {
+    "name": "Speed Measure",
+    "versions": ["1.20.4"]
+  },
+  {
+    "name": "TNT Bomber",
+    "versions": ["1.20.4"]
+  },
+  {
+    "name": "No Render Entities",
+    "versions": ["1.20.1"]
+  },
+  {
+    "name": "RusherHack Messenger",
+    "versions": ["1.20.1", "1.20.2", "1.20.3", "1.20.4"]
+  },
+  {
+    "name": "RusherHack Instance Info (Fork)",
+    "versions": ["1.20.1", "1.20.2", "1.20.3", "1.20.4", "1.20.5", "1.20.6", "1.21"]
+  },
+  {
+    "name": "RusherHack NoteBot",
+    "versions": ["1.20.4", "1.21", "1.21.1", "1.21.4"]
+  },
+  {
+    "name": "ShulkerViewer",
+    "versions": ["1.20.1", "1.20.2", "1.20.4", "1.21", "1.21.1"]
+  },
+  {
+    "name": "RusherWebPlugin",
+    "versions": ["1.21", "1.20.1", "1.20.2", "1.20.3", "1.20.4", "1.20.5", "1.20.6", "1.21.1"]
+  },
+  {
+    "name": "UpdatedNCPEfly",
+    "versions": ["1.20.4", "1.20.6"]
+  },
+  {
+    "name": "dc-chat-logger",
+    "versions": ["1.21"]
+  },
+  {
+    "name": "rusherhack-nightvision-plugin",
+    "versions": ["1.21", "1.21.1"]
+  },
+  {
+    "name": "AutoNetherite",
+    "versions": ["1.20.4", "1.20.6", "1.21", "1.21.1"]
+  },
+  {
+    "name": "OldSignsPlugin",
+    "versions": ["1.20.4"]
+  },
+  {
+    "name": "StashHunter-rusherhack",
+    "versions": ["1.20.1", "1.20.2", "1.20.3", "1.20.4", "1.20.5", "1.20.6", "1.21", "1.21.1"]
+  },
+  {
+    "name": "rusher-elytra-eta",
+    "versions": ["1.21"]
+  },
+  {
+    "name": "rusher-silent-close",
+    "versions": ["1.21"]
+  },
+  {
+    "name": "rusherhack-addons",
+    "versions": ["1.20.4"]
+  },
+  {
+    "name": "rusher-gtranslate",
+    "versions": ["1.21.4"]
+  },
+  {
+    "name": "rusher-matrix-nofall",
+    "versions": ["1.21"]
+  },
+  {
+    "name": "rusher-autoportal",
+    "versions": ["1.21", "1.21.1", "1.20.4", "1.20.6"]
+  },
+  {
+    "name": "rusher-air-place",
+    "versions": ["1.21.1", "1.21", "1.20.4", "1.20.2", "1.20.1"]
+  },
+  {
+    "name": "rusher-hold-spamm-space",
+    "versions": ["1.21", "1.21.1"]
+  },
+  {
+    "name": "rusher-auto-bed-bomber",
+    "versions": ["1.21"]
+  },
+  {
+    "name": "rusher-crystal-spin",
+    "versions": ["1.21"]
+  },
+  {
+    "name": "AutoShear",
+    "versions": ["1.21", "1.21.1"]
+  },
+  {
+    "name": "Rusher2b2tVelocity",
+    "versions": ["1.20.4"]
+  },
+  {
+    "name": "rusher-autokit",
+    "versions": ["1.20.4"]
+  },
+  {
+    "name": "AutoTorch",
+    "versions": ["1.20.1"]
+  },
+  {
+    "name": "Elytra Swap",
+    "versions": ["1.20.4", "1.21"]
+  },
+  {
+    "name": "HDisabler",
+    "versions": ["1.21.1", "1.21.2", "1.21.3"]
+  },
+  {
+    "name": "CoordFollower",
+    "versions": ["1.20.4"]
+  },
+  {
+    "name": "Rusher Chess TUI",
+    "versions": ["1.20.1", "1.20.2", "1.20.4"]
+  },
+  {
+    "name": "ActivatedSpawnerDetector",
+    "versions": ["1.21", "1.21.1"]
+  },
+  {
+    "name": "Rusher Discord Notifications",
+    "versions": ["1.20.1"]
+  },
+  {
+    "name": "AutoBonemeal",
+    "versions": ["1.20.4"]
+  },
+  {
+    "name": "Rocket3",
+    "versions": ["1.20.1", "1.20.4", "1.20.6"]
+  },
+  {
+    "name": "GarlicBreeder",
+    "versions": ["1.20.4"]
+  },
+  {
+    "name": "Rusher Item Saver",
+    "versions": ["1.21.1", "1.21.2", "1.21.3", "1.21.4"]
+  },
+  {
+    "name": "RusherHack Mace Swap",
+    "versions": ["1.21.1", "1.21.2", "1.21.3", "1.21.4"]
+  },
+  {
+    "name": "Example Core Plugin",
+    "versions": []
+  },
+  {
+    "name": "CrystalModifierRH",
+    "versions": ["1.21.1"]
+  },
+  {
+    "name": "Tablist Hats",
+    "versions": ["1.20.1", "1.20.2", "1.20.4", "1.20.6", "1.21", "1.21.1", "1.21.4"]
+  },
+  {
+    "name": "NoSound",
+    "versions": ["1.20.1", "1.20.2", "1.20.3", "1.20.4", "1.20.5", "1.20.6", "1.21", "1.21.1"]
+  },
+  {
+    "name": "RusherHack Coord Spoofer",
+    "versions": ["1.21.2", "1.21.3", "1.21.4"]
+  },
+  {
+    "name": "Rusher Auto Item Frame Dupe",
+    "versions": ["1.21.4", "1.21.3", "1.21.2", "1.21.1"]
+  },
+  {
+    "name": "RusherMoji",
+    "versions": ["1.20.4"]
+  },
+  {
+    "name": "RusherHack Piston Pusher",
+    "versions": ["1.21.4"]
+  },
+  {
+    "name": "RusherUtils",
+    "versions": ["1.20.1", "1.20.2", "1.20.4", "1.20.6", "1.21", "1.21.1", "1.21.4"]
+  }
+]
