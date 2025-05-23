@@ -29,8 +29,10 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraft�
 
 > [!TIP]
 > Badges provide quick access to plugin resources:
-> - **Latest Release**: Links to the plugin’s releases page.
-> - **Downloads**: Directly downloads the latest plugin version.
+>
+> - **Latest Release** – links to the plugin’s GitHub releases page.
+> - **Downloads** – directly downloads the latest plugin `.jar` file.
+> - **MC Version** – displays the supported Minecraft version range.
 
 ## Top 5 Downloaded Plugins
 
