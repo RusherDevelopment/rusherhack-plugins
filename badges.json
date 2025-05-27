@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "totalPlugins": {
-    "message": "77",
+    "message": "78",
     "color": "green"
   },
   "totalThemes": {
@@ -1390,6 +1390,21 @@
         "avatarUrl": "https://github.com/0tterware.png?size=20"
     },
     "screenshots": []
-   }
+   },
+    {
+    "name": "Rusher Grown ESP",
+    "url": "https://github.com/kybe236/rusher-grown-esp",
+    "releaseUrl": "https://github.com/kybe236/rusher-grown-esp/releases",
+    "latestReleaseUrl": "https://github.com/kybe236/rusher-grown-esp/releases/latest/download/grown-esp-1.0.0.jar",
+    "releaseDate": "2025-05-27",
+    "color": "green",
+    "description": "ESP plugin for RusherHack that highlights grown crops and useful farm blocks.",
+    "creator": {
+        "name": "kybe236",
+        "url": "https://github.com/kybe236",
+        "avatarUrl": "https://github.com/kybe236.png?size=20"
+    },
+    "screenshots": []
+    }
   ]
 }
