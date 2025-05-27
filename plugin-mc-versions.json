@@ -704,5 +704,12 @@
       "1.21.4"
     ],
     "badge_version": "1.20.1-1.21.4"
+  },
+  {
+    "name": "Rusher Grown ESP",
+    "versions": [
+      "1.21.4"
+    ],
+    "badge_version": "1.21.4"
   }
 ]
