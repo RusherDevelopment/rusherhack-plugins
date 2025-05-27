@@ -1,3 +1,5 @@
+![RusherHack Logo](./Assets/RusherHacks/rh_head.png)
+
 # Plugins List
 
 [![Plugins](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=$.totalPlugins.message&label=Plugins&color=green)](#plugins-list)
