@@ -1110,5 +1110,16 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 ---
 
+- ### [Rusher Grown ESP](https://github.com/kybe236/rusher-grown-esp)  
+
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[77].releaseDate&label=Latest%20Release&color=green)](https://github.com/kybe236/rusher-grown-esp/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/kybe236/rusher-grown-esp/total)](https://github.com/kybe236/rusher-grown-esp/releases/latest/download/grown-esp-1.0.0.jar)<br>
+   ![MC Version](https://img.shields.io/badge/dynamic/json?url=https://rusherdevelopment.github.io/rusherhack-plugins/plugin-mc-versions.json&query=$[77].badge_version&label=MC%20Version&color=blueviolet)<br>
+
+   **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)  
+
+   ESP plugin for RusherHack that highlights grown crops and useful farm blocks.
+
+---
+
 [![Back to Top](https://img.shields.io/badge/â†‘-Back%20to%20Top-blue?style=flat)](#plugins-list)
 
