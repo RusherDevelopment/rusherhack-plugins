@@ -1390,7 +1390,7 @@
         "avatarUrl": "https://github.com/0tterware.png?size=20"
     },
     "screenshots": []
-   },
+    },
     {
     "name": "Rusher Grown ESP",
     "url": "https://github.com/kybe236/rusher-grown-esp",
@@ -1410,10 +1410,10 @@
     "name": "Rusher GhoulMode",
     "url": "https://github.com/Koteyka32k/rusher-ghoulmode",
     "releaseUrl": "https://github.com/Koteyka32k/rusher-ghoulmode/releases",
-    "latestReleaseUrl": "https://github.com/Koteyka32k/rusher-ghoulmode/releases/latest/download/ghoulmode-1.0.0.jar",
+    "latestReleaseUrl": "",
     "releaseDate": "",
     "color": "green",
-    "description": "Allows you to stay in the world after death. The death screen is suppressed, and you can still look around without interacting. Note: Grim may flag movement modules like Flight—use Freecam instead.",
+    "description": "Allows you to stay in the world after dying. The death screen is bypassed so you can look around but not interact. Use freecam instead of movement modules to avoid Grim flags.",
     "creator": {
         "name": "Koteyka32k",
         "url": "https://github.com/Koteyka32k",
@@ -1425,10 +1425,10 @@
     "name": "Rusher AutoAnvil",
     "url": "https://github.com/Koteyka32k/rusher-autoanvil",
     "releaseUrl": "https://github.com/Koteyka32k/rusher-autoanvil/releases",
-    "latestReleaseUrl": "https://github.com/Koteyka32k/rusher-autoanvil/releases/latest/download/autoanvil-1.0.0.jar",
+    "latestReleaseUrl": "",
     "releaseDate": "",
     "color": "green",
-    "description": "A basic AutoAnvil with airplace. Bypasses 2b2t (very good).",
+    "description": "A basic autoanvil with airplace. Bypasses 2b2t (very good).",
     "creator": {
         "name": "Koteyka32k",
         "url": "https://github.com/Koteyka32k",
@@ -1440,7 +1440,7 @@
     "name": "Rusher BurrowESP",
     "url": "https://github.com/Koteyka32k/rusher-burrowesp",
     "releaseUrl": "https://github.com/Koteyka32k/rusher-burrowesp/releases",
-    "latestReleaseUrl": "https://github.com/Koteyka32k/rusher-burrowesp/releases/latest/download/burrowesp-1.0.0.jar",
+    "latestReleaseUrl": "https://github.com/Koteyka32k/rusher-burrowesp/releases/download/1.0.0/rusher-burrowesp-1.0.0.jar",
     "releaseDate": "2025-03-24",
     "color": "green",
     "description": "A module that shows blocks that a player is burrowed into.",
