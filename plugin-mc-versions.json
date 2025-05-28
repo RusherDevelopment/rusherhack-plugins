@@ -711,5 +711,26 @@
       "1.21.4"
     ],
     "badge_version": "1.21.4"
+  },
+  {
+    "name": "Rusher GhoulMode",
+    "versions": [
+      "1.21.1"
+    ],
+    "badge_version": "1.21.1"
+  },
+  {
+    "name": "Rusher AutoAnvil",
+    "versions": [
+      "1.21.1"
+    ],
+    "badge_version": "1.21.1"
+  },
+  {
+    "name": "Rusher BurrowESP",
+    "versions": [
+      "1.21.1"
+    ],
+    "badge_version": "1.21.1"
   }
 ]
