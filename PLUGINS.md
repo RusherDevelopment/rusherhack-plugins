@@ -1121,5 +1121,39 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraft�
 
 ---
 
+- ### [Rusher GhoulMode](https://github.com/Koteyka32k/rusher-ghoulmode)  
+
+   [![Latest Release Date](https://img.shields.io/badge/Latest%20Release-Unknown-lightgrey)](https://github.com/Koteyka32k/rusher-ghoulmode/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/Koteyka32k/rusher-ghoulmode/total)](https://github.com/Koteyka32k/rusher-ghoulmode/releases/latest/download/ghoulmode-1.0.0.jar)<br>
+   ![MC Version](https://img.shields.io/badge/dynamic/json?url=https://rusherdevelopment.github.io/rusherhack-plugins/plugin-mc-versions.json&query=$[78].badge_version&label=MC%20Version&color=blueviolet)<br>
+
+   **Creator**: <img src="https://github.com/Koteyka32k.png?size=20" width="20" height="20"> [Koteyka32k](https://github.com/Koteyka32k)  
+
+   Allows you to stay in the world after death. The death screen is suppressed, and you can still look around without interacting.  
+   > ⚠️ Note: Grim may flag movement modules like Flight — use Freecam instead.
+
+---
+
+- ### [Rusher AutoAnvil](https://github.com/Koteyka32k/rusher-autoanvil)  
+
+   [![Latest Release Date](https://img.shields.io/badge/Latest%20Release-Unknown-lightgrey)](https://github.com/Koteyka32k/rusher-autoanvil/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/Koteyka32k/rusher-autoanvil/total)](https://github.com/Koteyka32k/rusher-autoanvil/releases/latest/download/autoanvil-1.0.0.jar)<br>
+   ![MC Version](https://img.shields.io/badge/dynamic/json?url=https://rusherdevelopment.github.io/rusherhack-plugins/plugin-mc-versions.json&query=$[79].badge_version&label=MC%20Version&color=blueviolet)<br>
+
+   **Creator**: <img src="https://github.com/Koteyka32k.png?size=20" width="20" height="20"> [Koteyka32k](https://github.com/Koteyka32k)  
+
+   A basic AutoAnvil with airplace. Bypasses 2b2t (very good).
+
+---
+
+- ### [Rusher BurrowESP](https://github.com/Koteyka32k/rusher-burrowesp)  
+
+   [![Latest Release Date](https://img.shields.io/badge/Latest%20Release-2025--03--24-green)](https://github.com/Koteyka32k/rusher-burrowesp/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/Koteyka32k/rusher-burrowesp/total)](https://github.com/Koteyka32k/rusher-burrowesp/releases/latest/download/burrowesp-1.0.0.jar)<br>
+   ![MC Version](https://img.shields.io/badge/dynamic/json?url=https://rusherdevelopment.github.io/rusherhack-plugins/plugin-mc-versions.json&query=$[80].badge_version&label=MC%20Version&color=blueviolet)<br>
+
+   **Creator**: <img src="https://github.com/Koteyka32k.png?size=20" width="20" height="20"> [Koteyka32k](https://github.com/Koteyka32k)  
+
+   A module that shows blocks that a player is burrowed into.
+
+---
+
 [![Back to Top](https://img.shields.io/badge/↑-Back%20to%20Top-blue?style=flat)](#plugins-list)
 
