@@ -1123,7 +1123,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Rusher GhoulMode](https://github.com/Koteyka32k/rusher-ghoulmode)  
 
-   [![Latest Release Date](https://img.shields.io/badge/Latest%20Release-Unknown-lightgrey)](https://github.com/Koteyka32k/rusher-ghoulmode/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/Koteyka32k/rusher-ghoulmode/total)](https://github.com/Koteyka32k/rusher-ghoulmode/releases/latest/download/ghoulmode-1.0.0.jar)<br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[78].releaseDate&label=Latest%20Release&color=red)](https://github.com/Koteyka32k/rusher-ghoulmode/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/Koteyka32k/rusher-ghoulmode/total)](https://github.com/Koteyka32k/rusher-ghoulmode/releases/latest/download/ghoulmode-1.0.0.jar)<br>
    ![MC Version](https://img.shields.io/badge/dynamic/json?url=https://rusherdevelopment.github.io/rusherhack-plugins/plugin-mc-versions.json&query=$[78].badge_version&label=MC%20Version&color=blueviolet)<br>
 
    **Creator**: <img src="https://github.com/Koteyka32k.png?size=20" width="20" height="20"> [Koteyka32k](https://github.com/Koteyka32k)  
@@ -1135,7 +1135,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Rusher AutoAnvil](https://github.com/Koteyka32k/rusher-autoanvil)  
 
-   [![Latest Release Date](https://img.shields.io/badge/Latest%20Release-Unknown-lightgrey)](https://github.com/Koteyka32k/rusher-autoanvil/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/Koteyka32k/rusher-autoanvil/total)](https://github.com/Koteyka32k/rusher-autoanvil/releases/latest/download/autoanvil-1.0.0.jar)<br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[79].releaseDate&label=Latest%20Release&color=red)](https://github.com/Koteyka32k/rusher-autoanvil/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/Koteyka32k/rusher-autoanvil/total)](https://github.com/Koteyka32k/rusher-autoanvil/releases/latest/download/autoanvil-1.0.0.jar)<br>
    ![MC Version](https://img.shields.io/badge/dynamic/json?url=https://rusherdevelopment.github.io/rusherhack-plugins/plugin-mc-versions.json&query=$[79].badge_version&label=MC%20Version&color=blueviolet)<br>
 
    **Creator**: <img src="https://github.com/Koteyka32k.png?size=20" width="20" height="20"> [Koteyka32k](https://github.com/Koteyka32k)  
