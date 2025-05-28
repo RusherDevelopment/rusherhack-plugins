@@ -1410,8 +1410,8 @@
     "name": "Rusher GhoulMode",
     "url": "https://github.com/Koteyka32k/rusher-ghoulmode",
     "releaseUrl": "https://github.com/Koteyka32k/rusher-ghoulmode/releases",
-    "latestReleaseUrl": "",
-    "releaseDate": "",
+    "latestReleaseUrl": "null",
+    "releaseDate": "No releases",
     "color": "green",
     "description": "Allows you to stay in the world after dying. The death screen is bypassed so you can look around but not interact. Use freecam instead of movement modules to avoid Grim flags.",
     "creator": {
@@ -1425,8 +1425,8 @@
     "name": "Rusher AutoAnvil",
     "url": "https://github.com/Koteyka32k/rusher-autoanvil",
     "releaseUrl": "https://github.com/Koteyka32k/rusher-autoanvil/releases",
-    "latestReleaseUrl": "",
-    "releaseDate": "",
+    "latestReleaseUrl": "null",
+    "releaseDate": "No releases",
     "color": "green",
     "description": "A basic autoanvil with airplace. Bypasses 2b2t (very good).",
     "creator": {
