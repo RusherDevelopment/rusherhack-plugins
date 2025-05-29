@@ -997,7 +997,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Example Core Plugin](https://github.com/RusherDevelopment/example-core-plugin)
 
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[69].releaseDate&label=Latest%20Release&color=red)](https://github.com/RusherDevelopment/example-core-plugin/releases) ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/RusherDevelopment/example-core-plugin/total)](https://github.com/RusherDevelopment/example-core-plugin/releases/download/v1.0.0/example-core-plugin-1.0.0.jar)  
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[69].releaseDate&label=Latest%20Release&color=orange)](https://github.com/RusherDevelopment/example-core-plugin/releases) ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/RusherDevelopment/example-core-plugin/total)](https://github.com/RusherDevelopment/example-core-plugin/releases/download/v1.0.0/example-core-plugin-1.0.0.jar)  
 
    **Creator**: <img src="https://github.com/RusherDevelopment.png?size=20" width="20" height="20"> [RusherDevelopment](https://github.com/RusherDevelopment)  
 
@@ -1007,7 +1007,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [CrystalModifierRH](https://github.com/xyzbtw/CrystalModifierRH)
 
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[69].releaseDate&label=Latest%20Release&color=red)](https://github.com/xyzbtw/CrystalModifierRH) ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/xyzbtw/CrystalModifierRH/total)](https://github.com/xyzbtw/CrystalModifierRH/releases)<br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[69].releaseDate&label=Latest%20Release&color=orange)](https://github.com/xyzbtw/CrystalModifierRH) ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/xyzbtw/CrystalModifierRH/total)](https://github.com/xyzbtw/CrystalModifierRH/releases)<br>
    ![MC Version](https://img.shields.io/badge/dynamic/json?url=https://rusherdevelopment.github.io/rusherhack-plugins/plugin-mc-versions.json&query=$[69].badge_version&label=MC%20Version&color=blueviolet)<br>
    
    **Creator**: <img src="https://github.com/xyzbtw.png?size=20" width="20" height="20"> [xyzbtw](https://github.com/xyzbtw)  
@@ -1036,7 +1036,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [NoSound](https://github.com/John200410/nosound)
 
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[71].releaseDate&label=Latest%20Release&color=red)](https://github.com/John200410/nosound) ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/John200410/nosound/total)](https://github.com/John200410/nosound/releases)<br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[71].releaseDate&label=Latest%20Release&color=orange)](https://github.com/John200410/nosound) ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/John200410/nosound/total)](https://github.com/John200410/nosound/releases)<br>
    ![MC Version](https://img.shields.io/badge/dynamic/json?url=https://rusherdevelopment.github.io/rusherhack-plugins/plugin-mc-versions.json&query=$[71].badge_version&label=MC%20Version&color=blueviolet)<br>
    
    **Creator**: <img src="https://github.com/John200410.png?size=20" width="20" height="20"> [John200410](https://github.com/John200410)  
@@ -1123,7 +1123,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Rusher GhoulMode](https://github.com/Koteyka32k/rusher-ghoulmode)  
 
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[78].releaseDate&label=Latest%20Release&color=red)](https://github.com/Koteyka32k/rusher-ghoulmode/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/Koteyka32k/rusher-ghoulmode/total)](https://github.com/Koteyka32k/rusher-ghoulmode/releases/latest/download/ghoulmode-1.0.0.jar)<br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[78].releaseDate&label=Latest%20Release&color=orange)](https://github.com/Koteyka32k/rusher-ghoulmode/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/Koteyka32k/rusher-ghoulmode/total)](https://github.com/Koteyka32k/rusher-ghoulmode/releases/latest/download/ghoulmode-1.0.0.jar)<br>
    ![MC Version](https://img.shields.io/badge/dynamic/json?url=https://rusherdevelopment.github.io/rusherhack-plugins/plugin-mc-versions.json&query=$[78].badge_version&label=MC%20Version&color=blueviolet)<br>
 
    **Creator**: <img src="https://github.com/Koteyka32k.png?size=20" width="20" height="20"> [Koteyka32k](https://github.com/Koteyka32k)  
@@ -1135,7 +1135,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Rusher AutoAnvil](https://github.com/Koteyka32k/rusher-autoanvil)  
 
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[79].releaseDate&label=Latest%20Release&color=red)](https://github.com/Koteyka32k/rusher-autoanvil/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/Koteyka32k/rusher-autoanvil/total)](https://github.com/Koteyka32k/rusher-autoanvil/releases/latest/download/autoanvil-1.0.0.jar)<br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[79].releaseDate&label=Latest%20Release&color=orange)](https://github.com/Koteyka32k/rusher-autoanvil/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/Koteyka32k/rusher-autoanvil/total)](https://github.com/Koteyka32k/rusher-autoanvil/releases/latest/download/autoanvil-1.0.0.jar)<br>
    ![MC Version](https://img.shields.io/badge/dynamic/json?url=https://rusherdevelopment.github.io/rusherhack-plugins/plugin-mc-versions.json&query=$[79].badge_version&label=MC%20Version&color=blueviolet)<br>
 
    **Creator**: <img src="https://github.com/Koteyka32k.png?size=20" width="20" height="20"> [Koteyka32k](https://github.com/Koteyka32k)  
