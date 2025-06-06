@@ -732,5 +732,12 @@
       "1.21.1"
     ],
     "badge_version": "1.21.1"
+  },
+  {
+  "name": "Rusherhack-SignFilter",
+  "versions": [
+    "1.21.4"
+  ],
+  "badge_version": "1.21.4"
   }
 ]
