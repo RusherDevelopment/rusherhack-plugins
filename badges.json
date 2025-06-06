@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "totalPlugins": {
-    "message": "81",
+    "message": "82",
     "color": "green"
   },
   "totalThemes": {
@@ -1448,6 +1448,21 @@
         "name": "Koteyka32k",
         "url": "https://github.com/Koteyka32k",
         "avatarUrl": "https://github.com/Koteyka32k.png?size=20"
+    },
+    "screenshots": []
+    },
+    {
+    "name": "Rusherhack-SignFilter",
+    "url": "https://github.com/ToxicAven/Rusherhack-SignFilter",
+    "releaseUrl": "https://github.com/ToxicAven/Rusherhack-SignFilter/releases",
+    "latestReleaseUrl": "https://github.com/ToxicAven/Rusherhack-SignFilter/releases/download/1.0.0/signfilter-1.0.0.jar",
+    "releaseDate": "2025-07-06",
+    "color": "green",
+    "description": "A plugin for Rusherhack to filter out unwanted/inappropriate sign messages.",
+    "creator": {
+      "name": "ToxicAven",
+      "url": "https://github.com/ToxicAven",
+      "avatarUrl": "https://github.com/ToxicAven.png?size=20"
     },
     "screenshots": []
     }
