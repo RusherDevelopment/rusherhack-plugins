@@ -1146,12 +1146,23 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Rusher BurrowESP](https://github.com/Koteyka32k/rusher-burrowesp)  
 
-   [![Latest Release Date](https://img.shields.io/badge/Latest%20Release-2025--03--24-green)](https://github.com/Koteyka32k/rusher-burrowesp/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/Koteyka32k/rusher-burrowesp/total)](https://github.com/Koteyka32k/rusher-burrowesp/releases/latest/download/burrowesp-1.0.0.jar)<br>
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https://rusherdevelopment.github.io/rusherhack-plugins/badges.json&query=$[80].releaseDate&label=Latest%20Release&color=green)](https://github.com/Koteyka32k/rusher-burrowesp/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/Koteyka32k/rusher-burrowesp/total)](https://github.com/Koteyka32k/rusher-burrowesp/releases/latest/download/burrowesp-1.0.0.jar)<br>
    ![MC Version](https://img.shields.io/badge/dynamic/json?url=https://rusherdevelopment.github.io/rusherhack-plugins/plugin-mc-versions.json&query=$[80].badge_version&label=MC%20Version&color=blueviolet)<br>
 
    **Creator**: <img src="https://github.com/Koteyka32k.png?size=20" width="20" height="20"> [Koteyka32k](https://github.com/Koteyka32k)  
 
    A module that shows blocks that a player is burrowed into.
+
+---
+
+- ### [Rusherhack-SignFilter](https://github.com/ToxicAven/Rusherhack-SignFilter)  
+
+   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https://rusherdevelopment.github.io/rusherhack-plugins/badges.json&query=$[81].releaseDate&label=Latest%20Release&color=green)](https://github.com/ToxicAven/Rusherhack-SignFilter/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/ToxicAven/Rusherhack-SignFilter/total)](https://github.com/ToxicAven/Rusherhack-SignFilter/releases/latest/download/signfilter-1.0.0.jar)<br>
+   ![MC Version](https://img.shields.io/badge/dynamic/json?url=https://rusherdevelopment.github.io/rusherhack-plugins/plugin-mc-versions.json&query=$[81].badge_version&label=MC%20Version&color=blueviolet)<br>
+
+   **Creator**: <img src="https://github.com/ToxicAven.png?size=20" width="20" height="20"> [ToxicAven](https://github.com/ToxicAven)  
+
+   A plugin for Rusherhack to filter out unwanted/inappropriate sign messages.
 
 ---
 
