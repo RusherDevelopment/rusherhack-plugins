@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "totalPlugins": {
-    "message": "83",
+    "message": "84",
     "color": "green"
   },
   "totalThemes": {
@@ -1474,6 +1474,21 @@
     "releaseDate": "2025-06-12",
     "color": "green",
     "description": "Marks vaults for you and can play a sound when you render a vault.",
+    "creator": {
+      "name": "kybe236",
+      "url": "https://github.com/kybe236",
+      "avatarUrl": "https://github.com/kybe236.png?size=20"
+    },
+    "screenshots": []
+    },
+    {
+    "name": "Rusher-Inventory-Drag",
+    "url": "https://github.com/kybe236/rusher-inventory-drag",
+    "releaseUrl": "https://github.com/kybe236/rusher-inventory-drag/releases",
+    "latestReleaseUrl": "https://github.com/kybe236/rusher-inventory-drag/releases/latest",
+    "releaseDate": "2025-06-14",
+    "color": "green",
+    "description": "Allows you to drag items in your inventory while holding shift.",
     "creator": {
       "name": "kybe236",
       "url": "https://github.com/kybe236",
