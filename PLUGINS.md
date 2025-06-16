@@ -1185,5 +1185,16 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 ---
 
+- ### [Rusher-Inventory-Drag](https://github.com/kybe236/rusher-inventory-drag)
+
+  [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[83].releaseDate&label=Latest%20Release&color=green)](https://github.com/kybe236/rusher-inventory-drag/releases) ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/kybe236/rusher-inventory-drag/total)](https://github.com/kybe236/rusher-inventory-drag/releases/latest)<br>
+  ![MC Version](https://img.shields.io/badge/dynamic/json?url=https://rusherdevelopment.github.io/rusherhack-plugins/plugin-mc-versions.json&query=$[83].badge_version&label=MC%20Version&color=blueviolet)<br>
+
+  **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)  
+
+  Allows you to drag items in your inventory while holding shift.
+
+---
+
 [![Back to Top](https://img.shields.io/badge/â†‘-Back%20to%20Top-blue?style=flat)](#plugins-list)
 
