@@ -1166,5 +1166,24 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 ---
 
+- ### [Rusher-Vault-Helper](https://github.com/kybe236/rusher-vault-helper)  
+
+  [![Latest Release](https://img.shields.io/badge/dynamic/json?url=https://rusherdevelopment.github.io/rusherhack-plugins/badges.json&query=$.plugins[82].releaseDate&label=Latest%20Release&color=green)](https://github.com/kybe236/rusher-vault-helper/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/kybe236/rusher-vault-helper/total)](https://github.com/kybe236/rusher-vault-helper/releases/latest)<br>
+  ![MC Version](https://img.shields.io/badge/dynamic/json?url=https://rusherdevelopment.github.io/rusherhack-plugins/plugin-mc-versions.json&query=$[82].badge_version&label=MC%20Version&color=blueviolet)<br>
+
+  **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)  
+
+  Marks vaults for you and can play a sound when you render a vault.
+
+  <details>  
+    <summary>Show Screenshots</summary>  
+    <p align="center">  
+      <img src="https://github.com/user-attachments/assets/728aebf8-4b0c-4bd7-96cb-150028e3bb8e" alt="Vault Marker Screenshot 1"><br>  
+      <img src="https://github.com/user-attachments/assets/12da4881-52f6-44a8-8449-c7501444a679" alt="Vault Marker Screenshot 2">  
+    </p>  
+  </details>
+
+---
+
 [![Back to Top](https://img.shields.io/badge/â†‘-Back%20to%20Top-blue?style=flat)](#plugins-list)
 
