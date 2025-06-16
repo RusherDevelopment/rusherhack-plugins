@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "totalPlugins": {
-    "message": "82",
+    "message": "83",
     "color": "green"
   },
   "totalThemes": {
@@ -1463,6 +1463,21 @@
       "name": "ToxicAven",
       "url": "https://github.com/ToxicAven",
       "avatarUrl": "https://github.com/ToxicAven.png?size=20"
+    },
+    "screenshots": []
+    },
+    {
+    "name": "Rusher-Vault-Helper",
+    "url": "https://github.com/kybe236/rusher-vault-helper",
+    "releaseUrl": "https://github.com/kybe236/rusher-vault-helper/releases",
+    "latestReleaseUrl": "https://github.com/kybe236/rusher-vault-helper/releases/latest",
+    "releaseDate": "2025-06-12",
+    "color": "green",
+    "description": "Marks vaults for you and can play a sound when you render a vault.",
+    "creator": {
+      "name": "kybe236",
+      "url": "https://github.com/kybe236",
+      "avatarUrl": "https://github.com/kybe236.png?size=20"
     },
     "screenshots": []
     }
