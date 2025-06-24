@@ -756,5 +756,40 @@
     "1.21.4"
   ],
   "badge_version": "1.21.4"
-  }
+  },
+  {
+  "name": "PlayerLogPlugin-RusherHack",
+  "versions": [
+    "1.21.4"
+  ],
+  "badge_version": "1.21.4"
+  },
+  {
+  "name": "BarrierESP-RusherHack",
+  "versions": [
+    "1.21.4"
+  ],
+  "badge_version": "1.21.4"
+  },
+  {
+  "name": "FovLimiter-Rusherhack",
+  "versions": [
+    "1.21.4"
+  ],
+  "badge_version": "1.21.4"
+  },
+  {
+  "name": "NoJumpDelay-Rusherhack",
+  "versions": [
+    "1.21.4"
+  ],
+  "badge_version": "1.21.4"
+  },
+  {
+  "name": "HideNightVision-RusherHack",
+  "versions": [
+    "1.21.4"
+  ],
+  "badge_version": "1.21.4"
+ }
 ]
