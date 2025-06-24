@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "totalPlugins": {
-    "message": "84",
+    "message": "89",
     "color": "green"
   },
   "totalThemes": {
@@ -1495,6 +1495,89 @@
       "avatarUrl": "https://github.com/kybe236.png?size=20"
     },
     "screenshots": []
-    }
+    },
+    {
+    "name": "PlayerLogPlugin-RusherHack",
+    "url": "https://github.com/k4n3d4-sh0t4r0/PlayerLogPLugin-RusherHack",
+    "releaseUrl": "https://github.com/k4n3d4-sh0t4r0/PlayerLogPLugin-RusherHack/releases",
+    "latestReleaseUrl": "https://github.com/k4n3d4-sh0t4r0/PlayerLogPLugin-RusherHack/releases/latest",
+    "releaseDate": "2025-05-21",
+    "color": "green",
+    "description": "Rusherhack plugin that logs all player encounters in a log file and displays them in the chat.",
+    "creator": {
+        "name": "k4n3d4-sh0t4r0",
+        "url": "https://github.com/k4n3d4-sh0t4r0",
+        "avatarUrl": "https://github.com/k4n3d4-sh0t4r0.png?size=20"
+    },
+    "screenshots": [
+        "https://github.com/k4n3d4-sh0t4r0/PlayerLogPLugin-RusherHack/blob/main/img/PlayerLogChat.png?raw=true",
+        "https://github.com/k4n3d4-sh0t4r0/PlayerLogPLugin-RusherHack/blob/main/img/PlayerLogWindows.png?raw=true"
+    ]
+    },
+    {
+    "name": "BarrierESP-RusherHack",
+    "url": "https://github.com/k4n3d4-sh0t4r0/BarrierESP-RusherHack",
+    "releaseUrl": "https://github.com/k4n3d4-sh0t4r0/BarrierESP-RusherHack/releases",
+    "latestReleaseUrl": "https://github.com/k4n3d4-sh0t4r0/BarrierESP-RusherHack/releases/latest",
+    "releaseDate": "2025-06-20",
+    "color": "green",
+    "description": "Rusherhack plugin that lets the player see barrier blocks as if holding one.",
+    "creator": {
+        "name": "k4n3d4-sh0t4r0",
+        "url": "https://github.com/k4n3d4-sh0t4r0",
+        "avatarUrl": "https://github.com/k4n3d4-sh0t4r0.png?size=20"
+    },
+    "screenshots": [
+        "https://github.com/k4n3d4-sh0t4r0/BarrierESP-RusherHack/blob/main/img/BarrierESP-On.png?raw=true"
+    ]
+    },
+    {
+    "name": "FovLimiter-Rusherhack",
+    "url": "https://github.com/k4n3d4-sh0t4r0/FovLimiter-Rusherhack",
+    "releaseUrl": "https://github.com/k4n3d4-sh0t4r0/FovLimiter-Rusherhack/releases",
+    "latestReleaseUrl": "https://github.com/k4n3d4-sh0t4r0/FovLimiter-Rusherhack/releases/latest",
+    "releaseDate": "2025-06-20",
+    "color": "green",
+    "description": "Limit the FOV multiplier between a max and min value.",
+    "creator": {
+        "name": "k4n3d4-sh0t4r0",
+        "url": "https://github.com/k4n3d4-sh0t4r0",
+        "avatarUrl": "https://github.com/k4n3d4-sh0t4r0.png?size=20"
+    },
+    "screenshots": []
+    },
+    {
+    "name": "NoJumpDelay-Rusherhack",
+    "url": "https://github.com/k4n3d4-sh0t4r0/NoJumpDelay-Rusherhack",
+    "releaseUrl": "https://github.com/k4n3d4-sh0t4r0/NoJumpDelay-Rusherhack/releases",
+    "latestReleaseUrl": "https://github.com/k4n3d4-sh0t4r0/NoJumpDelay-Rusherhack/releases/latest",
+    "releaseDate": "2025-06-21",
+    "color": "green",
+    "description": "Set the delay between jumps when holding the space key.",
+    "creator": {
+        "name": "k4n3d4-sh0t4r0",
+        "url": "https://github.com/k4n3d4-sh0t4r0",
+        "avatarUrl": "https://github.com/k4n3d4-sh0t4r0.png?size=20"
+    },
+    "screenshots": []
+    },
+    {
+    "name": "HideNightVision-RusherHack",
+    "url": "https://github.com/k4n3d4-sh0t4r0/HideNightVision-RusherHack",
+    "releaseUrl": "https://github.com/k4n3d4-sh0t4r0/HideNightVision-RusherHack/releases",
+    "latestReleaseUrl": "https://github.com/k4n3d4-sh0t4r0/HideNightVision-RusherHack/releases/latest",
+    "releaseDate": "2025-06-24",
+    "color": "green",
+    "description": "Rusherhack plugin that hides the night vision effect on the HUD.",
+    "creator": {
+        "name": "k4n3d4-sh0t4r0",
+        "url": "https://github.com/k4n3d4-sh0t4r0",
+        "avatarUrl": "https://github.com/k4n3d4-sh0t4r0.png?size=20"
+    },
+    "screenshots": [
+        "https://github.com/k4n3d4-sh0t4r0/HideNightVision-RusherHack/blob/main/img/HNVoff.png?raw=true",
+        "https://github.com/k4n3d4-sh0t4r0/HideNightVision-RusherHack/blob/main/img/HNVon.png?raw=true"
+    ]
+   }
   ]
 }
