@@ -1198,8 +1198,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraft‚Ä
 
 - ### [PlayerLogPlugin-RusherHack](https://github.com/k4n3d4-sh0t4r0/PlayerLogPLugin-RusherHack)  
   
-  [![Latest Release](https://img.shields.io/badge/dynamic/json?url=https://rusherdevelopment.github.io/rusherhack-plugins/badges.json&query=$.plugins[84].releaseDate&label=Latest%20Release&color=green)](https://github.com/k4n3d4-sh0t4r0/PlayerLogPLugin-RusherHack/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/k4n3d4-sh0t4r0/PlayerLogPLugin-RusherHack/total)](https://github.com/k4n3d4-sh0t4r0/PlayerLogPLugin-RusherHack/releases/latest)<br>  
-  ![MC Version](https://img.shields.io/badge/dynamic/json?url=https://rusherdevelopment.github.io/rusherhack-plugins/plugin-mc-versions.json&query=$[84].badge_version&label=MC%20Version&color=blueviolet)<br>  
+  [![Latest Release](https://img.shields.io/badge/dynamic/json?url=https://rusherdevelopment.github.io/rusherhack-plugins/badges.json&query=$.plugins[84].releaseDate&label=Latest%20Release&color=green)](https://github.com/k4n3d4-sh0t4r0/PlayerLogPLugin-RusherHack/releases) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/k4n3d4-sh0t4r0/PlayerLogPLugin-RusherHack/total)](https://github.com/k4n3d4-sh0t4r0/PlayerLogPLugin-RusherHack/releases/latest)<br> ![MC Version](https://img.shields.io/badge/dynamic/json?url=https://rusherdevelopment.github.io/rusherhack-plugins/plugin-mc-versions.json&query=$[84].badge_version&label=MC%20Version&color=blueviolet)<br>  
   
   **Creator**: <img src="https://github.com/k4n3d4-sh0t4r0.png?size=20" width="20" height="20"> [k4n3d4-sh0t4r0](https://github.com/k4n3d4-sh0t4r0)  
   
@@ -1217,8 +1216,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraft‚Ä
   
 - ### [BarrierESP-RusherHack](https://github.com/k4n3d4-sh0t4r0/BarrierESP-RusherHack)  
   
-  [![Latest Release](https://img.shields.io/badge/dynamic/json?url=https://rusherdevelopment.github.io/rusherhack-plugins/badges.json&query=$.plugins[85].releaseDate&label=Latest%20Release&color=green)](https://github.com/k4n3d4-sh0t4r0/BarrierESP-RusherHack/releases) ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/k4n3d4-sh0t4r0/BarrierESP-RusherHack/total)](https://github.com/k4n3d4-sh0t4r0/BarrierESP-RusherHack/releases/latest)<br>  
-  ![MC Version](https://img.shields.io/badge/dynamic/json?url=https://rusherdevelopment.github.io/rusherhack-plugins/plugin-mc-versions.json&query=$[85].badge_version&label=MC%20Version&color=blueviolet)<br>  
+  [![Latest Release](https://img.shields.io/badge/dynamic/json?url=https://rusherdevelopment.github.io/rusherhack-plugins/badges.json&query=$.plugins[85].releaseDate&label=Latest%20Release&color=green)](https://github.com/k4n3d4-sh0t4r0/BarrierESP-RusherHack/releases) ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/k4n3d4-sh0t4r0/BarrierESP-RusherHack/total)](https://github.com/k4n3d4-sh0t4r0/BarrierESP-RusherHack/releases/latest)<br> ![MC Version](https://img.shields.io/badge/dynamic/json?url=https://rusherdevelopment.github.io/rusherhack-plugins/plugin-mc-versions.json&query=$[85].badge_version&label=MC%20Version&color=blueviolet)<br>  
   
   **Creator**: <img src="https://github.com/k4n3d4-sh0t4r0.png?size=20" width="20" height="20"> [k4n3d4-sh0t4r0](https://github.com/k4n3d4-sh0t4r0)  
   
@@ -1235,8 +1233,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraft‚Ä
   
 - ### [FovLimiter-Rusherhack](https://github.com/k4n3d4-sh0t4r0/FovLimiter-Rusherhack)  
   
-  [![Latest Release](https://img.shields.io/badge/dynamic/json?url=https://rusherdevelopment.github.io/rusherhack-plugins/badges.json&query=$.plugins[86].releaseDate&label=Latest%20Release&color=green)](https://github.com/k4n3d4-sh0t4r0/FovLimiter-Rusherhack/releases) ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/k4n3d4-sh0t4r0/FovLimiter-Rusherhack/total)](https://github.com/k4n3d4-sh0t4r0/FovLimiter-Rusherhack/releases/latest)<br>  
-  ![MC Version](https://img.shields.io/badge/dynamic/json?url=https://rusherdevelopment.github.io/rusherhack-plugins/plugin-mc-versions.json&query=$[86].badge_version&label=MC%20Version&color=blueviolet)<br>  
+  [![Latest Release](https://img.shields.io/badge/dynamic/json?url=https://rusherdevelopment.github.io/rusherhack-plugins/badges.json&query=$.plugins[86].releaseDate&label=Latest%20Release&color=green)](https://github.com/k4n3d4-sh0t4r0/FovLimiter-Rusherhack/releases) ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/k4n3d4-sh0t4r0/FovLimiter-Rusherhack/total)](https://github.com/k4n3d4-sh0t4r0/FovLimiter-Rusherhack/releases/latest)<br> ![MC Version](https://img.shields.io/badge/dynamic/json?url=https://rusherdevelopment.github.io/rusherhack-plugins/plugin-mc-versions.json&query=$[86].badge_version&label=MC%20Version&color=blueviolet)<br>  
   
   **Creator**: <img src="https://github.com/k4n3d4-sh0t4r0.png?size=20" width="20" height="20"> [k4n3d4-sh0t4r0](https://github.com/k4n3d4-sh0t4r0)  
   
@@ -1246,8 +1243,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraft‚Ä
   
 - ### [NoJumpDelay-Rusherhack](https://github.com/k4n3d4-sh0t4r0/NoJumpDelay-Rusherhack)  
   
-  [![Latest Release](https://img.shields.io/badge/dynamic/json?url=https://rusherdevelopment.github.io/rusherhack-plugins/badges.json&query=$.plugins[87].releaseDate&label=Latest%20Release&color=green)](https://github.com/k4n3d4-sh0t4r0/NoJumpDelay-Rusherhack/releases) ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/k4n3d4-sh0t4r0/NoJumpDelay-Rusherhack/total)](https://github.com/k4n3d4-sh0t4r0/NoJumpDelay-Rusherhack/releases/latest)<br>  
-  ![MC Version](https://img.shields.io/badge/dynamic/json?url=https://rusherdevelopment.github.io/rusherhack-plugins/plugin-mc-versions.json&query=$[87].badge_version&label=MC%20Version&color=blueviolet)<br>  
+  [![Latest Release](https://img.shields.io/badge/dynamic/json?url=https://rusherdevelopment.github.io/rusherhack-plugins/badges.json&query=$.plugins[87].releaseDate&label=Latest%20Release&color=green)](https://github.com/k4n3d4-sh0t4r0/NoJumpDelay-Rusherhack/releases) ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/k4n3d4-sh0t4r0/NoJumpDelay-Rusherhack/total)](https://github.com/k4n3d4-sh0t4r0/NoJumpDelay-Rusherhack/releases/latest)<br> ![MC Version](https://img.shields.io/badge/dynamic/json?url=https://rusherdevelopment.github.io/rusherhack-plugins/plugin-mc-versions.json&query=$[87].badge_version&label=MC%20Version&color=blueviolet)<br>  
   
   **Creator**: <img src="https://github.com/k4n3d4-sh0t4r0.png?size=20" width="20" height="20"> [k4n3d4-sh0t4r0](https://github.com/k4n3d4-sh0t4r0)  
   
@@ -1257,20 +1253,20 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraft‚Ä
   
 - ### [HideNightVision-RusherHack](https://github.com/k4n3d4-sh0t4r0/HideNightVision-RusherHack)  
   
-  [![Latest Release](https://img.shields.io/badge/dynamic/json?url=https://rusherdevelopment.github.io/rusherhack-plugins/badges.json&query=$.plugins[88].releaseDate&label=Latest%20Release&color=green)](https://github.com/k4n3d4-sh0t4r0/HideNightVision-RusherHack/releases) ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/k4n3d4-sh0t4r0/HideNightVision-RusherHack/total)](https://github.com/k4n3d4-sh0t4r0/HideNightVision-RusherHack/releases/latest)<br>  
-  ![MC Version](https://img.shields.io/badge/dynamic/json?url=https://rusherdevelopment.github.io/rusherhack-plugins/plugin-mc-versions.json&query=$[88].badge_version&label=MC%20Version&color=blueviolet)<br>  
+  [![Latest Release](https://img.shields.io/badge/dynamic/json?url=https://rusherdevelopment.github.io/rusherhack-plugins/badges.json&query=$.plugins[88].releaseDate&label=Latest%20Release&color=green)](https://github.com/k4n3d4-sh0t4r0/HideNightVision-RusherHack/releases) ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue) [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/k4n3d4-sh0t4r0/HideNightVision-RusherHack/total)](https://github.com/k4n3d4-sh0t4r0/HideNightVision-RusherHack/releases/latest)<br> ![MC Version](https://img.shields.io/badge/dynamic/json?url=https://rusherdevelopment.github.io/rusherhack-plugins/plugin-mc-versions.json&query=$[88].badge_version&label=MC%20Version&color=blueviolet)<br>  
   
   **Creator**: <img src="https://github.com/k4n3d4-sh0t4r0.png?size=20" width="20" height="20"> [k4n3d4-sh0t4r0](https://github.com/k4n3d4-sh0t4r0)  
   
   Rusherhack plugin that hides the night vision effect on the HUD.  
   
-  > [!WARNING]  
-  > To make the plugin work, you need to deactivate and reactivate the Night Vision module **while the Hide module is enabled**.  
+  > ‚ö†Ô∏è **Warning:** To make the plugin work, you need to deactivate and reactivate the Night Vision module **while the Hide module is enabled**.  
   
   <details>  
     <summary>Show Screenshots</summary>  
     <p align="center">  
-      <img src="https://github.com/k4n3d4-sh0t4r0/HideNightVision-RusherHack/blob/main/img/HNVoff.png?raw=true" alt="Night Vision On"><br>  
+      <strong>HideNightVision Off</strong><br>  
+      <img src="https://github.com/k4n3d4-sh0t4r0/HideNightVision-RusherHack/blob/main/img/HNVoff.png?raw=true" alt="Night Vision On"><br><br>  
+      <strong>HideNightVision On</strong><br>  
       <img src="https://github.com/k4n3d4-sh0t4r0/HideNightVision-RusherHack/blob/main/img/HNVon.png?raw=true" alt="Night Vision Hidden">  
     </p>  
   </details>
