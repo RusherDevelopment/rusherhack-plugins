@@ -1273,5 +1273,16 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 ---
 
+- ### [RusherChat](https://github.com/GarlicRot/RusherChat)  
+
+  [![Latest Release](https://img.shields.io/badge/dynamic/json?url=https://rusherdevelopment.github.io/rusherhack-plugins/badges.json&query=$.plugins[89].releaseDate&label=Latest%20Release&color=green)](https://github.com/GarlicRot/RusherChat/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/GarlicRot/RusherChat/total)](https://github.com/GarlicRot/RusherChat/releases/latest)<br> ![MC Version](https://img.shields.io/badge/dynamic/json?url=https://rusherdevelopment.github.io/rusherhack-plugins/plugin-mc-versions.json&query=$[89].badge_version&label=MC%20Version&color=blueviolet)  
+
+  **Creator**: <img src="https://github.com/GarlicRot.png?size=20" width="20" height="20"> [GarlicRot](https://github.com/GarlicRot)  
+
+  WebSocket-based global chat system for players running the plugin. Messages sent are visible to all other plugin users in real time.
+
+
+---
+
 [![Back to Top](https://img.shields.io/badge/â†‘-Back%20to%20Top-blue?style=flat)](#plugins-list)
 
