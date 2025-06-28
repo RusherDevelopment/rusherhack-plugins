@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "totalPlugins": {
-    "message": "89",
+    "message": "90",
     "color": "green"
   },
   "totalThemes": {
@@ -1578,6 +1578,21 @@
         "https://github.com/k4n3d4-sh0t4r0/HideNightVision-RusherHack/blob/main/img/HNVoff.png?raw=true",
         "https://github.com/k4n3d4-sh0t4r0/HideNightVision-RusherHack/blob/main/img/HNVon.png?raw=true"
     ]
-   }
+    },
+    {
+    "name": "RusherChat",
+    "url": "https://github.com/GarlicRot/RusherChat",
+    "releaseUrl": "https://github.com/GarlicRot/RusherChat/releases",
+    "latestReleaseUrl": "https://github.com/GarlicRot/RusherChat/releases/latest",
+    "releaseDate": "2025-06-27",
+    "color": "green",
+    "description": "WebSocket-based global chat system for players running the plugin. Messages sent are visible to all other plugin users in real time.",
+    "creator": {
+      "name": "GarlicRot",
+      "url": "https://github.com/GarlicRot",
+      "avatarUrl": "https://github.com/GarlicRot.png?size=20"
+    },
+    "screenshots": []
+    }
   ]
 }
