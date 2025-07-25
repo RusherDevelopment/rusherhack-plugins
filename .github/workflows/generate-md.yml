@@ -1,0 +1,30 @@
+name: Generate MD from YAML
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      - name: Install PyYAML
+        run: pip install pyyaml
+
+      - name: Update MD Files
+        run: python scripts/generate.py
+
+      - name: Commit Changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: 'PLUGINS.md THEMES.md'
+          message: 'Update PLUGINS.md and THEMES.md from YAML'
