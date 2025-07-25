@@ -7,8 +7,7 @@ Whether you're submitting a new plugin, fixing typos, or enhancing existing entr
 > [!NOTE]  
 > Please follow the style and formatting guidelines described below to ensure consistency across all submissions.
 
-> [!TIP]  
-> You can preview your `PLUGINS.md` before submitting by using the GitHub web interface or Markdown preview extensions.
+---
 
 ## How to Contribute
 
@@ -24,112 +23,75 @@ Whether you're submitting a new plugin, fixing typos, or enhancing existing entr
    Create a new branch for your contribution.  
    <img src="./Assets/Contributing/NewBranch.png" alt="Create Branch" width="100">
 
-4. **Make changes**  
-   Make your changes to the codebase. Ensure your code follows the existing style and conventions.
+4. **Add your plugin or theme**  
+   Open the `data/plugins-and-themes.yml` file and add your plugin or theme entry in the appropriate section.
 
-5. **Commit your changes**  
-   Commit your changes with a clear and descriptive commit message.
-
-6. **Push to your fork**  
-   Push your changes to your forked repository.
-
-7. **Open a pull request**  
-   Open a pull request to the main repository. Go to the "Pull Requests" tab on the main repository.  
-   <img src="./Assets/Contributing/PullRequestsTab.png" alt="Pull Request Tab" width="150">  
-   Click "New Pull Request".  
-   <img src="./Assets/Contributing/NewPullRequest.png" alt="New Pull Request" width="150">
-
-8. **Describe your changes**  
-   Clearly describe the changes you have made and any relevant context in the pull request description.
-
-> [!WARNING]  
-> Make sure not to remove or overwrite existing entries unless it's a verified fix. Always double-check the `badges.json` index value before submitting.
-
-## Example Plugin Entries
-
-<details>
-  <summary>Explanation of Placeholders</summary>
-
-- **PLUGIN_NAME**: The name of your plugin  
-- **YOUR_USERNAME**: Your GitHub username  
-- **YOUR_PLUGIN_REPO**: The name of your plugin's GitHub repository  
-- **PLUGIN_INDEX**: Index of your plugin in the `badges.json` file  
-- **BADGE_COLOR**: `"green"` if plugin has a release, `"red"` otherwise  
-- **LATEST_VERSION**: Latest release version  
-- **LATEST_RELEASE_DATE**: Format `YYYY-MM-DD`  
-- **SCREENSHOT1.png**: Image file name  
-- **CREATOR_URL**: Creator's GitHub URL  
-</details>
-
----
-
-### **PLUGINS.md Format**
-
-#### **Plugin Entry (with or without Screenshots)**
-
-```markdown
-- ### [PLUGIN_NAME](https://github.com/YOUR_USERNAME/YOUR_PLUGIN_REPO) <br>
-   [![Latest Release Date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Frusherdevelopment.github.io%2Frusherhack-plugins%2Fbadges.json&query=%24.plugins[PLUGIN_INDEX].releaseDate&label=Latest%20Release&color=BADGE_COLOR)](https://github.com/YOUR_USERNAME/YOUR_PLUGIN_REPO/releases)
-   [![GitHub Downloads (all releases)](https://img.shields.io/github/downloads/YOUR_USERNAME/YOUR_PLUGIN_REPO/total)](https://github.com/YOUR_USERNAME/YOUR_PLUGIN_REPO/releases/download/LATEST_VERSION/YOUR_PLUGIN_NAME-LATEST_VERSION.jar)  
-   ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue) <!-- Only include this if it's a core plugin -->
-
-   **Creator**: <img src="https://github.com/YOUR_USERNAME.png?size=20" width="20" height="20"> [YOUR_USERNAME](https://github.com/YOUR_USERNAME)
-
-   YOUR_PLUGIN_DESCRIPTION
-
-   <details>
-   <summary>Show Screenshots</summary>
-   <p align="center">
-     <img src="./Assets/YOUR_PLUGIN_NAME/SCREENSHOT1.png" alt="Screenshot 1" width="250">
-     <img src="./Assets/YOUR_PLUGIN_NAME/SCREENSHOT2.png" alt="Screenshot 2" width="550">
-   </p>
-   </details>
+5. **Validate your changes**
+   Make sure your `plugins-and-themes.yml` file is valid YAML. You can use tools like [YAML Lint](https://www.yamllint.com/) to verify formatting.
+   
+### Example Plugin Format (with screenshots):
+```yaml
+- name: RusherHack-HudElement
+  repo: Aspect-404/RusherHack-HudElement
+  description: Create a customizable HUD element for Minecraft utility mod RusherHack.
+  creator:
+    name: Aspect-404
+    url: https://github.com/Aspect-404
+    avatar: https://github.com/Aspect-404.png?size=20
+  latest_release_tag: Release
+  screenshots:
+  - url: ./Assets/RusherHack-HudElement/HudSettings.png
+    alt: Hud Setting
+    width: 250
+  - url: ./Assets/RusherHack-HudElement/HudElement.png
+    alt: Hud Element
+    width: 550
+  is_core: false
+  mc_versions: 1.20.4-1.21
 ```
 
-> [!TIP]  
-> If your plugin is a **Core Plugin**, add the Core Plugin badge after the release badge like this:  
-> `![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)`
-
----
-
-### badges.json Plugin Example
-
-```json
-{
-  "name": "PLUGIN_NAME",
-  "url": "https://github.com/YOUR_USERNAME/YOUR_PLUGIN_REPO",
-  "releaseUrl": "https://github.com/YOUR_USERNAME/YOUR_PLUGIN_REPO/releases",
-  "latestReleaseUrl": "https://github.com/YOUR_USERNAME/YOUR_PLUGIN_REPO/releases/download/LATEST_VERSION/YOUR_PLUGIN_NAME-LATEST_VERSION.jar",
-  "releaseDate": "LATEST_RELEASE_DATE",
-  "color": "BADGE_COLOR",
-  "description": "YOUR_PLUGIN_DESCRIPTION",
-  "creator": {
-    "name": "YOUR_USERNAME",
-    "url": "https://github.com/YOUR_USERNAME",
-    "avatarUrl": "https://github.com/YOUR_USERNAME.png?size=20"
-  },
-  "screenshots": [
-    {
-      "type": "image",
-      "url": "./Assets/YOUR_PLUGIN_NAME/SCREENSHOT1.png",
-      "alt": "Screenshot 1",
-      "width": 250
-    },
-    {
-      "type": "image",
-      "url": "./Assets/YOUR_PLUGIN_NAME/SCREENSHOT2.png",
-      "alt": "Screenshot 2",
-      "width": 550
-    }
-  ]
-}
+### Example Plugin Format (without screenshots):
+```yaml
+- name: Example Plugin
+  repo: RusherDevelopment/example-plugin
+  description: A basic example plugin demonstrating the structure and capabilities of RusherHacks plugins.
+  creator:
+    name: RusherDevelopment
+    url: https://github.com/RusherDevelopment
+    avatar: https://github.com/RusherDevelopment.png?size=20
+  latest_release_tag: ''
+  screenshots: []
+  is_core: false
+  mc_versions: N/A
 ```
 
-## Reporting Issues
-
-If you find any typos, incorrect information, or have suggestions for improvements, submit an issue using the [Plugin Information Issue](https://github.com/RusherDevelopment/rusherhack-plugins/issues/new?template=plugin-information-issue.md).
-
 ---
 
-> [!NOTE]  
-> Providing detailed info will help us fix issues faster and keep the plugin list accurate.
+### Example Theme Format (with screenshots):
+```yaml
+- name: rusherNodusTheme
+  repo: bakjedev/rusherNodusTheme
+  description: Nodus - Best theme evaAAAA. Code is terrible. Blame xyzbtw!
+  creator:
+    name: bakjedev
+    url: https://github.com/bakjedev
+    avatar: https://github.com/bakjedev.png?size=20
+  latest_release_tag: ''
+  screenshots:
+  - url: ./Assets/rusherNodusTheme/NodusGUI.png
+    alt: Module
+    width: 750
+```
+
+### Example Theme Format (without screenshots):
+```yaml
+- name: Nhack Theme
+  repo: h1tm4nqq/Nhack-theme
+  description: A theme like Nhack 2015 for RH.
+  creator:
+    name: h1tm4nqq
+    url: https://github.com/h1tm4nqq
+    avatar: https://github.com/h1tm4nqq.png?size=20
+  latest_release_tag: 1.0.1
+  screenshots: []
+```
