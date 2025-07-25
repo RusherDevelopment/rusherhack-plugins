@@ -1118,7 +1118,7 @@ plugins:
   latest_release_tag: ''
   screenshots: []
   is_core: false
-  mc_versions: 1.20.1 to 1.21.4
+  mc_versions: 1.20.1-1.21.4
 # --- themes ---
 themes:
 - name: rusherNodusTheme
