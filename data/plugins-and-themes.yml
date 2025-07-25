@@ -1,0 +1,1153 @@
+# --- plugins ---
+plugins:
+- name: Example Plugin
+  repo: RusherDevelopment/example-plugin
+  description: A basic example plugin demonstrating the structure and capabilities
+    of RusherHacks plugins.
+  creator:
+    name: RusherDevelopment
+    url: https://github.com/RusherDevelopment
+    avatar: https://github.com/RusherDevelopment.png?size=20
+  latest_release_tag: ''
+  screenshots: []
+  is_core: false
+  mc_versions: N/A
+- name: 2b2t.vc Rusherhack
+  repo: rfresh2/2b2t.vc-rusherhack
+  description: A RusherHacks plugin designed for 2b2t.vc server use.
+  creator:
+    name: rfresh2
+    url: https://github.com/rfresh2
+    avatar: https://github.com/rfresh2.png?size=20
+  latest_release_tag: '1.12'
+  screenshots:
+  - url: ./Assets/2b2t.vc Rusherhack/HudSettings.png
+    alt: Hud Setting
+    width: 250
+  - url: ./Assets/2b2t.vc Rusherhack/HudDisplay.png
+    alt: Hud Display w/2b2t Queue
+    width: 550
+  is_core: false
+  mc_versions: 1.20.1-1.21.4
+- name: RusherHack-HudElement
+  repo: Aspect-404/RusherHack-HudElement
+  description: Create a customizable HUD element for Minecraft utility mod RusherHack.
+  creator:
+    name: Aspect-404
+    url: https://github.com/Aspect-404
+    avatar: https://github.com/Aspect-404.png?size=20
+  latest_release_tag: Release
+  screenshots:
+  - url: ./Assets/RusherHack-HudElement/HudSettings.png
+    alt: Hud Setting
+    width: 250
+  - url: ./Assets/RusherHack-HudElement/HudElement.png
+    alt: Hud Element
+    width: 550
+  is_core: false
+  mc_versions: 1.20.4-1.21
+- name: Auto Anvil Rename
+  repo: IceTank/AutoAnvilRename
+  description: Automates the renaming process in anvils.
+  creator:
+    name: IceTank
+    url: https://github.com/IceTank
+    avatar: https://github.com/IceTank.png?size=20
+  latest_release_tag: v0.1
+  screenshots:
+  - url: ./Assets/AutoAnvilRename/Module.png
+    alt: Module
+    width: 250
+  - url: ./Assets/AutoAnvilRename/ModuleInfo.png
+    alt: Module Info
+    width: 450
+  is_core: false
+  mc_versions: 1.20.1-1.21.1
+- name: Queue Manager
+  repo: GabiRP/QueueManager
+  description: Manages queue positions and notifies users of their status.
+  creator:
+    name: GabiRP
+    url: https://github.com/GabiRP
+    avatar: https://github.com/GabiRP.png?size=20
+  latest_release_tag: ''
+  screenshots: []
+  is_core: false
+  mc_versions: 1.20.1
+- name: RusherHack Instance Info
+  repo: John200410/rusherhack-instance-info
+  description: Provides detailed information about the current instance.
+  creator:
+    name: John200410
+    url: https://github.com/John200410
+    avatar: https://github.com/John200410.png?size=20
+  latest_release_tag: v1.2.2
+  screenshots:
+  - url: ./Assets/rusherhack-instance-info/Module.png
+    alt: Module
+    width: 350
+  - url: ./Assets/rusherhack-instance-info/PlayerHead.png
+    alt: Player Head Info
+    width: 250
+  - url: ./Assets/rusherhack-instance-info/WindowInfo.png
+    alt: Player Head Info
+    width: 550
+  is_core: false
+  mc_versions: 1.20.1-1.21.4
+- name: Stash Mover Plugin
+  repo: xyzbtw/StashMoverPlugin
+  description: A plugin to move stashes using pearls.
+  creator:
+    name: xyzbtw
+    url: https://github.com/xyzbtw
+    avatar: https://github.com/xyzbtw.png?size=20
+  latest_release_tag: FINAL
+  screenshots:
+  - url: https://img.youtube.com/vi/gfnNFyRQavA/0.jpg
+    alt: Stash Mover Demo
+  is_core: false
+  mc_versions: 1.20.1-1.21.1
+- name: Unified Module List
+  repo: czho/unified-modulelist
+  description: Rusherhack HUD element that shows active modules from both meteorclient
+    and rusherhack.
+  creator:
+    name: czho
+    url: https://github.com/czho
+    avatar: https://github.com/czho.png?size=20
+  latest_release_tag: ''
+  screenshots: []
+  is_core: false
+  mc_versions: 1.20.2-1.20.4
+- name: Container Tweaks
+  repo: rfresh2/ContainerTweaks-rusherhack
+  description: Simple tweaks for quickly moving items in containers.
+  creator:
+    name: rfresh2
+    url: https://github.com/rfresh2
+    avatar: https://github.com/rfresh2.png?size=20
+  latest_release_tag: '1.11'
+  screenshots:
+  - url: ./Assets/ContainerTweaks/ModuleSettings.png
+    alt: Module
+    width: 250
+  is_core: false
+  mc_versions: 1.20.1-1.21.1
+- name: RusherHack Spotify Integration
+  repo: John200410/rusherhack-spotify
+  description: Integrates Spotify music playback controls and status into the RusherHacks
+    client.
+  creator:
+    name: John200410
+    url: https://github.com/John200410
+    avatar: https://github.com/John200410.png?size=20
+  latest_release_tag: 1.2.1
+  screenshots:
+  - url: ./Assets/spotify/Module.png
+    alt: Module
+    width: 250
+  - url: ./Assets/spotify/HudElement.png
+    alt: Spotify Hud Element
+    width: 450
+  is_core: false
+  mc_versions: 1.20.1-1.21.4
+- name: Vanilla Elytra Flight
+  repo: FBanna/Rusherhack-Vanilla-Efly
+  description: Highly customizable rusher hack elytra flight plugin.
+  creator:
+    name: FBanna
+    url: https://github.com/FBanna
+    avatar: https://github.com/FBanna.png?size=20
+  latest_release_tag: 2.1.2%2B1.21.4
+  screenshots: []
+  is_core: false
+  mc_versions: 1.21.4
+- name: Rusherhack BookBot
+  repo: Aspect-404/Rusherhack-BookBot
+  description: Rusherhack plugin for bookbot.
+  creator:
+    name: Aspect-404
+    url: https://github.com/Aspect-404
+    avatar: https://github.com/Aspect-404.png?size=20
+  latest_release_tag: Release
+  screenshots: []
+  is_core: false
+  mc_versions: 1.20.1-1.21.4
+- name: Shay's RusherTweaks
+  repo: ShayBox/ShaysRusherTweaks
+  description: A collection of small tweaks and improvements for the RusherHacks client.
+  creator:
+    name: ShayBox
+    url: https://github.com/ShayBox
+    avatar: https://github.com/ShayBox.png?size=20
+  latest_release_tag: 0.10.2
+  screenshots: []
+  is_core: false
+  mc_versions: 1.20.1-1.21
+- name: Nuker
+  repo: beanbag44/Nuker
+  description: Epic nuker for nuking terrain.
+  creator:
+    name: beanbag44
+    url: https://github.com/beanbag44
+    avatar: https://github.com/beanbag44.png?size=20
+  latest_release_tag: ''
+  screenshots:
+  - url: https://img.youtube.com/vi/JUhgqLYdONs/0.jpg
+    alt: Nuker Demo
+  is_core: false
+  mc_versions: 1.20.4
+- name: Hold Rusher
+  repo: cherosin/hold-rusher
+  description: Adds a "Hold" flag for all modules, if active keybind will only be
+    toggled while held.
+  creator:
+    name: cherosin
+    url: https://github.com/cherosin
+    avatar: https://github.com/cherosin.png?size=20
+  latest_release_tag: 1.0.1
+  screenshots: []
+  is_core: false
+  mc_versions: 1.20.1-1.21.1
+- name: No Walk Animation
+  repo: Eonexe/NoWalkAnimation
+  description: Removes the walking animation.
+  creator:
+    name: Eonexe
+    url: https://github.com/Eonexe
+    avatar: https://github.com/Eonexe.png?size=20
+  latest_release_tag: 1.20.6
+  screenshots: []
+  is_core: false
+  mc_versions: 1.20.4-1.21
+- name: NBT Utils
+  repo: kybe236/rusherhack-nbt-utils
+  description: Rusher nbt paste and copy.
+  creator:
+    name: kybe236
+    url: https://github.com/kybe236
+    avatar: https://github.com/kybe236.png?size=20
+  latest_release_tag: ''
+  screenshots: []
+  is_core: false
+  mc_versions: 1.20.4
+- name: Rusherhack Executer
+  repo: kybe236/rusherhack-executer
+  description: Executes commands and resolves `<player>` to every player online.
+  creator:
+    name: kybe236
+    url: https://github.com/kybe236
+    avatar: https://github.com/kybe236.png?size=20
+  latest_release_tag: ''
+  screenshots: []
+  is_core: false
+  mc_versions: 1.20.4
+- name: F3 Spoof
+  repo: Doogie13/f3-spoof
+  description: Spoofs the F3 debug screen information.
+  creator:
+    name: Doogie13
+    url: https://github.com/Doogie13
+    avatar: https://github.com/Doogie13.png?size=20
+  latest_release_tag: ''
+  screenshots: []
+  is_core: false
+  mc_versions: 1.20.4-1.21
+- name: Open Folder
+  repo: kybe236/rusherhack-open-folder
+  description: Opens the folder for the module with a button click.
+  creator:
+    name: kybe236
+    url: https://github.com/kybe236
+    avatar: https://github.com/kybe236.png?size=20
+  latest_release_tag: ''
+  screenshots:
+  - url: https://img.youtube.com/vi/m_O0ruTdto8/0.jpg
+    alt: Open Folder Demo
+  is_core: false
+  mc_versions: '1.21'
+- name: Mace Kill
+  repo: kybe236/rusherhack-mace-kill
+  description: One shot pretty much all mobs with a mace.
+  creator:
+    name: kybe236
+    url: https://github.com/kybe236
+    avatar: https://github.com/kybe236.png?size=20
+  latest_release_tag: 1.21.4
+  screenshots:
+  - url: https://img.youtube.com/vi/seP5OqcnFT4/0.jpg
+    alt: Mace Kill Demo
+  is_core: false
+  mc_versions: 1.21.4
+- name: Weather Changing Plugin
+  repo: Lokfid/WeatherChangingPlugin
+  description: Allows players to change the weather in-game.
+  creator:
+    name: Lokfid
+    url: https://github.com/Lokfid
+    avatar: https://github.com/Lokfid.png?size=20
+  latest_release_tag: ''
+  screenshots: []
+  is_core: false
+  mc_versions: 1.20.4
+- name: Middleclick Wind Charge
+  repo: kybe236/rusherhack-middleclick-wind-charge
+  description: Allows you to throw windcharges with the middle mouse button and also
+    jump at the same time so you can boost jump.
+  creator:
+    name: kybe236
+    url: https://github.com/kybe236
+    avatar: https://github.com/kybe236.png?size=20
+  latest_release_tag: 1.21-1.0.1
+  screenshots:
+  - url: https://img.youtube.com/vi/kaFZWN27RaY/0.jpg
+    alt: Middleclick Wind Charge Demo
+  is_core: false
+  mc_versions: '1.21'
+- name: GarlicSight
+  repo: GarlicRot/GarlicSight
+  description: A RusherHacks Plugin - Crosshair Info - GarlicSight.
+  creator:
+    name: GarlicRot
+    url: https://github.com/GarlicRot
+    avatar: https://github.com/GarlicRot.png?size=20
+  latest_release_tag: ''
+  screenshots:
+  - url: ./Assets/GarlicSight/hudinfo.png
+    alt: Hud Element
+    width: 250
+  - url: ./Assets/GarlicSight/blockinfo.png
+    alt: Block Info
+    width: 300
+  - url: ./Assets/GarlicSight/entityinfo.png
+    alt: Entity Info
+    width: 300
+  is_core: false
+  mc_versions: 1.20.5-1.21.4
+- name: LightningPop
+  repo: GarlicRot/LightningPop
+  description: A RusherHacks Plugin - Spawns Lightning On Totem Pops And Player Deaths
+    - LightningPop.
+  creator:
+    name: GarlicRot
+    url: https://github.com/GarlicRot
+    avatar: https://github.com/GarlicRot.png?size=20
+  latest_release_tag: ''
+  screenshots:
+  - url: ./Assets/LightningPop/Module.png
+    alt: Module
+    width: 250
+  is_core: false
+  mc_versions: 1.20.5-1.21.4
+- name: AutoBucket
+  repo: GarlicRot/AutoBucket
+  description: A RusherHacks Plugin - Auto Bucket Entities - AutoBucket.
+  creator:
+    name: GarlicRot
+    url: https://github.com/GarlicRot
+    avatar: https://github.com/GarlicRot.png?size=20
+  latest_release_tag: ''
+  screenshots:
+  - url: ./Assets/AutoBucket/module.png
+    alt: Module
+    width: 250
+  is_core: false
+  mc_versions: 1.20.5-1.21.4
+- name: RusherHack-BoatExecute
+  repo: PhilipPanda/RusherHack-BoatExecute
+  description: A RusherHack module plugin for 1.20.4 that exploits boat movement packets
+    to instantly kill all passengers.
+  creator:
+    name: PhilipPanda
+    url: https://github.com/PhilipPanda
+    avatar: https://github.com/PhilipPanda.png?size=20
+  latest_release_tag: ''
+  screenshots:
+  - url: https://img.youtube.com/vi/h35gKz9ZQK4/0.jpg
+    alt: BoatExecute Demo
+  is_core: false
+  mc_versions: 1.20.4
+- name: NBT Viewer
+  repo: Gentleman2292/NBT-viewer
+  description: A plugin to view NBT data in Minecraft.
+  creator:
+    name: Gentleman2292
+    url: https://github.com/Gentleman2292
+    avatar: https://github.com/Gentleman2292.png?size=20
+  latest_release_tag: ''
+  screenshots:
+  - url: ./Assets/NBT-viewer/NBT-viewer.png
+    alt: NBT-viewer
+    width: 750
+  is_core: false
+  mc_versions: 1.20.1-1.20.4
+- name: Remote Control
+  repo: kybe236/rusherhack-remote-controle
+  description: A plugin for remote controlling RusherHacks.
+  creator:
+    name: kybe236
+    url: https://github.com/kybe236
+    avatar: https://github.com/kybe236.png?size=20
+  latest_release_tag: ''
+  screenshots: []
+  is_core: false
+  mc_versions: 1.20.4
+- name: Speed Measure
+  repo: Lokfid/RusherHackSpeedMeasure
+  description: A plugin to measure speed in RusherHacks.
+  creator:
+    name: Lokfid
+    url: https://github.com/Lokfid
+    avatar: https://github.com/Lokfid.png?size=20
+  latest_release_tag: ''
+  screenshots: []
+  is_core: false
+  mc_versions: 1.20.4
+- name: TNT Bomber
+  repo: kybe236/rusher-tnt-bomber
+  description: A plugin to automate TNT bombing in Minecraft.
+  creator:
+    name: kybe236
+    url: https://github.com/kybe236
+    avatar: https://github.com/kybe236.png?size=20
+  latest_release_tag: ''
+  screenshots: []
+  is_core: false
+  mc_versions: 1.20.4
+- name: No Render Entities
+  repo: John200410/norender-entities
+  description: A plugin to disable rendering of entities.
+  creator:
+    name: John200410
+    url: https://github.com/John200410
+    avatar: https://github.com/John200410.png?size=20
+  latest_release_tag: v1.0
+  screenshots: []
+  is_core: false
+  mc_versions: 1.20.1
+- name: RusherHack Messenger
+  repo: Gentleman2292/rusherhack-messenger
+  description: A messaging plugin for RusherHacks.
+  creator:
+    name: Gentleman2292
+    url: https://github.com/Gentleman2292
+    avatar: https://github.com/Gentleman2292.png?size=20
+  latest_release_tag: ''
+  screenshots:
+  - url: ./Assets/rusherhack-messenger/rusherhack-messenger-demo.jpg
+    alt: rusherhack-messenger Demo
+  is_core: false
+  mc_versions: 1.20.1-1.20.4
+- name: RusherHack Instance Info (Fork)
+  repo: GarlicRot/rusherhack-instance-info
+  description: A forked version of the [original plugin](https://github.com/John200410/rusherhack-instance-info)
+    with custom settings.
+  creator:
+    name: GarlicRot
+    url: https://github.com/GarlicRot
+    avatar: https://github.com/GarlicRot.png?size=20
+  latest_release_tag: ''
+  screenshots:
+  - url: ./Assets/rusherhack-instance-info-fork/Module.png
+    alt: Module
+    width: 350
+  - url: ./Assets/rusherhack-instance-info-fork/PlayerHead.png
+    alt: Player Head Info
+    width: 250
+  - url: ./Assets/rusherhack-instance-info-fork/WindowInfo.png
+    alt: Player Head Info
+    width: 550
+  is_core: false
+  mc_versions: 1.20.1-1.21
+- name: RusherHack NoteBot
+  repo: Lokfid/RusherHackNoteBot
+  description: A RusherHacks plugin for playing note blocks in Minecraft.
+  creator:
+    name: Lokfid
+    url: https://github.com/Lokfid
+    avatar: https://github.com/Lokfid.png?size=20
+  latest_release_tag: 1.0.3
+  screenshots: []
+  is_core: false
+  mc_versions: 1.20.4-1.21.4
+- name: ShulkerViewer
+  repo: xyzbtw/ShulkerViewer
+  description: A RusherHacks plugin to view the contents of Shulker boxes in the inventory.
+  creator:
+    name: xyzbtw
+    url: https://github.com/xyzbtw
+    avatar: https://github.com/xyzbtw.png?size=20
+  latest_release_tag: 1.20.6
+  screenshots: []
+  is_core: false
+  mc_versions: 1.20.1-1.21.1
+- name: RusherWebPlugin
+  repo: Lokfid/RusherWebPlugin
+  description: Web Browser for rh.
+  creator:
+    name: Lokfid
+    url: https://github.com/Lokfid
+    avatar: https://github.com/Lokfid.png?size=20
+  latest_release_tag: '1.2'
+  screenshots: []
+  is_core: false
+  mc_versions: 1.20.1-1.21.1
+- name: UpdatedNCPEfly
+  repo: xyzbtw/UpdatedNCPEfly
+  description: A plugin for an updated version of NCPEfly.
+  creator:
+    name: xyzbtw
+    url: https://github.com/xyzbtw
+    avatar: https://github.com/xyzbtw.png?size=20
+  latest_release_tag: release
+  screenshots: []
+  is_core: false
+  mc_versions: 1.20.4-1.20.6
+- name: dc-chat-logger
+  repo: kybe236/dc-chat-logger
+  description: A plugin for logging chat messages to discord.
+  creator:
+    name: kybe236
+    url: https://github.com/kybe236
+    avatar: https://github.com/kybe236.png?size=20
+  latest_release_tag: 3.0.0
+  screenshots: []
+  is_core: false
+  mc_versions: '1.21'
+- name: rusherhack-nightvision-plugin
+  repo: John200410/rusherhack-nightvision-plugin
+  description: A replacement for FullBright when using shaders.
+  creator:
+    name: John200410
+    url: https://github.com/John200410
+    avatar: https://github.com/John200410.png?size=20
+  latest_release_tag: v1.0.0
+  screenshots: []
+  is_core: false
+  mc_versions: 1.21-1.21.1
+- name: AutoNetherite
+  repo: xyzbtw/AutoNetherite
+  description: A plugin that automates the process of upgrading gear to Netherite
+    in Minecraft.
+  creator:
+    name: xyzbtw
+    url: https://github.com/xyzbtw
+    avatar: https://github.com/xyzbtw.png?size=20
+  latest_release_tag: release
+  screenshots: []
+  is_core: false
+  mc_versions: 1.20.4-1.21.1
+- name: OldSignsPlugin
+  repo: xyzbtw/OldSignsPlugin
+  description: A plugin that brings back old sign functionalities in Minecraft.
+  creator:
+    name: xyzbtw
+    url: https://github.com/xyzbtw
+    avatar: https://github.com/xyzbtw.png?size=20
+  latest_release_tag: release
+  screenshots: []
+  is_core: false
+  mc_versions: 1.20.4
+- name: StashHunter-rusherhack
+  repo: CherkaSSH/StashHunter-rusherhack
+  description: A plugin to help locate stashes in Minecraft using RusherHack.
+  creator:
+    name: CherkaSSH
+    url: https://github.com/CherkaSSH
+    avatar: https://github.com/CherkaSSH.png?size=20
+  latest_release_tag: hehe2
+  screenshots: []
+  is_core: false
+  mc_versions: 1.20.1-1.21.1
+- name: rusher-elytra-eta
+  repo: kybe236/rusher-elytra-eta
+  description: A rusherhack plugin that allows you to see the ETA of all Elytras in
+    the player's inventory.
+  creator:
+    name: kybe236
+    url: https://github.com/kybe236
+    avatar: https://github.com/kybe236.png?size=20
+  latest_release_tag: 1.0.0
+  screenshots:
+  - url: ./Assets/rusher-elytra-eta/HudElement.png
+    alt: The hud Element
+    width: 250
+  is_core: false
+  mc_versions: '1.21'
+- name: rusher-silent-close
+  repo: kybe236/rusher-silent-close
+  description: Keeps Container GUI open
+  creator:
+    name: kybe236
+    url: https://github.com/kybe236
+    avatar: https://github.com/kybe236.png?size=20
+  latest_release_tag: 1.0.0
+  screenshots: []
+  is_core: false
+  mc_versions: '1.21'
+- name: rusherhack-addons
+  repo: miles352/rusherhack-addons
+  description: 'A collection of RusherHacks addons including:'
+  creator:
+    name: miles352
+    url: https://github.com/miles352
+    avatar: https://github.com/miles352.png?size=20
+  latest_release_tag: 1.21.1
+  screenshots: []
+  is_core: false
+  mc_versions: 1.20.4
+- name: rusher-gtranslate
+  repo: kybe236/rusher-gtranslate
+  description: A plugin that integrates Google Translate into RusherHack for translating
+    chat messages.
+  creator:
+    name: kybe236
+    url: https://github.com/kybe236
+    avatar: https://github.com/kybe236.png?size=20
+  latest_release_tag: 2.0.0
+  screenshots: []
+  is_core: false
+  mc_versions: 1.21.4
+- name: rusher-matrix-nofall
+  repo: kybe236/rusher-matrix-nofall
+  description: No Fall by setting isFalling flag in movement packets to false (tested
+    on 6b6t).
+  creator:
+    name: kybe236
+    url: https://github.com/kybe236
+    avatar: https://github.com/kybe236.png?size=20
+  latest_release_tag: 1.0.0
+  screenshots: []
+  is_core: false
+  mc_versions: '1.21'
+- name: rusher-autoportal
+  repo: kybe236/rusher-autoportal
+  description: Automatically breaks blocks to place obsidian and activate the nether
+    portal.
+  creator:
+    name: kybe236
+    url: https://github.com/kybe236
+    avatar: https://github.com/kybe236.png?size=20
+  latest_release_tag: 1.20.6-1.21.1
+  screenshots: []
+  is_core: false
+  mc_versions: 1.20.4-1.21.1
+- name: rusher-air-place
+  repo: kybe236/rusher-air-place
+  description: A plugin that allows placing blocks in the air in Minecraft.
+  creator:
+    name: kybe236
+    url: https://github.com/kybe236
+    avatar: https://github.com/kybe236.png?size=20
+  latest_release_tag: 1.0.0
+  screenshots: []
+  is_core: false
+  mc_versions: 1.20.1-1.21.1
+- name: rusher-hold-spamm-space
+  repo: kybe236/rusher-hold-spamm-space
+  description: A plugin that automatically spams or holds the space bar.
+  creator:
+    name: kybe236
+    url: https://github.com/kybe236
+    avatar: https://github.com/kybe236.png?size=20
+  latest_release_tag: 1.0.0.1
+  screenshots: []
+  is_core: false
+  mc_versions: 1.21-1.21.1
+- name: rusher-auto-bed-bomber
+  repo: kybe236/rusher-auto-bed-bomber
+  description: A plugin that automates bed bombing in Minecraft.
+  creator:
+    name: kybe236
+    url: https://github.com/kybe236
+    avatar: https://github.com/kybe236.png?size=20
+  latest_release_tag: idk
+  screenshots: []
+  is_core: false
+  mc_versions: '1.21'
+- name: rusher-crystal-spin
+  repo: kybe236/rusher-crystal-spin
+  description: A plugin that makes end crystals spin faster or slower.
+  creator:
+    name: kybe236
+    url: https://github.com/kybe236
+    avatar: https://github.com/kybe236.png?size=20
+  latest_release_tag: 1.0.0
+  screenshots: []
+  is_core: false
+  mc_versions: '1.21'
+- name: AutoShear
+  repo: oisin404/AutoShear
+  description: A plugin that automates shearing in Minecraft.
+  creator:
+    name: oisin404
+    url: https://github.com/oisin404
+    avatar: https://github.com/oisin404.png?size=20
+  latest_release_tag: 1.0.2
+  screenshots:
+  - url: https://img.youtube.com/vi/44b4QO6l1Pc/0.jpg
+    alt: Video Tutorial
+    width: 300
+  is_core: false
+  mc_versions: 1.21-1.21.1
+- name: Rusher2b2tVelocity
+  repo: Lokfid/Rusher2b2tVelocity
+  description: A plugin that adds enhanced velocity control for RusherHacks on the
+    2b2t server.
+  creator:
+    name: Lokfid
+    url: https://github.com/Lokfid
+    avatar: https://github.com/Lokfid.png?size=20
+  latest_release_tag: 1.0.0fixfix
+  screenshots: []
+  is_core: false
+  mc_versions: 1.20.4
+- name: rusher-autokit
+  repo: kybe236/rusher-autokit
+  description: A plugin that automatically equips your preferred kit.
+  creator:
+    name: kybe236
+    url: https://github.com/kybe236
+    avatar: https://github.com/kybe236.png?size=20
+  latest_release_tag: 1.0.0
+  screenshots: []
+  is_core: false
+  mc_versions: 1.20.4
+- name: AutoTorch
+  repo: NinetyUnderScore/AutoTorch
+  description: Automatically places torches to light up areas in Minecraft.
+  creator:
+    name: NinetyUnderScore
+    url: https://github.com/NinetyUnderScore
+    avatar: https://github.com/NinetyUnderScore.png?size=20
+  latest_release_tag: Release
+  screenshots: []
+  is_core: false
+  mc_versions: 1.20.1
+- name: Elytra Swap
+  repo: cmg-divined/elytra-swap
+  description: Automatically swaps fully repaired Elytras with damaged ones for efficient
+    XP farm repairs.
+  creator:
+    name: cmg-divined
+    url: https://github.com/cmg-divined
+    avatar: https://github.com/cmg-divined.png?size=20
+  latest_release_tag: ''
+  screenshots: []
+  is_core: false
+  mc_versions: 1.20.4-1.21
+- name: HDisabler
+  repo: CherkaSSH/hdisabler
+  description: 2b2t fast bypass.
+  creator:
+    name: CherkaSSH
+    url: https://github.com/CherkaSSH
+    avatar: https://github.com/CherkaSSH.png?size=20
+  latest_release_tag: ''
+  screenshots:
+  - url: ./Assets/HDisabler/HDisabler.png
+    alt: Hud Setting
+    width: 250
+  is_core: false
+  mc_versions: 1.21.1-1.21.3
+- name: CoordFollower
+  repo: CherkaSSH/CoordFollower-plugin
+  description: A plugin that allows you to save, manage, and follow coordinates with
+    ease.
+  creator:
+    name: CherkaSSH
+    url: https://github.com/CherkaSSH
+    avatar: https://github.com/CherkaSSH.png?size=20
+  latest_release_tag: ''
+  screenshots: []
+  is_core: false
+  mc_versions: 1.20.4
+- name: Rusher Chess TUI
+  repo: CherkaSSH/rusher-chess-tui
+  description: Chess module for RusherHacks, powered by [ChessLib](https://github.com/bhlangonijr/chesslib).
+  creator:
+    name: CherkaSSH
+    url: https://github.com/CherkaSSH
+    avatar: https://github.com/CherkaSSH.png?size=20
+  latest_release_tag: ''
+  screenshots: []
+  is_core: false
+  mc_versions: 1.20.1-1.20.4
+- name: ActivatedSpawnerDetector
+  repo: un0x9/ActivatedSpawnerDetector
+  description: Detects activated spawners and provides visual feedback in RusherHacks.
+  creator:
+    name: un0x9
+    url: https://github.com/un0x9
+    avatar: https://github.com/un0x9.png?size=20
+  latest_release_tag: v1.2.2
+  screenshots: []
+  is_core: false
+  mc_versions: 1.21-1.21.1
+- name: Rusher Discord Notifications
+  repo: kybe236/rusher-discord-notifications
+  description: Sends notifications from RusherHacks to a Discord channel.
+  creator:
+    name: kybe236
+    url: https://github.com/kybe236
+    avatar: https://github.com/kybe236.png?size=20
+  latest_release_tag: 1.0.0
+  screenshots: []
+  is_core: false
+  mc_versions: 1.20.1
+- name: AutoBonemeal
+  repo: John200410/rusherhack-autobonemeal
+  description: A RusherHacks plugin for automatically applying bonemeal to crops.
+  creator:
+    name: John200410
+    url: https://github.com/John200410
+    avatar: https://github.com/John200410.png?size=20
+  latest_release_tag: v1.0.0
+  screenshots: []
+  is_core: false
+  mc_versions: 1.20.4
+- name: Rocket3
+  repo: PK268/Rocket3
+  description: A RusherHacks plugin for crafting duration 3 rockets.
+  creator:
+    name: PK268
+    url: https://github.com/PK268
+    avatar: https://github.com/PK268.png?size=20
+  latest_release_tag: v1.2.0
+  screenshots: []
+  is_core: false
+  mc_versions: 1.20.1-1.20.6
+- name: GarlicBreeder
+  repo: GarlicRot/GarlicBreeder
+  description: A RusherHacks plugin that automates the breeding of mobs in Minecraft.
+  creator:
+    name: GarlicRot
+    url: https://github.com/GarlicRot
+    avatar: https://github.com/GarlicRot.png?size=20
+  latest_release_tag: v1.0.0
+  screenshots: []
+  is_core: false
+  mc_versions: 1.20.4
+- name: Rusher Item Saver
+  repo: kybe236/rusher-item-saver
+  description: A RusherHacks plugin that saves items from being lost.
+  creator:
+    name: kybe236
+    url: https://github.com/kybe236
+    avatar: https://github.com/kybe236.png?size=20
+  latest_release_tag: multiversion
+  screenshots: []
+  is_core: false
+  mc_versions: 1.21.1-1.21.4
+- name: RusherHack Mace Swap
+  repo: kybe236/rusherhack-mace-swap
+  description: A RusherHacks plugin that automatically swaps to a mace when attacking.
+  creator:
+    name: kybe236
+    url: https://github.com/kybe236
+    avatar: https://github.com/kybe236.png?size=20
+  latest_release_tag: fix1
+  screenshots: []
+  is_core: false
+  mc_versions: 1.21.1-1.21.4
+- name: Example Core Plugin
+  repo: RusherDevelopment/example-core-plugin
+  description: A core plugin example demonstrating mixin support in RusherHack.
+  creator:
+    name: RusherDevelopment
+    url: https://github.com/RusherDevelopment
+    avatar: https://github.com/RusherDevelopment.png?size=20
+  latest_release_tag: v1.0.0
+  screenshots: []
+  is_core: true
+  mc_versions: N/A
+- name: CrystalModifierRH
+  repo: xyzbtw/CrystalModifierRH
+  description: A plugin for modifying the rendering of end crystals in Minecraft using
+    mixins in RusherHack.
+  creator:
+    name: xyzbtw
+    url: https://github.com/xyzbtw
+    avatar: https://github.com/xyzbtw.png?size=20
+  latest_release_tag: ''
+  screenshots: []
+  is_core: true
+  mc_versions: 1.21.1
+- name: Tablist Hats
+  repo: rfresh2/TablistHats-rusherhack
+  description: Enables hat layer rendering for player heads on the tablist, even if
+    the player isn't in render distance.
+  creator:
+    name: rfresh2
+    url: https://github.com/rfresh2
+    avatar: https://github.com/rfresh2.png?size=20
+  latest_release_tag: '1.0'
+  screenshots:
+  - url: https://i.imgur.com/HEfpmLw.png
+    alt: Tablist Hats Example
+    width: 300
+  is_core: true
+  mc_versions: 1.20.1-1.21.4
+- name: NoSound
+  repo: John200410/nosound
+  description: A core plugin that disables specific in-game sounds in RusherHack.
+  creator:
+    name: John200410
+    url: https://github.com/John200410
+    avatar: https://github.com/John200410.png?size=20
+  latest_release_tag: ''
+  screenshots: []
+  is_core: true
+  mc_versions: 1.20.1-1.21.1
+- name: RusherHack Coord Spoofer
+  repo: kybe236/rusherhack-coord-spoofer
+  description: A core plugin for spoofing player coordinates in RusherHack.
+  creator:
+    name: kybe236
+    url: https://github.com/kybe236
+    avatar: https://github.com/kybe236.png?size=20
+  latest_release_tag: 1.21%2B
+  screenshots: []
+  is_core: true
+  mc_versions: 1.21.2-1.21.4
+- name: Rusher Auto Item Frame Dupe
+  repo: kybe236/rusher-auto-item-frame-dupe
+  description: A plugin for automating item frame duplication in RusherHack.
+  creator:
+    name: kybe236
+    url: https://github.com/kybe236
+    avatar: https://github.com/kybe236.png?size=20
+  latest_release_tag: 1.21.1-1.21.4
+  screenshots: []
+  is_core: false
+  mc_versions: 1.21.1-1.21.4
+- name: RusherMoji
+  repo: Lokfid/RusherMoji
+  description: A core plugin for adding custom emoji functionality in RusherHack.
+  creator:
+    name: Lokfid
+    url: https://github.com/Lokfid
+    avatar: https://github.com/Lokfid.png?size=20
+  latest_release_tag: 1.0.4
+  screenshots: []
+  is_core: true
+  mc_versions: 1.20.4
+- name: RusherHack Piston Pusher
+  repo: kybe236/rusherhack-piston-pusher
+  description: A plugin that automates pushing end crystals with pistons to attack
+    players in RusherHack.
+  creator:
+    name: kybe236
+    url: https://github.com/kybe236
+    avatar: https://github.com/kybe236.png?size=20
+  latest_release_tag: 1.21.4
+  screenshots: []
+  is_core: false
+  mc_versions: 1.21.4
+- name: RusherUtils
+  repo: 0tterware/RusherUtils
+  description: RusherUtils automates Wither and TNT tasks with HUD counters for RusherHack.
+  creator:
+    name: 0tterware
+    url: https://github.com/0tterware
+    avatar: https://github.com/0tterware.png?size=20
+  latest_release_tag: v0.1
+  screenshots:
+  - url: https://img.youtube.com/vi/yv-WR1HddAw/0.jpg
+    alt: RusherUtils Demo
+  is_core: false
+  mc_versions: 1.20.1-1.21.4
+- name: Rusher Grown ESP
+  repo: kybe236/rusher-grown-esp
+  description: ESP plugin for RusherHack that highlights grown crops and useful farm
+    blocks.
+  creator:
+    name: kybe236
+    url: https://github.com/kybe236
+    avatar: https://github.com/kybe236.png?size=20
+  latest_release_tag: 1.21.4
+  screenshots: []
+  is_core: false
+  mc_versions: 1.21.4
+- name: Rusher GhoulMode
+  repo: Koteyka32k/rusher-ghoulmode
+  description: Allows you to stay in the world after death. The death screen is suppressed,
+    and you can still look around without interacting.
+  creator:
+    name: Koteyka32k
+    url: https://github.com/Koteyka32k
+    avatar: https://github.com/Koteyka32k.png?size=20
+  latest_release_tag: ''
+  screenshots: []
+  is_core: false
+  mc_versions: 1.21.1
+- name: Rusher AutoAnvil
+  repo: Koteyka32k/rusher-autoanvil
+  description: A basic AutoAnvil with airplace. Bypasses 2b2t (very good).
+  creator:
+    name: Koteyka32k
+    url: https://github.com/Koteyka32k
+    avatar: https://github.com/Koteyka32k.png?size=20
+  latest_release_tag: ''
+  screenshots: []
+  is_core: false
+  mc_versions: 1.21.1
+- name: Rusher BurrowESP
+  repo: Koteyka32k/rusher-burrowesp
+  description: A module that shows blocks that a player is burrowed into.
+  creator:
+    name: Koteyka32k
+    url: https://github.com/Koteyka32k
+    avatar: https://github.com/Koteyka32k.png?size=20
+  latest_release_tag: ''
+  screenshots: []
+  is_core: false
+  mc_versions: 1.21.1
+- name: Rusherhack-SignFilter
+  repo: ToxicAven/Rusherhack-SignFilter
+  description: A plugin for Rusherhack to filter out unwanted/inappropriate sign messages.
+  creator:
+    name: ToxicAven
+    url: https://github.com/ToxicAven
+    avatar: https://github.com/ToxicAven.png?size=20
+  latest_release_tag: ''
+  screenshots: []
+  is_core: false
+  mc_versions: 1.21.4
+- name: Rusher-Vault-Helper
+  repo: kybe236/rusher-vault-helper
+  description: Marks vaults for you and can play a sound when you render a vault.
+  creator:
+    name: kybe236
+    url: https://github.com/kybe236
+    avatar: https://github.com/kybe236.png?size=20
+  latest_release_tag: ''
+  screenshots:
+  - url: https://github.com/user-attachments/assets/728aebf8-4b0c-4bd7-96cb-150028e3bb8e
+    alt: Vault Marker Screenshot 1
+  - url: https://github.com/user-attachments/assets/12da4881-52f6-44a8-8449-c7501444a679
+    alt: Vault Marker Screenshot 2
+  is_core: false
+  mc_versions: 1.21.1-1.21.5
+- name: Rusher-Inventory-Drag
+  repo: kybe236/rusher-inventory-drag
+  description: Allows you to drag items in your inventory while holding shift.
+  creator:
+    name: kybe236
+    url: https://github.com/kybe236
+    avatar: https://github.com/kybe236.png?size=20
+  latest_release_tag: ''
+  screenshots: []
+  is_core: true
+  mc_versions: 1.21.4
+- name: PlayerLogPlugin-RusherHack
+  repo: k4n3d4-sh0t4r0/PlayerLogPLugin-RusherHack
+  description: Rusherhack plugin that logs all player encounters in a log file and
+    displays them in the chat.
+  creator:
+    name: k4n3d4-sh0t4r0
+    url: https://github.com/k4n3d4-sh0t4r0
+    avatar: https://github.com/k4n3d4-sh0t4r0.png?size=20
+  latest_release_tag: ''
+  screenshots:
+  - url: https://github.com/k4n3d4-sh0t4r0/PlayerLogPLugin-RusherHack/blob/main/img/PlayerLogChat.png?raw=true
+    alt: Player Log Chat Example
+  - url: https://github.com/k4n3d4-sh0t4r0/PlayerLogPLugin-RusherHack/blob/main/img/PlayerLogWindows.png?raw=true
+    alt: Player Log Windows Module
+  is_core: false
+  mc_versions: 1.21.4
+- name: BarrierESP-RusherHack
+  repo: k4n3d4-sh0t4r0/BarrierESP-RusherHack
+  description: Rusherhack plugin that lets the player see barrier blocks as if holding
+    one.
+  creator:
+    name: k4n3d4-sh0t4r0
+    url: https://github.com/k4n3d4-sh0t4r0
+    avatar: https://github.com/k4n3d4-sh0t4r0.png?size=20
+  latest_release_tag: ''
+  screenshots:
+  - url: https://github.com/k4n3d4-sh0t4r0/BarrierESP-RusherHack/blob/main/img/BarrierESP-On.png?raw=true
+    alt: Barrier ESP On
+  is_core: true
+  mc_versions: 1.21.4
+- name: FovLimiter-Rusherhack
+  repo: k4n3d4-sh0t4r0/FovLimiter-Rusherhack
+  description: Limit the FOV multiplier between a max and min value.
+  creator:
+    name: k4n3d4-sh0t4r0
+    url: https://github.com/k4n3d4-sh0t4r0
+    avatar: https://github.com/k4n3d4-sh0t4r0.png?size=20
+  latest_release_tag: ''
+  screenshots: []
+  is_core: true
+  mc_versions: 1.21.4
+- name: NoJumpDelay-Rusherhack
+  repo: k4n3d4-sh0t4r0/NoJumpDelay-Rusherhack
+  description: Set the delay between jumps when holding the space key.
+  creator:
+    name: k4n3d4-sh0t4r0
+    url: https://github.com/k4n3d4-sh0t4r0
+    avatar: https://github.com/k4n3d4-sh0t4r0.png?size=20
+  latest_release_tag: ''
+  screenshots: []
+  is_core: true
+  mc_versions: 1.21.4
+- name: HideNightVision-RusherHack
+  repo: k4n3d4-sh0t4r0/HideNightVision-RusherHack
+  description: Rusherhack plugin that hides the night vision effect on the HUD.
+  creator:
+    name: k4n3d4-sh0t4r0
+    url: https://github.com/k4n3d4-sh0t4r0
+    avatar: https://github.com/k4n3d4-sh0t4r0.png?size=20
+  latest_release_tag: ''
+  screenshots:
+  - url: https://github.com/k4n3d4-sh0t4r0/HideNightVision-RusherHack/blob/main/img/HNVoff.png?raw=true
+    alt: Night Vision On
+  - url: https://github.com/k4n3d4-sh0t4r0/HideNightVision-RusherHack/blob/main/img/HNVon.png?raw=true
+    alt: Night Vision Hidden
+  is_core: true
+  mc_versions: 1.21.4
+- name: RusherChat
+  repo: GarlicRot/RusherChat
+  description: WebSocket-based global chat system for players running the plugin.
+    Messages sent are visible to all other plugin users in real time.
+  creator:
+    name: GarlicRot
+    url: https://github.com/GarlicRot
+    avatar: https://github.com/GarlicRot.png?size=20
+  latest_release_tag: ''
+  screenshots: []
+  is_core: false
+  mc_versions: 1.20.1 to 1.21.4
+# --- themes ---
+themes:
+- name: rusherNodusTheme
+  repo: bakjedev/rusherNodusTheme
+  description: Nodus - Best theme evaAAAA. Code is terrible. Blame xyzbtw!
+  creator:
+    name: bakjedev
+    url: https://github.com/bakjedev
+    avatar: https://github.com/bakjedev.png?size=20
+  latest_release_tag: ''
+  screenshots:
+  - url: ./Assets/rusherNodusTheme/NodusGUI.png
+    alt: Module
+    width: 750
+- name: Nhack Theme
+  repo: h1tm4nqq/Nhack-theme
+  description: A theme like Nhack 2015 for RH.
+  creator:
+    name: h1tm4nqq
+    url: https://github.com/h1tm4nqq
+    avatar: https://github.com/h1tm4nqq.png?size=20
+  latest_release_tag: 1.0.1
+  screenshots: []
+- name: RusherGUI
+  repo: xyzbtw/rusherGUI
+  description: An example plugin showcasing how to create custom themes with RusherHack.
+  creator:
+    name: xyzbtw
+    url: https://github.com/xyzbtw
+    avatar: https://github.com/xyzbtw.png?size=20
+  latest_release_tag: ''
+  screenshots: []
