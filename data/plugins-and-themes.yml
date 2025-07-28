@@ -1095,6 +1095,18 @@ plugins:
     screenshots: []
     is_core: false
     mc_versions: 1.20.1-1.21.4
+   - name: rusherhack-kybes-utils
+    repo: kybe236/rusherhack-kybes-utils
+    description: A collection of customizable RusherHack chat automation modules. Includes encrypted messaging (CryptoChat), death mocking, message parroting, regex-based auto-replies, and random sentence generators.
+    creator:
+      name: kybe236
+      url: https://github.com/kybe236
+      avatar: https://github.com/kybe236.png?size=20
+    latest_release_tag: v1.0.0
+    screenshots:
+      - url: Assets/rusherhack-kybes-utils/chat-example.png
+    is_core: true
+    mc_versions: 1.20.1-1.21.4
 # --- themes ---    
 themes:
   - name: rusherNodusTheme
