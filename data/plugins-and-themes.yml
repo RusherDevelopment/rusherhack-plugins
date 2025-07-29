@@ -1,4 +1,3 @@
-# --- plugins ---
 plugins:
   - name: Example Plugin
     repo: RusherDevelopment/example-plugin
@@ -1102,14 +1101,13 @@ plugins:
       name: kybe236
       url: https://github.com/kybe236
       avatar: https://github.com/kybe236.png?size=20
-    latest_release_tag: v1.0.0
+    latest_release_tag: 0.0.2
     screenshots:
       - url: Assets/rusherhack-kybes-utils/chat-example.png
         alt: Example chat messages from kybe's utils
         width: 250
     is_core: true
     mc_versions: 1.20.1-1.21.4
-# --- themes ---    
 themes:
   - name: rusherNodusTheme
     repo: bakjedev/rusherNodusTheme
