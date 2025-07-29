@@ -979,7 +979,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
    [![Latest Release Date](https://img.shields.io/github/release-date/musheck/AutoAnvilRename?label=Latest%20Release&color=green)](https://github.com/musheck/AutoAnvilRename/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/musheck/AutoAnvilRename/total)](https://github.com/musheck/AutoAnvilRename/releases/download/v0.1/AutoAnvilRename.jar)<br>
    ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201--1%2021%204-blueviolet)<br>
    **Creator**: <img src="https://github.com/musheck.png?size=20" width="20" height="20"> [musheck](https://github.com/musheck)<br>
-   A fork of the AutoAnvilRename plugin that automates item renaming in anvils. Includes features like predefined rename text, ID filtering, shulker-only mode, and configurable click delay. Original plugin: https://github.com/RusherDevelopment/rusherhack-plugins/blob/main/PLUGINS.md#auto-anvil-rename-
+   A fork of the AutoAnvilRename plugin that automates item renaming in anvils. Includes features like predefined rename text, ID filtering, shulker-only mode, and configurable click delay.
 
 ---
 
