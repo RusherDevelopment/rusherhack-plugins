@@ -1108,6 +1108,17 @@ plugins:
         width: 250
     is_core: true
     mc_versions: 1.20.1-1.21.4
+  - name: AutoAnvilRename
+    repo: musheck/AutoAnvilRename
+    description: A fork of the AutoAnvilRename plugin that automates item renaming in anvils. Includes features like predefined rename text, ID filtering, shulker-only mode, and configurable click delay. Original plugin: https://github.com/RusherDevelopment/rusherhack-plugins/blob/main/PLUGINS.md#auto-anvil-rename-
+    creator:
+      name: musheck
+      url: https://github.com/musheck
+      avatar: https://github.com/musheck.png?size=20
+    latest_release_tag: v0.1
+    screenshots: []
+    is_core: false
+    mc_versions: 1.20.1-1.21.4
 themes:
   - name: rusherNodusTheme
     repo: bakjedev/rusherNodusTheme
