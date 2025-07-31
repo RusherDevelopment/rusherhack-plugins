@@ -523,7 +523,7 @@ plugins:
       name: xyzbtw
       url: https://github.com/xyzbtw
       avatar: https://github.com/xyzbtw.png?size=20
-    latest_release_tag: release
+    latest_release_tag: 1.21.4
     screenshots: []
     is_core: false
     mc_versions: 1.20.4-1.21.1
@@ -1115,7 +1115,7 @@ plugins:
       name: musheck
       url: https://github.com/musheck
       avatar: https://github.com/musheck.png?size=20
-    latest_release_tag: v0.1
+    latest_release_tag: 1.1.0
     screenshots: []
     is_core: false
     mc_versions: 1.20.1-1.21.4
