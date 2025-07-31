@@ -493,7 +493,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [AutoNetherite](https://github.com/xyzbtw/AutoNetherite) <br>
-   [![Latest Release Date](https://img.shields.io/github/release-date/xyzbtw/AutoNetherite?label=Latest%20Release&color=green)](https://github.com/xyzbtw/AutoNetherite/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/xyzbtw/AutoNetherite/total)](https://github.com/xyzbtw/AutoNetherite/releases/download/release/AutoNetherite.jar)<br>
+   [![Latest Release Date](https://img.shields.io/github/release-date/xyzbtw/AutoNetherite?label=Latest%20Release&color=green)](https://github.com/xyzbtw/AutoNetherite/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/xyzbtw/AutoNetherite/total)](https://github.com/xyzbtw/AutoNetherite/releases/download/1.21.4/AutoNetherite.jar)<br>
    ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%204--1%2021%201-blueviolet)<br>
    **Creator**: <img src="https://github.com/xyzbtw.png?size=20" width="20" height="20"> [xyzbtw](https://github.com/xyzbtw)<br>
    A plugin that automates the process of upgrading gear to Netherite in Minecraft.
@@ -976,7 +976,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [AutoAnvilRename](https://github.com/musheck/AutoAnvilRename) <br>
-   [![Latest Release Date](https://img.shields.io/github/release-date/musheck/AutoAnvilRename?label=Latest%20Release&color=green)](https://github.com/musheck/AutoAnvilRename/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/musheck/AutoAnvilRename/total)](https://github.com/musheck/AutoAnvilRename/releases/download/v0.1/AutoAnvilRename.jar)<br>
+   [![Latest Release Date](https://img.shields.io/github/release-date/musheck/AutoAnvilRename?label=Latest%20Release&color=green)](https://github.com/musheck/AutoAnvilRename/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/musheck/AutoAnvilRename/total)](https://github.com/musheck/AutoAnvilRename/releases/download/1.1.0/AutoAnvilRename.jar)<br>
    ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201--1%2021%204-blueviolet)<br>
    **Creator**: <img src="https://github.com/musheck.png?size=20" width="20" height="20"> [musheck](https://github.com/musheck)<br>
    A fork of the AutoAnvilRename plugin that automates item renaming in anvils. Includes features like predefined rename text, ID filtering, shulker-only mode, and configurable click delay.
