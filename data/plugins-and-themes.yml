@@ -119,7 +119,7 @@ plugins:
     width: 587
   - url: ./Assets/CombinedBindList/Screenshot2.png
     alt: Customization
-    width: 235
+    width: 209
   - url: ./Assets/CombinedBindList/Screenshot3.png
     alt: Commands
     width: 415
