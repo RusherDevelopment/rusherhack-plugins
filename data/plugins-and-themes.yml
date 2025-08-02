@@ -1141,7 +1141,7 @@ plugins:
     mc_versions: 1.20.1-1.21.4
   - name: rusher-auto-kit-maker
     repo: kybe236/rusher-auto-kit-maker
-    description: Automatically builds kits inside shulker boxes, helping you quickly organize or restock PvP inventories with predefined layouts.
+    description: Automatically builds kits inside shulkers.
     creator:
       name: kybe236
       url: https://github.com/kybe236
