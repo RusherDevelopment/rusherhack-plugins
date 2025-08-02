@@ -112,14 +112,14 @@ plugins:
     name: tr330ne
     url: https://github.com/tr330ne
     avatar: https://github.com/tr330ne.png?size=20
-  latest_release_tag: v0.1
+  latest_release_tag: 'v0.1'
   screenshots:
   - url: ./Assets/Combined Bind List/Configuration.png
     alt: Configuration
-    width: 300
+    width: 250
   - url: ./Assets/Combined Bind List/Preview.png
     alt: Preview
-    width: 300
+    width: 250
   is_core: false
   mc_versions: 1.21.4
   - name: Unified Module List
