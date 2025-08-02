@@ -115,10 +115,10 @@ plugins:
   latest_release_tag: 'v0.1'
   screenshots:
   - url: ./Assets/CombinedBindList/Screenshot1.png
-    alt: Hud Setting
+    alt: Preview
     width: 690
   - url: ./Assets/CombinedBindList/Screenshot2.png
-    alt: Hud Element
+    alt: Customization
     width: 235
   is_core: false
   mc_versions: 1.21.4
