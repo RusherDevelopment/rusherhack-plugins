@@ -1003,7 +1003,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
    [![Latest Release Date](https://img.shields.io/github/release-date/kybe236/rusher-auto-kit-maker?label=Latest%20Release&color=green)](https://github.com/kybe236/rusher-auto-kit-maker/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/kybe236/rusher-auto-kit-maker/total)](https://github.com/kybe236/rusher-auto-kit-maker/releases/download/1.21.4-5/rusher-auto-kit-maker.jar)<br>
    ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
    **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)<br>
-   Automatically builds kits inside shulker boxes, helping you quickly organize or restock PvP inventories with predefined layouts.
+   Automatically builds kits inside shulkers.
 
    <details>
    <summary>Show Screenshots</summary>
