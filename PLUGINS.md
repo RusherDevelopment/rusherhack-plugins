@@ -154,9 +154,9 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
    <details>
    <summary>Show Screenshots</summary>
    <p align="center">
-     <img src="./Assets/CombinedBindList/Screenshot1.png" alt="Preview" width="587">
-     <img src="./Assets/CombinedBindList/Screenshot2.png" alt="Customization" width="209">
-     <img src="./Assets/CombinedBindList/Screenshot3.png" alt="Commands" width="435">
+     <img src="./Assets/CombinedBindList/Screenshot_1.png" alt="Preview" width="587">
+     <img src="./Assets/CombinedBindList/Screenshot_2.png" alt="Customization" width="209">
+     <img src="./Assets/CombinedBindList/Screenshot_3.png" alt="Commands" width="435">
    </p>
    </details>
 ---
