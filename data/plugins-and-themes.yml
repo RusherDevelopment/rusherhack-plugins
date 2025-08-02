@@ -105,7 +105,7 @@ plugins:
         alt: Stash Mover Demo
     is_core: false
     mc_versions: 1.20.1-1.21.1
-    - name: Combined Bind List
+  - name: Combined Bind List
   repo: tr330ne/combined-bindlist
   description: RusherHack Hud Element to display BindList from both meteorclient and rusherhack with customization and ability to hide individual modules.
   creator:
