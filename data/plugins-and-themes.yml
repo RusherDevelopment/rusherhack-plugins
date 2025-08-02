@@ -116,7 +116,7 @@ plugins:
   screenshots:
   - url: ./Assets/CombinedBindList/Screenshot1.png
     alt: Preview
-    width: 690
+    width: 587
   - url: ./Assets/CombinedBindList/Screenshot2.png
     alt: Customization
     width: 235
