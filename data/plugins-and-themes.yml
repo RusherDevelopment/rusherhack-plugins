@@ -105,6 +105,26 @@ plugins:
         alt: Stash Mover Demo
     is_core: false
     mc_versions: 1.20.1-1.21.1
+  - name: Combined Bind List
+    repo: tr330ne/combined-bindlist
+    description: RusherHack Hud Element to display BindList from both meteorclient and rusherhack with customization and ability to hide individual modules.
+    creator:
+      name: tr330ne
+      url: https://github.com/tr330ne
+      avatar: https://github.com/tr330ne.png?size=20
+    latest_release_tag: 'v0.1'
+    screenshots:
+      - url: ./Assets/CombinedBindList/Screenshot1.png
+        alt: Preview
+        width: 587
+      - url: ./Assets/CombinedBindList/Screenshot2.png
+        alt: Customization
+        width: 209
+      - url: ./Assets/CombinedBindList/Screenshot3.png
+        alt: Commands
+        width: 435
+    is_core: false
+    mc_versions: 1.21.1-1.21.4
   - name: Unified Module List
     repo: czho/unified-modulelist
     description: Rusherhack HUD element that shows active modules from both meteorclient and rusherhack.
