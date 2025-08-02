@@ -122,7 +122,7 @@ plugins:
     width: 209
   - url: ./Assets/CombinedBindList/Screenshot3.png
     alt: Commands
-    width: 415
+    width: 435
   is_core: false
   mc_versions: 1.21.1-1.21.4
   - name: Unified Module List
