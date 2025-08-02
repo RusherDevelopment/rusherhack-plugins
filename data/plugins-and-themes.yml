@@ -121,7 +121,7 @@ plugins:
     alt: Customization
     width: 235
   - url: ./Assets/CombinedBindList/Screenshot3.png
-    alt: Customization
+    alt: Commands
     width: 415
   is_core: false
   mc_versions: 1.21.4
