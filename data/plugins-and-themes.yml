@@ -124,7 +124,7 @@ plugins:
     alt: Commands
     width: 415
   is_core: false
-  mc_versions: 1.21-1.21.4
+  mc_versions: 1.21.1-1.21.4
   - name: Unified Module List
     repo: czho/unified-modulelist
     description: Rusherhack HUD element that shows active modules from both meteorclient and rusherhack.
