@@ -112,7 +112,7 @@ plugins:
       name: tr330ne
       url: https://github.com/tr330ne
       avatar: https://github.com/tr330ne.png?size=20
-    latest_release_tag: 'v0.2'
+    latest_release_tag: v0.2
     screenshots:
       - url: ./Assets/CombinedBindList/Screenshot_1.png
         alt: Preview
@@ -1146,7 +1146,7 @@ plugins:
       name: kybe236
       url: https://github.com/kybe236
       avatar: https://github.com/kybe236.png?size=20
-    latest_release_tag: 1.21.4-5
+    latest_release_tag: 1.21.4-7
     screenshots:
       - url: https://img.youtube.com/vi/rvEVD-3yPHk/hqdefault.jpg
         alt: Auto Kit Maker demonstration video
