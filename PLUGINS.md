@@ -146,17 +146,17 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [Combined Bind List](https://github.com/tr330ne/combined-bindlist) <br>
-   [![Latest Release Date](https://img.shields.io/github/release-date/tr330ne/combined-bindlist?label=Latest%20Release&color=green)](https://github.com/tr330ne/combined-bindlist/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tr330ne/combined-bindlist/total)](https://github.com/tr330ne/combined-bindlist/releases/download/v0.1/Combined%20Bind%20List.jar)<br>
+   [![Latest Release Date](https://img.shields.io/github/release-date/tr330ne/combined-bindlist?label=Latest%20Release&color=green)](https://github.com/tr330ne/combined-bindlist/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tr330ne/combined-bindlist/total)](https://github.com/tr330ne/combined-bindlist/releases/download/v0.2/Combined%20Bind%20List.jar)<br>
    ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%201--1%2021%204-blueviolet)<br>
    **Creator**: <img src="https://github.com/tr330ne.png?size=20" width="20" height="20"> [tr330ne](https://github.com/tr330ne)<br>
-   RusherHack Hud Element to display BindList from both meteorclient and rusherhack with customization and ability to hide individual modules.
+   RusherHack Hud Element to display binds from both meteor and rusher with customization and ability to modify individual modules.
 
    <details>
    <summary>Show Screenshots</summary>
    <p align="center">
-     <img src="./Assets/CombinedBindList/Screenshot_1.png" alt="Preview" width="587">
-     <img src="./Assets/CombinedBindList/Screenshot_2.png" alt="Customization" width="209">
-     <img src="./Assets/CombinedBindList/Screenshot_3.png" alt="Commands" width="435">
+     <img src="./Assets/CombinedBindList/Screenshot_1.png" alt="Preview" width="404">
+     <img src="./Assets/CombinedBindList/Screenshot_2.png" alt="Customization" width="200">
+     <img src="./Assets/CombinedBindList/Screenshot_3.png" alt="Commands" width="433">
    </p>
    </details>
 ---
