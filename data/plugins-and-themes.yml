@@ -107,7 +107,7 @@ plugins:
     mc_versions: 1.20.1-1.21.1
   - name: Combined Bind List
     repo: tr330ne/combined-bindlist
-    description: RusherHack Hud Element to display BindList from both meteorclient and rusherhack with customization and ability to hide individual modules.
+    description: RusherHack Hud Element to display binds from both meteor and rusher with customization and ability to hide individual modules.
     creator:
       name: tr330ne
       url: https://github.com/tr330ne
