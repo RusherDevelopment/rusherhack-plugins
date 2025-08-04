@@ -7,8 +7,6 @@ Whether you're submitting a new plugin, fixing typos, or enhancing existing entr
 > [!NOTE]  
 > Please follow the style and formatting guidelines described below to ensure consistency across all submissions.
 
----
-
 ## How to Contribute
 
 1. **Fork the repository**  
@@ -64,8 +62,6 @@ Whether you're submitting a new plugin, fixing typos, or enhancing existing entr
   is_core: false
   mc_versions: N/A
 ```
-
----
 
 ### Example Theme Format (with screenshots):
 ```yaml
