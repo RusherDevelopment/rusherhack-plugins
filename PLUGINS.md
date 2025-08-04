@@ -87,8 +87,8 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  <details>
  <summary>Show Screenshots</summary>
  <p align="center">
- <img src="./Assets/RusherHack-HudElement/HudSettings.png" alt="Hud Setting" width="250">
- <img src="./Assets/RusherHack-HudElement/HudElement.png" alt="Hud Element" width="550">
+ <img src="./Assets/RusherHack-CustomHUDElement/HudSettings.png" alt="Hud Setting" width="250">
+ <img src="./Assets/RusherHack-CustomHUDElement/HudElement.png" alt="Hud Element" width="550">
  </p>
  </details>
 
