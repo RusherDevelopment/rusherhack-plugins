@@ -39,29 +39,29 @@ Themes modify RusherHack’s appearance, changing colors, fonts, and UI elements
 ---
 <!--- THEMES START -->
 - ### [rusherNodusTheme](https://github.com/bakjedev/rusherNodusTheme) <br>
-   [![Latest Release Date](https://img.shields.io/github/release-date/bakjedev/rusherNodusTheme?label=Latest%20Release&color=green)](https://github.com/bakjedev/rusherNodusTheme/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/bakjedev/rusherNodusTheme/total)](https://github.com/bakjedev/rusherNodusTheme/releases/download/releease2/rusherNodusTheme.jar)<br>
-   **Creator**: <img src="https://github.com/bakjedev.png?size=20" width="20" height="20"> [bakjedev](https://github.com/bakjedev)<br>
-   Nodus - Best theme evaAAAA. Code is terrible. Blame xyzbtw!
+ [![Latest Release Date](https://img.shields.io/github/release-date/bakjedev/rusherNodusTheme?label=Latest%20Release&color=green)](https://github.com/bakjedev/rusherNodusTheme/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/bakjedev/rusherNodusTheme/total)](https://github.com/bakjedev/rusherNodusTheme/releases/download/releease2/rusherNodusTheme.jar)<br>
+ **Creator**: <img src="https://github.com/bakjedev.png?size=20" width="20" height="20"> [bakjedev](https://github.com/bakjedev)<br>
+ Nodus - Best theme evaAAAA. Code is terrible. Blame xyzbtw!
 
-   <details>
-   <summary>Show Screenshots</summary>
-   <p align="center">
-     <img src="./Assets/rusherNodusTheme/NodusGUI.png" alt="Module" width="750">
-   </p>
-   </details>
+ <details>
+ <summary>Show Screenshots</summary>
+ <p align="center">
+ <img src="./Assets/rusherNodusTheme/NodusGUI.png" alt="Module" width="750">
+ </p>
+ </details>
 ---
 
 - ### [Nhack Theme](https://github.com/h1tm4nqq/Nhack-theme) <br>
-   [![Latest Release Date](https://img.shields.io/github/release-date/h1tm4nqq/Nhack-theme?label=Latest%20Release&color=green)](https://github.com/h1tm4nqq/Nhack-theme/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/h1tm4nqq/Nhack-theme/total)](https://github.com/h1tm4nqq/Nhack-theme/releases/download/1.21.4/Nhack%20Theme.jar)<br>
-   **Creator**: <img src="https://github.com/h1tm4nqq.png?size=20" width="20" height="20"> [h1tm4nqq](https://github.com/h1tm4nqq)<br>
-   A theme like Nhack 2015 for RH.
+ [![Latest Release Date](https://img.shields.io/github/release-date/h1tm4nqq/Nhack-theme?label=Latest%20Release&color=green)](https://github.com/h1tm4nqq/Nhack-theme/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/h1tm4nqq/Nhack-theme/total)](https://github.com/h1tm4nqq/Nhack-theme/releases/download/1.21.4/Nhack%20Theme.jar)<br>
+ **Creator**: <img src="https://github.com/h1tm4nqq.png?size=20" width="20" height="20"> [h1tm4nqq](https://github.com/h1tm4nqq)<br>
+ A theme like Nhack 2015 for RH.
 
 ---
 
 - ### [RusherGUI](https://github.com/xyzbtw/rusherGUI) <br>
-   [![Latest Release Date](https://img.shields.io/github/release-date/xyzbtw/rusherGUI?label=Latest%20Release&color=green)](https://github.com/xyzbtw/rusherGUI/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/xyzbtw/rusherGUI/total)](https://github.com/xyzbtw/rusherGUI/releases/download/rusherhack/RusherGUI.jar)<br>
-   **Creator**: <img src="https://github.com/xyzbtw.png?size=20" width="20" height="20"> [xyzbtw](https://github.com/xyzbtw)<br>
-   An example plugin showcasing how to create custom themes with RusherHack.
+ [![Latest Release Date](https://img.shields.io/github/release-date/xyzbtw/rusherGUI?label=Latest%20Release&color=green)](https://github.com/xyzbtw/rusherGUI/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/xyzbtw/rusherGUI/total)](https://github.com/xyzbtw/rusherGUI/releases/download/rusherhack/RusherGUI.jar)<br>
+ **Creator**: <img src="https://github.com/xyzbtw.png?size=20" width="20" height="20"> [xyzbtw](https://github.com/xyzbtw)<br>
+ An example plugin showcasing how to create custom themes with RusherHack.
 
 ---
 
