@@ -1,11 +1,13 @@
 import yaml
 import re
+import os
 
 # -----------------------
 # Load YAML data
 # -----------------------
 with open('data/plugins-and-themes.yml', 'r') as f:
     data = yaml.safe_load(f)
+print(f"Loaded {len(data.get('plugins', []))} plugins and {len(data.get('themes', []))} themes.")
 
 # -----------------------
 # Markdown generator for each plugin/theme entry
@@ -54,6 +56,7 @@ def generate_entry_md(entry, is_plugin=True, index=0):
 # -----------------------
 plugin_count = len(data.get("plugins", []))
 theme_count = len(data.get("themes", []) or [])
+print(f"Plugin count: {plugin_count}, Theme count: {theme_count}")
 
 # -----------------------
 # Update PLUGINS.md
@@ -61,10 +64,7 @@ theme_count = len(data.get("themes", []) or [])
 with open('PLUGINS.md', 'r') as f:
     plugins_content = f.read()
 
-# Generate plugin entries
 plugin_entries = ''.join(generate_entry_md(p, is_plugin=True, index=i) for i, p in enumerate(data.get('plugins', [])))
-
-# Update Plugins badge and plugin list section
 plugins_content = re.sub(r'\[!\[Plugins\].*?\]\(#plugins-list\)',
                          f'[![Plugins](https://img.shields.io/badge/Plugins-{plugin_count}-green)](#plugins-list)',
                          plugins_content)
@@ -75,6 +75,7 @@ plugins_content = re.sub(r'<!--- Plugins Start -->.*<!--- Plugins End -->',
 
 with open('PLUGINS.md', 'w') as f:
     f.write(plugins_content)
+    print("Updated PLUGINS.md")
 
 # -----------------------
 # Update THEMES.md
@@ -82,10 +83,7 @@ with open('PLUGINS.md', 'w') as f:
 with open('THEMES.md', 'r') as f:
     themes_content = f.read()
 
-# Generate theme entries
 theme_entries = ''.join(generate_entry_md(t, is_plugin=False, index=i) for i, t in enumerate(data.get('themes', [])))
-
-# Update Themes badge and theme list section
 themes_content = re.sub(r'\[!\[Themes\].*?\]\(#themes-list\)',
                         f'[![Themes](https://img.shields.io/badge/Themes-{theme_count}-green)](#themes-list)',
                         themes_content)
@@ -96,24 +94,33 @@ themes_content = re.sub(r'<!--- THEMES START -->.*<!--- THEMES END -->',
 
 with open('THEMES.md', 'w') as f:
     f.write(themes_content)
+    print("Updated THEMES.md")
 
 # -----------------------
-# Update badge counts in README.md (flexible for different links or counts)
+# Update badge counts in README.md (resilient version)
 # -----------------------
 with open('README.md', 'r') as f:
     readme_content = f.read()
 
-# Match and replace Plugins badge
+# Debug: before replacement
+print("Searching for plugin badge...")
+plugin_match = re.search(r'\[!\[Plugins\]\(.*?shields\.io/badge/Plugins-\d+-green.*?\)\]\([^)]+\)', readme_content)
+print("Plugin badge found:", bool(plugin_match))
+
+print("Searching for theme badge...")
+theme_match = re.search(r'\[!\[Themes\]\(.*?shields\.io/badge/Themes-\d+-green.*?\)\]\([^)]+\)', readme_content)
+print("Theme badge found:", bool(theme_match))
+
+# Replace badges
 readme_content = re.sub(
-    r'\[!\[Plugins\]\(https://img\.shields\.io/badge/Plugins-\d+-green\)\]\([^)]+\)',
+    r'\[!\[Plugins\]\(.*?shields\.io/badge/Plugins-\d+-green.*?\)\]\([^)]+\)',
     f'[![Plugins](https://img.shields.io/badge/Plugins-{plugin_count}-green)](./PLUGINS.md)',
     readme_content,
     count=1
 )
 
-# Match and replace Themes badge
 readme_content = re.sub(
-    r'\[!\[Themes\]\(https://img\.shields\.io/badge/Themes-\d+-green\)\]\([^)]+\)',
+    r'\[!\[Themes\]\(.*?shields\.io/badge/Themes-\d+-green.*?\)\]\([^)]+\)',
     f'[![Themes](https://img.shields.io/badge/Themes-{theme_count}-green)](./THEMES.md)',
     readme_content,
     count=1
@@ -121,3 +128,6 @@ readme_content = re.sub(
 
 with open('README.md', 'w') as f:
     f.write(readme_content)
+    print("README.md updated.")
+
+print("README.md last modified:", os.path.getmtime('README.md'))
