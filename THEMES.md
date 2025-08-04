@@ -49,6 +49,7 @@ Themes modify RusherHack’s appearance, changing colors, fonts, and UI elements
  <img src="./Assets/rusherNodusTheme/NodusGUI.png" alt="Module" width="750">
  </p>
  </details>
+
 ---
 
 - ### [Nhack Theme](https://github.com/h1tm4nqq/Nhack-theme) <br>

@@ -75,6 +75,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  <img src="./Assets/2b2t.vc Rusherhack/HudDisplay.png" alt="Hud Display w/2b2t Queue" width="550">
  </p>
  </details>
+
 ---
 
 - ### [RusherHack-HudElement](https://github.com/Aspect-404/RusherHack-HudElement) <br>
@@ -90,6 +91,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  <img src="./Assets/RusherHack-HudElement/HudElement.png" alt="Hud Element" width="550">
  </p>
  </details>
+
 ---
 
 - ### [Auto Anvil Rename](https://github.com/IceTank/AutoAnvilRename) <br>
@@ -105,6 +107,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  <img src="./Assets/AutoAnvilRename/ModuleInfo.png" alt="Module Info" width="450">
  </p>
  </details>
+
 ---
 
 - ### [Queue Manager](https://github.com/GabiRP/QueueManager) <br>
@@ -129,6 +132,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  <img src="./Assets/rusherhack-instance-info/WindowInfo.png" alt="Player Head Info" width="550">
  </p>
  </details>
+
 ---
 
 - ### [Stash Mover Plugin](https://github.com/xyzbtw/StashMoverPlugin) <br>
@@ -143,6 +147,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  <a href="https://www.youtube.com/watch?v=gfnNFyRQavA" target="_blank"><img src="https://img.youtube.com/vi/gfnNFyRQavA/0.jpg" alt="Stash Mover Demo" width="250"></a>
  </p>
  </details>
+
 ---
 
 - ### [Combined Bind List](https://github.com/tr330ne/combined-bindlist) <br>
@@ -159,6 +164,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  <img src="./Assets/CombinedBindList/Screenshot_3.png" alt="Commands" width="433">
  </p>
  </details>
+
 ---
 
 - ### [Unified Module List](https://github.com/czho/unified-modulelist) <br>
@@ -181,6 +187,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  <img src="./Assets/ContainerTweaks/ModuleSettings.png" alt="Module" width="250">
  </p>
  </details>
+
 ---
 
 - ### [RusherHack Spotify Integration](https://github.com/John200410/rusherhack-spotify) <br>
@@ -196,6 +203,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  <img src="./Assets/spotify/HudElement.png" alt="Spotify Hud Element" width="450">
  </p>
  </details>
+
 ---
 
 - ### [Vanilla Elytra Flight](https://github.com/FBanna/Rusherhack-Vanilla-Efly) <br>
@@ -234,6 +242,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  <a href="https://www.youtube.com/watch?v=JUhgqLYdONs" target="_blank"><img src="https://img.youtube.com/vi/JUhgqLYdONs/0.jpg" alt="Nuker Demo" width="250"></a>
  </p>
  </details>
+
 ---
 
 - ### [Hold Rusher](https://github.com/cherosin/hold-rusher) <br>
@@ -288,6 +297,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  <a href="https://www.youtube.com/watch?v=m_O0ruTdto8" target="_blank"><img src="https://img.youtube.com/vi/m_O0ruTdto8/0.jpg" alt="Open Folder Demo" width="250"></a>
  </p>
  </details>
+
 ---
 
 - ### [Mace Kill](https://github.com/kybe236/rusherhack-mace-kill) <br>
@@ -302,6 +312,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  <a href="https://www.youtube.com/watch?v=seP5OqcnFT4" target="_blank"><img src="https://img.youtube.com/vi/seP5OqcnFT4/0.jpg" alt="Mace Kill Demo" width="250"></a>
  </p>
  </details>
+
 ---
 
 - ### [Weather Changing Plugin](https://github.com/Lokfid/WeatherChangingPlugin) <br>
@@ -324,6 +335,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  <a href="https://www.youtube.com/watch?v=kaFZWN27RaY" target="_blank"><img src="https://img.youtube.com/vi/kaFZWN27RaY/0.jpg" alt="Middleclick Wind Charge Demo" width="250"></a>
  </p>
  </details>
+
 ---
 
 - ### [GarlicSight](https://github.com/GarlicRot/GarlicSight) <br>
@@ -340,6 +352,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  <img src="./Assets/GarlicSight/entityinfo.png" alt="Entity Info" width="300">
  </p>
  </details>
+
 ---
 
 - ### [LightningPop](https://github.com/GarlicRot/LightningPop) <br>
@@ -354,6 +367,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  <img src="./Assets/LightningPop/Module.png" alt="Module" width="250">
  </p>
  </details>
+
 ---
 
 - ### [AutoBucket](https://github.com/GarlicRot/AutoBucket) <br>
@@ -368,6 +382,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  <img src="./Assets/AutoBucket/module.png" alt="Module" width="250">
  </p>
  </details>
+
 ---
 
 - ### [RusherHack-BoatExecute](https://github.com/PhilipPanda/RusherHack-BoatExecute) <br>
@@ -382,6 +397,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  <a href="https://www.youtube.com/watch?v=h35gKz9ZQK4" target="_blank"><img src="https://img.youtube.com/vi/h35gKz9ZQK4/0.jpg" alt="BoatExecute Demo" width="250"></a>
  </p>
  </details>
+
 ---
 
 - ### [NBT Viewer](https://github.com/Gentleman2292/NBT-viewer) <br>
@@ -396,6 +412,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  <img src="./Assets/NBT-viewer/NBT-viewer.png" alt="NBT-viewer" width="750">
  </p>
  </details>
+
 ---
 
 - ### [Remote Control](https://github.com/kybe236/rusherhack-remote-controle) <br>
@@ -442,6 +459,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  <img src="./Assets/rusherhack-messenger/rusherhack-messenger-demo.jpg" alt="rusherhack-messenger Demo" width="250">
  </p>
  </details>
+
 ---
 
 - ### [RusherHack Instance Info (Fork)](https://github.com/GarlicRot/rusherhack-instance-info) <br>
@@ -458,6 +476,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  <img src="./Assets/rusherhack-instance-info-fork/WindowInfo.png" alt="Player Head Info" width="550">
  </p>
  </details>
+
 ---
 
 - ### [RusherHack NoteBot](https://github.com/Lokfid/RusherHackNoteBot) <br>
@@ -544,6 +563,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  <img src="./Assets/rusher-elytra-eta/HudElement.png" alt="The hud Element" width="250">
  </p>
  </details>
+
 ---
 
 - ### [rusher-silent-close](https://github.com/kybe236/rusher-silent-close) <br>
@@ -630,6 +650,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  <a href="https://www.youtube.com/watch?v=44b4QO6l1Pc" target="_blank"><img src="https://img.youtube.com/vi/44b4QO6l1Pc/0.jpg" alt="Video Tutorial" width="300"></a>
  </p>
  </details>
+
 ---
 
 - ### [Rusher2b2tVelocity](https://github.com/Lokfid/Rusher2b2tVelocity) <br>
@@ -676,6 +697,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  <img src="./Assets/HDisabler/HDisabler.png" alt="Hud Setting" width="250">
  </p>
  </details>
+
 ---
 
 - ### [CoordFollower](https://github.com/CherkaSSH/CoordFollower-plugin) <br>
@@ -781,6 +803,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  <img src="https://i.imgur.com/HEfpmLw.png" alt="Tablist Hats Example" width="300">
  </p>
  </details>
+
 ---
 
 - ### [NoSound](https://github.com/John200410/nosound) <br>
@@ -838,6 +861,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  <a href="https://www.youtube.com/watch?v=yv-WR1HddAw" target="_blank"><img src="https://img.youtube.com/vi/yv-WR1HddAw/0.jpg" alt="RusherUtils Demo" width="250"></a>
  </p>
  </details>
+
 ---
 
 - ### [Rusher Grown ESP](https://github.com/kybe236/rusher-grown-esp) <br>
@@ -893,6 +917,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  <img src="https://github.com/user-attachments/assets/12da4881-52f6-44a8-8449-c7501444a679" alt="Vault Marker Screenshot 2" width="250">
  </p>
  </details>
+
 ---
 
 - ### [Rusher-Inventory-Drag](https://github.com/kybe236/rusher-inventory-drag) <br>
@@ -917,6 +942,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  <img src="https://github.com/k4n3d4-sh0t4r0/PlayerLogPLugin-RusherHack/blob/main/img/PlayerLogWindows.png?raw=true" alt="Player Log Windows Module" width="250">
  </p>
  </details>
+
 ---
 
 - ### [BarrierESP-RusherHack](https://github.com/k4n3d4-sh0t4r0/BarrierESP-RusherHack) <br>
@@ -932,6 +958,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  <img src="https://github.com/k4n3d4-sh0t4r0/BarrierESP-RusherHack/blob/main/img/BarrierESP-On.png?raw=true" alt="Barrier ESP On" width="250">
  </p>
  </details>
+
 ---
 
 - ### [FovLimiter-Rusherhack](https://github.com/k4n3d4-sh0t4r0/FovLimiter-Rusherhack) <br>
@@ -966,6 +993,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  <img src="https://github.com/k4n3d4-sh0t4r0/HideNightVision-RusherHack/blob/main/img/HNVon.png?raw=true" alt="Night Vision Hidden" width="250">
  </p>
  </details>
+
 ---
 
 - ### [RusherChat](https://github.com/GarlicRot/RusherChat) <br>
@@ -989,6 +1017,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  <img src="Assets/rusherhack-kybes-utils/chat-example.png" alt="Example chat messages from kybe's utils" width="250">
  </p>
  </details>
+
 ---
 
 - ### [AutoAnvilRename](https://github.com/musheck/AutoAnvilRename) <br>
@@ -1011,6 +1040,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  <img src="https://img.youtube.com/vi/rvEVD-3yPHk/hqdefault.jpg" alt="Auto Kit Maker demonstration video" width="400">
  </p>
  </details>
+
 ---
 
 <!--- Plugins End -->
