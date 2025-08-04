@@ -98,23 +98,25 @@ with open('THEMES.md', 'w') as f:
     f.write(themes_content)
 
 # -----------------------
-# Update badge counts in README.md
+# Update badge counts in README.md (flexible for different links or counts)
 # -----------------------
 with open('README.md', 'r') as f:
     readme_content = f.read()
 
-# Update plugin badge in README — match (./PLUGINS.md)
+# Match and replace Plugins badge
 readme_content = re.sub(
-    r'\[!\[Plugins\]\(https://img\.shields\.io/badge/Plugins-\d+-green\)\]\(\./PLUGINS\.md\)',
+    r'\[!\[Plugins\]\(https://img\.shields\.io/badge/Plugins-\d+-green\)\]\([^)]+\)',
     f'[![Plugins](https://img.shields.io/badge/Plugins-{plugin_count}-green)](./PLUGINS.md)',
-    readme_content
+    readme_content,
+    count=1
 )
 
-# Update theme badge in README — match (./THEMES.md)
+# Match and replace Themes badge
 readme_content = re.sub(
-    r'\[!\[Themes\]\(https://img\.shields\.io/badge/Themes-\d+-green\)\]\(\./THEMES\.md\)',
+    r'\[!\[Themes\]\(https://img\.shields\.io/badge/Themes-\d+-green\)\]\([^)]+\)',
     f'[![Themes](https://img.shields.io/badge/Themes-{theme_count}-green)](./THEMES.md)',
-    readme_content
+    readme_content,
+    count=1
 )
 
 with open('README.md', 'w') as f:
