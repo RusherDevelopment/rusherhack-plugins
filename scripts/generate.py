@@ -37,7 +37,7 @@ def generate_entry_md(entry, is_plugin=True, index=0):
                 md += f" <a href=\"{video_url}\" target=\"_blank\"><img src=\"{ss['url']}\" alt=\"{ss['alt']}\" width=\"{ss.get('width', 250)}\"></a>\n"
             else:
                 md += f" <img src=\"{ss['url']}\" alt=\"{ss['alt']}\" width=\"{ss.get('width', 250)}\">\n"
-        md += " </p>\n </details>\n"
+        md += " </p>\n </details>\n\n"
     md += "---\n\n"
     return md
 
