@@ -1153,6 +1153,17 @@ plugins:
         width: 400
     is_core: false
     mc_versions: 1.21.4
+  - name: rusherhack-shell-integration
+    repo: tillay/rusherhack-shell-integration
+    description: Provides Linux shell integration for RusherHack, including an in-game terminal, command HUD, and support for triggering commands from external scripts.
+    creator:
+      name: tillay
+      url: https://github.com/tillay
+      avatar: https://github.com/tillay.png?size=20
+    latest_release_tag: v1.0.0
+    screenshots: []
+    is_core: false
+    mc_versions: 1.20.1-1.21.4
 themes:
   - name: rusherNodusTheme
     repo: bakjedev/rusherNodusTheme
