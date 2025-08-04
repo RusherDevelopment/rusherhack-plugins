@@ -1164,6 +1164,17 @@ plugins:
     screenshots: []
     is_core: false
     mc_versions: 1.21.1-1.21.4
+  - name: rusherhack-SmartBounce
+    repo: tillay/rusherhack-SmartBounce
+    description: Automatically adjusts the player's pitch during Elytra bouncing to smoothly jump over 1-block obstacles and return to optimal pitch afterward.
+    creator:
+      name: tillay
+      url: https://github.com/tillay
+      avatar: https://github.com/tillay.png?size=20
+    latest_release_tag: v1.0.0
+    screenshots: []
+    is_core: false
+    mc_versions: 1.21.1-1.21.4
 themes:
   - name: rusherNodusTheme
     repo: bakjedev/rusherNodusTheme
