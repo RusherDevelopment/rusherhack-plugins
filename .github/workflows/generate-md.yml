@@ -9,8 +9,10 @@ on:
 jobs:
   generate:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -20,11 +22,12 @@ jobs:
       - name: Install PyYAML
         run: pip install pyyaml
 
-      - name: Update MD Files
+      - name: Generate markdown files
         run: python scripts/generate.py
 
-      - name: Commit Changes
+      - name: Commit and push changes
         uses: EndBug/add-and-commit@v9
         with:
-          add: 'PLUGINS.md THEMES.md'
-          message: 'Update PLUGINS.md and THEMES.md from YAML'
+          add: 'PLUGINS.md THEMES.md README.md'
+          message: 'Update PLUGINS.md, THEMES.md, and README.md from YAML'
+          push: true
