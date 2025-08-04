@@ -1163,7 +1163,7 @@ plugins:
     latest_release_tag: release
     screenshots: []
     is_core: false
-    mc_versions: 1.20.1-1.21.4
+    mc_versions: 1.21.1-1.21.4
 themes:
   - name: rusherNodusTheme
     repo: bakjedev/rusherNodusTheme
