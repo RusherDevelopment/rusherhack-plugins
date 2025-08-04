@@ -36,10 +36,10 @@ plugins:
       avatar: https://github.com/Aspect-404.png?size=20
     latest_release_tag: Release
     screenshots:
-      - url: ./Assets/RusherHack-HudElement/HudSettings.png
+      - url: ./Assets/RusherHack-CustomHUDElement/HudSettings.png
         alt: Hud Setting
         width: 250
-      - url: ./Assets/RusherHack-HudElement/HudElement.png
+      - url: ./Assets/RusherHack-CustomHUDElement/HudElement.png
         alt: Hud Element
         width: 550
     is_core: false
