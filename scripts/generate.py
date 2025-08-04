@@ -1,6 +1,7 @@
 import yaml
 import re
 import os
+import difflib
 
 # -----------------------
 # Load YAML data
@@ -21,21 +22,17 @@ def generate_entry_md(entry, is_plugin=True, index=0):
     md += f" [![Latest Release Date](https://img.shields.io/github/release-date/{entry['repo']}?label=Latest%20Release&color=green)](https://github.com/{entry['repo']}/releases) "
     md += f"[![GitHub Downloads](https://img.shields.io/github/downloads/{entry['repo']}/total)](https://github.com/{entry['repo']}/releases/download/{entry.get('latest_release_tag', 'latest')}/{sanitized_name}.jar)<br>\n"
 
-    # MC version + core plugin badge
     if is_plugin and 'mc_versions' in entry:
         mc_versions = entry['mc_versions'].replace('-', '--').replace('.', '%20')
         md += f" ![MC Version](https://img.shields.io/badge/MC%20Version-{mc_versions}-blueviolet)<br>\n"
     if is_plugin and entry.get('is_core', False):
         md += " ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>\n"
 
-    # Creator
     md += f" **Creator**: <img src=\"{entry['creator']['avatar']}\" width=\"20\" height=\"20\"> [{entry['creator']['name']}]({entry['creator']['url']})<br>\n"
 
-    # Description (remove image markdown if any)
     cleaned_description = re.sub(r'!\[.*?\]\(.*?\)', '', entry['description'])
     md += f" {cleaned_description.strip()}\n\n"
 
-    # Screenshots and YouTube thumbnails
     if entry.get('screenshots'):
         md += " <details>\n <summary>Show Screenshots</summary>\n <p align=\"center\">\n"
         for ss in entry['screenshots']:
@@ -75,7 +72,7 @@ plugins_content = re.sub(r'<!--- Plugins Start -->.*<!--- Plugins End -->',
 
 with open('PLUGINS.md', 'w') as f:
     f.write(plugins_content)
-    print("Updated PLUGINS.md")
+    print("✅ Updated PLUGINS.md")
 
 # -----------------------
 # Update THEMES.md
@@ -94,40 +91,49 @@ themes_content = re.sub(r'<!--- THEMES START -->.*<!--- THEMES END -->',
 
 with open('THEMES.md', 'w') as f:
     f.write(themes_content)
-    print("Updated THEMES.md")
+    print("✅ Updated THEMES.md")
 
 # -----------------------
-# Update badge counts in README.md (resilient version)
+# Update badge counts in README.md (flexible)
 # -----------------------
+print("📁 Working directory:", os.getcwd())
+print("📄 README.md path:", os.path.abspath('README.md'))
+
 with open('README.md', 'r') as f:
-    readme_content = f.read()
+    readme_original = f.read()
 
-# Debug: before replacement
-print("Searching for plugin badge...")
-plugin_match = re.search(r'\[!\[Plugins\]\(.*?shields\.io/badge/Plugins-\d+-green.*?\)\]\([^)]+\)', readme_content)
-print("Plugin badge found:", bool(plugin_match))
+# Check for matches
+plugin_match = re.search(r'\[!\[Plugins\]\(.*?shields\.io/badge/Plugins-\d+-green.*?\)\]\([^)]+\)', readme_original)
+theme_match = re.search(r'\[!\[Themes\]\(.*?shields\.io/badge/Themes-\d+-green.*?\)\]\([^)]+\)', readme_original)
+print("🔍 Plugin badge found:", bool(plugin_match))
+print("🔍 Theme badge found:", bool(theme_match))
 
-print("Searching for theme badge...")
-theme_match = re.search(r'\[!\[Themes\]\(.*?shields\.io/badge/Themes-\d+-green.*?\)\]\([^)]+\)', readme_content)
-print("Theme badge found:", bool(theme_match))
-
-# Replace badges
-readme_content = re.sub(
+# Apply replacements
+readme_updated = re.sub(
     r'\[!\[Plugins\]\(.*?shields\.io/badge/Plugins-\d+-green.*?\)\]\([^)]+\)',
     f'[![Plugins](https://img.shields.io/badge/Plugins-{plugin_count}-green)](./PLUGINS.md)',
-    readme_content,
+    readme_original,
     count=1
 )
 
-readme_content = re.sub(
+readme_updated = re.sub(
     r'\[!\[Themes\]\(.*?shields\.io/badge/Themes-\d+-green.*?\)\]\([^)]+\)',
     f'[![Themes](https://img.shields.io/badge/Themes-{theme_count}-green)](./THEMES.md)',
-    readme_content,
+    readme_updated,
     count=1
 )
 
-with open('README.md', 'w') as f:
-    f.write(readme_content)
-    print("README.md updated.")
+# Diff check
+if readme_original == readme_updated:
+    print("✅ README.md was already up to date.")
+else:
+    print("✏️ README.md was changed. Writing changes...")
+    with open('README.md', 'w') as f:
+        f.write(readme_updated)
+    print("✅ README.md updated.")
+    print("--- README.md DIFF ---")
+    for line in difflib.unified_diff(readme_original.splitlines(), readme_updated.splitlines(), fromfile='before', tofile='after', lineterm=''):
+        print(line)
+    print("--- END DIFF ---")
 
-print("README.md last modified:", os.path.getmtime('README.md'))
+print("🕒 README.md last modified:", os.path.getmtime('README.md'))
