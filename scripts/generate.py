@@ -33,7 +33,7 @@ def generate_entry_md(entry, is_plugin=True, index=0):
     if entry.get('screenshots'):
         md += " <details>\n <summary>Show Screenshots</summary>\n <p align=\"center\">\n"
         for ss in entry['screenshots']:
-            youtube_match = re.match(r'https://img.youtube.com/vi/([^/]+)/\d+\.jpg', ss['url'])
+            youtube_match = re.match(r'https://img\.youtube\.com/vi/([^/]+)/[^/]+\.jpg', ss['url'])
             if youtube_match:
                 video_id = youtube_match.group(1)
                 video_url = f"https://www.youtube.com/watch?v={video_id}"
