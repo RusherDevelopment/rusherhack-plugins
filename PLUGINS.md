@@ -1037,7 +1037,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  <details>
  <summary>Show Screenshots</summary>
  <p align="center">
- <img src="https://img.youtube.com/vi/rvEVD-3yPHk/hqdefault.jpg" alt="Auto Kit Maker demonstration video" width="400">
+ <img src="https://img.youtube.com/vi/rvEVD-3yPHk/hqdefault.jpg" alt="Auto Kit Maker demonstration video" width="600">
  </p>
  </details>
 
