@@ -1045,7 +1045,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [rusherhack-shell-integration](https://github.com/tillay/rusherhack-shell-integration) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/tillay/rusherhack-shell-integration?label=Latest%20Release&color=green)](https://github.com/tillay/rusherhack-shell-integration/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tillay/rusherhack-shell-integration/total)](https://github.com/tillay/rusherhack-shell-integration/releases/download/release/rusherhack-shell-integration.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201--1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%201--1%2021%204-blueviolet)<br>
  **Creator**: <img src="https://github.com/tillay.png?size=20" width="20" height="20"> [tillay](https://github.com/tillay)<br>
  Provides Linux shell integration for RusherHack, including an in-game terminal, command HUD, and support for triggering commands from external scripts.
 
