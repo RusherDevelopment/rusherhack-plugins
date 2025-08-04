@@ -103,15 +103,19 @@ with open('THEMES.md', 'w') as f:
 with open('README.md', 'r') as f:
     readme_content = f.read()
 
-# Update plugin badge in README
-readme_content = re.sub(r'\[!\[Plugins\]\(https://img\.shields\.io/badge/Plugins-\d+-green\)\]\(#plugins-list\)',
-                        f'[![Plugins](https://img.shields.io/badge/Plugins-{plugin_count}-green)](#plugins-list)',
-                        readme_content)
+# Update plugin badge in README — match (./PLUGINS.md)
+readme_content = re.sub(
+    r'\[!\[Plugins\]\(https://img\.shields\.io/badge/Plugins-\d+-green\)\]\(\./PLUGINS\.md\)',
+    f'[![Plugins](https://img.shields.io/badge/Plugins-{plugin_count}-green)](./PLUGINS.md)',
+    readme_content
+)
 
-# Update theme badge in README
-readme_content = re.sub(r'\[!\[Themes\]\(https://img\.shields\.io/badge/Themes-\d+-green\)\]\(#themes-list\)',
-                        f'[![Themes](https://img.shields.io/badge/Themes-{theme_count}-green)](#themes-list)',
-                        readme_content)
+# Update theme badge in README — match (./THEMES.md)
+readme_content = re.sub(
+    r'\[!\[Themes\]\(https://img\.shields\.io/badge/Themes-\d+-green\)\]\(\./THEMES\.md\)',
+    f'[![Themes](https://img.shields.io/badge/Themes-{theme_count}-green)](./THEMES.md)',
+    readme_content
+)
 
 with open('README.md', 'w') as f:
     f.write(readme_content)
