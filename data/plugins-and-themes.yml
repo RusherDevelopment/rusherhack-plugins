@@ -1184,7 +1184,7 @@ plugins:
       name: kybe236
       url: https://github.com/kybe236
       avatar: https://github.com/kybe236.png?size=20
-    latest_release_tag: 1.21.4-8
+    latest_release_tag: 1.21.4-10
     screenshots:
       - url: https://img.youtube.com/vi/rvEVD-3yPHk/hqdefault.jpg
         alt: Auto Kit Maker demonstration video
@@ -1209,7 +1209,7 @@ plugins:
       name: tillay
       url: https://github.com/tillay
       avatar: https://github.com/tillay.png?size=20
-    latest_release_tag: v1.0.0
+    latest_release_tag: release
     screenshots: []
     is_core: false
     mc_versions: 1.21.1-1.21.4
