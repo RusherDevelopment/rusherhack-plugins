@@ -1,3 +1,23 @@
+# -----------------------------------------------------------
+# Markdown Generator from plugins-and-themes.yml
+# -----------------------------------------------------------
+#
+# This script generates and updates:
+#   - PLUGINS.md
+#   - THEMES.md
+#   - README.md (badge counts)
+#
+# It uses the validated data from plugins-and-themes.yml
+# to build properly formatted markdown entries.
+#
+# This script should only be run after validation passes.
+#
+# Usage:
+#   python scripts/generate.py
+#
+# Created by: GarlicRot
+# -----------------------------------------------------------
+
 import yaml
 import re
 import os
