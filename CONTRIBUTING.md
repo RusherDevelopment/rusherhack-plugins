@@ -10,22 +10,48 @@ Whether you're submitting a new plugin, fixing typos, or enhancing existing entr
 ## How to Contribute
 
 1. **Fork the repository**  
-   Click the "Fork" button on the top right of the repository page to create a copy of this repository on your GitHub account.  
-   <img src="./Assets/Contributing/Fork.png" alt="Fork Button" width="125">
+   Click the **Fork** button at the top right of this page to create a copy of this repository on your own GitHub account.  
+   ![Fork Button](./Assets/Contributing/Fork.png)
 
 2. **Clone the repository**  
-   Clone the forked repository to your local machine.  
-   <img src="./Assets/Contributing/Clone.jpg" alt="Clone Button" width="250">
+   Clone your forked repository to your local development machine using Git.  
+   ![Clone Button](./Assets/Contributing/Clone.jpg)
 
 3. **Create a new branch**  
-   Create a new branch for your contribution.  
-   <img src="./Assets/Contributing/NewBranch.png" alt="Create Branch" width="100">
+   Always create a new branch for your changes before committing.  
+   ![Create Branch](./Assets/Contributing/NewBranch.png)
 
 4. **Add your plugin or theme**  
-   Open the `data/plugins-and-themes.yml` file and add your plugin or theme entry in the appropriate section.
+   Open the `data/plugins-and-themes.yml` file and add your plugin or theme in the appropriate section:
+   - Add plugin entries under the `plugins:` section.
+   - Add theme entries under the `themes:` section.
 
-5. **Validate your changes**
-   Make sure your `plugins-and-themes.yml` file is valid YAML. You can use tools like [YAML Lint](https://www.yamllint.com/) to verify formatting.
+   Follow the format used in existing entries. Each entry must include:
+   - `name`
+   - `repo`
+   - `description`
+   - `creator`:
+     - `name`
+     - `url`
+     - `avatar`
+   - `latest_release_tag`
+   - `screenshots` (can be an empty list)
+   - For plugins:
+     - `mc_versions`
+     - `is_core` (true or false)
+
+5. **Push and create a pull request**  
+   Push your branch and open a pull request targeting the `main` branch.
+
+6. **Check GitHub Actions**  
+   Your pull request will automatically run a validation check.  
+   If it fails, visit the **Actions** tab to view the error details and fix any issues.
+
+> [!TIP]  
+> If everything is correct, the markdown files (`PLUGINS.md`, `THEMES.md`, and `README.md`) will be automatically updated on merge.
+
+> [!NOTE]  
+> You no longer need to manually validate YAML — it's automatically handled by `validate-yml.py` and checked via GitHub Actions.
    
 ### Example Plugin Format (with screenshots):
 ```yaml
