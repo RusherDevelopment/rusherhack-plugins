@@ -1,3 +1,41 @@
+# -----------------------------------------------------------
+# Plugin & Theme Registry - plugins-and-themes.yml
+# -----------------------------------------------------------
+#
+# This file contains metadata for all plugins and themes.
+# Used to generate PLUGINS.md, THEMES.md, and update badges
+# in README.md. 
+#
+# Automatically validated on commit.
+#
+# If a commit fails, check the GitHub Actions tab for the repo
+# to view logs and understand the reason for the failure:
+#  - https://github.com/RusherDevelopment/rusherhack-plugins/actions
+#
+# -----------------------------------------------------------
+#
+# Required Plugin Fields:
+#   - name: string
+#   - repo: string (format: owner/repo)
+#   - description: string
+#   - creator: { name, url, avatar }
+#   - latest_release_tag: string
+#   - screenshots: list of { url, alt?, width? }
+#   - mc_versions: string
+#   - is_core: boolean (optional)
+#
+# Required Theme Fields:
+#   - name: string
+#   - repo: string (format: owner/repo)
+#   - description: string
+#   - creator: { name, url, avatar }
+#   - latest_release_tag: string
+#   - screenshots: list of { url, alt?, width? }
+#
+# -----------------------------------------------------------
+# Do not rename or move this file!
+# -----------------------------------------------------------
+
 plugins:
   - name: Example Plugin
     repo: RusherDevelopment/example-plugin
@@ -1206,3 +1244,10 @@ themes:
       avatar: https://github.com/xyzbtw.png?size=20
     latest_release_tag: rusherhack
     screenshots: []
+
+# -----------------------------------------------------------
+#
+# End of plugins-and-themes.yml
+# Validated automatically — see Actions tab if it fails.
+#
+# -----------------------------------------------------------
