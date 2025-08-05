@@ -1,10 +1,17 @@
 # -----------------------------------------------------------
-# YAML Validator - plugins-and-themes.yml (Colored Output)
+# YAML Validator - plugins-and-themes.yml
 # -----------------------------------------------------------
 #
-# This script checks for missing or invalid fields in the
-# plugins-and-themes.yml file and provides clear, helpful
-# messages with colored output for GitHub Actions.
+# This script validates the structure and format of the
+# plugins-and-themes.yml file used to generate the markdown
+# documentation files for plugins and themes.
+#
+# Ensures all required fields are present, properly typed,
+# and correctly formatted. If validation fails, generation
+# is aborted.
+#
+# Usage:
+#   python scripts/validate-yml.py
 #
 # Created by: GarlicRot
 # -----------------------------------------------------------
@@ -13,12 +20,15 @@ import yaml
 import re
 import sys
 
-# ANSI escape codes for colors (GitHub Actions supports these)
+# ANSI color codes
 RED = "\033[91m"
 GREEN = "\033[92m"
 YELLOW = "\033[93m"
-BOLD = "\033[1m"
 RESET = "\033[0m"
+
+# -----------------------
+# Required field definitions
+# -----------------------
 
 REQUIRED_FIELDS = {
     'name': str,
@@ -35,14 +45,23 @@ REQUIRED_CREATOR_FIELDS = {
     'avatar': str,
 }
 
+# -----------------------
+# Regex patterns for validation
+# -----------------------
+
 REPO_REGEX = re.compile(r'^[\w\-]+/[\w\-\.]+$')
 YOUTUBE_REGEX = re.compile(r'https://img\.youtube\.com/vi/([^/]+)/[^/]+\.jpg')
+
+# -----------------------
+# Screenshot helper
+# -----------------------
 
 def is_valid_screenshot_url(url: str) -> bool:
     return url.startswith("https://") or url.startswith("./Assets/")
 
-def colored_error(msg):
-    return f"{RED}❌ {msg}{RESET}"
+# -----------------------
+# Entry validation logic
+# -----------------------
 
 def validate_entry(entry, is_plugin=True, index=0):
     name = entry.get('name', f'<Unnamed {index}>')
@@ -50,63 +69,73 @@ def validate_entry(entry, is_plugin=True, index=0):
 
     for field, field_type in REQUIRED_FIELDS.items():
         if field not in entry:
-            errors.append(colored_error(f"Missing `{field}` — Add a `{field}` to the entry for {BOLD}{name}{RESET}."))
+            errors.append(f"❌ Missing field `{field}` in '{name}'\n   ➤ Example: {field}: {field_type.__name__}")
         elif not isinstance(entry[field], field_type):
-            errors.append(colored_error(f"`{field}` must be a {field_type.__name__} in {BOLD}{name}{RESET}."))
+            example_value = "\"1.20.1-1.21.4\"" if field == "mc_versions" else field_type.__name__
+            errors.append(f"❌ `{field}` must be {field_type.__name__} in '{name}'\n   ➤ Example: {field}: {example_value}")
 
+    # Repo format check
     repo = entry.get('repo')
     if repo and not REPO_REGEX.match(repo):
-        errors.append(colored_error(f"Invalid `repo` in {BOLD}{name}{RESET} — must be `owner/repo` format (e.g., GarlicRot/AutoBucket)."))
+        errors.append(f"❌ `repo` in '{name}' must follow format 'owner/repo'\n   ➤ Example: repo: \"GarlicRot/AutoBucket\"")
 
+    # Creator block checks
     creator = entry.get('creator', {})
     if not isinstance(creator, dict):
-        errors.append(colored_error(f"`creator` must be a dictionary in {BOLD}{name}{RESET}."))
+        errors.append(f"❌ `creator` must be a dictionary in '{name}'")
     else:
         for cfield, ctype in REQUIRED_CREATOR_FIELDS.items():
             if cfield not in creator:
-                errors.append(colored_error(f"Missing `creator.{cfield}` in {BOLD}{name}{RESET}."))
+                errors.append(f"❌ Missing `creator.{cfield}` in '{name}'\n   ➤ Example: creator.{cfield}: \"https://github.com/user.png\"")
             elif not isinstance(creator[cfield], ctype):
-                errors.append(colored_error(f"`creator.{cfield}` must be a {ctype.__name__} in {BOLD}{name}{RESET}."))
+                errors.append(f"❌ `creator.{cfield}` must be {ctype.__name__} in '{name}'")
             elif cfield in ['url', 'avatar'] and not creator[cfield].startswith("https://"):
-                errors.append(colored_error(f"`creator.{cfield}` must start with https:// in {BOLD}{name}{RESET}."))
+                errors.append(f"❌ `creator.{cfield}` must start with https:// in '{name}'")
 
+    # Screenshot block checks
     for ss in entry.get('screenshots', []):
         if not isinstance(ss, dict):
-            errors.append(colored_error(f"Screenshot in {BOLD}{name}{RESET} must be a dictionary."))
+            errors.append(f"❌ Each screenshot must be a dictionary in '{name}'")
             continue
+
         if 'url' not in ss or not isinstance(ss['url'], str):
-            errors.append(colored_error(f"Screenshot in {BOLD}{name}{RESET} is missing a `url`, or it's not a string."))
+            errors.append(f"❌ Missing or invalid `url` in a screenshot of '{name}'")
         elif not is_valid_screenshot_url(ss['url']):
-            errors.append(colored_error(f"Screenshot `url` must start with `https://` or `./Assets/` in {BOLD}{name}{RESET}."))
+            errors.append(f"❌ Screenshot `url` in '{name}' must start with https:// or ./Assets/")
         elif ss['url'].startswith("https://img.youtube.com/") and not YOUTUBE_REGEX.match(ss['url']):
-            errors.append(colored_error(f"Invalid YouTube thumbnail URL in {BOLD}{name}{RESET} — must follow `https://img.youtube.com/vi/VIDEO_ID/0.jpg` format."))
+            errors.append(f"❌ YouTube thumbnail `url` in '{name}' must match: https://img.youtube.com/vi/<video-id>/0.jpg")
 
         if 'alt' in ss and not isinstance(ss['alt'], str):
-            errors.append(colored_error(f"Screenshot `alt` in {BOLD}{name}{RESET} must be a string."))
+            errors.append(f"❌ `alt` must be a string in screenshot of '{name}'")
         if 'width' in ss and not isinstance(ss['width'], int):
-            errors.append(colored_error(f"Screenshot `width` in {BOLD}{name}{RESET} must be an integer."))
+            errors.append(f"❌ `width` must be an integer in screenshot of '{name}'")
 
+    # Plugin-only checks
     if is_plugin:
         if 'mc_versions' not in entry:
-            errors.append(colored_error(f"Missing `mc_versions` in {BOLD}{name}{RESET} — e.g., '1.21.1-1.21.4'"))
+            errors.append(f"❌ Missing `mc_versions` in plugin '{name}'\n   ➤ Example: mc_versions: \"1.20.4-1.21.1\"")
         elif not isinstance(entry['mc_versions'], str):
-            errors.append(colored_error(f"`mc_versions` must be a string in {BOLD}{name}{RESET}."))
+            errors.append(f"❌ `mc_versions` must be a string in plugin '{name}'")
 
         if 'is_core' in entry and not isinstance(entry['is_core'], bool):
-            errors.append(colored_error(f"`is_core` must be true or false (boolean) in {BOLD}{name}{RESET}."))
+            errors.append(f"❌ `is_core` must be a boolean in plugin '{name}'")
 
     return errors
+
+# -----------------------
+# Entrypoint
+# -----------------------
 
 def main():
     try:
         with open('data/plugins-and-themes.yml', 'r') as f:
             data = yaml.safe_load(f)
     except Exception as e:
-        print(colored_error(f"Failed to load YAML: {e}"))
+        print(f"{RED}❌ Failed to load YAML: {e}{RESET}")
         sys.exit(1)
 
     if not isinstance(data, dict):
-        print(colored_error("Top-level YAML must be a dictionary with `plugins` and `themes`."))
+        print(f"{RED}❌ Top-level YAML must be a dictionary with 'plugins' and 'themes'{RESET}")
         sys.exit(1)
 
     all_errors = []
@@ -118,10 +147,10 @@ def main():
         all_errors.extend(validate_entry(theme, is_plugin=False, index=i))
 
     if all_errors:
-        print(f"\n{YELLOW}--- VALIDATION ERRORS ---{RESET}\n")
+        print(f"{YELLOW}\n--- VALIDATION ERRORS ---{RESET}\n")
         for err in all_errors:
             print(err)
-        print(f"\n{RED}Found {len(all_errors)} issue(s). Fix the above problems to continue.{RESET}")
+        print(f"\n{RED}❌ {len(all_errors)} issue(s) found. Fix the above problems to continue.{RESET}")
         sys.exit(1)
     else:
         print(f"{GREEN}✅ plugins-and-themes.yml validation passed with no issues.{RESET}")
