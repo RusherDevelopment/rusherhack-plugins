@@ -1,3 +1,21 @@
+# -----------------------------------------------------------
+# YAML Validator - plugins-and-themes.yml
+# -----------------------------------------------------------
+#
+# This script validates the structure and format of the
+# plugins-and-themes.yml file used to generate the markdown
+# documentation files for plugins and themes.
+#
+# Ensures all required fields are present, properly typed,
+# and correctly formatted. If validation fails, generation
+# is aborted.
+#
+# Usage:
+#   python scripts/validate-yml.py
+#
+# Created by: GarlicRot
+# -----------------------------------------------------------
+
 import yaml
 import re
 import sys
