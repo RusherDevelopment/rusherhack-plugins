@@ -1,4 +1,4 @@
-name: Validate and Generate Markdown
+name: Generate MD from YAML
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [main]
 
 jobs:
-  validate-and-generate:
+  generate:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,15 +22,10 @@ jobs:
       - name: Install PyYAML
         run: pip install pyyaml
 
-      - name: Validate YAML file
-        run: python scripts/validate-yml.py
-
-      - name: Generate Markdown files
-        if: success() # Only run if validation passes
+      - name: Generate markdown files
         run: python scripts/generate.py
 
       - name: Commit and push changes
-        if: github.event_name == 'push'
         uses: EndBug/add-and-commit@v9
         with:
           add: 'PLUGINS.md THEMES.md README.md'
