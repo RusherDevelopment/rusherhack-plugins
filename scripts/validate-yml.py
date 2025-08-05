@@ -20,6 +20,11 @@ import yaml
 import re
 import sys
 
+# -----------------------
+# Required field definitions
+# -----------------------
+
+# Top-level required fields and their expected types
 REQUIRED_FIELDS = {
     'name': str,
     'repo': str,
@@ -29,35 +34,51 @@ REQUIRED_FIELDS = {
     'screenshots': list,
 }
 
+# Fields required inside the 'creator' object
 REQUIRED_CREATOR_FIELDS = {
     'name': str,
     'url': str,
     'avatar': str,
 }
 
+# -----------------------
+# Regex patterns for validation
+# -----------------------
+
+# YouTube thumbnails must follow this format
 YOUTUBE_REGEX = re.compile(r'https://img\.youtube\.com/vi/([^/]+)/[^/]+\.jpg')
+
+# GitHub repo format must be: owner/repo
 REPO_REGEX = re.compile(r'^[\w\-]+/[\w\-\.]+$')
+
+# -----------------------
+# Screenshot URL format check
+# -----------------------
 
 def is_valid_screenshot_url(url: str) -> bool:
     return url.startswith("https://") or url.startswith("./Assets/")
+
+# -----------------------
+# Main entry validator
+# -----------------------
 
 def validate_entry(entry, is_plugin=True, index=0):
     name = entry.get('name', f'<Unnamed {index}>')
     errors = []
 
-    # Required fields
+    # Validate required top-level fields
     for field, field_type in REQUIRED_FIELDS.items():
         if field not in entry:
             errors.append(f"❌ Missing field `{field}` in entry '{name}'")
         elif not isinstance(entry[field], field_type):
             errors.append(f"❌ Field `{field}` in entry '{name}' must be {field_type.__name__}")
 
-    # Repo format
+    # Validate GitHub repo format
     repo = entry.get('repo')
     if repo and not REPO_REGEX.match(repo):
         errors.append(f"❌ Invalid `repo` format in '{name}', must be 'owner/repo'")
 
-    # Creator block
+    # Validate creator object and its fields
     creator = entry.get('creator', {})
     if not isinstance(creator, dict):
         errors.append(f"❌ `creator` must be a dictionary in entry '{name}'")
@@ -70,11 +91,13 @@ def validate_entry(entry, is_plugin=True, index=0):
             elif cfield in ['url', 'avatar'] and not creator[cfield].startswith("https://"):
                 errors.append(f"❌ `creator.{cfield}` URL must start with https:// in '{name}'")
 
-    # Screenshots
+    # Validate each screenshot entry
     for ss in entry.get('screenshots', []):
         if not isinstance(ss, dict):
             errors.append(f"❌ Screenshot must be a dictionary in '{name}'")
             continue
+
+        # Validate required screenshot URL
         if 'url' not in ss or not isinstance(ss['url'], str):
             errors.append(f"❌ Missing or invalid `url` in screenshot of '{name}'")
         elif not is_valid_screenshot_url(ss['url']):
@@ -82,13 +105,13 @@ def validate_entry(entry, is_plugin=True, index=0):
         elif ss['url'].startswith("https://img.youtube.com/") and not YOUTUBE_REGEX.match(ss['url']):
             errors.append(f"❌ Invalid YouTube thumbnail format in screenshot of '{name}'")
 
+        # Optional screenshot fields
         if 'alt' in ss and not isinstance(ss['alt'], str):
             errors.append(f"❌ `alt` must be a string in screenshot of '{name}'")
-
         if 'width' in ss and not isinstance(ss['width'], int):
             errors.append(f"❌ `width` must be an integer in screenshot of '{name}'")
 
-    # Plugin-only checks
+    # Plugin-specific required fields
     if is_plugin:
         if 'mc_versions' not in entry:
             errors.append(f"❌ Missing `mc_versions` in plugin '{name}'")
@@ -100,7 +123,12 @@ def validate_entry(entry, is_plugin=True, index=0):
 
     return errors
 
+# -----------------------
+# Entrypoint
+# -----------------------
+
 def main():
+    # Load the YAML file
     try:
         with open('data/plugins-and-themes.yml', 'r') as f:
             data = yaml.safe_load(f)
@@ -108,18 +136,22 @@ def main():
         print(f"❌ Failed to load YAML: {e}")
         sys.exit(1)
 
+    # Ensure top-level keys exist
     if not isinstance(data, dict):
         print("❌ Top-level YAML must be a dictionary with 'plugins' and 'themes'")
         sys.exit(1)
 
     all_errors = []
 
+    # Validate all plugin entries
     for i, plugin in enumerate(data.get("plugins", [])):
         all_errors.extend(validate_entry(plugin, is_plugin=True, index=i))
 
+    # Validate all theme entries
     for i, theme in enumerate(data.get("themes", [])):
         all_errors.extend(validate_entry(theme, is_plugin=False, index=i))
 
+    # Output results
     if all_errors:
         print("\n--- VALIDATION ERRORS ---\n")
         for err in all_errors:
@@ -128,6 +160,10 @@ def main():
         sys.exit(1)
     else:
         print("✅ plugins-and-themes.yml validation passed with no issues.")
+
+# -----------------------
+# Run the script
+# -----------------------
 
 if __name__ == "__main__":
     main()
