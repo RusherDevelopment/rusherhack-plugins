@@ -1213,6 +1213,17 @@ plugins:
     screenshots: []
     is_core: false
     mc_versions: 1.21.1-1.21.4
+  - name: AutoRegear
+    repo: kybe236/auto-regear
+    description: Automatically equips a saved kit from a chest, matching items and enchantments with configurable sensitivity. Includes commands for saving, renaming, listing, and removing kits.
+    creator:
+      name: kybe236
+      url: https://github.com/kybe236
+      avatar: https://github.com/kybe236.png?size=20
+    latest_release_tag: 1.21.4
+    screenshots: []
+    is_core: false
+    mc_versions: 1.21.4
 themes:
   - name: rusherNodusTheme
     repo: bakjedev/rusherNodusTheme
