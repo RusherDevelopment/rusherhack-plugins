@@ -1,16 +1,14 @@
 # -----------------------------------------------------------
-# Markdown Generator from plugins-and-themes.yml
+# Markdown Generator - plugins-and-themes.yml
 # -----------------------------------------------------------
 #
-# This script generates and updates:
+# This script generates the following markdown files:
 #   - PLUGINS.md
 #   - THEMES.md
-#   - README.md (badge counts)
+#   - README.md (badges section only)
 #
-# It uses the validated data from plugins-and-themes.yml
-# to build properly formatted markdown entries.
-#
-# This script should only be run after validation passes.
+# Relies on the validated data from plugins-and-themes.yml.
+# Should only be run after validate-yml.py passes.
 #
 # Usage:
 #   python scripts/generate.py
@@ -25,31 +23,38 @@ import os
 # -----------------------
 # Load YAML data
 # -----------------------
+
 with open('data/plugins-and-themes.yml', 'r') as f:
     data = yaml.safe_load(f)
 
 # -----------------------
 # Markdown generator for each plugin/theme entry
 # -----------------------
+
 def generate_entry_md(entry, is_plugin=True, index=0):
     owner, repo_name = entry['repo'].split('/')
     sanitized_name = entry['name'].replace(' ', '%20')
 
+    # Plugin name, link, and release/download badges
     md = f"- ### [{entry['name']}](https://github.com/{entry['repo']}) <br>\n"
     md += f" [![Latest Release Date](https://img.shields.io/github/release-date/{entry['repo']}?label=Latest%20Release&color=green)](https://github.com/{entry['repo']}/releases) "
     md += f"[![GitHub Downloads](https://img.shields.io/github/downloads/{entry['repo']}/total)](https://github.com/{entry['repo']}/releases/download/{entry.get('latest_release_tag', 'latest')}/{sanitized_name}.jar)<br>\n"
 
+    # MC version and core plugin badge (plugins only)
     if is_plugin and 'mc_versions' in entry:
         mc_versions = entry['mc_versions'].replace('-', '--').replace('.', '%20')
         md += f" ![MC Version](https://img.shields.io/badge/MC%20Version-{mc_versions}-blueviolet)<br>\n"
     if is_plugin and entry.get('is_core', False):
         md += " ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>\n"
 
+    # Creator section with avatar
     md += f" **Creator**: <img src=\"{entry['creator']['avatar']}\" width=\"20\" height=\"20\"> [{entry['creator']['name']}]({entry['creator']['url']})<br>\n"
 
+    # Description (cleaned of embedded images)
     cleaned_description = re.sub(r'!\[.*?\]\(.*?\)', '', entry['description'])
     md += f" {cleaned_description.strip()}\n\n"
 
+    # Screenshots section (standard and YouTube thumbnails)
     if entry.get('screenshots'):
         md += " <details>\n <summary>Show Screenshots</summary>\n <p align=\"center\">\n"
         for ss in entry['screenshots']:
@@ -57,9 +62,9 @@ def generate_entry_md(entry, is_plugin=True, index=0):
             if youtube_match:
                 video_id = youtube_match.group(1)
                 video_url = f"https://www.youtube.com/watch?v={video_id}"
-                md += f" <a href=\"{video_url}\" target=\"_blank\"><img src=\"{ss['url']}\" alt=\"{ss['alt']}\" width=\"{ss.get('width', 250)}\"></a>\n"
+                md += f" <a href=\"{video_url}\" target=\"_blank\"><img src=\"{ss['url']}\" alt=\"{ss.get('alt', '')}\" width=\"{ss.get('width', 250)}\"></a>\n"
             else:
-                md += f" <img src=\"{ss['url']}\" alt=\"{ss['alt']}\" width=\"{ss.get('width', 250)}\">\n"
+                md += f" <img src=\"{ss['url']}\" alt=\"{ss.get('alt', '')}\" width=\"{ss.get('width', 250)}\">\n"
         md += " </p>\n </details>\n\n"
 
     md += "---\n\n"
@@ -68,23 +73,33 @@ def generate_entry_md(entry, is_plugin=True, index=0):
 # -----------------------
 # Count plugin and theme entries
 # -----------------------
+
 plugin_count = len(data.get("plugins", []))
 theme_count = len(data.get("themes", []) or [])
 
 # -----------------------
 # Update PLUGINS.md
 # -----------------------
+
 with open('PLUGINS.md', 'r') as f:
     plugins_content = f.read()
 
 plugin_entries = ''.join(generate_entry_md(p, is_plugin=True, index=i) for i, p in enumerate(data.get('plugins', [])))
-plugins_content = re.sub(r'\[!\[Plugins\].*?\]\(#plugins-list\)',
-                         f'[![Plugins](https://img.shields.io/badge/Plugins-{plugin_count}-green)](#plugins-list)',
-                         plugins_content)
 
-plugins_content = re.sub(r'<!--- Plugins Start -->.*<!--- Plugins End -->',
-                         f'<!--- Plugins Start -->\n{plugin_entries}<!--- Plugins End -->',
-                         plugins_content, flags=re.DOTALL)
+# Update plugin badge count
+plugins_content = re.sub(
+    r'\[!\[Plugins\].*?\]\(#plugins-list\)',
+    f'[![Plugins](https://img.shields.io/badge/Plugins-{plugin_count}-green)](#plugins-list)',
+    plugins_content
+)
+
+# Inject plugin entries between comments
+plugins_content = re.sub(
+    r'<!--- Plugins Start -->.*<!--- Plugins End -->',
+    f'<!--- Plugins Start -->\n{plugin_entries}<!--- Plugins End -->',
+    plugins_content,
+    flags=re.DOTALL
+)
 
 with open('PLUGINS.md', 'w') as f:
     f.write(plugins_content)
@@ -92,17 +107,26 @@ with open('PLUGINS.md', 'w') as f:
 # -----------------------
 # Update THEMES.md
 # -----------------------
+
 with open('THEMES.md', 'r') as f:
     themes_content = f.read()
 
 theme_entries = ''.join(generate_entry_md(t, is_plugin=False, index=i) for i, t in enumerate(data.get('themes', [])))
-themes_content = re.sub(r'\[!\[Themes\].*?\]\(#themes-list\)',
-                        f'[![Themes](https://img.shields.io/badge/Themes-{theme_count}-green)](#themes-list)',
-                        themes_content)
 
-themes_content = re.sub(r'<!--- THEMES START -->.*<!--- THEMES END -->',
-                        f'<!--- THEMES START -->\n{theme_entries}<!--- THEMES END -->',
-                        themes_content, flags=re.DOTALL)
+# Update theme badge count
+themes_content = re.sub(
+    r'\[!\[Themes\].*?\]\(#themes-list\)',
+    f'[![Themes](https://img.shields.io/badge/Themes-{theme_count}-green)](#themes-list)',
+    themes_content
+)
+
+# Inject theme entries between comments
+themes_content = re.sub(
+    r'<!--- THEMES START -->.*<!--- THEMES END -->',
+    f'<!--- THEMES START -->\n{theme_entries}<!--- THEMES END -->',
+    themes_content,
+    flags=re.DOTALL
+)
 
 with open('THEMES.md', 'w') as f:
     f.write(themes_content)
@@ -110,6 +134,7 @@ with open('THEMES.md', 'w') as f:
 # -----------------------
 # Update badge counts in README.md
 # -----------------------
+
 with open('README.md', 'r') as f:
     readme_original = f.read()
 
@@ -127,6 +152,7 @@ readme_updated = re.sub(
     count=1
 )
 
+# Only write if changes were made
 if readme_original != readme_updated:
     with open('README.md', 'w') as f:
         f.write(readme_updated)
