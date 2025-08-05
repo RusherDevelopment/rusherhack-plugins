@@ -1014,7 +1014,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  <details>
  <summary>Show Screenshots</summary>
  <p align="center">
- <img src="./Assets/rusherhack-kybes-utils/chat-example.png" alt="Example chat messages from kybe's utils" width="250">
+ <img src="./Assets/rusherhack-kybes-utils/chat-example.png" alt="Example chat messages from kybe's utils" width="550">
  </p>
  </details>
 
