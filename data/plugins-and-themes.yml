@@ -1125,7 +1125,7 @@ plugins:
     screenshots:
       - url: ./Assets/rusherhack-kybes-utils/chat-example.png
         alt: Example chat messages from kybe's utils
-        width: 250
+        width: 550
     is_core: true
     mc_versions: 1.20.1-1.21.4
   - name: AutoAnvilRename
