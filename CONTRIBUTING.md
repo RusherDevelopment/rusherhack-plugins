@@ -1,3 +1,5 @@
+![RusherHack Logo](./Assets/RusherHacks/rh_head.png)
+
 # Contributing to the RusherHacks Plugin Collection
 
 Thank you for your interest in contributing to the **RusherHacks Plugin Collection**!  
