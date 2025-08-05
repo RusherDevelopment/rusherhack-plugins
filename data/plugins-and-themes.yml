@@ -1123,7 +1123,7 @@ plugins:
       avatar: https://github.com/kybe236.png?size=20
     latest_release_tag: 0.0.2
     screenshots:
-      - url: Assets/rusherhack-kybes-utils/chat-example.png
+      - url: ./Assets/rusherhack-kybes-utils/chat-example.png
         alt: Example chat messages from kybe's utils
         width: 250
     is_core: true
