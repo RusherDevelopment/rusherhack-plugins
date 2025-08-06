@@ -151,17 +151,18 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [Combined Bind List](https://github.com/tr330ne/combined-bindlist) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/tr330ne/combined-bindlist?label=Latest%20Release&color=green)](https://github.com/tr330ne/combined-bindlist/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tr330ne/combined-bindlist/total)](https://github.com/tr330ne/combined-bindlist/releases/download/v0.2/Combined%20Bind%20List.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/tr330ne/combined-bindlist?label=Latest%20Release&color=green)](https://github.com/tr330ne/combined-bindlist/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tr330ne/combined-bindlist/total)](https://github.com/tr330ne/combined-bindlist/releases/download/v0.3/Combined%20Bind%20List.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%201--1%2021%204-blueviolet)<br>
  **Creator**: <img src="https://github.com/tr330ne.png?size=20" width="20" height="20"> [tr330ne](https://github.com/tr330ne)<br>
- RusherHack Hud Element to display binds from both meteor and rusher with customization and ability to modify individual modules.
+ RusherHack HUD Element to display keybinds and active modules from both Meteor and RusherHack, with advanced customization options, including the ability to modify individual modules, metadata, brackets, colors, and other.
 
  <details>
  <summary>Show Screenshots</summary>
  <p align="center">
- <img src="./Assets/CombinedBindList/Screenshot_1.png" alt="Preview" width="404">
- <img src="./Assets/CombinedBindList/Screenshot_2.png" alt="Customization" width="200">
- <img src="./Assets/CombinedBindList/Screenshot_3.png" alt="Commands" width="433">
+ <img src="./Assets/CombinedBindList/Screenshot_1.png" alt="Preview" width="453">
+ <img src="./Assets/CombinedBindList/Screenshot_2.png" alt="Commands" width="371">
+ <img src="./Assets/CombinedBindList/Screenshot_3.png" alt="Customization" width="262">
+ <img src="./Assets/CombinedBindList/Screenshot_4.png" alt="Commands" width="460">
  </p>
  </details>
 
