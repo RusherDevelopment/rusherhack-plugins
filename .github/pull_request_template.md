@@ -1,4 +1,4 @@
-![RusherHack Logo](./Assets/RusherHacks/rh_head.png)
+![RusherHack Logo](https://avatars.githubusercontent.com/u/121969799?s=280&v=4)
 
 # Plugin/Theme Submission or Update/Fix
 
