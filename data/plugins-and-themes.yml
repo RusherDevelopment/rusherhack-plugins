@@ -1240,6 +1240,7 @@ themes:
       - url: ./Assets/rusherNodusTheme/NodusGUI.png
         alt: Module
         width: 750
+    mc_versions: 1.21
   - name: Nhack Theme
     repo: h1tm4nqq/Nhack-theme
     description: A theme like Nhack 2015 for RH.
@@ -1249,6 +1250,7 @@ themes:
       avatar: https://github.com/h1tm4nqq.png?size=20
     latest_release_tag: 1.21.4
     screenshots: []
+    mc_versions: 1.20.1-1.21.4
   - name: RusherGUI
     repo: xyzbtw/rusherGUI
     description: An example plugin showcasing how to create custom themes with RusherHack.
@@ -1258,6 +1260,7 @@ themes:
       avatar: https://github.com/xyzbtw.png?size=20
     latest_release_tag: rusherhack
     screenshots: []
+    mc_versions: 1.20.1-1.20.4
 
 # -----------------------------------------------------------
 #
