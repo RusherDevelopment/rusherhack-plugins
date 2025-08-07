@@ -1,4 +1,4 @@
-name: Validate and Generate Markdown
+name: Validate, Generate Markdown, and Convert JSON
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [main]
 
 jobs:
-  validate-and-generate:
+  validate-generate-convert:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,20 +19,24 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Install PyYAML
+      - name: Install dependencies
         run: pip install pyyaml
 
       - name: Validate YAML file
         run: python scripts/validate-yml.py
 
       - name: Generate Markdown files
-        if: success() # Only run if validation passes
+        if: success()
         run: python scripts/generate.py
+
+      - name: Convert YAML to JSON
+        if: success()
+        run: python scripts/yml-to-json.py
 
       - name: Commit and push changes
         if: github.event_name == 'push'
         uses: EndBug/add-and-commit@v9
         with:
-          add: 'PLUGINS.md THEMES.md README.md'
-          message: 'Update PLUGINS.md, THEMES.md, and README.md from YAML'
+          add: 'PLUGINS.md THEMES.md README.md generated/json/plugins-and-themes.json'
+          message: 'Update markdown and JSON output from YAML'
           push: true
