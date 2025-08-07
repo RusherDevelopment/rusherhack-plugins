@@ -1144,17 +1144,6 @@ plugins:
         alt: Night Vision Hidden
     is_core: true
     mc_versions: 1.21.4
-  - name: RusherChat
-    repo: GarlicRot/RusherChat
-    description: WebSocket-based global chat system for players running the plugin. Messages sent are visible to all other plugin users in real time.
-    creator:
-      name: GarlicRot
-      url: https://github.com/GarlicRot
-      avatar: https://github.com/GarlicRot.png?size=20
-    latest_release_tag: v1.0.1
-    screenshots: []
-    is_core: false
-    mc_versions: 1.20.1-1.21.4
   - name: rusherhack-kybes-utils
     repo: kybe236/rusherhack-kybes-utils
     description: A collection of customizable RusherHack chat automation modules. Includes encrypted messaging (CryptoChat), death mocking, message parroting, regex-based auto-replies, and random sentence generators.
