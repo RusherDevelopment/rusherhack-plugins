@@ -1216,6 +1216,17 @@ plugins:
     screenshots: []
     is_core: false
     mc_versions: 1.21.4
+  - name: rusherhack-rusherman
+    repo: tillay/rusherhack-rusherman
+    description: Plugin package manager for RusherHack that helps install and manage plugins from a single place.
+    creator:
+      name: tillay
+      url: https://github.com/tillay
+      avatar: https://github.com/tillay.png?size=20
+    latest_release_tag: usable
+    screenshots: []
+    is_core: false
+    mc_versions: 1.21.1-1.21.4
 themes:
   - name: rusherNodusTheme
     repo: bakjedev/rusherNodusTheme
