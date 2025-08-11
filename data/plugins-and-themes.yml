@@ -1157,7 +1157,7 @@ plugins:
         alt: Example chat messages from kybe's utils
         width: 550
     is_core: true
-    mc_versions: 1.20.1-1.21.4
+    mc_versions: 1.21.4
   - name: AutoAnvilRename
     repo: musheck/AutoAnvilRename
     description: A fork of the AutoAnvilRename plugin that automates item renaming in anvils. Includes features like predefined rename text, ID filtering, shulker-only mode, and configurable click delay.
