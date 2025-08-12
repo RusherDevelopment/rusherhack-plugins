@@ -1599,7 +1599,13 @@
         "avatar": "https://github.com/tillay.png?size=20"
       },
       "latest_release_tag": "release",
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "./Assets/rusherhack-rusherman/rusherman-window.png",
+          "alt": "Rusherman Window",
+          "width": 550
+        }
+      ],
       "is_core": false,
       "mc_versions": "1.21.1-1.21.4"
     }

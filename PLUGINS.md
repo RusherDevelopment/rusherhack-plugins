@@ -1067,6 +1067,13 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  **Creator**: <img src="https://github.com/tillay.png?size=20" width="20" height="20"> [tillay](https://github.com/tillay)<br>
  Plugin package manager for RusherHack that helps install and manage plugins from a single place.
 
+ <details>
+ <summary>Show Screenshots</summary>
+ <p align="center">
+ <img src="./Assets/rusherhack-rusherman/rusherman-window.png" alt="Rusherman Window" width="550">
+ </p>
+ </details>
+
 ---
 
 <!--- Plugins End -->
