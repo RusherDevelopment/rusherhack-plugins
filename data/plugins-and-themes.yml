@@ -1051,7 +1051,7 @@ plugins:
       avatar: https://github.com/ToxicAven.png?size=20
     latest_release_tag: v1.0.0
     screenshots: []
-    is_core: false
+    is_core: true
     mc_versions: 1.21.4
   - name: Rusher-Vault-Helper
     repo: kybe236/rusher-vault-helper
