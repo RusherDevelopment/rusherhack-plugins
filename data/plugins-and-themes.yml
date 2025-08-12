@@ -1225,9 +1225,12 @@ plugins:
       avatar: https://github.com/tillay.png?size=20
     latest_release_tag: working!
     screenshots:
+      - url: ./Assets/rusherhack-rusherman/rusherman-window.png
+        alt: Rusherman Window
+        width: 550
       - url: https://img.youtube.com/vi/v2tEf_eQnjQ/hqdefault.jpg
         alt: Rusherman demonstration video
-        width: 600
+        width: 550
     is_core: false
     mc_versions: 1.21.1-1.21.4
 themes:
