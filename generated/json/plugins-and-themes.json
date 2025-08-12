@@ -1601,9 +1601,9 @@
       "latest_release_tag": "working!",
       "screenshots": [
         {
-          "url": "./Assets/rusherhack-rusherman/rusherman-window.png",
-          "alt": "Rusherman Window",
-          "width": 550
+          "url": "https://img.youtube.com/vi/v2tEf_eQnjQ/hqdefault.jpg",
+          "alt": "Rusherman demonstration video",
+          "width": 600
         }
       ],
       "is_core": false,
