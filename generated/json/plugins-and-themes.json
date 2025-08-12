@@ -1604,10 +1604,6 @@
           "url": "./Assets/rusherhack-rusherman/rusherman-window.png",
           "alt": "Rusherman Window",
           "width": 550
-        },
-        {
-          "url": "https://garlic.tulipterminal.com/SeRU1/kUMAyUrO61/raw.mp4",
-          "alt": "Demo Video"
         }
       ],
       "is_core": false,

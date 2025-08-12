@@ -1071,7 +1071,6 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  <summary>Show Screenshots</summary>
  <p align="center">
  <img src="./Assets/rusherhack-rusherman/rusherman-window.png" alt="Rusherman Window" width="550">
- <img src="https://garlic.tulipterminal.com/SeRU1/kUMAyUrO61/raw.mp4" alt="Demo Video" width="250">
  </p>
  </details>
 
