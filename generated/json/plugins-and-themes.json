@@ -1613,6 +1613,20 @@
       ],
       "is_core": false,
       "mc_versions": "1.21.1-1.21.4"
+    },
+    {
+      "name": "rusherhack-instantloader",
+      "repo": "tillay/rusherhack-InstantLoader",
+      "description": "Automatically interacts with a targeted trapdoor as soon as a specified player logs in, enabling instant pearl loading.",
+      "creator": {
+        "name": "tillay",
+        "url": "https://github.com/tillay",
+        "avatar": "https://github.com/tillay.png?size=20"
+      },
+      "latest_release_tag": "working!",
+      "screenshots": [],
+      "is_core": false,
+      "mc_versions": "1.21.1-1.21.4"
     }
   ],
   "themes": [
