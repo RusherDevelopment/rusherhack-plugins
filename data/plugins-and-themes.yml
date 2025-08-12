@@ -1241,7 +1241,10 @@ plugins:
       url: https://github.com/tillay
       avatar: https://github.com/tillay.png?size=20
     latest_release_tag: working!
-    screenshots: []
+    screenshots:
+      - url: https://img.youtube.com/vi/YCIigjl4oRk/hqdefault.jpg
+        alt: InstantLoader demo video
+        width: 550
     is_core: false
     mc_versions: 1.21.1-1.21.4
 themes:
