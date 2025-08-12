@@ -1360,7 +1360,7 @@
       },
       "latest_release_tag": "v1.0.0",
       "screenshots": [],
-      "is_core": false,
+      "is_core": true,
       "mc_versions": "1.21.4"
     },
     {
