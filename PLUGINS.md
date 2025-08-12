@@ -1083,6 +1083,13 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  **Creator**: <img src="https://github.com/tillay.png?size=20" width="20" height="20"> [tillay](https://github.com/tillay)<br>
  Automatically interacts with a targeted trapdoor as soon as a specified player logs in, enabling instant pearl loading.
 
+ <details>
+ <summary>Show Screenshots</summary>
+ <p align="center">
+ <a href="https://www.youtube.com/watch?v=YCIigjl4oRk" target="_blank"><img src="https://img.youtube.com/vi/YCIigjl4oRk/hqdefault.jpg" alt="InstantLoader demo video" width="550"></a>
+ </p>
+ </details>
+
 ---
 
 <!--- Plugins End -->
