@@ -1247,6 +1247,23 @@ plugins:
         width: 550
     is_core: false
     mc_versions: 1.21.1-1.21.4
+  - name: rusher-waifu-integration
+    repo: tillay/rusher-waifu-integration
+    description: Allows adding any custom image to the RusherHack HUD.
+    creator:
+      name: tillay
+      url: https://github.com/tillay
+      avatar: https://github.com/tillay.png?size=20
+    latest_release_tag: 1.0.0
+    screenshots:
+      - url: ./Assets/rusher-waifu-integration/rusher-waifu-integration1.png
+        alt: Rusherman Window
+        width: 550
+      - url: ./Assets/rusher-waifu-integration/rusher-waifu-integration2.png
+        alt: Rusherman Window
+        width: 550
+    is_core: false
+    mc_versions: 1.21.1-1.21.4
 themes:
   - name: rusherNodusTheme
     repo: bakjedev/rusherNodusTheme
