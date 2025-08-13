@@ -168,7 +168,7 @@ plugins:
     mc_versions: 1.21.1-1.21.4
   - name: EFlyAutoJump
     repo: tr330ne/efly-autojump
-    description: RusherHack helper module that replaces the non-functional baritone's #elytraAutoJump by performing repeated jumps when #elytra is activated, allowing continuous flight even after touching the ground, and deactivates on #stop.
+    description: RusherHack helper module that replaces the non-functional baritones elytraAutoJump by performing repeated jumps when elytra is activated, allowing continuous flight even after touching the ground, and deactivates on stop.
     creator:
       name: tr330ne
       url: https://github.com/tr330ne
