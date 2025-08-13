@@ -1011,7 +1011,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
  ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>
  **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)<br>
- A collection of customizable RusherHack chat automation modules. Includes encrypted messaging (CryptoChat), death mocking, message parroting, regex-based auto-replies, and random sentence generators.
+ encrypted chat (CryptoChat) with key management and chunking, auto-mock/quote/reply with regex filters, death-message reactions, random sentence/whisper, and a new in-game User Info window (column view).
 
  <details>
  <summary>Show Screenshots</summary>
