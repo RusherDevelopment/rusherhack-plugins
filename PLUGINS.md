@@ -151,7 +151,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [Combined Bind List](https://github.com/tr330ne/combined-bindlist) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/tr330ne/combined-bindlist?label=Latest%20Release&color=green)](https://github.com/tr330ne/combined-bindlist/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tr330ne/combined-bindlist/total)](https://github.com/tr330ne/combined-bindlist/releases/download/v0.4/Combined%20Bind%20List.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/tr330ne/combined-bindlist?label=Latest%20Release&color=green)](https://github.com/tr330ne/combined-bindlist/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tr330ne/combined-bindlist/total)](https://github.com/tr330ne/combined-bindlist/releases/download/0.4/Combined%20Bind%20List.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%201--1%2021%204-blueviolet)<br>
  **Creator**: <img src="https://github.com/tr330ne.png?size=20" width="20" height="20"> [tr330ne](https://github.com/tr330ne)<br>
  RusherHack HUD Element to display keybinds and active modules from both Meteor and RusherHack, with advanced customization options, including the ability to modify individual modules, metadata, brackets, colors, and other.
@@ -169,7 +169,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [EFlyAutoJump](https://github.com/tr330ne/efly-autojump) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/tr330ne/efly-autojump?label=Latest%20Release&color=green)](https://github.com/tr330ne/efly-autojump/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tr330ne/efly-autojump/total)](https://github.com/tr330ne/efly-autojump/releases/download/v0.1/EFlyAutoJump.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/tr330ne/efly-autojump?label=Latest%20Release&color=green)](https://github.com/tr330ne/efly-autojump/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tr330ne/efly-autojump/total)](https://github.com/tr330ne/efly-autojump/releases/download/0.1/EFlyAutoJump.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%201--1%2021%204-blueviolet)<br>
  **Creator**: <img src="https://github.com/tr330ne.png?size=20" width="20" height="20"> [tr330ne](https://github.com/tr330ne)<br>
  RusherHack helper module that replaces the non-functional baritones elytraAutoJump by performing repeated jumps when elytra is activated, allowing continuous flight even after touching the ground, and deactivates on stop.
@@ -1007,7 +1007,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [rusherhack-kybes-utils](https://github.com/kybe236/rusherhack-kybes-utils) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/kybe236/rusherhack-kybes-utils?label=Latest%20Release&color=green)](https://github.com/kybe236/rusherhack-kybes-utils/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/kybe236/rusherhack-kybes-utils/total)](https://github.com/kybe236/rusherhack-kybes-utils/releases/download/0.0.2/rusherhack-kybes-utils.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/kybe236/rusherhack-kybes-utils?label=Latest%20Release&color=green)](https://github.com/kybe236/rusherhack-kybes-utils/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/kybe236/rusherhack-kybes-utils/total)](https://github.com/kybe236/rusherhack-kybes-utils/releases/download/main-f8e47bf1b258be47e581700b81b41fcf83f7e1ad/rusherhack-kybes-utils.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
  ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>
  **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)<br>
@@ -1086,7 +1086,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [rusherhack-instantloader](https://github.com/tillay/rusherhack-InstantLoader) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/tillay/rusherhack-InstantLoader?label=Latest%20Release&color=green)](https://github.com/tillay/rusherhack-InstantLoader/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tillay/rusherhack-InstantLoader/total)](https://github.com/tillay/rusherhack-InstantLoader/releases/download/working!/rusherhack-instantloader.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/tillay/rusherhack-InstantLoader?label=Latest%20Release&color=green)](https://github.com/tillay/rusherhack-InstantLoader/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tillay/rusherhack-InstantLoader/total)](https://github.com/tillay/rusherhack-InstantLoader/releases/download/release/rusherhack-instantloader.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%201--1%2021%204-blueviolet)<br>
  **Creator**: <img src="https://github.com/tillay.png?size=20" width="20" height="20"> [tillay](https://github.com/tillay)<br>
  Automatically interacts with a targeted trapdoor as soon as a specified player logs in, enabling instant pearl loading.
@@ -1101,7 +1101,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [rusher-waifu-integration](https://github.com/tillay/rusher-waifu-integration) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/tillay/rusher-waifu-integration?label=Latest%20Release&color=green)](https://github.com/tillay/rusher-waifu-integration/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tillay/rusher-waifu-integration/total)](https://github.com/tillay/rusher-waifu-integration/releases/download/1.0.0/rusher-waifu-integration.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/tillay/rusher-waifu-integration?label=Latest%20Release&color=green)](https://github.com/tillay/rusher-waifu-integration/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tillay/rusher-waifu-integration/total)](https://github.com/tillay/rusher-waifu-integration/releases/download/release/rusher-waifu-integration.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%201--1%2021%204-blueviolet)<br>
  **Creator**: <img src="https://github.com/tillay.png?size=20" width="20" height="20"> [tillay](https://github.com/tillay)<br>
  Allows adding any custom image to the RusherHack HUD.

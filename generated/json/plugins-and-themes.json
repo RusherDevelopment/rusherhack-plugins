@@ -161,7 +161,7 @@
         "url": "https://github.com/tr330ne",
         "avatar": "https://github.com/tr330ne.png?size=20"
       },
-      "latest_release_tag": "v0.4",
+      "latest_release_tag": "0.4",
       "screenshots": [
         {
           "url": "./Assets/CombinedBindList/Screenshot_1.png",
@@ -196,7 +196,7 @@
         "url": "https://github.com/tr330ne",
         "avatar": "https://github.com/tr330ne.png?size=20"
       },
-      "latest_release_tag": "v0.1",
+      "latest_release_tag": "0.1",
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21.1-1.21.4"
@@ -1516,7 +1516,7 @@
         "url": "https://github.com/kybe236",
         "avatar": "https://github.com/kybe236.png?size=20"
       },
-      "latest_release_tag": "0.0.2",
+      "latest_release_tag": "main-f8e47bf1b258be47e581700b81b41fcf83f7e1ad",
       "screenshots": [
         {
           "url": "./Assets/rusherhack-kybes-utils/chat-example.png",
@@ -1637,7 +1637,7 @@
         "url": "https://github.com/tillay",
         "avatar": "https://github.com/tillay.png?size=20"
       },
-      "latest_release_tag": "working!",
+      "latest_release_tag": "release",
       "screenshots": [
         {
           "url": "https://img.youtube.com/vi/YCIigjl4oRk/hqdefault.jpg",
@@ -1657,7 +1657,7 @@
         "url": "https://github.com/tillay",
         "avatar": "https://github.com/tillay.png?size=20"
       },
-      "latest_release_tag": "1.0.0",
+      "latest_release_tag": "release",
       "screenshots": [
         {
           "url": "./Assets/rusher-waifu-integration/rusher-waifu-integration1.png",
