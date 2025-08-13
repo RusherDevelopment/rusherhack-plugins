@@ -161,7 +161,7 @@
         "url": "https://github.com/tr330ne",
         "avatar": "https://github.com/tr330ne.png?size=20"
       },
-      "latest_release_tag": "v0.3",
+      "latest_release_tag": "v0.4",
       "screenshots": [
         {
           "url": "./Assets/CombinedBindList/Screenshot_1.png",
@@ -176,14 +176,28 @@
         {
           "url": "./Assets/CombinedBindList/Screenshot_3.png",
           "alt": "Customization",
-          "width": 262
+          "width": 308
         },
         {
           "url": "./Assets/CombinedBindList/Screenshot_4.png",
           "alt": "Commands",
-          "width": 460
+          "width": 517
         }
       ],
+      "is_core": false,
+      "mc_versions": "1.21.1-1.21.4"
+    },
+    {
+      "name": "EFlyAutoJump",
+      "repo": "tr330ne/efly-autojump",
+      "description": "RusherHack helper module that replaces the non-functional baritones elytraAutoJump by performing repeated jumps when elytra is activated, allowing continuous flight even after touching the ground, and deactivates on stop.",
+      "creator": {
+        "name": "tr330ne",
+        "url": "https://github.com/tr330ne",
+        "avatar": "https://github.com/tr330ne.png?size=20"
+      },
+      "latest_release_tag": "v0.1",
+      "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21.1-1.21.4"
     },
