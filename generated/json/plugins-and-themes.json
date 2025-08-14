@@ -1241,7 +1241,7 @@
         "url": "https://github.com/kybe236",
         "avatar": "https://github.com/kybe236.png?size=20"
       },
-      "latest_release_tag": "1.21.1-v2",
+      "latest_release_tag": "1.21.4-v2",
       "screenshots": [],
       "is_core": true,
       "mc_versions": "1.21.2-1.21.4"
@@ -1612,7 +1612,7 @@
         "url": "https://github.com/tillay",
         "avatar": "https://github.com/tillay.png?size=20"
       },
-      "latest_release_tag": "working!",
+      "latest_release_tag": "fixed!",
       "screenshots": [
         {
           "url": "./Assets/rusherhack-rusherman/rusherman-window.png",
