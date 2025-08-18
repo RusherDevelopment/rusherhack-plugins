@@ -151,17 +151,17 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [Combined Bind List](https://github.com/tr330ne/combined-bindlist) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/tr330ne/combined-bindlist?label=Latest%20Release&color=green)](https://github.com/tr330ne/combined-bindlist/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tr330ne/combined-bindlist/total)](https://github.com/tr330ne/combined-bindlist/releases/download/0.4/Combined%20Bind%20List.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/tr330ne/combined-bindlist?label=Latest%20Release&color=green)](https://github.com/tr330ne/combined-bindlist/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tr330ne/combined-bindlist/total)](https://github.com/tr330ne/combined-bindlist/releases/download/v0.5/Combined%20Bind%20List.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%201--1%2021%204-blueviolet)<br>
  **Creator**: <img src="https://github.com/tr330ne.png?size=20" width="20" height="20"> [tr330ne](https://github.com/tr330ne)<br>
- RusherHack HUD Element to display keybinds and active modules from both Meteor and RusherHack, with advanced customization options, including the ability to modify individual modules, metadata, brackets, colors, and other.
+ Hud Element to display keybinds and active modules from both Meteor and Rusher, with advanced customization options, including the ability to modify individual modules, metadata, brackets, colors, and other.
 
  <details>
  <summary>Show Screenshots</summary>
  <p align="center">
  <img src="./Assets/CombinedBindList/Screenshot_1.png" alt="Preview" width="453">
  <img src="./Assets/CombinedBindList/Screenshot_2.png" alt="Commands" width="371">
- <img src="./Assets/CombinedBindList/Screenshot_3.png" alt="Customization" width="308">
+ <img src="./Assets/CombinedBindList/Screenshot_3.png" alt="Customization" width="321">
  <img src="./Assets/CombinedBindList/Screenshot_4.png" alt="Commands" width="517">
  </p>
  </details>
@@ -169,10 +169,20 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [EFlyAutoJump](https://github.com/tr330ne/efly-autojump) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/tr330ne/efly-autojump?label=Latest%20Release&color=green)](https://github.com/tr330ne/efly-autojump/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tr330ne/efly-autojump/total)](https://github.com/tr330ne/efly-autojump/releases/download/0.1/EFlyAutoJump.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/tr330ne/efly-autojump?label=Latest%20Release&color=green)](https://github.com/tr330ne/efly-autojump/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tr330ne/efly-autojump/total)](https://github.com/tr330ne/efly-autojump/releases/download/v0.2/EFlyAutoJump.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%201--1%2021%204-blueviolet)<br>
+ ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>
  **Creator**: <img src="https://github.com/tr330ne.png?size=20" width="20" height="20"> [tr330ne](https://github.com/tr330ne)<br>
- RusherHack helper module that replaces the non-functional baritones elytraAutoJump by performing repeated jumps when elytra is activated, allowing continuous flight even after touching the ground, and deactivates on stop.
+ Enhances Baritone elytra flight with smart auto-jump start/stop and visual display, compatible with Xaero Plus "Baritone Elytra Here", also supports manual Baritone commands input in addition to automation.
+
+ <details>
+ <summary>Show Screenshots</summary>
+ <p align="center">
+ <img src="./Assets/EFlyAutoJump/Screenshot_1.png" alt="Preview" width="563">
+ <img src="./Assets/EFlyAutoJump/Screenshot_2.png" alt="Preview" width="757">
+ <img src="./Assets/EFlyAutoJump/Screenshot_3.png" alt="Preview" width="575">
+ </p>
+ </details>
 
 ---
 
