@@ -145,12 +145,12 @@ plugins:
     mc_versions: 1.20.1-1.21.1
   - name: Combined Bind List
     repo: tr330ne/combined-bindlist
-    description: RusherHack HUD Element to display keybinds and active modules from both Meteor and RusherHack, with advanced customization options, including the ability to modify individual modules, metadata, brackets, colors, and other.
+    description: Hud Element to display keybinds and active modules from both Meteor and Rusher, with advanced customization options, including the ability to modify individual modules, metadata, brackets, colors, and other.
     creator:
       name: tr330ne
       url: https://github.com/tr330ne
       avatar: https://github.com/tr330ne.png?size=20
-    latest_release_tag: '0.4'
+    latest_release_tag: 'v0.5'
     screenshots:
       - url: ./Assets/CombinedBindList/Screenshot_1.png
         alt: Preview
@@ -160,7 +160,7 @@ plugins:
         width: 371
       - url: ./Assets/CombinedBindList/Screenshot_3.png
         alt: Customization
-        width: 308
+        width: 321
       - url: ./Assets/CombinedBindList/Screenshot_4.png
         alt: Commands
         width: 517
@@ -168,14 +168,23 @@ plugins:
     mc_versions: 1.21.1-1.21.4
   - name: EFlyAutoJump
     repo: tr330ne/efly-autojump
-    description: RusherHack helper module that replaces the non-functional baritones elytraAutoJump by performing repeated jumps when elytra is activated, allowing continuous flight even after touching the ground, and deactivates on stop.
+    description: Enhances Baritone elytra flight with smart auto-jump start/stop and visual display, compatible with Xaero Plus "Baritone Elytra Here", also supports manual Baritone commands input in addition to automation.
     creator:
       name: tr330ne
       url: https://github.com/tr330ne
       avatar: https://github.com/tr330ne.png?size=20
-    latest_release_tag: '0.1'
-    screenshots: []
-    is_core: false
+    latest_release_tag: 'v0.2'
+    screenshots:
+      - url: ./Assets/EFlyAutoJump/Screenshot_1.png
+        alt: Preview
+        width: 563
+      - url: ./Assets/EFlyAutoJump/Screenshot_2.png
+        alt: Preview
+        width: 757
+      - url: ./Assets/EFlyAutoJump/Screenshot_3.png
+        alt: Preview
+        width: 575
+    is_core: true
     mc_versions: 1.21.1-1.21.4
   - name: Unified Module List
     repo: czho/unified-modulelist
