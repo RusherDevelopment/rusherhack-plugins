@@ -17,7 +17,7 @@
     {
       "name": "2b2t.vc Rusherhack",
       "repo": "rfresh2/2b2t.vc-rusherhack",
-      "description": "A RusherHacks plugin designed for 2b2t.vc server use.",
+      "description": "2b2t data and statistics API commands and HUD.",
       "creator": {
         "name": "rfresh2",
         "url": "https://github.com/rfresh2",
