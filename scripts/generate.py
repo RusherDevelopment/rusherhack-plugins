@@ -32,13 +32,23 @@ with open('data/plugins-and-themes.yml', 'r') as f:
 # -----------------------
 
 def generate_entry_md(entry, is_plugin=True, index=0):
-    owner, repo_name = entry['repo'].split('/')
-    sanitized_name = entry['name'].replace(' ', '%20')
+    # Badge: repo release date (links to releases page)
+    latest_release_badge = (
+        f"[![Latest Release Date]"
+        f"(https://img.shields.io/github/release-date/{entry['repo']}?label=Latest%20Release&color=green)]"
+        f"(https://github.com/{entry['repo']}/releases)"
+    )
 
-    # Plugin name, link, and release/download badges
+    # Downloads badge image is repo-wide total; the LINK now uses jar_url (or latest release page)
+    downloads_link = entry.get('jar_url') or f"https://github.com/{entry['repo']}/releases/latest"
+    downloads_badge = (
+        f"[![GitHub Downloads](https://img.shields.io/github/downloads/{entry['repo']}/total)]"
+        f"({downloads_link})"
+    )
+
+    # Top line: name with repo link
     md = f"- ### [{entry['name']}](https://github.com/{entry['repo']}) <br>\n"
-    md += f" [![Latest Release Date](https://img.shields.io/github/release-date/{entry['repo']}?label=Latest%20Release&color=green)](https://github.com/{entry['repo']}/releases) "
-    md += f"[![GitHub Downloads](https://img.shields.io/github/downloads/{entry['repo']}/total)](https://github.com/{entry['repo']}/releases/download/{entry.get('latest_release_tag', 'latest')}/{sanitized_name}.jar)<br>\n"
+    md += f" {latest_release_badge} {downloads_badge}<br>\n"
 
     # MC version and core plugin badge (plugins only)
     if is_plugin and 'mc_versions' in entry:
@@ -48,23 +58,35 @@ def generate_entry_md(entry, is_plugin=True, index=0):
         md += " ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>\n"
 
     # Creator section with avatar
-    md += f" **Creator**: <img src=\"{entry['creator']['avatar']}\" width=\"20\" height=\"20\"> [{entry['creator']['name']}]({entry['creator']['url']})<br>\n"
+    creator = entry.get('creator', {})
+    avatar = creator.get('avatar', '')
+    creator_name = creator.get('name', 'Unknown')
+    creator_url = creator.get('url', '#')
+    if avatar:
+        md += f" **Creator**: <img src=\"{avatar}\" width=\"20\" height=\"20\"> [{creator_name}]({creator_url})<br>\n"
+    else:
+        md += f" **Creator**: [{creator_name}]({creator_url})<br>\n"
 
     # Description (cleaned of embedded images)
-    cleaned_description = re.sub(r'!\[.*?\]\(.*?\)', '', entry['description'])
+    desc = entry.get('description', '')
+    cleaned_description = re.sub(r'!\[.*?\]\(.*?\)', '', desc)
     md += f" {cleaned_description.strip()}\n\n"
 
     # Screenshots section (standard and YouTube thumbnails)
-    if entry.get('screenshots'):
+    screenshots = entry.get('screenshots') or []
+    if screenshots:
         md += " <details>\n <summary>Show Screenshots</summary>\n <p align=\"center\">\n"
-        for ss in entry['screenshots']:
-            youtube_match = re.match(r'https://img\.youtube\.com/vi/([^/]+)/[^/]+\.jpg', ss['url'])
+        for ss in screenshots:
+            url = ss.get('url', '')
+            alt = ss.get('alt', '')
+            width = ss.get('width', 250)
+            youtube_match = re.match(r'https://img\.youtube\.com/vi/([^/]+)/[^/]+\.jpg', url)
             if youtube_match:
                 video_id = youtube_match.group(1)
                 video_url = f"https://www.youtube.com/watch?v={video_id}"
-                md += f" <a href=\"{video_url}\" target=\"_blank\"><img src=\"{ss['url']}\" alt=\"{ss.get('alt', '')}\" width=\"{ss.get('width', 250)}\"></a>\n"
+                md += f" <a href=\"{video_url}\" target=\"_blank\"><img src=\"{url}\" alt=\"{alt}\" width=\"{width}\"></a>\n"
             else:
-                md += f" <img src=\"{ss['url']}\" alt=\"{ss.get('alt', '')}\" width=\"{ss.get('width', 250)}\">\n"
+                md += f" <img src=\"{url}\" alt=\"{alt}\" width=\"{width}\">\n"
         md += " </p>\n </details>\n\n"
 
     md += "---\n\n"
@@ -75,7 +97,7 @@ def generate_entry_md(entry, is_plugin=True, index=0):
 # -----------------------
 
 plugin_count = len(data.get("plugins", []))
-theme_count = len(data.get("themes", []) or [])
+theme_count = len(data.get("themes", []))
 
 # -----------------------
 # Update PLUGINS.md
@@ -84,7 +106,10 @@ theme_count = len(data.get("themes", []) or [])
 with open('PLUGINS.md', 'r') as f:
     plugins_content = f.read()
 
-plugin_entries = ''.join(generate_entry_md(p, is_plugin=True, index=i) for i, p in enumerate(data.get('plugins', [])))
+plugin_entries = ''.join(
+    generate_entry_md(p, is_plugin=True, index=i)
+    for i, p in enumerate(data.get('plugins', []))
+)
 
 # Update plugin badge count
 plugins_content = re.sub(
@@ -111,7 +136,10 @@ with open('PLUGINS.md', 'w') as f:
 with open('THEMES.md', 'r') as f:
     themes_content = f.read()
 
-theme_entries = ''.join(generate_entry_md(t, is_plugin=False, index=i) for i, t in enumerate(data.get('themes', [])))
+theme_entries = ''.join(
+    generate_entry_md(t, is_plugin=False, index=i)
+    for i, t in enumerate(data.get('themes', []))
+)
 
 # Update theme badge count
 themes_content = re.sub(
