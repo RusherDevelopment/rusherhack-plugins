@@ -38,6 +38,7 @@ Whether you're submitting a new plugin, fixing typos, or enhancing existing entr
      - `avatar`
    - `latest_release_tag`
    - `screenshots` (can be an empty list)
+   - `jar_url`
    - For plugins:
      - `mc_versions`
      - `is_core` (true or false)
@@ -57,65 +58,70 @@ Whether you're submitting a new plugin, fixing typos, or enhancing existing entr
    
 ### Example Plugin Format (with screenshots):
 ```yaml
-- name: RusherHack-HudElement
-  repo: Aspect-404/RusherHack-HudElement
-  description: Create a customizable HUD element for Minecraft utility mod RusherHack.
-  creator:
-    name: Aspect-404
-    url: https://github.com/Aspect-404
-    avatar: https://github.com/Aspect-404.png?size=20
-  latest_release_tag: Release
-  screenshots:
-  - url: ./Assets/RusherHack-HudElement/HudSettings.png
-    alt: Hud Setting
-    width: 250
-  - url: ./Assets/RusherHack-HudElement/HudElement.png
-    alt: Hud Element
-    width: 550
-  is_core: false
-  mc_versions: 1.20.4-1.21
+  - name: RusherHack-HudElement
+    repo: Aspect-404/RusherHack-HudElement
+    description: Create a customizable HUD element for Minecraft utility mod RusherHack.
+    creator:
+      name: Aspect-404
+      url: https://github.com/Aspect-404
+      avatar: https://github.com/Aspect-404.png?size=20
+    latest_release_tag: Release
+    screenshots:
+      - url: ./Assets/RusherHack-CustomHUDElement/HudSettings.png
+        alt: Hud Setting
+        width: 250
+      - url: ./Assets/RusherHack-CustomHUDElement/HudElement.png
+        alt: Hud Element
+        width: 550
+    is_core: false
+    mc_versions: 1.20.4-1.21
+    jar_url: https://github.com/Aspect-404/RusherHack-HudElement/releases/download/Release/HudElement.jar
 ```
 
 ### Example Plugin Format (without screenshots):
 ```yaml
-- name: Example Plugin
-  repo: RusherDevelopment/example-plugin
-  description: A basic example plugin demonstrating the structure and capabilities of RusherHacks plugins.
-  creator:
-    name: RusherDevelopment
-    url: https://github.com/RusherDevelopment
-    avatar: https://github.com/RusherDevelopment.png?size=20
-  latest_release_tag: ''
-  screenshots: []
-  is_core: false
-  mc_versions: N/A
+  - name: Example Plugin
+    repo: RusherDevelopment/example-plugin
+    description: A basic example plugin demonstrating the structure and capabilities of RusherHacks plugins.
+    creator:
+      name: RusherDevelopment
+      url: https://github.com/RusherDevelopment
+      avatar: https://github.com/RusherDevelopment.png?size=20
+    latest_release_tag: ''
+    screenshots: []
+    is_core: false
+    mc_versions: N/A
 ```
 
 ### Example Theme Format (with screenshots):
 ```yaml
-- name: rusherNodusTheme
-  repo: bakjedev/rusherNodusTheme
-  description: Nodus - Best theme evaAAAA. Code is terrible. Blame xyzbtw!
-  creator:
-    name: bakjedev
-    url: https://github.com/bakjedev
-    avatar: https://github.com/bakjedev.png?size=20
-  latest_release_tag: ''
-  screenshots:
-  - url: ./Assets/rusherNodusTheme/NodusGUI.png
-    alt: Module
-    width: 750
+  - name: rusherNodusTheme
+    repo: bakjedev/rusherNodusTheme
+    description: Nodus - Best theme evaAAAA. Code is terrible. Blame xyzbtw!
+    creator:
+      name: bakjedev
+      url: https://github.com/bakjedev
+      avatar: https://github.com/bakjedev.png?size=20
+    latest_release_tag: releease2
+    screenshots:
+      - url: ./Assets/rusherNodusTheme/NodusGUI.png
+        alt: Module
+        width: 750
+    mc_versions: 1.21
+    jar_url: https://github.com/bakjedev/rusherNodusTheme/releases/download/releease2/rushergui-1.0.0.jar
 ```
 
 ### Example Theme Format (without screenshots):
 ```yaml
-- name: Nhack Theme
-  repo: h1tm4nqq/Nhack-theme
-  description: A theme like Nhack 2015 for RH.
-  creator:
-    name: h1tm4nqq
-    url: https://github.com/h1tm4nqq
-    avatar: https://github.com/h1tm4nqq.png?size=20
-  latest_release_tag: 1.0.1
-  screenshots: []
+  - name: Nhack Theme
+    repo: h1tm4nqq/Nhack-theme
+    description: A theme like Nhack 2015 for RH.
+    creator:
+      name: h1tm4nqq
+      url: https://github.com/h1tm4nqq
+      avatar: https://github.com/h1tm4nqq.png?size=20
+    latest_release_tag: 1.21.4
+    screenshots: []
+    mc_versions: 1.20.1-1.21.4
+    jar_url: https://github.com/h1tm4nqq/Nhack-theme/releases/download/1.21.4/nhack-theme-1.0.0.jar
 ```
