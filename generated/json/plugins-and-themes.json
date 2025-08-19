@@ -1688,6 +1688,20 @@
       ],
       "is_core": false,
       "mc_versions": "1.21.1-1.21.4"
+    },
+    {
+      "name": "AutoMoss",
+      "repo": "master7720/AutoMoss",
+      "description": "Automatic moss spreading with configurable settings. \u2022 Range, cooldown, delay, and max uses per tick \u2022 Optional rotation to face target blocks \u2022 Optional tree growth support (azaleas, saplings, leaves) \u2022 Option to restrict bone meal usage to inventory or hotbar only",
+      "creator": {
+        "name": "master7720",
+        "url": "https://github.com/master7720",
+        "avatar": "https://github.com/master7720.png?size=20"
+      },
+      "latest_release_tag": "1.0.1",
+      "screenshots": [],
+      "is_core": false,
+      "mc_versions": "1.21.4"
     }
   ],
   "themes": [
