@@ -1017,7 +1017,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraft�
 ---
 
 - ### [rusherhack-kybes-utils](https://github.com/kybe236/rusherhack-kybes-utils) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/kybe236/rusherhack-kybes-utils?label=Latest%20Release&color=green)](https://github.com/kybe236/rusherhack-kybes-utils/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/kybe236/rusherhack-kybes-utils/total)](https://github.com/kybe236/rusherhack-kybes-utils/releases/download/v1.0.0-d2dbb9ac146ba2461ea7e399a82bfc89954f717f/kybes-utils.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/kybe236/rusherhack-kybes-utils?label=Latest%20Release&color=green)](https://github.com/kybe236/rusherhack-kybes-utils/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/kybe236/rusherhack-kybes-utils/total)](https://github.com/kybe236/rusherhack-kybes-utils/releases/download/v1.0.0-c2419650473dfb5e685bf2c13d0029f4e4fc418f/kybes-utils.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
  ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>
  **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)<br>
@@ -1127,7 +1127,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraft�
 ---
 
 - ### [AutoMoss](https://github.com/master7720/AutoMoss) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/master7720/AutoMoss?label=Latest%20Release&color=green)](https://github.com/master7720/AutoMoss/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/master7720/AutoMoss/total)](https://github.com/master7720/AutoMoss/releases/download/releases/automoss-1.1.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/master7720/AutoMoss?label=Latest%20Release&color=green)](https://github.com/master7720/AutoMoss/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/master7720/AutoMoss/total)](https://github.com/master7720/AutoMoss/releases/download/2.0/automoss-2.0.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
  **Creator**: <img src="https://github.com/master7720.png?size=20" width="20" height="20"> [master7720](https://github.com/master7720)<br>
  Automatic moss spreading with configurable settings. • Range, cooldown, delay, and max uses per tick • Optional rotation to face target blocks • Optional tree growth support (azaleas, saplings, leaves) • Option to restrict bone meal usage to inventory or hotbar only

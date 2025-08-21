@@ -1613,7 +1613,7 @@
         "url": "https://github.com/kybe236",
         "avatar": "https://github.com/kybe236.png?size=20"
       },
-      "latest_release_tag": "v1.0.0-d2dbb9ac146ba2461ea7e399a82bfc89954f717f",
+      "latest_release_tag": "v1.0.0-c2419650473dfb5e685bf2c13d0029f4e4fc418f",
       "screenshots": [
         {
           "url": "./Assets/rusherhack-kybes-utils/chat-example.png",
@@ -1623,7 +1623,7 @@
       ],
       "is_core": true,
       "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/kybe236/rusherhack-kybes-utils/releases/download/v1.0.0-d2dbb9ac146ba2461ea7e399a82bfc89954f717f/kybes-utils.jar"
+      "jar_url": "https://github.com/kybe236/rusherhack-kybes-utils/releases/download/v1.0.0-c2419650473dfb5e685bf2c13d0029f4e4fc418f/kybes-utils.jar"
     },
     {
       "name": "AutoAnvilRename",
@@ -1788,11 +1788,11 @@
         "url": "https://github.com/master7720",
         "avatar": "https://github.com/master7720.png?size=20"
       },
-      "latest_release_tag": "releases",
+      "latest_release_tag": "2.0",
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/master7720/AutoMoss/releases/download/releases/automoss-1.1.jar"
+      "jar_url": "https://github.com/master7720/AutoMoss/releases/download/2.0/automoss-2.0.jar"
     }
   ],
   "themes": [
