@@ -1017,7 +1017,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [rusherhack-kybes-utils](https://github.com/kybe236/rusherhack-kybes-utils) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/kybe236/rusherhack-kybes-utils?label=Latest%20Release&color=green)](https://github.com/kybe236/rusherhack-kybes-utils/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/kybe236/rusherhack-kybes-utils/total)](https://github.com/kybe236/rusherhack-kybes-utils/releases/download/v1.0.0-c2419650473dfb5e685bf2c13d0029f4e4fc418f/kybes-utils.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/kybe236/rusherhack-kybes-utils?label=Latest%20Release&color=green)](https://github.com/kybe236/rusherhack-kybes-utils/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/kybe236/rusherhack-kybes-utils/total)](https://github.com/kybe236/rusherhack-kybes-utils/releases/download/v1.0.0-051dc65350aef8aef3e77daf53d6ae0312a99b6f/kybes-utils.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
  ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>
  **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)<br>

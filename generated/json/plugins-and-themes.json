@@ -1613,7 +1613,7 @@
         "url": "https://github.com/kybe236",
         "avatar": "https://github.com/kybe236.png?size=20"
       },
-      "latest_release_tag": "v1.0.0-c2419650473dfb5e685bf2c13d0029f4e4fc418f",
+      "latest_release_tag": "v1.0.0-051dc65350aef8aef3e77daf53d6ae0312a99b6f",
       "screenshots": [
         {
           "url": "./Assets/rusherhack-kybes-utils/chat-example.png",
@@ -1623,7 +1623,7 @@
       ],
       "is_core": true,
       "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/kybe236/rusherhack-kybes-utils/releases/download/v1.0.0-c2419650473dfb5e685bf2c13d0029f4e4fc418f/kybes-utils.jar"
+      "jar_url": "https://github.com/kybe236/rusherhack-kybes-utils/releases/download/v1.0.0-051dc65350aef8aef3e77daf53d6ae0312a99b6f/kybes-utils.jar"
     },
     {
       "name": "AutoAnvilRename",
