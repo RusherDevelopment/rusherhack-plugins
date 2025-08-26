@@ -1386,6 +1386,18 @@ plugins:
     is_core: false
     mc_versions: 1.21.4
     jar_url: https://github.com/master7720/AutoMoss/releases/download/2.0/automoss-2.0.jar
+  - name: AutoIgnorehard
+    repo: IceTank/RusherHack-AutoIgnorehard
+    description: Automatically runs the `/ignorehard <playername>` command on any player that sends a Discord invite in chat.
+    creator:
+      name: IceTank
+      url: https://github.com/IceTank
+      avatar: https://github.com/IceTank.png?size=20
+    latest_release_tag: v0.0.1
+    screenshots: []
+    is_core: false
+    mc_versions: 1.21.4
+    jar_url: https://github.com/IceTank/RusherHack-AutoIgnorehard/releases/download/v0.0.1/AutoIgnorehard-0.0.1.jar
 themes:
   - name: rusherNodusTheme
     repo: bakjedev/rusherNodusTheme
