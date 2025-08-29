@@ -1409,11 +1409,28 @@ plugins:
     screenshots:
       - url: https://github.com/TehPicix/rusherhack-Cockpit/raw/master/.github/static/Screenshot-2025-08-27-131236.png
         alt: Cockpit HUD
+        width: 386
     is_core: false
-    mc_versions: 
-      - 1.21.1
-      - 1.21.4
+    mc_versions: 1.21.1-1.21.4
     jar_url: https://github.com/TehPicix/rusherhack-Cockpit/releases/download/v1.2.2/rusherhack-cockpit-1.2.2.jar
+  - name: ChatFilter
+    repo: TehPicix/rusherhack-ChatFilter
+    description: Allows you to filter chat messages in Minecraft using customizable regular expressions. It reads expressions from a file and applies them to incoming chat messages, blocking those that match.
+    creator:
+      name: TehPicix
+      url: https://github.com/TehPicix
+      avatar: https://crafatar.com/avatars/1eb084b8588e43e6bdd3e05e53682987?size=100
+    latest_release_tag: v1.1.2
+    screenshots:
+      - url: https://raw.githubusercontent.com/TehPicix/rusherhack-ChatFilter/refs/heads/master/.github/assets/before.png
+        alt: Chat Before
+        width: 996
+      - url: https://raw.githubusercontent.com/TehPicix/rusherhack-ChatFilter/refs/heads/master/.github/assets/after.png
+        alt: Chat After
+        width: 536
+    is_core: true
+    mc_versions: 1.21.4
+    jar_url: https://github.com/TehPicix/rusherhack-ChatFilter/releases/download/v1.2.2/rusherhack-chatfilter-1.1.2.jar
 themes:
   - name: rusherNodusTheme
     repo: bakjedev/rusherNodusTheme
