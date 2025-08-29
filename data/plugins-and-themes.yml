@@ -1398,6 +1398,22 @@ plugins:
     is_core: false
     mc_versions: 1.21.4
     jar_url: https://github.com/IceTank/RusherHack-AutoIgnorehard/releases/download/v0.0.1/AutoIgnorehard-0.0.1.jar
+  - name: Cockpit
+    repo: TehPicix/rusherhack-Cockpit
+    description: Adds a cockpit HUD to display flight distance and time when using an elytra. Great for players who frequently travel the nether highways while AFK.
+    creator:
+      name: TehPicix
+      url: https://github.com/TehPicix
+      avatar: https://crafatar.com/avatars/1eb084b8588e43e6bdd3e05e53682987?size=100
+    latest_release_tag: v1.2.2
+    screenshots:
+      - url: https://github.com/TehPicix/rusherhack-Cockpit/raw/master/.github/static/Screenshot-2025-08-27-131236.png
+        alt: Cockpit HUD
+    is_core: false
+    mc_versions: 
+      - 1.21.1
+      - 1.21.4
+    jar_url: https://github.com/TehPicix/rusherhack-Cockpit/releases/download/v1.2.2/rusherhack-cockpit-1.2.2.jar
 themes:
   - name: rusherNodusTheme
     repo: bakjedev/rusherNodusTheme
