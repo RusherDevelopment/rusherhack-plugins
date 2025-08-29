@@ -1431,6 +1431,7 @@ plugins:
     is_core: true
     mc_versions: 1.21.4
     jar_url: https://github.com/TehPicix/rusherhack-ChatFilter/releases/download/v1.2.2/rusherhack-chatfilter-1.1.2.jar
+
 themes:
   - name: rusherNodusTheme
     repo: bakjedev/rusherNodusTheme
