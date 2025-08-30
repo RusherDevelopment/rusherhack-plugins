@@ -1158,7 +1158,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [ChatFilter](https://github.com/TehPicix/rusherhack-ChatFilter) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/TehPicix/rusherhack-ChatFilter?label=Latest%20Release&color=green)](https://github.com/TehPicix/rusherhack-ChatFilter/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/TehPicix/rusherhack-ChatFilter/total)](https://github.com/TehPicix/rusherhack-ChatFilter/releases/download/v1.2.2/rusherhack-chatfilter-1.1.2.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/TehPicix/rusherhack-ChatFilter?label=Latest%20Release&color=green)](https://github.com/TehPicix/rusherhack-ChatFilter/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/TehPicix/rusherhack-ChatFilter/total)](https://github.com/TehPicix/rusherhack-ChatFilter/releases/download/v1.1.2/rusherhack-chatfilter-1.1.2.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
  ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>
  **Creator**: <img src="https://crafatar.com/avatars/1eb084b8588e43e6bdd3e05e53682987?size=100" width="20" height="20"> [TehPicix](https://github.com/TehPicix)<br>
