@@ -1855,6 +1855,21 @@
       "is_core": true,
       "mc_versions": "1.21.4",
       "jar_url": "https://github.com/TehPicix/rusherhack-ChatFilter/releases/download/v1.1.2/rusherhack-chatfilter-1.1.2.jar"
+    },
+    {
+      "name": "rusherhack-ai-integration",
+      "repo": "tillay/rusherhack-ai-integration",
+      "description": "Adds AI integration to RusherHack with configurable API, token, and model options. Supports DeepSeek and other APIs with streaming-enabled chat completions.",
+      "creator": {
+        "name": "tillay",
+        "url": "https://github.com/tillay",
+        "avatar": "https://github.com/tillay.png?size=20"
+      },
+      "latest_release_tag": "release",
+      "screenshots": [],
+      "is_core": false,
+      "mc_versions": "1.21.1-1.21.4",
+      "jar_url": "https://github.com/tillay/rusherhack-ai-integration/releases/download/release/ai-plugin-1.0.0.jar"
     }
   ],
   "themes": [
