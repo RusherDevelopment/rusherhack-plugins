@@ -323,7 +323,7 @@ plugins:
     screenshots: []
     is_core: false
     mc_versions: 1.20.4
-    jar_url: https://github.com/kybe236/rusherhack-nbt-utils/releases/download/1.20.4-0.1.0/nbt-reader-0.1.0.jar
+    jar_url: https://github.com/KybesRusherhackPlugins/nbt-utils/releases/download/1.20.4-0.1.0/nbt-reader-0.1.0.jar
   - name: Rusherhack Executer
     repo: kybe236/rusherhack-executer
     description: Executes commands and resolves `<player>` to every player online.
@@ -335,7 +335,7 @@ plugins:
     screenshots: []
     is_core: false
     mc_versions: 1.20.4
-    jar_url: https://github.com/kybe236/rusherhack-executer/releases/download/1.20.4-5.0.0/kybes-executer-5.0.0.jar
+    jar_url: https://github.com/KybesRusherhackPlugins/executer/releases/download/1.20.4-5.0.0/kybes-executer-5.0.0.jar
   - name: F3 Spoof
     repo: Doogie13/f3-spoof
     description: Spoofs the F3 debug screen information.
@@ -360,7 +360,7 @@ plugins:
         alt: Open Folder Demo
     is_core: false
     mc_versions: '1.21'
-    jar_url: https://github.com/kybe236/rusherhack-open-folder/releases/download/1.21/open-folder-0.0.9.jar
+    jar_url: https://github.com/KybesRusherhackPlugins/open-folder/releases/download/1.21/open-folder-0.0.9.jar
   - name: Mace Kill
     repo: kybe236/rusherhack-mace-kill
     description: One shot pretty much all mobs with a mace.
@@ -374,7 +374,7 @@ plugins:
         alt: Mace Kill Demo
     is_core: false
     mc_versions: 1.21.4
-    jar_url: https://github.com/kybe236/rusherhack-mace-kill/releases/download/1.21.4/mace-kill-1.0.0.jar
+    jar_url: https://github.com/KybesRusherhackPlugins/mace-kill/releases/download/1.21.4/mace-kill-1.0.0.jar
   - name: Weather Changing Plugin
     repo: Lokfid/WeatherChangingPlugin
     description: Allows players to change the weather in-game.
@@ -400,7 +400,7 @@ plugins:
         alt: Middleclick Wind Charge Demo
     is_core: false
     mc_versions: '1.21'
-    jar_url: https://github.com/kybe236/rusherhack-middleclick-wind-charge/releases/download/1.21-1.0.1/rusherhack-middleclick-wind-charge-1.0.1.jar
+    jar_url: https://github.com/KybesRusherhackPlugins/middleclick-wind-charge/releases/download/1.21-1.0.1/rusherhack-middleclick-wind-charge-1.0.1.jar
   - name: GarlicSight
     repo: GarlicRot/GarlicSight
     description: A RusherHacks Plugin - Crosshair Info - GarlicSight.
@@ -492,7 +492,7 @@ plugins:
     screenshots: []
     is_core: false
     mc_versions: 1.20.4
-    jar_url: https://github.com/kybe236/rusherhack-remote-controle/releases/download/1.20.4-1.0.0/remote-control-1.0.0.jar
+    jar_url: https://github.com/KybesRusherhackPlugins/remote-controle/releases/download/1.20.4-1.0.0/remote-control-1.0.0.jar
   - name: Speed Measure
     repo: Lokfid/RusherHackSpeedMeasure
     description: A plugin to measure speed in RusherHacks.
@@ -516,7 +516,7 @@ plugins:
     screenshots: []
     is_core: false
     mc_versions: 1.20.4
-    jar_url: https://github.com/kybe236/rusher-tnt-bomber/releases/download/1.20.4/tnt-nuker-1.0.0.jar
+    jar_url: https://github.com/KybesRusherhackPlugins/tnt-bomber/releases/download/1.20.4/tnt-nuker-1.0.0.jar
   - name: No Render Entities
     repo: John200410/norender-entities
     description: A plugin to disable rendering of entities.
@@ -623,7 +623,7 @@ plugins:
     screenshots: []
     is_core: false
     mc_versions: '1.21'
-    jar_url: https://github.com/kybe236/dc-chat-logger/releases/download/3.0.0/dc-chat-logger-3.0.0.jar
+    jar_url: https://github.com/KybesRusherhackPlugins/dc-chat-logger/releases/download/3.0.0/dc-chat-logger-3.0.0.jar
   - name: rusherhack-nightvision-plugin
     repo: John200410/rusherhack-nightvision-plugin
     description: A replacement for FullBright when using shaders.
@@ -686,7 +686,7 @@ plugins:
         width: 250
     is_core: false
     mc_versions: '1.21'
-    jar_url: https://github.com/kybe236/rusher-elytra-eta/releases/download/1.0.0/rusher-elytra-eta-1.0.0.jar
+    jar_url: https://github.com/KybesRusherhackPlugins/elytra-eta/releases/download/1.0.0/rusher-elytra-eta-1.0.0.jar
   - name: rusher-silent-close
     repo: kybe236/rusher-silent-close
     description: Keeps Container GUI open
@@ -698,7 +698,7 @@ plugins:
     screenshots: []
     is_core: false
     mc_versions: '1.21'
-    jar_url: https://github.com/kybe236/rusher-silent-close/releases/download/1.0.0/silent-close-1.0.0.jar
+    jar_url: https://github.com/KybesRusherhackPlugins/silent-container-close/releases/download/1.0.0/silent-close-1.0.0.jar
   - name: rusherhack-addons
     repo: miles352/rusherhack-addons
     description: 'A collection of RusherHacks addons including:'
@@ -722,7 +722,7 @@ plugins:
     screenshots: []
     is_core: false
     mc_versions: 1.21.4
-    jar_url: https://github.com/kybe236/rusher-gtranslate/releases/download/2.0.0/gtranslate-v2-1.0.0.jar
+    jar_url: https://github.com/KybesRusherhackPlugins/google-translate/releases/download/2.0.0/gtranslate-v2-1.0.0.jar
   - name: rusher-matrix-nofall
     repo: kybe236/rusher-matrix-nofall
     description: No Fall by setting isFalling flag in movement packets to false (tested on 6b6t).
@@ -734,7 +734,7 @@ plugins:
     screenshots: []
     is_core: false
     mc_versions: '1.21'
-    jar_url: https://github.com/kybe236/rusher-matrix-nofall/releases/download/1.0.0/kybe-nofall-1.0.0.jar
+    jar_url: https://github.com/KybesRusherhackPlugins/matrix-nofall/releases/download/1.0.0/kybe-nofall-1.0.0.jar
   - name: rusher-autoportal
     repo: kybe236/rusher-autoportal
     description: Automatically breaks blocks to place obsidian and activate the nether portal.
@@ -746,7 +746,7 @@ plugins:
     screenshots: []
     is_core: false
     mc_versions: 1.20.4-1.21.1
-    jar_url: https://github.com/kybe236/rusher-autoportal/releases/download/1.20.6-1.21.1/kybe-portal-maker-1.0.0.jar
+    jar_url: https://github.com/KybesRusherhackPlugins/auto-portal/releases/download/1.20.6-1.21.1/kybe-portal-maker-1.0.0.jar
   - name: rusher-air-place
     repo: kybe236/rusher-air-place
     description: A plugin that allows placing blocks in the air in Minecraft.
@@ -758,7 +758,7 @@ plugins:
     screenshots: []
     is_core: false
     mc_versions: 1.20.1-1.21.1
-    jar_url: https://github.com/kybe236/rusher-air-place/releases/download/1.0.0/kybe-airplace-1.0.0.jar
+    jar_url: https://github.com/KybesRusherhackPlugins/air-place/releases/download/1.0.0/kybe-airplace-1.0.0.jar
   - name: rusher-hold-spamm-space
     repo: kybe236/rusher-hold-spamm-space
     description: A plugin that automatically spams or holds the space bar.
@@ -770,7 +770,7 @@ plugins:
     screenshots: []
     is_core: false
     mc_versions: 1.21-1.21.1
-    jar_url: https://github.com/kybe236/rusher-hold-spamm-space/releases/download/1.0.0.1/kybe-holdspace-1.0.0.jar
+    jar_url: https://github.com/KybesRusherhackPlugins/space-spammer/releases/download/1.0.0.1/kybe-holdspace-1.0.0.jar
   - name: rusher-auto-bed-bomber
     repo: kybe236/rusher-auto-bed-bomber
     description: A plugin that automates bed bombing in Minecraft.
@@ -782,7 +782,7 @@ plugins:
     screenshots: []
     is_core: false
     mc_versions: '1.21'
-    jar_url: https://github.com/kybe236/rusher-auto-bed-bomber/releases/download/idk/kybe-auto-bed-bomb-1.0.0.jar
+    jar_url: https://github.com/KybesRusherhackPlugins/auto-bed-bomber/releases/download/idk/kybe-auto-bed-bomb-1.0.0.jar
   - name: rusher-crystal-spin
     repo: kybe236/rusher-crystal-spin
     description: A plugin that makes end crystals spin faster or slower.
@@ -794,7 +794,7 @@ plugins:
     screenshots: []
     is_core: false
     mc_versions: '1.21'
-    jar_url: https://github.com/kybe236/rusher-crystal-spin/releases/download/1.0.0/kybe-holdspace-1.0.0.jar
+    jar_url: https://github.com/KybesRusherhackPlugins/crystal-spin/releases/download/1.0.0/kybe-holdspace-1.0.0.jar
   - name: AutoShear
     repo: oisin404/AutoShear
     description: A plugin that automates shearing in Minecraft.
@@ -833,7 +833,7 @@ plugins:
     screenshots: []
     is_core: false
     mc_versions: 1.20.4
-    jar_url: https://github.com/kybe236/rusher-autokit/releases/download/1.0.0/kybe-autokit-1.0.0.jar
+    jar_url: https://github.com/KybesRusherhackPlugins/autokit/releases/download/1.0.0/kybe-autokit-1.0.0.jar
   - name: AutoTorch
     repo: NinetyUnderScore/AutoTorch
     description: Automatically places torches to light up areas in Minecraft.
@@ -918,7 +918,7 @@ plugins:
     screenshots: []
     is_core: false
     mc_versions: 1.20.1
-    jar_url: https://github.com/kybe236/rusher-discord-notifications/releases/download/1.0.0/discord-notifier-1.0.0.jar
+    jar_url: https://github.com/KybesRusherhackPlugins/discord-notifications/releases/download/1.0.0/discord-notifier-1.0.0.jar
   - name: AutoBonemeal
     repo: John200410/rusherhack-autobonemeal
     description: A RusherHacks plugin for automatically applying bonemeal to crops.
@@ -966,7 +966,7 @@ plugins:
     screenshots: []
     is_core: false
     mc_versions: 1.21.1-1.21.4
-    jar_url: https://github.com/kybe236/rusher-item-saver/releases/download/multiversion/item-saver-1.0.0.jar
+    jar_url: https://github.com/KybesRusherhackPlugins/item-saver/releases/download/multiversion/item-saver-1.0.0.jar
   - name: RusherHack Mace Swap
     repo: kybe236/rusherhack-mace-swap
     description: A RusherHacks plugin that automatically swaps to a mace when attacking.
@@ -978,7 +978,7 @@ plugins:
     screenshots: []
     is_core: false
     mc_versions: 1.21.1-1.21.4
-    jar_url: https://github.com/kybe236/rusherhack-mace-swap/releases/download/fix1/mace-swap-1.0.0.jar
+    jar_url: https://github.com/KybesRusherhackPlugins/mace-swap/releases/download/fix1/mace-swap-1.0.0.jar
   - name: Example Core Plugin
     repo: RusherDevelopment/example-core-plugin
     description: A core plugin example demonstrating mixin support in RusherHack.
@@ -1038,7 +1038,7 @@ plugins:
     screenshots: []
     is_core: true
     mc_versions: 1.21.2-1.21.4
-    jar_url: https://github.com/kybe236/rusherhack-streamer-mode/releases/download/1.21.4-v3/streamer-mode-1.0.0.jar
+    jar_url: https://github.com/KybesRusherhackPlugins/streamer-mode/releases/download/1.21.4-v3/streamer-mode-1.0.0.jar
   - name: Rusher Auto Item Frame Dupe
     repo: kybe236/rusher-auto-item-frame-dupe
     description: A plugin for automating item frame duplication in RusherHack.
@@ -1050,7 +1050,7 @@ plugins:
     screenshots: []
     is_core: false
     mc_versions: 1.21.1-1.21.4
-    jar_url: https://github.com/kybe236/rusher-auto-item-frame-dupe/releases/download/1.21.1-1.21.4/rusher-auto-item-frame-dupe-1.0.0.jar
+    jar_url: https://github.com/KybesRusherhackPlugins/auto-item-frame-dupe/releases/download/1.21.1-1.21.4/rusher-auto-item-frame-dupe-1.0.0.jar
   - name: RusherMoji
     repo: Lokfid/RusherMoji
     description: A core plugin for adding custom emoji functionality in RusherHack.
@@ -1074,7 +1074,7 @@ plugins:
     screenshots: []
     is_core: false
     mc_versions: 1.21.4
-    jar_url: https://github.com/kybe236/rusherhack-piston-pusher/releases/download/1.21.4/crystal-pusher-1.0.0.jar
+    jar_url: https://github.com/KybesRusherhackPlugins/piston-pusher/releases/download/1.21.4/crystal-pusher-1.0.0.jar
   - name: RusherUtils
     repo: 0tterware/RusherUtils
     description: RusherUtils automates Wither and TNT tasks with HUD counters for RusherHack.
@@ -1100,7 +1100,7 @@ plugins:
     screenshots: []
     is_core: false
     mc_versions: 1.21.4
-    jar_url: https://github.com/kybe236/rusher-grown-esp/releases/download/1.21.4/rusher-grow-esp-1.0.0.jar
+    jar_url: https://github.com/KybesRusherhackPlugins/crop-esp-nuker/releases/download/1.21.4/rusher-grow-esp-1.0.0.jar
   - name: Rusher GhoulMode
     repo: Koteyka32k/rusher-ghoulmode
     description: Allows you to stay in the world after death. The death screen is suppressed, and you can still look around without interacting.
@@ -1162,7 +1162,7 @@ plugins:
         alt: Vault Marker Screenshot 2
     is_core: false
     mc_versions: 1.21.1-1.21.5
-    jar_url: https://github.com/kybe236/rusher-vault-helper/releases/download/1.21-1.21.4/rusher-vault-helper-1.0.0.jar
+    jar_url: https://github.com/KybesRusherhackPlugins/vault-helper/releases/download/1.21-1.21.4/rusher-vault-helper-1.0.0.jar
   - name: Rusher-Inventory-Drag
     repo: kybe236/rusher-inventory-drag
     description: Allows you to drag items in your inventory while holding shift.
@@ -1174,7 +1174,7 @@ plugins:
     screenshots: []
     is_core: true
     mc_versions: 1.21.4
-    jar_url: https://github.com/kybe236/rusher-inventory-drag/releases/download/1.21.4/rusher-invetory-drag-1.0.0.jar
+    jar_url: https://github.com/KybesRusherhackPlugins/inventory-drag/releases/download/1.21.4/rusher-invetory-drag-1.0.0.jar
   - name: PlayerLogPlugin-RusherHack
     repo: k4n3d4-sh0t4r0/PlayerLogPLugin-RusherHack
     description: Rusherhack plugin that logs all player encounters in a log file and displays them in the chat.
@@ -1252,14 +1252,14 @@ plugins:
       name: kybe236
       url: https://github.com/kybe236
       avatar: https://github.com/kybe236.png?size=20
-    latest_release_tag: v1.0.0-c86c1e7d08fa0e8b097eb5f69d2e17249f0cde9e
+    latest_release_tag: v1.0.0-dd232bf4c01b9997d3462cbba6c21e59375d64fa
     screenshots:
       - url: ./Assets/rusherhack-kybes-utils/chat-example.png
         alt: Example chat messages from kybe's utils
         width: 550
     is_core: true
     mc_versions: 1.21.4
-    jar_url: https://github.com/kybe236/rusherhack-kybes-utils/releases/download/v1.0.0-c86c1e7d08fa0e8b097eb5f69d2e17249f0cde9e/kybes-utils.jar
+    jar_url: https://github.com/KybesRusherhackPlugins/kybes-utils/releases/download/v1.0.0-dd232bf4c01b9997d3462cbba6c21e59375d64fa/kybes-utils.jar
   - name: AutoAnvilRename
     repo: musheck/AutoAnvilRename
     description: A fork of the AutoAnvilRename plugin that automates item renaming in anvils. Includes features like predefined rename text, ID filtering, shulker-only mode, and configurable click delay.
@@ -1286,7 +1286,7 @@ plugins:
         width: 600
     is_core: false
     mc_versions: 1.21.4
-    jar_url: https://github.com/kybe236/rusher-auto-kit-maker/releases/download/1.21.4-11/rusher-auto-kit-1.0.0.jar
+    jar_url: https://github.com/KybesRusherhackPlugins/auto-kit-maker/releases/download/1.21.4-11/rusher-auto-kit-1.0.0.jar
   - name: rusherhack-shell-integration
     repo: tillay/rusherhack-shell-integration
     description: Provides Linux shell integration for RusherHack, including an in-game terminal, command HUD, and support for triggering commands from external scripts.
@@ -1298,7 +1298,7 @@ plugins:
     screenshots: []
     is_core: false
     mc_versions: 1.21.1-1.21.4
-    jar_url: https://github.com/tillay/rusherhack-shell-integration/releases/download/release/shell-plugin-1.0.0.jar
+    jar_url: https://github.com/tillay-rh-plugins/rusherhack-shell-integration/releases/download/release/shell-plugin-1.0.0.jar
   - name: rusherhack-SmartBounce
     repo: tillay/rusherhack-SmartBounce
     description: Automatically adjusts the player's pitch during Elytra bouncing to smoothly jump over 1-block obstacles and return to optimal pitch afterward.
@@ -1310,7 +1310,7 @@ plugins:
     screenshots: []
     is_core: false
     mc_versions: 1.21.1-1.21.4
-    jar_url: https://github.com/tillay/rusherhack-SmartBounce/releases/download/release/ebounce-plugin-1.0.0.jar
+    jar_url: https://github.com/tillay-rh-plugins/rusherhack-SmartBounce/releases/download/release/ebounce-plugin-1.0.0.jar
   - name: AutoRegear
     repo: kybe236/auto-regear
     description: Automatically equips a saved kit from a chest, matching items and enchantments with configurable sensitivity. Includes commands for saving, renaming, listing, and removing kits.
@@ -1322,7 +1322,7 @@ plugins:
     screenshots: []
     is_core: false
     mc_versions: 1.21.4
-    jar_url: https://github.com/kybe236/auto-regear/releases/download/1.21.4/rusher-auto-regear-1.0.0.jar
+    jar_url: https://github.com/KybesRusherhackPlugins/auto-regear/releases/download/1.21.4/rusher-auto-regear-1.0.0.jar
   - name: rusherhack-rusherman
     repo: tillay/rusherhack-rusherman
     description: Plugin package manager for RusherHack that helps install and manage plugins from a single place.
@@ -1340,7 +1340,7 @@ plugins:
         width: 550
     is_core: false
     mc_versions: 1.21.1-1.21.4
-    jar_url: https://github.com/tillay/rusherhack-rusherman/releases/download/fixed%21/rusherman-plugin-1.0.0.jar
+    jar_url: https://github.com/tillay-rh-plugins/rusherhack-rusherman/releases/download/fixed%21/rusherman-plugin-1.0.0.jar
   - name: rusherhack-instantloader
     repo: tillay/rusherhack-InstantLoader
     description: Automatically interacts with a targeted trapdoor as soon as a specified player logs in, enabling instant pearl loading.
@@ -1355,7 +1355,7 @@ plugins:
         width: 550
     is_core: false
     mc_versions: 1.21.1-1.21.4
-    jar_url: https://github.com/tillay/rusherhack-InstantLoader/releases/download/release/loader-plugin-1.0.0.jar
+    jar_url: https://github.com/tillay-rh-plugins/rusherhack-InstantLoader/releases/download/release/loader-plugin-1.0.0.jar
   - name: rusher-waifu-integration
     repo: tillay/rusher-waifu-integration
     description: Allows adding any custom image to the RusherHack HUD.
@@ -1373,7 +1373,7 @@ plugins:
         width: 550
     is_core: false
     mc_versions: 1.21.1-1.21.4
-    jar_url: https://github.com/tillay/rusher-waifu-integration/releases/download/release/waifu-plugin-1.0.0.jar
+    jar_url: https://github.com/tillay-rh-plugins/rusher-waifu-integration/releases/download/release/waifu-plugin-1.0.0.jar
   - name: AutoMoss
     repo: master7720/AutoMoss
     description: Automatic moss spreading with configurable settings. • Range, cooldown, delay, and max uses per tick • Optional rotation to face target blocks • Optional tree growth support (azaleas, saplings, leaves) • Option to restrict bone meal usage to inventory or hotbar only
@@ -1442,7 +1442,7 @@ plugins:
     screenshots: []
     is_core: false
     mc_versions: 1.21.1-1.21.4
-    jar_url: https://github.com/tillay/rusherhack-ai-integration/releases/download/release/ai-plugin-1.0.0.jar
+    jar_url: https://github.com/tillay-rh-plugins/rusherhack-ai-integration/releases/download/release/ai-plugin-1.0.0.jar
 themes:
   - name: rusherNodusTheme
     repo: bakjedev/rusherNodusTheme
