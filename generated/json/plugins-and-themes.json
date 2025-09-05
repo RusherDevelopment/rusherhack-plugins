@@ -394,7 +394,7 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.20.4",
-      "jar_url": "https://github.com/kybe236/rusherhack-nbt-utils/releases/download/1.20.4-0.1.0/nbt-reader-0.1.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/nbt-utils/releases/download/1.20.4-0.1.0/nbt-reader-0.1.0.jar"
     },
     {
       "name": "Rusherhack Executer",
@@ -409,7 +409,7 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.20.4",
-      "jar_url": "https://github.com/kybe236/rusherhack-executer/releases/download/1.20.4-5.0.0/kybes-executer-5.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/executer/releases/download/1.20.4-5.0.0/kybes-executer-5.0.0.jar"
     },
     {
       "name": "F3 Spoof",
@@ -443,7 +443,7 @@
       ],
       "is_core": false,
       "mc_versions": "1.21",
-      "jar_url": "https://github.com/kybe236/rusherhack-open-folder/releases/download/1.21/open-folder-0.0.9.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/open-folder/releases/download/1.21/open-folder-0.0.9.jar"
     },
     {
       "name": "Mace Kill",
@@ -463,7 +463,7 @@
       ],
       "is_core": false,
       "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/kybe236/rusherhack-mace-kill/releases/download/1.21.4/mace-kill-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/mace-kill/releases/download/1.21.4/mace-kill-1.0.0.jar"
     },
     {
       "name": "Weather Changing Plugin",
@@ -498,7 +498,7 @@
       ],
       "is_core": false,
       "mc_versions": "1.21",
-      "jar_url": "https://github.com/kybe236/rusherhack-middleclick-wind-charge/releases/download/1.21-1.0.1/rusherhack-middleclick-wind-charge-1.0.1.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/middleclick-wind-charge/releases/download/1.21-1.0.1/rusherhack-middleclick-wind-charge-1.0.1.jar"
     },
     {
       "name": "GarlicSight",
@@ -627,7 +627,7 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.20.4",
-      "jar_url": "https://github.com/kybe236/rusherhack-remote-controle/releases/download/1.20.4-1.0.0/remote-control-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/remote-controle/releases/download/1.20.4-1.0.0/remote-control-1.0.0.jar"
     },
     {
       "name": "Speed Measure",
@@ -657,7 +657,7 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.20.4",
-      "jar_url": "https://github.com/kybe236/rusher-tnt-bomber/releases/download/1.20.4/tnt-nuker-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/tnt-bomber/releases/download/1.20.4/tnt-nuker-1.0.0.jar"
     },
     {
       "name": "No Render Entities",
@@ -798,7 +798,7 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21",
-      "jar_url": "https://github.com/kybe236/dc-chat-logger/releases/download/3.0.0/dc-chat-logger-3.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/dc-chat-logger/releases/download/3.0.0/dc-chat-logger-3.0.0.jar"
     },
     {
       "name": "rusherhack-nightvision-plugin",
@@ -879,7 +879,7 @@
       ],
       "is_core": false,
       "mc_versions": "1.21",
-      "jar_url": "https://github.com/kybe236/rusher-elytra-eta/releases/download/1.0.0/rusher-elytra-eta-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/elytra-eta/releases/download/1.0.0/rusher-elytra-eta-1.0.0.jar"
     },
     {
       "name": "rusher-silent-close",
@@ -894,7 +894,7 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21",
-      "jar_url": "https://github.com/kybe236/rusher-silent-close/releases/download/1.0.0/silent-close-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/silent-container-close/releases/download/1.0.0/silent-close-1.0.0.jar"
     },
     {
       "name": "rusherhack-addons",
@@ -924,7 +924,7 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/kybe236/rusher-gtranslate/releases/download/2.0.0/gtranslate-v2-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/google-translate/releases/download/2.0.0/gtranslate-v2-1.0.0.jar"
     },
     {
       "name": "rusher-matrix-nofall",
@@ -939,7 +939,7 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21",
-      "jar_url": "https://github.com/kybe236/rusher-matrix-nofall/releases/download/1.0.0/kybe-nofall-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/matrix-nofall/releases/download/1.0.0/kybe-nofall-1.0.0.jar"
     },
     {
       "name": "rusher-autoportal",
@@ -954,7 +954,7 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.20.4-1.21.1",
-      "jar_url": "https://github.com/kybe236/rusher-autoportal/releases/download/1.20.6-1.21.1/kybe-portal-maker-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/auto-portal/releases/download/1.20.6-1.21.1/kybe-portal-maker-1.0.0.jar"
     },
     {
       "name": "rusher-air-place",
@@ -969,7 +969,7 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.20.1-1.21.1",
-      "jar_url": "https://github.com/kybe236/rusher-air-place/releases/download/1.0.0/kybe-airplace-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/air-place/releases/download/1.0.0/kybe-airplace-1.0.0.jar"
     },
     {
       "name": "rusher-hold-spamm-space",
@@ -984,7 +984,7 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21-1.21.1",
-      "jar_url": "https://github.com/kybe236/rusher-hold-spamm-space/releases/download/1.0.0.1/kybe-holdspace-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/space-spammer/releases/download/1.0.0.1/kybe-holdspace-1.0.0.jar"
     },
     {
       "name": "rusher-auto-bed-bomber",
@@ -999,7 +999,7 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21",
-      "jar_url": "https://github.com/kybe236/rusher-auto-bed-bomber/releases/download/idk/kybe-auto-bed-bomb-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/auto-bed-bomber/releases/download/idk/kybe-auto-bed-bomb-1.0.0.jar"
     },
     {
       "name": "rusher-crystal-spin",
@@ -1014,7 +1014,7 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21",
-      "jar_url": "https://github.com/kybe236/rusher-crystal-spin/releases/download/1.0.0/kybe-holdspace-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/crystal-spin/releases/download/1.0.0/kybe-holdspace-1.0.0.jar"
     },
     {
       "name": "AutoShear",
@@ -1065,7 +1065,7 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.20.4",
-      "jar_url": "https://github.com/kybe236/rusher-autokit/releases/download/1.0.0/kybe-autokit-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/autokit/releases/download/1.0.0/kybe-autokit-1.0.0.jar"
     },
     {
       "name": "AutoTorch",
@@ -1174,7 +1174,7 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.20.1",
-      "jar_url": "https://github.com/kybe236/rusher-discord-notifications/releases/download/1.0.0/discord-notifier-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/discord-notifications/releases/download/1.0.0/discord-notifier-1.0.0.jar"
     },
     {
       "name": "AutoBonemeal",
@@ -1234,7 +1234,7 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21.1-1.21.4",
-      "jar_url": "https://github.com/kybe236/rusher-item-saver/releases/download/multiversion/item-saver-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/item-saver/releases/download/multiversion/item-saver-1.0.0.jar"
     },
     {
       "name": "RusherHack Mace Swap",
@@ -1249,7 +1249,7 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21.1-1.21.4",
-      "jar_url": "https://github.com/kybe236/rusherhack-mace-swap/releases/download/fix1/mace-swap-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/mace-swap/releases/download/fix1/mace-swap-1.0.0.jar"
     },
     {
       "name": "Example Core Plugin",
@@ -1327,7 +1327,7 @@
       "screenshots": [],
       "is_core": true,
       "mc_versions": "1.21.2-1.21.4",
-      "jar_url": "https://github.com/kybe236/rusherhack-streamer-mode/releases/download/1.21.4-v3/streamer-mode-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/streamer-mode/releases/download/1.21.4-v3/streamer-mode-1.0.0.jar"
     },
     {
       "name": "Rusher Auto Item Frame Dupe",
@@ -1342,7 +1342,7 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21.1-1.21.4",
-      "jar_url": "https://github.com/kybe236/rusher-auto-item-frame-dupe/releases/download/1.21.1-1.21.4/rusher-auto-item-frame-dupe-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/auto-item-frame-dupe/releases/download/1.21.1-1.21.4/rusher-auto-item-frame-dupe-1.0.0.jar"
     },
     {
       "name": "RusherMoji",
@@ -1372,7 +1372,7 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/kybe236/rusherhack-piston-pusher/releases/download/1.21.4/crystal-pusher-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/piston-pusher/releases/download/1.21.4/crystal-pusher-1.0.0.jar"
     },
     {
       "name": "RusherUtils",
@@ -1407,7 +1407,7 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/kybe236/rusher-grown-esp/releases/download/1.21.4/rusher-grow-esp-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/crop-esp-nuker/releases/download/1.21.4/rusher-grow-esp-1.0.0.jar"
     },
     {
       "name": "Rusher GhoulMode",
@@ -1489,7 +1489,7 @@
       ],
       "is_core": false,
       "mc_versions": "1.21.1-1.21.5",
-      "jar_url": "https://github.com/kybe236/rusher-vault-helper/releases/download/1.21-1.21.4/rusher-vault-helper-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/vault-helper/releases/download/1.21-1.21.4/rusher-vault-helper-1.0.0.jar"
     },
     {
       "name": "Rusher-Inventory-Drag",
@@ -1504,7 +1504,7 @@
       "screenshots": [],
       "is_core": true,
       "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/kybe236/rusher-inventory-drag/releases/download/1.21.4/rusher-invetory-drag-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/inventory-drag/releases/download/1.21.4/rusher-invetory-drag-1.0.0.jar"
     },
     {
       "name": "PlayerLogPlugin-RusherHack",
@@ -1613,7 +1613,7 @@
         "url": "https://github.com/kybe236",
         "avatar": "https://github.com/kybe236.png?size=20"
       },
-      "latest_release_tag": "v1.0.0-c86c1e7d08fa0e8b097eb5f69d2e17249f0cde9e",
+      "latest_release_tag": "v1.0.0-dd232bf4c01b9997d3462cbba6c21e59375d64fa",
       "screenshots": [
         {
           "url": "./Assets/rusherhack-kybes-utils/chat-example.png",
@@ -1623,7 +1623,7 @@
       ],
       "is_core": true,
       "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/kybe236/rusherhack-kybes-utils/releases/download/v1.0.0-c86c1e7d08fa0e8b097eb5f69d2e17249f0cde9e/kybes-utils.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/kybes-utils/releases/download/v1.0.0-dd232bf4c01b9997d3462cbba6c21e59375d64fa/kybes-utils.jar"
     },
     {
       "name": "AutoAnvilRename",
@@ -1659,7 +1659,7 @@
       ],
       "is_core": false,
       "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/kybe236/rusher-auto-kit-maker/releases/download/1.21.4-11/rusher-auto-kit-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/auto-kit-maker/releases/download/1.21.4-11/rusher-auto-kit-1.0.0.jar"
     },
     {
       "name": "rusherhack-shell-integration",
@@ -1674,7 +1674,7 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21.1-1.21.4",
-      "jar_url": "https://github.com/tillay/rusherhack-shell-integration/releases/download/release/shell-plugin-1.0.0.jar"
+      "jar_url": "https://github.com/tillay-rh-plugins/rusherhack-shell-integration/releases/download/release/shell-plugin-1.0.0.jar"
     },
     {
       "name": "rusherhack-SmartBounce",
@@ -1689,7 +1689,7 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21.1-1.21.4",
-      "jar_url": "https://github.com/tillay/rusherhack-SmartBounce/releases/download/release/ebounce-plugin-1.0.0.jar"
+      "jar_url": "https://github.com/tillay-rh-plugins/rusherhack-SmartBounce/releases/download/release/ebounce-plugin-1.0.0.jar"
     },
     {
       "name": "AutoRegear",
@@ -1704,7 +1704,7 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/kybe236/auto-regear/releases/download/1.21.4/rusher-auto-regear-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/auto-regear/releases/download/1.21.4/rusher-auto-regear-1.0.0.jar"
     },
     {
       "name": "rusherhack-rusherman",
@@ -1730,7 +1730,7 @@
       ],
       "is_core": false,
       "mc_versions": "1.21.1-1.21.4",
-      "jar_url": "https://github.com/tillay/rusherhack-rusherman/releases/download/fixed%21/rusherman-plugin-1.0.0.jar"
+      "jar_url": "https://github.com/tillay-rh-plugins/rusherhack-rusherman/releases/download/fixed%21/rusherman-plugin-1.0.0.jar"
     },
     {
       "name": "rusherhack-instantloader",
@@ -1751,7 +1751,7 @@
       ],
       "is_core": false,
       "mc_versions": "1.21.1-1.21.4",
-      "jar_url": "https://github.com/tillay/rusherhack-InstantLoader/releases/download/release/loader-plugin-1.0.0.jar"
+      "jar_url": "https://github.com/tillay-rh-plugins/rusherhack-InstantLoader/releases/download/release/loader-plugin-1.0.0.jar"
     },
     {
       "name": "rusher-waifu-integration",
@@ -1777,7 +1777,7 @@
       ],
       "is_core": false,
       "mc_versions": "1.21.1-1.21.4",
-      "jar_url": "https://github.com/tillay/rusher-waifu-integration/releases/download/release/waifu-plugin-1.0.0.jar"
+      "jar_url": "https://github.com/tillay-rh-plugins/rusher-waifu-integration/releases/download/release/waifu-plugin-1.0.0.jar"
     },
     {
       "name": "AutoMoss",
@@ -1869,7 +1869,7 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21.1-1.21.4",
-      "jar_url": "https://github.com/tillay/rusherhack-ai-integration/releases/download/release/ai-plugin-1.0.0.jar"
+      "jar_url": "https://github.com/tillay-rh-plugins/rusherhack-ai-integration/releases/download/release/ai-plugin-1.0.0.jar"
     }
   ],
   "themes": [
