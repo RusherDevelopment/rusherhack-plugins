@@ -147,7 +147,7 @@
         "url": "https://github.com/xyzbtw",
         "avatar": "https://github.com/xyzbtw.png?size=20"
       },
-      "latest_release_tag": "FINAL",
+      "latest_release_tag": "1.21.4",
       "screenshots": [
         {
           "url": "https://img.youtube.com/vi/gfnNFyRQavA/0.jpg",
@@ -156,7 +156,7 @@
       ],
       "is_core": false,
       "mc_versions": "1.20.1-1.21.1",
-      "jar_url": "https://github.com/xyzbtw/StashMoverPlugin/releases/tag/FINAL"
+      "jar_url": "https://github.com/xyzbtw/StashMoverPlugin/releases/download/1.21.4/stashmover-release-1.21.4.jar"
     },
     {
       "name": "Combined Bind List",
@@ -749,11 +749,11 @@
         "url": "https://github.com/xyzbtw",
         "avatar": "https://github.com/xyzbtw.png?size=20"
       },
-      "latest_release_tag": "1.20.6",
+      "latest_release_tag": "1.21.4",
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.20.1-1.21.1",
-      "jar_url": "https://github.com/xyzbtw/ShulkerViewer/releases/download/1.20.6/shulker-viewer-1.0.0.jar"
+      "jar_url": "https://github.com/xyzbtw/ShulkerViewer/releases/download/1.21.4/shulker-viewer-1.21.4.jar"
     },
     {
       "name": "RusherWebPlugin",
