@@ -87,8 +87,8 @@ Explore these resources to learn more about developing and using RusherHack plug
 > [!TIP]
 > Use the Example Plugin and Javadocs as starting points to create your own plugins or to understand how existing plugins function.
 
-## Top 5 Plugins
-<!-- TOP5:START -->
+## Top 6 Plugins
+
 <table>
 <tr><td align="left" valign="top" width="50%">
   <a href="https://github.com/John200410/rusherhack-spotify"><img src="https://avatars.githubusercontent.com/u/43681932?s=400&u=9a95dd1320f23595e6738db6406a46e55cc86a8e&v=4" alt="RusherHack Spotify Integration" width="100" height="100" style="border-radius:12px;"></a>
@@ -137,9 +137,17 @@ Explore these resources to learn more about developing and using RusherHack plug
     &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/FBanna/Rusherhack-Vanilla-Efly/total?style=flat">
     &nbsp;<img alt="updated" src="https://img.shields.io/date/1741209641?label=updated&style=flat">
   </div>
+</td><td align="left" valign="top" width="50%">
+  <a href="https://github.com/John200410/rusherhack-instance-info"><img src="https://avatars.githubusercontent.com/u/43681932?s=400&u=9a95dd1320f23595e6738db6406a46e55cc86a8e&v=4" alt="RusherHack Instance Info" width="100" height="100" style="border-radius:12px;"></a>
+  <div><strong><a href="https://github.com/John200410/rusherhack-instance-info">RusherHack Instance Info</a></strong>&nbsp;<code>plugin</code></div>
+  <div style="margin:4px 0 6px 0;">Provides detailed information about the current instance.</div>
+  <div>
+    <img alt="stars" src="https://img.shields.io/github/stars/John200410/rusherhack-instance-info?style=flat">
+    &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/John200410/rusherhack-instance-info/total?style=flat">
+    &nbsp;<img alt="updated" src="https://img.shields.io/date/1747863422?label=updated&style=flat">
+  </div>
 </td></tr>
 </table>
-<!-- TOP5:END -->
 
 ## Plugins List
 
