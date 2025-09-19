@@ -164,7 +164,7 @@ For issues with this repository (e.g., incorrect plugin details, broken links, o
 
 ## Contribute
 
-Have a RusherHack plugin/then to share? Submit a pull request to add it to this collection! See the [Contributing Guide](./CONTRIBUTING.md) for detailed instructions.
+Have a RusherHack plugin/theme to share? Submit a pull request to add it to this collection! See the [Contributing Guide](./CONTRIBUTING.md) for detailed instructions.
 
 > [!TIP]
 > Before submitting a plugin, ensure it includes clear documentation and a link to its source code to help users evaluate its safety and functionality.
