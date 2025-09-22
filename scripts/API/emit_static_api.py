@@ -1,5 +1,5 @@
-import pathlib, shutil, json, sys, os, re
-from typing import Iterable, Dict, Any
+import pathlib, shutil, json, sys, os, re, urllib.parse
+from typing import Iterable, Dict, Any, List
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 SRC  = ROOT / "generated" / "json" / "plugins-and-themes.json"
@@ -26,28 +26,23 @@ def copy_index() -> pathlib.Path:
     print(f"[emit_static_api] wrote {dst} ({os.path.getsize(dst)} bytes)")
     return dst
 
-def get_items(full: Dict[str, Any]) -> Iterable[Dict[str, Any]]:
-    # Full set for aggregates
+def get_items(full: Dict[str, Any]) -> List[Dict[str, Any]]:
     return list(full.get("plugins", [])) + list(full.get("themes", []))
 
-def item_versions(item: Dict[str, Any]) -> Iterable[str]:
+def item_versions(item: Dict[str, Any]) -> List[str]:
     """
     Coerce mc_versions/versions into a list[str].
     Accepts: ["1.21.4", "1.21.1"], "1.21.4", 1.21, None, [].
-    Filters out empties and non-strings after coercion.
     """
     vs = item.get("mc_versions", None)
     if vs is None:
         vs = item.get("versions", [])
 
-    # Single numeric -> list[str]
     if isinstance(vs, (int, float)):
         return [str(vs)]
-    # Single string -> list[str] if non-empty
     if isinstance(vs, str):
         v = vs.strip()
         return [v] if v else []
-    # List -> sanitize items
     if isinstance(vs, list):
         out = []
         for v in vs:
@@ -55,33 +50,49 @@ def item_versions(item: Dict[str, Any]) -> Iterable[str]:
                 continue
             if isinstance(v, (int, float)):
                 out.append(str(v))
-            elif isinstance(v, str):
-                vv = v.strip()
-                if vv:
-                    out.append(vv)
+            elif isinstance(v, str) and v.strip():
+                out.append(v.strip())
         return out
-    # Unknown shape -> empty
     return []
 
-def item_creators(item: Dict[str, Any]) -> Iterable[str]:
+def item_creators(item: Dict[str, Any]) -> List[str]:
     """
     Extract creator names.
-    Current canonical shape: "creator": {"name": "..."}
+    Canonical shape: "creator": {"name": "..."}.
     Also supports optional "creators": ["..."].
     """
-    out = []
+    out: List[str] = []
     creator = item.get("creator", {})
     if isinstance(creator, dict):
         name = creator.get("name")
         if isinstance(name, str) and name.strip():
             out.append(name.strip())
-
     creators = item.get("creators") or []
     if isinstance(creators, list):
         for c in creators:
             if isinstance(c, str) and c.strip():
                 out.append(c.strip())
     return out
+
+def slugify(s: str) -> str:
+    return urllib.parse.quote(s.strip().lower(), safe="-._~/")
+
+def item_slug(item: Dict[str, Any]) -> str:
+    """
+    Prefer owner/repo from repo URL. Fallback to a name-based slug.
+    """
+    repo = item.get("repo") or item.get("repository")
+    if repo:
+        try:
+            path = urllib.parse.urlparse(repo).path
+            parts = [p for p in path.split("/") if p]
+            if len(parts) >= 2:
+                return f"{parts[0].lower()}/{parts[1].lower()}"
+        except Exception:
+            pass
+    base = (item.get("id") or item.get("name") or "").strip().lower()
+    base = re.sub(r"\s+", "-", base)
+    return base
 
 def main():
     ensure_src()
@@ -108,14 +119,20 @@ def main():
     versions_set = set()
     creators_count: Dict[str, int] = {}
 
+    # Precompute per-item slugs and normalized fields we’ll reuse
+    enriched: List[Dict[str, Any]] = []
     for it in items:
-        # Versions
-        for v in item_versions(it):
+        versions = item_versions(it)
+        creators = item_creators(it)
+        slug = item_slug(it)
+
+        for v in versions:
             versions_set.add(v)
             byVersion[v] = byVersion.get(v, 0) + 1
-        # Creators
-        for c in item_creators(it):
+        for c in creators:
             creators_count[c] = creators_count.get(c, 0) + 1
+
+        enriched.append({**it, "_slug": slug, "_versions": versions, "_creators": creators})
 
     # 4) stats.json
     stats = {
@@ -136,6 +153,31 @@ def main():
         key=lambda x: (-x["count"], x["name"].lower())
     )
     write_json(API / "creators.json", {"creators": creators_list})
+
+    # 7) Per-item docs: /items/{owner}/{repo}.json (or fallback slug)
+    for it in enriched:
+        slug = it["_slug"] or "unknown"
+        # Strip the helper keys from the output
+        doc = {k: v for k, v in it.items() if not k.startswith("_")}
+        write_json(API / "items" / f"{slugify(slug)}.json", doc)
+
+    # 8) Buckets (serverless filters)
+    # by-version/{v}.json
+    for v in versions_list:
+        bucket = [ {k: val for k, val in it.items() if not k.startswith("_")}
+                   for it in enriched if v in it["_versions"] ]
+        write_json(API / "by-version" / f"{slugify(v)}.json", bucket)
+
+    # by-creator/{name}.json
+    for c_name, _count in creators_list:
+        bucket = [ {k: val for k, val in it.items() if not k.startswith("_")}
+                   for it in enriched if c_name == "" or c_name in it["_creators"] ]
+        # creators_list is a list of dicts; adjust loop
+    # Fix creators loop: rebuild quickly
+    for c in creators_count.keys():
+        bucket = [ {k: val for k, val in it.items() if not k.startswith("_")}
+                   for it in enriched if c in it["_creators"] ]
+        write_json(API / "by-creator" / f"{slugify(c)}.json", bucket)
 
 if __name__ == "__main__":
     main()
