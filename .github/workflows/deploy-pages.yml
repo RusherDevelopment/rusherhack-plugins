@@ -25,6 +25,13 @@ jobs:
         run: |
           python3 --version
           python3 scripts/API/emit_static_api.py
+          echo "[ls] public/"
+          ls -lah public || true
+          echo "[ls] public/api/"
+          ls -lah public/api || true
+          echo "[ls] public/api/v1/"
+          ls -lah public/api/v1 || true
+          test -f public/api/v1/index.json || { echo "::error ::public/api/v1/index.json missing"; exit 1; }
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
