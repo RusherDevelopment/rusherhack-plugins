@@ -41,6 +41,15 @@ https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/
 - **[`creators.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/creators.json)**  
   List of all creators with plugin/theme counts.
 
+- **[`meta.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/meta.json)**  
+  Metadata about the dataset (generation timestamp, item counts, source commit).
+
+- **[`manifest.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/manifest.json)**  
+  Integrity manifest: SHA256 + file size for all API files.
+
+- **[`search-index.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/search-index.json)**  
+  Compact index for search (name, slug, creator, tags, versions).
+
 ---
 
 > [!TIP]  
