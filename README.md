@@ -35,6 +35,7 @@ This repository is a curated collection of third-party plugins developed for the
 - [Plugin Examples/Info](#plugin-examplesinfo)
 - [Plugins List](#plugins-list)
 - [Themes List](#themes-list)
+- [Plugin/Theme API](#plugintheme-api)
 - [Reporting Issues](#reporting-issues)
 - [Contribute](#contribute)
 
@@ -160,6 +161,32 @@ Discover community-created plugins to enhance RusherHack’s functionality.
 Themes customize RusherHack’s appearance, including colors, fonts, and UI elements.
 
 **Full list**: [Themes](./THEMES.md)
+
+## Plugin/Theme API
+
+This repository now publishes a **public JSON API** via GitHub Pages:
+
+```
+https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/
+```
+
+All endpoints are **read-only** and automatically updated whenever `main` changes.  
+The canonical source is [`generated/json/plugins-and-themes.json`](./generated/json/plugins-and-themes.json).
+
+### Endpoints
+
+- **[`index.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/index.json)** – full dataset (plugins + themes)  
+- **[`plugins.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/plugins.json)** – plugins only  
+- **[`themes.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/themes.json)** – themes only  
+- **[`stats.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/stats.json)** – aggregate counts  
+- **[`versions.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/versions.json)** – all supported Minecraft versions  
+- **[`creators.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/creators.json)** – all creators with counts  
+- **`/items/{owner}/{repo}.json`** – per-plugin/theme info  
+- **`/by-version/{mc_version}.json`** – all items supporting a given Minecraft version  
+- **`/by-creator/{creator}.json`** – all items by a creator  
+
+Full API reference is available in [API.md](./API.md).
+
 
 ## Reporting Issues
 
