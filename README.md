@@ -171,7 +171,7 @@ https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/
 ```
 
 All endpoints are **read-only** and automatically updated whenever `main` changes.  
-The canonical source is [`generated/json/plugins-and-themes.json`](./generated/json/plugins-and-themes.json).
+The canonical source is [`plugins-and-themes.json`](./generated/json/plugins-and-themes.json).
 
 ### Endpoints
 
