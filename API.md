@@ -33,7 +33,10 @@ https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/
   Aggregate counts by type, Minecraft version, and creator.
 
 - **[`versions.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/versions.json)**  
-  List of all supported Minecraft versions (unique + sorted).
+  List of all supported Minecraft versions.  
+  - Includes **unique + sorted** versions.  
+  - Expands ranges (e.g., `"1.20.1-1.21.4"`) into **all discrete versions**:  
+    `1.20.1, 1.20.2, 1.20.4, 1.20.6, 1.21, 1.21.1, 1.21.2, 1.21.3, 1.21.4`.
 
 - **[`creators.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/creators.json)**  
   List of all creators with plugin/theme counts.
@@ -53,7 +56,9 @@ https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/
 
 ### Buckets (Filters)
 - **`/by-version/{mc_version}.json`**  
-  All plugins/themes supporting that Minecraft version.  
+  All plugins/themes supporting that exact Minecraft version.  
+  - Works with **discrete versions only**.  
+  - Ranges from source data are automatically expanded.  
   Example:  
   [`by-version/1.21.4.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/by-version/1.21.4.json)
 
