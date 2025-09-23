@@ -164,29 +164,26 @@ Themes customize RusherHack’s appearance, including colors, fonts, and UI elem
 
 ## Plugin/Theme API
 
-This repository now publishes a **public JSON API** via GitHub Pages:
+A **public JSON API** is available via GitHub Pages:
 
 ```
 https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/
 ```
 
-All endpoints are **read-only** and automatically updated whenever `main` changes.  
-The canonical source is [`plugins-and-themes.json`](./generated/json/plugins-and-themes.json).
+It is **read-only**, auto-updated on `main`, and sourced from  
+[`plugins-and-themes.json`](./generated/json/plugins-and-themes.json).
 
-### Endpoints
-
-- **[`index.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/index.json)** – full dataset (plugins + themes)  
-- **[`plugins.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/plugins.json)** – plugins only  
-- **[`themes.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/themes.json)** – themes only  
+### Key Endpoints
+- **[`index.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/index.json)** – full dataset  
+- **[`plugins.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/plugins.json)** / **[`themes.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/themes.json)** – split views  
 - **[`stats.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/stats.json)** – aggregate counts  
-- **[`versions.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/versions.json)** – all supported Minecraft versions  
-- **[`creators.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/creators.json)** – all creators with counts  
-- **`/items/{owner}/{repo}.json`** – per-plugin/theme info  
-- **`/by-version/{mc_version}.json`** – all items supporting a given Minecraft version  
-- **`/by-creator/{creator}.json`** – all items by a creator  
+- **[`versions.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/versions.json)** – supported Minecraft versions  
+- **[`creators.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/creators.json)** – all creators  
+- **`/items/{owner}/{repo}.json`** – per-item info  
+- **`/by-version/{mc_version}.json`** – filter by MC version  
+- **`/by-creator/{creator}.json`** – filter by creator  
 
-Full API reference is available in [API](./API.md).
-
+📖 See [API.md](./API.md) for full reference.
 
 ## Reporting Issues
 
