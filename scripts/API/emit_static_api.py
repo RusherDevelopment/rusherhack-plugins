@@ -1,4 +1,4 @@
-import pathlib, shutil, json, sys, os, re, urllib.parse
+import pathlib, shutil, json, sys, os, re, urllib.parse, hashlib
 from typing import Iterable, Dict, Any, List
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
@@ -77,9 +77,16 @@ def item_creators(item: Dict[str, Any]) -> List[str]:
 def slugify(s: str) -> str:
     return urllib.parse.quote(s.strip().lower(), safe="-._~/")
 
+def stable_unknown_slug(item: Dict[str, Any]) -> str:
+    """Deterministic fallback slug so we never emit /items/unknown.json."""
+    raw = json.dumps(item, sort_keys=True, separators=(",", ":"))
+    h = hashlib.sha1(raw.encode("utf-8")).hexdigest()[:10]
+    return f"unknown-{h}"
+
 def item_slug(item: Dict[str, Any]) -> str:
     """
     Prefer owner/repo from repo URL. Fallback to a name-based slug.
+    If both are missing/empty, return a deterministic 'unknown-<sha1>'.
     """
     repo = item.get("repo") or item.get("repository")
     if repo:
@@ -92,7 +99,9 @@ def item_slug(item: Dict[str, Any]) -> str:
             pass
     base = (item.get("id") or item.get("name") or "").strip().lower()
     base = re.sub(r"\s+", "-", base)
-    return base
+    if base:
+        return base
+    return stable_unknown_slug(item)
 
 def main():
     ensure_src()
@@ -156,27 +165,22 @@ def main():
 
     # 7) Per-item docs: /items/{owner}/{repo}.json (or fallback slug)
     for it in enriched:
-        slug = it["_slug"] or "unknown"
-        # Strip the helper keys from the output
+        slug = it["_slug"]
+        # Strip the helper keys from the output (preserve source fields for schema flexibility)
         doc = {k: v for k, v in it.items() if not k.startswith("_")}
         write_json(API / "items" / f"{slugify(slug)}.json", doc)
 
     # 8) Buckets (serverless filters)
     # by-version/{v}.json
     for v in versions_list:
-        bucket = [ {k: val for k, val in it.items() if not k.startswith("_")}
-                   for it in enriched if v in it["_versions"] ]
+        bucket = [{k: val for k, val in it.items() if not k.startswith("_")}
+                  for it in enriched if v in it["_versions"]]
         write_json(API / "by-version" / f"{slugify(v)}.json", bucket)
 
-    # by-creator/{name}.json
-    for c_name, _count in creators_list:
-        bucket = [ {k: val for k, val in it.items() if not k.startswith("_")}
-                   for it in enriched if c_name == "" or c_name in it["_creators"] ]
-        # creators_list is a list of dicts; adjust loop
-    # Fix creators loop: rebuild quickly
+    # by-creator/{name}.json  (deduplicated: single loop using creators_count keys)
     for c in creators_count.keys():
-        bucket = [ {k: val for k, val in it.items() if not k.startswith("_")}
-                   for it in enriched if c in it["_creators"] ]
+        bucket = [{k: val for k, val in it.items() if not k.startswith("_")}
+                  for it in enriched if c in it["_creators"]]
         write_json(API / "by-creator" / f"{slugify(c)}.json", bucket)
 
 if __name__ == "__main__":
