@@ -81,5 +81,7 @@ curl -s https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/by-creator
 curl -s https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/stats.json | jq .
 ```
 
+---
+
 > [!IMPORTANT]  
 > This is an **unstable v1**. Shapes may evolve slightly as we improve consistency.
