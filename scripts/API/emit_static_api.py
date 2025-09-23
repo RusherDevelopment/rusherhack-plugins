@@ -1,11 +1,15 @@
 import pathlib, shutil, json, sys, os, re, urllib.parse, hashlib
-from typing import Iterable, Dict, Any, List
+from datetime import datetime, timezone
+from typing import Dict, Any, List, Tuple
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 SRC  = ROOT / "generated" / "json" / "plugins-and-themes.json"
 API  = ROOT / "public" / "api" / "v1"
 
-# ---- Canonical Minecraft versions (order matters) ----
+# Track written files for manifest
+WRITTEN: List[pathlib.Path] = []
+
+# ---- Canonical Minecraft versions  ----
 CANON_VERSIONS: List[str] = [
     "1.20.1",
     "1.20.2",
@@ -20,7 +24,6 @@ CANON_VERSIONS: List[str] = [
 CANON_INDEX = {v: i for i, v in enumerate(CANON_VERSIONS)}
 
 def natural_key(s: str):
-    """Natural sort for versions, e.g. '1.21.10' > '1.21.4'."""
     return [int(t) if t.isdigit() else str(s).lower() for t in re.split(r'(\d+)', str(s))]
 
 def ensure_src():
@@ -30,13 +33,16 @@ def ensure_src():
 
 def write_json(path: pathlib.Path, obj: Any):
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(obj, indent=2))
+    data = json.dumps(obj, indent=2)
+    path.write_text(data)
+    WRITTEN.append(path)
     print(f"[emit_static_api] wrote {path} ({os.path.getsize(path)} bytes)")
 
 def copy_index() -> pathlib.Path:
     API.mkdir(parents=True, exist_ok=True)
     dst = API / "index.json"
     shutil.copyfile(SRC, dst)
+    WRITTEN.append(dst)
     print(f"[emit_static_api] wrote {dst} ({os.path.getsize(dst)} bytes)")
     return dst
 
@@ -51,15 +57,10 @@ def _to_str(v: Any) -> str:
     if v is None:
         return ""
     if isinstance(v, (int, float)):
-        # keep 1.21 as "1.21" (no rounding)
-        s = str(v)
-        return s
+        return str(v)
     return str(v)
 
 def _expand_range_token(tok: str) -> List[str]:
-    """
-    Expand 'a-b' where both are in CANON_VERSIONS. If not valid, return [].
-    """
     a, b = tok.split("-", 1)
     a, b = a.strip(), b.strip()
     if a in CANON_INDEX and b in CANON_INDEX:
@@ -71,70 +72,36 @@ def _expand_range_token(tok: str) -> List[str]:
     return []
 
 def _normalize_token(tok: str) -> List[str]:
-    """
-    Normalize a single token into canonical versions:
-    - '1.21.1-1.21.4' -> ['1.21.1','1.21.2','1.21.3','1.21.4']
-    - '1.21' -> ['1.21'] if in canonical list
-    - 'N/A' -> []
-    - unknown values -> [] (ignored)
-    """
     if not tok:
         return []
     s = tok.strip()
     if s.upper() == "N/A":
         return []
-
     if "-" in s:
-        expanded = _expand_range_token(s)
-        if expanded:
-            return expanded
-        return []  # unknown/unsupported range format
-
-    # Single version (string that looks like a version OR numeric)
-    # Only include if it's in the canonical set
+        return _expand_range_token(s) or []
     if s in CANON_INDEX:
         return [s]
-
-    # Sometimes source may have numbers like 1.21 without quotes (handled above),
-    # or versions outside our canonical set -> ignore.
     if _vers_token_re.match(s) and s in CANON_INDEX:
         return [s]
-
     return []
 
 def item_versions(item: Dict[str, Any]) -> List[str]:
-    """
-    Return a normalized list of canonical versions for this item,
-    expanding any ranges and ignoring N/A or unknown tokens.
-    Accepts:
-      - ["1.21.4", "1.21.1"]
-      - "1.21.4"
-      - 1.21
-      - "1.20.1-1.21.4"
-      - None / []
-    """
     raw = item.get("mc_versions", None)
     if raw is None:
         raw = item.get("versions", [])
 
     out: List[str] = []
 
-    # List case
     if isinstance(raw, list):
         for v in raw:
-            s = _to_str(v)
-            out.extend(_normalize_token(s))
-        # de-dup while preserving order relative to canonical list
-        out = sorted(set(out), key=lambda x: CANON_INDEX[x])
-        return out
+            out.extend(_normalize_token(_to_str(v)))
+    else:
+        out.extend(_normalize_token(_to_str(raw)))
 
-    # Scalar case: number or string
-    s = _to_str(raw)
-    out.extend(_normalize_token(s))
-    out = sorted(set(out), key=lambda x: CANON_INDEX[x])
-    return out
+    # de-dup & canonical order
+    return sorted(set(out), key=lambda x: CANON_INDEX[x])
 
-# ---------- Creators, slugs, etc. ----------
+# ---------- Creators, slugs, repo parsing ----------
 
 def item_creators(item: Dict[str, Any]) -> List[str]:
     out: List[str] = []
@@ -158,21 +125,53 @@ def stable_unknown_slug(item: Dict[str, Any]) -> str:
     h = hashlib.sha1(raw.encode("utf-8")).hexdigest()[:10]
     return f"unknown-{h}"
 
-def item_slug(item: Dict[str, Any]) -> str:
-    repo = item.get("repo") or item.get("repository")
-    if repo:
+def parse_repo_fields(repo_value: str) -> Tuple[str, str, str]:
+    """
+    Accepts owner/repo or full URL; returns (owner, repo_name, repo_url) or ("","","")
+    """
+    if not repo_value:
+        return "", "", ""
+    s = str(repo_value).strip()
+    # Full URL path case
+    if "://" in s:
         try:
-            path = urllib.parse.urlparse(repo).path
+            path = urllib.parse.urlparse(s).path
             parts = [p for p in path.split("/") if p]
             if len(parts) >= 2:
-                return f"{parts[0].lower()}/{parts[1].lower()}"
+                owner, repo = parts[0], parts[1]
+                return owner, repo, f"https://github.com/{owner}/{repo}"
         except Exception:
-            pass
+            return "", "", ""
+        return "", "", ""
+    # owner/repo case
+    if "/" in s:
+        owner, repo = s.split("/", 1)
+        if owner and repo:
+            return owner, repo, f"https://github.com/{owner}/{repo}"
+    return "", "", ""
+
+def item_slug(item: Dict[str, Any]) -> str:
+    repo_val = item.get("repo") or item.get("repository")
+    if repo_val:
+        owner, repo_name, _ = parse_repo_fields(str(repo_val))
+        if owner and repo_name:
+            return f"{owner.lower()}/{repo_name.lower()}"
     base = (item.get("id") or item.get("name") or "").strip().lower()
     base = re.sub(r"\s+", "-", base)
     if base:
         return base
     return stable_unknown_slug(item)
+
+# ---------- Hashing for manifest ----------
+
+def sha256_file(path: pathlib.Path) -> str:
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        for chunk in iter(lambda: f.read(65536), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+# ========================= main =========================
 
 def main():
     ensure_src()
@@ -215,7 +214,6 @@ def main():
         enriched.append({**it, "_slug": slug, "_versions": versions, "_creators": creators})
 
     # 4) stats.json
-    # Sort by canonical order for keys we have; others won't be present.
     stats = {
         "count": len(items),
         "byType": byType,
@@ -235,25 +233,77 @@ def main():
     )
     write_json(API / "creators.json", {"creators": creators_list})
 
-    # 7) Per-item docs: /items/{owner}/{repo}.json (or fallback slug)
+    # 7) Per-item docs + expose normalized fields to make consumption easier
+    search_index: List[Dict[str, Any]] = []
     for it in enriched:
         slug = it["_slug"]
-        # Strip helper keys from the output (preserve original fields)
-        doc = {k: v for k, v in it.items() if not k.startswith("_")}
-        write_json(API / "items" / f"{slugify(slug)}.json", doc)
+        doc = {k: v for k, v in it.items() if not k.startswith("_")}  # preserve original shape
+        # add normalized fields
+        doc["versions_canonical"] = it["_versions"]
+        owner, repo_name, repo_url = parse_repo_fields(str(doc.get("repo","")))
+        if owner:
+            doc["owner"] = owner
+        if repo_name:
+            doc["repo_name"] = repo_name
+        if repo_url:
+            doc["repo_url"] = repo_url
+        if it["_creators"]:
+            doc["creator_slug"] = it["_creators"][0].lower()
 
-    # 8) Buckets (serverless filters) using normalized versions
-    # by-version/{v}.json
+        # write per-item
+        item_path = API / "items" / f"{slugify(slug)}.json"
+        write_json(item_path, doc)
+
+        # add to search index (compact)
+        search_index.append({
+            "name": doc.get("name"),
+            "slug": slug,
+            "description": doc.get("description", ""),
+            "creator": (doc.get("creator") or {}).get("name"),
+            "creator_slug": doc.get("creator_slug"),
+            "tags": doc.get("tags") or [],
+            "versions": doc.get("versions_canonical") or [],
+            "repo": doc.get("repo"),
+            "type": doc.get("type")
+        })
+
+    # 8) Buckets (serverless filters)
     for v in versions_list:
         bucket = [{k: val for k, val in it.items() if not k.startswith("_")}
                   for it in enriched if v in it["_versions"]]
         write_json(API / "by-version" / f"{slugify(v)}.json", bucket)
 
-    # by-creator/{name}.json
     for c in creators_count.keys():
         bucket = [{k: val for k, val in it.items() if not k.startswith("_")}
                   for it in enriched if c in it["_creators"]]
         write_json(API / "by-creator" / f"{slugify(c)}.json", bucket)
+
+    # 9) meta.json
+    meta = {
+        "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "source": "generated/json/plugins-and-themes.json",
+        "counts": {"plugins": len(plugins), "themes": len(themes), "items_total": len(items)},
+        "versions_canonical": versions_list
+    }
+    write_json(API / "meta.json", meta)
+
+    # 10) search-index.json (compact for client-side search)
+    write_json(API / "search-index.json", search_index)
+
+    # 11) manifest.json (sizes + sha256)
+    manifest_entries = []
+    for p in WRITTEN:
+        # Only include files under API dir
+        try:
+            rel = p.relative_to(API)
+        except ValueError:
+            continue
+        manifest_entries.append({
+            "path": str(rel).replace(os.sep, "/"),
+            "bytes": os.path.getsize(p),
+            "sha256": sha256_file(p),
+        })
+    write_json(API / "manifest.json", {"files": sorted(manifest_entries, key=lambda x: x["path"])})
 
 if __name__ == "__main__":
     main()
