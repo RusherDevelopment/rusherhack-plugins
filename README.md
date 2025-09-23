@@ -185,7 +185,7 @@ The canonical source is [`generated/json/plugins-and-themes.json`](./generated/j
 - **`/by-version/{mc_version}.json`** – all items supporting a given Minecraft version  
 - **`/by-creator/{creator}.json`** – all items by a creator  
 
-Full API reference is available in [API.md](./API.md).
+Full API reference is available in [API](./API.md).
 
 
 ## Reporting Issues
