@@ -181,9 +181,10 @@ It is **read-only**, auto-updated on `main`, and sourced from
 - **[`creators.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/creators.json)** – all creators  
 - **`/items/{owner}/{repo}.json`** – per-item info  
 - **`/by-version/{mc_version}.json`** – filter by MC version  
-- **`/by-creator/{creator}.json`** – filter by creator  
+- **`/by-creator/{creator}.json`** – filter by creator
 
-📖 See [API.md](./API.md) for full reference.
+
+See [API.md](./API.md) for full reference.
 
 ## Reporting Issues
 
