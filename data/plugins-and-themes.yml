@@ -1450,11 +1450,11 @@ plugins:
       name: tillay
       url: https://github.com/tillay
       avatar: https://github.com/tillay.png?size=20
-    latest_release_tag: releese
+    latest_release_tag: sep24
     screenshots: []
     is_core: false
     mc_versions: 1.21.1-1.21.4
-    jar_url: https://github.com/tillay-rh-plugins/elytra-trajectories/releases/download/releese/elytrapath-plugin-1.0.0.jar
+    jar_url: https://github.com/tillay-rh-plugins/elytra-trajectories/releases/download/sep24/elytrapath-plugin-1.0.0.jar
 themes:
   - name: rusherNodusTheme
     repo: bakjedev/rusherNodusTheme
