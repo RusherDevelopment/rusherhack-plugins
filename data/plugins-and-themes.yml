@@ -1452,10 +1452,10 @@ plugins:
       avatar: https://github.com/tillay.png?size=20
     latest_release_tag: sep24
     screenshots: 
-      - url: ./Assets/RusherTrajectories/image1.png
+      - url: ./Assets/ElytraTrajectories/image1.png
         alt: screenshot
         width: 750
-      - url: ./Assets/RusherTrajectories/image2.png
+      - url: ./Assets/ElytraTrajectories/image2.png
         alt: screenshot
         width: 750
     is_core: false
