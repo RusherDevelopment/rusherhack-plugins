@@ -1451,7 +1451,13 @@ plugins:
       url: https://github.com/tillay
       avatar: https://github.com/tillay.png?size=20
     latest_release_tag: sep24
-    screenshots: []
+    screenshots: 
+      - url: ./Assets/RusherTrajectories/image1.png
+        alt: screenshot
+        width: 750
+      - url: ./Assets/RusherTrajectories/image2.png
+        alt: screenshot
+        width: 750
     is_core: false
     mc_versions: 1.21.1-1.21.4
     jar_url: https://github.com/tillay-rh-plugins/elytra-trajectories/releases/download/sep24/elytrapath-plugin-1.0.0.jar
