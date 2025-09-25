@@ -1183,10 +1183,18 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [Elytra Trajectories](https://github.com/tillay-rh-plugins/elytra-trajectories) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/tillay-rh-plugins/elytra-trajectories?label=Latest%20Release&color=green)](https://github.com/tillay-rh-plugins/elytra-trajectories/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tillay-rh-plugins/elytra-trajectories/total)](https://github.com/tillay-rh-plugins/elytra-trajectories/releases/download/releese/elytrapath-plugin-1.0.0.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/tillay-rh-plugins/elytra-trajectories?label=Latest%20Release&color=green)](https://github.com/tillay-rh-plugins/elytra-trajectories/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tillay-rh-plugins/elytra-trajectories/total)](https://github.com/tillay-rh-plugins/elytra-trajectories/releases/download/sep24/elytrapath-plugin-1.0.0.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%201--1%2021%204-blueviolet)<br>
  **Creator**: <img src="https://github.com/tillay.png?size=20" width="20" height="20"> [tillay](https://github.com/tillay)<br>
  Renders predicted flight paths for Elytra.
+
+ <details>
+ <summary>Show Screenshots</summary>
+ <p align="center">
+ <img src="./Assets/ElytraTrajectories/image1.png" alt="screenshot" width="750">
+ <img src="./Assets/ElytraTrajectories/image2.png" alt="screenshot" width="750">
+ </p>
+ </details>
 
 ---
 
