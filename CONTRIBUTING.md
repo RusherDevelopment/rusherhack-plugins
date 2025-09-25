@@ -1,127 +1,71 @@
-![RusherHack Logo](./Assets/RusherHacks/rh_head.png)
+![RusherHack Logo](https://avatars.githubusercontent.com/u/121969799?s=280&v=4)
 
 # Contributing to the RusherHacks Plugin Collection
 
-Thank you for your interest in contributing to the **RusherHacks Plugin Collection**!  
-Your contributions help improve and expand the collection, making it more useful for everyone.  
-Whether you're submitting a new plugin, fixing typos, or enhancing existing entries, your support is greatly appreciated.
+Thanks for helping improve the registry!  
+**TL;DR: You only need to edit one file:** `data/plugins-and-themes.yml`.  
+All pages, JSON, badges, and API files are generated automatically by our scripts and GitHub Actions.
 
-> [!NOTE]  
-> Please follow the style and formatting guidelines described below to ensure consistency across all submissions.
+---
 
-## How to Contribute
+## How it works
 
-1. **Fork the repository**  
-   Click the **Fork** button at the top right of this page to create a copy of this repository on your own GitHub account.  
-   ![Fork Button](./Assets/Contributing/Fork.png)
+- **Source of truth:** `data/plugins-and-themes.yml`
+- **Auto-generated outputs (no manual edits):**
+  - `PLUGINS.md`, `THEMES.md`
+  - `README` badges / counts
+  - JSON under `generated/json/`
+  - Static API under `api/v1/` (GitHub Pages)
 
-2. **Clone the repository**  
-   Clone your forked repository to your local development machine using Git.  
-   ![Clone Button](./Assets/Contributing/Clone.jpg)
+When your PR is opened, **GitHub Actions validates the YAML** and **generates everything**.  
+If something is wrong, the job will fail with a helpful error message.
 
-3. **Create a new branch**  
-   Always create a new branch for your changes before committing.  
-   ![Create Branch](./Assets/Contributing/NewBranch.png)
+---
 
-4. **Add your plugin or theme**  
-   Open the `data/plugins-and-themes.yml` file and add your plugin or theme in the appropriate section:
-   - Add plugin entries under the `plugins:` section.
-   - Add theme entries under the `themes:` section.
+## What you need to do
 
-   Follow the format used in existing entries. Each entry must include:
-   - `name`
-   - `repo`
-   - `description`
-   - `creator`:
-     - `name`
-     - `url`
-     - `avatar`
-   - `latest_release_tag`
-   - `screenshots` (can be an empty list)
-   - `jar_url`
-   - For plugins:
-     - `mc_versions`
-     - `is_core` (true or false)
+1. **Edit `data/plugins-and-themes.yml`**
+   - Add a new entry **or** update an existing one.
+   - Keep the existing structure and indentation.
+2. **Open a Pull Request**
+   - Use the PR template and check the box confirming you only changed the YAML.
 
-5. **Push and create a pull request**  
-   Push your branch and open a pull request targeting the `main` branch.
+> That’s it—no other files should be changed in your PR.
 
-6. **Check GitHub Actions**  
-   Your pull request will automatically run a validation check.  
-   If it fails, visit the **Actions** tab to view the error details and fix any issues.
+---
 
-> [!TIP]  
-> If everything is correct, the markdown files (`PLUGINS.md`, `THEMES.md`, and `README.md`) will be automatically updated on merge.
+## Required fields (per entry)
 
-> [!NOTE]  
-> You no longer need to manually validate YAML — it's automatically handled by `validate-yml.py` and checked via GitHub Actions.
-   
-### Example Plugin Format (with screenshots):
+- `name`: Display name  
+- `repo`: GitHub repo (`owner/repo` format preferred)  
+- `description`: One-line summary  
+- `creator`: Object with `name`, `url`, `avatar`  
+- `latest_release_tag`: Tag of the most recent release  
+- `screenshots`: List of screenshots (each with `url`, `alt`, optional `width`)  
+- `is_core`: Boolean (`true` if a core plugin)  
+- `mc_versions`: Supported Minecraft versions (range or list)  
+- `jar_url`: Direct download link to the release jar  
+
+---
+
+## Example entry
+
 ```yaml
-  - name: RusherHack-HudElement
-    repo: Aspect-404/RusherHack-HudElement
-    description: Create a customizable HUD element for Minecraft utility mod RusherHack.
-    creator:
-      name: Aspect-404
-      url: https://github.com/Aspect-404
-      avatar: https://github.com/Aspect-404.png?size=20
-    latest_release_tag: Release
-    screenshots:
-      - url: ./Assets/RusherHack-CustomHUDElement/HudSettings.png
-        alt: Hud Setting
-        width: 250
-      - url: ./Assets/RusherHack-CustomHUDElement/HudElement.png
-        alt: Hud Element
-        width: 550
-    is_core: false
-    mc_versions: 1.20.4-1.21
-    jar_url: https://github.com/Aspect-404/RusherHack-HudElement/releases/download/Release/HudElement.jar
-```
-
-### Example Plugin Format (without screenshots):
-```yaml
-  - name: Example Plugin
-    repo: RusherDevelopment/example-plugin
-    description: A basic example plugin demonstrating the structure and capabilities of RusherHacks plugins.
-    creator:
-      name: RusherDevelopment
-      url: https://github.com/RusherDevelopment
-      avatar: https://github.com/RusherDevelopment.png?size=20
-    latest_release_tag: ''
-    screenshots: []
-    is_core: false
-    mc_versions: N/A
-```
-
-### Example Theme Format (with screenshots):
-```yaml
-  - name: rusherNodusTheme
-    repo: bakjedev/rusherNodusTheme
-    description: Nodus - Best theme evaAAAA. Code is terrible. Blame xyzbtw!
-    creator:
-      name: bakjedev
-      url: https://github.com/bakjedev
-      avatar: https://github.com/bakjedev.png?size=20
-    latest_release_tag: releease2
-    screenshots:
-      - url: ./Assets/rusherNodusTheme/NodusGUI.png
-        alt: Module
-        width: 750
-    mc_versions: 1.21
-    jar_url: https://github.com/bakjedev/rusherNodusTheme/releases/download/releease2/rushergui-1.0.0.jar
-```
-
-### Example Theme Format (without screenshots):
-```yaml
-  - name: Nhack Theme
-    repo: h1tm4nqq/Nhack-theme
-    description: A theme like Nhack 2015 for RH.
-    creator:
-      name: h1tm4nqq
-      url: https://github.com/h1tm4nqq
-      avatar: https://github.com/h1tm4nqq.png?size=20
-    latest_release_tag: 1.21.4
-    screenshots: []
-    mc_versions: 1.20.1-1.21.4
-    jar_url: https://github.com/h1tm4nqq/Nhack-theme/releases/download/1.21.4/nhack-theme-1.0.0.jar
-```
+- name: 2b2t.vc Rusherhack
+  repo: rfresh2/2b2t.vc-rusherhack
+  description: 2b2t data and statistics API commands and HUD.
+  creator:
+    name: rfresh2
+    url: https://github.com/rfresh2
+    avatar: https://github.com/rfresh2.png?size=20
+  latest_release_tag: '1.12'
+  screenshots:
+    - url: ./Assets/2b2t.vc Rusherhack/HudSettings.png
+      alt: Hud Setting
+      width: 250
+    - url: ./Assets/2b2t.vc Rusherhack/HudDisplay.png
+      alt: Hud Display w/2b2t Queue
+      width: 550
+  is_core: false
+  mc_versions: 1.20.1-1.21.4
+  jar_url: https://github.com/rfresh2/2b2t.vc-rusherhack/releases/download/1.12/2b2t.vc-rusherhack-1.12.jar
