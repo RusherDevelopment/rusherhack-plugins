@@ -1896,6 +1896,21 @@
       "is_core": false,
       "mc_versions": "1.21.1-1.21.4",
       "jar_url": "https://github.com/tillay-rh-plugins/elytra-trajectories/releases/download/sep24/elytrapath-plugin-1.0.0.jar"
+    },
+    {
+      "name": "AutoReload",
+      "repo": "tillay-rh-plugins/autoreload",
+      "description": "Automatically reloads RusherHack whenever changes are detected in the plugins directory.",
+      "creator": {
+        "name": "tillay",
+        "url": "https://github.com/tillay",
+        "avatar": "https://github.com/tillay.png?size=20"
+      },
+      "latest_release_tag": "unreleased",
+      "screenshots": [],
+      "is_core": false,
+      "mc_versions": "1.21.1-1.21.4",
+      "jar_url": ""
     }
   ],
   "themes": [
