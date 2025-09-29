@@ -1199,7 +1199,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [AutoReload](https://github.com/tillay-rh-plugins/autoreload) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/tillay-rh-plugins/autoreload?label=Latest%20Release&color=green)](https://github.com/tillay-rh-plugins/autoreload/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tillay-rh-plugins/autoreload/total)](https://github.com/tillay-rh-plugins/autoreload/releases/latest)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/tillay-rh-plugins/autoreload?label=Latest%20Release&color=green)](https://github.com/tillay-rh-plugins/autoreload/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tillay-rh-plugins/autoreload/total)](https://github.com/tillay-rh-plugins/autoreload/releases/download/whyDoTagsExist/autoreload-1.0.0.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%201--1%2021%204-blueviolet)<br>
  **Creator**: <img src="https://github.com/tillay.png?size=20" width="20" height="20"> [tillay](https://github.com/tillay)<br>
  Automatically reloads RusherHack whenever changes are detected in the plugins directory.

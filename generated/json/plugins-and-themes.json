@@ -1906,11 +1906,11 @@
         "url": "https://github.com/tillay",
         "avatar": "https://github.com/tillay.png?size=20"
       },
-      "latest_release_tag": "unreleased",
+      "latest_release_tag": "whyDoTagsExist",
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21.1-1.21.4",
-      "jar_url": ""
+      "jar_url": "https://github.com/tillay-rh-plugins/autoreload/releases/download/whyDoTagsExist/autoreload-1.0.0.jar"
     }
   ],
   "themes": [
