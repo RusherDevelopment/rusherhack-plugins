@@ -97,5 +97,14 @@ curl -s https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/stats.json
 
 ---
 
+## Showcase
+  
+Here’s a live example:
+
+- **[RusherSearch](https://garlicrot.github.io/RusherSearch/)** ([repo](https://github.com/GarlicRot/RusherSearch))  
+  A simple static search frontend that consumes the API to provide instant plugin & theme lookup with filtering, creator avatars, and version tags.
+
+---
+
 > [!IMPORTANT]  
 > This is an **unstable v1**. Shapes may evolve slightly as we improve consistency.
