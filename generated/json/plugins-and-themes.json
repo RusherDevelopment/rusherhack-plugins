@@ -1911,6 +1911,21 @@
       "is_core": false,
       "mc_versions": "1.21.1-1.21.4",
       "jar_url": "https://github.com/tillay-rh-plugins/autoreload/releases/download/whyDoTagsExist/autoreload-1.0.0.jar"
+    },
+    {
+      "name": "hw-efly-tweaks",
+      "repo": "KybesRusherhackPlugins/hw-efly-tweaks",
+      "description": "Enhances ElytraFly automation by intelligently managing wall-hugging movement. Automatically adjusts flight direction, detects obstacles, and maintains elevation using Baritone-assisted pathing and visual block rendering.",
+      "creator": {
+        "name": "kybe236",
+        "url": "https://github.com/kybe236",
+        "avatar": "https://github.com/kybe236.png?size=20"
+      },
+      "latest_release_tag": "1.0.0",
+      "screenshots": [],
+      "is_core": false,
+      "mc_versions": "1.21.4",
+      "jar_url": "https://github.com/KybesRusherhackPlugins/hw-efly-tweaks/releases/download/1.21.4/hw-efly-tweaks-1.0.0.jar"
     }
   ],
   "themes": [
