@@ -1485,6 +1485,20 @@ plugins:
     is_core: false
     mc_versions: 1.21.4
     jar_url: https://github.com/KybesRusherhackPlugins/hw-efly-tweaks/releases/download/1.21.4/hw-efly-tweaks-1.0.0.jar
+  - name: icaemas-tweaks
+    repo: icaema/icaemas-tweaks
+    description: Adds keybinds for quick equipment and inventory management.  
+      • Toggle between Elytra and chestplate, with auto-deploy when falling  
+      • Swap hotbar slots with the row above in the inventory  
+    creator:
+      name: icaema
+      url: https://github.com/icaema
+      avatar: https://github.com/icaema.png?size=20
+    latest_release_tag: v0.1.0
+    screenshots: []
+    is_core: false
+    mc_versions: 1.21.4
+    jar_url: https://github.com/icaema/icaemas-tweaks/releases/download/v0.1.0/icaemas-tweaks-0.1.0.jar
 themes:
   - name: rusherNodusTheme
     repo: bakjedev/rusherNodusTheme
