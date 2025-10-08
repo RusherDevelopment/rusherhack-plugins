@@ -1,6 +1,8 @@
 ![RusherHack Logo](./Assets/RusherHacks/rh_head.png)
 # RusherHack Plugin/Theme API
 
+[![Deploy API (GitHub Pages)](https://github.com/RusherDevelopment/rusherhack-plugins/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/RusherDevelopment/rusherhack-plugins/actions/workflows/deploy-pages.yml)
+
 A free, static JSON API generated from the canonical JSON in this repo:  
 **[plugins-and-themes.json](https://github.com/RusherDevelopment/rusherhack-plugins/blob/main/generated/json/plugins-and-themes.json)**  
 It is deployed via GitHub Pages at:
