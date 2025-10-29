@@ -95,7 +95,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [Auto Anvil Rename](https://github.com/IceTank/AutoAnvilRename) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/IceTank/AutoAnvilRename?label=Latest%20Release&color=green)](https://github.com/IceTank/AutoAnvilRename/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/IceTank/AutoAnvilRename/total)](https://github.com/IceTank/AutoAnvilRename/releases/download/v0.1/AutoAnvilRename-v0.1.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/IceTank/AutoAnvilRename?label=Latest%20Release&color=green)](https://github.com/IceTank/AutoAnvilRename/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/IceTank/AutoAnvilRename/total)](https://github.com/IceTank/AutoAnvilRename/releases/download/v1.1.0/auto-anvil-1.1.0.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201--1%2021%201-blueviolet)<br>
  **Creator**: <img src="https://github.com/IceTank.png?size=20" width="20" height="20"> [IceTank](https://github.com/IceTank)<br>
  Automates the renaming process in anvils.
@@ -250,7 +250,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [Nuker](https://github.com/beanbag44/Nuker) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/beanbag44/Nuker?label=Latest%20Release&color=green)](https://github.com/beanbag44/Nuker/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/beanbag44/Nuker/total)](https://github.com/beanbag44/Nuker/releases/tag/Release-2.0.0)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/beanbag44/Nuker?label=Latest%20Release&color=green)](https://github.com/beanbag44/Nuker/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/beanbag44/Nuker/total)](https://github.com/beanbag44/Nuker/releases/tag/Release-2.0.3)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%204-blueviolet)<br>
  **Creator**: <img src="https://github.com/beanbag44.png?size=20" width="20" height="20"> [beanbag44](https://github.com/beanbag44)<br>
  Epic nuker for nuking terrain.
@@ -826,7 +826,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [NoSound](https://github.com/John200410/nosound) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/John200410/nosound?label=Latest%20Release&color=green)](https://github.com/John200410/nosound/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/John200410/nosound/total)](https://github.com/John200410/nosound/releases/latest)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/John200410/nosound?label=Latest%20Release&color=green)](https://github.com/John200410/nosound/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/John200410/nosound/total)](https://github.com/John200410/nosound/releases/download/1.0.0/no-sound-1.0.0.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201--1%2021%201-blueviolet)<br>
  ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>
  **Creator**: <img src="https://github.com/John200410.png?size=20" width="20" height="20"> [John200410](https://github.com/John200410)<br>
@@ -1135,7 +1135,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [AutoIgnorehard](https://github.com/IceTank/RusherHack-AutoIgnorehard) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/IceTank/RusherHack-AutoIgnorehard?label=Latest%20Release&color=green)](https://github.com/IceTank/RusherHack-AutoIgnorehard/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/IceTank/RusherHack-AutoIgnorehard/total)](https://github.com/IceTank/RusherHack-AutoIgnorehard/releases/download/v0.0.1/AutoIgnorehard-0.0.1.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/IceTank/RusherHack-AutoIgnorehard?label=Latest%20Release&color=green)](https://github.com/IceTank/RusherHack-AutoIgnorehard/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/IceTank/RusherHack-AutoIgnorehard/total)](https://github.com/IceTank/RusherHack-AutoIgnorehard/releases/download/v0.0.3/AutoIgnorehard-0.0.3.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
  **Creator**: <img src="https://github.com/IceTank.png?size=20" width="20" height="20"> [IceTank](https://github.com/IceTank)<br>
  Automatically runs the `/ignorehard <playername>` command on any player that sends a Discord invite in chat.
@@ -1143,7 +1143,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [Cockpit](https://github.com/TehPicix/rusherhack-Cockpit) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/TehPicix/rusherhack-Cockpit?label=Latest%20Release&color=green)](https://github.com/TehPicix/rusherhack-Cockpit/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/TehPicix/rusherhack-Cockpit/total)](https://github.com/TehPicix/rusherhack-Cockpit/releases/download/v1.2.2/rusherhack-cockpit-1.2.2.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/TehPicix/rusherhack-Cockpit?label=Latest%20Release&color=green)](https://github.com/TehPicix/rusherhack-Cockpit/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/TehPicix/rusherhack-Cockpit/total)](https://github.com/TehPicix/rusherhack-Cockpit/releases/download/v1.3.0/Cockpit-1.3.0.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%201--1%2021%204-blueviolet)<br>
  **Creator**: <img src="https://crafatar.com/avatars/1eb084b8588e43e6bdd3e05e53682987?size=100" width="20" height="20"> [TehPicix](https://github.com/TehPicix)<br>
  Adds a cockpit HUD to display flight distance and time when using an elytra. Great for players who frequently travel the nether highways while AFK.
@@ -1183,7 +1183,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [Elytra Trajectories](https://github.com/tillay-rh-plugins/elytra-trajectories) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/tillay-rh-plugins/elytra-trajectories?label=Latest%20Release&color=green)](https://github.com/tillay-rh-plugins/elytra-trajectories/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tillay-rh-plugins/elytra-trajectories/total)](https://github.com/tillay-rh-plugins/elytra-trajectories/releases/download/sep24/elytrapath-plugin-1.0.0.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/tillay-rh-plugins/elytra-trajectories?label=Latest%20Release&color=green)](https://github.com/tillay-rh-plugins/elytra-trajectories/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tillay-rh-plugins/elytra-trajectories/total)](https://github.com/tillay-rh-plugins/elytra-trajectories/releases/download/firework/elytrapath-plugin-1.0.0.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%201--1%2021%204-blueviolet)<br>
  **Creator**: <img src="https://github.com/tillay.png?size=20" width="20" height="20"> [tillay](https://github.com/tillay)<br>
  Renders predicted flight paths for Elytra.
