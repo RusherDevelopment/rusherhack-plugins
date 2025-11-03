@@ -1881,7 +1881,7 @@
         "url": "https://github.com/tillay",
         "avatar": "https://github.com/tillay.png?size=20"
       },
-      "latest_release_tag": "firework",
+      "latest_release_tag": "nonplusworks",
       "screenshots": [
         {
           "url": "./Assets/ElytraTrajectories/image1.png",
@@ -1896,7 +1896,7 @@
       ],
       "is_core": false,
       "mc_versions": "1.21.1-1.21.4",
-      "jar_url": "https://github.com/tillay-rh-plugins/elytra-trajectories/releases/download/firework/elytrapath-plugin-1.0.0.jar"
+      "jar_url": "https://github.com/tillay-rh-plugins/elytra-trajectories/releases/download/nonplusworks/elytrapath-plugin-1.0.0.jar"
     },
     {
       "name": "AutoReload",
@@ -1937,11 +1937,11 @@
         "url": "https://github.com/icaema",
         "avatar": "https://github.com/icaema.png?size=20"
       },
-      "latest_release_tag": "v0.1.0",
+      "latest_release_tag": "v0.2.0",
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/icaema/icaemas-tweaks/releases/download/v0.1.0/icaemas-tweaks-0.1.0.jar"
+      "jar_url": "https://github.com/icaema/icaemas-tweaks/releases/download/v0.2.0/icaemas-tweaks-0.2.0.jar"
     },
     {
       "name": "AutoFirework",
