@@ -164,6 +164,9 @@ Themes customize RusherHack’s appearance, including colors, fonts, and UI elem
 
 ## Plugin/Theme API
 
+<details>
+<summary>Click to expand</summary>
+  
 A **public JSON API** is available via GitHub Pages:
 
 ```
@@ -185,6 +188,7 @@ It is **read-only**, auto-updated on `main`, and sourced from
 
 
 See [API.md](./API.md) for full reference.
+</details>
 
 ## Reporting Issues
 
