@@ -1215,7 +1215,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraft�
 ---
 
 - ### [icaemas-tweaks](https://github.com/icaema/icaemas-tweaks) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/icaema/icaemas-tweaks?label=Latest%20Release&color=green)](https://github.com/icaema/icaemas-tweaks/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/icaema/icaemas-tweaks/total)](https://github.com/icaema/icaemas-tweaks/releases/download/v0.2.0/icaemas-tweaks-0.2.0.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/icaema/icaemas-tweaks?label=Latest%20Release&color=green)](https://github.com/icaema/icaemas-tweaks/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/icaema/icaemas-tweaks/total)](https://github.com/icaema/icaemas-tweaks/releases/download/v0.3.0/icaemas-tweaks-0.3.0.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
  **Creator**: <img src="https://github.com/icaema.png?size=20" width="20" height="20"> [icaema](https://github.com/icaema)<br>
  Adds keybinds for quick equipment and inventory management. • Toggle between Elytra and chestplate, with auto-deploy when falling • Swap hotbar slots with the row above in the inventory
