@@ -1493,11 +1493,11 @@ plugins:
       name: icaema
       url: https://github.com/icaema
       avatar: https://github.com/icaema.png?size=20
-    latest_release_tag: v0.2.0
+    latest_release_tag: v0.3.0
     screenshots: []
     is_core: false
     mc_versions: 1.21.4
-    jar_url: https://github.com/icaema/icaemas-tweaks/releases/download/v0.2.0/icaemas-tweaks-0.2.0.jar
+    jar_url: https://github.com/icaema/icaemas-tweaks/releases/download/v0.3.0/icaemas-tweaks-0.3.0.jar
   - name: AutoFirework
     repo: tillay-rh-plugins/AutoFirework
     description: Automatically uses fireworks to redeploy Elytra flight when speed drops below a specified value.
