@@ -1234,7 +1234,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  [![Latest Release Date](https://img.shields.io/github/release-date/icaema/auto-mend?label=Latest%20Release&color=green)](https://github.com/icaema/auto-mend/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/icaema/auto-mend/total)](https://github.com/icaema/auto-mend/releases/download/v1.0.0/auto-mend-1.0.0.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
  **Creator**: <img src="https://github.com/icaema.png?size=20" width="20" height="20"> [icaema](https://github.com/icaema)<br>
- Automatically switches between tools and armor to repair them using the Mending enchantment.
+ Automatically cycles damaged Mending items to repair with XP - swaps items into offhand or equips elytra in chest, can limit to elytras only, temporarily disables AutoTotem/AutoArmor while mending and restores them, and auto-disables when finished.
 
  <details>
  <summary>Show Screenshots</summary>

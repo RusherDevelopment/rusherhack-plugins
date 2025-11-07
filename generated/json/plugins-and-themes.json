@@ -1961,7 +1961,7 @@
     {
       "name": "AutoMend",
       "repo": "icaema/auto-mend",
-      "description": "Automatically switches between tools and armor to repair them using the Mending enchantment.",
+      "description": "Automatically cycles damaged Mending items to repair with XP - swaps items into offhand or equips elytra in chest, can limit to elytras only, temporarily disables AutoTotem/AutoArmor while mending and restores them, and auto-disables when finished.",
       "creator": {
         "name": "icaema",
         "url": "https://github.com/icaema",
