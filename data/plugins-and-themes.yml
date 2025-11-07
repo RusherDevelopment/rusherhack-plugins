@@ -1512,7 +1512,7 @@ plugins:
     jar_url: https://github.com/tillay-rh-plugins/AutoFirework/releases/download/v1.0.0-32b445fb6944110d961a3f78fb0e125c4f6be6e9/autofirework-1.0.0.jar
   - name: AutoMend
     repo: icaema/auto-mend
-    description: Automatically cycles damaged Mending items to repair with XP: swaps items into offhand or equips elytra in chest, can limit to elytras only, temporarily disables AutoTotem/AutoArmor while mending and restores them, and auto-disables when finished.
+    description: Automatically cycles damaged Mending items to repair with XP - swaps items into offhand or equips elytra in chest, can limit to elytras only, temporarily disables AutoTotem/AutoArmor while mending and restores them, and auto-disables when finished.
     creator:
       name: icaema
       url: https://github.com/icaema
