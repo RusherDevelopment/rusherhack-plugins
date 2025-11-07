@@ -1957,6 +1957,27 @@
       "is_core": false,
       "mc_versions": "1.21.4",
       "jar_url": "https://github.com/tillay-rh-plugins/AutoFirework/releases/download/v1.0.0-32b445fb6944110d961a3f78fb0e125c4f6be6e9/autofirework-1.0.0.jar"
+    },
+    {
+      "name": "AutoMend",
+      "repo": "icaema/auto-mend",
+      "description": "Automatically switches between tools and armor to repair them using the Mending enchantment.",
+      "creator": {
+        "name": "icaema",
+        "url": "https://github.com/icaema",
+        "avatar": "https://github.com/icaema.png?size=20"
+      },
+      "latest_release_tag": "v1.0.0",
+      "screenshots": [
+        {
+          "url": "https://github.com/icaema/auto-mend/blob/master/img.png",
+          "alt": "AutoMend module preview",
+          "width": 550
+        }
+      ],
+      "is_core": false,
+      "mc_versions": "1.21.4",
+      "jar_url": "https://github.com/icaema/auto-mend/releases/download/v1.0.0/auto-mend-1.0.0.jar"
     }
   ],
   "themes": [
