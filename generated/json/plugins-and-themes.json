@@ -2014,6 +2014,21 @@
       "is_core": false,
       "mc_versions": "1.21.4",
       "jar_url": "https://github.com/icaema/rusherhacks-stopwatch/releases/download/v1.0.0/stopwatch-1.0.0.jar"
+    },
+    {
+      "name": "RusherHack Speedometer",
+      "repo": "tillay-rh-plugins/rusherhack-speedometer",
+      "description": "Adds customizable speed HUD elements including a speed readout with unit conversions (e.g., miles/hour, bananas/second, lightyears/year) and a Mach meter displaying speed relative to the speed of sound.",
+      "creator": {
+        "name": "tillay",
+        "url": "https://github.com/tillay",
+        "avatar": "https://github.com/tillay.png?size=20"
+      },
+      "latest_release_tag": "v1.0.0",
+      "screenshots": [],
+      "is_core": false,
+      "mc_versions": "1.21.4",
+      "jar_url": "https://github.com/tillay-rh-plugins/rusherhack-speedometer/releases/download/v1.0.0-5872158a4f44c1c69362b63bdc617515a45ca15c/speedometer-1.0.0.jar"
     }
   ],
   "themes": [
