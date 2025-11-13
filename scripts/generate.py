@@ -87,38 +87,16 @@ def _escape_inline(text: Any) -> str:
     return text.strip()
 
 
-def _first_screenshot_url(entry: Dict[str, Any]) -> str:
-    """
-    Return the first screenshot URL, or fall back to GitHub OpenGraph
-    image for the repo if available.
-    """
-    screenshots = entry.get("screenshots") or []
-    if isinstance(screenshots, list) and screenshots:
-        first = screenshots[0] or {}
-        url = first.get("url") or ""
-        if isinstance(url, str) and url.strip():
-            return url.strip()
-
-    repo = entry.get("repo")
-    if isinstance(repo, str) and repo.strip():
-        # GitHub OpenGraph preview
-        return f"https://opengraph.githubassets.com/1/{repo.strip()}"
-
-    return ""
-
-
 def _generate_recent_card(entry: Dict[str, Any]) -> str:
     """
     Generate a single plugin card as a <td> block:
-      - screenshot
+      - creator avatar
       - name + 'plugin' label
-      - description
       - meta line (MC, creator, added_at)
       - stars / downloads / updated badges
     """
     name = _escape_inline(entry.get("name", "Unknown"))
     repo = _escape_inline(entry.get("repo", ""))
-    desc = _escape_inline(entry.get("description", ""))
 
     mc = _escape_inline(entry.get("mc_versions", ""))
     added_at = _escape_inline(entry.get("added_at", ""))
@@ -126,15 +104,17 @@ def _generate_recent_card(entry: Dict[str, Any]) -> str:
     creator_obj = entry.get("creator") or {}
     creator_name = _escape_inline(creator_obj.get("name", ""))
     creator_url = _escape_inline(creator_obj.get("url", ""))
-
-    img_url = _first_screenshot_url(entry)
+    creator_avatar = _escape_inline(creator_obj.get("avatar", ""))
 
     parts: List[str] = []
     parts.append('    <td valign="top" width="50%">')
 
-    # Screenshot
-    if img_url:
-        parts.append(f'      <img src="{img_url}" alt="{name} preview" width="220"><br>')
+    # Creator avatar
+    if creator_avatar:
+        parts.append(
+            f'      <img src="{creator_avatar}" alt="{creator_name} avatar" '
+            f'width="120" height="120"><br>'
+        )
 
     # Title line
     if repo:
@@ -144,10 +124,6 @@ def _generate_recent_card(entry: Dict[str, Any]) -> str:
         )
     else:
         parts.append(f"      <strong>{name}</strong> <code>plugin</code><br>")
-
-    # Description
-    if desc:
-        parts.append(f"      {desc}<br>")
 
     # Meta line: MC / creator / added date
     meta_bits: List[str] = []
