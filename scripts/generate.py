@@ -87,69 +87,124 @@ def _escape_inline(text: Any) -> str:
     return text.strip()
 
 
-def _generate_recent_card(entry: Dict[str, Any]) -> str:
+def md_escape(s: Any) -> str:
     """
-    Generate a single plugin card as a <td> block:
-      - creator avatar
-      - name + 'plugin' label
-      - meta line (MC, creator, added_at)
-      - stars / downloads / updated badges
+    Match the Top 6 helper: escape < and > so HTML isn't broken.
     """
-    name = _escape_inline(entry.get("name", "Unknown"))
-    repo = _escape_inline(entry.get("repo", ""))
+    s = s or ""
+    if not isinstance(s, str):
+        s = str(s)
+    return s.replace("<", "&lt;").replace(">", "&gt;")
 
-    mc = _escape_inline(entry.get("mc_versions", ""))
-    added_at = _escape_inline(entry.get("added_at", ""))
 
-    creator_obj = entry.get("creator") or {}
-    creator_name = _escape_inline(creator_obj.get("name", ""))
-    creator_url = _escape_inline(creator_obj.get("url", ""))
-    creator_avatar = _escape_inline(creator_obj.get("avatar", ""))
+# ---------- Avatar helpers (copied from Top 6 script) ----------
 
-    parts: List[str] = []
-    parts.append('    <td valign="top" width="50%">')
+def _is_github_avatar(url: str) -> bool:
+    if not url:
+        return False
+    return ("avatars.githubusercontent.com" in url) or bool(
+        re.search(r"github\.com/.+\.png$", url)
+    )
 
-    # Creator avatar
-    if creator_avatar:
-        parts.append(
-            f'      <img src="{creator_avatar}" alt="{creator_name} avatar" '
-            f'width="120" height="120"><br>'
-        )
 
-    # Title line
-    if repo:
-        parts.append(
-            f'      <a href="https://github.com/{repo}"><strong>{name}</strong></a> '
-            f"<code>plugin</code><br>"
-        )
-    else:
-        parts.append(f"      <strong>{name}</strong> <code>plugin</code><br>")
+def _sharp_github_avatar(url: str, px: int = 400) -> str:
+    """Force a crisp GitHub avatar by requesting a larger size, displayed at 100x100."""
+    if not url:
+        return url
+    if "avatars.githubusercontent.com" in url:
+        return url + (f"&s={px}" if "?" in url else f"?s={px}")
+    if re.search(r"github\.com/.+\.png$", url):
+        return url + (f"&size={px}" if "?" in url else f"?size={px}")
+    return url
 
-    # Meta line: MC / creator / added date
-    meta_bits: List[str] = []
-    if mc:
-        meta_bits.append(f"<code>MC: {mc}</code>")
-    if creator_name:
-        if creator_url:
-            meta_bits.append(f'by <a href="{creator_url}"><strong>{creator_name}</strong></a>')
+
+# ---------- Recently-added cards (Top-6 style) ----------
+
+def _recent_items_for_cards(entries: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """
+    Normalize YAML plugin entries into the mini dicts that our card
+    renderer expects, mirroring the Top 6 structure:
+      - repo, name, desc
+      - creatorAvatar (hi-res GitHub if possible)
+      - ownerAvatar fallback (GitHub owner avatar)
+      - addedUnix: unix timestamp from added_at
+    """
+    items: List[Dict[str, Any]] = []
+    for e in entries:
+        repo = (e.get("repo") or "").strip()
+        if not repo or "/" not in repo:
+            continue
+
+        creator = e.get("creator") or {}
+        creator_avatar = creator.get("avatar")
+
+        # Only keep creator avatar if it's GitHub-hosted (can request hi-res)
+        if _is_github_avatar(creator_avatar):
+            creator_avatar = _sharp_github_avatar(creator_avatar, 400)
         else:
-            meta_bits.append(f"by <strong>{creator_name}</strong>")
-    if added_at:
-        meta_bits.append(f"added <code>{added_at}</code>")
+            creator_avatar = None  # force fallback to owner avatar for sharpness
 
-    if meta_bits:
-        parts.append("      " + " · ".join(meta_bits) + "<br>")
+        owner = repo.split("/", 1)[0]
+        owner_avatar = f"https://avatars.githubusercontent.com/{owner}?s=400"
 
-    # Badge row: stars / downloads / updated
-    if repo:
-        parts.append(
-            f'      <img src="https://img.shields.io/github/stars/{repo}?style=flat&amp;label=stars"> '
-            f'<img src="https://img.shields.io/github/downloads/{repo}/total?style=flat&amp;label=downloads"> '
-            f'<img src="https://img.shields.io/github/release-date/{repo}?label=updated">'
+        # Date -> unix for "added" badge
+        added_at_raw = e.get("added_at")
+        dt = _parse_date_safe(added_at_raw) if added_at_raw else datetime.min
+        added_unix = int(dt.timestamp()) if dt != datetime.min else None
+
+        items.append(
+            {
+                "repo": repo,
+                "name": e.get("name"),
+                "desc": e.get("description", ""),
+                "creatorAvatar": creator_avatar,
+                "ownerAvatar": owner_avatar,
+                "addedUnix": added_unix,
+            }
         )
+    return items
 
-    parts.append("    </td>")
-    return "\n".join(parts)
+
+def _render_recent_cards(items: List[Dict[str, Any]]) -> str:
+    """
+    Render a list of items using the exact same layout as the Top 6
+    cards in README (avatar, title + `plugin`, description, badges),
+    but using `addedUnix` for a green 'added' date badge.
+    """
+    if not items:
+        return ""
+
+    TWO_COL_WIDTH = "50%"
+    cells: List[str] = []
+
+    for t in items:
+        # Prefer creator avatar only if it's GitHub-hosted (sharp). Otherwise use owner avatar (400px).
+        img = t.get("creatorAvatar") or t.get("ownerAvatar")
+        repo = t["repo"]
+        name = md_escape(t.get("name") or repo.split("/")[1])
+        desc = md_escape(t.get("desc") or "")
+
+        added_unix = t.get("addedUnix")
+
+        cell = f"""
+<td align="left" valign="top" width="{TWO_COL_WIDTH}">
+  <a href="https://github.com/{repo}"><img src="{img}" alt="{name}" width="100" height="100" style="border-radius:12px;"></a>
+  <div><strong><a href="https://github.com/{repo}">{name}</a></strong>&nbsp;<code>plugin</code></div>
+  <div style="margin:4px 0 6px 0;">{(desc or "&nbsp;")}</div>
+  <div>
+    <img alt="stars" src="https://img.shields.io/github/stars/{repo}?style=flat">
+    &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/{repo}/total?style=flat">"""
+        if added_unix is not None:
+            cell += f"""
+    &nbsp;<img alt="added" src="https://img.shields.io/date/{added_unix}?label=added&style=flat">"""
+        cell += """
+  </div>
+</td>""".rstrip()
+
+        cells.append(cell)
+
+    rows = ["<tr>" + "".join(cells[i : i + 2]) + "</tr>" for i in range(0, len(cells), 2)]
+    return "\n".join(["<table>", *rows, "</table>"])
 
 
 def generate_recent_plugins_md(entries: List[Dict[str, Any]]) -> str:
@@ -160,31 +215,19 @@ def generate_recent_plugins_md(entries: List[Dict[str, Any]]) -> str:
       <!--- Recently Added Plugins Start -->
       <!--- Recently Added Plugins End -->
 
-    Renders as a 2-column card grid similar to the "Top 6 Plugins" section
-    in the README.
+    Renders as a 2-column card grid using the Top 6 card layout.
     """
     if not entries:
         return "No recently added plugins found.\n"
 
+    items = _recent_items_for_cards(entries)
+    cards_html = _render_recent_cards(items)
+
     lines: List[str] = []
     lines.append("> These are the six most recently added plugins (based on `added_at`).")
     lines.append("")
-
-    lines.append("<table>")
-    for i in range(0, len(entries), 2):
-        left = _generate_recent_card(entries[i])
-        if i + 1 < len(entries):
-            right = _generate_recent_card(entries[i + 1])
-        else:
-            right = "    <td></td>"
-
-        lines.append("  <tr>")
-        lines.append(left)
-        lines.append(right)
-        lines.append("  </tr>")
-    lines.append("</table>")
+    lines.append(cards_html)
     lines.append("")
-
     return "\n".join(lines)
 
 
