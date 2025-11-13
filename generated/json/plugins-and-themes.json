@@ -12,7 +12,9 @@
       "latest_release_tag": "",
       "screenshots": [],
       "is_core": false,
-      "mc_versions": "N/A"
+      "mc_versions": "N/A",
+      "added_at": "2023-10-21",
+      "updated_at": "2025-02-18"
     },
     {
       "name": "2b2t.vc Rusherhack",
@@ -38,7 +40,9 @@
       ],
       "is_core": false,
       "mc_versions": "1.20.1-1.21.4",
-      "jar_url": "https://github.com/rfresh2/2b2t.vc-rusherhack/releases/download/1.12/2b2t.vc-rusherhack-1.12.jar"
+      "jar_url": "https://github.com/rfresh2/2b2t.vc-rusherhack/releases/download/1.12/2b2t.vc-rusherhack-1.12.jar",
+      "added_at": "2023-10-22",
+      "updated_at": "2025-01-17"
     },
     {
       "name": "RusherHack-HudElement",
@@ -64,7 +68,9 @@
       ],
       "is_core": false,
       "mc_versions": "1.20.4-1.21",
-      "jar_url": "https://github.com/Aspect-404/RusherHack-HudElement/releases/download/Release/HudElement.jar"
+      "jar_url": "https://github.com/Aspect-404/RusherHack-HudElement/releases/download/Release/HudElement.jar",
+      "added_at": "2024-10-17",
+      "updated_at": "2024-10-18"
     },
     {
       "name": "Auto Anvil Rename",
@@ -90,7 +96,9 @@
       ],
       "is_core": false,
       "mc_versions": "1.20.1-1.21.1",
-      "jar_url": "https://github.com/IceTank/AutoAnvilRename/releases/download/v1.1.0/auto-anvil-1.1.0.jar"
+      "jar_url": "https://github.com/IceTank/AutoAnvilRename/releases/download/v1.1.0/auto-anvil-1.1.0.jar",
+      "added_at": "2023-12-04",
+      "updated_at": "2025-10-28"
     },
     {
       "name": "Queue Manager",
@@ -105,7 +113,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.20.1",
-      "jar_url": "https://github.com/GabiRP/QueueManager/releases/download/1.0.0/QueueManager.Rusher-1.0-SNAPSHOT.jar"
+      "jar_url": "https://github.com/GabiRP/QueueManager/releases/download/1.0.0/QueueManager.Rusher-1.0-SNAPSHOT.jar",
+      "added_at": "2023-11-03",
+      "updated_at": "2023-12-10"
     },
     {
       "name": "RusherHack Instance Info",
@@ -136,7 +146,9 @@
       ],
       "is_core": false,
       "mc_versions": "1.20.1-1.21.4",
-      "jar_url": "https://github.com/John200410/rusherhack-instance-info/releases/download/v1.2.2/instance-info-1.2.2.jar"
+      "jar_url": "https://github.com/John200410/rusherhack-instance-info/releases/download/v1.2.2/instance-info-1.2.2.jar",
+      "added_at": "2023-12-12",
+      "updated_at": "2025-05-21"
     },
     {
       "name": "Stash Mover Plugin",
@@ -156,7 +168,9 @@
       ],
       "is_core": false,
       "mc_versions": "1.20.1-1.21.1",
-      "jar_url": "https://github.com/xyzbtw/StashMoverPlugin/releases/download/1.21.4/stashmover-release-1.21.4.jar"
+      "jar_url": "https://github.com/xyzbtw/StashMoverPlugin/releases/download/1.21.4/stashmover-release-1.21.4.jar",
+      "added_at": "2024-01-29",
+      "updated_at": "2025-09-08"
     },
     {
       "name": "Combined Bind List",
@@ -192,7 +206,9 @@
       ],
       "is_core": false,
       "mc_versions": "1.21.1-1.21.4",
-      "jar_url": "https://github.com/tr330ne/combined-bindlist/releases/download/v0.5/CombinedBindList-0.5.jar"
+      "jar_url": "https://github.com/tr330ne/combined-bindlist/releases/download/v0.5/CombinedBindList-0.5.jar",
+      "added_at": "2025-08-02",
+      "updated_at": "2025-08-18"
     },
     {
       "name": "EFlyAutoJump",
@@ -223,7 +239,9 @@
       ],
       "is_core": true,
       "mc_versions": "1.21.1-1.21.4",
-      "jar_url": "https://github.com/tr330ne/efly-autojump/releases/download/v0.2/EFlyAutoJump-0.2.jar"
+      "jar_url": "https://github.com/tr330ne/efly-autojump/releases/download/v0.2/EFlyAutoJump-0.2.jar",
+      "added_at": "2025-08-13",
+      "updated_at": "2025-08-18"
     },
     {
       "name": "Unified Module List",
@@ -237,7 +255,9 @@
       "latest_release_tag": "",
       "screenshots": [],
       "is_core": false,
-      "mc_versions": "1.20.2-1.20.4"
+      "mc_versions": "1.20.2-1.20.4",
+      "added_at": "2024-01-29",
+      "updated_at": "2024-02-20"
     },
     {
       "name": "Container Tweaks",
@@ -258,7 +278,9 @@
       ],
       "is_core": false,
       "mc_versions": "1.20.1-1.21.1",
-      "jar_url": "https://github.com/rfresh2/ContainerTweaks-rusherhack/releases/tag/1.11"
+      "jar_url": "https://github.com/rfresh2/ContainerTweaks-rusherhack/releases/tag/1.11",
+      "added_at": "2023-10-23",
+      "updated_at": "2025-01-30"
     },
     {
       "name": "RusherHack Spotify Integration",
@@ -284,7 +306,9 @@
       ],
       "is_core": false,
       "mc_versions": "1.20.1-1.21.4",
-      "jar_url": "https://github.com/John200410/rusherhack-spotify/releases/download/1.2.1/rusherhack-spotify-1.2.1.jar"
+      "jar_url": "https://github.com/John200410/rusherhack-spotify/releases/download/1.2.1/rusherhack-spotify-1.2.1.jar",
+      "added_at": "2023-12-19",
+      "updated_at": "2025-05-13"
     },
     {
       "name": "Vanilla Elytra Flight",
@@ -299,7 +323,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/FBanna/Rusherhack-Vanilla-Efly/releases/download/2.1.2%2B1.21.4/FBanna.s-efly-2.1.2.jar"
+      "jar_url": "https://github.com/FBanna/Rusherhack-Vanilla-Efly/releases/download/2.1.2%2B1.21.4/FBanna.s-efly-2.1.2.jar",
+      "added_at": "2024-02-29",
+      "updated_at": "2025-03-05"
     },
     {
       "name": "Rusherhack BookBot",
@@ -314,7 +340,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.20.1-1.21.4",
-      "jar_url": "https://github.com/Aspect-404/Rusherhack-BookBot/releases/download/Release/BookBot.jar"
+      "jar_url": "https://github.com/Aspect-404/Rusherhack-BookBot/releases/download/Release/BookBot.jar",
+      "added_at": "2024-04-24",
+      "updated_at": "2025-05-12"
     },
     {
       "name": "Shay's RusherTweaks",
@@ -329,7 +357,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.20.1-1.21",
-      "jar_url": "https://github.com/ShayBox/ShaysRusherTweaks/releases/tag/0.10.2"
+      "jar_url": "https://github.com/ShayBox/ShaysRusherTweaks/releases/tag/0.10.2",
+      "added_at": "2024-05-08",
+      "updated_at": "2024-07-06"
     },
     {
       "name": "Nuker",
@@ -349,7 +379,9 @@
       ],
       "is_core": false,
       "mc_versions": "1.20.4",
-      "jar_url": "https://github.com/beanbag44/Nuker/releases/tag/Release-2.0.3"
+      "jar_url": "https://github.com/beanbag44/Nuker/releases/tag/Release-2.0.3",
+      "added_at": "2024-04-17",
+      "updated_at": "2025-10-03"
     },
     {
       "name": "Hold Rusher",
@@ -364,7 +396,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.20.1-1.21.1",
-      "jar_url": "https://github.com/cherosin/hold-rusher/releases/download/1.0.1/hold-rusher-1.0.1.jar"
+      "jar_url": "https://github.com/cherosin/hold-rusher/releases/download/1.0.1/hold-rusher-1.0.1.jar",
+      "added_at": "2024-06-01",
+      "updated_at": "2025-02-17"
     },
     {
       "name": "No Walk Animation",
@@ -379,7 +413,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.20.4-1.21",
-      "jar_url": "https://github.com/Eonexe/NoWalkAnimation/releases/download/0.1.2/no-walk-animations-0.1.2.jar"
+      "jar_url": "https://github.com/Eonexe/NoWalkAnimation/releases/download/0.1.2/no-walk-animations-0.1.2.jar",
+      "added_at": "2024-06-01",
+      "updated_at": "2024-06-26"
     },
     {
       "name": "NBT Utils",
@@ -394,7 +430,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.20.4",
-      "jar_url": "https://github.com/KybesRusherhackPlugins/nbt-utils/releases/download/1.20.4-0.1.0/nbt-reader-0.1.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/nbt-utils/releases/download/1.20.4-0.1.0/nbt-reader-0.1.0.jar",
+      "added_at": "2024-07-06",
+      "updated_at": "2024-07-06"
     },
     {
       "name": "Rusherhack Executer",
@@ -409,7 +447,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.20.4",
-      "jar_url": "https://github.com/KybesRusherhackPlugins/executer/releases/download/1.20.4-5.0.0/kybes-executer-5.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/executer/releases/download/1.20.4-5.0.0/kybes-executer-5.0.0.jar",
+      "added_at": "2024-07-11",
+      "updated_at": "2024-07-15"
     },
     {
       "name": "F3 Spoof",
@@ -423,7 +463,9 @@
       "latest_release_tag": "",
       "screenshots": [],
       "is_core": false,
-      "mc_versions": "1.20.4-1.21"
+      "mc_versions": "1.20.4-1.21",
+      "added_at": "2024-07-15",
+      "updated_at": "2024-07-15"
     },
     {
       "name": "Open Folder",
@@ -443,7 +485,9 @@
       ],
       "is_core": false,
       "mc_versions": "1.21",
-      "jar_url": "https://github.com/KybesRusherhackPlugins/open-folder/releases/download/1.21/open-folder-0.0.9.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/open-folder/releases/download/1.21/open-folder-0.0.9.jar",
+      "added_at": "2024-07-23",
+      "updated_at": "2024-07-23"
     },
     {
       "name": "Mace Kill",
@@ -463,7 +507,9 @@
       ],
       "is_core": false,
       "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/KybesRusherhackPlugins/mace-kill/releases/download/1.21.4/mace-kill-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/mace-kill/releases/download/1.21.4/mace-kill-1.0.0.jar",
+      "added_at": "2024-07-20",
+      "updated_at": "2025-03-17"
     },
     {
       "name": "Weather Changing Plugin",
@@ -478,7 +524,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.20.4",
-      "jar_url": "https://github.com/Lokfid/WeatherChangingPlugin/releases/download/1.0.2/WeatherPlugin-1.0.2.jar"
+      "jar_url": "https://github.com/Lokfid/WeatherChangingPlugin/releases/download/1.0.2/WeatherPlugin-1.0.2.jar",
+      "added_at": "2024-07-24",
+      "updated_at": "2024-07-24"
     },
     {
       "name": "Middleclick Wind Charge",
@@ -498,7 +546,9 @@
       ],
       "is_core": false,
       "mc_versions": "1.21",
-      "jar_url": "https://github.com/KybesRusherhackPlugins/middleclick-wind-charge/releases/download/1.21-1.0.1/rusherhack-middleclick-wind-charge-1.0.1.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/middleclick-wind-charge/releases/download/1.21-1.0.1/rusherhack-middleclick-wind-charge-1.0.1.jar",
+      "added_at": "2024-07-25",
+      "updated_at": "2024-07-26"
     },
     {
       "name": "GarlicSight",
@@ -529,7 +579,9 @@
       ],
       "is_core": false,
       "mc_versions": "1.20.5-1.21.4",
-      "jar_url": "https://github.com/GarlicRot/GarlicSight/releases/tag/v1.0.4"
+      "jar_url": "https://github.com/GarlicRot/GarlicSight/releases/tag/v1.0.4",
+      "added_at": "2024-07-26",
+      "updated_at": "2025-02-10"
     },
     {
       "name": "LightningPop",
@@ -550,7 +602,9 @@
       ],
       "is_core": false,
       "mc_versions": "1.20.5-1.21.4",
-      "jar_url": "https://github.com/GarlicRot/LightningPop/releases/tag/v1.0.7"
+      "jar_url": "https://github.com/GarlicRot/LightningPop/releases/tag/v1.0.7",
+      "added_at": "2024-07-26",
+      "updated_at": "2025-06-03"
     },
     {
       "name": "AutoBucket",
@@ -571,7 +625,9 @@
       ],
       "is_core": false,
       "mc_versions": "1.20.5-1.21.4",
-      "jar_url": "https://github.com/GarlicRot/AutoBucket/releases/tag/v1.0.6"
+      "jar_url": "https://github.com/GarlicRot/AutoBucket/releases/tag/v1.0.6",
+      "added_at": "2024-08-02",
+      "updated_at": "2025-02-10"
     },
     {
       "name": "RusherHack-BoatExecute",
@@ -591,7 +647,9 @@
       ],
       "is_core": false,
       "mc_versions": "1.20.4",
-      "jar_url": "https://github.com/PhilipPanda/RusherHack-BoatExecute/releases/download/Release-1.20.4/boatexecute-1.20.4.jar"
+      "jar_url": "https://github.com/PhilipPanda/RusherHack-BoatExecute/releases/download/Release-1.20.4/boatexecute-1.20.4.jar",
+      "added_at": "2024-08-11",
+      "updated_at": "2024-08-11"
     },
     {
       "name": "NBT Viewer",
@@ -612,7 +670,9 @@
       ],
       "is_core": false,
       "mc_versions": "1.20.1-1.20.4",
-      "jar_url": "https://github.com/Gentleman2292/NBT-viewer/releases/download/1.2/NBTViewer-plugin-1.2-release.jar"
+      "jar_url": "https://github.com/Gentleman2292/NBT-viewer/releases/download/1.2/NBTViewer-plugin-1.2-release.jar",
+      "added_at": "2023-10-25",
+      "updated_at": "2023-10-26"
     },
     {
       "name": "Remote Control",
@@ -627,7 +687,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.20.4",
-      "jar_url": "https://github.com/KybesRusherhackPlugins/remote-controle/releases/download/1.20.4-1.0.0/remote-control-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/remote-controle/releases/download/1.20.4-1.0.0/remote-control-1.0.0.jar",
+      "added_at": "2024-07-19",
+      "updated_at": "2024-07-19"
     },
     {
       "name": "Speed Measure",
@@ -642,7 +704,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.20.4",
-      "jar_url": "https://github.com/Lokfid/RusherHackSpeedMeasure/releases/download/1.0.1/SpeedMeasure-1.0.1.jar"
+      "jar_url": "https://github.com/Lokfid/RusherHackSpeedMeasure/releases/download/1.0.1/SpeedMeasure-1.0.1.jar",
+      "added_at": "2024-05-22",
+      "updated_at": "2024-08-12"
     },
     {
       "name": "TNT Bomber",
@@ -657,7 +721,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.20.4",
-      "jar_url": "https://github.com/KybesRusherhackPlugins/tnt-bomber/releases/download/1.20.4/tnt-nuker-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/tnt-bomber/releases/download/1.20.4/tnt-nuker-1.0.0.jar",
+      "added_at": "2024-07-09",
+      "updated_at": "2024-07-09"
     },
     {
       "name": "No Render Entities",
@@ -672,7 +738,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.20.1",
-      "jar_url": "https://github.com/John200410/norender-entities/releases/download/v1.0/norender-entities-1.0-SNAPSHOT.jar"
+      "jar_url": "https://github.com/John200410/norender-entities/releases/download/v1.0/norender-entities-1.0-SNAPSHOT.jar",
+      "added_at": "2023-11-20",
+      "updated_at": "2023-11-20"
     },
     {
       "name": "RusherHack Messenger",
@@ -692,7 +760,9 @@
       ],
       "is_core": false,
       "mc_versions": "1.20.1-1.20.4",
-      "jar_url": "https://github.com/Gentleman2292/rusherhack-messenger/releases/download/1.0.3/messenger-plugin-1.0.3.jar"
+      "jar_url": "https://github.com/Gentleman2292/rusherhack-messenger/releases/download/1.0.3/messenger-plugin-1.0.3.jar",
+      "added_at": "2024-01-22",
+      "updated_at": "2024-04-16"
     },
     {
       "name": "RusherHack Instance Info (Fork)",
@@ -723,7 +793,9 @@
       ],
       "is_core": false,
       "mc_versions": "1.20.1-1.21",
-      "jar_url": "https://github.com/GarlicRot/rusherhack-instance-info/releases/download/v1.3/instance-info-1.3.jar"
+      "jar_url": "https://github.com/GarlicRot/rusherhack-instance-info/releases/download/v1.3/instance-info-1.3.jar",
+      "added_at": "2024-08-11",
+      "updated_at": "2024-08-11"
     },
     {
       "name": "RusherHack NoteBot",
@@ -738,7 +810,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.20.4-1.21.4",
-      "jar_url": "https://github.com/Lokfid/RusherHackNoteBot/releases/download/1.0.3/NoteBotPlugin-1.0.3.jar"
+      "jar_url": "https://github.com/Lokfid/RusherHackNoteBot/releases/download/1.0.3/NoteBotPlugin-1.0.3.jar",
+      "added_at": "2024-08-13",
+      "updated_at": "2025-05-08"
     },
     {
       "name": "ShulkerViewer",
@@ -753,7 +827,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.20.1-1.21.1",
-      "jar_url": "https://github.com/xyzbtw/ShulkerViewer/releases/download/1.21.4/shulker-viewer-1.21.4.jar"
+      "jar_url": "https://github.com/xyzbtw/ShulkerViewer/releases/download/1.21.4/shulker-viewer-1.21.4.jar",
+      "added_at": "2024-08-14",
+      "updated_at": "2025-09-06"
     },
     {
       "name": "RusherWebPlugin",
@@ -768,7 +844,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.20.1-1.21.1",
-      "jar_url": "https://github.com/Lokfid/RusherWebPlugin/releases/download/1.2/web-1.2.jar"
+      "jar_url": "https://github.com/Lokfid/RusherWebPlugin/releases/download/1.2/web-1.2.jar",
+      "added_at": "2024-08-14",
+      "updated_at": "2025-02-21"
     },
     {
       "name": "UpdatedNCPEfly",
@@ -783,7 +861,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.20.4-1.20.6",
-      "jar_url": "https://github.com/xyzbtw/UpdatedNCPEfly/releases/download/release/NCP-ElytraFlight-1.0.0.jar"
+      "jar_url": "https://github.com/xyzbtw/UpdatedNCPEfly/releases/download/release/NCP-ElytraFlight-1.0.0.jar",
+      "added_at": "2024-06-18",
+      "updated_at": "2024-08-28"
     },
     {
       "name": "dc-chat-logger",
@@ -798,7 +878,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21",
-      "jar_url": "https://github.com/KybesRusherhackPlugins/dc-chat-logger/releases/download/3.0.0/dc-chat-logger-3.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/dc-chat-logger/releases/download/3.0.0/dc-chat-logger-3.0.0.jar",
+      "added_at": "2024-08-22",
+      "updated_at": "2024-09-25"
     },
     {
       "name": "rusherhack-nightvision-plugin",
@@ -813,7 +895,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21-1.21.1",
-      "jar_url": "https://github.com/John200410/rusherhack-nightvision-plugin/releases/download/v1.0.0/nightvision-1.0.0-1.21.jar"
+      "jar_url": "https://github.com/John200410/rusherhack-nightvision-plugin/releases/download/v1.0.0/nightvision-1.0.0-1.21.jar",
+      "added_at": "2024-08-24",
+      "updated_at": "2024-08-24"
     },
     {
       "name": "AutoNetherite",
@@ -828,7 +912,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.20.4-1.21.1",
-      "jar_url": "https://github.com/xyzbtw/AutoNetherite/releases/download/1.21.4/autonetherite-1.21.4.jar"
+      "jar_url": "https://github.com/xyzbtw/AutoNetherite/releases/download/1.21.4/autonetherite-1.21.4.jar",
+      "added_at": "2024-08-27",
+      "updated_at": "2025-07-29"
     },
     {
       "name": "OldSignsPlugin",
@@ -843,7 +929,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.20.4",
-      "jar_url": "https://github.com/xyzbtw/OldSignsPlugin/releases/download/release/oldsigns-1.0.0.jar"
+      "jar_url": "https://github.com/xyzbtw/OldSignsPlugin/releases/download/release/oldsigns-1.0.0.jar",
+      "added_at": "2024-08-29",
+      "updated_at": "2024-08-29"
     },
     {
       "name": "StashHunter-rusherhack",
@@ -858,7 +946,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.20.1-1.21.1",
-      "jar_url": "https://github.com/CherkaSSH/StashHunter-rusherhack/releases/download/hehe2/StashHunter-rusherhack-1.0.1.jar"
+      "jar_url": "https://github.com/CherkaSSH/StashHunter-rusherhack/releases/download/hehe2/StashHunter-rusherhack-1.0.1.jar",
+      "added_at": "2024-04-12",
+      "updated_at": "2024-11-28"
     },
     {
       "name": "rusher-elytra-eta",
@@ -879,7 +969,9 @@
       ],
       "is_core": false,
       "mc_versions": "1.21",
-      "jar_url": "https://github.com/KybesRusherhackPlugins/elytra-eta/releases/download/1.0.0/rusher-elytra-eta-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/elytra-eta/releases/download/1.0.0/rusher-elytra-eta-1.0.0.jar",
+      "added_at": "2024-09-01",
+      "updated_at": "2024-09-01"
     },
     {
       "name": "rusher-silent-close",
@@ -894,7 +986,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21",
-      "jar_url": "https://github.com/KybesRusherhackPlugins/silent-container-close/releases/download/1.0.0/silent-close-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/silent-container-close/releases/download/1.0.0/silent-close-1.0.0.jar",
+      "added_at": "2024-09-02",
+      "updated_at": "2024-09-02"
     },
     {
       "name": "rusherhack-addons",
@@ -909,7 +1003,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.20.4",
-      "jar_url": "https://github.com/miles352/rusherhack-addons/releases/download/1.21.1/jefffmod-1.0.0.jar"
+      "jar_url": "https://github.com/miles352/rusherhack-addons/releases/download/1.21.1/jefffmod-1.0.0.jar",
+      "added_at": "2024-09-19",
+      "updated_at": "2024-12-31"
     },
     {
       "name": "rusher-gtranslate",
@@ -924,7 +1020,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/KybesRusherhackPlugins/google-translate/releases/download/2.0.0/gtranslate-v2-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/google-translate/releases/download/2.0.0/gtranslate-v2-1.0.0.jar",
+      "added_at": "2024-09-03",
+      "updated_at": "2025-05-09"
     },
     {
       "name": "rusher-matrix-nofall",
@@ -939,7 +1037,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21",
-      "jar_url": "https://github.com/KybesRusherhackPlugins/matrix-nofall/releases/download/1.0.0/kybe-nofall-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/matrix-nofall/releases/download/1.0.0/kybe-nofall-1.0.0.jar",
+      "added_at": "2024-09-05",
+      "updated_at": "2024-09-05"
     },
     {
       "name": "rusher-autoportal",
@@ -954,7 +1054,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.20.4-1.21.1",
-      "jar_url": "https://github.com/KybesRusherhackPlugins/auto-portal/releases/download/1.20.6-1.21.1/kybe-portal-maker-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/auto-portal/releases/download/1.20.6-1.21.1/kybe-portal-maker-1.0.0.jar",
+      "added_at": "2024-09-05",
+      "updated_at": "2025-05-18"
     },
     {
       "name": "rusher-air-place",
@@ -969,7 +1071,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.20.1-1.21.1",
-      "jar_url": "https://github.com/KybesRusherhackPlugins/air-place/releases/download/1.0.0/kybe-airplace-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/air-place/releases/download/1.0.0/kybe-airplace-1.0.0.jar",
+      "added_at": "2024-09-07",
+      "updated_at": "2024-09-07"
     },
     {
       "name": "rusher-hold-spamm-space",
@@ -984,7 +1088,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21-1.21.1",
-      "jar_url": "https://github.com/KybesRusherhackPlugins/space-spammer/releases/download/1.0.0.1/kybe-holdspace-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/space-spammer/releases/download/1.0.0.1/kybe-holdspace-1.0.0.jar",
+      "added_at": "2024-09-07",
+      "updated_at": "2024-10-13"
     },
     {
       "name": "rusher-auto-bed-bomber",
@@ -999,7 +1105,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21",
-      "jar_url": "https://github.com/KybesRusherhackPlugins/auto-bed-bomber/releases/download/idk/kybe-auto-bed-bomb-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/auto-bed-bomber/releases/download/idk/kybe-auto-bed-bomb-1.0.0.jar",
+      "added_at": "2024-09-08",
+      "updated_at": "2024-09-26"
     },
     {
       "name": "rusher-crystal-spin",
@@ -1014,7 +1122,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21",
-      "jar_url": "https://github.com/KybesRusherhackPlugins/crystal-spin/releases/download/1.0.0/kybe-holdspace-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/crystal-spin/releases/download/1.0.0/kybe-holdspace-1.0.0.jar",
+      "added_at": "2024-09-13",
+      "updated_at": "2024-09-13"
     },
     {
       "name": "AutoShear",
@@ -1035,7 +1145,9 @@
       ],
       "is_core": false,
       "mc_versions": "1.21-1.21.1",
-      "jar_url": "https://github.com/oisin404/AutoShear/releases/download/1.0.2/auto-shear-1.0.2.jar"
+      "jar_url": "https://github.com/oisin404/AutoShear/releases/download/1.0.2/auto-shear-1.0.2.jar",
+      "added_at": "2024-09-12",
+      "updated_at": "2024-09-26"
     },
     {
       "name": "Rusher2b2tVelocity",
@@ -1050,7 +1162,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.20.4",
-      "jar_url": "https://github.com/Lokfid/Rusher2b2tVelocity/releases/download/1.0.0redo/VelocityPlus-1.0.0.jar"
+      "jar_url": "https://github.com/Lokfid/Rusher2b2tVelocity/releases/download/1.0.0redo/VelocityPlus-1.0.0.jar",
+      "added_at": "2024-09-18",
+      "updated_at": "2024-09-19"
     },
     {
       "name": "rusher-autokit",
@@ -1065,7 +1179,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.20.4",
-      "jar_url": "https://github.com/KybesRusherhackPlugins/autokit/releases/download/1.0.0/kybe-autokit-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/autokit/releases/download/1.0.0/kybe-autokit-1.0.0.jar",
+      "added_at": "2024-09-23",
+      "updated_at": "2024-09-24"
     },
     {
       "name": "AutoTorch",
@@ -1080,7 +1196,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.20.1",
-      "jar_url": "https://github.com/NinetyUnderScore/AutoTorch/releases/download/Release/autotorch-plugin-1.0.0.jar"
+      "jar_url": "https://github.com/NinetyUnderScore/AutoTorch/releases/download/Release/autotorch-plugin-1.0.0.jar",
+      "added_at": "2024-10-24",
+      "updated_at": "2024-10-24"
     },
     {
       "name": "Elytra Swap",
@@ -1094,7 +1212,9 @@
       "latest_release_tag": "",
       "screenshots": [],
       "is_core": false,
-      "mc_versions": "1.20.4-1.21"
+      "mc_versions": "1.20.4-1.21",
+      "added_at": "2024-11-24",
+      "updated_at": "2024-12-23"
     },
     {
       "name": "HDisabler",
@@ -1115,7 +1235,9 @@
       ],
       "is_core": false,
       "mc_versions": "1.21.1-1.21.3",
-      "jar_url": "https://github.com/CherkaSSH/hdisabler/releases/download/idk/example-plugin-1.0.0.jar"
+      "jar_url": "https://github.com/CherkaSSH/hdisabler/releases/download/idk/example-plugin-1.0.0.jar",
+      "added_at": "2024-12-16",
+      "updated_at": "2024-12-18"
     },
     {
       "name": "CoordFollower",
@@ -1130,7 +1252,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.20.4",
-      "jar_url": "https://github.com/CherkaSSH/CoordFollower-plugin/releases/tag/1.0"
+      "jar_url": "https://github.com/CherkaSSH/CoordFollower-plugin/releases/tag/1.0",
+      "added_at": "2024-07-16",
+      "updated_at": "2024-07-19"
     },
     {
       "name": "Rusher Chess TUI",
@@ -1144,7 +1268,9 @@
       "latest_release_tag": "",
       "screenshots": [],
       "is_core": false,
-      "mc_versions": "1.20.1-1.20.4"
+      "mc_versions": "1.20.1-1.20.4",
+      "added_at": "2024-09-28",
+      "updated_at": "2025-05-22"
     },
     {
       "name": "ActivatedSpawnerDetector",
@@ -1159,7 +1285,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21-1.21.1",
-      "jar_url": "https://github.com/un0x9/ActivatedSpawnerDetector/releases/download/v1.2.2/ActivatedSpawnerDetector-1.2.2.jar"
+      "jar_url": "https://github.com/un0x9/ActivatedSpawnerDetector/releases/download/v1.2.2/ActivatedSpawnerDetector-1.2.2.jar",
+      "added_at": "2024-12-22",
+      "updated_at": "2024-12-27"
     },
     {
       "name": "Rusher Discord Notifications",
@@ -1174,7 +1302,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.20.1",
-      "jar_url": "https://github.com/KybesRusherhackPlugins/discord-notifications/releases/download/1.0.0/discord-notifier-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/discord-notifications/releases/download/1.0.0/discord-notifier-1.0.0.jar",
+      "added_at": "2025-01-02",
+      "updated_at": "2025-01-02"
     },
     {
       "name": "AutoBonemeal",
@@ -1189,7 +1319,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.20.4",
-      "jar_url": "https://github.com/John200410/rusherhack-autobonemeal/releases/download/v1.0.0/auto-bonemeal-1.0.0.jar"
+      "jar_url": "https://github.com/John200410/rusherhack-autobonemeal/releases/download/v1.0.0/auto-bonemeal-1.0.0.jar",
+      "added_at": "2025-01-08",
+      "updated_at": "2025-01-08"
     },
     {
       "name": "Rocket3",
@@ -1204,7 +1336,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.20.1-1.20.6",
-      "jar_url": "https://github.com/PK268/Rocket3/releases/download/v1.2.0/rocket3-1.2.0.jar"
+      "jar_url": "https://github.com/PK268/Rocket3/releases/download/v1.2.0/rocket3-1.2.0.jar",
+      "added_at": "2025-01-15",
+      "updated_at": "2025-01-17"
     },
     {
       "name": "GarlicBreeder",
@@ -1219,7 +1353,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.20.4",
-      "jar_url": "https://github.com/GarlicRot/GarlicBreeder/releases/tag/v1.0.6"
+      "jar_url": "https://github.com/GarlicRot/GarlicBreeder/releases/tag/v1.0.6",
+      "added_at": "2025-01-26",
+      "updated_at": "2025-07-03"
     },
     {
       "name": "Rusher Item Saver",
@@ -1234,7 +1370,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21.1-1.21.4",
-      "jar_url": "https://github.com/KybesRusherhackPlugins/item-saver/releases/download/multiversion/item-saver-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/item-saver/releases/download/multiversion/item-saver-1.0.0.jar",
+      "added_at": "2025-02-08",
+      "updated_at": "2025-02-08"
     },
     {
       "name": "RusherHack Mace Swap",
@@ -1249,7 +1387,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21.1-1.21.4",
-      "jar_url": "https://github.com/KybesRusherhackPlugins/mace-swap/releases/download/fix1/mace-swap-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/mace-swap/releases/download/fix1/mace-swap-1.0.0.jar",
+      "added_at": "2025-02-08",
+      "updated_at": "2025-02-08"
     },
     {
       "name": "Example Core Plugin",
@@ -1263,7 +1403,9 @@
       "latest_release_tag": "v1.0.0",
       "screenshots": [],
       "is_core": true,
-      "mc_versions": "N/A"
+      "mc_versions": "N/A",
+      "added_at": "2025-02-15",
+      "updated_at": "2025-02-18"
     },
     {
       "name": "CrystalModifierRH",
@@ -1277,7 +1419,9 @@
       "latest_release_tag": "",
       "screenshots": [],
       "is_core": true,
-      "mc_versions": "1.21.1"
+      "mc_versions": "1.21.1",
+      "added_at": "2025-02-18",
+      "updated_at": "2025-02-18"
     },
     {
       "name": "Tablist Hats",
@@ -1298,7 +1442,9 @@
       ],
       "is_core": true,
       "mc_versions": "1.20.1-1.21.4",
-      "jar_url": "https://github.com/rfresh2/TablistHats-rusherhack/releases/download/1.0/TablistHats-1.0.jar"
+      "jar_url": "https://github.com/rfresh2/TablistHats-rusherhack/releases/download/1.0/TablistHats-1.0.jar",
+      "added_at": "2025-02-18",
+      "updated_at": "2025-02-18"
     },
     {
       "name": "NoSound",
@@ -1313,7 +1459,9 @@
       "screenshots": [],
       "is_core": true,
       "mc_versions": "1.20.1-1.21.1",
-      "jar_url": "https://github.com/John200410/nosound/releases/download/1.0.0/no-sound-1.0.0.jar"
+      "jar_url": "https://github.com/John200410/nosound/releases/download/1.0.0/no-sound-1.0.0.jar",
+      "added_at": "2025-02-15",
+      "updated_at": "2025-10-29"
     },
     {
       "name": "Rusherhack Streamer Mode",
@@ -1328,7 +1476,9 @@
       "screenshots": [],
       "is_core": true,
       "mc_versions": "1.21.2-1.21.4",
-      "jar_url": "https://github.com/KybesRusherhackPlugins/streamer-mode/releases/download/1.21.4-v3/streamer-mode-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/streamer-mode/releases/download/1.21.4-v3/streamer-mode-1.0.0.jar",
+      "added_at": "2025-02-20",
+      "updated_at": "2025-08-14"
     },
     {
       "name": "Rusher Auto Item Frame Dupe",
@@ -1343,7 +1493,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21.1-1.21.4",
-      "jar_url": "https://github.com/KybesRusherhackPlugins/auto-item-frame-dupe/releases/download/1.21.1-1.21.4/rusher-auto-item-frame-dupe-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/auto-item-frame-dupe/releases/download/1.21.1-1.21.4/rusher-auto-item-frame-dupe-1.0.0.jar",
+      "added_at": "2025-02-28",
+      "updated_at": "2025-02-28"
     },
     {
       "name": "RusherMoji",
@@ -1358,7 +1510,9 @@
       "screenshots": [],
       "is_core": true,
       "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/Lokfid/RusherMoji/releases/download/1.0.4-1.21.4/emoji-1.0.4.jar"
+      "jar_url": "https://github.com/Lokfid/RusherMoji/releases/download/1.0.4-1.21.4/emoji-1.0.4.jar",
+      "added_at": "2025-04-15",
+      "updated_at": "2025-06-10"
     },
     {
       "name": "RusherHack Piston Pusher",
@@ -1373,7 +1527,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/KybesRusherhackPlugins/piston-pusher/releases/download/1.21.4/crystal-pusher-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/piston-pusher/releases/download/1.21.4/crystal-pusher-1.0.0.jar",
+      "added_at": "2025-04-23",
+      "updated_at": "2025-04-23"
     },
     {
       "name": "RusherUtils",
@@ -1393,7 +1549,9 @@
       ],
       "is_core": false,
       "mc_versions": "1.20.1-1.21.4",
-      "jar_url": "https://github.com/0tterware/RusherUtils/releases/download/v0.1/rusher-utils-0.1-1.21.4.jar"
+      "jar_url": "https://github.com/0tterware/RusherUtils/releases/download/v0.1/rusher-utils-0.1-1.21.4.jar",
+      "added_at": "2025-04-26",
+      "updated_at": "2025-04-26"
     },
     {
       "name": "Rusher Grown ESP",
@@ -1408,7 +1566,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/KybesRusherhackPlugins/crop-esp-nuker/releases/download/1.21.4/rusher-grow-esp-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/crop-esp-nuker/releases/download/1.21.4/rusher-grow-esp-1.0.0.jar",
+      "added_at": "2025-05-26",
+      "updated_at": "2025-05-26"
     },
     {
       "name": "Rusher GhoulMode",
@@ -1422,7 +1582,9 @@
       "latest_release_tag": "",
       "screenshots": [],
       "is_core": false,
-      "mc_versions": "1.21.1"
+      "mc_versions": "1.21.1",
+      "added_at": "2025-03-16",
+      "updated_at": "2025-03-16"
     },
     {
       "name": "Rusher AutoAnvil",
@@ -1436,7 +1598,9 @@
       "latest_release_tag": "",
       "screenshots": [],
       "is_core": false,
-      "mc_versions": "1.21.1"
+      "mc_versions": "1.21.1",
+      "added_at": "2025-03-23",
+      "updated_at": "2025-03-23"
     },
     {
       "name": "Rusher BurrowESP",
@@ -1451,7 +1615,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21.1",
-      "jar_url": "https://github.com/Koteyka32k/rusher-burrowesp/releases/download/release/burrowesp-1.0.0.jar"
+      "jar_url": "https://github.com/Koteyka32k/rusher-burrowesp/releases/download/release/burrowesp-1.0.0.jar",
+      "added_at": "2025-03-25",
+      "updated_at": "2025-03-25"
     },
     {
       "name": "Rusherhack-SignFilter",
@@ -1466,7 +1632,9 @@
       "screenshots": [],
       "is_core": true,
       "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/ToxicAven/Rusherhack-SignFilter/releases/download/v1.0.0/SignFilter-1.0.0.jar"
+      "jar_url": "https://github.com/ToxicAven/Rusherhack-SignFilter/releases/download/v1.0.0/SignFilter-1.0.0.jar",
+      "added_at": "2025-06-06",
+      "updated_at": "2025-06-06"
     },
     {
       "name": "Rusher-Vault-Helper",
@@ -1490,7 +1658,9 @@
       ],
       "is_core": false,
       "mc_versions": "1.21.1-1.21.5",
-      "jar_url": "https://github.com/KybesRusherhackPlugins/vault-helper/releases/download/1.21-1.21.4/rusher-vault-helper-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/vault-helper/releases/download/1.21-1.21.4/rusher-vault-helper-1.0.0.jar",
+      "added_at": "2025-06-07",
+      "updated_at": "2025-06-07"
     },
     {
       "name": "Rusher-Inventory-Drag",
@@ -1505,7 +1675,9 @@
       "screenshots": [],
       "is_core": true,
       "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/KybesRusherhackPlugins/inventory-drag/releases/download/1.21.4/rusher-invetory-drag-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/inventory-drag/releases/download/1.21.4/rusher-invetory-drag-1.0.0.jar",
+      "added_at": "2025-06-14",
+      "updated_at": "2025-06-14"
     },
     {
       "name": "PlayerLogPlugin-RusherHack",
@@ -1529,7 +1701,9 @@
       ],
       "is_core": false,
       "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/k4n3d4-sh0t4r0/PlayerLogPLugin-RusherHack/releases/download/V1.3.0/PlayerLog-1.3.0.jar"
+      "jar_url": "https://github.com/k4n3d4-sh0t4r0/PlayerLogPLugin-RusherHack/releases/download/V1.3.0/PlayerLog-1.3.0.jar",
+      "added_at": "2025-05-18",
+      "updated_at": "2025-07-15"
     },
     {
       "name": "BarrierESP-RusherHack",
@@ -1549,7 +1723,9 @@
       ],
       "is_core": true,
       "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/k4n3d4-sh0t4r0/BarrierESP-RusherHack/releases/download/v1.1.0/BarrierESP-1.1.0.jar"
+      "jar_url": "https://github.com/k4n3d4-sh0t4r0/BarrierESP-RusherHack/releases/download/v1.1.0/BarrierESP-1.1.0.jar",
+      "added_at": "2025-06-17",
+      "updated_at": "2025-06-25"
     },
     {
       "name": "FovLimiter-Rusherhack",
@@ -1564,7 +1740,9 @@
       "screenshots": [],
       "is_core": true,
       "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/k4n3d4-sh0t4r0/FovLimiter-Rusherhack/releases/download/V1.1.0/FovLimiter-1.1.0.jar"
+      "jar_url": "https://github.com/k4n3d4-sh0t4r0/FovLimiter-Rusherhack/releases/download/V1.1.0/FovLimiter-1.1.0.jar",
+      "added_at": "2025-06-21",
+      "updated_at": "2025-06-25"
     },
     {
       "name": "NoJumpDelay-Rusherhack",
@@ -1579,7 +1757,9 @@
       "screenshots": [],
       "is_core": true,
       "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/k4n3d4-sh0t4r0/NoJumpDelay-Rusherhack/releases/download/V1.1.0/NoJumpDelay-1.1.0.jar"
+      "jar_url": "https://github.com/k4n3d4-sh0t4r0/NoJumpDelay-Rusherhack/releases/download/V1.1.0/NoJumpDelay-1.1.0.jar",
+      "added_at": "2025-06-21",
+      "updated_at": "2025-06-25"
     },
     {
       "name": "HideNightVision-RusherHack",
@@ -1603,7 +1783,9 @@
       ],
       "is_core": true,
       "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/k4n3d4-sh0t4r0/HideNightVision-RusherHack/releases/download/V1.1.0/HideNightVision-1.1.0.jar"
+      "jar_url": "https://github.com/k4n3d4-sh0t4r0/HideNightVision-RusherHack/releases/download/V1.1.0/HideNightVision-1.1.0.jar",
+      "added_at": "2025-06-24",
+      "updated_at": "2025-06-25"
     },
     {
       "name": "rusherhack-kybes-utils",
@@ -1624,7 +1806,9 @@
       ],
       "is_core": true,
       "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/KybesRusherhackPlugins/kybes-utils/releases/download/v1.0.0-194c38d40bbc4f6d6aaa514401a70c1b2ba72300/kybes-utils.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/kybes-utils/releases/download/v1.0.0-194c38d40bbc4f6d6aaa514401a70c1b2ba72300/kybes-utils.jar",
+      "added_at": "2025-07-27",
+      "updated_at": "2025-09-19"
     },
     {
       "name": "AutoAnvilRename",
@@ -1639,7 +1823,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.20.1-1.21.4",
-      "jar_url": "https://github.com/musheck/AutoAnvilRename/releases/download/1.1.0/AutoAnvilRename-1.1.0.jar"
+      "jar_url": "https://github.com/musheck/AutoAnvilRename/releases/download/1.1.0/AutoAnvilRename-1.1.0.jar",
+      "added_at": "2025-06-14",
+      "updated_at": "2025-06-16"
     },
     {
       "name": "rusher-auto-kit-maker",
@@ -1660,7 +1846,9 @@
       ],
       "is_core": false,
       "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/KybesRusherhackPlugins/auto-kit-maker/releases/download/1.21.4-11/rusher-auto-kit-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/auto-kit-maker/releases/download/1.21.4-11/rusher-auto-kit-1.0.0.jar",
+      "added_at": "2025-08-01",
+      "updated_at": "2025-08-05"
     },
     {
       "name": "rusherhack-shell-integration",
@@ -1675,7 +1863,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21.1-1.21.4",
-      "jar_url": "https://github.com/tillay-rh-plugins/rusherhack-shell-integration/releases/download/release/shell-plugin-1.0.0.jar"
+      "jar_url": "https://github.com/tillay-rh-plugins/rusherhack-shell-integration/releases/download/release/shell-plugin-1.0.0.jar",
+      "added_at": "2025-08-02",
+      "updated_at": "2025-08-04"
     },
     {
       "name": "rusherhack-SmartBounce",
@@ -1690,7 +1880,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21.1-1.21.4",
-      "jar_url": "https://github.com/tillay-rh-plugins/rusherhack-SmartBounce/releases/download/release/ebounce-plugin-1.0.0.jar"
+      "jar_url": "https://github.com/tillay-rh-plugins/rusherhack-SmartBounce/releases/download/release/ebounce-plugin-1.0.0.jar",
+      "added_at": "2025-08-04",
+      "updated_at": "2025-08-23"
     },
     {
       "name": "AutoRegear",
@@ -1705,7 +1897,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/KybesRusherhackPlugins/auto-regear/releases/download/1.21.4/rusher-auto-regear-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/auto-regear/releases/download/1.21.4/rusher-auto-regear-1.0.0.jar",
+      "added_at": "2025-08-05",
+      "updated_at": "2025-08-05"
     },
     {
       "name": "rusherhack-rusherman",
@@ -1731,7 +1925,9 @@
       ],
       "is_core": false,
       "mc_versions": "1.21.1-1.21.4",
-      "jar_url": "https://github.com/tillay-rh-plugins/rusherhack-rusherman/releases/download/fixed%21/rusherman-plugin-1.0.0.jar"
+      "jar_url": "https://github.com/tillay-rh-plugins/rusherhack-rusherman/releases/download/fixed%21/rusherman-plugin-1.0.0.jar",
+      "added_at": "2025-08-05",
+      "updated_at": "2025-08-13"
     },
     {
       "name": "rusherhack-instantloader",
@@ -1752,7 +1948,9 @@
       ],
       "is_core": false,
       "mc_versions": "1.21.1-1.21.4",
-      "jar_url": "https://github.com/tillay-rh-plugins/rusherhack-InstantLoader/releases/download/release/loader-plugin-1.0.0.jar"
+      "jar_url": "https://github.com/tillay-rh-plugins/rusherhack-InstantLoader/releases/download/release/loader-plugin-1.0.0.jar",
+      "added_at": "2025-08-12",
+      "updated_at": "2025-08-12"
     },
     {
       "name": "rusher-waifu-integration",
@@ -1778,7 +1976,9 @@
       ],
       "is_core": false,
       "mc_versions": "1.21.1-1.21.4",
-      "jar_url": "https://github.com/tillay-rh-plugins/rusher-waifu-integration/releases/download/release/waifu-plugin-1.0.0.jar"
+      "jar_url": "https://github.com/tillay-rh-plugins/rusher-waifu-integration/releases/download/release/waifu-plugin-1.0.0.jar",
+      "added_at": "2025-08-13",
+      "updated_at": "2025-08-13"
     },
     {
       "name": "AutoMoss",
@@ -1793,7 +1993,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/master7720/AutoMoss/releases/download/beta/automoss-2.1.jar"
+      "jar_url": "https://github.com/master7720/AutoMoss/releases/download/beta/automoss-2.1.jar",
+      "added_at": "2025-08-17",
+      "updated_at": "2025-08-28"
     },
     {
       "name": "AutoIgnorehard",
@@ -1808,7 +2010,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/IceTank/RusherHack-AutoIgnorehard/releases/download/v0.0.3/AutoIgnorehard-0.0.3.jar"
+      "jar_url": "https://github.com/IceTank/RusherHack-AutoIgnorehard/releases/download/v0.0.3/AutoIgnorehard-0.0.3.jar",
+      "added_at": "2025-08-26",
+      "updated_at": "2025-10-20"
     },
     {
       "name": "Cockpit",
@@ -1829,7 +2033,9 @@
       ],
       "is_core": false,
       "mc_versions": "1.21.1-1.21.4",
-      "jar_url": "https://github.com/TehPicix/rusherhack-Cockpit/releases/download/v1.3.0/Cockpit-1.3.0.jar"
+      "jar_url": "https://github.com/TehPicix/rusherhack-Cockpit/releases/download/v1.3.0/Cockpit-1.3.0.jar",
+      "added_at": "2025-08-27",
+      "updated_at": "2025-10-17"
     },
     {
       "name": "ChatFilter",
@@ -1855,7 +2061,9 @@
       ],
       "is_core": true,
       "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/TehPicix/rusherhack-ChatFilter/releases/download/v1.1.2/rusherhack-chatfilter-1.1.2.jar"
+      "jar_url": "https://github.com/TehPicix/rusherhack-ChatFilter/releases/download/v1.1.2/rusherhack-chatfilter-1.1.2.jar",
+      "added_at": "2025-08-07",
+      "updated_at": "2025-08-29"
     },
     {
       "name": "rusherhack-ai-integration",
@@ -1870,7 +2078,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21.1-1.21.4",
-      "jar_url": "https://github.com/tillay-rh-plugins/rusherhack-ai-integration/releases/download/release/ai-plugin-1.0.0.jar"
+      "jar_url": "https://github.com/tillay-rh-plugins/rusherhack-ai-integration/releases/download/release/ai-plugin-1.0.0.jar",
+      "added_at": "2025-09-03",
+      "updated_at": "2025-09-03"
     },
     {
       "name": "Elytra Trajectories",
@@ -1896,7 +2106,9 @@
       ],
       "is_core": false,
       "mc_versions": "1.21.1-1.21.4",
-      "jar_url": "https://github.com/tillay-rh-plugins/elytra-trajectories/releases/download/nonplusworks/elytrapath-plugin-1.0.0.jar"
+      "jar_url": "https://github.com/tillay-rh-plugins/elytra-trajectories/releases/download/nonplusworks/elytrapath-plugin-1.0.0.jar",
+      "added_at": "2025-09-20",
+      "updated_at": "2025-11-02"
     },
     {
       "name": "AutoReload",
@@ -1911,7 +2123,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21.1-1.21.4",
-      "jar_url": "https://github.com/tillay-rh-plugins/autoreload/releases/download/whyDoTagsExist/autoreload-1.0.0.jar"
+      "jar_url": "https://github.com/tillay-rh-plugins/autoreload/releases/download/whyDoTagsExist/autoreload-1.0.0.jar",
+      "added_at": "2025-09-28",
+      "updated_at": "2025-09-29"
     },
     {
       "name": "hw-efly-tweaks",
@@ -1926,7 +2140,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/KybesRusherhackPlugins/hw-efly-tweaks/releases/download/1.21.4/hw-efly-tweaks-1.0.0.jar"
+      "jar_url": "https://github.com/KybesRusherhackPlugins/hw-efly-tweaks/releases/download/1.21.4/hw-efly-tweaks-1.0.0.jar",
+      "added_at": "2025-10-05",
+      "updated_at": "2025-10-05"
     },
     {
       "name": "icaemas-tweaks",
@@ -1941,7 +2157,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/icaema/icaemas-tweaks/releases/download/v0.3.0/icaemas-tweaks-0.3.0.jar"
+      "jar_url": "https://github.com/icaema/icaemas-tweaks/releases/download/v0.3.0/icaemas-tweaks-0.3.0.jar",
+      "added_at": "2025-10-07",
+      "updated_at": "2025-11-05"
     },
     {
       "name": "AutoFirework",
@@ -1956,7 +2174,9 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/tillay-rh-plugins/AutoFirework/releases/download/v1.0.0-32b445fb6944110d961a3f78fb0e125c4f6be6e9/autofirework-1.0.0.jar"
+      "jar_url": "https://github.com/tillay-rh-plugins/AutoFirework/releases/download/v1.0.0-32b445fb6944110d961a3f78fb0e125c4f6be6e9/autofirework-1.0.0.jar",
+      "added_at": "2025-10-13",
+      "updated_at": "2025-10-13"
     },
     {
       "name": "AutoMend",
@@ -1977,7 +2197,9 @@
       ],
       "is_core": false,
       "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/icaema/auto-mend/releases/download/v1.0.0/auto-mend-1.0.0.jar"
+      "jar_url": "https://github.com/icaema/auto-mend/releases/download/v1.0.0/auto-mend-1.0.0.jar",
+      "added_at": "2025-11-06",
+      "updated_at": "2025-11-06"
     },
     {
       "name": "Stopwatch",
@@ -2013,7 +2235,9 @@
       ],
       "is_core": false,
       "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/icaema/rusherhacks-stopwatch/releases/download/v1.0.0/stopwatch-1.0.0.jar"
+      "jar_url": "https://github.com/icaema/rusherhacks-stopwatch/releases/download/v1.0.0/stopwatch-1.0.0.jar",
+      "added_at": "2025-11-08",
+      "updated_at": "2025-11-09"
     },
     {
       "name": "RusherHack Speedometer",
@@ -2028,30 +2252,12 @@
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/tillay-rh-plugins/rusherhack-speedometer/releases/download/v1.0.0-5872158a4f44c1c69362b63bdc617515a45ca15c/speedometer-1.0.0.jar"
+      "jar_url": "https://github.com/tillay-rh-plugins/rusherhack-speedometer/releases/download/v1.0.0-5872158a4f44c1c69362b63bdc617515a45ca15c/speedometer-1.0.0.jar",
+      "added_at": "2025-11-10",
+      "updated_at": "2025-11-10"
     }
   ],
   "themes": [
-    {
-      "name": "rusherNodusTheme",
-      "repo": "bakjedev/rusherNodusTheme",
-      "description": "Nodus - Best theme evaAAAA. Code is terrible. Blame xyzbtw!",
-      "creator": {
-        "name": "bakjedev",
-        "url": "https://github.com/bakjedev",
-        "avatar": "https://github.com/bakjedev.png?size=20"
-      },
-      "latest_release_tag": "releease2",
-      "screenshots": [
-        {
-          "url": "./Assets/rusherNodusTheme/NodusGUI.png",
-          "alt": "Module",
-          "width": 750
-        }
-      ],
-      "mc_versions": 1.21,
-      "jar_url": "https://github.com/bakjedev/rusherNodusTheme/releases/download/releease2/rushergui-1.0.0.jar"
-    },
     {
       "name": "Nhack Theme",
       "repo": "h1tm4nqq/Nhack-theme",
@@ -2064,7 +2270,9 @@
       "latest_release_tag": "1.21.4",
       "screenshots": [],
       "mc_versions": "1.20.1-1.21.4",
-      "jar_url": "https://github.com/h1tm4nqq/Nhack-theme/releases/download/1.21.4/nhack-theme-1.0.0.jar"
+      "jar_url": "https://github.com/h1tm4nqq/Nhack-theme/releases/download/1.21.4/nhack-theme-1.0.0.jar",
+      "added_at": "2024-08-09",
+      "updated_at": "2025-07-03"
     },
     {
       "name": "RusherGUI",
@@ -2078,7 +2286,9 @@
       "latest_release_tag": "rusherhack",
       "screenshots": [],
       "mc_versions": "1.20.1-1.20.4",
-      "jar_url": "https://github.com/xyzbtw/rusherGUI/releases/download/rusherhack/rushergui-1.0.0.jar"
+      "jar_url": "https://github.com/xyzbtw/rusherGUI/releases/download/rusherhack/rushergui-1.0.0.jar",
+      "added_at": "2024-04-13",
+      "updated_at": "2024-05-29"
     }
   ]
 }
