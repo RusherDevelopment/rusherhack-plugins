@@ -176,6 +176,21 @@ def sha256_file(path: pathlib.Path) -> str:
 def main():
     ensure_src()
 
+    # Load previous index (for new/recent detection) BEFORE we overwrite it
+    prev_full: Dict[str, Any] = {}
+    prev_by_slug: Dict[str, Dict[str, Any]] = {}
+    prev_index_path = API / "index.json"
+    if prev_index_path.exists():
+        try:
+            prev_full = json.loads(prev_index_path.read_text())
+        except Exception as exc:
+            sys.stderr.write(f"[emit_static_api] warning: failed to parse previous index.json: {exc}\n")
+            prev_full = {}
+    if prev_full:
+        for prev_item in get_items(prev_full):
+            prev_slug = item_slug(prev_item)
+            prev_by_slug[prev_slug] = prev_item
+
     # 1) Full dataset passthrough
     dst_index = copy_index()
     data_full = json.loads(dst_index.read_text())
@@ -188,6 +203,17 @@ def main():
 
     # 3) Aggregate stats (using normalized, expanded versions)
     items = get_items(data_full)
+
+    # Determine change state for each item vs previous index
+    change_map: Dict[str, str] = {}
+    if prev_by_slug:
+        for it in items:
+            slug = item_slug(it)
+            prev_it = prev_by_slug.get(slug)
+            if prev_it is None:
+                change_map[slug] = "new"
+            elif prev_it != it:
+                change_map[slug] = "updated"
 
     byType = {
         "plugin": len(plugins),
@@ -204,6 +230,7 @@ def main():
         versions = item_versions(it)            # normalized to canonical list
         creators = item_creators(it)
         slug = item_slug(it)
+        change_state = change_map.get(slug, "")
 
         for v in versions:
             versions_present.add(v)
@@ -211,7 +238,7 @@ def main():
         for c in creators:
             creators_count[c] = creators_count.get(c, 0) + 1
 
-        enriched.append({**it, "_slug": slug, "_versions": versions, "_creators": creators})
+        enriched.append({**it, "_slug": slug, "_versions": versions, "_creators": creators, "_change": change_state})
 
     # 4) stats.json
     stats = {
@@ -235,6 +262,9 @@ def main():
 
     # 7) Per-item docs + expose normalized fields to make consumption easier
     search_index: List[Dict[str, Any]] = []
+    new_items_docs: List[Dict[str, Any]] = []
+    recent_items_docs: List[Dict[str, Any]] = []
+
     for it in enriched:
         slug = it["_slug"]
         doc = {k: v for k, v in it.items() if not k.startswith("_")}  # preserve original shape
@@ -249,6 +279,12 @@ def main():
             doc["repo_url"] = repo_url
         if it["_creators"]:
             doc["creator_slug"] = it["_creators"][0].lower()
+
+        change_state = it.get("_change") or ""
+        if change_state == "new":
+            new_items_docs.append(doc)
+        elif change_state == "updated":
+            recent_items_docs.append(doc)
 
         # write per-item
         item_path = API / "items" / f"{slugify(slug)}.json"
@@ -290,7 +326,11 @@ def main():
     # 10) search-index.json (compact for client-side search)
     write_json(API / "search-index.json", search_index)
 
-    # 11) manifest.json (sizes + sha256)
+    # 11) new/recent activity endpoints
+    write_json(API / "new.json", new_items_docs)
+    write_json(API / "recent.json", recent_items_docs)
+
+    # 12) manifest.json (sizes + sha256)
     manifest_entries = []
     for p in WRITTEN:
         # Only include files under API dir
