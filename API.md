@@ -11,7 +11,7 @@ It is deployed via GitHub Pages at:
 https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/
 ```
 
-> [!NOTE]  
+> **Note**  
 > Endpoints are **static**. They update only when the repo is updated.  
 
 ---
@@ -30,51 +30,53 @@ https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/
 
 ---
 
-### Metadata
+## Metadata
 - **[`stats.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/stats.json)**  
   Aggregate counts by type, Minecraft version, and creator.
 
 - **[`versions.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/versions.json)**  
-  List of all supported Minecraft versions.  
-  - Includes **unique + sorted** versions.  
-  - Expands ranges (e.g., `"1.20.1-1.21.4"`) into **all discrete versions**:  
-    `1.20.1, 1.20.2, 1.20.4, 1.20.6, 1.21, 1.21.1, 1.21.2, 1.21.3, 1.21.4`.
+  List of all supported Minecraft versions.
 
 - **[`creators.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/creators.json)**  
   List of all creators with plugin/theme counts.
 
 - **[`meta.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/meta.json)**  
-  Metadata about the dataset (generation timestamp, item counts, source commit).
+  Metadata about generation time + counts.
 
 - **[`manifest.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/manifest.json)**  
-  Integrity manifest: SHA256 + file size for all API files.
+  SHA256 & size for all API files.
 
 - **[`search-index.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/search-index.json)**  
-  Compact index for search (name, slug, creator, tags, versions).
+  Compact search index.
 
 ---
 
-> [!TIP]  
-> Slugs (`/items/`, `/by-creator/`, `/by-version/`) are **lowercased** and URL-safe.  
+## Activity (New & Recently Updated)
 
-### Per-item
+These files rely on the YAML fields `added_at` and `updated_at`:
+
+- **[`new.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/new.json)**  
+  Recently added items (sorted by newest `added_at`).
+
+- **[`recent.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/recent.json)**  
+  Recently updated items (sorted by newest `updated_at` or `added_at`).
+
+---
+
+## Per‑Item
 - **`/items/{owner}/{repo}.json`**  
-  One file per plugin/theme, using the GitHub repo slug.  
   Example:  
   [`items/kybe236/rusher-silent-close.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/items/kybe236/rusher-silent-close.json)
 
 ---
 
-### Buckets (Filters)
+## Buckets (Filtered Views)
+
 - **`/by-version/{mc_version}.json`**  
-  All plugins/themes supporting that exact Minecraft version.  
-  - Works with **discrete versions only**.  
-  - Ranges from source data are automatically expanded.  
   Example:  
   [`by-version/1.21.4.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/by-version/1.21.4.json)
 
 - **`/by-creator/{creator}.json`**  
-  All plugins/themes by a given creator (lowercased slug).  
   Example:  
   [`by-creator/tillay.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/by-creator/tillay.json)
 
@@ -100,13 +102,10 @@ curl -s https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/stats.json
 ---
 
 ## Showcase
-  
-Here’s a live example:
-
-- **[RusherSearch](https://garlicrot.github.io/RusherSearch/)** ([repo](https://github.com/GarlicRot/RusherSearch))  
-  A simple static search frontend that consumes the API to provide instant plugin & theme lookup with filtering, creator avatars, and version tags.
+- **[RusherSearch](https://garlicrot.github.io/RusherSearch/)**  
+  Instant search UI consuming the API.
 
 ---
 
-> [!IMPORTANT]  
-> This is an **unstable v1**. Shapes may evolve slightly as we improve consistency.
+> **Important:**  
+> This is an early **v1**. API shapes may slightly evolve.
