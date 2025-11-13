@@ -35,6 +35,12 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 - **Cannot be reloaded** using `*reload`.
 - Must be placed in the `.minecraft/rusherhack/plugins/` folder before launching the game.
 
+## Recently Added Plugins
+
+<!--- Recently Added Plugins Start -->
+
+<!--- Recently Added Plugins End -->
+
 ## Badge Info
 
 > [!TIP]
