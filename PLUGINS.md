@@ -38,7 +38,25 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraft�
 ## Recently Added Plugins
 
 <!--- Recently Added Plugins Start -->
+> These are the six most recently added plugins (based on `added_at`).
 
+1. **[RusherHack Speedometer](https://github.com/tillay-rh-plugins/rusherhack-speedometer)** – Adds customizable speed HUD elements including a speed readout with unit conversions (e.g., miles/hour, bananas/second, lightyears/year) and a Mach meter displaying speed relative to the speed of sound.
+   `MC: 1.21.4` · by [tillay](https://github.com/tillay) · added `2025-11-10`
+
+2. **[Stopwatch](https://github.com/icaema/rusherhacks-stopwatch)** – Stopwatch HUD with lap support and a control module; can auto-start on join and optionally hide when zero.
+   `MC: 1.21.4` · by [icaema](https://github.com/icaema) · added `2025-11-08`
+
+3. **[AutoMend](https://github.com/icaema/auto-mend)** – Automatically cycles damaged Mending items to repair with XP - swaps items into offhand or equips elytra in chest, can limit to elytras only, temporarily disables AutoTotem/AutoArmor while mending and restores them, and auto-disables when finished.
+   `MC: 1.21.4` · by [icaema](https://github.com/icaema) · added `2025-11-06`
+
+4. **[AutoFirework](https://github.com/tillay-rh-plugins/AutoFirework)** – Automatically uses fireworks to redeploy Elytra flight when speed drops below a specified value.
+   `MC: 1.21.4` · by [tillay](https://github.com/tillay) · added `2025-10-13`
+
+5. **[icaemas-tweaks](https://github.com/icaema/icaemas-tweaks)** – Adds keybinds for quick equipment and inventory management. • Toggle between Elytra and chestplate, with auto-deploy when falling • Swap hotbar slots with the row above in the inventory
+   `MC: 1.21.4` · by [icaema](https://github.com/icaema) · added `2025-10-07`
+
+6. **[hw-efly-tweaks](https://github.com/KybesRusherhackPlugins/hw-efly-tweaks)** – Enhances ElytraFly automation by intelligently managing wall-hugging movement. Automatically adjusts flight direction, detects obstacles, and maintains elevation using Baritone-assisted pathing and visual block rendering.
+   `MC: 1.21.4` · by [kybe236](https://github.com/kybe236) · added `2025-10-05`
 <!--- Recently Added Plugins End -->
 
 ## Badge Info
