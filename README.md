@@ -173,22 +173,56 @@ A **public JSON API** is available via GitHub Pages:
 https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/
 ```
 
+
 It is **read-only**, auto-updated on `main`, and sourced from  
 [`plugins-and-themes.json`](./generated/json/plugins-and-themes.json).
 
-### Key Endpoints
-- **[`index.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/index.json)** – full dataset  
-- **[`plugins.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/plugins.json)** / **[`themes.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/themes.json)** – split views  
-- **[`stats.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/stats.json)** – aggregate counts  
-- **[`versions.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/versions.json)** – supported Minecraft versions  
-- **[`creators.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/creators.json)** – all creators  
+---
+
+### Core dataset
+- **[`index.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/index.json)** – full dataset (plugins + themes)  
+- **[`plugins.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/plugins.json)** – plugins only  
+- **[`themes.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/themes.json)** – themes only  
+
+---
+
+### Metadata & helpers
+- **[`stats.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/stats.json)** – aggregate counts by type, version, creator  
+- **[`versions.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/versions.json)** – supported Minecraft versions (canonical list)  
+- **[`creators.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/creators.json)** – all creators with item counts  
+- **[`meta.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/meta.json)** – generation timestamp + counts + version info  
+- **[`manifest.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/manifest.json)** – file sizes + SHA256 hashes  
+- **[`search-index.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/search-index.json)** – compact index for client-side search  
+
+---
+
+### Activity (new / recently updated)
+These use the `added_at` / `updated_at` fields in the dataset:
+
+- **[`new.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/new.json)**  
+  All plugins and themes sorted by **most recently added** (newest `added_at` first).
+
+- **[`recent.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/recent.json)**  
+  All plugins and themes sorted by **most recently updated** (newest `updated_at` / `added_at` first).
+
+---
+
+### Per-item & buckets
 - **`/items/{owner}/{repo}.json`** – per-item info  
+  Example:  
+  [`items/kybe236/rusher-silent-close.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/items/kybe236/rusher-silent-close.json)
+
 - **`/by-version/{mc_version}.json`** – filter by MC version  
-- **`/by-creator/{creator}.json`** – filter by creator
+  Example:  
+  [`by-version/1.21.4.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/by-version/1.21.4.json)
 
+- **`/by-creator/{creator}.json`** – filter by creator slug  
+  Example:  
+  [`by-creator/tillay.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/by-creator/tillay.json)
 
-See [API.md](./API.md) for full reference.
+See [API.md](./API.md) for full reference and usage examples.
 </details>
+
 
 ## Reporting Issues
 
