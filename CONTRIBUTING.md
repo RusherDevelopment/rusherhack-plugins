@@ -45,6 +45,8 @@ If something is wrong, the job will fail with a helpful error message.
 - `is_core`: Boolean (`true` if a core plugin)  
 - `mc_versions`: Supported Minecraft versions (range or list)  
 - `jar_url`: Direct download link to the release jar  
+- `added_at`: ISO date string when the plugin was added to the registry  
+- `updated_at`: ISO date string of the latest GitHub update (auto-filled by script)
 
 ---
 
@@ -69,3 +71,5 @@ If something is wrong, the job will fail with a helpful error message.
   is_core: false
   mc_versions: 1.20.1-1.21.4
   jar_url: https://github.com/rfresh2/2b2t.vc-rusherhack/releases/download/1.12/2b2t.vc-rusherhack-1.12.jar
+  added_at: 2025-02-18
+  updated_at: 2025-02-18
