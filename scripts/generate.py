@@ -19,6 +19,8 @@
 import yaml
 import re
 import os
+from datetime import datetime
+from typing import Any, Dict, List
 
 # -----------------------
 # Load YAML data
@@ -26,6 +28,115 @@ import os
 
 with open('data/plugins-and-themes.yml', 'r') as f:
     data = yaml.safe_load(f)
+
+# -----------------------
+# Helpers
+# -----------------------
+
+def _parse_date_safe(s: str | None) -> datetime:
+    """
+    Parse ISO-ish date strings for added_at/updated_at.
+    Falls back to datetime.min if missing/invalid so items without dates
+    naturally sink to the bottom when sorting by "most recent".
+    """
+    if not s or not isinstance(s, str):
+        return datetime.min
+    s = s.strip()
+    if not s:
+        return datetime.min
+
+    # Try a few common formats first
+    for fmt in (
+        "%Y-%m-%d",
+        "%Y-%m-%dT%H:%M:%S%z",
+        "%Y-%m-%dT%H:%M:%S",
+        "%Y-%m-%dT%H:%M:%S.%fZ",
+    ):
+        try:
+            return datetime.strptime(s, fmt)
+        except ValueError:
+            continue
+
+    # Fallback: fromisoformat for other variants
+    try:
+        return datetime.fromisoformat(s)
+    except Exception:
+        return datetime.min
+
+def _recent_plugins(entries: List[Dict[str, Any]], limit: int = 6) -> List[Dict[str, Any]]:
+    """
+    Return up to `limit` most recently added plugins by `added_at` (desc).
+    If `added_at` is missing/invalid, that entry will sort as very old.
+    """
+    plugins_only = [e for e in entries if isinstance(e, dict)]
+    plugins_only.sort(
+        key=lambda e: _parse_date_safe(e.get("added_at")),
+        reverse=True,
+    )
+    return plugins_only[:limit]
+
+def _escape_inline(text: Any) -> str:
+    """
+    Light inline escaping/sanitizing for markdown text.
+    Not for tables – just make sure we have a clean string.
+    """
+    if not isinstance(text, str):
+        return ""
+    return text.strip()
+
+def generate_recent_plugins_md(entries: List[Dict[str, Any]]) -> str:
+    """
+    Build the 'Recently Added Plugins' section content for PLUGINS.md.
+
+    Injected between:
+      <!--- Recently Added Plugins Start -->
+      <!--- Recently Added Plugins End -->
+    """
+    if not entries:
+        return "No recently added plugins found.\n"
+
+    lines: List[str] = []
+    lines.append("> These are the six most recently added plugins (based on `added_at`).")
+    lines.append("")
+
+    for idx, entry in enumerate(entries, start=1):
+        name = _escape_inline(entry.get("name", "Unknown"))
+        repo = entry.get("repo")
+        desc = _escape_inline(entry.get("description", ""))
+        mc = _escape_inline(entry.get("mc_versions", ""))
+
+        creator_obj = entry.get("creator") or {}
+        creator_name = _escape_inline(creator_obj.get("name", "Unknown"))
+        creator_url = creator_obj.get("url")
+        added_at = _escape_inline(entry.get("added_at", ""))
+
+        if repo:
+            name_md = f"[{name}](https://github.com/{repo})"
+        else:
+            name_md = name
+
+        if creator_url:
+            creator_md = f"[{creator_name}]({creator_url})"
+        else:
+            creator_md = creator_name
+
+        meta_bits = []
+        if mc:
+            meta_bits.append(f"`MC: {mc}`")
+        if creator_md:
+            meta_bits.append(f"by {creator_md}")
+        if added_at:
+            meta_bits.append(f"added `{added_at}`")
+
+        meta_line = " · ".join(meta_bits) if meta_bits else ""
+        desc_part = f" – {desc}" if desc else ""
+
+        lines.append(f"{idx}. **{name_md}**{desc_part}")
+        if meta_line:
+            lines.append(f"   {meta_line}")
+        lines.append("")  # blank line between items
+
+    return "\n".join(lines).rstrip() + "\n"
 
 # -----------------------
 # Markdown generator for each plugin/theme entry
@@ -122,6 +233,17 @@ plugins_content = re.sub(
 plugins_content = re.sub(
     r'<!--- Plugins Start -->.*<!--- Plugins End -->',
     f'<!--- Plugins Start -->\n{plugin_entries}<!--- Plugins End -->',
+    plugins_content,
+    flags=re.DOTALL
+)
+
+# Inject "Recently Added Plugins" section (top 6 by added_at)
+recent_plugins = _recent_plugins(data.get("plugins", []), limit=6)
+recent_md_block = generate_recent_plugins_md(recent_plugins)
+
+plugins_content = re.sub(
+    r'<!--- Recently Added Plugins Start -->.*<!--- Recently Added Plugins End -->',
+    f'<!--- Recently Added Plugins Start -->\n{recent_md_block}<!--- Recently Added Plugins End -->',
     plugins_content,
     flags=re.DOTALL
 )
