@@ -171,25 +171,28 @@ def sha256_file(path: pathlib.Path) -> str:
             h.update(chunk)
     return h.hexdigest()
 
+def _parse_iso_date(val: Any) -> datetime | None:
+    """
+    Accepts 'YYYY-MM-DD' or ISO datetime; returns datetime or None.
+    """
+    if not val:
+        return None
+    s = str(val).strip()
+    try:
+        return datetime.fromisoformat(s)
+    except ValueError:
+        # Support "2024-10-23T12:34:56Z" style if it ever shows up
+        if s.endswith("Z"):
+            try:
+                return datetime.fromisoformat(s[:-1] + "+00:00")
+            except ValueError:
+                return None
+        return None
+
 # ========================= main =========================
 
 def main():
     ensure_src()
-
-    # Load previous index (for new/recent detection) BEFORE we overwrite it
-    prev_full: Dict[str, Any] = {}
-    prev_by_slug: Dict[str, Dict[str, Any]] = {}
-    prev_index_path = API / "index.json"
-    if prev_index_path.exists():
-        try:
-            prev_full = json.loads(prev_index_path.read_text())
-        except Exception as exc:
-            sys.stderr.write(f"[emit_static_api] warning: failed to parse previous index.json: {exc}\n")
-            prev_full = {}
-    if prev_full:
-        for prev_item in get_items(prev_full):
-            prev_slug = item_slug(prev_item)
-            prev_by_slug[prev_slug] = prev_item
 
     # 1) Full dataset passthrough
     dst_index = copy_index()
@@ -203,17 +206,6 @@ def main():
 
     # 3) Aggregate stats (using normalized, expanded versions)
     items = get_items(data_full)
-
-    # Determine change state for each item vs previous index
-    change_map: Dict[str, str] = {}
-    if prev_by_slug:
-        for it in items:
-            slug = item_slug(it)
-            prev_it = prev_by_slug.get(slug)
-            if prev_it is None:
-                change_map[slug] = "new"
-            elif prev_it != it:
-                change_map[slug] = "updated"
 
     byType = {
         "plugin": len(plugins),
@@ -230,7 +222,6 @@ def main():
         versions = item_versions(it)            # normalized to canonical list
         creators = item_creators(it)
         slug = item_slug(it)
-        change_state = change_map.get(slug, "")
 
         for v in versions:
             versions_present.add(v)
@@ -238,7 +229,7 @@ def main():
         for c in creators:
             creators_count[c] = creators_count.get(c, 0) + 1
 
-        enriched.append({**it, "_slug": slug, "_versions": versions, "_creators": creators, "_change": change_state})
+        enriched.append({**it, "_slug": slug, "_versions": versions, "_creators": creators})
 
     # 4) stats.json
     stats = {
@@ -262,8 +253,7 @@ def main():
 
     # 7) Per-item docs + expose normalized fields to make consumption easier
     search_index: List[Dict[str, Any]] = []
-    new_items_docs: List[Dict[str, Any]] = []
-    recent_items_docs: List[Dict[str, Any]] = []
+    all_docs: List[Dict[str, Any]] = []
 
     for it in enriched:
         slug = it["_slug"]
@@ -280,11 +270,7 @@ def main():
         if it["_creators"]:
             doc["creator_slug"] = it["_creators"][0].lower()
 
-        change_state = it.get("_change") or ""
-        if change_state == "new":
-            new_items_docs.append(doc)
-        elif change_state == "updated":
-            recent_items_docs.append(doc)
+        all_docs.append(doc)
 
         # write per-item
         item_path = API / "items" / f"{slugify(slug)}.json"
@@ -326,9 +312,29 @@ def main():
     # 10) search-index.json (compact for client-side search)
     write_json(API / "search-index.json", search_index)
 
-    # 11) new/recent activity endpoints
-    write_json(API / "new.json", new_items_docs)
-    write_json(API / "recent.json", recent_items_docs)
+    # 11) new.json / recent.json based on added_at / updated_at
+    new_candidates: List[Tuple[datetime, Dict[str, Any]]] = []
+    recent_candidates: List[Tuple[datetime, Dict[str, Any]]] = []
+
+    for doc in all_docs:
+        added_dt = _parse_iso_date(doc.get("added_at"))
+        updated_dt = _parse_iso_date(doc.get("updated_at"))
+
+        if added_dt is not None:
+            new_candidates.append((added_dt, doc))
+
+        key_dt = updated_dt or added_dt
+        if key_dt is not None:
+            recent_candidates.append((key_dt, doc))
+
+    new_candidates.sort(key=lambda pair: pair[0], reverse=True)
+    recent_candidates.sort(key=lambda pair: pair[0], reverse=True)
+
+    new_docs = [doc for _, doc in new_candidates]
+    recent_docs = [doc for _, doc in recent_candidates]
+
+    write_json(API / "new.json", new_docs)
+    write_json(API / "recent.json", recent_docs)
 
     # 12) manifest.json (sizes + sha256)
     manifest_entries = []
