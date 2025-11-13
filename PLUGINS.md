@@ -41,48 +41,69 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraft�
 > These are the six most recently added plugins (based on `added_at`).
 
 <table>
-  <tr>
-    <td valign="top" width="50%">
-      <img src="https://github.com/tillay.png?size=20" alt="tillay avatar" width="120" height="120"><br>
-      <a href="https://github.com/tillay-rh-plugins/rusherhack-speedometer"><strong>RusherHack Speedometer</strong></a> <code>plugin</code><br>
-      <code>MC: 1.21.4</code> · by <a href="https://github.com/tillay"><strong>tillay</strong></a> · added <code>2025-11-10</code><br>
-      <img src="https://img.shields.io/github/stars/tillay-rh-plugins/rusherhack-speedometer?style=flat&amp;label=stars"> <img src="https://img.shields.io/github/downloads/tillay-rh-plugins/rusherhack-speedometer/total?style=flat&amp;label=downloads"> <img src="https://img.shields.io/github/release-date/tillay-rh-plugins/rusherhack-speedometer?label=updated">
-    </td>
-    <td valign="top" width="50%">
-      <img src="https://github.com/icaema.png?size=20" alt="icaema avatar" width="120" height="120"><br>
-      <a href="https://github.com/icaema/rusherhacks-stopwatch"><strong>Stopwatch</strong></a> <code>plugin</code><br>
-      <code>MC: 1.21.4</code> · by <a href="https://github.com/icaema"><strong>icaema</strong></a> · added <code>2025-11-08</code><br>
-      <img src="https://img.shields.io/github/stars/icaema/rusherhacks-stopwatch?style=flat&amp;label=stars"> <img src="https://img.shields.io/github/downloads/icaema/rusherhacks-stopwatch/total?style=flat&amp;label=downloads"> <img src="https://img.shields.io/github/release-date/icaema/rusherhacks-stopwatch?label=updated">
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" width="50%">
-      <img src="https://github.com/icaema.png?size=20" alt="icaema avatar" width="120" height="120"><br>
-      <a href="https://github.com/icaema/auto-mend"><strong>AutoMend</strong></a> <code>plugin</code><br>
-      <code>MC: 1.21.4</code> · by <a href="https://github.com/icaema"><strong>icaema</strong></a> · added <code>2025-11-06</code><br>
-      <img src="https://img.shields.io/github/stars/icaema/auto-mend?style=flat&amp;label=stars"> <img src="https://img.shields.io/github/downloads/icaema/auto-mend/total?style=flat&amp;label=downloads"> <img src="https://img.shields.io/github/release-date/icaema/auto-mend?label=updated">
-    </td>
-    <td valign="top" width="50%">
-      <img src="https://github.com/tillay.png?size=20" alt="tillay avatar" width="120" height="120"><br>
-      <a href="https://github.com/tillay-rh-plugins/AutoFirework"><strong>AutoFirework</strong></a> <code>plugin</code><br>
-      <code>MC: 1.21.4</code> · by <a href="https://github.com/tillay"><strong>tillay</strong></a> · added <code>2025-10-13</code><br>
-      <img src="https://img.shields.io/github/stars/tillay-rh-plugins/AutoFirework?style=flat&amp;label=stars"> <img src="https://img.shields.io/github/downloads/tillay-rh-plugins/AutoFirework/total?style=flat&amp;label=downloads"> <img src="https://img.shields.io/github/release-date/tillay-rh-plugins/AutoFirework?label=updated">
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" width="50%">
-      <img src="https://github.com/icaema.png?size=20" alt="icaema avatar" width="120" height="120"><br>
-      <a href="https://github.com/icaema/icaemas-tweaks"><strong>icaemas-tweaks</strong></a> <code>plugin</code><br>
-      <code>MC: 1.21.4</code> · by <a href="https://github.com/icaema"><strong>icaema</strong></a> · added <code>2025-10-07</code><br>
-      <img src="https://img.shields.io/github/stars/icaema/icaemas-tweaks?style=flat&amp;label=stars"> <img src="https://img.shields.io/github/downloads/icaema/icaemas-tweaks/total?style=flat&amp;label=downloads"> <img src="https://img.shields.io/github/release-date/icaema/icaemas-tweaks?label=updated">
-    </td>
-    <td valign="top" width="50%">
-      <img src="https://github.com/kybe236.png?size=20" alt="kybe236 avatar" width="120" height="120"><br>
-      <a href="https://github.com/KybesRusherhackPlugins/hw-efly-tweaks"><strong>hw-efly-tweaks</strong></a> <code>plugin</code><br>
-      <code>MC: 1.21.4</code> · by <a href="https://github.com/kybe236"><strong>kybe236</strong></a> · added <code>2025-10-05</code><br>
-      <img src="https://img.shields.io/github/stars/KybesRusherhackPlugins/hw-efly-tweaks?style=flat&amp;label=stars"> <img src="https://img.shields.io/github/downloads/KybesRusherhackPlugins/hw-efly-tweaks/total?style=flat&amp;label=downloads"> <img src="https://img.shields.io/github/release-date/KybesRusherhackPlugins/hw-efly-tweaks?label=updated">
-    </td>
-  </tr>
+<tr>
+<td align="left" valign="top" width="50%">
+  <a href="https://github.com/tillay-rh-plugins/rusherhack-speedometer"><img src="https://avatars.githubusercontent.com/tillay-rh-plugins?s=400" alt="RusherHack Speedometer" width="100" height="100" style="border-radius:12px;"></a>
+  <div><strong><a href="https://github.com/tillay-rh-plugins/rusherhack-speedometer">RusherHack Speedometer</a></strong>&nbsp;<code>plugin</code></div>
+  <div style="margin:4px 0 6px 0;">Adds customizable speed HUD elements including a speed readout with unit conversions (e.g., miles/hour, bananas/second, lightyears/year) and a Mach meter displaying speed relative to the speed of sound.</div>
+  <div>
+    <img alt="stars" src="https://img.shields.io/github/stars/tillay-rh-plugins/rusherhack-speedometer?style=flat">
+    &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/tillay-rh-plugins/rusherhack-speedometer/total?style=flat">
+    &nbsp;<img alt="added" src="https://img.shields.io/date/1762732800?label=added&style=flat">
+  </div>
+</td>
+<td align="left" valign="top" width="50%">
+  <a href="https://github.com/icaema/rusherhacks-stopwatch"><img src="https://avatars.githubusercontent.com/icaema?s=400" alt="Stopwatch" width="100" height="100" style="border-radius:12px;"></a>
+  <div><strong><a href="https://github.com/icaema/rusherhacks-stopwatch">Stopwatch</a></strong>&nbsp;<code>plugin</code></div>
+  <div style="margin:4px 0 6px 0;">Stopwatch HUD with lap support and a control module; can auto-start on join and optionally hide when zero.</div>
+  <div>
+    <img alt="stars" src="https://img.shields.io/github/stars/icaema/rusherhacks-stopwatch?style=flat">
+    &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/icaema/rusherhacks-stopwatch/total?style=flat">
+    &nbsp;<img alt="added" src="https://img.shields.io/date/1762560000?label=added&style=flat">
+  </div>
+</td></tr>
+<tr>
+<td align="left" valign="top" width="50%">
+  <a href="https://github.com/icaema/auto-mend"><img src="https://avatars.githubusercontent.com/icaema?s=400" alt="AutoMend" width="100" height="100" style="border-radius:12px;"></a>
+  <div><strong><a href="https://github.com/icaema/auto-mend">AutoMend</a></strong>&nbsp;<code>plugin</code></div>
+  <div style="margin:4px 0 6px 0;">Automatically cycles damaged Mending items to repair with XP - swaps items into offhand or equips elytra in chest, can limit to elytras only, temporarily disables AutoTotem/AutoArmor while mending and restores them, and auto-disables when finished.</div>
+  <div>
+    <img alt="stars" src="https://img.shields.io/github/stars/icaema/auto-mend?style=flat">
+    &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/icaema/auto-mend/total?style=flat">
+    &nbsp;<img alt="added" src="https://img.shields.io/date/1762387200?label=added&style=flat">
+  </div>
+</td>
+<td align="left" valign="top" width="50%">
+  <a href="https://github.com/tillay-rh-plugins/AutoFirework"><img src="https://avatars.githubusercontent.com/tillay-rh-plugins?s=400" alt="AutoFirework" width="100" height="100" style="border-radius:12px;"></a>
+  <div><strong><a href="https://github.com/tillay-rh-plugins/AutoFirework">AutoFirework</a></strong>&nbsp;<code>plugin</code></div>
+  <div style="margin:4px 0 6px 0;">Automatically uses fireworks to redeploy Elytra flight when speed drops below a specified value.</div>
+  <div>
+    <img alt="stars" src="https://img.shields.io/github/stars/tillay-rh-plugins/AutoFirework?style=flat">
+    &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/tillay-rh-plugins/AutoFirework/total?style=flat">
+    &nbsp;<img alt="added" src="https://img.shields.io/date/1760313600?label=added&style=flat">
+  </div>
+</td></tr>
+<tr>
+<td align="left" valign="top" width="50%">
+  <a href="https://github.com/icaema/icaemas-tweaks"><img src="https://avatars.githubusercontent.com/icaema?s=400" alt="icaemas-tweaks" width="100" height="100" style="border-radius:12px;"></a>
+  <div><strong><a href="https://github.com/icaema/icaemas-tweaks">icaemas-tweaks</a></strong>&nbsp;<code>plugin</code></div>
+  <div style="margin:4px 0 6px 0;">Adds keybinds for quick equipment and inventory management. • Toggle between Elytra and chestplate, with auto-deploy when falling • Swap hotbar slots with the row above in the inventory</div>
+  <div>
+    <img alt="stars" src="https://img.shields.io/github/stars/icaema/icaemas-tweaks?style=flat">
+    &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/icaema/icaemas-tweaks/total?style=flat">
+    &nbsp;<img alt="added" src="https://img.shields.io/date/1759795200?label=added&style=flat">
+  </div>
+</td>
+<td align="left" valign="top" width="50%">
+  <a href="https://github.com/KybesRusherhackPlugins/hw-efly-tweaks"><img src="https://avatars.githubusercontent.com/KybesRusherhackPlugins?s=400" alt="hw-efly-tweaks" width="100" height="100" style="border-radius:12px;"></a>
+  <div><strong><a href="https://github.com/KybesRusherhackPlugins/hw-efly-tweaks">hw-efly-tweaks</a></strong>&nbsp;<code>plugin</code></div>
+  <div style="margin:4px 0 6px 0;">Enhances ElytraFly automation by intelligently managing wall-hugging movement. Automatically adjusts flight direction, detects obstacles, and maintains elevation using Baritone-assisted pathing and visual block rendering.</div>
+  <div>
+    <img alt="stars" src="https://img.shields.io/github/stars/KybesRusherhackPlugins/hw-efly-tweaks?style=flat">
+    &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/KybesRusherhackPlugins/hw-efly-tweaks/total?style=flat">
+    &nbsp;<img alt="added" src="https://img.shields.io/date/1759622400?label=added&style=flat">
+  </div>
+</td></tr>
 </table>
 <!--- Recently Added Plugins End -->
 
