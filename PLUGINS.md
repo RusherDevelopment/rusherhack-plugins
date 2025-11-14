@@ -1168,7 +1168,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [rusherhack-instantloader](https://github.com/tillay/rusherhack-InstantLoader) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/tillay/rusherhack-InstantLoader?label=Latest%20Release&color=green)](https://github.com/tillay/rusherhack-InstantLoader/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tillay/rusherhack-InstantLoader/total)](https://github.com/tillay-rh-plugins/rusherhack-InstantLoader/releases/download/release/loader-plugin-1.0.0.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/tillay/rusherhack-InstantLoader?label=Latest%20Release&color=green)](https://github.com/tillay/rusherhack-InstantLoader/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tillay/rusherhack-InstantLoader/total)](https://github.com/tillay-rh-plugins/rusherhack-InstantLoader/releases/download/v1.0.0-129ad0/loader-plugin-1.0.0.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%201--1%2021%204-blueviolet)<br>
  **Creator**: <img src="https://github.com/tillay.png?size=20" width="20" height="20"> [tillay](https://github.com/tillay)<br>
  Automatically interacts with a targeted trapdoor as soon as a specified player logs in, enabling instant pearl loading.
