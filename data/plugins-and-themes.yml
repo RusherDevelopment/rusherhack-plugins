@@ -1545,7 +1545,7 @@ plugins:
       name: tillay
       url: https://github.com/tillay
       avatar: https://github.com/tillay.png?size=20
-    latest_release_tag: release
+    latest_release_tag: v1.0.0-f668a0
     screenshots:
       - url: https://img.youtube.com/vi/YCIigjl4oRk/hqdefault.jpg
         alt: InstantLoader demo video
