@@ -1552,7 +1552,7 @@ plugins:
         width: 550
     is_core: false
     mc_versions: 1.21.1-1.21.4
-    jar_url: https://github.com/tillay-rh-plugins/rusherhack-InstantLoader/releases/download/release/loader-plugin-1.0.0.jar
+    jar_url: https://github.com/tillay-rh-plugins/rusherhack-InstantLoader/releases/download/v1.0.0-129ad0/loader-plugin-1.0.0.jar
     added_at: '2025-08-12'
     updated_at: '2025-08-12'
   - name: rusher-waifu-integration
