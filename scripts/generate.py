@@ -451,4 +451,8 @@ if readme_original != readme_updated:
         f"(plugins_badge={plugins_repl}, themes_badge={themes_repl})"
     )
 else:
-    print("[generate] README.md unchanged (badge patterns may not have matched).")
+    # More precise logging:
+    if plugins_repl == 0 and themes_repl == 0:
+        print("[generate] README.md unchanged (badge patterns NOT found).")
+    else:
+        print("[generate] README.md unchanged (badge counts already up-to-date).")
