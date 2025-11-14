@@ -418,33 +418,37 @@ print(
 with open("README.md", "r", encoding="utf-8") as f:
     readme_original = f.read()
 
-readme_updated, readme_plugins_repl = re.subn(
-    r"\[!\[Plugins\]\(.*?shields\.io/badge/Plugins-\d+-green.*?\)\]\([^)]+\)",
+# Match the exact badge formats you use in README:
+# [![Plugins](https://img.shields.io/badge/Plugins-113-green)](./PLUGINS.md)
+# [![Themes](https://img.shields.io/badge/Themes-2-green)](./THEMES.md)
+
+plugins_pattern = (
+    r"\[!\[Plugins\]\(https://img\.shields\.io/badge/Plugins-\d+-green\)\]\(./PLUGINS\.md\)"
+)
+themes_pattern = (
+    r"\[!\[Themes\]\(https://img\.shields\.io/badge/Themes-\d+-green\)\]\(./THEMES\.md\)"
+)
+
+readme_updated, plugins_repl = re.subn(
+    plugins_pattern,
     f"[![Plugins](https://img.shields.io/badge/Plugins-{plugin_count}-green)](./PLUGINS.md)",
     readme_original,
     count=1,
 )
 
-if readme_plugins_repl == 0:
-    print("[generate] NOTE: Plugins badge pattern not found in README.md (no change).")
-
-readme_updated, readme_themes_repl = re.subn(
-    r"\[!\[Themes\]\(.*?shields\.io/badge/Themes-\d+-green.*?\)\]\([^)]+\)",
+readme_updated, themes_repl = re.subn(
+    themes_pattern,
     f"[![Themes](https://img.shields.io/badge/Themes-{theme_count}-green)](./THEMES.md)",
     readme_updated,
     count=1,
 )
 
-if readme_themes_repl == 0:
-    print("[generate] NOTE: Themes badge pattern not found in README.md (no change).")
-
-# Only write if changes were made
 if readme_original != readme_updated:
     with open("README.md", "w", encoding="utf-8") as f:
         f.write(readme_updated)
     print(
         f"[generate] README.md updated "
-        f"(plugins_badge={readme_plugins_repl}, themes_badge={readme_themes_repl})"
+        f"(plugins_badge={plugins_repl}, themes_badge={themes_repl})"
     )
 else:
     print("[generate] README.md unchanged (badge patterns may not have matched).")
