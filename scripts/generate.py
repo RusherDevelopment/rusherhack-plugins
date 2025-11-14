@@ -26,7 +26,7 @@ from typing import Any, Dict, List
 # Load YAML data
 # -----------------------
 
-with open("data/plugins-and-themes.yml", "r") as f:
+with open("data/plugins-and-themes.yml", "r", encoding="utf-8") as f:
     data = yaml.safe_load(f)
 
 # -----------------------
@@ -97,7 +97,7 @@ def md_escape(s: Any) -> str:
     return s.replace("<", "&lt;").replace(">", "&gt;")
 
 
-# ---------- Avatar helpers (copied from Top 6 script) ----------
+# ---------- Avatar helpers (same logic as Top 6 script) ----------
 
 def _is_github_avatar(url: str) -> bool:
     if not url:
@@ -235,7 +235,7 @@ def generate_recent_plugins_md(entries: List[Dict[str, Any]]) -> str:
 # Markdown generator for each plugin/theme entry
 # -----------------------
 
-def generate_entry_md(entry, is_plugin=True, index=0):
+def generate_entry_md(entry, is_plugin: bool = True, index: int = 0) -> str:
     # Badge: repo release date (links to releases page)
     latest_release_badge = (
         f"[![Latest Release Date]"
@@ -304,102 +304,147 @@ def generate_entry_md(entry, is_plugin=True, index=0):
 # Count plugin and theme entries
 # -----------------------
 
-plugin_count = len(data.get("plugins", []))
-theme_count = len(data.get("themes", []))
+plugin_count = len(data.get("plugins", []) or [])
+theme_count = len(data.get("themes", []) or [])
 
 # -----------------------
 # Update PLUGINS.md
 # -----------------------
 
-with open("PLUGINS.md", "r") as f:
+with open("PLUGINS.md", "r", encoding="utf-8") as f:
     plugins_content = f.read()
 
 plugin_entries = "".join(
     generate_entry_md(p, is_plugin=True, index=i)
-    for i, p in enumerate(data.get("plugins", []))
+    for i, p in enumerate(data.get("plugins", []) or [])
 )
 
-# Update plugin badge count
-plugins_content = re.sub(
+# Update plugin badge count (in PLUGINS.md itself)
+plugins_content, badge_repl = re.subn(
     r"\[!\[Plugins\].*?\]\(#plugins-list\)",
     f"[![Plugins](https://img.shields.io/badge/Plugins-{plugin_count}-green)](#plugins-list)",
     plugins_content,
 )
+if badge_repl == 0:
+    print("[generate] NOTE: Plugins badge pattern not found in PLUGINS.md (badge count not updated).")
 
 # Inject plugin entries between comments
-plugins_content = re.sub(
-    r"<!--- Plugins Start -->.*<!--- Plugins End -->",
-    f"<!--- Plugins Start -->\n{plugin_entries}<!--- Plugins End -->",
+plugins_block_pattern = r"<!--- Plugins Start -->.*?<!--- Plugins End -->"
+plugins_replacement = f"<!--- Plugins Start -->\n{plugin_entries}<!--- Plugins End -->"
+
+plugins_content, plugins_block_repl = re.subn(
+    plugins_block_pattern,
+    plugins_replacement,
     plugins_content,
     flags=re.DOTALL,
 )
+if plugins_block_repl == 0:
+    print("[generate] WARNING: 'Plugins Start/End' markers not found – plugin list not injected.")
 
 # Inject "Recently Added Plugins" section (top 6 by added_at) as card grid
-recent_plugins = _recent_plugins(data.get("plugins", []), limit=6)
+recent_plugins = _recent_plugins(data.get("plugins", []) or [], limit=6)
 recent_md_block = generate_recent_plugins_md(recent_plugins)
 
-plugins_content = re.sub(
-    r"<!--- Recently Added Plugins Start -->.*<!--- Recently Added Plugins End -->",
-    f"<!--- Recently Added Plugins Start -->\n{recent_md_block}<!--- Recently Added Plugins End -->",
+recent_block_pattern = r"<!--- Recently Added Plugins Start -->.*?<!--- Recently Added Plugins End -->"
+recent_replacement = (
+    f"<!--- Recently Added Plugins Start -->\n"
+    f"{recent_md_block}"
+    f"<!--- Recently Added Plugins End -->"
+)
+
+plugins_content, recent_block_repl = re.subn(
+    recent_block_pattern,
+    recent_replacement,
     plugins_content,
     flags=re.DOTALL,
 )
+if recent_block_repl == 0:
+    print("[generate] WARNING: 'Recently Added Plugins Start/End' markers not found – cards not injected.")
 
-with open("PLUGINS.md", "w") as f:
+with open("PLUGINS.md", "w", encoding="utf-8") as f:
     f.write(plugins_content)
+
+print(
+    f"[generate] PLUGINS.md updated "
+    f"(badge={badge_repl}, plugins_block={plugins_block_repl}, recent_block={recent_block_repl})"
+)
 
 # -----------------------
 # Update THEMES.md
 # -----------------------
 
-with open("THEMES.md", "r") as f:
+with open("THEMES.md", "r", encoding="utf-8") as f:
     themes_content = f.read()
 
 theme_entries = "".join(
     generate_entry_md(t, is_plugin=False, index=i)
-    for i, t in enumerate(data.get("themes", []))
+    for i, t in enumerate(data.get("themes", []) or [])
 )
 
 # Update theme badge count
-themes_content = re.sub(
+themes_content, theme_badge_repl = re.subn(
     r"\[!\[Themes\].*?\]\(#themes-list\)",
     f"[![Themes](https://img.shields.io/badge/Themes-{theme_count}-green)](#themes-list)",
     themes_content,
 )
+if theme_badge_repl == 0:
+    print("[generate] NOTE: Themes badge pattern not found in THEMES.md (badge count not updated).")
 
 # Inject theme entries between comments
-themes_content = re.sub(
-    r"<!--- THEMES START -->.*<!--- THEMES END -->",
-    f"<!--- THEMES START -->\n{theme_entries}<!--- THEMES END -->",
+themes_block_pattern = r"<!--- THEMES START -->.*?<!--- THEMES END -->"
+themes_replacement = f"<!--- THEMES START -->\n{theme_entries}<!--- THEMES END -->"
+
+themes_content, themes_block_repl = re.subn(
+    themes_block_pattern,
+    themes_replacement,
     themes_content,
     flags=re.DOTALL,
 )
+if themes_block_repl == 0:
+    print("[generate] WARNING: 'THEMES START/END' markers not found – theme list not injected.")
 
-with open("THEMES.md", "w") as f:
+with open("THEMES.md", "w", encoding="utf-8") as f:
     f.write(themes_content)
+
+print(
+    f"[generate] THEMES.md updated "
+    f"(badge={theme_badge_repl}, themes_block={themes_block_repl})"
+)
 
 # -----------------------
 # Update badge counts in README.md
 # -----------------------
 
-with open("README.md", "r") as f:
+with open("README.md", "r", encoding="utf-8") as f:
     readme_original = f.read()
 
-readme_updated = re.sub(
+readme_updated, readme_plugins_repl = re.subn(
     r"\[!\[Plugins\]\(.*?shields\.io/badge/Plugins-\d+-green.*?\)\]\([^)]+\)",
     f"[![Plugins](https://img.shields.io/badge/Plugins-{plugin_count}-green)](./PLUGINS.md)",
     readme_original,
     count=1,
 )
 
-readme_updated = re.sub(
+if readme_plugins_repl == 0:
+    print("[generate] NOTE: Plugins badge pattern not found in README.md (no change).")
+
+readme_updated, readme_themes_repl = re.subn(
     r"\[!\[Themes\]\(.*?shields\.io/badge/Themes-\d+-green.*?\)\]\([^)]+\)",
     f"[![Themes](https://img.shields.io/badge/Themes-{theme_count}-green)](./THEMES.md)",
     readme_updated,
     count=1,
 )
 
+if readme_themes_repl == 0:
+    print("[generate] NOTE: Themes badge pattern not found in README.md (no change).")
+
 # Only write if changes were made
 if readme_original != readme_updated:
-    with open("README.md", "w") as f:
+    with open("README.md", "w", encoding="utf-8") as f:
         f.write(readme_updated)
+    print(
+        f"[generate] README.md updated "
+        f"(plugins_badge={readme_plugins_repl}, themes_badge={readme_themes_repl})"
+    )
+else:
+    print("[generate] README.md unchanged (badge patterns may not have matched).")
