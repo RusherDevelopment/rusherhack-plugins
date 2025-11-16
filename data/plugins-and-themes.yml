@@ -1545,7 +1545,7 @@ plugins:
       name: tillay
       url: https://github.com/tillay
       avatar: https://github.com/tillay.png?size=20
-    latest_release_tag: v1.0.0-f668a0
+    latest_release_tag: v1.0.0-129ad0
     screenshots:
       - url: https://img.youtube.com/vi/YCIigjl4oRk/hqdefault.jpg
         alt: InstantLoader demo video
@@ -1814,6 +1814,7 @@ themes:
     jar_url: https://github.com/xyzbtw/rusherGUI/releases/download/rusherhack/rushergui-1.0.0.jar
     added_at: '2024-04-13'
     updated_at: '2024-05-29'
+
 # -----------------------------------------------------------
 #
 # End of plugins-and-themes.yml
