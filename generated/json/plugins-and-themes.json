@@ -1938,7 +1938,7 @@
         "url": "https://github.com/tillay",
         "avatar": "https://github.com/tillay.png?size=20"
       },
-      "latest_release_tag": "v1.0.0-129ad0",
+      "latest_release_tag": "v1.0.0-26a098",
       "screenshots": [
         {
           "url": "https://img.youtube.com/vi/YCIigjl4oRk/hqdefault.jpg",
@@ -1948,7 +1948,7 @@
       ],
       "is_core": false,
       "mc_versions": "1.21.1-1.21.4",
-      "jar_url": "https://github.com/tillay-rh-plugins/rusherhack-InstantLoader/releases/download/v1.0.0-129ad0/loader-plugin-1.0.0.jar",
+      "jar_url": "https://github.com/tillay-rh-plugins/rusherhack-InstantLoader/releases/download/v1.0.0-26a098/loader-plugin-1.0.0.jar",
       "added_at": "2025-08-12",
       "updated_at": "2025-08-12"
     },
@@ -2255,40 +2255,6 @@
       "jar_url": "https://github.com/tillay-rh-plugins/rusherhack-speedometer/releases/download/v1.0.0-5872158a4f44c1c69362b63bdc617515a45ca15c/speedometer-1.0.0.jar",
       "added_at": "2025-11-10",
       "updated_at": "2025-11-10"
-    },
-    {
-      "name": "Example Chatbot",
-      "repo": "tillay-rh-plugins/example-chatbot",
-      "description": "Example chat automation module that listens to public chat and whispers.",
-      "creator": {
-        "name": "tillay",
-        "url": "https://github.com/tillay",
-        "avatar": "https://github.com/tillay.png?size=20"
-      },
-      "latest_release_tag": "v1.0.0-0e23fd",
-      "screenshots": [],
-      "is_core": false,
-      "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/tillay-rh-plugins/example-chatbot/releases/download/v1.0.0-0e23fd/example-chatbot-1.0.0.jar",
-      "added_at": "2025-11-17",
-      "updated_at": "2025-11-17"
-    },
-    {
-      "name": "StartupSound",
-      "repo": "Koteyka32k/rh-startupsound",
-      "description": "Plays a custom `.ogg` sound on RusherHack startup. Supports selecting a specific file or choosing a random sound from `rusherhack/startupsounds`.",
-      "creator": {
-        "name": "Koteyka32k",
-        "url": "https://github.com/Koteyka32k",
-        "avatar": "https://github.com/Koteyka32k.png?size=20"
-      },
-      "latest_release_tag": "v1.0.1",
-      "screenshots": [],
-      "is_core": true,
-      "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/Koteyka32k/rh-startupsound/releases/download/v1.0.1/startupsound-1.0.1.jar",
-      "added_at": "2025-11-17",
-      "updated_at": "2025-11-17"
     }
   ],
   "themes": [
