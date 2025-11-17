@@ -1150,23 +1150,6 @@
       "updated_at": "2024-09-26"
     },
     {
-      "name": "Rusher2b2tVelocity",
-      "repo": "Lokfid/Rusher2b2tVelocity",
-      "description": "A plugin that adds enhanced velocity control for RusherHacks on the 2b2t server.",
-      "creator": {
-        "name": "Lokfid",
-        "url": "https://github.com/Lokfid",
-        "avatar": "https://github.com/Lokfid.png?size=20"
-      },
-      "latest_release_tag": "1.0.0redo",
-      "screenshots": [],
-      "is_core": false,
-      "mc_versions": "1.20.4",
-      "jar_url": "https://github.com/Lokfid/Rusher2b2tVelocity/releases/download/1.0.0redo/VelocityPlus-1.0.0.jar",
-      "added_at": "2024-09-18",
-      "updated_at": "2024-09-19"
-    },
-    {
       "name": "rusher-autokit",
       "repo": "kybe236/rusher-autokit",
       "description": "A plugin that automatically equips your preferred kit.",
