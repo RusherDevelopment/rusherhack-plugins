@@ -1801,6 +1801,23 @@ plugins:
     jar_url: https://github.com/Koteyka32k/rh-startupsound/releases/download/v1.0.1/startupsound-1.0.1.jar
     added_at: '2025-11-17'
     updated_at: '2025-11-17'
+  - name: Polar Spiral EFly
+    repo: tillay-rh-plugins/polar-spiral-efly
+    description: Overworld AFK Elytra flight that flies in a smooth polar spiral pattern for basehunting.
+    creator:
+      name: tillay
+      url: https://github.com/tillay
+      avatar: https://github.com/tillay.png?size=20
+    latest_release_tag: v1.1.0-73caff
+    screenshots:
+      - url: ./Assets/polar-spiral-efly/spiral.png
+        alt: Polar Spiral EFly demonstration
+        width: 550
+    is_core: false
+    mc_versions: 1.21.4
+    jar_url: https://github.com/tillay-rh-plugins/polar-spiral-efly/releases/download/v1.1.0-73caff/polar-efly-plugin-1.1.0.jar
+    added_at: '2025-11-18'
+    updated_at: '2025-11-17'
 themes:
   - name: Nhack Theme
     repo: h1tm4nqq/Nhack-theme
