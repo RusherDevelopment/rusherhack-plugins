@@ -1808,14 +1808,14 @@ plugins:
       name: tillay
       url: https://github.com/tillay
       avatar: https://github.com/tillay.png?size=20
-    latest_release_tag: v1.1.0-73caff
+    latest_release_tag: v1.1.0-79b583
     screenshots:
       - url: ./Assets/polar-spiral-efly/spiral.png
         alt: Polar Spiral EFly demonstration
         width: 550
     is_core: false
     mc_versions: 1.21.4
-    jar_url: https://github.com/tillay-rh-plugins/polar-spiral-efly/releases/download/v1.1.0-73caff/polar-efly-plugin-1.1.0.jar
+    jar_url: https://github.com/tillay-rh-plugins/polar-spiral-efly/releases/download/v1.1.0-79b583/polar-efly-plugin-1.1.0.jar
     added_at: '2025-11-18'
     updated_at: '2025-11-17'
 themes:
