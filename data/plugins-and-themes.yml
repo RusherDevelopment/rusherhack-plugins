@@ -311,13 +311,13 @@ plugins:
       name: beanbag44
       url: https://github.com/beanbag44
       avatar: https://github.com/beanbag44.png?size=20
-    latest_release_tag: Release-2.0.3
+    latest_release_tag: Release-2.0.4
     screenshots:
       - url: https://img.youtube.com/vi/JUhgqLYdONs/0.jpg
         alt: Nuker Demo
     is_core: false
     mc_versions: 1.20.4
-    jar_url: https://github.com/beanbag44/Nuker/releases/tag/Release-2.0.3
+    jar_url: https://github.com/beanbag44/Nuker/releases/tag/Release-2.0.4
     added_at: '2024-04-17'
     updated_at: '2025-10-03'
   - name: Hold Rusher
