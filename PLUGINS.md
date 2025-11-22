@@ -324,7 +324,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [Nuker](https://github.com/beanbag44/Nuker) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/beanbag44/Nuker?label=Latest%20Release&color=green)](https://github.com/beanbag44/Nuker/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/beanbag44/Nuker/total)](https://github.com/beanbag44/Nuker/releases/tag/Release-2.0.3)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/beanbag44/Nuker?label=Latest%20Release&color=green)](https://github.com/beanbag44/Nuker/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/beanbag44/Nuker/total)](https://github.com/beanbag44/Nuker/releases/tag/Release-2.0.4)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%204-blueviolet)<br>
  **Creator**: <img src="https://github.com/beanbag44.png?size=20" width="20" height="20"> [beanbag44](https://github.com/beanbag44)<br>
  Epic nuker for nuking terrain.
