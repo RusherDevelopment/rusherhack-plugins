@@ -2295,6 +2295,23 @@
       "jar_url": "https://github.com/tillay-rh-plugins/polar-spiral-efly/releases/download/v1.1.0-79b583/polar-efly-plugin-1.1.0.jar",
       "added_at": "2025-11-18",
       "updated_at": "2025-11-17"
+    },
+    {
+      "name": "HighwayBuilder",
+      "repo": "musheck/mushack",
+      "description": "Automated highway builder with full placement, breaking, and rendering controls. Supports adjustable width/height, rails, rotation/airplace modes, placement delay, max breaks per tick, and visual block previews. Runs continuously until disabled.",
+      "creator": {
+        "name": "musheck",
+        "url": "https://github.com/musheck",
+        "avatar": "https://github.com/musheck.png?size=20"
+      },
+      "latest_release_tag": "1.0.0",
+      "screenshots": [],
+      "is_core": false,
+      "mc_versions": "1.21.4",
+      "jar_url": "https://github.com/musheck/mushack/releases/download/1.0.0/mushack-1.0.0.jar",
+      "added_at": "2025-11-23",
+      "updated_at": "2025-11-22"
     }
   ],
   "themes": [
