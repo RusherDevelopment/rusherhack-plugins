@@ -159,7 +159,7 @@ plugins:
       - url: https://img.youtube.com/vi/gfnNFyRQavA/0.jpg
         alt: Stash Mover Demo
     is_core: false
-    mc_versions: 1.20.1-1.21.1
+    mc_versions: 1.20.1-1.21.4
     jar_url: https://github.com/xyzbtw/StashMoverPlugin/releases/download/1.21.4/stashmover-release-1.21.4.jar
     added_at: '2024-01-29'
     updated_at: '2025-09-08'
