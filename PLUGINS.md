@@ -211,7 +211,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Stash Mover Plugin](https://github.com/xyzbtw/StashMoverPlugin) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/xyzbtw/StashMoverPlugin?label=Latest%20Release&color=green)](https://github.com/xyzbtw/StashMoverPlugin/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/xyzbtw/StashMoverPlugin/total)](https://github.com/xyzbtw/StashMoverPlugin/releases/download/1.21.4/stashmover-release-1.21.4.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201--1%2021%201-blueviolet)<br>
+ ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201--1%2021%204-blueviolet)<br>
  **Creator**: <img src="https://github.com/xyzbtw.png?size=20" width="20" height="20"> [xyzbtw](https://github.com/xyzbtw)<br>
  A plugin to move stashes using pearls.
 
