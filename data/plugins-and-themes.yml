@@ -269,11 +269,11 @@ plugins:
       name: FBanna
       url: https://github.com/FBanna
       avatar: https://github.com/FBanna.png?size=20
-    latest_release_tag: 2.1.2+1.21.4
+    latest_release_tag: 2.1.3+1.21.4
     screenshots: []
     is_core: false
     mc_versions: 1.21.4
-    jar_url: https://github.com/FBanna/Rusherhack-Vanilla-Efly/releases/download/2.1.2%2B1.21.4/FBanna.s-efly-2.1.2.jar
+    jar_url: https://github.com/FBanna/Rusherhack-Vanilla-Efly/releases/download/2.1.3%2B1.21.4/FBanna.s-efly-2.1.3.jar
     added_at: '2024-02-29'
     updated_at: '2025-03-05'
   - name: Rusherhack BookBot
@@ -1808,14 +1808,14 @@ plugins:
       name: tillay
       url: https://github.com/tillay
       avatar: https://github.com/tillay.png?size=20
-    latest_release_tag: v1.1.0-79b583
+    latest_release_tag: v1.1.0-505c7c
     screenshots:
       - url: ./Assets/polar-spiral-efly/spiral.png
         alt: Polar Spiral EFly demonstration
         width: 550
     is_core: false
     mc_versions: 1.21.4
-    jar_url: https://github.com/tillay-rh-plugins/polar-spiral-efly/releases/download/v1.1.0-79b583/polar-efly-plugin-1.1.0.jar
+    jar_url: https://github.com/tillay-rh-plugins/polar-spiral-efly/releases/download/v1.1.0-505c7c/polar-efly-plugin-1.1.0.jar
     added_at: '2025-11-18'
     updated_at: '2025-11-17'
   - name: HighwayBuilder
