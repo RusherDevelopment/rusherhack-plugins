@@ -300,7 +300,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [Vanilla Elytra Flight](https://github.com/FBanna/Rusherhack-Vanilla-Efly) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/FBanna/Rusherhack-Vanilla-Efly?label=Latest%20Release&color=green)](https://github.com/FBanna/Rusherhack-Vanilla-Efly/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/FBanna/Rusherhack-Vanilla-Efly/total)](https://github.com/FBanna/Rusherhack-Vanilla-Efly/releases/download/2.1.2%2B1.21.4/FBanna.s-efly-2.1.2.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/FBanna/Rusherhack-Vanilla-Efly?label=Latest%20Release&color=green)](https://github.com/FBanna/Rusherhack-Vanilla-Efly/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/FBanna/Rusherhack-Vanilla-Efly/total)](https://github.com/FBanna/Rusherhack-Vanilla-Efly/releases/download/2.1.3%2B1.21.4/FBanna.s-efly-2.1.3.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
  **Creator**: <img src="https://github.com/FBanna.png?size=20" width="20" height="20"> [FBanna](https://github.com/FBanna)<br>
  Highly customizable rusher hack elytra flight plugin.
@@ -1355,7 +1355,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [Polar Spiral EFly](https://github.com/tillay-rh-plugins/polar-spiral-efly) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/tillay-rh-plugins/polar-spiral-efly?label=Latest%20Release&color=green)](https://github.com/tillay-rh-plugins/polar-spiral-efly/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tillay-rh-plugins/polar-spiral-efly/total)](https://github.com/tillay-rh-plugins/polar-spiral-efly/releases/download/v1.1.0-79b583/polar-efly-plugin-1.1.0.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/tillay-rh-plugins/polar-spiral-efly?label=Latest%20Release&color=green)](https://github.com/tillay-rh-plugins/polar-spiral-efly/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tillay-rh-plugins/polar-spiral-efly/total)](https://github.com/tillay-rh-plugins/polar-spiral-efly/releases/download/v1.1.0-505c7c/polar-efly-plugin-1.1.0.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
  **Creator**: <img src="https://github.com/tillay.png?size=20" width="20" height="20"> [tillay](https://github.com/tillay)<br>
  Overworld AFK Elytra flight that flies in a smooth polar spiral pattern for basehunting.
