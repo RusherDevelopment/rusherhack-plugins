@@ -1548,7 +1548,7 @@ plugins:
       name: tillay
       url: https://github.com/tillay
       avatar: https://github.com/tillay.png?size=20
-    latest_release_tag: release
+    latest_release_tag: v2.1.0-56fa17
     screenshots:
       - url: ./Assets/rusher-waifu-integration/rusher-waifu-integration1.png
         alt: Rusherman Window
@@ -1558,7 +1558,7 @@ plugins:
         width: 550
     is_core: false
     mc_versions: 1.21.1-1.21.4
-    jar_url: https://github.com/tillay-rh-plugins/rusher-waifu-integration/releases/download/release/waifu-plugin-1.0.0.jar
+    jar_url: https://github.com/tillay-rh-plugins/rusher-waifu-integration/releases/download/v2.1.0-56fa17/waifu-plugin-2.1.0.jar
     added_at: '2025-08-13'
     updated_at: '2025-08-13'
   - name: AutoMoss
