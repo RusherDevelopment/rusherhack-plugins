@@ -1177,7 +1177,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [rusher-waifu-integration](https://github.com/tillay/rusher-waifu-integration) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/tillay/rusher-waifu-integration?label=Latest%20Release&color=green)](https://github.com/tillay/rusher-waifu-integration/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tillay/rusher-waifu-integration/total)](https://github.com/tillay-rh-plugins/rusher-waifu-integration/releases/download/release/waifu-plugin-1.0.0.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/tillay/rusher-waifu-integration?label=Latest%20Release&color=green)](https://github.com/tillay/rusher-waifu-integration/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tillay/rusher-waifu-integration/total)](https://github.com/tillay-rh-plugins/rusher-waifu-integration/releases/download/v2.1.0-56fa17/waifu-plugin-2.1.0.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%201--1%2021%204-blueviolet)<br>
  **Creator**: <img src="https://github.com/tillay.png?size=20" width="20" height="20"> [tillay](https://github.com/tillay)<br>
  Allows adding any custom image to the RusherHack HUD.
