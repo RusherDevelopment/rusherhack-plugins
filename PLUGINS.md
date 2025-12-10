@@ -10,7 +10,7 @@
 
 # Plugins List
 
-[![Plugins](https://img.shields.io/badge/Plugins-116-green)](#plugins-list)
+[![Plugins](https://img.shields.io/badge/Plugins-117-green)](#plugins-list)
 [![RusherHack v2.0.6](https://img.shields.io/badge/RusherHack-v2.0.6-purple?logo=data:image/png;base64,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)](https://rusherhack.org/changelog.html)
 [![â†“ Go to Bottom](https://img.shields.io/badge/â†“-Go%20to%20Bottom-blue?style=flat)](#plugins-bottom)
 
@@ -44,6 +44,16 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 <table>
 <tr>
 <td align="left" valign="top" width="50%">
+  <a href="https://github.com/tr330ne/waypoints-merger"><img src="https://avatars.githubusercontent.com/tr330ne?s=400" alt="Waypoints Merger" width="100" height="100" style="border-radius:12px;"></a>
+  <div><strong><a href="https://github.com/tr330ne/waypoints-merger">Waypoints Merger</a></strong>&nbsp;<code>plugin</code></div>
+  <div style="margin:4px 0 6px 0;">Synchronizes waypoints from Xaeros into Rusher.</div>
+  <div>
+    <img alt="stars" src="https://img.shields.io/github/stars/tr330ne/waypoints-merger?style=flat">
+    &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/tr330ne/waypoints-merger/total?style=flat">
+    &nbsp;<img alt="added" src="https://img.shields.io/date/1765324800?label=added&style=flat">
+  </div>
+</td>
+<td align="left" valign="top" width="50%">
   <a href="https://github.com/musheck/mushack"><img src="https://avatars.githubusercontent.com/musheck?s=400" alt="HighwayBuilder" width="100" height="100" style="border-radius:12px;"></a>
   <div><strong><a href="https://github.com/musheck/mushack">HighwayBuilder</a></strong>&nbsp;<code>plugin</code></div>
   <div style="margin:4px 0 6px 0;">Automated highway builder with full placement, breaking, and rendering controls. Supports adjustable width/height, rails, rotation/airplace modes, placement delay, max breaks per tick, and visual block previews. Runs continuously until disabled.</div>
@@ -52,7 +62,8 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
     &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/musheck/mushack/total?style=flat">
     &nbsp;<img alt="added" src="https://img.shields.io/date/1763856000?label=added&style=flat">
   </div>
-</td>
+</td></tr>
+<tr>
 <td align="left" valign="top" width="50%">
   <a href="https://github.com/tillay-rh-plugins/polar-spiral-efly"><img src="https://avatars.githubusercontent.com/tillay-rh-plugins?s=400" alt="Polar Spiral EFly" width="100" height="100" style="border-radius:12px;"></a>
   <div><strong><a href="https://github.com/tillay-rh-plugins/polar-spiral-efly">Polar Spiral EFly</a></strong>&nbsp;<code>plugin</code></div>
@@ -62,8 +73,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
     &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/tillay-rh-plugins/polar-spiral-efly/total?style=flat">
     &nbsp;<img alt="added" src="https://img.shields.io/date/1763424000?label=added&style=flat">
   </div>
-</td></tr>
-<tr>
+</td>
 <td align="left" valign="top" width="50%">
   <a href="https://github.com/tillay-rh-plugins/example-chatbot"><img src="https://avatars.githubusercontent.com/tillay-rh-plugins?s=400" alt="Example Chatbot" width="100" height="100" style="border-radius:12px;"></a>
   <div><strong><a href="https://github.com/tillay-rh-plugins/example-chatbot">Example Chatbot</a></strong>&nbsp;<code>plugin</code></div>
@@ -73,7 +83,8 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
     &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/tillay-rh-plugins/example-chatbot/total?style=flat">
     &nbsp;<img alt="added" src="https://img.shields.io/date/1763337600?label=added&style=flat">
   </div>
-</td>
+</td></tr>
+<tr>
 <td align="left" valign="top" width="50%">
   <a href="https://github.com/Koteyka32k/rh-startupsound"><img src="https://avatars.githubusercontent.com/Koteyka32k?s=400" alt="StartupSound" width="100" height="100" style="border-radius:12px;"></a>
   <div><strong><a href="https://github.com/Koteyka32k/rh-startupsound">StartupSound</a></strong>&nbsp;<code>plugin</code></div>
@@ -83,8 +94,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
     &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/Koteyka32k/rh-startupsound/total?style=flat">
     &nbsp;<img alt="added" src="https://img.shields.io/date/1763337600?label=added&style=flat">
   </div>
-</td></tr>
-<tr>
+</td>
 <td align="left" valign="top" width="50%">
   <a href="https://github.com/tillay-rh-plugins/rusherhack-speedometer"><img src="https://avatars.githubusercontent.com/tillay-rh-plugins?s=400" alt="RusherHack Speedometer" width="100" height="100" style="border-radius:12px;"></a>
   <div><strong><a href="https://github.com/tillay-rh-plugins/rusherhack-speedometer">RusherHack Speedometer</a></strong>&nbsp;<code>plugin</code></div>
@@ -93,16 +103,6 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
     <img alt="stars" src="https://img.shields.io/github/stars/tillay-rh-plugins/rusherhack-speedometer?style=flat">
     &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/tillay-rh-plugins/rusherhack-speedometer/total?style=flat">
     &nbsp;<img alt="added" src="https://img.shields.io/date/1762732800?label=added&style=flat">
-  </div>
-</td>
-<td align="left" valign="top" width="50%">
-  <a href="https://github.com/icaema/rusherhacks-stopwatch"><img src="https://avatars.githubusercontent.com/icaema?s=400" alt="Stopwatch" width="100" height="100" style="border-radius:12px;"></a>
-  <div><strong><a href="https://github.com/icaema/rusherhacks-stopwatch">Stopwatch</a></strong>&nbsp;<code>plugin</code></div>
-  <div style="margin:4px 0 6px 0;">Stopwatch HUD with lap support and a control module; can auto-start on join and optionally hide when zero.</div>
-  <div>
-    <img alt="stars" src="https://img.shields.io/github/stars/icaema/rusherhacks-stopwatch?style=flat">
-    &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/icaema/rusherhacks-stopwatch/total?style=flat">
-    &nbsp;<img alt="added" src="https://img.shields.io/date/1762560000?label=added&style=flat">
   </div>
 </td></tr>
 </table>
@@ -257,6 +257,14 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  <img src="./Assets/EFlyAutoJump/Screenshot_3.png" alt="Preview" width="575">
  </p>
  </details>
+
+---
+
+- ### [Waypoints Merger](https://github.com/tr330ne/waypoints-merger) <br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/tr330ne/waypoints-merger?label=Latest%20Release&color=green)](https://github.com/tr330ne/waypoints-merger/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tr330ne/waypoints-merger/total)](https://github.com/tr330ne/waypoints-merger/releases/download/0.1/WaypointsMerger-0.1.jar)<br>
+ ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%201--1%2021%204-blueviolet)<br>
+ **Creator**: <img src="https://github.com/tr330ne.png?size=20" width="20" height="20"> [tr330ne](https://github.com/tr330ne)<br>
+ Synchronizes waypoints from Xaeros into Rusher.
 
 ---
 

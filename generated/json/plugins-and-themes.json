@@ -244,6 +244,23 @@
       "updated_at": "2025-08-18"
     },
     {
+      "name": "Waypoints Merger",
+      "repo": "tr330ne/waypoints-merger",
+      "description": "Synchronizes waypoints from Xaeros into Rusher.",
+      "creator": {
+        "name": "tr330ne",
+        "url": "https://github.com/tr330ne",
+        "avatar": "https://github.com/tr330ne.png?size=20"
+      },
+      "latest_release_tag": "v0.1",
+      "screenshots": [],
+      "is_core": false,
+      "mc_versions": "1.21.1-1.21.4",
+      "jar_url": "https://github.com/tr330ne/waypoints-merger/releases/download/0.1/WaypointsMerger-0.1.jar",
+      "added_at": "2025-12-10",
+      "updated_at": "2025-12-10"
+    },
+    {
       "name": "Unified Module List",
       "repo": "czho/unified-modulelist",
       "description": "Rusherhack HUD element that shows active modules from both meteorclient and rusherhack.",
