@@ -212,7 +212,7 @@ plugins:
     jar_url: https://github.com/tr330ne/efly-autojump/releases/download/v0.2/EFlyAutoJump-0.2.jar
     added_at: '2025-08-13'
     updated_at: '2025-08-18'
-    - name: Waypoints Merger
+  - name: Waypoints Merger
     repo: tr330ne/waypoints-merger
     description: Synchronizes waypoints from Xaeros into Rusher.
     creator:
