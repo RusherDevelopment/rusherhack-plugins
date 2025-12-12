@@ -46,11 +46,11 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 <td align="left" valign="top" width="50%">
   <a href="https://github.com/tr330ne/waypoints-merger"><img src="https://avatars.githubusercontent.com/tr330ne?s=400" alt="Waypoints Merger" width="100" height="100" style="border-radius:12px;"></a>
   <div><strong><a href="https://github.com/tr330ne/waypoints-merger">Waypoints Merger</a></strong>&nbsp;<code>plugin</code></div>
-  <div style="margin:4px 0 6px 0;">Synchronizes waypoints from Xaeros into Rusher.</div>
+  <div style="margin:4px 0 6px 0;">Synchronizes waypoints from Xaeros to Rusher.</div>
   <div>
     <img alt="stars" src="https://img.shields.io/github/stars/tr330ne/waypoints-merger?style=flat">
     &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/tr330ne/waypoints-merger/total?style=flat">
-    &nbsp;<img alt="added" src="https://img.shields.io/date/1765324800?label=added&style=flat">
+    &nbsp;<img alt="added" src="https://img.shields.io/date/1765497600?label=added&style=flat">
   </div>
 </td>
 <td align="left" valign="top" width="50%">
@@ -247,7 +247,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%201--1%2021%204-blueviolet)<br>
  ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>
  **Creator**: <img src="https://github.com/tr330ne.png?size=20" width="20" height="20"> [tr330ne](https://github.com/tr330ne)<br>
- Enhances Baritone elytra flight with smart auto-jump start/stop and visual display, compatible with Xaero Plus "Baritone Elytra Here", also supports manual Baritone commands input in addition to automation.
+ Enhances Baritone elytra flight with smart auto-jump start/stop and visual display, compatible with Xaero Plus Â«Baritone Elytra HereÂ», also supports manual Baritone commands input in addition to automation.
 
  <details>
  <summary>Show Screenshots</summary>
@@ -261,10 +261,17 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [Waypoints Merger](https://github.com/tr330ne/waypoints-merger) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/tr330ne/waypoints-merger?label=Latest%20Release&color=green)](https://github.com/tr330ne/waypoints-merger/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tr330ne/waypoints-merger/total)](https://github.com/tr330ne/waypoints-merger/releases/download/0.1/WaypointsMerger-0.1.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/tr330ne/waypoints-merger?label=Latest%20Release&color=green)](https://github.com/tr330ne/waypoints-merger/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tr330ne/waypoints-merger/total)](https://github.com/tr330ne/waypoints-merger/releases/download/v0.1/WaypointsMerger-0.1.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%201--1%2021%204-blueviolet)<br>
  **Creator**: <img src="https://github.com/tr330ne.png?size=20" width="20" height="20"> [tr330ne](https://github.com/tr330ne)<br>
- Synchronizes waypoints from Xaeros into Rusher.
+ Synchronizes waypoints from Xaeros to Rusher.
+
+ <details>
+ <summary>Show Screenshots</summary>
+ <p align="center">
+ <img src="./Assets/WaypointsMerger/Screenshot_1.png" alt="Preview" width="221">
+ </p>
+ </details>
 
 ---
 
