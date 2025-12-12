@@ -191,7 +191,7 @@ plugins:
     updated_at: '2025-08-18'
   - name: EFlyAutoJump
     repo: tr330ne/efly-autojump
-    description: Enhances Baritone elytra flight with smart auto-jump start/stop and visual display, compatible with Xaero Plus "Baritone Elytra Here", also supports manual Baritone commands input in addition to automation.
+    description: Enhances Baritone elytra flight with smart auto-jump start/stop and visual display, compatible with Xaero Plus «Baritone Elytra Here», also supports manual Baritone commands input in addition to automation.
     creator:
       name: tr330ne
       url: https://github.com/tr330ne
@@ -214,18 +214,21 @@ plugins:
     updated_at: '2025-08-18'
   - name: Waypoints Merger
     repo: tr330ne/waypoints-merger
-    description: Synchronizes waypoints from Xaeros into Rusher.
+    description: Synchronizes waypoints from Xaeros to Rusher.
     creator:
       name: tr330ne
       url: https://github.com/tr330ne
       avatar: https://github.com/tr330ne.png?size=20
-    latest_release_tag: 'v0.1'
-    screenshots: []
+    latest_release_tag: 'v0.2'
+    screenshots:
+      - url: ./Assets/WaypointsMerger/Screenshot_1.png
+        alt: Preview
+        width: 221
     is_core: false
     mc_versions: 1.21.1-1.21.4
-    jar_url: https://github.com/tr330ne/waypoints-merger/releases/download/0.1/WaypointsMerger-0.1.jar
+    jar_url: https://github.com/tr330ne/waypoints-merger/releases/download/0.2/WaypointsMerger-0.2.jar
     added_at: '2025-12-10'
-    updated_at: '2025-12-10'
+    updated_at: '2025-12-12'
   - name: Unified Module List
     repo: czho/unified-modulelist
     description: Rusherhack HUD element that shows active modules from both meteorclient and rusherhack.
