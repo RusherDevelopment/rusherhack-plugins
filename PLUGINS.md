@@ -1304,7 +1304,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [AutoFirework](https://github.com/tillay-rh-plugins/AutoFirework) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/tillay-rh-plugins/AutoFirework?label=Latest%20Release&color=green)](https://github.com/tillay-rh-plugins/AutoFirework/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tillay-rh-plugins/AutoFirework/total)](https://github.com/tillay-rh-plugins/AutoFirework/releases/download/v1.0.0-32b445fb6944110d961a3f78fb0e125c4f6be6e9/autofirework-1.0.0.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/tillay-rh-plugins/AutoFirework?label=Latest%20Release&color=green)](https://github.com/tillay-rh-plugins/AutoFirework/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tillay-rh-plugins/AutoFirework/total)](https://github.com/tillay-rh-plugins/AutoFirework/releases/download/v1.0.0-7f73e20608d2a1ab0970566cf65679d19824b69d/autofirework-1.0.0.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
  **Creator**: <img src="https://github.com/tillay.png?size=20" width="20" height="20"> [tillay](https://github.com/tillay)<br>
  Automatically uses fireworks to redeploy Elytra flight when speed drops below a specified value.
