@@ -44,13 +44,13 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 <table>
 <tr>
 <td align="left" valign="top" width="50%">
-  <a href="https://github.com/tr330ne/waypoints-merger"><img src="https://avatars.githubusercontent.com/tr330ne?s=400" alt="Waypoints Merger" width="100" height="100" style="border-radius:12px;"></a>
-  <div><strong><a href="https://github.com/tr330ne/waypoints-merger">Waypoints Merger</a></strong>&nbsp;<code>plugin</code></div>
-  <div style="margin:4px 0 6px 0;">Synchronizes waypoints from Xaeros to Rusher.</div>
+  <a href="https://github.com/tr330ne/waypointsync"><img src="https://avatars.githubusercontent.com/tr330ne?s=400" alt="WaypointSync" width="100" height="100" style="border-radius:12px;"></a>
+  <div><strong><a href="https://github.com/tr330ne/waypointsync">WaypointSync</a></strong>&nbsp;<code>plugin</code></div>
+  <div style="margin:4px 0 6px 0;">Automatically synchronizes waypoints from Xaero to Rusher.</div>
   <div>
-    <img alt="stars" src="https://img.shields.io/github/stars/tr330ne/waypoints-merger?style=flat">
-    &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/tr330ne/waypoints-merger/total?style=flat">
-    &nbsp;<img alt="added" src="https://img.shields.io/date/1765497600?label=added&style=flat">
+    <img alt="stars" src="https://img.shields.io/github/stars/tr330ne/waypointsync?style=flat">
+    &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/tr330ne/waypointsync/total?style=flat">
+    &nbsp;<img alt="added" src="https://img.shields.io/date/1765584000?label=added&style=flat">
   </div>
 </td>
 <td align="left" valign="top" width="50%">
@@ -260,16 +260,16 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 ---
 
-- ### [Waypoints Merger](https://github.com/tr330ne/waypoints-merger) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/tr330ne/waypoints-merger?label=Latest%20Release&color=green)](https://github.com/tr330ne/waypoints-merger/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tr330ne/waypoints-merger/total)](https://github.com/tr330ne/waypoints-merger/releases/download/v0.1/WaypointsMerger-0.1.jar)<br>
+- ### [WaypointSync](https://github.com/tr330ne/waypointsync) <br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/tr330ne/waypointsync?label=Latest%20Release&color=green)](https://github.com/tr330ne/waypointsync/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tr330ne/waypointsync/total)](https://github.com/tr330ne/waypointsync/releases/download/v0.1/WaypointSync-0.1.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%201--1%2021%204-blueviolet)<br>
  **Creator**: <img src="https://github.com/tr330ne.png?size=20" width="20" height="20"> [tr330ne](https://github.com/tr330ne)<br>
- Synchronizes waypoints from Xaeros to Rusher.
+ Automatically synchronizes waypoints from Xaero to Rusher.
 
  <details>
  <summary>Show Screenshots</summary>
  <p align="center">
- <img src="./Assets/WaypointsMerger/Screenshot_1.png" alt="Preview" width="221">
+ <img src="./Assets/WaypointSync/Screenshot_1.png" alt="Preview" width="248">
  </p>
  </details>
 
