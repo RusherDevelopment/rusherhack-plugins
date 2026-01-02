@@ -1161,7 +1161,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [rusherhack-rusherman](https://github.com/tillay/rusherhack-rusherman) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/tillay/rusherhack-rusherman?label=Latest%20Release&color=green)](https://github.com/tillay/rusherhack-rusherman/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tillay/rusherhack-rusherman/total)](https://github.com/tillay-rh-plugins/rusherhack-rusherman/releases/download/fixed%21/rusherman-plugin-1.0.0.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/tillay/rusherhack-rusherman?label=Latest%20Release&color=green)](https://github.com/tillay/rusherhack-rusherman/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tillay/rusherhack-rusherman/total)](https://github.com/tillay-rh-plugins/rusherhack-rusherman/releases/download/3894v4793v93v487cd9/rusherman-plugin-1.0.0.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%201--1%2021%204-blueviolet)<br>
  **Creator**: <img src="https://github.com/tillay.png?size=20" width="20" height="20"> [tillay](https://github.com/tillay)<br>
  Plugin package manager for RusherHack that helps install and manage plugins from a single place.
