@@ -1528,7 +1528,7 @@ plugins:
       name: tillay
       url: https://github.com/tillay
       avatar: https://github.com/tillay.png?size=20
-    latest_release_tag: fixed!
+    latest_release_tag: 3894v4793v93v487cd9
     screenshots:
       - url: ./Assets/rusherhack-rusherman/rusherman-window.png
         alt: Rusherman Window
@@ -1538,7 +1538,7 @@ plugins:
         width: 550
     is_core: false
     mc_versions: 1.21.1-1.21.4
-    jar_url: https://github.com/tillay-rh-plugins/rusherhack-rusherman/releases/download/fixed%21/rusherman-plugin-1.0.0.jar
+    jar_url: https://github.com/tillay-rh-plugins/rusherhack-rusherman/releases/download/3894v4793v93v487cd9/rusherman-plugin-1.0.0.jar
     added_at: '2025-08-05'
     updated_at: '2025-08-13'
   - name: rusherhack-instantloader
