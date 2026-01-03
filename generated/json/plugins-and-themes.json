@@ -2335,6 +2335,23 @@
       "jar_url": "https://github.com/musheck/mushack/releases/download/1.0.0/mushack-1.0.0.jar",
       "added_at": "2025-11-23",
       "updated_at": "2025-11-22"
+    },
+    {
+      "name": "Favorite Modules",
+      "repo": "tillay-rh-plugins/favorite-modules",
+      "description": "add favorite modules panel to the clickgui",
+      "creator": {
+        "name": "tillay",
+        "url": "https://github.com/tillay",
+        "avatar": "https://github.com/tillay.png?size=20"
+      },
+      "latest_release_tag": "v1.1.0-dca971",
+      "screenshots": [],
+      "is_core": false,
+      "mc_versions": "1.21.4",
+      "jar_url": "https://github.com/tillay-rh-plugins/favorite-modules/releases/download/v1.1.0-dca971/favorite-modules-1.1.0.jar",
+      "added_at": "2026-01-03",
+      "updated_at": "2026-01-03"
     }
   ],
   "themes": [
