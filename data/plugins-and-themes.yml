@@ -1871,7 +1871,7 @@ plugins:
       url: https://github.com/tillay
       avatar: https://github.com/tillay.png?size=20
     latest_release_tag: v1.1.0-453279
-   screenshots:
+    screenshots:
       - url: ./Assets/RamUsageHUD/HUD.png
         alt: Hud Setting
         width: 250
