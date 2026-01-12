@@ -1406,6 +1406,13 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  **Creator**: <img src="https://github.com/tillay.png?size=20" width="20" height="20"> [tillay](https://github.com/tillay)<br>
  see how much ram minecraft is actually using.
 
+ <details>
+ <summary>Show Screenshots</summary>
+ <p align="center">
+ <img src="./Assets/RamUsageHUD/HUD.png" alt="Hud Setting" width="250">
+ </p>
+ </details>
+
 ---
 
 <!--- Plugins End -->
