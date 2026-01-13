@@ -1870,14 +1870,14 @@ plugins:
       name: tillay
       url: https://github.com/tillay
       avatar: https://github.com/tillay.png?size=20
-    latest_release_tag: v1.1.0-453279
+    latest_release_tag: v1.1.0-6d4e96
     screenshots:
       - url: ./Assets/RamUsageHUD/HUD.png
         alt: Hud Setting
         width: 250
     is_core: false
     mc_versions: 1.21.4
-    jar_url: https://github.com/tillay-rh-plugins/ram-usage-hud/releases/download/v1.1.0-453279/real-ram-usage-1.1.0.jar
+    jar_url: https://github.com/tillay-rh-plugins/ram-usage-hud/releases/download/v1.1.0-6d4e96/real-ram-usage-1.1.0.jar
     added_at: '2026-01-10'
     updated_at: '2026-01-10'
 themes:
