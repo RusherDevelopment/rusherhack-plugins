@@ -1401,7 +1401,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [Ram Usage HUD](https://github.com/tillay-rh-plugins/ram-usage-hud) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/tillay-rh-plugins/ram-usage-hud?label=Latest%20Release&color=green)](https://github.com/tillay-rh-plugins/ram-usage-hud/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tillay-rh-plugins/ram-usage-hud/total)](https://github.com/tillay-rh-plugins/ram-usage-hud/releases/download/v1.1.0-453279/real-ram-usage-1.1.0.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/tillay-rh-plugins/ram-usage-hud?label=Latest%20Release&color=green)](https://github.com/tillay-rh-plugins/ram-usage-hud/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tillay-rh-plugins/ram-usage-hud/total)](https://github.com/tillay-rh-plugins/ram-usage-hud/releases/download/v1.1.0-6d4e96/real-ram-usage-1.1.0.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
  **Creator**: <img src="https://github.com/tillay.png?size=20" width="20" height="20"> [tillay](https://github.com/tillay)<br>
  see how much ram minecraft is actually using.
