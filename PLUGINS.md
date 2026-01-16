@@ -597,7 +597,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [ShulkerViewer](https://github.com/xyzbtw/ShulkerViewer) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/xyzbtw/ShulkerViewer?label=Latest%20Release&color=green)](https://github.com/xyzbtw/ShulkerViewer/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/xyzbtw/ShulkerViewer/total)](https://github.com/xyzbtw/ShulkerViewer/releases/download/1.21.4/shulker-viewer-1.21.4.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201--1%2021%201-blueviolet)<br>
+ ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201--1%2021%204-blueviolet)<br>
  **Creator**: <img src="https://github.com/xyzbtw.png?size=20" width="20" height="20"> [xyzbtw](https://github.com/xyzbtw)<br>
  A RusherHacks plugin to view the contents of Shulker boxes in the inventory.
 
