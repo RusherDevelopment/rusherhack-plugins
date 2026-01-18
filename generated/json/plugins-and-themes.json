@@ -2375,23 +2375,6 @@
       "jar_url": "https://github.com/tillay-rh-plugins/ram-usage-hud/releases/download/v1.1.0-6d4e96/real-ram-usage-1.1.0.jar",
       "added_at": "2026-01-10",
       "updated_at": "2026-01-10"
-    },
-    {
-      "name": "AutoMendPlugin",
-      "repo": "GarlicRot/AutoMendPlugin",
-      "description": "Automatically cycles damaged Mending gear into the offhand for XP farms",
-      "creator": {
-        "name": "GarlicRot",
-        "url": "https://github.com/GarlicRot",
-        "avatar": "https://github.com/GarlicRot.png?size=20"
-      },
-      "latest_release_tag": "v1.0.0",
-      "screenshots": [],
-      "is_core": false,
-      "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/GarlicRot/AutoMendPlugin/releases/download/v1.0.0/AutoMendPlugin-1.21.4.jar",
-      "added_at": "2026-01-17",
-      "updated_at": "2026-01-17"
     }
   ],
   "themes": [
