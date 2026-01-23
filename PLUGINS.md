@@ -285,7 +285,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Container Tweaks](https://github.com/rfresh2/ContainerTweaks-rusherhack) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/rfresh2/ContainerTweaks-rusherhack?label=Latest%20Release&color=green)](https://github.com/rfresh2/ContainerTweaks-rusherhack/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/rfresh2/ContainerTweaks-rusherhack/total)](https://github.com/rfresh2/ContainerTweaks-rusherhack/releases/tag/1.11)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201--1%2021%201-blueviolet)<br>
+ ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201--1%2021%204-blueviolet)<br>
  **Creator**: <img src="https://github.com/rfresh2.png?size=20" width="20" height="20"> [rfresh2](https://github.com/rfresh2)<br>
  Simple tweaks for quickly moving items in containers.
 
