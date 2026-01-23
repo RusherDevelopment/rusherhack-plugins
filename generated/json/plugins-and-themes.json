@@ -2346,7 +2346,13 @@
         "avatar": "https://github.com/tillay.png?size=20"
       },
       "latest_release_tag": "v1.1.0-dca971",
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "./Assets/FavoriteModules/module.png",
+          "alt": "Favorite Modules",
+          "width": 250
+        }
+      ],
       "is_core": false,
       "mc_versions": "1.21.4",
       "jar_url": "https://github.com/tillay-rh-plugins/favorite-modules/releases/download/v1.1.0-dca971/favorite-modules-1.1.0.jar",

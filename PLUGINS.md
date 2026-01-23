@@ -1398,6 +1398,13 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  **Creator**: <img src="https://github.com/tillay.png?size=20" width="20" height="20"> [tillay](https://github.com/tillay)<br>
  add favorite modules panel to the clickgui
 
+ <details>
+ <summary>Show Screenshots</summary>
+ <p align="center">
+ <img src="./Assets/FavoriteModules/module.png" alt="Favorite Modules" width="250">
+ </p>
+ </details>
+
 ---
 
 - ### [Ram Usage HUD](https://github.com/tillay-rh-plugins/ram-usage-hud) <br>
