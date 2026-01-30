@@ -2408,11 +2408,17 @@
         "url": "https://github.com/GarlicRot",
         "avatar": "https://github.com/GarlicRot.png?size=20"
       },
-      "latest_release_tag": "v1.0.0",
-      "screenshots": [],
+      "latest_release_tag": "v1.0.1",
+      "screenshots": [
+        {
+          "url": "./Assets/AutoAmethyst/Module.png",
+          "alt": "Module Setting",
+          "width": 250
+        }
+      ],
       "is_core": false,
       "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/GarlicRot/AutoAmethyst/releases/download/v1.0.0/AutoAmethyst-1.0.0.jar",
+      "jar_url": "https://github.com/GarlicRot/AutoAmethyst/releases/download/v1.0.1/AutoAmethyst-1.0.1.jar",
       "added_at": "2026-01-29",
       "updated_at": "2026-01-29"
     }

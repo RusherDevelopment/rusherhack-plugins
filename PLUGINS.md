@@ -1431,10 +1431,17 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [AutoAmethyst](https://github.com/GarlicRot/AutoAmethyst) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/GarlicRot/AutoAmethyst?label=Latest%20Release&color=green)](https://github.com/GarlicRot/AutoAmethyst/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/GarlicRot/AutoAmethyst/total)](https://github.com/GarlicRot/AutoAmethyst/releases/download/v1.0.0/AutoAmethyst-1.0.0.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/GarlicRot/AutoAmethyst?label=Latest%20Release&color=green)](https://github.com/GarlicRot/AutoAmethyst/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/GarlicRot/AutoAmethyst/total)](https://github.com/GarlicRot/AutoAmethyst/releases/download/v1.0.1/AutoAmethyst-1.0.1.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
  **Creator**: <img src="https://github.com/GarlicRot.png?size=20" width="20" height="20"> [GarlicRot](https://github.com/GarlicRot)<br>
  Automatically harvest amethyst shards without breaking Budding Amethyst
+
+ <details>
+ <summary>Show Screenshots</summary>
+ <p align="center">
+ <img src="./Assets/AutoAmethyst/Module.png" alt="Module Setting" width="250">
+ </p>
+ </details>
 
 ---
 
