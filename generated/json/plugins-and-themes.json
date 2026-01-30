@@ -2398,6 +2398,23 @@
       "jar_url": "https://github.com/GarlicRot/RusherChat/releases/download/v1.0.6/RusherChat-1.0.6.jar",
       "added_at": "2026-01-24",
       "updated_at": "2026-01-24"
+    },
+    {
+      "name": "AutoAmethyst",
+      "repo": "GarlicRot/AutoAmethyst",
+      "description": "Automatically harvest amethyst shards without breaking Budding Amethyst",
+      "creator": {
+        "name": "GarlicRot",
+        "url": "https://github.com/GarlicRot",
+        "avatar": "https://github.com/GarlicRot.png?size=20"
+      },
+      "latest_release_tag": "v1.0.0",
+      "screenshots": [],
+      "is_core": false,
+      "mc_versions": "1.21.4",
+      "jar_url": "https://github.com/GarlicRot/AutoAmethyst/releases/download/v1.0.0/AutoAmethyst-1.0.0.jar",
+      "added_at": "2026-01-29",
+      "updated_at": "2026-01-29"
     }
   ],
   "themes": [
