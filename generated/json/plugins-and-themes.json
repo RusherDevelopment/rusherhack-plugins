@@ -2421,6 +2421,23 @@
       "jar_url": "https://github.com/GarlicRot/AutoAmethyst/releases/download/v1.0.1/AutoAmethyst-1.0.1.jar",
       "added_at": "2026-01-29",
       "updated_at": "2026-01-29"
+    },
+    {
+      "name": "PlayerTracker",
+      "repo": "maggyabby/playertracker-plugin",
+      "description": "player tracker plugin that locks your view onto the nearest player to your crosshair and continuously tracks them",
+      "creator": {
+        "name": "maggyabby",
+        "url": "https://github.com/maggyabby",
+        "avatar": "https://github.com/maggyabby.png?size=20"
+      },
+      "latest_release_tag": "tf8o7b5",
+      "screenshots": [],
+      "is_core": false,
+      "mc_versions": "1.21.4",
+      "jar_url": "https://github.com/maggyabby/playertracker-plugin/releases/download/tf8o7b5/playertracker-1.0.1.jar",
+      "added_at": "2026-02-11",
+      "updated_at": "2026-02-11"
     }
   ],
   "themes": [
