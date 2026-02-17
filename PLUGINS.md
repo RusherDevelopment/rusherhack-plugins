@@ -1423,7 +1423,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [RusherChat](https://github.com/GarlicRot/RusherChat) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/GarlicRot/RusherChat?label=Latest%20Release&color=green)](https://github.com/GarlicRot/RusherChat/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/GarlicRot/RusherChat/total)](https://github.com/GarlicRot/RusherChat/releases/download/v1.0.7/RusherChat-1.0.7.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/GarlicRot/RusherChat?label=Latest%20Release&color=green)](https://github.com/GarlicRot/RusherChat/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/GarlicRot/RusherChat/total)](https://github.com/GarlicRot/RusherChat/releases/download/v1.0.8/RusherChat-1.0.8.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201--1%2021%204-blueviolet)<br>
  **Creator**: <img src="https://github.com/GarlicRot.png?size=20" width="20" height="20"> [GarlicRot](https://github.com/GarlicRot)<br>
  WebSocket-powered chat for RusherHack
@@ -1446,7 +1446,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [PlayerTracker](https://github.com/maggyabby/playertracker-plugin) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/maggyabby/playertracker-plugin?label=Latest%20Release&color=green)](https://github.com/maggyabby/playertracker-plugin/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/maggyabby/playertracker-plugin/total)](https://github.com/maggyabby/playertracker-plugin/releases/download/tf8o7b5/playertracker-1.0.1.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/maggyabby/playertracker-plugin?label=Latest%20Release&color=green)](https://github.com/maggyabby/playertracker-plugin/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/maggyabby/playertracker-plugin/total)](https://github.com/maggyabby/playertracker-plugin/releases/download/4b9d2aa/playertracker-1.0.1.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
  **Creator**: <img src="https://github.com/maggyabby.png?size=20" width="20" height="20"> [maggyabby](https://github.com/maggyabby)<br>
  player tracker plugin that locks your view onto the nearest player to your crosshair and continuously tracks them
