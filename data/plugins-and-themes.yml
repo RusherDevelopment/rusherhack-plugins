@@ -1890,11 +1890,11 @@ plugins:
       name: GarlicRot
       url: https://github.com/GarlicRot
       avatar: https://github.com/GarlicRot.png?size=20
-    latest_release_tag: v1.0.7
+    latest_release_tag: v1.0.8
     screenshots: []
     is_core: false
     mc_versions: 1.20.1-1.21.4
-    jar_url: https://github.com/GarlicRot/RusherChat/releases/download/v1.0.7/RusherChat-1.0.7.jar
+    jar_url: https://github.com/GarlicRot/RusherChat/releases/download/v1.0.8/RusherChat-1.0.8.jar
     added_at: '2026-01-24'
     updated_at: '2026-01-24'
   - name: AutoAmethyst
@@ -1921,11 +1921,11 @@ plugins:
       name: maggyabby
       url: https://github.com/maggyabby
       avatar: https://github.com/maggyabby.png?size=20
-    latest_release_tag: tf8o7b5
+    latest_release_tag: 4b9d2aa
     screenshots: []
     is_core: false
     mc_versions: 1.21.4
-    jar_url: https://github.com/maggyabby/playertracker-plugin/releases/download/tf8o7b5/playertracker-1.0.1.jar
+    jar_url: https://github.com/maggyabby/playertracker-plugin/releases/download/4b9d2aa/playertracker-1.0.1.jar
     added_at: '2026-02-11'
     updated_at: '2026-02-11'
 themes:
