@@ -50,6 +50,26 @@ plugins:
     mc_versions: N/A
     added_at: '2023-10-21'
     updated_at: '2025-02-18'
+  - name: More Huds
+    repo: FelekDevYT/MoreHuds-rusherhack
+    description: Adds more customizable HUD elements to RusherHacks.
+    creator:
+      name: FelekDevYT
+      url: https://github.com/FelekDevYT
+      avatar: https://github.com/FelekDevYT.png?size=20
+    latest_release_tag: 1.0
+    screenshots:
+      - url: ./Assets/MoreHuds/example.png
+        alt: Some hud elements added by the plugin
+        width: 429
+      - url: ./Assets/MoreHuds/settings.png
+        alt: TargetHUD's settings
+        width: 171
+    is_core: false
+    mc_version: 1.21.4
+    jar_url: https://github.com/FelekDevYT/MoreHuds-rusherhack/releases/download/1.0/more-huds-1.0.jar
+    added_at: '2026-03-08'
+    updated_at: '2026-03-08'
   - name: 2b2t.vc Rusherhack
     repo: rfresh2/2b2t.vc-rusherhack
     description: 2b2t data and statistics API commands and HUD.
