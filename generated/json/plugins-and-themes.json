@@ -2438,6 +2438,34 @@
       "jar_url": "https://github.com/maggyabby/playertracker-plugin/releases/download/4b9d2aa/playertracker-1.0.1.jar",
       "added_at": "2026-02-11",
       "updated_at": "2026-02-11"
+    },
+    {
+      "name": "More Huds",
+      "repo": "FelekDevYT/MoreHuds-rusherhack",
+      "description": "Adds more customizable HUD elements to RusherHacks.",
+      "creator": {
+        "name": "FelekDevYT",
+        "url": "https://github.com/FelekDevYT",
+        "avatar": "https://github.com/FelekDevYT.png?size=20"
+      },
+      "latest_release_tag": "1.0",
+      "screenshots": [
+        {
+          "url": "./Assets/MoreHuds/example.png",
+          "alt": "Some hud elements added by the plugin",
+          "width": 429
+        },
+        {
+          "url": "./Assets/MoreHuds/settings.png",
+          "alt": "TargetHUD's settings",
+          "width": 171
+        }
+      ],
+      "is_core": false,
+      "mc_versions": "1.21.4",
+      "jar_url": "https://github.com/FelekDevYT/MoreHuds-rusherhack/releases/download/1.0/more-huds-1.0.jar",
+      "added_at": "2026-03-08",
+      "updated_at": "2026-03-08"
     }
   ],
   "themes": [
