@@ -57,7 +57,7 @@ plugins:
       name: FelekDevYT
       url: https://github.com/FelekDevYT
       avatar: https://github.com/FelekDevYT.png?size=20
-    latest_release_tag: 1.0
+    latest_release_tag: '1.0'
     screenshots:
       - url: ./Assets/RusherClicker/settings.png
         alt: RusherClicker Settings
