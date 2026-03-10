@@ -17,29 +17,6 @@
       "updated_at": "2025-02-18"
     },
     {
-      "name": "RusherClicker",
-      "repo": "FelekDevYT/RusherClicker",
-      "description": "A high-performance, tick-perfect AutoClicker plugin for RusherHack",
-      "creator": {
-        "name": "FelekDevYT",
-        "url": "https://github.com/FelekDevYT",
-        "avatar": "https://github.com/FelekDevYT.png?size=20"
-      },
-      "latest_release_tag": "1.0",
-      "screenshots": [
-        {
-          "url": "./Assets/RusherClicker/settings.png",
-          "alt": "RusherClicker Settings",
-          "width": 173
-        }
-      ],
-      "is_core": false,
-      "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/FelekDevYT/RusherClicker/releases/download/1.0/rusherclicker-1.0.jar",
-      "added_at": "2026-03-10",
-      "updated_at": "2026-03-10"
-    },
-    {
       "name": "2b2t.vc Rusherhack",
       "repo": "rfresh2/2b2t.vc-rusherhack",
       "description": "2b2t data and statistics API commands and HUD.",
@@ -2489,6 +2466,29 @@
       "jar_url": "https://github.com/FelekDevYT/MoreHuds-rusherhack/releases/download/1.0/more-huds-1.0.jar",
       "added_at": "2026-03-08",
       "updated_at": "2026-03-08"
+    },
+    {
+      "name": "RusherClicker",
+      "repo": "FelekDevYT/RusherClicker",
+      "description": "A high-performance, tick-perfect AutoClicker plugin for RusherHack",
+      "creator": {
+        "name": "FelekDevYT",
+        "url": "https://github.com/FelekDevYT",
+        "avatar": "https://github.com/FelekDevYT.png?size=20"
+      },
+      "latest_release_tag": "1.0",
+      "screenshots": [
+        {
+          "url": "./Assets/RusherClicker/settings.png",
+          "alt": "RusherClicker Settings",
+          "width": 173
+        }
+      ],
+      "is_core": false,
+      "mc_versions": "1.21.4",
+      "jar_url": "https://github.com/FelekDevYT/RusherClicker/releases/download/1.0/rusherclicker-1.0.jar",
+      "added_at": "2026-03-10",
+      "updated_at": "2026-03-10"
     }
   ],
   "themes": [

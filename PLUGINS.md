@@ -136,21 +136,6 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 ---
 
-- ### [RusherClicker](https://github.com/FelekDevYT/RusherClicker) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/FelekDevYT/RusherClicker?label=Latest%20Release&color=green)](https://github.com/FelekDevYT/RusherClicker/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/FelekDevYT/RusherClicker/total)](https://github.com/FelekDevYT/RusherClicker/releases/download/1.0/rusherclicker-1.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
- **Creator**: <img src="https://github.com/FelekDevYT.png?size=20" width="20" height="20"> [FelekDevYT](https://github.com/FelekDevYT)<br>
- A high-performance, tick-perfect AutoClicker plugin for RusherHack
-
- <details>
- <summary>Show Screenshots</summary>
- <p align="center">
- <img src="./Assets/RusherClicker/settings.png" alt="RusherClicker Settings" width="173">
- </p>
- </details>
-
----
-
 - ### [2b2t.vc Rusherhack](https://github.com/rfresh2/2b2t.vc-rusherhack) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/rfresh2/2b2t.vc-rusherhack?label=Latest%20Release&color=green)](https://github.com/rfresh2/2b2t.vc-rusherhack/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/rfresh2/2b2t.vc-rusherhack/total)](https://github.com/rfresh2/2b2t.vc-rusherhack/releases/download/1.12/2b2t.vc-rusherhack-1.12.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201--1%2021%204-blueviolet)<br>
@@ -1479,6 +1464,21 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  <p align="center">
  <img src="./Assets/MoreHuds/example.png" alt="Some hud elements added by the plugin" width="429">
  <img src="./Assets/MoreHuds/settings.png" alt="TargetHUD's settings" width="171">
+ </p>
+ </details>
+
+---
+
+- ### [RusherClicker](https://github.com/FelekDevYT/RusherClicker) <br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/FelekDevYT/RusherClicker?label=Latest%20Release&color=green)](https://github.com/FelekDevYT/RusherClicker/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/FelekDevYT/RusherClicker/total)](https://github.com/FelekDevYT/RusherClicker/releases/download/1.0/rusherclicker-1.0.jar)<br>
+ ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ **Creator**: <img src="https://github.com/FelekDevYT.png?size=20" width="20" height="20"> [FelekDevYT](https://github.com/FelekDevYT)<br>
+ A high-performance, tick-perfect AutoClicker plugin for RusherHack
+
+ <details>
+ <summary>Show Screenshots</summary>
+ <p align="center">
+ <img src="./Assets/RusherClicker/settings.png" alt="RusherClicker Settings" width="173">
  </p>
  </details>
 
