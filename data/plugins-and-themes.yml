@@ -1965,6 +1965,34 @@ plugins:
     jar_url: https://github.com/FelekDevYT/RusherClicker/releases/download/1.0/rusherclicker-1.0.jar
     added_at: '2026-03-10'
     updated_at: '2026-03-10'
+  - name: packets_in_out
+    repo: KybesRusherhackPlugins/packets_in_out
+    description: HUD element that displays incoming and outgoing packet counts
+    creator:
+      name: KybesRusherhackPlugins
+      url: https://github.com/KybesRusherhackPlugins
+      avatar: https://github.com/KybesRusherhackPlugins.png?size=20
+    latest_release_tag: 'init'
+    screenshots: []
+    is_core: false
+    mc_versions: 1.21.4
+    jar_url: https://github.com/KybesRusherhackPlugins/packets_in_out/releases/download/init/packets-in-out-1.0.0.jar
+    added_at: '2026-03-10'
+    updated_at: '2026-03-10'
+  - name: hotbar_randomizer
+    repo: KybesRusherhackPlugins/hotbar_randomizer
+    description: Randomizes your selected hotbar slot after placing, with options to exclude and ignore specific slots
+    creator:
+      name: KybesRusherhackPlugins
+      url: https://github.com/KybesRusherhackPlugins
+      avatar: https://github.com/KybesRusherhackPlugins.png?size=20
+    latest_release_tag: 'init'
+    screenshots: []
+    is_core: false
+    mc_versions: 1.21.4
+    jar_url: https://github.com/KybesRusherhackPlugins/hotbar_randomizer/releases/download/init/hotbar-randomizer-1.0.0.jar
+    added_at: '2026-03-10'
+    updated_at: '2026-03-10'
 themes:
   - name: Nhack Theme
     repo: h1tm4nqq/Nhack-theme
