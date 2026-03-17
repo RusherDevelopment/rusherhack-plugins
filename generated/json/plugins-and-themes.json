@@ -543,11 +543,11 @@
         "url": "https://github.com/Lokfid",
         "avatar": "https://github.com/Lokfid.png?size=20"
       },
-      "latest_release_tag": "1.0.2",
+      "latest_release_tag": "1.1.0",
       "screenshots": [],
       "is_core": false,
       "mc_versions": "1.20.4",
-      "jar_url": "https://github.com/Lokfid/WeatherChangingPlugin/releases/download/1.0.2/WeatherPlugin-1.0.2.jar",
+      "jar_url": "https://github.com/Lokfid/WeatherChangingPlugin/releases/download/1.1.0/WeatherPlugin-1.1.jar",
       "added_at": "2024-07-24",
       "updated_at": "2024-07-24"
     },
@@ -1512,11 +1512,11 @@
         "url": "https://github.com/Lokfid",
         "avatar": "https://github.com/Lokfid.png?size=20"
       },
-      "latest_release_tag": "1.0.4-1.21.4",
+      "latest_release_tag": "1.0.4-1.21.4-fix",
       "screenshots": [],
       "is_core": true,
       "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/Lokfid/RusherMoji/releases/download/1.0.4-1.21.4/emoji-1.0.4.jar",
+      "jar_url": "https://github.com/Lokfid/RusherMoji/releases/download/1.0.4-1.21.4-fix/emoji-1.0.4.jar",
       "added_at": "2025-04-15",
       "updated_at": "2025-06-10"
     },
