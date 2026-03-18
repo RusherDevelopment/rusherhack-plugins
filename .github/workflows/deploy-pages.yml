@@ -3,6 +3,8 @@ name: Deploy API (GitHub Pages)
 on:
   push:
     branches: [ main ]
+  schedule:
+    - cron: '0 * * * *'  
   workflow_dispatch:
 
 permissions:
@@ -25,6 +27,7 @@ jobs:
         run: |
           python3 --version
           python3 scripts/API/emit_static_api.py
+          cp -r public_html/* public/
           echo "[ls] public/"
           ls -lah public || true
           echo "[ls] public/api/"

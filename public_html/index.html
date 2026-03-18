@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="with=device-width, install-scale=1.0">
+        <title>RusherHack Addons</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="bg-[#0f1115] text-[#d1d5db]">
+        <header class="text-center py-16">
+            <h1 class="text-5xl font-bold text-[#c4b5fd] mb-4">RusherHack Addons</h1>
+            <p class="text-[#8b949e]">A list of free and open-source RusherHack plugins and themes</p>
+        </header>
+
+        <section class="controls-bg p-4 rounded-2xl flex flex-col md:flex-row gap-4 max-w-7xl mx-auto px-4 mb-8">
+            <div class="relative flex-grow">
+                <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-slate-500"></i>
+                <input type="text" id="searchInput" placeholder="Search by name, description or author..." 
+                       class="w-full pl-11 pr-4 py-3 rounded-xl text-sm">
+            </div>
+                <div class="flex gap-4">
+                <select id="sortSelect" class="px-4 py-3 rounded-xl text-sm cursor-pointer min-w-[160px]">
+                    <option value="newest">Newest First</option>
+                    <option value="oldest">Oldest First</option>
+                    <option value="az">Name A-Z</option>
+                    <option value="za">Name Z-A</option>
+                </select>
+                <select id="typeFilter" class="px-4 py-3 rounded-xl text-sm cursor-pointer min-w-[140px]">
+                    <option value="all">All Types</option>
+                    <option value="plugin">Plugins</option>
+                    <option value="core">Core Plugins</option>
+                    <option value="theme">Themes</option>
+                </select>
+            </div>
+            <div id="resultsCount" class="mt-4 px-2 text-sm text-slate-500 font-medium"></div>
+        </section>
+
+        <main class="max-w-7xl mx-auto px-4 pb-16">
+            <div id="grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+            </div>
+        </main>
+
+        <script>
+            let allItems = []
+
+            async function loadAddons() {
+                try {
+                    const response = await fetch('./api/v1/index.json')
+                    const data = await response.json()
+
+                    let plugins = data.plugins
+                    for (let i = 0; i < plugins.length; i++) {
+                        let item = plugins[i]
+                        if (item.is_core) {
+                            item.category = 'core'
+                        } else {
+                            item.category = 'plugin'
+                        }
+
+                        allItems.push(item)
+                    }
+
+                    let themes = data.themes
+                    for (let i = 0; i < themes.length; i++) {
+                        let theme = themes[i]
+                        theme.category = 'theme'
+                        allItems.push(theme)
+                    }
+
+                    document.getElementById('searchInput').addEventListener('input', grid)
+                    document.getElementById('sortSelect').addEventListener('change', grid)
+                    document.getElementById('typeFilter').addEventListener('change', grid)
+                    grid()
+                } catch (err) {
+                    console.error("Error while loading", err)
+                }
+            }
+
+            function grid() {
+                const query = document.getElementById('searchInput').value.toLowerCase()
+                const sortBy = document.getElementById('sortSelect').value
+                const typeFilter = document.getElementById('typeFilter').value
+
+                let filtered = allItems.filter(item => {
+                    const name = item.name ? item.name.toLowerCase() : ''
+                    const desc = item.description ? item.description.toLowerCase() : ''
+                    const creator = (item.creator && item.creator.name) ? item.creator.name.toLowerCase() : ''
+
+                    const matches = name.includes(query) || desc.includes(query) || creator.includes(query)
+                    const matchesTypes = typeFilter === 'all' || item.category === typeFilter
+                    
+                    return matches && matchesTypes
+                })
+
+                filtered.sort((a, b) => {
+                    if (sortBy === 'az') return a.name.localeCompare(b.name)
+                    if (sortBy === 'za') return b.name.localeCompare(a.name)
+
+                    const dateA = new Date(a.added_at || 0)
+                    const dateB = new Date(b.added_at || 0)
+
+                    if (sortBy === 'newest') return dateB - dateA
+                    if (sortBy === 'oldest') return dateA - dateB
+                    return 0
+                })
+
+                renderGrid(filtered)
+            }
+            function renderGrid(items) {//FINALLY!
+                const grid = document.getElementById('grid')
+                document.getElementById('resultsCount').innerText = `Showing ${items.length} addons`
+
+                if (items.length === 0) {
+                    grid.innerHTML = `<div class="col-span-full text-center py-20 text-slate-500 text-xl text-white">No results found matching your criteria.</div>`
+                    return
+                }
+
+                grid.innerHTML = items.map(item => {
+                    const hasReleases = item.latest_release_tag && item.latest_release_tag.trim() !== ''
+                    
+                    let imgUrl = 'https://raw.githubusercontent.com/RusherDevelopment/rusherhack-plugins/main/Assets/RusherHacks/rh_head.png'
+                    if (item.screenshots?.length > 0) {
+                        const ss = item.screenshots[0].url
+                        imgUrl = ss.startsWith('./') ? ss.replace('./', 'https://raw.githubusercontent.com/FelekDevYT/rusherhack-plugins/main/') : ss
+                    } else if (item.creator?.avatar) {
+                        imgUrl = item.creator.avatar.replace('size=20', 'size=400')
+                    }
+
+                    return `
+                        <div class="addon-card rounded-2xl overflow-hidden flex flex-col h-full">
+                            <div class="h-48 bg-black/40 relative overflow-hidden group">
+                                <img src="${imgUrl}" 
+                                     class="w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
+                                     onerror="this.src='https://raw.githubusercontent.com/RusherDevelopment/rusherhack-plugins/main/Assets/RusherHacks/rh_head.png'">
+                                <div class="absolute top-3 left-3">
+                                    <span class="px-3 py-1 text-[10px] font-bold tracking-widest uppercase bg-[#0f1115]/80 backdrop-blur-md border border-white/10 rounded-full">
+                                        ${item.is_core ? 'Core' : (item.mc_versions ? 'Plugin' : 'Theme')}
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <img src="${item.creator.avatar}" class="w-8 h-8 rounded-full border border-white/10">
+                                    <div>
+                                        <h3 class="text-xl font-bold text-white leading-tight">${item.name}</h3>
+                                        <p class="text-xs text-slate-500">by <a href="${item.creator.url}" target="_blank" class="hover:text-[#c4b5fd]">${item.creator.name}</a></p>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-slate-400 mb-6 line-clamp-2 flex-grow">
+                                    ${item.description || 'No description provided.'}
+                                </p>
+                                <div class="flex flex-col items-start gap-1 w-fit">
+                                    <img src="https://img.shields.io/github/stars/${item.repo}?style=flat&color=8b5cf6&label=%E2%AD%90" 
+                                        class="h-5 w-auto" style="display: block;">
+                                    ${hasReleases 
+                                        ? `<img src="https://img.shields.io/github/downloads/${item.repo}/total?style=flat&color=4ade80&label=DL" 
+                                                class="h-5 w-auto" style="display: block;">`
+                                        : `<span class="text-[10px] text-slate-500 italic">No releases</span>`
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    `
+                }).join('')
+            }
+
+            loadAddons()
+        </script>
+    </body>
+</html>
