@@ -1,0 +1,23 @@
+body {
+    background-color: #0f1115; color: #d1d5db; 
+
+}
+.addon-card {
+    background-color: #13151a; border: 1px solid #232530; transition: all 0.3s ease;
+}
+
+.addon-card:hover {
+    border-color: #8b5cf6; transform: translateY(-4px);
+}
+
+.controls-bg {
+    background-color: #13151a; border: 1px solid #232530;
+}
+
+input, select {
+    background-color: #0f1115 !important; border: 1px solid #232530 !important; color: white !important; outline: none;
+}
+
+input:focus, select:focus {
+    border-color: #8b5cf6 !important;
+}
