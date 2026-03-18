@@ -124,7 +124,7 @@
                     let imgUrl = 'https://raw.githubusercontent.com/RusherDevelopment/rusherhack-plugins/main/Assets/RusherHacks/rh_head.png'
                     if (item.screenshots?.length > 0) {
                         const ss = item.screenshots[0].url
-                        imgUrl = ss.startsWith('./') ? ss.replace('./', 'https://raw.githubusercontent.com/FelekDevYT/rusherhack-plugins/main/') : ss
+                        imgUrl = ss.startsWith('./') ? ss.replace('./', 'https://raw.githubusercontent.com/RusherDevelopment/rusherhack-plugins/main/') : ss
                     } else if (item.creator?.avatar) {
                         imgUrl = item.creator.avatar.replace('size=20', 'size=400')
                     }
