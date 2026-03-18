@@ -161,6 +161,17 @@
                                         : `<span class="text-[10px] text-slate-500 italic">No releases</span>`
                                     }
                                 </div>
+                                    ${item.jar_url ? `
+                                        <a href="${item.jar_url}" 
+                                        class="w-full text-center bg-[#8b5cf6] hover:bg-[#7c3aed] text-white py-2.5 rounded-xl text-sm font-bold transition-colors shadow-lg shadow-indigo-500/20">
+                                        <i class="fa-solid fa-download mr-1"></i> Download .jar
+                                        </a>
+                                    ` : ''}
+                                <a href="https://github.com/${item.repo}" target="_blank" 
+                                    class="w-full text-center border border-slate-700 hover:border-slate-500 text-slate-400 py-2 rounded-xl text-xs font-bold transition-colors uppercase tracking-tight">
+                                    <i class="fa-brands fa-github mr-1"></i> Source Code
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     `
