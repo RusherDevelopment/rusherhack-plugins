@@ -150,6 +150,10 @@ Explore these resources to learn more about developing and using RusherHack plug
 </td></tr>
 </table>
 
+## Plugin & Theme Search
+
+Browse plugins and themes on the new website: **[RusherHack Addons](https://rusherdevelopment.github.io/rusherhack-plugins/)**
+
 ## Plugins List
 
 Discover community-created plugins to enhance RusherHack’s functionality.
