@@ -50,29 +50,6 @@ plugins:
     mc_versions: N/A
     added_at: '2023-10-21'
     updated_at: '2025-02-18'
-  - name: Phoenix
-    repo: FelekDevYT/phoenix
-    description: A high-performance, all-in-one utility plugin for RusherHack.
-    creator:
-      name: FelekDevYT
-      url: https://github.com/FelekDevYT
-      avatar: https://github.com/FelekDevYT.png?size=20
-    latest_release_tag: '1.0.0'
-    screenshots:
-      - url: ./Assets/Phoenix/settings.png
-        alt: Settings
-        width: 174
-      - url: ./Assets/Phoenix/settings2.png
-        alt: Memory cleaner settings
-        width: 170
-      - url: ./Assets/Phoenix/settings3.png
-        alt: Elytra boost settings
-        width: 162
-    is_core: false
-    mc_versions: '1.21.4'
-    jar_url: https://github.com/FelekDevYT/Phoenix/releases/download/1.0.0/phoenix-1.0.0.jar
-    added_at: '2026-03-24'
-    updated_at: '2026-03-24'
   - name: 2b2t.vc Rusherhack
     repo: rfresh2/2b2t.vc-rusherhack
     description: 2b2t data and statistics API commands and HUD.
@@ -2044,7 +2021,43 @@ plugins:
     jar_url: https://github.com/hx-4/RusherAutoMend/releases/download/1.0/auto-mend-1.0.0.jar
     added_at: '2026-03-10'
     updated_at: '2026-03-10'
-    
+  - name: Phoenix
+    repo: FelekDevYT/phoenix
+    description: A high-performance, all-in-one utility plugin for RusherHack.
+    creator:
+      name: FelekDevYT
+      url: https://github.com/FelekDevYT
+      avatar: https://github.com/FelekDevYT.png?size=20
+    latest_release_tag: '1.0.0'
+    screenshots:
+      - url: ./Assets/Phoenix/settings.png
+        alt: Settings
+        width: 174
+      - url: ./Assets/Phoenix/settings2.png
+        alt: Memory cleaner settings
+        width: 170
+      - url: ./Assets/Phoenix/settings3.png
+        alt: Elytra boost settings
+        width: 162
+    is_core: false
+    mc_versions: '1.21.4'
+    jar_url: https://github.com/FelekDevYT/Phoenix/releases/download/1.0.0/phoenix-1.0.0.jar
+    added_at: '2026-03-24'
+    updated_at: '2026-03-24'
+  - name: Xaero-Waypoints-ETA
+    repo: hx-4/Xaero-Waypoints-ETA
+    description: Displays an estimated travel time to Xaero waypoints in-game.
+    creator:
+      name: hx-4
+      url: https://github.com/hx-4
+      avatar: https://github.com/hx-4.png?size=20
+    latest_release_tag: '1.0'
+    screenshots: []
+    is_core: false
+    mc_versions: 1.21.4
+    jar_url: https://github.com/hx-4/Xaero-Waypoints-ETA/releases/download/1.0/waypoint-eta-1.0.0.jar
+    added_at: '2026-03-10'
+    updated_at: '2026-03-10'
 themes:
   - name: Nhack Theme
     repo: h1tm4nqq/Nhack-theme
