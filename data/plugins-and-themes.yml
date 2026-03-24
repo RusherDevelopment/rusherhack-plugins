@@ -1993,6 +1993,35 @@ plugins:
     jar_url: https://github.com/KybesRusherhackPlugins/hotbar_randomizer/releases/download/init/hotbar-randomizer-1.0.0.jar
     added_at: '2026-03-10'
     updated_at: '2026-03-10'
+  - name: RusherSearchTweaks
+    repo: hx-4/RusherSearchTweaks
+    description: Adds group toggles to the Search module for quickly enabling or disabling categories.
+    creator:
+      name: hx-4
+      url: https://github.com/hx-4
+      avatar: https://github.com/hx-4.png?size=20
+    latest_release_tag: '1.0'
+    screenshots: []
+    is_core: false
+    mc_versions: 1.21.4
+    jar_url: https://github.com/hx-4/RusherSearchTweaks/releases/download/1.0/search-tweaks-1.0.0.jar
+    added_at: '2026-03-10'
+    updated_at: '2026-03-10'
+  - name: RusherAutoMend
+    repo: hx-4/RusherAutoMend
+    description: Automatically switches to low durability armor and tools for AFK XP mending.
+    creator:
+      name: hx-4
+      url: https://github.com/hx-4
+      avatar: https://github.com/hx-4.png?size=20
+    latest_release_tag: '1.0'
+    screenshots: []
+    is_core: false
+    mc_versions: 1.21.4
+    jar_url: https://github.com/hx-4/RusherAutoMend/releases/download/1.0/auto-mend-1.0.0.jar
+    added_at: '2026-03-10'
+    updated_at: '2026-03-10'
+    
 themes:
   - name: Nhack Theme
     repo: h1tm4nqq/Nhack-theme
