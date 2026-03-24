@@ -33,6 +33,7 @@ This repository is a curated collection of third-party plugins developed for the
 - [Installation](#installation)
 - [Plugin Types](#plugin-types)
 - [Plugin Examples/Info](#plugin-examplesinfo)
+- [Plugin & Theme Search](#plugin--theme-search)
 - [Plugins List](#plugins-list)
 - [Themes List](#themes-list)
 - [Plugin/Theme API](#plugintheme-api)
