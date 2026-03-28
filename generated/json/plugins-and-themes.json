@@ -45,6 +45,29 @@
       "updated_at": "2025-01-17"
     },
     {
+      "name": "ChestIndexer",
+      "repo": "FelekDevYT/ChestIndexer",
+      "description": "A powerful, automated container scanner and item counter for RusherHack.",
+      "creator": {
+        "name": "FelekDevYT",
+        "url": "https://github.com/FelekDevYT",
+        "avatar": "https://github.com/FelekDevYT.png?size=20"
+      },
+      "latest_release_tag": "1.0.0",
+      "screenshots": [
+        {
+          "url": "./Assets/ChestIndexer/logo.png",
+          "alt": "Logo",
+          "width": 811
+        }
+      ],
+      "is_core": false,
+      "mc_versions": "1.21.4",
+      "jar_url": "https://github.com/FelekDevYT/ChestIndexer/releases/download/1.0.0/chest-indexer-1.0.0.jar",
+      "added_at": "2026-03-28",
+      "updated_at": "2026-03-28"
+    },
+    {
       "name": "RusherHack-HudElement",
       "repo": "Aspect-404/RusherHack-HudElement",
       "description": "Create a customizable HUD element for Minecraft utility mod RusherHack.",
