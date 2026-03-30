@@ -1525,7 +1525,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [RusherAutoMend](https://github.com/hx-4/RusherAutoMend) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/hx-4/RusherAutoMend?label=Latest%20Release&color=green)](https://github.com/hx-4/RusherAutoMend/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/hx-4/RusherAutoMend/total)](https://github.com/hx-4/RusherAutoMend/releases/download/1.0/auto-mend-1.0.0.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/hx-4/RusherAutoMend?label=Latest%20Release&color=green)](https://github.com/hx-4/RusherAutoMend/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/hx-4/RusherAutoMend/total)](https://github.com/hx-4/RusherAutoMend/releases/download/1.1.0/auto-mend-1.1.0.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
  **Creator**: <img src="https://github.com/hx-4.png?size=20" width="20" height="20"> [hx-4](https://github.com/hx-4)<br>
  Automatically switches to low durability armor and tools for AFK XP mending.
@@ -1550,7 +1550,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [Xaero-Waypoints-ETA](https://github.com/hx-4/Xaero-Waypoints-ETA) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/hx-4/Xaero-Waypoints-ETA?label=Latest%20Release&color=green)](https://github.com/hx-4/Xaero-Waypoints-ETA/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/hx-4/Xaero-Waypoints-ETA/total)](https://github.com/hx-4/Xaero-Waypoints-ETA/releases/download/1.0/waypoint-eta-1.0.0.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/hx-4/Xaero-Waypoints-ETA?label=Latest%20Release&color=green)](https://github.com/hx-4/Xaero-Waypoints-ETA/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/hx-4/Xaero-Waypoints-ETA/total)](https://github.com/hx-4/Xaero-Waypoints-ETA/releases/download/1.2.0/waypoint-eta-1.2.0.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
  **Creator**: <img src="https://github.com/hx-4.png?size=20" width="20" height="20"> [hx-4](https://github.com/hx-4)<br>
  Displays an estimated travel time to Xaero waypoints in-game.
