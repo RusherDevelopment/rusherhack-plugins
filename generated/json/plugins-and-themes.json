@@ -1600,55 +1600,6 @@
       "updated_at": "2025-05-26"
     },
     {
-      "name": "Rusher GhoulMode",
-      "repo": "Koteyka32k/rusher-ghoulmode",
-      "description": "Allows you to stay in the world after death. The death screen is suppressed, and you can still look around without interacting.",
-      "creator": {
-        "name": "Koteyka32k",
-        "url": "https://github.com/Koteyka32k",
-        "avatar": "https://github.com/Koteyka32k.png?size=20"
-      },
-      "latest_release_tag": "",
-      "screenshots": [],
-      "is_core": false,
-      "mc_versions": "1.21.1",
-      "added_at": "2025-03-16",
-      "updated_at": "2025-03-16"
-    },
-    {
-      "name": "Rusher AutoAnvil",
-      "repo": "Koteyka32k/rusher-autoanvil",
-      "description": "A basic AutoAnvil with airplace. Bypasses 2b2t (very good).",
-      "creator": {
-        "name": "Koteyka32k",
-        "url": "https://github.com/Koteyka32k",
-        "avatar": "https://github.com/Koteyka32k.png?size=20"
-      },
-      "latest_release_tag": "",
-      "screenshots": [],
-      "is_core": false,
-      "mc_versions": "1.21.1",
-      "added_at": "2025-03-23",
-      "updated_at": "2025-03-23"
-    },
-    {
-      "name": "Rusher BurrowESP",
-      "repo": "Koteyka32k/rusher-burrowesp",
-      "description": "A module that shows blocks that a player is burrowed into.",
-      "creator": {
-        "name": "Koteyka32k",
-        "url": "https://github.com/Koteyka32k",
-        "avatar": "https://github.com/Koteyka32k.png?size=20"
-      },
-      "latest_release_tag": "release",
-      "screenshots": [],
-      "is_core": false,
-      "mc_versions": "1.21.1",
-      "jar_url": "https://github.com/Koteyka32k/rusher-burrowesp/releases/download/release/burrowesp-1.0.0.jar",
-      "added_at": "2025-03-25",
-      "updated_at": "2025-03-25"
-    },
-    {
       "name": "Rusherhack-SignFilter",
       "repo": "ToxicAven/Rusherhack-SignFilter",
       "description": "A plugin for Rusherhack to filter out unwanted/inappropriate sign messages.",
@@ -2010,23 +1961,6 @@
       "updated_at": "2025-08-13"
     },
     {
-      "name": "AutoMoss",
-      "repo": "master7720/AutoMoss",
-      "description": "Automatic moss spreading with configurable settings. \u2022 Range, cooldown, delay, and max uses per tick \u2022 Optional rotation to face target blocks \u2022 Optional tree growth support (azaleas, saplings, leaves) \u2022 Option to restrict bone meal usage to inventory or hotbar only",
-      "creator": {
-        "name": "master7720",
-        "url": "https://github.com/master7720",
-        "avatar": "https://github.com/master7720.png?size=20"
-      },
-      "latest_release_tag": "beta",
-      "screenshots": [],
-      "is_core": false,
-      "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/master7720/AutoMoss/releases/download/beta/automoss-2.1.jar",
-      "added_at": "2025-08-17",
-      "updated_at": "2025-08-28"
-    },
-    {
       "name": "AutoIgnorehard",
       "repo": "IceTank/RusherHack-AutoIgnorehard",
       "description": "Automatically runs the `/ignorehard <playername>` command on any player that sends a Discord invite in chat.",
@@ -2299,23 +2233,6 @@
       "is_core": false,
       "mc_versions": "1.21.4",
       "jar_url": "https://github.com/tillay-rh-plugins/example-chatbot/releases/download/v1.0.0-0e23fd/example-chatbot-1.0.0.jar",
-      "added_at": "2025-11-17",
-      "updated_at": "2025-11-17"
-    },
-    {
-      "name": "StartupSound",
-      "repo": "Koteyka32k/rh-startupsound",
-      "description": "Plays a custom `.ogg` sound on RusherHack startup. Supports selecting a specific file or choosing a random sound from `rusherhack/startupsounds`.",
-      "creator": {
-        "name": "Koteyka32k",
-        "url": "https://github.com/Koteyka32k",
-        "avatar": "https://github.com/Koteyka32k.png?size=20"
-      },
-      "latest_release_tag": "v1.0.1",
-      "screenshots": [],
-      "is_core": true,
-      "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/Koteyka32k/rh-startupsound/releases/download/v1.0.1/startupsound-1.0.1.jar",
       "added_at": "2025-11-17",
       "updated_at": "2025-11-17"
     },
