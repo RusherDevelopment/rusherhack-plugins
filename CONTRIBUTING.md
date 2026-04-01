@@ -6,8 +6,6 @@ Thanks for helping improve the registry!
 **TL;DR: You only need to edit one file:** `data/plugins-and-themes.yml`.  
 All pages, JSON, badges, and API files are generated automatically by our scripts and GitHub Actions.
 
----
-
 ## How it works
 
 - **Source of truth:** `data/plugins-and-themes.yml`
@@ -20,7 +18,21 @@ All pages, JSON, badges, and API files are generated automatically by our script
 When your PR is opened, **GitHub Actions validates the YAML** and **generates everything**.  
 If something is wrong, the job will fail with a helpful error message.
 
----
+### Automatic update handling
+
+Routine plugin and theme update maintenance is handled automatically by our scripts.  
+This includes things like refreshing release metadata, generated outputs, and related registry files.
+
+**You do not need to open a PR just to update:**
+- `latest_release_tag`
+- `jar_url`
+- generated markdown or JSON files
+- other auto-generated output files
+
+PRs are mainly needed for:
+- adding a new plugin or theme
+- fixing or improving descriptions, screenshots, metadata, or structure in `data/plugins-and-themes.yml`
+- correcting information the automation cannot determine on its own
 
 ## What you need to do
 
@@ -31,8 +43,6 @@ If something is wrong, the job will fail with a helpful error message.
    - Use the PR template and check the box confirming you only changed the YAML.
 
 > That’s it—no other files should be changed in your PR.
-
----
 
 ## Required fields (per entry)
 
@@ -46,9 +56,7 @@ If something is wrong, the job will fail with a helpful error message.
 - `mc_versions`: Supported Minecraft versions (range or list)  
 - `jar_url`: Direct download link to the release jar  
 - `added_at`: ISO date string when the plugin was added to the registry  
-- `updated_at`: ISO date string of the latest GitHub update (auto-filled by script)
-
----
+- `updated_at`: ISO date string of the latest registry update (auto-managed by automation)
 
 ## Example entry
 
