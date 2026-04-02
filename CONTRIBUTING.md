@@ -15,8 +15,10 @@ All pages, JSON, badges, and API files are generated automatically by our script
   - JSON under `generated/json/`
   - Static API under `api/v1/` (GitHub Pages)
 
-When your PR is opened, **GitHub Actions validates the YAML** and **generates everything**.  
-If something is wrong, the job will fail with a helpful error message.
+When your PR is opened or updated, **GitHub Actions validates the PR changes and the YAML file automatically**.  
+If something is wrong, the checks will fail with a helpful error message.
+
+After a YAML change is merged into `main`, GitHub Actions automatically regenerates the markdown and JSON output files.
 
 ### Automatic update handling
 
@@ -42,7 +44,7 @@ PRs are mainly needed for:
 2. **Open a Pull Request**
    - Use the PR template and check the box confirming you only changed the YAML.
 
-> That’s it—no other files should be changed in your PR.
+> That’s it—no generated files need to be edited manually in your PR.
 
 ## Required fields (per entry)
 
