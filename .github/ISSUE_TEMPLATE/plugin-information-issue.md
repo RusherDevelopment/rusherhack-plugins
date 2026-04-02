@@ -1,39 +1,62 @@
 ---
 name: Plugin Information Issue
-about: Template for reporting incorrect release dates, broken .jar URLs, typos, and
-  media errors in RusherHacks plugins, with priority settings.
-title: "[ISSUE]"
+about: Report incorrect plugin metadata, broken links, screenshots, or other registry issues in the RusherHacks Plugin Collection.
+title: "[PLUGIN ISSUE] "
 labels: issue
 assignees: GarlicRot
-
 ---
 
-### RUSHERHACK PLUGIN COLLECTION
+## RusherHacks Plugin Collection
 
----
+Use this template to report problems with a plugin entry in the registry.
 
-**Issue Type:**  
-- [ ] Incorrect Release Date
-- [ ] Incorrect .jar URL
-- [ ] Typo/Formatting Issue
-- [ ] Incorrect Screenshot/Video
-- [ ] Other (Please specify)
+> Routine release and generated file updates are handled automatically.  
+> This template is mainly for reporting incorrect metadata, broken assets, or missing information.
 
-**Plugin Name:**  
-Specify the name of the plugin related to this issue.
+## Issue Type
 
-**Description:**  
-Provide a brief description of the issue. Include any relevant details that can help in identifying and correcting the problem.
+- [ ] Incorrect release information
+- [ ] Incorrect or broken `.jar` URL
+- [ ] Typo or formatting issue
+- [ ] Incorrect screenshot or video
+- [ ] Missing screenshot or media
+- [ ] Incorrect Minecraft version info
+- [ ] Incorrect creator information
+- [ ] Other
 
-**Correct Information (if available):**  
-If you have the correct information (e.g., correct date, URL, text, etc.), please provide it here.
+## Plugin Name
 
-**Additional Context:**  
-Add any other context or details that might help in resolving the issue.
+Specify the exact plugin name.
 
-**Priority:**  
+## Plugin Repository
+
+Link the plugin repository, if available.
+
+## Description
+
+Describe the issue clearly and briefly.
+
+## Correct Information
+
+If you know the correct information, include it here.
+
+Examples:
+- corrected release tag
+- corrected `.jar` URL
+- corrected Minecraft versions
+- corrected screenshot or video link
+- corrected text or formatting
+
+## Additional Context
+
+Add anything else that may help, such as:
+- screenshots
+- related links
+- notes about what looks wrong
+- where the incorrect info appears in the repo/site
+
+## Priority
+
 - [ ] Low
 - [ ] Medium
 - [ ] High
-
----
