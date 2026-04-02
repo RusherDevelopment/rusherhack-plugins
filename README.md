@@ -232,9 +232,12 @@ See [API.md](./API.md) for full reference and usage examples.
 
 ## Reporting Issues
 
-If you encounter issues with a specific plugin, contact the plugin’s creator or open an issue in their repository.
+If you encounter an issue with a specific plugin or theme itself, please contact the creator directly or open an issue in their repository.
 
-For issues with this repository (e.g., incorrect plugin details, broken links, or formatting errors), use the [Plugin Information Issue](https://github.com/RusherDevelopment/rusherhack-plugins/issues/new?assignees=&labels=&template=plugin-information-issue.md&title=%5BISSUE%5D) tracker.
+If the issue is with this collection repository, such as incorrect metadata, broken links, missing screenshots, or formatting problems, please use the appropriate issue template:
+
+- [Plugin Information Issue](https://github.com/RusherDevelopment/rusherhack-plugins/issues/new?template=plugin_info_issue_template.md)
+- [Theme Information Issue](https://github.com/RusherDevelopment/rusherhack-plugins/issues/new?template=theme_info_issue_template.md)
 
 > [!NOTE]
 > Clearly describe the issue and include relevant details (e.g., plugin version or error logs) to help resolve problems faster.
