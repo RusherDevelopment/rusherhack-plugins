@@ -1,0 +1,44 @@
+name: Generate Markdown and JSON
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/plugins-and-themes.yml"
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      - name: Validate YAML file
+        run: python scripts/validate-yml.py
+
+      - name: Generate Markdown files
+        run: python scripts/generate.py
+
+      - name: Convert YAML to JSON
+        run: python scripts/yml-to-json.py
+
+      - name: Commit and push changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: "PLUGINS.md THEMES.md README.md generated/json/plugins-and-themes.json"
+          message: "Update markdown and JSON output from YAML"
+          push: true
