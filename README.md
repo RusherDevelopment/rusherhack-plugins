@@ -90,7 +90,7 @@ Explore these resources to learn more about developing and using RusherHack plug
 > Use the Example Plugin and Javadocs as starting points to create your own plugins or to understand how existing plugins function.
 
 ## Top 6 Plugins
-<!-- TOP5:START -->
+<!-- TOP6:START -->
 <table>
 <tr><td align="left" valign="top" width="50%">
   <a href="https://github.com/John200410/rusherhack-spotify"><img src="https://avatars.githubusercontent.com/u/43681932?s=400&u=9a95dd1320f23595e6738db6406a46e55cc86a8e&v=4" alt="RusherHack Spotify Integration" width="100" height="100" style="border-radius:12px;"></a>
@@ -150,7 +150,7 @@ Explore these resources to learn more about developing and using RusherHack plug
   </div>
 </td></tr>
 </table>
-<!-- TOP5:END -->
+<!-- TOP6:END -->
 
 ## Plugin & Theme Search
 
