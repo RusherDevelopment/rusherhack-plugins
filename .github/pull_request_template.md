@@ -32,14 +32,15 @@ PRs are mainly for:
 
 ## Checklist
 
-- [ ] I updated **only** `data/plugins-and-themes.yml`
+- [ ] I updated only `data/plugins-and-themes.yml` and, if needed, related `Assets/**` files for screenshots
 - [ ] All required fields are present and correctly formatted
 - [ ] YAML syntax is valid (quotes, spacing, indentation)
 - [ ] GitHub repo is public and accessible
 - [ ] MC versions and release info are accurate
-- [ ] This PR is **not** only for auto-managed release/jar/generated file updates
+- [ ] This PR is not only for auto-managed release, jar, or generated file updates
 
-> **YAML validation and generated output are handled automatically by GitHub Actions and repository automation.**  
+> **When a PR is opened or updated, GitHub Actions automatically validates the PR changes and the YAML file.**  
+> **After YAML changes are merged into `main`, generated markdown and JSON output files are updated automatically.**  
 > If the PR fails checks, the error message should help show what needs to be fixed.
 
 ## Quick Field Reference
@@ -51,14 +52,14 @@ PRs are mainly for:
   - `name`: Author name  
   - `url`: Author profile URL  
   - `avatar`: Author avatar URL (for example, GitHub `.png?size=20`)  
-- **`latest_release_tag`** → Latest GitHub release tag  
+- **`latest_release_tag`** → Latest GitHub release tag, if applicable  
 - **`screenshots`** → List of screenshots with:
   - `url`: Path to image in `./Assets/...` or valid hosted image
   - `alt`: Short description  
   - `width`: Optional width in pixels  
 - **`is_core`** → `true` if it is a core plugin, otherwise `false`  
 - **`mc_versions`** → Supported versions (range like `1.20.1-1.21.4` or list)  
-- **`jar_url`** → Direct link to the `.jar` release asset  
+- **`jar_url`** → Direct link to the `.jar` release asset, if applicable  
 - **`added_at`** → Date added to the registry  
 - **`updated_at`** → Auto-managed update date
 
