@@ -142,7 +142,12 @@ def validate_creator(creator: Any, kind: str, name: str) -> tuple[list[str], lis
     return errors, warnings
 
 
-def validate_screenshots(screenshots: Any, kind: str, name: str) -> tuple[list[str], list[str]]:
+def validate_screenshots(
+    screenshots: Any,
+    kind: str,
+    name: str,
+    empty_screenshot_entries: list[str],
+) -> tuple[list[str], list[str]]:
     errors: list[str] = []
     warnings: list[str] = []
 
@@ -151,7 +156,7 @@ def validate_screenshots(screenshots: Any, kind: str, name: str) -> tuple[list[s
         return errors, warnings
 
     if len(screenshots) == 0:
-        warnings.append(warning(f"`screenshots` is empty in {kind} '{name}'."))
+        empty_screenshot_entries.append(f"{kind} '{name}'")
 
     for idx, screenshot in enumerate(screenshots):
         label = f"{kind} '{name}' screenshot #{idx + 1}"
@@ -215,7 +220,12 @@ def validate_unknown_fields(entry: dict[str, Any], kind: str, name: str, is_plug
     return [error(f"Unknown field(s) in {kind} '{name}': {', '.join(unknown)}")]
 
 
-def validate_common_fields(entry: dict[str, Any], kind: str, name: str) -> tuple[list[str], list[str]]:
+def validate_common_fields(
+    entry: dict[str, Any],
+    kind: str,
+    name: str,
+    empty_screenshot_entries: list[str],
+) -> tuple[list[str], list[str]]:
     errors: list[str] = []
     warnings: list[str] = []
 
@@ -253,7 +263,12 @@ def validate_common_fields(entry: dict[str, Any], kind: str, name: str) -> tuple
             errors.append(error(f"`jar_url` must be a valid https:// URL in {kind} '{name}'."))
 
     creator_errors, creator_warnings = validate_creator(entry.get("creator"), kind, name)
-    shot_errors, shot_warnings = validate_screenshots(entry.get("screenshots"), kind, name)
+    shot_errors, shot_warnings = validate_screenshots(
+        entry.get("screenshots"),
+        kind,
+        name,
+        empty_screenshot_entries,
+    )
 
     errors.extend(creator_errors)
     errors.extend(shot_errors)
@@ -283,7 +298,12 @@ def validate_plugin_fields(entry: dict[str, Any], name: str) -> tuple[list[str],
     return errors, warnings
 
 
-def validate_entry(entry: Any, is_plugin: bool, index: int) -> tuple[list[str], list[str], str, str | None]:
+def validate_entry(
+    entry: Any,
+    is_plugin: bool,
+    index: int,
+    empty_screenshot_entries: list[str],
+) -> tuple[list[str], list[str], str, str | None]:
     kind = "plugin" if is_plugin else "theme"
 
     if not isinstance(entry, dict):
@@ -297,7 +317,12 @@ def validate_entry(entry: Any, is_plugin: bool, index: int) -> tuple[list[str], 
 
     errors.extend(validate_unknown_fields(entry, kind, name, is_plugin))
 
-    common_errors, common_warnings = validate_common_fields(entry, kind, name)
+    common_errors, common_warnings = validate_common_fields(
+        entry,
+        kind,
+        name,
+        empty_screenshot_entries,
+    )
     errors.extend(common_errors)
     warnings.extend(common_warnings)
 
@@ -307,6 +332,30 @@ def validate_entry(entry: Any, is_plugin: bool, index: int) -> tuple[list[str], 
         warnings.extend(plugin_warnings)
 
     return errors, warnings, name, repo
+
+
+def summarize_empty_screenshot_warnings(entries: list[str]) -> list[str]:
+    if not entries:
+        return []
+
+    entries_sorted = sorted(entries)
+
+    if len(entries_sorted) <= 10:
+        return [
+            warning(
+                f"`screenshots` is empty in {len(entries_sorted)} entr{'y' if len(entries_sorted) == 1 else 'ies'}: "
+                + ", ".join(entries_sorted)
+            )
+        ]
+
+    preview = ", ".join(entries_sorted[:10])
+    remaining = len(entries_sorted) - 10
+    return [
+        warning(
+            f"`screenshots` is empty in {len(entries_sorted)} entries. "
+            f"First 10: {preview} ... and {remaining} more."
+        )
+    ]
 
 
 def main() -> None:
@@ -339,6 +388,7 @@ def main() -> None:
 
     all_errors: list[str] = []
     all_warnings: list[str] = []
+    empty_screenshot_entries: list[str] = []
 
     seen_plugin_names: set[str] = set()
     seen_plugin_repos: set[str] = set()
@@ -346,7 +396,12 @@ def main() -> None:
     seen_theme_repos: set[str] = set()
 
     for i, plugin in enumerate(plugins):
-        errors, warnings, name, repo = validate_entry(plugin, is_plugin=True, index=i)
+        errors, warnings, name, repo = validate_entry(
+            plugin,
+            is_plugin=True,
+            index=i,
+            empty_screenshot_entries=empty_screenshot_entries,
+        )
         all_errors.extend(errors)
         all_warnings.extend(warnings)
 
@@ -362,7 +417,12 @@ def main() -> None:
                 seen_plugin_repos.add(repo)
 
     for i, theme in enumerate(themes):
-        errors, warnings, name, repo = validate_entry(theme, is_plugin=False, index=i)
+        errors, warnings, name, repo = validate_entry(
+            theme,
+            is_plugin=False,
+            index=i,
+            empty_screenshot_entries=empty_screenshot_entries,
+        )
         all_errors.extend(errors)
         all_warnings.extend(warnings)
 
@@ -376,6 +436,8 @@ def main() -> None:
                 all_errors.append(error(f"Duplicate theme repo: '{repo}'"))
             else:
                 seen_theme_repos.add(repo)
+
+    all_warnings.extend(summarize_empty_screenshot_warnings(empty_screenshot_entries))
 
     if all_warnings:
         print(f"\n{BLUE}--- VALIDATION WARNINGS ---{RESET}\n")
