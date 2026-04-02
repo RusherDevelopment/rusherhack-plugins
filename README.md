@@ -112,15 +112,6 @@ Explore these resources to learn more about developing and using RusherHack plug
   </div>
 </td></tr>
 <tr><td align="left" valign="top" width="50%">
-  <a href="https://github.com/rfresh2/ContainerTweaks-rusherhack"><img src="https://avatars.githubusercontent.com/u/89827146?s=400&u=a91965b3b52bc088c7315ba6e4b608faafca04de&v=4" alt="Container Tweaks" width="100" height="100" style="border-radius:12px;"></a>
-  <div><strong><a href="https://github.com/rfresh2/ContainerTweaks-rusherhack">Container Tweaks</a></strong>&nbsp;<code>plugin</code></div>
-  <div style="margin:4px 0 6px 0;">Simple tweaks for quickly moving items in containers.</div>
-  <div>
-    <img alt="stars" src="https://img.shields.io/github/stars/rfresh2/ContainerTweaks-rusherhack?style=flat">
-    &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/rfresh2/ContainerTweaks-rusherhack/total?style=flat">
-    &nbsp;<img alt="updated" src="https://img.shields.io/date/1738213655?label=updated&style=flat">
-  </div>
-</td><td align="left" valign="top" width="50%">
   <a href="https://github.com/FBanna/Rusherhack-Vanilla-Efly"><img src="https://avatars.githubusercontent.com/u/67026257?s=400&u=606233515f38bbbaef9aa9910e3d601e327646f3&v=4" alt="Vanilla Elytra Flight" width="100" height="100" style="border-radius:12px;"></a>
   <div><strong><a href="https://github.com/FBanna/Rusherhack-Vanilla-Efly">Vanilla Elytra Flight</a></strong>&nbsp;<code>plugin</code></div>
   <div style="margin:4px 0 6px 0;">Highly customizable rusher hack elytra flight plugin.</div>
@@ -128,6 +119,15 @@ Explore these resources to learn more about developing and using RusherHack plug
     <img alt="stars" src="https://img.shields.io/github/stars/FBanna/Rusherhack-Vanilla-Efly?style=flat">
     &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/FBanna/Rusherhack-Vanilla-Efly/total?style=flat">
     &nbsp;<img alt="updated" src="https://img.shields.io/date/1764618838?label=updated&style=flat">
+  </div>
+</td><td align="left" valign="top" width="50%">
+  <a href="https://github.com/rfresh2/ContainerTweaks-rusherhack"><img src="https://avatars.githubusercontent.com/u/89827146?s=400&u=a91965b3b52bc088c7315ba6e4b608faafca04de&v=4" alt="Container Tweaks" width="100" height="100" style="border-radius:12px;"></a>
+  <div><strong><a href="https://github.com/rfresh2/ContainerTweaks-rusherhack">Container Tweaks</a></strong>&nbsp;<code>plugin</code></div>
+  <div style="margin:4px 0 6px 0;">Simple tweaks for quickly moving items in containers.</div>
+  <div>
+    <img alt="stars" src="https://img.shields.io/github/stars/rfresh2/ContainerTweaks-rusherhack?style=flat">
+    &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/rfresh2/ContainerTweaks-rusherhack/total?style=flat">
+    &nbsp;<img alt="updated" src="https://img.shields.io/date/1738213655?label=updated&style=flat">
   </div>
 </td></tr>
 <tr><td align="left" valign="top" width="50%">
