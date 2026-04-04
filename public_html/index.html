@@ -22,6 +22,8 @@
             </div>
                 <div class="flex gap-4">
                 <select id="sortSelect" class="px-4 py-3 rounded-xl text-sm cursor-pointer min-w-[160px]">
+                    <option value="stars">Most Stars</option>
+                    <option value="downloads">Most Downloads</option>
                     <option value="newest">Newest First</option>
                     <option value="oldest">Oldest First</option>
                     <option value="az">Name A-Z</option>
@@ -96,6 +98,8 @@
                 })
 
                 filtered.sort((a, b) => {
+                    if (sortBy === 'stars') return (b.stars || 0) - (a.stars || 0);
+                    if (sortBy === 'downloads') return (b.downloads || 0) - (a.downloads || 0);
                     if (sortBy === 'az') return a.name.localeCompare(b.name)
                     if (sortBy === 'za') return b.name.localeCompare(a.name)
 
