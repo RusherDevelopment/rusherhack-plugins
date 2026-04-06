@@ -1,9 +1,15 @@
 ![RusherHack Logo](https://avatars.githubusercontent.com/u/121969799?s=280&v=4)
 
-# Plugin/Theme Submission or Metadata Update
+# Plugin/Theme Registry or Website Update
 
 Thank you for contributing to the RusherHacks Plugin Collection!  
 Please fill out the details below to help keep review quick and clean.
+
+## Type of Change
+
+- [ ] Plugin/theme registry update
+- [ ] Plugin/theme search website update
+- [ ] Both
 
 ## Summary of Changes
 
@@ -12,6 +18,7 @@ Briefly describe what this PR does:
 - Add a new plugin or theme
 - Update an existing YAML entry
 - Fix metadata, screenshots, descriptions, or formatting
+- Update the plugin/theme search website
 -->
 
 ## Before You Submit
@@ -29,14 +36,17 @@ PRs are mainly for:
 - adding a new plugin or theme
 - correcting metadata the automation cannot determine
 - updating descriptions, screenshots, creator info, version support, or structure in `data/plugins-and-themes.yml`
+- updating the plugin/theme search website
 
 ## Checklist
 
-- [ ] I updated only `data/plugins-and-themes.yml` and, if needed, related `Assets/**` files for screenshots
+- [ ] I updated only the relevant files for this PR
+- [ ] If this is a registry update, I updated `data/plugins-and-themes.yml` and, if needed, related `Assets/**` files for screenshots
+- [ ] If this is a website update, I changed only the relevant website files
 - [ ] All required fields are present and correctly formatted
-- [ ] YAML syntax is valid (quotes, spacing, indentation)
-- [ ] GitHub repo is public and accessible
-- [ ] MC versions and release info are accurate
+- [ ] YAML syntax is valid (quotes, spacing, indentation), if applicable
+- [ ] GitHub repo is public and accessible, if applicable
+- [ ] MC versions and release info are accurate, if applicable
 - [ ] This PR is not only for auto-managed release, jar, or generated file updates
 
 > **When a PR is opened or updated, GitHub Actions automatically validates the PR changes and the YAML file.**  
