@@ -2,13 +2,16 @@
 
 # Contributing to the RusherHacks Plugin Collection
 
-Thanks for helping improve the registry!  
-**TL;DR: You only need to edit one file:** `data/plugins-and-themes.yml`.  
-All pages, JSON, badges, and API files are generated automatically by our scripts and GitHub Actions.
+Thanks for helping improve the registry and website.
+
+**TL;DR:**  
+- For registry updates, you usually only need to edit `data/plugins-and-themes.yml`
+- For website updates, only edit the relevant website files
+- Generated pages, JSON, badges, and API files are handled automatically
 
 ## How it works
 
-- **Source of truth:** `data/plugins-and-themes.yml`
+- **Source of truth for plugin/theme data:** `data/plugins-and-themes.yml`
 - **Auto-generated outputs (no manual edits):**
   - `PLUGINS.md`, `THEMES.md`
   - `README` badges / counts
@@ -20,7 +23,7 @@ If something is wrong, the checks will fail with a helpful error message.
 
 After a YAML change is merged into `main`, GitHub Actions automatically regenerates the markdown and JSON output files.
 
-### Automatic update handling
+## Automatic update handling
 
 Routine plugin and theme update maintenance is handled automatically by our scripts.  
 This includes things like refreshing release metadata, generated outputs, and related registry files.
@@ -35,18 +38,28 @@ PRs are mainly needed for:
 - adding a new plugin or theme
 - fixing or improving descriptions, screenshots, metadata, or structure in `data/plugins-and-themes.yml`
 - correcting information the automation cannot determine on its own
+- updating the plugin/theme search website
 
 ## What you need to do
 
+### For registry updates
+
 1. **Edit `data/plugins-and-themes.yml`**
-   - Add a new entry **or** update an existing one.
-   - Keep the existing structure and indentation.
+   - Add a new entry or update an existing one
+   - Keep the existing structure and indentation
+
 2. **Open a Pull Request**
-   - Use the PR template and check the box confirming you only changed the YAML.
+   - Use the PR template and mark it as a registry update
 
-> That’s it—no generated files need to be edited manually in your PR.
+> No generated files need to be edited manually in your PR.
 
-## Required fields (per entry)
+### For website updates
+
+1. **Edit only the relevant website files**
+2. **Open a Pull Request**
+   - Use the PR template and mark it as a website update
+
+## Required fields (per registry entry)
 
 - `name`: Display name  
 - `repo`: GitHub repo (`owner/repo` format preferred)  
@@ -60,7 +73,7 @@ PRs are mainly needed for:
 - `added_at`: ISO date string when the plugin was added to the registry  
 - `updated_at`: ISO date string of the latest registry update (auto-managed by automation)
 
-## Example entry
+## Example registry entry
 
 ```yaml
 - name: 2b2t.vc Rusherhack
