@@ -17,6 +17,29 @@
       "updated_at": "2025-02-18"
     },
     {
+      "name": "CustomCapes",
+      "repo": "FelekDevYT/CustomCapes",
+      "description": "A high-performance, client-side cosmetic extension for RusherHack that allows using any custom cape textures with automatic elytra synchronization.",
+      "creator": {
+        "name": "FelekDevYT",
+        "url": "https://github.com/FelekDevYT",
+        "avatar": "https://github.com/FelekDevYT.png?size=20"
+      },
+      "latest_release_tag": "latest",
+      "screenshots": [
+        {
+          "url": "./Assets/CustomCapes/settings.png",
+          "alt": "Settings",
+          "width": 174
+        }
+      ],
+      "is_core": true,
+      "mc_versions": "1.21.4",
+      "jar_url": "https://github.com/FelekDevYT/CustomCapes/releases/download/latest/customcapes-1.0.0.jar",
+      "added_at": "2026-04-05",
+      "updated_at": "2026-04-05"
+    },
+    {
       "name": "2b2t.vc Rusherhack",
       "repo": "rfresh2/2b2t.vc-rusherhack",
       "description": "2b2t data and statistics API commands and HUD.",
