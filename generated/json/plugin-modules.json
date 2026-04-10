@@ -2,6 +2,7 @@
   "plugins": [
     {
       "plugin": "Example Plugin",
+      "repo": "RusherDevelopment/example-plugin",
       "features": [
         {
           "name": "ExampleHudElement",
@@ -86,6 +87,7 @@
     },
     {
       "plugin": "CustomCapes",
+      "repo": "FelekDevYT/CustomCapes",
       "features": [
         {
           "name": "CustomCape",
@@ -117,6 +119,7 @@
     },
     {
       "plugin": "2b2t.vc Rusherhack",
+      "repo": "rfresh2/2b2t.vc-rusherhack",
       "features": [
         {
           "name": "2b2t Queue",
@@ -157,6 +160,7 @@
     },
     {
       "plugin": "ChestIndexer",
+      "repo": "FelekDevYT/ChestIndexer",
       "features": [
         {
           "name": "ChestIndex",
@@ -233,6 +237,7 @@
     },
     {
       "plugin": "RusherHack-HudElement",
+      "repo": "Aspect-404/RusherHack-HudElement",
       "features": [
         {
           "name": "CustomHudElement",
@@ -293,6 +298,7 @@
     },
     {
       "plugin": "Auto Anvil Rename",
+      "repo": "IceTank/AutoAnvilRename",
       "features": [
         {
           "name": "AutoAnvilRename",
@@ -369,6 +375,7 @@
     },
     {
       "plugin": "Queue Manager",
+      "repo": "GabiRP/QueueManager",
       "features": [
         {
           "name": "QueueManager",
@@ -381,6 +388,7 @@
     },
     {
       "plugin": "RusherHack Instance Info",
+      "repo": "John200410/rusherhack-instance-info",
       "features": [
         {
           "name": "InstanceInfo",
@@ -421,6 +429,7 @@
     },
     {
       "plugin": "Stash Mover Plugin",
+      "repo": "xyzbtw/StashMoverPlugin",
       "features": [
         {
           "name": "StashMover",
@@ -524,6 +533,7 @@
     },
     {
       "plugin": "Combined Bind List",
+      "repo": "tr330ne/combined-bindlist",
       "features": [
         {
           "name": "CombinedBindList",
@@ -753,6 +763,7 @@
     },
     {
       "plugin": "EFlyAutoJump",
+      "repo": "tr330ne/efly-autojump",
       "features": [
         {
           "name": "EFlyAutoJump",
@@ -775,6 +786,7 @@
     },
     {
       "plugin": "WaypointSync",
+      "repo": "tr330ne/waypointsync",
       "features": [
         {
           "name": "WaypointSync",
@@ -815,6 +827,7 @@
     },
     {
       "plugin": "Unified Module List",
+      "repo": "czho/unified-modulelist",
       "features": [
         {
           "name": "UnifiedModuleList",
@@ -837,6 +850,7 @@
     },
     {
       "plugin": "Container Tweaks",
+      "repo": "rfresh2/ContainerTweaks-rusherhack",
       "features": [
         {
           "name": "ContainerTweaks",
@@ -951,6 +965,7 @@
     },
     {
       "plugin": "RusherHack Spotify Integration",
+      "repo": "John200410/rusherhack-spotify",
       "features": [
         {
           "name": "Spotify",
@@ -1056,6 +1071,7 @@
     },
     {
       "plugin": "Vanilla Elytra Flight",
+      "repo": "FBanna/Rusherhack-Vanilla-Efly",
       "features": [
         {
           "name": "Elytra Autodisconnect",
@@ -1140,6 +1156,7 @@
     },
     {
       "plugin": "Rusherhack BookBot",
+      "repo": "Aspect-404/Rusherhack-BookBot",
       "features": [
         {
           "name": "AutoDupe",
@@ -1270,6 +1287,7 @@
     },
     {
       "plugin": "Shay's RusherTweaks",
+      "repo": "ShayBox/ShaysRusherTweaks",
       "features": [
         {
           "name": "AntiCrawl",
@@ -1380,6 +1398,7 @@
     },
     {
       "plugin": "Nuker",
+      "repo": "beanbag44/Nuker",
       "features": [
         {
           "name": "Listener Module",
@@ -1399,6 +1418,7 @@
     },
     {
       "plugin": "No Walk Animation",
+      "repo": "Eonexe/NoWalkAnimation",
       "features": [
         {
           "name": "Anti-Player Swing",
@@ -1411,6 +1431,7 @@
     },
     {
       "plugin": "Rusherhack Executer",
+      "repo": "KybesRusherhackPlugins/executer",
       "features": [
         {
           "name": "ExecuterGatherData",
@@ -1423,6 +1444,7 @@
     },
     {
       "plugin": "F3 Spoof",
+      "repo": "Doogie13/f3-spoof",
       "features": [
         {
           "name": "F3Spoof",
@@ -1435,6 +1457,7 @@
     },
     {
       "plugin": "Open Folder",
+      "repo": "KybesRusherhackPlugins/open-folder",
       "features": [
         {
           "name": "Open Folder",
@@ -1511,6 +1534,7 @@
     },
     {
       "plugin": "Mace Kill",
+      "repo": "KybesRusherhackPlugins/mace-kill",
       "features": [
         {
           "name": "Mace Killer",
@@ -1542,6 +1566,7 @@
     },
     {
       "plugin": "Weather Changing Plugin",
+      "repo": "Lokfid/WeatherChangingPlugin",
       "features": [
         {
           "name": "Weather",
@@ -1564,6 +1589,7 @@
     },
     {
       "plugin": "GarlicSight",
+      "repo": "GarlicRot/GarlicSight",
       "features": [
         {
           "name": "GarlicSight",
@@ -1681,6 +1707,7 @@
     },
     {
       "plugin": "LightningPop",
+      "repo": "GarlicRot/LightningPop",
       "features": [
         {
           "name": "LightningPop",
@@ -1778,6 +1805,7 @@
     },
     {
       "plugin": "AutoBucket",
+      "repo": "GarlicRot/AutoBucket",
       "features": [
         {
           "name": "AutoBucket",
@@ -1863,6 +1891,7 @@
     },
     {
       "plugin": "RusherHack-BoatExecute",
+      "repo": "PhilipPanda/RusherHack-BoatExecute",
       "features": [
         {
           "name": "BoatExecute",
@@ -1875,6 +1904,7 @@
     },
     {
       "plugin": "Remote Control",
+      "repo": "KybesRusherhackPlugins/remote-controle",
       "features": [
         {
           "name": "All from the above",
@@ -1901,6 +1931,7 @@
     },
     {
       "plugin": "Speed Measure",
+      "repo": "Lokfid/RusherHackSpeedMeasure",
       "features": [
         {
           "name": "SpeedMeasure",
@@ -1913,6 +1944,7 @@
     },
     {
       "plugin": "TNT Bomber",
+      "repo": "KybesRusherhackPlugins/tnt-bomber",
       "features": [
         {
           "name": "TntNuker",
@@ -1980,6 +2012,7 @@
     },
     {
       "plugin": "No Render Entities",
+      "repo": "John200410/norender-entities",
       "features": [
         {
           "name": "CustomNoRender",
@@ -2021,6 +2054,7 @@
     },
     {
       "plugin": "RusherHack Messenger",
+      "repo": "Gentleman2292/rusherhack-messenger",
       "features": [
         {
           "name": "Messenger settings",
@@ -2052,6 +2086,7 @@
     },
     {
       "plugin": "RusherHack Instance Info (Fork)",
+      "repo": "GarlicRot/rusherhack-instance-info",
       "features": [
         {
           "name": "InstanceInfo",
@@ -2148,6 +2183,7 @@
     },
     {
       "plugin": "RusherHack NoteBot",
+      "repo": "Lokfid/RusherHackNoteBot",
       "features": [
         {
           "name": "NoteBot",
@@ -2160,6 +2196,7 @@
     },
     {
       "plugin": "ShulkerViewer",
+      "repo": "xyzbtw/ShulkerViewer",
       "features": [
         {
           "name": "ShulkerViewer",
@@ -2209,6 +2246,7 @@
     },
     {
       "plugin": "UpdatedNCPEfly",
+      "repo": "xyzbtw/UpdatedNCPEfly",
       "features": [
         {
           "name": "UNCPEfly",
@@ -2379,6 +2417,7 @@
     },
     {
       "plugin": "dc-chat-logger",
+      "repo": "KybesRusherhackPlugins/dc-chat-logger",
       "features": [
         {
           "name": "DiscordLogger",
@@ -2519,6 +2558,7 @@
     },
     {
       "plugin": "rusherhack-nightvision-plugin",
+      "repo": "John200410/rusherhack-nightvision-plugin",
       "features": [
         {
           "name": "NightVision",
@@ -2531,6 +2571,7 @@
     },
     {
       "plugin": "AutoNetherite",
+      "repo": "xyzbtw/AutoNetherite",
       "features": [
         {
           "name": "AutoNetherite",
@@ -2562,6 +2603,7 @@
     },
     {
       "plugin": "OldSignsPlugin",
+      "repo": "xyzbtw/OldSignsPlugin",
       "features": [
         {
           "name": "OldSigns",
@@ -2620,6 +2662,7 @@
     },
     {
       "plugin": "StashHunter-rusherhack",
+      "repo": "CherkaSSH/StashHunter-rusherhack",
       "features": [
         {
           "name": "StashHunter",
@@ -2679,6 +2722,7 @@
     },
     {
       "plugin": "rusher-elytra-eta",
+      "repo": "KybesRusherhackPlugins/elytra-eta",
       "features": [
         {
           "name": "Elytra ETA",
@@ -2701,6 +2745,7 @@
     },
     {
       "plugin": "rusher-silent-close",
+      "repo": "KybesRusherhackPlugins/silent-container-close",
       "features": [
         {
           "name": "Silent close",
@@ -2713,6 +2758,7 @@
     },
     {
       "plugin": "rusherhack-addons",
+      "repo": "miles352/rusherhack-addons",
       "features": [
         {
           "name": "AFKBoostFly",
@@ -2788,6 +2834,7 @@
     },
     {
       "plugin": "rusher-gtranslate",
+      "repo": "KybesRusherhackPlugins/google-translate",
       "features": [
         {
           "name": "GTranslateV2Module",
@@ -2848,6 +2895,7 @@
     },
     {
       "plugin": "rusher-matrix-nofall",
+      "repo": "KybesRusherhackPlugins/matrix-nofall",
       "features": [
         {
           "name": "Matrix No Fall",
@@ -2860,6 +2908,7 @@
     },
     {
       "plugin": "rusher-autoportal",
+      "repo": "KybesRusherhackPlugins/auto-portal",
       "features": [
         {
           "name": "PortalMaker",
@@ -2909,6 +2958,7 @@
     },
     {
       "plugin": "rusher-air-place",
+      "repo": "KybesRusherhackPlugins/air-place",
       "features": [
         {
           "name": "Grim Air Place",
@@ -2967,6 +3017,7 @@
     },
     {
       "plugin": "rusher-hold-spamm-space",
+      "repo": "KybesRusherhackPlugins/space-spammer",
       "features": [
         {
           "name": "Hold or spamm space",
@@ -2989,6 +3040,7 @@
     },
     {
       "plugin": "rusher-auto-bed-bomber",
+      "repo": "KybesRusherhackPlugins/auto-bed-bomber",
       "features": [
         {
           "name": "Auto Bed Bomb",
@@ -3074,6 +3126,7 @@
     },
     {
       "plugin": "rusher-crystal-spin",
+      "repo": "KybesRusherhackPlugins/crystal-spin",
       "features": [
         {
           "name": "Crystal Spin",
@@ -3096,6 +3149,7 @@
     },
     {
       "plugin": "AutoShear",
+      "repo": "oisin404/AutoShear",
       "features": [
         {
           "name": "AutoShear",
@@ -3164,6 +3218,7 @@
     },
     {
       "plugin": "rusher-autokit",
+      "repo": "KybesRusherhackPlugins/autokit",
       "features": [
         {
           "name": "AutoKit",
@@ -3195,6 +3250,7 @@
     },
     {
       "plugin": "AutoTorch",
+      "repo": "NinetyUnderScore/AutoTorch",
       "features": [
         {
           "name": "AutoTorch",
@@ -3226,6 +3282,7 @@
     },
     {
       "plugin": "Elytra Swap",
+      "repo": "cmg-divined/elytra-swap",
       "features": [
         {
           "name": "ElytraSwap",
@@ -3257,6 +3314,7 @@
     },
     {
       "plugin": "HDisabler",
+      "repo": "CherkaSSH/hdisabler",
       "features": [
         {
           "name": "HDisabler",
@@ -3269,6 +3327,7 @@
     },
     {
       "plugin": "CoordFollower",
+      "repo": "CherkaSSH/CoordFollower-plugin",
       "features": [
         {
           "name": "CoordFollower",
@@ -3291,6 +3350,7 @@
     },
     {
       "plugin": "Rusher Chess TUI",
+      "repo": "CherkaSSH/rusher-chess-tui",
       "features": [
         {
           "name": "ChessRepresentation",
@@ -3320,6 +3380,7 @@
     },
     {
       "plugin": "ActivatedSpawnerDetector",
+      "repo": "un0x9/ActivatedSpawnerDetector",
       "features": [
         {
           "name": "ActivatedSpawnerDetector",
@@ -3405,6 +3466,7 @@
     },
     {
       "plugin": "Rusher Discord Notifications",
+      "repo": "KybesRusherhackPlugins/discord-notifications",
       "features": [
         {
           "name": "ExampleHudElement",
@@ -3489,6 +3551,7 @@
     },
     {
       "plugin": "AutoBonemeal",
+      "repo": "John200410/rusherhack-autobonemeal",
       "features": [
         {
           "name": "AutoBoneMeal",
@@ -3576,6 +3639,7 @@
     },
     {
       "plugin": "Rocket3",
+      "repo": "PK268/Rocket3",
       "features": [
         {
           "name": "Rocket3",
@@ -3598,6 +3662,7 @@
     },
     {
       "plugin": "GarlicBreeder",
+      "repo": "GarlicRot/GarlicBreeder",
       "features": [
         {
           "name": "AutoBreederHudElement",
@@ -3947,6 +4012,7 @@
     },
     {
       "plugin": "Rusher Item Saver",
+      "repo": "KybesRusherhackPlugins/item-saver",
       "features": [
         {
           "name": "Item Saver",
@@ -4135,6 +4201,7 @@
     },
     {
       "plugin": "RusherHack Mace Swap",
+      "repo": "KybesRusherhackPlugins/mace-swap",
       "features": [
         {
           "name": "Mace Swap Module",
@@ -4157,6 +4224,7 @@
     },
     {
       "plugin": "CrystalModifierRH",
+      "repo": "xyzbtw/CrystalModifierRH",
       "features": [
         {
           "name": "CrystalModifier",
@@ -4217,6 +4285,7 @@
     },
     {
       "plugin": "NoSound",
+      "repo": "John200410/nosound",
       "features": [
         {
           "name": "NoSounds",
@@ -4239,6 +4308,7 @@
     },
     {
       "plugin": "Rusherhack Streamer Mode",
+      "repo": "KybesRusherhackPlugins/streamer-mode",
       "features": [
         {
           "name": "Streamer Mode",
@@ -4344,6 +4414,7 @@
     },
     {
       "plugin": "Rusher Auto Item Frame Dupe",
+      "repo": "KybesRusherhackPlugins/auto-item-frame-dupe",
       "features": [
         {
           "name": "Item Frame Dupe",
@@ -4449,6 +4520,7 @@
     },
     {
       "plugin": "RusherHack Piston Pusher",
+      "repo": "KybesRusherhackPlugins/piston-pusher",
       "features": [
         {
           "name": "Crystal Pusher",
@@ -4553,6 +4625,7 @@
     },
     {
       "plugin": "RusherUtils",
+      "repo": "0tterware/RusherUtils",
       "features": [
         {
           "name": "TNTCount",
@@ -5053,6 +5126,7 @@
     },
     {
       "plugin": "Rusher Grown ESP",
+      "repo": "KybesRusherhackPlugins/crop-esp-nuker",
       "features": [
         {
           "name": "GrowESP",
@@ -5203,6 +5277,7 @@
     },
     {
       "plugin": "Rusherhack-SignFilter",
+      "repo": "ToxicAven/Rusherhack-SignFilter",
       "features": [
         {
           "name": "SignFilter",
@@ -5225,6 +5300,7 @@
     },
     {
       "plugin": "Rusher-Vault-Helper",
+      "repo": "KybesRusherhackPlugins/vault-helper",
       "features": [
         {
           "name": "Vault Helper",
@@ -5321,6 +5397,7 @@
     },
     {
       "plugin": "Rusher-Inventory-Drag",
+      "repo": "KybesRusherhackPlugins/inventory-drag",
       "features": [
         {
           "name": "InventoryDrag",
@@ -5333,6 +5410,7 @@
     },
     {
       "plugin": "PlayerLogPlugin-RusherHack",
+      "repo": "k4n3d4-sh0t4r0/PlayerLogPLugin-RusherHack",
       "features": [
         {
           "name": "PlayerLog",
@@ -5400,6 +5478,7 @@
     },
     {
       "plugin": "BarrierESP-RusherHack",
+      "repo": "k4n3d4-sh0t4r0/BarrierESP-RusherHack",
       "features": [
         {
           "name": "Barrier ESP",
@@ -5412,6 +5491,7 @@
     },
     {
       "plugin": "FovLimiter-Rusherhack",
+      "repo": "k4n3d4-sh0t4r0/FovLimiter-Rusherhack",
       "features": [
         {
           "name": "FOV Limiter",
@@ -5443,6 +5523,7 @@
     },
     {
       "plugin": "NoJumpDelay-Rusherhack",
+      "repo": "k4n3d4-sh0t4r0/NoJumpDelay-Rusherhack",
       "features": [
         {
           "name": "NoJumpDelay",
@@ -5465,6 +5546,7 @@
     },
     {
       "plugin": "HideNightVision-RusherHack",
+      "repo": "k4n3d4-sh0t4r0/HideNightVision-RusherHack",
       "features": [
         {
           "name": "HideNightVision",
@@ -5477,6 +5559,7 @@
     },
     {
       "plugin": "rusherhack-kybes-utils",
+      "repo": "KybesRusherhackPlugins/kybes-utils",
       "features": [
         {
           "name": "PlayerNameV2",
@@ -6487,6 +6570,7 @@
     },
     {
       "plugin": "AutoAnvilRename",
+      "repo": "musheck/AutoAnvilRename",
       "features": [
         {
           "name": "AutoAnvilRename",
@@ -6563,6 +6647,7 @@
     },
     {
       "plugin": "rusher-auto-kit-maker",
+      "repo": "KybesRusherhackPlugins/auto-kit-maker",
       "features": [
         {
           "name": "AutoKitMaker",
@@ -6730,6 +6815,7 @@
     },
     {
       "plugin": "rusherhack-shell-integration",
+      "repo": "tillay/rusherhack-shell-integration",
       "features": [
         {
           "name": "Shell Output",
@@ -6778,6 +6864,7 @@
     },
     {
       "plugin": "rusherhack-SmartBounce",
+      "repo": "tillay/rusherhack-SmartBounce",
       "features": [
         {
           "name": "SmartBounce",
@@ -6818,6 +6905,7 @@
     },
     {
       "plugin": "AutoRegear",
+      "repo": "KybesRusherhackPlugins/auto-regear",
       "features": [
         {
           "name": "AutoRegear",
@@ -6894,6 +6982,7 @@
     },
     {
       "plugin": "rusherhack-instantloader",
+      "repo": "tillay/rusherhack-InstantLoader",
       "features": [
         {
           "name": "InstantLoad",
@@ -6944,6 +7033,7 @@
     },
     {
       "plugin": "rusher-waifu-integration",
+      "repo": "tillay/rusher-waifu-integration",
       "features": [
         {
           "name": "CustomImage",
@@ -6993,6 +7083,7 @@
     },
     {
       "plugin": "AutoIgnorehard",
+      "repo": "IceTank/RusherHack-AutoIgnorehard",
       "features": [
         {
           "name": "AutoIgnorehard",
@@ -7043,6 +7134,7 @@
     },
     {
       "plugin": "Cockpit",
+      "repo": "TehPicix/rusherhack-Cockpit",
       "features": [
         {
           "name": "FlightDistance",
@@ -7062,6 +7154,7 @@
     },
     {
       "plugin": "ChatFilter",
+      "repo": "TehPicix/rusherhack-ChatFilter",
       "features": [
         {
           "name": "ChatFilter",
@@ -7093,6 +7186,7 @@
     },
     {
       "plugin": "Elytra Trajectories",
+      "repo": "tillay-rh-plugins/elytra-trajectories",
       "features": [
         {
           "name": "ElytraTrajectories",
@@ -7285,6 +7379,7 @@
     },
     {
       "plugin": "AutoReload",
+      "repo": "tillay-rh-plugins/autoreload",
       "features": [
         {
           "name": "AutoReload",
@@ -7334,6 +7429,7 @@
     },
     {
       "plugin": "hw-efly-tweaks",
+      "repo": "KybesRusherhackPlugins/hw-efly-tweaks",
       "features": [
         {
           "name": "WallHugAutomation",
@@ -7484,6 +7580,7 @@
     },
     {
       "plugin": "icaemas-tweaks",
+      "repo": "icaema/icaemas-tweaks",
       "features": [
         {
           "name": "BeaconGrid",
@@ -7602,6 +7699,7 @@
     },
     {
       "plugin": "AutoFirework",
+      "repo": "tillay-rh-plugins/AutoFirework",
       "features": [
         {
           "name": "AutoFirework",
@@ -7653,6 +7751,7 @@
     },
     {
       "plugin": "AutoMend",
+      "repo": "icaema/auto-mend",
       "features": [
         {
           "name": "AutoMend",
@@ -7702,6 +7801,7 @@
     },
     {
       "plugin": "Stopwatch",
+      "repo": "icaema/rusherhacks-stopwatch",
       "features": [
         {
           "name": "Stopwatch",
@@ -7777,6 +7877,7 @@
     },
     {
       "plugin": "RusherHack Speedometer",
+      "repo": "tillay-rh-plugins/rusherhack-speedometer",
       "features": [
         {
           "name": "FunnySpeed",
@@ -7824,6 +7925,7 @@
     },
     {
       "plugin": "Example Chatbot",
+      "repo": "tillay-rh-plugins/example-chatbot",
       "features": [
         {
           "name": "Chatbot",
@@ -7836,6 +7938,7 @@
     },
     {
       "plugin": "Polar Spiral EFly",
+      "repo": "tillay-rh-plugins/polar-spiral-efly",
       "features": [
         {
           "name": "PolarSpiralEfly",
@@ -7904,6 +8007,7 @@
     },
     {
       "plugin": "HighwayBuilder",
+      "repo": "musheck/mushack",
       "features": [
         {
           "name": "HighwayManager",
@@ -8007,6 +8111,7 @@
     },
     {
       "plugin": "Ram Usage HUD",
+      "repo": "tillay-rh-plugins/ram-usage-hud",
       "features": [
         {
           "name": "Ram Usage",
@@ -8019,6 +8124,7 @@
     },
     {
       "plugin": "RusherChat",
+      "repo": "GarlicRot/RusherChat",
       "features": [
         {
           "name": "RusherChat",
@@ -8031,6 +8137,7 @@
     },
     {
       "plugin": "AutoAmethyst",
+      "repo": "GarlicRot/AutoAmethyst",
       "features": [
         {
           "name": "AutoAmethyst",
@@ -8108,6 +8215,7 @@
     },
     {
       "plugin": "PlayerTracker",
+      "repo": "maggyabby/playertracker-plugin",
       "features": [
         {
           "name": "PlayerTracker",
@@ -8120,6 +8228,7 @@
     },
     {
       "plugin": "More Huds",
+      "repo": "FelekDevYT/MoreHuds-rusherhack",
       "features": [
         {
           "name": "CPULoad",
@@ -8314,6 +8423,7 @@
     },
     {
       "plugin": "RusherClicker",
+      "repo": "FelekDevYT/RusherClicker",
       "features": [
         {
           "name": "AutoClicker",
@@ -8372,6 +8482,7 @@
     },
     {
       "plugin": "packets_in_out",
+      "repo": "KybesRusherhackPlugins/packets_in_out",
       "features": [
         {
           "name": "PacketsInOut",
@@ -8421,6 +8532,7 @@
     },
     {
       "plugin": "hotbar_randomizer",
+      "repo": "KybesRusherhackPlugins/hotbar_randomizer",
       "features": [
         {
           "name": "Hotbar randomizer",
@@ -8616,6 +8728,7 @@
     },
     {
       "plugin": "RusherAutoMend",
+      "repo": "hx-4/RusherAutoMend",
       "features": [
         {
           "name": "AutoElytraReplace",
@@ -8700,6 +8813,7 @@
     },
     {
       "plugin": "Phoenix",
+      "repo": "FelekDevYT/phoenix",
       "features": [
         {
           "name": "CPULoad",
@@ -9142,6 +9256,7 @@
     },
     {
       "plugin": "Xaero-Waypoints-ETA",
+      "repo": "hx-4/Xaero-Waypoints-ETA",
       "features": [
         {
           "name": "XaeroETA",
