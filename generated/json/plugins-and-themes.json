@@ -2530,7 +2530,7 @@
         "url": "https://github.com/FelekDevYT",
         "avatar": "https://github.com/FelekDevYT.png?size=20"
       },
-      "latest_release_tag": "1.1.0",
+      "latest_release_tag": "1.2.0",
       "screenshots": [
         {
           "url": "./Assets/Phoenix/settings.png",
@@ -2550,9 +2550,9 @@
       ],
       "is_core": false,
       "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/FelekDevYT/Phoenix/releases/download/1.1.0/phoenix-1.1.0.jar",
+      "jar_url": "https://github.com/FelekDevYT/Phoenix/releases/download/1.2.0/phoenix-1.2.0.jar",
       "added_at": "2026-03-24",
-      "updated_at": "2026-03-31"
+      "updated_at": "2026-04-11"
     },
     {
       "name": "Xaero-Waypoints-ETA",
