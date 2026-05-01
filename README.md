@@ -140,13 +140,13 @@ Explore these resources to learn more about developing and using RusherHack plug
     &nbsp;<img alt="updated" src="https://img.shields.io/date/1720303119?label=updated&style=flat">
   </div>
 </td><td align="left" valign="top" width="50%">
-  <a href="https://github.com/John200410/rusherhack-instance-info"><img src="https://avatars.githubusercontent.com/u/43681932?s=400&u=9a95dd1320f23595e6738db6406a46e55cc86a8e&v=4" alt="RusherHack Instance Info" width="100" height="100" style="border-radius:12px;"></a>
-  <div><strong><a href="https://github.com/John200410/rusherhack-instance-info">RusherHack Instance Info</a></strong>&nbsp;<code>plugin</code></div>
-  <div style="margin:4px 0 6px 0;">Provides detailed information about the current instance.</div>
+  <a href="https://github.com/rfresh2/2b2t.vc-rusherhack"><img src="https://avatars.githubusercontent.com/u/89827146?s=400&u=a91965b3b52bc088c7315ba6e4b608faafca04de&v=4" alt="2b2t.vc Rusherhack" width="100" height="100" style="border-radius:12px;"></a>
+  <div><strong><a href="https://github.com/rfresh2/2b2t.vc-rusherhack">2b2t.vc Rusherhack</a></strong>&nbsp;<code>plugin</code></div>
+  <div style="margin:4px 0 6px 0;">2b2t data and statistics API commands and HUD.</div>
   <div>
-    <img alt="stars" src="https://img.shields.io/github/stars/John200410/rusherhack-instance-info?style=flat">
-    &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/John200410/rusherhack-instance-info/total?style=flat">
-    &nbsp;<img alt="updated" src="https://img.shields.io/date/1747863422?label=updated&style=flat">
+    <img alt="stars" src="https://img.shields.io/github/stars/rfresh2/2b2t.vc-rusherhack?style=flat">
+    &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/rfresh2/2b2t.vc-rusherhack/total?style=flat">
+    &nbsp;<img alt="updated" src="https://img.shields.io/date/1737102673?label=updated&style=flat">
   </div>
 </td></tr>
 </table>
