@@ -95,7 +95,7 @@ plugins:
       url: https://github.com/FelekDevYT
       avatar: https://github.com/FelekDevYT.png?size=20
     latest_release_tag: '1.0.0'
-    screenshots: 
+    screenshots:
       - url: ./Assets/Plugger/plugger.png
         alt: Plugger logo
         width: 429
@@ -1387,13 +1387,13 @@ plugins:
       name: k4n3d4-sh0t4r0
       url: https://github.com/k4n3d4-sh0t4r0
       avatar: https://github.com/k4n3d4-sh0t4r0.png?size=20
-    latest_release_tag: v1.1.0
+    latest_release_tag: v1.2.0
     screenshots:
       - url: https://github.com/k4n3d4-sh0t4r0/BarrierESP-RusherHack/blob/main/img/BarrierESP-On.png?raw=true
         alt: Barrier ESP On
     is_core: true
     mc_versions: 1.21.4
-    jar_url: https://github.com/k4n3d4-sh0t4r0/BarrierESP-RusherHack/releases/download/v1.1.0/BarrierESP-1.1.0.jar
+    jar_url: https://github.com/k4n3d4-sh0t4r0/BarrierESP-RusherHack/releases/download/v1.2.0/BarrierESP-1.2.0.jar
     added_at: '2025-06-17'
     updated_at: '2025-06-25'
   - name: FovLimiter-Rusherhack
@@ -1403,11 +1403,11 @@ plugins:
       name: k4n3d4-sh0t4r0
       url: https://github.com/k4n3d4-sh0t4r0
       avatar: https://github.com/k4n3d4-sh0t4r0.png?size=20
-    latest_release_tag: V1.1.0
+    latest_release_tag: v1.2.0
     screenshots: []
     is_core: true
     mc_versions: 1.21.4
-    jar_url: https://github.com/k4n3d4-sh0t4r0/FovLimiter-Rusherhack/releases/download/V1.1.0/FovLimiter-1.1.0.jar
+    jar_url: https://github.com/k4n3d4-sh0t4r0/FovLimiter-Rusherhack/releases/download/v1.2.0/FovLimiter-1.2.0.jar
     added_at: '2025-06-21'
     updated_at: '2025-06-25'
   - name: NoJumpDelay-Rusherhack
@@ -1417,11 +1417,11 @@ plugins:
       name: k4n3d4-sh0t4r0
       url: https://github.com/k4n3d4-sh0t4r0
       avatar: https://github.com/k4n3d4-sh0t4r0.png?size=20
-    latest_release_tag: V1.1.0
+    latest_release_tag: v1.2.0
     screenshots: []
     is_core: true
     mc_versions: 1.21.4
-    jar_url: https://github.com/k4n3d4-sh0t4r0/NoJumpDelay-Rusherhack/releases/download/V1.1.0/NoJumpDelay-1.1.0.jar
+    jar_url: https://github.com/k4n3d4-sh0t4r0/NoJumpDelay-Rusherhack/releases/download/v1.2.0/NoJumpDelay-1.2.0.jar
     added_at: '2025-06-21'
     updated_at: '2025-06-25'
   - name: HideNightVision-RusherHack
@@ -1431,7 +1431,7 @@ plugins:
       name: k4n3d4-sh0t4r0
       url: https://github.com/k4n3d4-sh0t4r0
       avatar: https://github.com/k4n3d4-sh0t4r0.png?size=20
-    latest_release_tag: V1.1.0
+    latest_release_tag: V1.2.0
     screenshots:
       - url: https://github.com/k4n3d4-sh0t4r0/HideNightVision-RusherHack/blob/main/img/HNVoff.png?raw=true
         alt: Night Vision On
@@ -1439,7 +1439,7 @@ plugins:
         alt: Night Vision Hidden
     is_core: true
     mc_versions: 1.21.4
-    jar_url: https://github.com/k4n3d4-sh0t4r0/HideNightVision-RusherHack/releases/download/V1.1.0/HideNightVision-1.1.0.jar
+    jar_url: https://github.com/k4n3d4-sh0t4r0/HideNightVision-RusherHack/releases/download/V1.2.0/HideNightVision-1.2.0.jar
     added_at: '2025-06-24'
     updated_at: '2025-06-25'
   - name: rusherhack-kybes-utils
