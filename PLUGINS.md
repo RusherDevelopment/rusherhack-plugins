@@ -1070,7 +1070,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [BarrierESP-RusherHack](https://github.com/k4n3d4-sh0t4r0/BarrierESP-RusherHack) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/k4n3d4-sh0t4r0/BarrierESP-RusherHack?label=Latest%20Release&color=green)](https://github.com/k4n3d4-sh0t4r0/BarrierESP-RusherHack/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/k4n3d4-sh0t4r0/BarrierESP-RusherHack/total)](https://github.com/k4n3d4-sh0t4r0/BarrierESP-RusherHack/releases/download/v1.1.0/BarrierESP-1.1.0.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/k4n3d4-sh0t4r0/BarrierESP-RusherHack?label=Latest%20Release&color=green)](https://github.com/k4n3d4-sh0t4r0/BarrierESP-RusherHack/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/k4n3d4-sh0t4r0/BarrierESP-RusherHack/total)](https://github.com/k4n3d4-sh0t4r0/BarrierESP-RusherHack/releases/download/v1.2.0/BarrierESP-1.2.0.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
  ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>
  **Creator**: <img src="https://github.com/k4n3d4-sh0t4r0.png?size=20" width="20" height="20"> [k4n3d4-sh0t4r0](https://github.com/k4n3d4-sh0t4r0)<br>
@@ -1086,7 +1086,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [FovLimiter-Rusherhack](https://github.com/k4n3d4-sh0t4r0/FovLimiter-Rusherhack) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/k4n3d4-sh0t4r0/FovLimiter-Rusherhack?label=Latest%20Release&color=green)](https://github.com/k4n3d4-sh0t4r0/FovLimiter-Rusherhack/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/k4n3d4-sh0t4r0/FovLimiter-Rusherhack/total)](https://github.com/k4n3d4-sh0t4r0/FovLimiter-Rusherhack/releases/download/V1.1.0/FovLimiter-1.1.0.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/k4n3d4-sh0t4r0/FovLimiter-Rusherhack?label=Latest%20Release&color=green)](https://github.com/k4n3d4-sh0t4r0/FovLimiter-Rusherhack/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/k4n3d4-sh0t4r0/FovLimiter-Rusherhack/total)](https://github.com/k4n3d4-sh0t4r0/FovLimiter-Rusherhack/releases/download/v1.2.0/FovLimiter-1.2.0.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
  ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>
  **Creator**: <img src="https://github.com/k4n3d4-sh0t4r0.png?size=20" width="20" height="20"> [k4n3d4-sh0t4r0](https://github.com/k4n3d4-sh0t4r0)<br>
@@ -1095,7 +1095,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [NoJumpDelay-Rusherhack](https://github.com/k4n3d4-sh0t4r0/NoJumpDelay-Rusherhack) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/k4n3d4-sh0t4r0/NoJumpDelay-Rusherhack?label=Latest%20Release&color=green)](https://github.com/k4n3d4-sh0t4r0/NoJumpDelay-Rusherhack/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/k4n3d4-sh0t4r0/NoJumpDelay-Rusherhack/total)](https://github.com/k4n3d4-sh0t4r0/NoJumpDelay-Rusherhack/releases/download/V1.1.0/NoJumpDelay-1.1.0.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/k4n3d4-sh0t4r0/NoJumpDelay-Rusherhack?label=Latest%20Release&color=green)](https://github.com/k4n3d4-sh0t4r0/NoJumpDelay-Rusherhack/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/k4n3d4-sh0t4r0/NoJumpDelay-Rusherhack/total)](https://github.com/k4n3d4-sh0t4r0/NoJumpDelay-Rusherhack/releases/download/v1.2.0/NoJumpDelay-1.2.0.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
  ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>
  **Creator**: <img src="https://github.com/k4n3d4-sh0t4r0.png?size=20" width="20" height="20"> [k4n3d4-sh0t4r0](https://github.com/k4n3d4-sh0t4r0)<br>
@@ -1104,7 +1104,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [HideNightVision-RusherHack](https://github.com/k4n3d4-sh0t4r0/HideNightVision-RusherHack) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/k4n3d4-sh0t4r0/HideNightVision-RusherHack?label=Latest%20Release&color=green)](https://github.com/k4n3d4-sh0t4r0/HideNightVision-RusherHack/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/k4n3d4-sh0t4r0/HideNightVision-RusherHack/total)](https://github.com/k4n3d4-sh0t4r0/HideNightVision-RusherHack/releases/download/V1.1.0/HideNightVision-1.1.0.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/k4n3d4-sh0t4r0/HideNightVision-RusherHack?label=Latest%20Release&color=green)](https://github.com/k4n3d4-sh0t4r0/HideNightVision-RusherHack/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/k4n3d4-sh0t4r0/HideNightVision-RusherHack/total)](https://github.com/k4n3d4-sh0t4r0/HideNightVision-RusherHack/releases/download/V1.2.0/HideNightVision-1.2.0.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
  ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>
  **Creator**: <img src="https://github.com/k4n3d4-sh0t4r0.png?size=20" width="20" height="20"> [k4n3d4-sh0t4r0](https://github.com/k4n3d4-sh0t4r0)<br>
