@@ -67,6 +67,23 @@ plugins:
     jar_url: https://github.com/FelekDevYT/CustomCapes/releases/download/latest/customcapes-1.0.0.jar
     added_at: '2026-04-05'
     updated_at: '2026-04-05'
+  - name: Stricty
+    repo: FelekDevYT/Stricty
+    description: Stricty is a plugin that makes your game less visible to anti-cheats.
+    creator:
+      name: FelekDevYT
+      url: https://github.com/FelekDevYT
+      avatar: https://github.com/FelekDevYT.png?size=20
+    latest_release_tag: '1.0.0'
+    screenshots:
+      - url: ./Assets/Stricty/settings.png
+        alt: Stricty's settings
+        width: 168
+    is_core: false
+    mc_versions: '1.21.4'
+    jar_url: https://github.com/FelekDevYT/Stricty/releases/download/1.0.0/stricty-1.0.0.jar
+    added_at: '2026-05-06'
+    updated_at: '2026-05-06'
   - name: 2b2t.vc Rusherhack
     repo: rfresh2/2b2t.vc-rusherhack
     description: 2b2t data and statistics API commands and HUD.
