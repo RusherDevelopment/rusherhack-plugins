@@ -927,11 +927,11 @@ plugins:
       name: kybe236
       url: https://github.com/kybe236
       avatar: https://github.com/kybe236.png?size=20
-    latest_release_tag: 1.20.6-1.21.1
+    latest_release_tag: 1.20.6-1.21.4
     screenshots: []
     is_core: false
     mc_versions: 1.20.4-1.21.1
-    jar_url: https://github.com/KybesRusherhackPlugins/auto-portal/releases/download/1.20.6-1.21.1/kybe-portal-maker-1.0.0.jar
+    jar_url: https://github.com/KybesRusherhackPlugins/auto-portal/releases/download/1.20.6-1.21.4/kybe-portal-maker-1.0.0.jar
     added_at: '2024-09-05'
     updated_at: '2025-05-18'
   - name: rusher-air-place

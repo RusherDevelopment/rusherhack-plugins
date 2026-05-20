@@ -769,7 +769,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [rusher-autoportal](https://github.com/KybesRusherhackPlugins/auto-portal) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/KybesRusherhackPlugins/auto-portal?label=Latest%20Release&color=green)](https://github.com/KybesRusherhackPlugins/auto-portal/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/KybesRusherhackPlugins/auto-portal/total)](https://github.com/KybesRusherhackPlugins/auto-portal/releases/download/1.20.6-1.21.1/kybe-portal-maker-1.0.0.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/KybesRusherhackPlugins/auto-portal?label=Latest%20Release&color=green)](https://github.com/KybesRusherhackPlugins/auto-portal/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/KybesRusherhackPlugins/auto-portal/total)](https://github.com/KybesRusherhackPlugins/auto-portal/releases/download/1.20.6-1.21.4/kybe-portal-maker-1.0.0.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%204--1%2021%201-blueviolet)<br>
  **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)<br>
  Automatically breaks blocks to place obsidian and activate the nether portal.
