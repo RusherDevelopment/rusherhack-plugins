@@ -35,6 +35,14 @@
                     <option value="core">Core Plugins</option>
                     <option value="theme">Themes</option>
                 </select>
+                <select id="versionFilter" class="px-4 py-3 rounded-xl text-sm cursor-pointer min-w-[140px]">
+                    <option value="all">All Versions</option>
+                    <option value="1.21.4">1.21.4</option>
+                    <option value="1.21.1">1.21.1</option>
+                    <option value="1.21">1.21</option>
+                    <option value="1.20.4">1.20.4</option>
+                    <option value="1.20.1">1.20.1</option>
+                </select>
             </div>
             <div id="resultsCount" class="mt-4 px-2 text-sm text-slate-500 font-medium"></div>
         </section>
@@ -47,6 +55,24 @@
 
         <script>
             let allItems = []
+            const RUSHERHACK_VERSIONS = ['1.20.1', '1.20.2', '1.20.4', '1.20.6', '1.21', '1.21.1', '1.21.2', '1.21.3', '1.21.4'];
+
+            function parseVersions(available_versions) {
+                if (!available_versions || available_versions === 'N/A') return [];
+                let support = new Set();
+                let parts = available_versions.toString().split(',');
+                parts.forEach(el => {
+                    el = el.trim();
+                    if (el.includes('-')) {
+                        let [start, end] = el.split('-').map(s => s.trim());
+                        let lol = RUSHERHACK_VERSIONS.indexOf(start), ie = RUSHERHACK_VERSIONS.indexOf(end);
+                        if (lol !== -1 && ie !== -1) {
+                            for (let i = Math.min(lol, ie); i <= Math.max(lol, ie); i++) support.add(RUSHERHACK_VERSIONS[i]);
+                        }
+                    } else if (RUSHERHACK_VERSIONS.includes(el)) support.add(el);
+                });
+                return Array.from(support)
+            }
 
             async function loadAddons() {
                 try {
@@ -61,6 +87,7 @@
                         } else {
                             item.category = 'plugin'
                         }
+                        item.supported_versions = parseVersions(item.mc_versions)
 
                         allItems.push(item)
                     }
@@ -69,12 +96,14 @@
                     for (let i = 0; i < themes.length; i++) {
                         let theme = themes[i]
                         theme.category = 'theme'
+                        theme.supported_versions = parseVersions(theme.mc_versions)
                         allItems.push(theme)
                     }
 
                     document.getElementById('searchInput').addEventListener('input', grid)
                     document.getElementById('sortSelect').addEventListener('change', grid)
                     document.getElementById('typeFilter').addEventListener('change', grid)
+                    document.getElementById('versionFilter').addEventListener('change', grid)
                     grid()
                 } catch (err) {
                     console.error("Error while loading", err)
@@ -85,6 +114,7 @@
                 const query = document.getElementById('searchInput').value.toLowerCase()
                 const sortBy = document.getElementById('sortSelect').value
                 const typeFilter = document.getElementById('typeFilter').value
+                const versionFilter = document.getElementById('versionFilter').value
 
                 let filtered = allItems.filter(item => {
                     const name = item.name ? item.name.toLowerCase() : ''
@@ -93,8 +123,11 @@
 
                     const matches = name.includes(query) || desc.includes(query) || creator.includes(query)
                     const matchesTypes = typeFilter === 'all' || item.category === typeFilter
+
+                    const matchesVersion = versionFilter === 'all' || 
+                        (item.supported_versions && item.supported_versions.includes(versionFilter))
                     
-                    return matches && matchesTypes
+                    return matches && matchesTypes && matchesVersion
                 })
 
                 filtered.sort((a, b) => {
