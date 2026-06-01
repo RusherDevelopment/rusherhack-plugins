@@ -102,16 +102,6 @@ Explore these resources to learn more about developing and using RusherHack plug
     &nbsp;<img alt="updated" src="https://img.shields.io/date/1747101417?label=updated&style=flat">
   </div>
 </td><td align="left" valign="top" width="50%">
-  <a href="https://github.com/beanbag44/Nuker"><img src="https://avatars.githubusercontent.com/u/107891830?s=400&u=93cffda8c03f448daa77062d3429c5443f527e1c&v=4" alt="Nuker" width="100" height="100" style="border-radius:12px;"></a>
-  <div><strong><a href="https://github.com/beanbag44/Nuker">Nuker</a></strong>&nbsp;<code>plugin</code></div>
-  <div style="margin:4px 0 6px 0;">Epic nuker for nuking terrain.</div>
-  <div>
-    <img alt="stars" src="https://img.shields.io/github/stars/beanbag44/Nuker?style=flat">
-    &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/beanbag44/Nuker/total?style=flat">
-    &nbsp;<img alt="updated" src="https://img.shields.io/date/1763758772?label=updated&style=flat">
-  </div>
-</td></tr>
-<tr><td align="left" valign="top" width="50%">
   <a href="https://github.com/FBanna/Rusherhack-Vanilla-Efly"><img src="https://avatars.githubusercontent.com/u/67026257?s=400&u=606233515f38bbbaef9aa9910e3d601e327646f3&v=4" alt="Vanilla Elytra Flight" width="100" height="100" style="border-radius:12px;"></a>
   <div><strong><a href="https://github.com/FBanna/Rusherhack-Vanilla-Efly">Vanilla Elytra Flight</a></strong>&nbsp;<code>plugin</code></div>
   <div style="margin:4px 0 6px 0;">Highly customizable rusher hack elytra flight plugin.</div>
@@ -119,6 +109,16 @@ Explore these resources to learn more about developing and using RusherHack plug
     <img alt="stars" src="https://img.shields.io/github/stars/FBanna/Rusherhack-Vanilla-Efly?style=flat">
     &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/FBanna/Rusherhack-Vanilla-Efly/total?style=flat">
     &nbsp;<img alt="updated" src="https://img.shields.io/date/1764618838?label=updated&style=flat">
+  </div>
+</td></tr>
+<tr><td align="left" valign="top" width="50%">
+  <a href="https://github.com/beanbag44/Nuker"><img src="https://avatars.githubusercontent.com/u/107891830?s=400&u=93cffda8c03f448daa77062d3429c5443f527e1c&v=4" alt="Nuker" width="100" height="100" style="border-radius:12px;"></a>
+  <div><strong><a href="https://github.com/beanbag44/Nuker">Nuker</a></strong>&nbsp;<code>plugin</code></div>
+  <div style="margin:4px 0 6px 0;">Epic nuker for nuking terrain.</div>
+  <div>
+    <img alt="stars" src="https://img.shields.io/github/stars/beanbag44/Nuker?style=flat">
+    &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/beanbag44/Nuker/total?style=flat">
+    &nbsp;<img alt="updated" src="https://img.shields.io/date/1763758772?label=updated&style=flat">
   </div>
 </td><td align="left" valign="top" width="50%">
   <a href="https://github.com/rfresh2/ContainerTweaks-rusherhack"><img src="https://avatars.githubusercontent.com/u/89827146?s=400&u=a91965b3b52bc088c7315ba6e4b608faafca04de&v=4" alt="Container Tweaks" width="100" height="100" style="border-radius:12px;"></a>
@@ -131,15 +131,6 @@ Explore these resources to learn more about developing and using RusherHack plug
   </div>
 </td></tr>
 <tr><td align="left" valign="top" width="50%">
-  <a href="https://github.com/ShayBox/ShaysRusherTweaks"><img src="https://avatars.githubusercontent.com/u/9505196?s=400&u=e84807ec956f579dbd26cd0e4c40dbf6f4bc790a&v=4" alt="Shay's RusherTweaks" width="100" height="100" style="border-radius:12px;"></a>
-  <div><strong><a href="https://github.com/ShayBox/ShaysRusherTweaks">Shay's RusherTweaks</a></strong>&nbsp;<code>plugin</code></div>
-  <div style="margin:4px 0 6px 0;">A collection of small tweaks and improvements for the RusherHacks client.</div>
-  <div>
-    <img alt="stars" src="https://img.shields.io/github/stars/ShayBox/ShaysRusherTweaks?style=flat">
-    &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/ShayBox/ShaysRusherTweaks/total?style=flat">
-    &nbsp;<img alt="updated" src="https://img.shields.io/date/1720303119?label=updated&style=flat">
-  </div>
-</td><td align="left" valign="top" width="50%">
   <a href="https://github.com/rfresh2/2b2t.vc-rusherhack"><img src="https://avatars.githubusercontent.com/u/89827146?s=400&u=a91965b3b52bc088c7315ba6e4b608faafca04de&v=4" alt="2b2t.vc Rusherhack" width="100" height="100" style="border-radius:12px;"></a>
   <div><strong><a href="https://github.com/rfresh2/2b2t.vc-rusherhack">2b2t.vc Rusherhack</a></strong>&nbsp;<code>plugin</code></div>
   <div style="margin:4px 0 6px 0;">2b2t data and statistics API commands and HUD.</div>
@@ -147,6 +138,15 @@ Explore these resources to learn more about developing and using RusherHack plug
     <img alt="stars" src="https://img.shields.io/github/stars/rfresh2/2b2t.vc-rusherhack?style=flat">
     &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/rfresh2/2b2t.vc-rusherhack/total?style=flat">
     &nbsp;<img alt="updated" src="https://img.shields.io/date/1737102673?label=updated&style=flat">
+  </div>
+</td><td align="left" valign="top" width="50%">
+  <a href="https://github.com/ShayBox/ShaysRusherTweaks"><img src="https://avatars.githubusercontent.com/u/9505196?s=400&u=e84807ec956f579dbd26cd0e4c40dbf6f4bc790a&v=4" alt="Shay's RusherTweaks" width="100" height="100" style="border-radius:12px;"></a>
+  <div><strong><a href="https://github.com/ShayBox/ShaysRusherTweaks">Shay's RusherTweaks</a></strong>&nbsp;<code>plugin</code></div>
+  <div style="margin:4px 0 6px 0;">A collection of small tweaks and improvements for the RusherHacks client.</div>
+  <div>
+    <img alt="stars" src="https://img.shields.io/github/stars/ShayBox/ShaysRusherTweaks?style=flat">
+    &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/ShayBox/ShaysRusherTweaks/total?style=flat">
+    &nbsp;<img alt="updated" src="https://img.shields.io/date/1720303119?label=updated&style=flat">
   </div>
 </td></tr>
 </table>
