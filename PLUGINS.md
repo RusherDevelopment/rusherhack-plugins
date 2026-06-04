@@ -168,7 +168,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [2b2t.vc Rusherhack](https://github.com/rfresh2/2b2t.vc-rusherhack) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/rfresh2/2b2t.vc-rusherhack?label=Latest%20Release&color=green)](https://github.com/rfresh2/2b2t.vc-rusherhack/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/rfresh2/2b2t.vc-rusherhack/total)](https://github.com/rfresh2/2b2t.vc-rusherhack/releases/download/1.12/2b2t.vc-rusherhack-1.12.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/rfresh2/2b2t.vc-rusherhack?label=Latest%20Release&color=green)](https://github.com/rfresh2/2b2t.vc-rusherhack/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/rfresh2/2b2t.vc-rusherhack/total)](https://github.com/rfresh2/2b2t.vc-rusherhack/releases/tag/1.13)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201--1%2021%204-blueviolet)<br>
  **Creator**: <img src="https://github.com/rfresh2.png?size=20" width="20" height="20"> [rfresh2](https://github.com/rfresh2)<br>
  2b2t data and statistics API commands and HUD.
@@ -345,7 +345,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [Container Tweaks](https://github.com/rfresh2/ContainerTweaks-rusherhack) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/rfresh2/ContainerTweaks-rusherhack?label=Latest%20Release&color=green)](https://github.com/rfresh2/ContainerTweaks-rusherhack/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/rfresh2/ContainerTweaks-rusherhack/total)](https://github.com/rfresh2/ContainerTweaks-rusherhack/releases/tag/1.11)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/rfresh2/ContainerTweaks-rusherhack?label=Latest%20Release&color=green)](https://github.com/rfresh2/ContainerTweaks-rusherhack/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/rfresh2/ContainerTweaks-rusherhack/total)](https://github.com/rfresh2/ContainerTweaks-rusherhack/releases/tag/1.12)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201--1%2021%204-blueviolet)<br>
  **Creator**: <img src="https://github.com/rfresh2.png?size=20" width="20" height="20"> [rfresh2](https://github.com/rfresh2)<br>
  Simple tweaks for quickly moving items in containers.
@@ -953,7 +953,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [Tablist Hats](https://github.com/rfresh2/TablistHats-rusherhack) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/rfresh2/TablistHats-rusherhack?label=Latest%20Release&color=green)](https://github.com/rfresh2/TablistHats-rusherhack/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/rfresh2/TablistHats-rusherhack/total)](https://github.com/rfresh2/TablistHats-rusherhack/releases/download/1.0/TablistHats-1.0.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/rfresh2/TablistHats-rusherhack?label=Latest%20Release&color=green)](https://github.com/rfresh2/TablistHats-rusherhack/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/rfresh2/TablistHats-rusherhack/total)](https://github.com/rfresh2/TablistHats-rusherhack/releases/download/1.1/TablistHats-1.1%2B1.20.1-1.21.11.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201--1%2021%204-blueviolet)<br>
  ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>
  **Creator**: <img src="https://github.com/rfresh2.png?size=20" width="20" height="20"> [rfresh2](https://github.com/rfresh2)<br>
