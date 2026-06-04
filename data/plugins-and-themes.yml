@@ -91,7 +91,7 @@ plugins:
       name: rfresh2
       url: https://github.com/rfresh2
       avatar: https://github.com/rfresh2.png?size=20
-    latest_release_tag: '1.12'
+    latest_release_tag: '1.13'
     screenshots:
       - url: ./Assets/2b2t.vc Rusherhack/HudSettings.png
         alt: Hud Setting
@@ -101,7 +101,7 @@ plugins:
         width: 550
     is_core: false
     mc_versions: 1.20.1-1.21.4
-    jar_url: https://github.com/rfresh2/2b2t.vc-rusherhack/releases/download/1.12/2b2t.vc-rusherhack-1.12.jar
+    jar_url: https://github.com/rfresh2/2b2t.vc-rusherhack/releases/tag/1.13
     added_at: '2023-10-22'
     updated_at: '2025-01-17'
   - name: Plugger
@@ -317,14 +317,14 @@ plugins:
       name: rfresh2
       url: https://github.com/rfresh2
       avatar: https://github.com/rfresh2.png?size=20
-    latest_release_tag: '1.11'
+    latest_release_tag: '1.12'
     screenshots:
       - url: ./Assets/ContainerTweaks/ModuleSettings.png
         alt: Module
         width: 250
     is_core: false
     mc_versions: 1.20.1-1.21.4
-    jar_url: https://github.com/rfresh2/ContainerTweaks-rusherhack/releases/tag/1.11
+    jar_url: https://github.com/rfresh2/ContainerTweaks-rusherhack/releases/tag/1.12
     added_at: '2023-10-23'
     updated_at: '2025-01-30'
   - name: RusherHack Spotify Integration
@@ -1223,14 +1223,14 @@ plugins:
       name: rfresh2
       url: https://github.com/rfresh2
       avatar: https://github.com/rfresh2.png?size=20
-    latest_release_tag: '1.0'
+    latest_release_tag: '1.1'
     screenshots:
       - url: https://i.imgur.com/HEfpmLw.png
         alt: Tablist Hats Example
         width: 300
     is_core: true
     mc_versions: 1.20.1-1.21.4
-    jar_url: https://github.com/rfresh2/TablistHats-rusherhack/releases/download/1.0/TablistHats-1.0.jar
+    jar_url: https://github.com/rfresh2/TablistHats-rusherhack/releases/download/1.1/TablistHats-1.1%2B1.20.1-1.21.11.jar
     added_at: '2025-02-18'
     updated_at: '2025-02-18'
   - name: NoSound
