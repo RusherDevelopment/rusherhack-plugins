@@ -1538,8 +1538,8 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [Phoenix](https://github.com/FelekDevYT/phoenix) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/FelekDevYT/phoenix?label=Latest%20Release&color=green)](https://github.com/FelekDevYT/phoenix/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/FelekDevYT/phoenix/total)](https://github.com/FelekDevYT/Phoenix/releases/download/1.2.0/phoenix-1.2.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/FelekDevYT/phoenix?label=Latest%20Release&color=green)](https://github.com/FelekDevYT/phoenix/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/FelekDevYT/phoenix/total)](https://github.com/FelekDevYT/Phoenix/releases/download/1.3.0/phoenix-1.3.0.jar)<br>
+ ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204--1%2021%2011-blueviolet)<br>
  **Creator**: <img src="https://github.com/FelekDevYT.png?size=20" width="20" height="20"> [FelekDevYT](https://github.com/FelekDevYT)<br>
  A high-performance, all-in-one utility plugin for RusherHack.
 
