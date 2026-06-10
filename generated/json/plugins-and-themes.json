@@ -2632,6 +2632,44 @@
       "mc_versions": "1.21.1",
       "jar_url": "https://github.com/emirplus/rusher-utils/releases/download/1.0.0/rusher-utils-1.0.0.jar",
       "added_at": "2026-06-04"
+    },
+    {
+      "name": "RusherHack Pathfinder",
+      "repo": "tillay-rh-plugins/rusherhack-pathfinder",
+      "description": "Google Maps for 2b2t highways with route planning, navigation, and ETA guidance.",
+      "creator": {
+        "name": "tillay",
+        "url": "https://github.com/tillay",
+        "avatar": "https://github.com/tillay.png?size=20"
+      },
+      "latest_release_tag": "v1.2.0-62548d",
+      "screenshots": [
+        {
+          "url": "./Assets/rusherhack-pathfinder/ss1.png",
+          "alt": "Pathfinder navigation overlay with ETA and turn-by-turn directions",
+          "width": 550
+        },
+        {
+          "url": "./Assets/rusherhack-pathfinder/ss2.png",
+          "alt": "Highway route displayed on the map",
+          "width": 550
+        },
+        {
+          "url": "./Assets/rusherhack-pathfinder/ss3.png",
+          "alt": "Pathfinder route planning interface",
+          "width": 550
+        },
+        {
+          "url": "./Assets/rusherhack-pathfinder/ss4.png",
+          "alt": "Turn-by-turn highway navigation display",
+          "width": 550
+        }
+      ],
+      "is_core": false,
+      "mc_versions": "1.21.4",
+      "jar_url": "https://github.com/tillay-rh-plugins/rusherhack-pathfinder/releases/download/v1.2.0-62548d/rusherhack-pathfinder-1.2.0.jar",
+      "added_at": "2026-06-09",
+      "updated_at": "2026-06-09"
     }
   ],
   "themes": [
