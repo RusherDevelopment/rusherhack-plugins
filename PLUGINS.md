@@ -136,37 +136,6 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 ---
 
-- ### [CustomCapes](https://github.com/FelekDevYT/CustomCapes) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/FelekDevYT/CustomCapes?label=Latest%20Release&color=green)](https://github.com/FelekDevYT/CustomCapes/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/FelekDevYT/CustomCapes/total)](https://github.com/FelekDevYT/CustomCapes/releases/download/latest/customcapes-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
- ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>
- **Creator**: <img src="https://github.com/FelekDevYT.png?size=20" width="20" height="20"> [FelekDevYT](https://github.com/FelekDevYT)<br>
- A high-performance, client-side cosmetic extension for RusherHack that allows using any custom cape textures with automatic elytra synchronization.
-
- <details>
- <summary>Show Screenshots</summary>
- <p align="center">
- <img src="./Assets/CustomCapes/settings.png" alt="Settings" width="174">
- </p>
- </details>
-
----
-
-- ### [Stricty](https://github.com/FelekDevYT/Stricty) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/FelekDevYT/Stricty?label=Latest%20Release&color=green)](https://github.com/FelekDevYT/Stricty/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/FelekDevYT/Stricty/total)](https://github.com/FelekDevYT/Stricty/releases/download/1.0.0/stricty-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
- **Creator**: <img src="https://github.com/FelekDevYT.png?size=20" width="20" height="20"> [FelekDevYT](https://github.com/FelekDevYT)<br>
- Stricty is a plugin that makes your game less visible to anti-cheats.
-
- <details>
- <summary>Show Screenshots</summary>
- <p align="center">
- <img src="./Assets/Stricty/settings.png" alt="Stricty's settings" width="168">
- </p>
- </details>
-
----
-
 - ### [2b2t.vc Rusherhack](https://github.com/rfresh2/2b2t.vc-rusherhack) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/rfresh2/2b2t.vc-rusherhack?label=Latest%20Release&color=green)](https://github.com/rfresh2/2b2t.vc-rusherhack/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/rfresh2/2b2t.vc-rusherhack/total)](https://github.com/rfresh2/2b2t.vc-rusherhack/releases/tag/1.13)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201--1%2021%204-blueviolet)<br>
@@ -178,36 +147,6 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  <p align="center">
  <img src="./Assets/2b2t.vc Rusherhack/HudSettings.png" alt="Hud Setting" width="250">
  <img src="./Assets/2b2t.vc Rusherhack/HudDisplay.png" alt="Hud Display w/2b2t Queue" width="550">
- </p>
- </details>
-
----
-
-- ### [Plugger](https://github.com/FelekDevYT/Plugger) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/FelekDevYT/Plugger?label=Latest%20Release&color=green)](https://github.com/FelekDevYT/Plugger/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/FelekDevYT/Plugger/total)](https://github.com/FelekDevYT/Plugger/releases/download/1.0.0/plugger-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
- **Creator**: <img src="https://github.com/FelekDevYT.png?size=20" width="20" height="20"> [FelekDevYT](https://github.com/FelekDevYT)<br>
- In-game plugin manager for RusherHack that allows you to browse, download, and manage other community plugins directly from the official GitHub repository
-
- <details>
- <summary>Show Screenshots</summary>
- <p align="center">
- <img src="./Assets/Plugger/plugger.png" alt="Plugger logo" width="429">
- </p>
- </details>
-
----
-
-- ### [ChestIndexer](https://github.com/FelekDevYT/ChestIndexer) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/FelekDevYT/ChestIndexer?label=Latest%20Release&color=green)](https://github.com/FelekDevYT/ChestIndexer/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/FelekDevYT/ChestIndexer/total)](https://github.com/FelekDevYT/ChestIndexer/releases/download/1.0.0/chest-indexer-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
- **Creator**: <img src="https://github.com/FelekDevYT.png?size=20" width="20" height="20"> [FelekDevYT](https://github.com/FelekDevYT)<br>
- A powerful, automated container scanner and item counter for RusherHack.
-
- <details>
- <summary>Show Screenshots</summary>
- <p align="center">
- <img src="./Assets/ChestIndexer/logo.png" alt="Logo" width="811">
  </p>
  </details>
 
@@ -1567,6 +1506,67 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%201-blueviolet)<br>
  **Creator**: <img src="https://github.com/emirplus.png?size=20" width="20" height="20"> [emirplus](https://github.com/emirplus)<br>
  A small utility plugin for Rusherhack containing a HighJump (Shulker) module.
+
+---
+
+- ### [CustomCapes](https://github.com/FelekDevYT/CustomCapes) <br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/FelekDevYT/CustomCapes?label=Latest%20Release&color=green)](https://github.com/FelekDevYT/CustomCapes/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/FelekDevYT/CustomCapes/total)](https://github.com/FelekDevYT/CustomCapes/releases/download/latest/customcapes-1.0.0.jar)<br>
+ ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>
+ **Creator**: <img src="https://github.com/FelekDevYT.png?size=20" width="20" height="20"> [FelekDevYT](https://github.com/FelekDevYT)<br>
+ A high-performance, client-side cosmetic extension for RusherHack that allows using any custom cape textures with automatic elytra synchronization.
+
+ <details>
+ <summary>Show Screenshots</summary>
+ <p align="center">
+ <img src="./Assets/CustomCapes/settings.png" alt="Settings" width="174">
+ </p>
+ </details>
+
+---
+
+- ### [Stricty](https://github.com/FelekDevYT/Stricty) <br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/FelekDevYT/Stricty?label=Latest%20Release&color=green)](https://github.com/FelekDevYT/Stricty/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/FelekDevYT/Stricty/total)](https://github.com/FelekDevYT/Stricty/releases/download/1.0.0/stricty-1.0.0.jar)<br>
+ ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ **Creator**: <img src="https://github.com/FelekDevYT.png?size=20" width="20" height="20"> [FelekDevYT](https://github.com/FelekDevYT)<br>
+ Stricty is a plugin that makes your game less visible to anti-cheats.
+
+ <details>
+ <summary>Show Screenshots</summary>
+ <p align="center">
+ <img src="./Assets/Stricty/settings.png" alt="Stricty's settings" width="168">
+ </p>
+ </details>
+
+---
+
+- ### [Plugger](https://github.com/FelekDevYT/Plugger) <br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/FelekDevYT/Plugger?label=Latest%20Release&color=green)](https://github.com/FelekDevYT/Plugger/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/FelekDevYT/Plugger/total)](https://github.com/FelekDevYT/Plugger/releases/download/1.0.0/plugger-1.0.0.jar)<br>
+ ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ **Creator**: <img src="https://github.com/FelekDevYT.png?size=20" width="20" height="20"> [FelekDevYT](https://github.com/FelekDevYT)<br>
+ In-game plugin manager for RusherHack that allows you to browse, download, and manage other community plugins directly from the official GitHub repository
+
+ <details>
+ <summary>Show Screenshots</summary>
+ <p align="center">
+ <img src="./Assets/Plugger/plugger.png" alt="Plugger logo" width="429">
+ </p>
+ </details>
+
+---
+
+- ### [ChestIndexer](https://github.com/FelekDevYT/ChestIndexer) <br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/FelekDevYT/ChestIndexer?label=Latest%20Release&color=green)](https://github.com/FelekDevYT/ChestIndexer/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/FelekDevYT/ChestIndexer/total)](https://github.com/FelekDevYT/ChestIndexer/releases/download/1.0.0/chest-indexer-1.0.0.jar)<br>
+ ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ **Creator**: <img src="https://github.com/FelekDevYT.png?size=20" width="20" height="20"> [FelekDevYT](https://github.com/FelekDevYT)<br>
+ A powerful, automated container scanner and item counter for RusherHack.
+
+ <details>
+ <summary>Show Screenshots</summary>
+ <p align="center">
+ <img src="./Assets/ChestIndexer/logo.png" alt="Logo" width="811">
+ </p>
+ </details>
 
 ---
 
