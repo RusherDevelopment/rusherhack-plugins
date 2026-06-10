@@ -2003,7 +2003,7 @@ plugins:
     mc_versions: '1.21.1'
     jar_url: https://github.com/emirplus/rusher-utils/releases/download/1.0.0/rusher-utils-1.0.0.jar
     added_at: '2026-06-04'
-      - name: CustomCapes
+  - name: CustomCapes
     repo: FelekDevYT/CustomCapes
     description: A high-performance, client-side cosmetic extension for RusherHack that allows using any custom cape textures with automatic elytra synchronization.
     creator:
@@ -2037,7 +2037,7 @@ plugins:
     jar_url: https://github.com/FelekDevYT/Stricty/releases/download/1.0.0/stricty-1.0.0.jar
     added_at: '2026-05-06'
     updated_at: '2026-05-06'
-      - name: Plugger
+  - name: Plugger
     repo: FelekDevYT/Plugger
     description: In-game plugin manager for RusherHack that allows you to browse, download, and manage other community plugins directly from the official GitHub repository
     creator:
