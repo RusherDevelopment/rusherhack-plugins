@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="with=device-width, install-scale=1.0">
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
         <title>RusherHack Addons</title>
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -37,6 +37,7 @@
                 </select>
                 <select id="versionFilter" class="px-4 py-3 rounded-xl text-sm cursor-pointer min-w-[140px]">
                     <option value="all">All Versions</option>
+                    <option value="1.21.11">1.21.11</option>
                     <option value="1.21.4">1.21.4</option>
                     <option value="1.21.1">1.21.1</option>
                     <option value="1.21">1.21</option>
@@ -55,7 +56,7 @@
 
         <script>
             let allItems = []
-            const RUSHERHACK_VERSIONS = ['1.20.1', '1.20.2', '1.20.4', '1.20.6', '1.21', '1.21.1', '1.21.2', '1.21.3', '1.21.4'];
+            const RUSHERHACK_VERSIONS = ['1.20.1', '1.20.2', '1.20.4', '1.20.6', '1.21', '1.21.1', '1.21.2', '1.21.3', '1.21.4', '1.21.11'];
 
             function parseVersions(available_versions) {
                 if (!available_versions || available_versions === 'N/A') return [];
