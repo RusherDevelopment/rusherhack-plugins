@@ -2642,7 +2642,7 @@
         "url": "https://github.com/tillay",
         "avatar": "https://github.com/tillay.png?size=20"
       },
-      "latest_release_tag": "v1.2.0-62548d",
+      "latest_release_tag": "v1.2.0-35c969",
       "screenshots": [
         {
           "url": "./Assets/rusherhack-pathfinder/ss1.png",
@@ -2667,7 +2667,7 @@
       ],
       "is_core": false,
       "mc_versions": "1.21.4",
-      "jar_url": "https://github.com/tillay-rh-plugins/rusherhack-pathfinder/releases/download/v1.2.0-62548d/rusherhack-pathfinder-1.2.0.jar",
+      "jar_url": "https://github.com/tillay-rh-plugins/rusherhack-pathfinder/releases/download/v1.2.0-35c969/rusherhack-pathfinder-1.2.0.jar",
       "added_at": "2026-06-09",
       "updated_at": "2026-06-09"
     }
