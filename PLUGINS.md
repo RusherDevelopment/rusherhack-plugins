@@ -1571,7 +1571,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [RusherHack Pathfinder](https://github.com/tillay-rh-plugins/rusherhack-pathfinder) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/tillay-rh-plugins/rusherhack-pathfinder?label=Latest%20Release&color=green)](https://github.com/tillay-rh-plugins/rusherhack-pathfinder/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tillay-rh-plugins/rusherhack-pathfinder/total)](https://github.com/tillay-rh-plugins/rusherhack-pathfinder/releases/download/v1.2.0-35c969/rusherhack-pathfinder-1.2.0.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/tillay-rh-plugins/rusherhack-pathfinder?label=Latest%20Release&color=green)](https://github.com/tillay-rh-plugins/rusherhack-pathfinder/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tillay-rh-plugins/rusherhack-pathfinder/total)](https://github.com/tillay-rh-plugins/rusherhack-pathfinder/releases/download/v1.2.0-93a776/rusherhack-pathfinder-1.2.0.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
  **Creator**: <img src="https://github.com/tillay.png?size=20" width="20" height="20"> [tillay](https://github.com/tillay)<br>
  Google Maps for 2b2t highways with route planning, navigation, and ETA guidance.
