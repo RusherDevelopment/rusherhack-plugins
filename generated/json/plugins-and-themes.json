@@ -582,7 +582,7 @@
         "url": "https://github.com/GarlicRot",
         "avatar": "https://github.com/GarlicRot.png?size=20"
       },
-      "latest_release_tag": "v1.0.4",
+      "latest_release_tag": "v1.0.5",
       "screenshots": [
         {
           "url": "./Assets/GarlicSight/hudinfo.png",
@@ -601,10 +601,10 @@
         }
       ],
       "is_core": false,
-      "mc_versions": "1.20.5-1.21.4",
-      "jar_url": "https://github.com/GarlicRot/GarlicSight/releases/tag/v1.0.4",
+      "mc_versions": "1.21.4-1.21.11",
+      "jar_url": "https://github.com/GarlicRot/GarlicSight/releases/tag/v1.0.5",
       "added_at": "2024-07-26",
-      "updated_at": "2025-02-10"
+      "updated_at": "2026-06-14"
     },
     {
       "name": "LightningPop",
