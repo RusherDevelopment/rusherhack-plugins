@@ -498,14 +498,14 @@ plugins:
       name: GarlicRot
       url: https://github.com/GarlicRot
       avatar: https://github.com/GarlicRot.png?size=20
-    latest_release_tag: v1.0.7
+    latest_release_tag: v1.0.8
     screenshots:
       - url: ./Assets/LightningPop/Module.png
         alt: Module
         width: 250
     is_core: false
     mc_versions: 1.20.5-1.21.4
-    jar_url: https://github.com/GarlicRot/LightningPop/releases/tag/v1.0.7
+    jar_url: https://github.com/GarlicRot/LightningPop/releases/tag/v1.0.8
     added_at: '2024-07-26'
     updated_at: '2025-06-03'
   - name: AutoBucket
