@@ -504,7 +504,7 @@ plugins:
         alt: Module
         width: 250
     is_core: false
-    mc_versions: 1.20.5-1.21.4
+    mc_versions: 1.20.5-1.21.11
     jar_url: https://github.com/GarlicRot/LightningPop/releases/tag/v1.0.8
     added_at: '2024-07-26'
     updated_at: '2025-06-03'
