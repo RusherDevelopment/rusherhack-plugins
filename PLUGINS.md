@@ -466,7 +466,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [LightningPop](https://github.com/GarlicRot/LightningPop) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/GarlicRot/LightningPop?label=Latest%20Release&color=green)](https://github.com/GarlicRot/LightningPop/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/GarlicRot/LightningPop/total)](https://github.com/GarlicRot/LightningPop/releases/tag/v1.0.8)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%205--1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%205--1%2021%2011-blueviolet)<br>
  **Creator**: <img src="https://github.com/GarlicRot.png?size=20" width="20" height="20"> [GarlicRot](https://github.com/GarlicRot)<br>
  A RusherHacks Plugin - Spawns Lightning On Totem Pops And Player Deaths - LightningPop.
 
