@@ -74,6 +74,7 @@ jobs:
             "mcVersions",
             "mc_version",
             "mcVersion",
+            "Minecraft-Versions",
             "minecraft_versions",
             "minecraftVersions",
             "minecraft_version",
@@ -285,7 +286,16 @@ jobs:
 
             for (const entry of entries) {
               if (
-                [".git", ".gradle", ".idea", "build", "out", "node_modules"].includes(entry.name)
+                [
+                  ".git",
+                  ".gradle",
+                  ".idea",
+                  "build",
+                  "bin",
+                  "out",
+                  "target",
+                  "node_modules",
+                ].includes(entry.name)
               ) {
                 continue;
               }
@@ -340,12 +350,58 @@ jobs:
             return String(value ?? "");
           }
 
-          function scanJsonObject(value, file, trail = []) {
+          function readGradlePropertyMap(projectDir, files) {
+            const props = {};
+
+            for (const file of files.filter((item) => item.endsWith("gradle.properties"))) {
+              const full = path.join(projectDir, file);
+
+              let text = "";
+              try {
+                text = fs.readFileSync(full, "utf8");
+              } catch {
+                continue;
+              }
+
+              for (const line of text.split(/\r?\n/)) {
+                const trimmed = line.trim();
+
+                if (!trimmed || trimmed.startsWith("#")) {
+                  continue;
+                }
+
+                const match = trimmed.match(/^([A-Za-z0-9_.-]+)\s*=\s*(.+?)\s*$/);
+
+                if (!match) {
+                  continue;
+                }
+
+                const key = match[1].trim();
+                const value = clean(match[2]);
+
+                props[key] = value;
+                props[`project.${key}`] = value;
+              }
+            }
+
+            return props;
+          }
+
+          function resolveGradlePlaceholders(raw, props) {
+            return String(raw ?? "").replace(/\$\{([^}]+)\}/g, (full, key) => {
+              const cleanedKey = String(key).trim();
+              const withoutProject = cleanedKey.replace(/^project\./, "");
+
+              return props[cleanedKey] ?? props[withoutProject] ?? full;
+            });
+          }
+
+          function scanJsonObject(value, file, trail = [], props = {}) {
             const findings = [];
 
             if (Array.isArray(value)) {
               for (let i = 0; i < value.length; i++) {
-                findings.push(...scanJsonObject(value[i], file, [...trail, String(i)]));
+                findings.push(...scanJsonObject(value[i], file, [...trail, String(i)], props));
               }
 
               return findings;
@@ -360,13 +416,15 @@ jobs:
 
               if (isExplicitVersionKey(key)) {
                 const raw = rawValueToString(child);
-                const extracted = extractVersions(raw);
+                const resolvedRaw = resolveGradlePlaceholders(raw, props);
+                const extracted = extractVersions(resolvedRaw);
 
                 if (extracted.versions.length) {
                   findings.push({
                     file,
                     key: nextTrail.join("."),
                     raw,
+                    resolvedRaw,
                     versions: extracted.versions,
                     ignored: extracted.ignored,
                     sourceType: "rusherhack-plugin-json",
@@ -375,13 +433,13 @@ jobs:
                 }
               }
 
-              findings.push(...scanJsonObject(child, file, nextTrail));
+              findings.push(...scanJsonObject(child, file, nextTrail, props));
             }
 
             return findings;
           }
 
-          function scanLooseJsonText(text, file) {
+          function scanLooseJsonText(text, file, props = {}) {
             const findings = [];
 
             for (const key of EXPLICIT_VERSION_KEYS) {
@@ -394,13 +452,15 @@ jobs:
               let match;
               while ((match = regex.exec(text))) {
                 const raw = clean(match[1].replace(/^\[/, "").replace(/\]$/, ""));
-                const extracted = extractVersions(raw);
+                const resolvedRaw = resolveGradlePlaceholders(raw, props);
+                const extracted = extractVersions(resolvedRaw);
 
                 if (extracted.versions.length) {
                   findings.push({
                     file,
                     key,
                     raw,
+                    resolvedRaw,
                     versions: extracted.versions,
                     ignored: extracted.ignored,
                     sourceType: "rusherhack-plugin-json-loose",
@@ -413,18 +473,18 @@ jobs:
             return findings;
           }
 
-          function inspectJsonFile(projectDir, file) {
+          function inspectJsonFile(projectDir, file, props = {}) {
             const full = path.join(projectDir, file);
             const text = fs.readFileSync(full, "utf8");
 
             try {
-              return scanJsonObject(JSON.parse(text), file);
+              return scanJsonObject(JSON.parse(text), file, [], props);
             } catch {
-              return scanLooseJsonText(text, file);
+              return scanLooseJsonText(text, file, props);
             }
           }
 
-          function inspectGradleProperties(projectDir, file) {
+          function inspectGradleProperties(projectDir, file, props = {}) {
             const full = path.join(projectDir, file);
             const text = fs.readFileSync(full, "utf8");
             const findings = [];
@@ -448,13 +508,15 @@ jobs:
                 continue;
               }
 
-              const extracted = extractVersions(raw);
+              const resolvedRaw = resolveGradlePlaceholders(raw, props);
+              const extracted = extractVersions(resolvedRaw);
 
               if (extracted.versions.length) {
                 findings.push({
                   file,
                   key,
                   raw: raw.trim(),
+                  resolvedRaw,
                   versions: extracted.versions,
                   ignored: extracted.ignored,
                   sourceType: "gradle-properties",
@@ -481,20 +543,22 @@ jobs:
             }
 
             const files = findCandidateFiles(projectDir);
+            const gradleProps = readGradlePropertyMap(projectDir, files);
             const findings = [];
 
             for (const file of files) {
               try {
                 if (file.endsWith("rusherhack-plugin.json")) {
-                  findings.push(...inspectJsonFile(projectDir, file));
+                  findings.push(...inspectJsonFile(projectDir, file, gradleProps));
                 } else if (file.endsWith("gradle.properties")) {
-                  findings.push(...inspectGradleProperties(projectDir, file));
+                  findings.push(...inspectGradleProperties(projectDir, file, gradleProps));
                 }
               } catch (error) {
                 findings.push({
                   file,
                   key: "",
                   raw: "",
+                  resolvedRaw: "",
                   versions: [],
                   ignored: [],
                   sourceType: "error",
@@ -521,6 +585,7 @@ jobs:
                 finding.file,
                 finding.key,
                 finding.raw,
+                finding.resolvedRaw,
                 finding.versions?.join(","),
                 finding.sourceType,
               ].join("\0");
@@ -644,6 +709,7 @@ jobs:
                 file: finding.file,
                 key: finding.key,
                 raw: finding.raw,
+                resolvedRaw: finding.resolvedRaw,
                 versions: finding.versions,
                 ignored: finding.ignored,
                 sourceType: finding.sourceType,
@@ -658,7 +724,7 @@ jobs:
               console.log(`[diff] ${plugin.name}`);
               console.log(`  registry: ${plugin.registryMcVersionsRaw || "N/A"}`);
               console.log(`  project:  ${projectSuggestion}`);
-              console.log(`  source:   ${source?.file ?? "N/A"} :: ${source?.key ?? "N/A"} = ${source?.raw ?? "N/A"}`);
+              console.log(`  source:   ${source?.file ?? "N/A"} :: ${source?.key ?? "N/A"} = ${source?.resolvedRaw || source?.raw || "N/A"}`);
             } else {
               console.log(`[${status}] ${plugin.name}`);
             }
@@ -713,13 +779,13 @@ jobs:
           if (!diffs.length) {
             md.push("No registry/project differences found.");
           } else {
-            md.push("| Plugin | Repo | Registry | Project suggestion | Source file | Source key | Raw source value |");
-            md.push("|---|---|---|---|---|---|---|");
+            md.push("| Plugin | Repo | Registry | Project suggestion | Source file | Source key | Raw source value | Resolved source value |");
+            md.push("|---|---|---|---|---|---|---|---|");
 
             for (const result of diffs) {
               const source = result.chosenSources[0] ?? {};
               md.push(
-                `| ${markdownCell(result.name)} | ${markdownCell(result.repo)} | ${markdownCell(result.registry)} | ${markdownCell(result.projectSuggestion)} | ${markdownCell(source.file)} | ${markdownCell(source.key)} | ${markdownCell(source.raw)} |`,
+                `| ${markdownCell(result.name)} | ${markdownCell(result.repo)} | ${markdownCell(result.registry)} | ${markdownCell(result.projectSuggestion)} | ${markdownCell(source.file)} | ${markdownCell(source.key)} | ${markdownCell(source.raw)} | ${markdownCell(source.resolvedRaw || source.raw)} |`,
               );
             }
           }
