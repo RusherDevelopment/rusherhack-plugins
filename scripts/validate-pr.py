@@ -58,7 +58,7 @@ GENERATED_OUTPUT_ALLOWED = [
     "PLUGINS.md",
     "THEMES.md",
     "generated/json/**",
-    "api/v1/**",
+    "public_html/api/v1/**",
 ]
 
 CONTRIBUTOR_ALLOWED = [
