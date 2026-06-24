@@ -10,7 +10,7 @@
 
 # Plugins List
 
-[![Plugins](https://img.shields.io/badge/Plugins-126-green)](#plugins-list)
+[![Plugins](https://img.shields.io/badge/Plugins-131-green)](#plugins-list)
 [![RusherHack v2.0.6](https://img.shields.io/badge/RusherHack-v2.0.6-purple?logo=data:image/png;base64,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)](https://rusherhack.org/changelog.html)
 [![â†“ Go to Bottom](https://img.shields.io/badge/â†“-Go%20to%20Bottom-blue?style=flat)](#plugins-bottom)
 
@@ -44,6 +44,58 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 <table>
 <tr>
 <td align="left" valign="top" width="50%">
+  <a href="https://github.com/tillay-rh-plugins/rusherhack-pathfinder"><img src="https://avatars.githubusercontent.com/tillay-rh-plugins?s=400" alt="RusherHack Pathfinder" width="100" height="100" style="border-radius:12px;"></a>
+  <div><strong><a href="https://github.com/tillay-rh-plugins/rusherhack-pathfinder">RusherHack Pathfinder</a></strong>&nbsp;<code>plugin</code></div>
+  <div style="margin:4px 0 6px 0;">Google Maps for 2b2t highways with route planning, navigation, and ETA guidance.</div>
+  <div>
+    <img alt="stars" src="https://img.shields.io/github/stars/tillay-rh-plugins/rusherhack-pathfinder?style=flat">
+    &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/tillay-rh-plugins/rusherhack-pathfinder/total?style=flat">
+    &nbsp;<img alt="added" src="https://img.shields.io/date/1780963200?label=added&style=flat">
+  </div>
+</td>
+<td align="left" valign="top" width="50%">
+  <a href="https://github.com/emirplus/Rusher-Utils"><img src="https://avatars.githubusercontent.com/emirplus?s=400" alt="Rusher Utils" width="100" height="100" style="border-radius:12px;"></a>
+  <div><strong><a href="https://github.com/emirplus/Rusher-Utils">Rusher Utils</a></strong>&nbsp;<code>plugin</code></div>
+  <div style="margin:4px 0 6px 0;">A small utility plugin for Rusherhack containing a HighJump (Shulker) module.</div>
+  <div>
+    <img alt="stars" src="https://img.shields.io/github/stars/emirplus/Rusher-Utils?style=flat">
+    &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/emirplus/Rusher-Utils/total?style=flat">
+    &nbsp;<img alt="added" src="https://img.shields.io/date/1780531200?label=added&style=flat">
+  </div>
+</td></tr>
+<tr>
+<td align="left" valign="top" width="50%">
+  <a href="https://github.com/FelekDevYT/Stricty"><img src="https://avatars.githubusercontent.com/FelekDevYT?s=400" alt="Stricty" width="100" height="100" style="border-radius:12px;"></a>
+  <div><strong><a href="https://github.com/FelekDevYT/Stricty">Stricty</a></strong>&nbsp;<code>plugin</code></div>
+  <div style="margin:4px 0 6px 0;">Stricty is a plugin that makes your game less visible to anti-cheats.</div>
+  <div>
+    <img alt="stars" src="https://img.shields.io/github/stars/FelekDevYT/Stricty?style=flat">
+    &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/FelekDevYT/Stricty/total?style=flat">
+    &nbsp;<img alt="added" src="https://img.shields.io/date/1778025600?label=added&style=flat">
+  </div>
+</td>
+<td align="left" valign="top" width="50%">
+  <a href="https://github.com/FelekDevYT/Plugger"><img src="https://avatars.githubusercontent.com/FelekDevYT?s=400" alt="Plugger" width="100" height="100" style="border-radius:12px;"></a>
+  <div><strong><a href="https://github.com/FelekDevYT/Plugger">Plugger</a></strong>&nbsp;<code>plugin</code></div>
+  <div style="margin:4px 0 6px 0;">In-game plugin manager for RusherHack that allows you to browse, download, and manage other community plugins directly from the official GitHub repository</div>
+  <div>
+    <img alt="stars" src="https://img.shields.io/github/stars/FelekDevYT/Plugger?style=flat">
+    &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/FelekDevYT/Plugger/total?style=flat">
+    &nbsp;<img alt="added" src="https://img.shields.io/date/1775952000?label=added&style=flat">
+  </div>
+</td></tr>
+<tr>
+<td align="left" valign="top" width="50%">
+  <a href="https://github.com/FelekDevYT/CustomCapes"><img src="https://avatars.githubusercontent.com/FelekDevYT?s=400" alt="CustomCapes" width="100" height="100" style="border-radius:12px;"></a>
+  <div><strong><a href="https://github.com/FelekDevYT/CustomCapes">CustomCapes</a></strong>&nbsp;<code>plugin</code></div>
+  <div style="margin:4px 0 6px 0;">A high-performance, client-side cosmetic extension for RusherHack that allows using any custom cape textures with automatic elytra synchronization.</div>
+  <div>
+    <img alt="stars" src="https://img.shields.io/github/stars/FelekDevYT/CustomCapes?style=flat">
+    &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/FelekDevYT/CustomCapes/total?style=flat">
+    &nbsp;<img alt="added" src="https://img.shields.io/date/1775347200?label=added&style=flat">
+  </div>
+</td>
+<td align="left" valign="top" width="50%">
   <a href="https://github.com/FelekDevYT/ChestIndexer"><img src="https://avatars.githubusercontent.com/FelekDevYT?s=400" alt="ChestIndexer" width="100" height="100" style="border-radius:12px;"></a>
   <div><strong><a href="https://github.com/FelekDevYT/ChestIndexer">ChestIndexer</a></strong>&nbsp;<code>plugin</code></div>
   <div style="margin:4px 0 6px 0;">A powerful, automated container scanner and item counter for RusherHack.</div>
@@ -51,58 +103,6 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
     <img alt="stars" src="https://img.shields.io/github/stars/FelekDevYT/ChestIndexer?style=flat">
     &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/FelekDevYT/ChestIndexer/total?style=flat">
     &nbsp;<img alt="added" src="https://img.shields.io/date/1774656000?label=added&style=flat">
-  </div>
-</td>
-<td align="left" valign="top" width="50%">
-  <a href="https://github.com/FelekDevYT/phoenix"><img src="https://avatars.githubusercontent.com/FelekDevYT?s=400" alt="Phoenix" width="100" height="100" style="border-radius:12px;"></a>
-  <div><strong><a href="https://github.com/FelekDevYT/phoenix">Phoenix</a></strong>&nbsp;<code>plugin</code></div>
-  <div style="margin:4px 0 6px 0;">A high-performance, all-in-one utility plugin for RusherHack.</div>
-  <div>
-    <img alt="stars" src="https://img.shields.io/github/stars/FelekDevYT/phoenix?style=flat">
-    &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/FelekDevYT/phoenix/total?style=flat">
-    &nbsp;<img alt="added" src="https://img.shields.io/date/1774310400?label=added&style=flat">
-  </div>
-</td></tr>
-<tr>
-<td align="left" valign="top" width="50%">
-  <a href="https://github.com/FelekDevYT/RusherClicker"><img src="https://avatars.githubusercontent.com/FelekDevYT?s=400" alt="RusherClicker" width="100" height="100" style="border-radius:12px;"></a>
-  <div><strong><a href="https://github.com/FelekDevYT/RusherClicker">RusherClicker</a></strong>&nbsp;<code>plugin</code></div>
-  <div style="margin:4px 0 6px 0;">A high-performance, tick-perfect AutoClicker plugin for RusherHack</div>
-  <div>
-    <img alt="stars" src="https://img.shields.io/github/stars/FelekDevYT/RusherClicker?style=flat">
-    &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/FelekDevYT/RusherClicker/total?style=flat">
-    &nbsp;<img alt="added" src="https://img.shields.io/date/1773100800?label=added&style=flat">
-  </div>
-</td>
-<td align="left" valign="top" width="50%">
-  <a href="https://github.com/KybesRusherhackPlugins/packets_in_out"><img src="https://avatars.githubusercontent.com/KybesRusherhackPlugins?s=400" alt="packets_in_out" width="100" height="100" style="border-radius:12px;"></a>
-  <div><strong><a href="https://github.com/KybesRusherhackPlugins/packets_in_out">packets_in_out</a></strong>&nbsp;<code>plugin</code></div>
-  <div style="margin:4px 0 6px 0;">HUD element that displays incoming and outgoing packet counts</div>
-  <div>
-    <img alt="stars" src="https://img.shields.io/github/stars/KybesRusherhackPlugins/packets_in_out?style=flat">
-    &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/KybesRusherhackPlugins/packets_in_out/total?style=flat">
-    &nbsp;<img alt="added" src="https://img.shields.io/date/1773100800?label=added&style=flat">
-  </div>
-</td></tr>
-<tr>
-<td align="left" valign="top" width="50%">
-  <a href="https://github.com/KybesRusherhackPlugins/hotbar_randomizer"><img src="https://avatars.githubusercontent.com/KybesRusherhackPlugins?s=400" alt="hotbar_randomizer" width="100" height="100" style="border-radius:12px;"></a>
-  <div><strong><a href="https://github.com/KybesRusherhackPlugins/hotbar_randomizer">hotbar_randomizer</a></strong>&nbsp;<code>plugin</code></div>
-  <div style="margin:4px 0 6px 0;">Randomizes your selected hotbar slot after placing, with options to exclude and ignore specific slots</div>
-  <div>
-    <img alt="stars" src="https://img.shields.io/github/stars/KybesRusherhackPlugins/hotbar_randomizer?style=flat">
-    &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/KybesRusherhackPlugins/hotbar_randomizer/total?style=flat">
-    &nbsp;<img alt="added" src="https://img.shields.io/date/1773100800?label=added&style=flat">
-  </div>
-</td>
-<td align="left" valign="top" width="50%">
-  <a href="https://github.com/hx-4/RusherSearchTweaks"><img src="https://avatars.githubusercontent.com/hx-4?s=400" alt="RusherSearchTweaks" width="100" height="100" style="border-radius:12px;"></a>
-  <div><strong><a href="https://github.com/hx-4/RusherSearchTweaks">RusherSearchTweaks</a></strong>&nbsp;<code>plugin</code></div>
-  <div style="margin:4px 0 6px 0;">Adds group toggles to the Search module for quickly enabling or disabling categories.</div>
-  <div>
-    <img alt="stars" src="https://img.shields.io/github/stars/hx-4/RusherSearchTweaks?style=flat">
-    &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/hx-4/RusherSearchTweaks/total?style=flat">
-    &nbsp;<img alt="added" src="https://img.shields.io/date/1773100800?label=added&style=flat">
   </div>
 </td></tr>
 </table>
@@ -137,7 +137,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [2b2t.vc Rusherhack](https://github.com/rfresh2/2b2t.vc-rusherhack) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/rfresh2/2b2t.vc-rusherhack?label=Latest%20Release&color=green)](https://github.com/rfresh2/2b2t.vc-rusherhack/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/rfresh2/2b2t.vc-rusherhack/total)](https://github.com/rfresh2/2b2t.vc-rusherhack/releases/download/1.12/2b2t.vc-rusherhack-1.12.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/rfresh2/2b2t.vc-rusherhack?label=Latest%20Release&color=green)](https://github.com/rfresh2/2b2t.vc-rusherhack/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/rfresh2/2b2t.vc-rusherhack/total)](https://github.com/rfresh2/2b2t.vc-rusherhack/releases/tag/1.13)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201--1%2021%204-blueviolet)<br>
  **Creator**: <img src="https://github.com/rfresh2.png?size=20" width="20" height="20"> [rfresh2](https://github.com/rfresh2)<br>
  2b2t data and statistics API commands and HUD.
@@ -147,21 +147,6 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  <p align="center">
  <img src="./Assets/2b2t.vc Rusherhack/HudSettings.png" alt="Hud Setting" width="250">
  <img src="./Assets/2b2t.vc Rusherhack/HudDisplay.png" alt="Hud Display w/2b2t Queue" width="550">
- </p>
- </details>
-
----
-
-- ### [ChestIndexer](https://github.com/FelekDevYT/ChestIndexer) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/FelekDevYT/ChestIndexer?label=Latest%20Release&color=green)](https://github.com/FelekDevYT/ChestIndexer/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/FelekDevYT/ChestIndexer/total)](https://github.com/FelekDevYT/ChestIndexer/releases/download/1.0.0/chest-indexer-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
- **Creator**: <img src="https://github.com/FelekDevYT.png?size=20" width="20" height="20"> [FelekDevYT](https://github.com/FelekDevYT)<br>
- A powerful, automated container scanner and item counter for RusherHack.
-
- <details>
- <summary>Show Screenshots</summary>
- <p align="center">
- <img src="./Assets/ChestIndexer/logo.png" alt="Logo" width="811">
  </p>
  </details>
 
@@ -299,7 +284,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [Container Tweaks](https://github.com/rfresh2/ContainerTweaks-rusherhack) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/rfresh2/ContainerTweaks-rusherhack?label=Latest%20Release&color=green)](https://github.com/rfresh2/ContainerTweaks-rusherhack/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/rfresh2/ContainerTweaks-rusherhack/total)](https://github.com/rfresh2/ContainerTweaks-rusherhack/releases/tag/1.11)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/rfresh2/ContainerTweaks-rusherhack?label=Latest%20Release&color=green)](https://github.com/rfresh2/ContainerTweaks-rusherhack/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/rfresh2/ContainerTweaks-rusherhack/total)](https://github.com/rfresh2/ContainerTweaks-rusherhack/releases/tag/1.12)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201--1%2021%204-blueviolet)<br>
  **Creator**: <img src="https://github.com/rfresh2.png?size=20" width="20" height="20"> [rfresh2](https://github.com/rfresh2)<br>
  Simple tweaks for quickly moving items in containers.
@@ -463,8 +448,8 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [GarlicSight](https://github.com/GarlicRot/GarlicSight) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/GarlicRot/GarlicSight?label=Latest%20Release&color=green)](https://github.com/GarlicRot/GarlicSight/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/GarlicRot/GarlicSight/total)](https://github.com/GarlicRot/GarlicSight/releases/tag/v1.0.4)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%205--1%2021%204-blueviolet)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/GarlicRot/GarlicSight?label=Latest%20Release&color=green)](https://github.com/GarlicRot/GarlicSight/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/GarlicRot/GarlicSight/total)](https://github.com/GarlicRot/GarlicSight/releases/tag/v1.0.5)<br>
+ ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204--1%2021%2011-blueviolet)<br>
  **Creator**: <img src="https://github.com/GarlicRot.png?size=20" width="20" height="20"> [GarlicRot](https://github.com/GarlicRot)<br>
  A RusherHacks Plugin - Crosshair Info - GarlicSight.
 
@@ -480,8 +465,8 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [LightningPop](https://github.com/GarlicRot/LightningPop) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/GarlicRot/LightningPop?label=Latest%20Release&color=green)](https://github.com/GarlicRot/LightningPop/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/GarlicRot/LightningPop/total)](https://github.com/GarlicRot/LightningPop/releases/tag/v1.0.7)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%205--1%2021%204-blueviolet)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/GarlicRot/LightningPop?label=Latest%20Release&color=green)](https://github.com/GarlicRot/LightningPop/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/GarlicRot/LightningPop/total)](https://github.com/GarlicRot/LightningPop/releases/tag/v1.0.8)<br>
+ ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%205--1%2021%2011-blueviolet)<br>
  **Creator**: <img src="https://github.com/GarlicRot.png?size=20" width="20" height="20"> [GarlicRot](https://github.com/GarlicRot)<br>
  A RusherHacks Plugin - Spawns Lightning On Totem Pops And Player Deaths - LightningPop.
 
@@ -723,7 +708,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [rusher-autoportal](https://github.com/KybesRusherhackPlugins/auto-portal) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/KybesRusherhackPlugins/auto-portal?label=Latest%20Release&color=green)](https://github.com/KybesRusherhackPlugins/auto-portal/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/KybesRusherhackPlugins/auto-portal/total)](https://github.com/KybesRusherhackPlugins/auto-portal/releases/download/1.20.6-1.21.1/kybe-portal-maker-1.0.0.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/KybesRusherhackPlugins/auto-portal?label=Latest%20Release&color=green)](https://github.com/KybesRusherhackPlugins/auto-portal/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/KybesRusherhackPlugins/auto-portal/total)](https://github.com/KybesRusherhackPlugins/auto-portal/releases/download/1.20.6-1.21.4/kybe-portal-maker-1.0.0.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%204--1%2021%201-blueviolet)<br>
  **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)<br>
  Automatically breaks blocks to place obsidian and activate the nether portal.
@@ -907,7 +892,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [Tablist Hats](https://github.com/rfresh2/TablistHats-rusherhack) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/rfresh2/TablistHats-rusherhack?label=Latest%20Release&color=green)](https://github.com/rfresh2/TablistHats-rusherhack/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/rfresh2/TablistHats-rusherhack/total)](https://github.com/rfresh2/TablistHats-rusherhack/releases/download/1.0/TablistHats-1.0.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/rfresh2/TablistHats-rusherhack?label=Latest%20Release&color=green)](https://github.com/rfresh2/TablistHats-rusherhack/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/rfresh2/TablistHats-rusherhack/total)](https://github.com/rfresh2/TablistHats-rusherhack/releases/download/1.1/TablistHats-1.1%2B1.20.1-1.21.11.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201--1%2021%204-blueviolet)<br>
  ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>
  **Creator**: <img src="https://github.com/rfresh2.png?size=20" width="20" height="20"> [rfresh2](https://github.com/rfresh2)<br>
@@ -1039,7 +1024,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [BarrierESP-RusherHack](https://github.com/k4n3d4-sh0t4r0/BarrierESP-RusherHack) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/k4n3d4-sh0t4r0/BarrierESP-RusherHack?label=Latest%20Release&color=green)](https://github.com/k4n3d4-sh0t4r0/BarrierESP-RusherHack/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/k4n3d4-sh0t4r0/BarrierESP-RusherHack/total)](https://github.com/k4n3d4-sh0t4r0/BarrierESP-RusherHack/releases/download/v1.1.0/BarrierESP-1.1.0.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/k4n3d4-sh0t4r0/BarrierESP-RusherHack?label=Latest%20Release&color=green)](https://github.com/k4n3d4-sh0t4r0/BarrierESP-RusherHack/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/k4n3d4-sh0t4r0/BarrierESP-RusherHack/total)](https://github.com/k4n3d4-sh0t4r0/BarrierESP-RusherHack/releases/download/v1.2.0/BarrierESP-1.2.0.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
  ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>
  **Creator**: <img src="https://github.com/k4n3d4-sh0t4r0.png?size=20" width="20" height="20"> [k4n3d4-sh0t4r0](https://github.com/k4n3d4-sh0t4r0)<br>
@@ -1055,7 +1040,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [FovLimiter-Rusherhack](https://github.com/k4n3d4-sh0t4r0/FovLimiter-Rusherhack) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/k4n3d4-sh0t4r0/FovLimiter-Rusherhack?label=Latest%20Release&color=green)](https://github.com/k4n3d4-sh0t4r0/FovLimiter-Rusherhack/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/k4n3d4-sh0t4r0/FovLimiter-Rusherhack/total)](https://github.com/k4n3d4-sh0t4r0/FovLimiter-Rusherhack/releases/download/V1.1.0/FovLimiter-1.1.0.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/k4n3d4-sh0t4r0/FovLimiter-Rusherhack?label=Latest%20Release&color=green)](https://github.com/k4n3d4-sh0t4r0/FovLimiter-Rusherhack/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/k4n3d4-sh0t4r0/FovLimiter-Rusherhack/total)](https://github.com/k4n3d4-sh0t4r0/FovLimiter-Rusherhack/releases/download/v1.2.0/FovLimiter-1.2.0.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
  ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>
  **Creator**: <img src="https://github.com/k4n3d4-sh0t4r0.png?size=20" width="20" height="20"> [k4n3d4-sh0t4r0](https://github.com/k4n3d4-sh0t4r0)<br>
@@ -1064,7 +1049,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [NoJumpDelay-Rusherhack](https://github.com/k4n3d4-sh0t4r0/NoJumpDelay-Rusherhack) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/k4n3d4-sh0t4r0/NoJumpDelay-Rusherhack?label=Latest%20Release&color=green)](https://github.com/k4n3d4-sh0t4r0/NoJumpDelay-Rusherhack/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/k4n3d4-sh0t4r0/NoJumpDelay-Rusherhack/total)](https://github.com/k4n3d4-sh0t4r0/NoJumpDelay-Rusherhack/releases/download/V1.1.0/NoJumpDelay-1.1.0.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/k4n3d4-sh0t4r0/NoJumpDelay-Rusherhack?label=Latest%20Release&color=green)](https://github.com/k4n3d4-sh0t4r0/NoJumpDelay-Rusherhack/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/k4n3d4-sh0t4r0/NoJumpDelay-Rusherhack/total)](https://github.com/k4n3d4-sh0t4r0/NoJumpDelay-Rusherhack/releases/download/v1.2.0/NoJumpDelay-1.2.0.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
  ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>
  **Creator**: <img src="https://github.com/k4n3d4-sh0t4r0.png?size=20" width="20" height="20"> [k4n3d4-sh0t4r0](https://github.com/k4n3d4-sh0t4r0)<br>
@@ -1073,7 +1058,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [HideNightVision-RusherHack](https://github.com/k4n3d4-sh0t4r0/HideNightVision-RusherHack) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/k4n3d4-sh0t4r0/HideNightVision-RusherHack?label=Latest%20Release&color=green)](https://github.com/k4n3d4-sh0t4r0/HideNightVision-RusherHack/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/k4n3d4-sh0t4r0/HideNightVision-RusherHack/total)](https://github.com/k4n3d4-sh0t4r0/HideNightVision-RusherHack/releases/download/V1.1.0/HideNightVision-1.1.0.jar)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/k4n3d4-sh0t4r0/HideNightVision-RusherHack?label=Latest%20Release&color=green)](https://github.com/k4n3d4-sh0t4r0/HideNightVision-RusherHack/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/k4n3d4-sh0t4r0/HideNightVision-RusherHack/total)](https://github.com/k4n3d4-sh0t4r0/HideNightVision-RusherHack/releases/download/V1.2.0/HideNightVision-1.2.0.jar)<br>
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
  ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>
  **Creator**: <img src="https://github.com/k4n3d4-sh0t4r0.png?size=20" width="20" height="20"> [k4n3d4-sh0t4r0](https://github.com/k4n3d4-sh0t4r0)<br>
@@ -1492,8 +1477,8 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 ---
 
 - ### [Phoenix](https://github.com/FelekDevYT/phoenix) <br>
- [![Latest Release Date](https://img.shields.io/github/release-date/FelekDevYT/phoenix?label=Latest%20Release&color=green)](https://github.com/FelekDevYT/phoenix/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/FelekDevYT/phoenix/total)](https://github.com/FelekDevYT/Phoenix/releases/download/1.1.0/phoenix-1.1.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/FelekDevYT/phoenix?label=Latest%20Release&color=green)](https://github.com/FelekDevYT/phoenix/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/FelekDevYT/phoenix/total)](https://github.com/FelekDevYT/Phoenix/releases/download/1.3.0/phoenix-1.3.0.jar)<br>
+ ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204--1%2021%2011-blueviolet)<br>
  **Creator**: <img src="https://github.com/FelekDevYT.png?size=20" width="20" height="20"> [FelekDevYT](https://github.com/FelekDevYT)<br>
  A high-performance, all-in-one utility plugin for RusherHack.
 
@@ -1513,6 +1498,93 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
  **Creator**: <img src="https://github.com/hx-4.png?size=20" width="20" height="20"> [hx-4](https://github.com/hx-4)<br>
  Displays an estimated travel time to Xaero waypoints in-game.
+
+---
+
+- ### [Rusher Utils](https://github.com/emirplus/Rusher-Utils) <br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/emirplus/Rusher-Utils?label=Latest%20Release&color=green)](https://github.com/emirplus/Rusher-Utils/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/emirplus/Rusher-Utils/total)](https://github.com/emirplus/rusher-utils/releases/download/1.0.0/rusher-utils-1.0.0.jar)<br>
+ ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%2011-blueviolet)<br>
+ **Creator**: <img src="https://github.com/emirplus.png?size=20" width="20" height="20"> [emirplus](https://github.com/emirplus)<br>
+ A small utility plugin for Rusherhack containing a HighJump (Shulker) module.
+
+---
+
+- ### [CustomCapes](https://github.com/FelekDevYT/CustomCapes) <br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/FelekDevYT/CustomCapes?label=Latest%20Release&color=green)](https://github.com/FelekDevYT/CustomCapes/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/FelekDevYT/CustomCapes/total)](https://github.com/FelekDevYT/CustomCapes/releases/download/latest/customcapes-1.0.0.jar)<br>
+ ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>
+ **Creator**: <img src="https://github.com/FelekDevYT.png?size=20" width="20" height="20"> [FelekDevYT](https://github.com/FelekDevYT)<br>
+ A high-performance, client-side cosmetic extension for RusherHack that allows using any custom cape textures with automatic elytra synchronization.
+
+ <details>
+ <summary>Show Screenshots</summary>
+ <p align="center">
+ <img src="./Assets/CustomCapes/settings.png" alt="Settings" width="174">
+ </p>
+ </details>
+
+---
+
+- ### [Stricty](https://github.com/FelekDevYT/Stricty) <br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/FelekDevYT/Stricty?label=Latest%20Release&color=green)](https://github.com/FelekDevYT/Stricty/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/FelekDevYT/Stricty/total)](https://github.com/FelekDevYT/Stricty/releases/download/1.0.0/stricty-1.0.0.jar)<br>
+ ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ **Creator**: <img src="https://github.com/FelekDevYT.png?size=20" width="20" height="20"> [FelekDevYT](https://github.com/FelekDevYT)<br>
+ Stricty is a plugin that makes your game less visible to anti-cheats.
+
+ <details>
+ <summary>Show Screenshots</summary>
+ <p align="center">
+ <img src="./Assets/Stricty/settings.png" alt="Stricty's settings" width="168">
+ </p>
+ </details>
+
+---
+
+- ### [Plugger](https://github.com/FelekDevYT/Plugger) <br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/FelekDevYT/Plugger?label=Latest%20Release&color=green)](https://github.com/FelekDevYT/Plugger/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/FelekDevYT/Plugger/total)](https://github.com/FelekDevYT/Plugger/releases/download/1.0.0/plugger-1.0.0.jar)<br>
+ ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ **Creator**: <img src="https://github.com/FelekDevYT.png?size=20" width="20" height="20"> [FelekDevYT](https://github.com/FelekDevYT)<br>
+ In-game plugin manager for RusherHack that allows you to browse, download, and manage other community plugins directly from the official GitHub repository
+
+ <details>
+ <summary>Show Screenshots</summary>
+ <p align="center">
+ <img src="./Assets/Plugger/plugger.png" alt="Plugger logo" width="429">
+ </p>
+ </details>
+
+---
+
+- ### [ChestIndexer](https://github.com/FelekDevYT/ChestIndexer) <br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/FelekDevYT/ChestIndexer?label=Latest%20Release&color=green)](https://github.com/FelekDevYT/ChestIndexer/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/FelekDevYT/ChestIndexer/total)](https://github.com/FelekDevYT/ChestIndexer/releases/download/1.0.0/chest-indexer-1.0.0.jar)<br>
+ ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ **Creator**: <img src="https://github.com/FelekDevYT.png?size=20" width="20" height="20"> [FelekDevYT](https://github.com/FelekDevYT)<br>
+ A powerful, automated container scanner and item counter for RusherHack.
+
+ <details>
+ <summary>Show Screenshots</summary>
+ <p align="center">
+ <img src="./Assets/ChestIndexer/logo.png" alt="Logo" width="811">
+ </p>
+ </details>
+
+---
+
+- ### [RusherHack Pathfinder](https://github.com/tillay-rh-plugins/rusherhack-pathfinder) <br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/tillay-rh-plugins/rusherhack-pathfinder?label=Latest%20Release&color=green)](https://github.com/tillay-rh-plugins/rusherhack-pathfinder/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tillay-rh-plugins/rusherhack-pathfinder/total)](https://github.com/tillay-rh-plugins/rusherhack-pathfinder/releases/download/v1.2.0-93a776/rusherhack-pathfinder-1.2.0.jar)<br>
+ ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ **Creator**: <img src="https://github.com/tillay.png?size=20" width="20" height="20"> [tillay](https://github.com/tillay)<br>
+ Google Maps for 2b2t highways with route planning, navigation, and ETA guidance.
+
+ <details>
+ <summary>Show Screenshots</summary>
+ <p align="center">
+ <img src="./Assets/rusherhack-pathfinder/ss1.png" alt="Pathfinder navigation overlay with ETA and turn-by-turn directions" width="550">
+ <img src="./Assets/rusherhack-pathfinder/ss2.png" alt="Highway route displayed on the map" width="550">
+ <img src="./Assets/rusherhack-pathfinder/ss3.png" alt="Pathfinder route planning interface" width="550">
+ <img src="./Assets/rusherhack-pathfinder/ss4.png" alt="Turn-by-turn highway navigation display" width="550">
+ </p>
+ </details>
 
 ---
 
