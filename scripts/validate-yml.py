@@ -15,6 +15,7 @@
 # - URL/date formatting
 # - screenshot structure
 # - plugin-only fields like mc_versions / is_core
+# - strict comma-separated Minecraft version metadata
 #
 # Usage:
 #   python scripts/validate-yml.py
@@ -73,6 +74,26 @@ REQUIRED_CREATOR_FIELDS = {
 
 ALLOWED_TOP_LEVEL_KEYS = {"plugins", "themes"}
 
+ALLOWED_MC_VERSIONS = [
+    "1.20.1",
+    "1.20.2",
+    "1.20.3",
+    "1.20.4",
+    "1.20.5",
+    "1.20.6",
+    "1.21",
+    "1.21.1",
+    "1.21.2",
+    "1.21.3",
+    "1.21.4",
+    "1.21.5",
+    "1.21.6",
+    "1.21.11",
+]
+
+ALLOWED_MC_VERSION_SET = set(ALLOWED_MC_VERSIONS)
+MC_VERSION_INDEX = {version: idx for idx, version in enumerate(ALLOWED_MC_VERSIONS)}
+
 REPO_REGEX = re.compile(r"^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$")
 YOUTUBE_REGEX = re.compile(r"^https://img\.youtube\.com/vi/[^/]+/[^/]+\.jpg$")
 DATE_REGEX = re.compile(r"^\d{4}-\d{2}-\d{2}$")
@@ -103,11 +124,102 @@ def is_valid_screenshot_url(value: str) -> bool:
 def is_valid_iso_date(value: str) -> bool:
     if not DATE_REGEX.match(value):
         return False
+
     try:
         date.fromisoformat(value)
         return True
     except ValueError:
         return False
+
+
+def normalize_version_list(versions: list[str]) -> list[str]:
+    return sorted(
+        versions,
+        key=lambda version: MC_VERSION_INDEX.get(version, 9999),
+    )
+
+
+def validate_mc_versions(value: Any, plugin_name: str) -> tuple[list[str], list[str]]:
+    errors: list[str] = []
+    warnings: list[str] = []
+
+    if not isinstance(value, str):
+        errors.append(error(f"`mc_versions` must be a string in plugin '{plugin_name}'."))
+        return errors, warnings
+
+    raw = value.strip()
+
+    if not raw:
+        errors.append(error(f"`mc_versions` cannot be empty in plugin '{plugin_name}'."))
+        return errors, warnings
+
+    if raw == "N/A":
+        return errors, warnings
+
+    if "-" in raw:
+        errors.append(
+            error(
+                f"`mc_versions` must use comma-separated versions, not dash ranges, "
+                f"in plugin '{plugin_name}'. Found: {raw}"
+            )
+        )
+
+    if raw.endswith(","):
+        errors.append(error(f"`mc_versions` has a trailing comma in plugin '{plugin_name}'."))
+
+    if ",," in raw:
+        errors.append(error(f"`mc_versions` has an empty value between commas in plugin '{plugin_name}'."))
+
+    parts = [part.strip() for part in raw.split(",")]
+
+    if any(part == "" for part in parts):
+        errors.append(error(f"`mc_versions` contains an empty version in plugin '{plugin_name}'."))
+
+    unknown_versions = sorted(
+        {part for part in parts if part and part not in ALLOWED_MC_VERSION_SET}
+    )
+
+    if unknown_versions:
+        errors.append(
+            error(
+                f"`mc_versions` contains unknown Minecraft version(s) in plugin '{plugin_name}': "
+                + ", ".join(unknown_versions)
+                + ". Update ALLOWED_MC_VERSIONS in scripts/validate-yml.py if RusherHack officially supports them."
+            )
+        )
+
+    seen: set[str] = set()
+    duplicates: list[str] = []
+
+    for part in parts:
+        if not part:
+            continue
+
+        if part in seen and part not in duplicates:
+            duplicates.append(part)
+
+        seen.add(part)
+
+    if duplicates:
+        errors.append(
+            error(
+                f"`mc_versions` contains duplicate version(s) in plugin '{plugin_name}': "
+                + ", ".join(duplicates)
+            )
+        )
+
+    valid_parts = [part for part in parts if part in ALLOWED_MC_VERSION_SET]
+    sorted_parts = normalize_version_list(valid_parts)
+
+    if valid_parts and valid_parts != sorted_parts:
+        warnings.append(
+            warning(
+                f"`mc_versions` is not in canonical order in plugin '{plugin_name}'. "
+                f"Expected: {', '.join(sorted_parts)}"
+            )
+        )
+
+    return errors, warnings
 
 
 def validate_creator(creator: Any, kind: str, name: str) -> tuple[list[str], list[str]]:
@@ -210,10 +322,12 @@ def validate_dates(entry: dict[str, Any], kind: str, name: str) -> list[str]:
 
 def validate_unknown_fields(entry: dict[str, Any], kind: str, name: str, is_plugin: bool) -> list[str]:
     allowed = set(COMMON_REQUIRED_FIELDS.keys()) | set(COMMON_OPTIONAL_FIELDS.keys())
+
     if is_plugin:
         allowed |= set(PLUGIN_REQUIRED_FIELDS.keys()) | set(PLUGIN_OPTIONAL_FIELDS.keys())
 
     unknown = sorted(set(entry.keys()) - allowed)
+
     if not unknown:
         return []
 
@@ -285,12 +399,10 @@ def validate_plugin_fields(entry: dict[str, Any], name: str) -> tuple[list[str],
 
     if "mc_versions" not in entry:
         errors.append(error(f"Missing `mc_versions` in plugin '{name}'."))
-    elif not isinstance(entry["mc_versions"], str):
-        errors.append(error(f"`mc_versions` must be a string in plugin '{name}'."))
-    elif not entry["mc_versions"].strip():
-        errors.append(error(f"`mc_versions` cannot be empty in plugin '{name}'."))
-    elif "," in entry["mc_versions"] and "-" in entry["mc_versions"]:
-        warnings.append(warning(f"`mc_versions` mixes ranges and lists in plugin '{name}'. Make sure this is intentional."))
+    else:
+        mc_errors, mc_warnings = validate_mc_versions(entry["mc_versions"], name)
+        errors.extend(mc_errors)
+        warnings.extend(mc_warnings)
 
     if "is_core" in entry and not isinstance(entry["is_core"], bool):
         errors.append(error(f"`is_core` must be a boolean in plugin '{name}'."))
@@ -359,6 +471,10 @@ def summarize_empty_screenshot_warnings(entries: list[str]) -> list[str]:
 
 
 def main() -> None:
+    if not YML_PATH.exists():
+        print(error(f"YAML file not found: {YML_PATH}"))
+        sys.exit(1)
+
     try:
         with YML_PATH.open("r", encoding="utf-8") as f:
             data = yaml.safe_load(f)
@@ -451,7 +567,8 @@ def main() -> None:
         print(f"\n{RED}❌ {len(all_errors)} issue(s) found. Fix the above problems to continue.{RESET}")
         sys.exit(1)
 
-    print(f"{GREEN}✅ plugins-and-themes.yml validation passed with no issues.{RESET}")
+    print(f"{GREEN}✅ plugins-and-themes.yml validation passed with no errors.{RESET}")
+
     if all_warnings:
         print(f"{YELLOW}⚠️ Validation passed with {len(all_warnings)} warning(s).{RESET}")
 
