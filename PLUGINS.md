@@ -130,7 +130,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 <!--- Plugins Start -->
 - ### [Example Plugin](https://github.com/RusherDevelopment/example-plugin) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/RusherDevelopment/example-plugin?label=Latest%20Release&color=green)](https://github.com/RusherDevelopment/example-plugin/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/RusherDevelopment/example-plugin/total)](https://github.com/RusherDevelopment/example-plugin/releases/latest)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/RusherDevelopment.png?size=20" width="20" height="20"> [RusherDevelopment](https://github.com/RusherDevelopment)<br>
  A basic example plugin demonstrating the structure and capabilities of RusherHacks plugins.
 
@@ -138,7 +138,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [2b2t.vc Rusherhack](https://github.com/rfresh2/2b2t.vc-rusherhack) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/rfresh2/2b2t.vc-rusherhack?label=Latest%20Release&color=green)](https://github.com/rfresh2/2b2t.vc-rusherhack/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/rfresh2/2b2t.vc-rusherhack/total)](https://github.com/rfresh2/2b2t.vc-rusherhack/releases/tag/1.13)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201, 1%2020%202, 1%2020%204, 1%2020%206, 1%2021, 1%2021%201, 1%2021%202, 1%2021%203, 1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.1%2C+1.20.2%2C+1.20.4%2C+1.20.6%2C+1.21%2C+1.21.1%2C+1.21.2%2C+1.21.3%2C+1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/rfresh2.png?size=20" width="20" height="20"> [rfresh2](https://github.com/rfresh2)<br>
  2b2t data and statistics API commands and HUD.
 
@@ -154,7 +154,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [RusherHack-HudElement](https://github.com/Aspect-404/RusherHack-HudElement) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/Aspect-404/RusherHack-HudElement?label=Latest%20Release&color=green)](https://github.com/Aspect-404/RusherHack-HudElement/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/Aspect-404/RusherHack-HudElement/total)](https://github.com/Aspect-404/RusherHack-HudElement/releases/download/Release/HudElement.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%204, 1%2021-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.4%2C+1.21&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/Aspect-404.png?size=20" width="20" height="20"> [Aspect-404](https://github.com/Aspect-404)<br>
  Create a customizable HUD element for Minecraft utility mod RusherHack.
 
@@ -170,7 +170,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Auto Anvil Rename](https://github.com/IceTank/AutoAnvilRename) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/IceTank/AutoAnvilRename?label=Latest%20Release&color=green)](https://github.com/IceTank/AutoAnvilRename/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/IceTank/AutoAnvilRename/total)](https://github.com/IceTank/AutoAnvilRename/releases/download/v1.1.0/auto-anvil-1.1.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/IceTank.png?size=20" width="20" height="20"> [IceTank](https://github.com/IceTank)<br>
  Automates the renaming process in anvils.
 
@@ -186,7 +186,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Queue Manager](https://github.com/GabiRP/QueueManager) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/GabiRP/QueueManager?label=Latest%20Release&color=green)](https://github.com/GabiRP/QueueManager/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/GabiRP/QueueManager/total)](https://github.com/GabiRP/QueueManager/releases/download/1.0.0/QueueManager.Rusher-1.0-SNAPSHOT.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.1&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/GabiRP.png?size=20" width="20" height="20"> [GabiRP](https://github.com/GabiRP)<br>
  Manages queue positions and notifies users of their status.
 
@@ -194,7 +194,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [RusherHack Instance Info](https://github.com/John200410/rusherhack-instance-info) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/John200410/rusherhack-instance-info?label=Latest%20Release&color=green)](https://github.com/John200410/rusherhack-instance-info/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/John200410/rusherhack-instance-info/total)](https://github.com/John200410/rusherhack-instance-info/releases/download/v1.2.2/instance-info-1.2.2.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201, 1%2020%202, 1%2020%203, 1%2020%204, 1%2020%205, 1%2020%206, 1%2021, 1%2021%201, 1%2021%202, 1%2021%203, 1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.1%2C+1.20.2%2C+1.20.3%2C+1.20.4%2C+1.20.5%2C+1.20.6%2C+1.21%2C+1.21.1%2C+1.21.2%2C+1.21.3%2C+1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/John200410.png?size=20" width="20" height="20"> [John200410](https://github.com/John200410)<br>
  Provides detailed information about the current instance.
 
@@ -211,7 +211,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Stash Mover Plugin](https://github.com/xyzbtw/StashMoverPlugin) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/xyzbtw/StashMoverPlugin?label=Latest%20Release&color=green)](https://github.com/xyzbtw/StashMoverPlugin/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/xyzbtw/StashMoverPlugin/total)](https://github.com/xyzbtw/StashMoverPlugin/releases/download/1.21.4/stashmover-release-1.21.4.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201, 1%2020%204, 1%2020%206, 1%2021, 1%2021%201, 1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.1%2C+1.20.4%2C+1.20.6%2C+1.21%2C+1.21.1%2C+1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/xyzbtw.png?size=20" width="20" height="20"> [xyzbtw](https://github.com/xyzbtw)<br>
  A plugin to move stashes using pearls.
 
@@ -226,7 +226,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Combined Bind List](https://github.com/tr330ne/combined-bindlist) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/tr330ne/combined-bindlist?label=Latest%20Release&color=green)](https://github.com/tr330ne/combined-bindlist/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tr330ne/combined-bindlist/total)](https://github.com/tr330ne/combined-bindlist/releases/download/v0.5/CombinedBindList-0.5.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%201, 1%2021%203, 1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.1%2C+1.21.3%2C+1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/tr330ne.png?size=20" width="20" height="20"> [tr330ne](https://github.com/tr330ne)<br>
  Hud Element to display keybinds and active modules from both Meteor and Rusher, with advanced customization options, including the ability to modify individual modules, metadata, brackets, colors, and other.
 
@@ -244,7 +244,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [EFlyAutoJump](https://github.com/tr330ne/efly-autojump) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/tr330ne/efly-autojump?label=Latest%20Release&color=green)](https://github.com/tr330ne/efly-autojump/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tr330ne/efly-autojump/total)](https://github.com/tr330ne/efly-autojump/releases/download/v0.2/EFlyAutoJump-0.2.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%201, 1%2021%203, 1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.1%2C+1.21.3%2C+1.21.4&color=blueviolet)<br>
  ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>
  **Creator**: <img src="https://github.com/tr330ne.png?size=20" width="20" height="20"> [tr330ne](https://github.com/tr330ne)<br>
  Enhances Baritone elytra flight with smart auto-jump start/stop and visual display, compatible with Xaero Plus Â«Baritone Elytra HereÂ», also supports manual Baritone commands input in addition to automation.
@@ -262,7 +262,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [WaypointSync](https://github.com/tr330ne/waypointsync) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/tr330ne/waypointsync?label=Latest%20Release&color=green)](https://github.com/tr330ne/waypointsync/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tr330ne/waypointsync/total)](https://github.com/tr330ne/waypointsync/releases/download/v0.1/WaypointSync-0.1.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%201, 1%2021%203, 1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.1%2C+1.21.3%2C+1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/tr330ne.png?size=20" width="20" height="20"> [tr330ne](https://github.com/tr330ne)<br>
  Automatically synchronizes waypoints from Xaero to Rusher.
 
@@ -277,7 +277,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Unified Module List](https://github.com/czho/unified-modulelist) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/czho/unified-modulelist?label=Latest%20Release&color=green)](https://github.com/czho/unified-modulelist/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/czho/unified-modulelist/total)](https://github.com/czho/unified-modulelist/releases/latest)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%202, 1%2020%203, 1%2020%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.2%2C+1.20.3%2C+1.20.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/czho.png?size=20" width="20" height="20"> [czho](https://github.com/czho)<br>
  Rusherhack HUD element that shows active modules from both meteorclient and rusherhack.
 
@@ -285,7 +285,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Container Tweaks](https://github.com/rfresh2/ContainerTweaks-rusherhack) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/rfresh2/ContainerTweaks-rusherhack?label=Latest%20Release&color=green)](https://github.com/rfresh2/ContainerTweaks-rusherhack/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/rfresh2/ContainerTweaks-rusherhack/total)](https://github.com/rfresh2/ContainerTweaks-rusherhack/releases/tag/1.12)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204, 1%2021%2011-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4%2C+1.21.11&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/rfresh2.png?size=20" width="20" height="20"> [rfresh2](https://github.com/rfresh2)<br>
  Simple tweaks for quickly moving items in containers.
 
@@ -300,7 +300,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [RusherHack Spotify Integration](https://github.com/John200410/rusherhack-spotify) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/John200410/rusherhack-spotify?label=Latest%20Release&color=green)](https://github.com/John200410/rusherhack-spotify/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/John200410/rusherhack-spotify/total)](https://github.com/John200410/rusherhack-spotify/releases/download/1.2.1/rusherhack-spotify-1.2.1.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201, 1%2020%202, 1%2020%203, 1%2020%204, 1%2020%205, 1%2020%206, 1%2021, 1%2021%201, 1%2021%202, 1%2021%203, 1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.1%2C+1.20.2%2C+1.20.3%2C+1.20.4%2C+1.20.5%2C+1.20.6%2C+1.21%2C+1.21.1%2C+1.21.2%2C+1.21.3%2C+1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/John200410.png?size=20" width="20" height="20"> [John200410](https://github.com/John200410)<br>
  Integrates Spotify music playback controls and status into the RusherHacks client.
 
@@ -316,7 +316,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Vanilla Elytra Flight](https://github.com/FBanna/Rusherhack-Vanilla-Efly) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/FBanna/Rusherhack-Vanilla-Efly?label=Latest%20Release&color=green)](https://github.com/FBanna/Rusherhack-Vanilla-Efly/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/FBanna/Rusherhack-Vanilla-Efly/total)](https://github.com/FBanna/Rusherhack-Vanilla-Efly/releases/download/2.1.3%2B1.21.4/FBanna.s-efly-2.1.3.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/FBanna.png?size=20" width="20" height="20"> [FBanna](https://github.com/FBanna)<br>
  Highly customizable rusher hack elytra flight plugin.
 
@@ -324,7 +324,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Rusherhack BookBot](https://github.com/Aspect-404/Rusherhack-BookBot) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/Aspect-404/Rusherhack-BookBot?label=Latest%20Release&color=green)](https://github.com/Aspect-404/Rusherhack-BookBot/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/Aspect-404/Rusherhack-BookBot/total)](https://github.com/Aspect-404/Rusherhack-BookBot/releases/download/Release/BookBot.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201, 1%2020%202, 1%2020%203, 1%2020%204, 1%2020%205, 1%2020%206, 1%2021, 1%2021%201, 1%2021%202, 1%2021%203, 1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.1%2C+1.20.2%2C+1.20.3%2C+1.20.4%2C+1.20.5%2C+1.20.6%2C+1.21%2C+1.21.1%2C+1.21.2%2C+1.21.3%2C+1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/Aspect-404.png?size=20" width="20" height="20"> [Aspect-404](https://github.com/Aspect-404)<br>
  Rusherhack plugin for bookbot.
 
@@ -332,7 +332,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Shay's RusherTweaks](https://github.com/ShayBox/ShaysRusherTweaks) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/ShayBox/ShaysRusherTweaks?label=Latest%20Release&color=green)](https://github.com/ShayBox/ShaysRusherTweaks/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/ShayBox/ShaysRusherTweaks/total)](https://github.com/ShayBox/ShaysRusherTweaks/releases/tag/0.10.2)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201, 1%2020%202, 1%2020%204, 1%2020%206, 1%2021-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.1%2C+1.20.2%2C+1.20.4%2C+1.20.6%2C+1.21&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/ShayBox.png?size=20" width="20" height="20"> [ShayBox](https://github.com/ShayBox)<br>
  A collection of small tweaks and improvements for the RusherHacks client.
 
@@ -340,7 +340,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Nuker](https://github.com/beanbag44/Nuker) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/beanbag44/Nuker?label=Latest%20Release&color=green)](https://github.com/beanbag44/Nuker/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/beanbag44/Nuker/total)](https://github.com/beanbag44/Nuker/releases/tag/Release-2.0.4)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/beanbag44.png?size=20" width="20" height="20"> [beanbag44](https://github.com/beanbag44)<br>
  Epic nuker for nuking terrain.
 
@@ -355,7 +355,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Hold Rusher](https://github.com/cherosin/hold-rusher) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/cherosin/hold-rusher?label=Latest%20Release&color=green)](https://github.com/cherosin/hold-rusher/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/cherosin/hold-rusher/total)](https://github.com/cherosin/hold-rusher/releases/download/1.0.1/hold-rusher-1.0.1.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201, 1%2020%202, 1%2020%203, 1%2020%204, 1%2020%205, 1%2020%206, 1%2021, 1%2021%201-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.1%2C+1.20.2%2C+1.20.3%2C+1.20.4%2C+1.20.5%2C+1.20.6%2C+1.21%2C+1.21.1&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/cherosin.png?size=20" width="20" height="20"> [cherosin](https://github.com/cherosin)<br>
  Adds a "Hold" flag for all modules, if active keybind will only be toggled while held.
 
@@ -363,7 +363,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [No Walk Animation](https://github.com/Eonexe/NoWalkAnimation) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/Eonexe/NoWalkAnimation?label=Latest%20Release&color=green)](https://github.com/Eonexe/NoWalkAnimation/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/Eonexe/NoWalkAnimation/total)](https://github.com/Eonexe/NoWalkAnimation/releases/download/0.1.2/no-walk-animations-0.1.2.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%204, 1%2020%206, 1%2021-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.4%2C+1.20.6%2C+1.21&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/Eonexe.png?size=20" width="20" height="20"> [Eonexe](https://github.com/Eonexe)<br>
  Removes the walking animation.
 
@@ -371,7 +371,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [NBT Utils](https://github.com/KybesRusherhackPlugins/nbt-utils) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/KybesRusherhackPlugins/nbt-utils?label=Latest%20Release&color=green)](https://github.com/KybesRusherhackPlugins/nbt-utils/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/KybesRusherhackPlugins/nbt-utils/total)](https://github.com/KybesRusherhackPlugins/nbt-utils/releases/download/1.20.4-0.1.0/nbt-reader-0.1.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)<br>
  Rusher nbt paste and copy.
 
@@ -379,7 +379,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Rusherhack Executer](https://github.com/KybesRusherhackPlugins/executer) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/KybesRusherhackPlugins/executer?label=Latest%20Release&color=green)](https://github.com/KybesRusherhackPlugins/executer/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/KybesRusherhackPlugins/executer/total)](https://github.com/KybesRusherhackPlugins/executer/releases/download/1.20.4-5.0.0/kybes-executer-5.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)<br>
  Executes commands and resolves `<player>` to every player online.
 
@@ -387,7 +387,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [F3 Spoof](https://github.com/Doogie13/f3-spoof) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/Doogie13/f3-spoof?label=Latest%20Release&color=green)](https://github.com/Doogie13/f3-spoof/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/Doogie13/f3-spoof/total)](https://github.com/Doogie13/f3-spoof/releases/latest)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%204, 1%2021-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.4%2C+1.21&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/Doogie13.png?size=20" width="20" height="20"> [Doogie13](https://github.com/Doogie13)<br>
  Spoofs the F3 debug screen information.
 
@@ -395,7 +395,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Open Folder](https://github.com/KybesRusherhackPlugins/open-folder) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/KybesRusherhackPlugins/open-folder?label=Latest%20Release&color=green)](https://github.com/KybesRusherhackPlugins/open-folder/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/KybesRusherhackPlugins/open-folder/total)](https://github.com/KybesRusherhackPlugins/open-folder/releases/download/1.21/open-folder-0.0.9.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021, 1%2021%201, 1%2021%202, 1%2021%203, 1%2021%204, 1%2021%205, 1%2021%206, 1%2021%207, 1%2021%208-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21%2C+1.21.1%2C+1.21.2%2C+1.21.3%2C+1.21.4%2C+1.21.5%2C+1.21.6%2C+1.21.7%2C+1.21.8&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)<br>
  Opens the folder for the module with a button click.
 
@@ -410,7 +410,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Mace Kill](https://github.com/KybesRusherhackPlugins/mace-kill) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/KybesRusherhackPlugins/mace-kill?label=Latest%20Release&color=green)](https://github.com/KybesRusherhackPlugins/mace-kill/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/KybesRusherhackPlugins/mace-kill/total)](https://github.com/KybesRusherhackPlugins/mace-kill/releases/download/1.21.4/mace-kill-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)<br>
  One shot pretty much all mobs with a mace.
 
@@ -425,7 +425,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Weather Changing Plugin](https://github.com/Lokfid/WeatherChangingPlugin) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/Lokfid/WeatherChangingPlugin?label=Latest%20Release&color=green)](https://github.com/Lokfid/WeatherChangingPlugin/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/Lokfid/WeatherChangingPlugin/total)](https://github.com/Lokfid/WeatherChangingPlugin/releases/download/1.1.0/WeatherPlugin-1.1.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>
  **Creator**: <img src="https://github.com/Lokfid.png?size=20" width="20" height="20"> [Lokfid](https://github.com/Lokfid)<br>
  Allows players to change the weather in-game.
@@ -434,7 +434,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Middleclick Wind Charge](https://github.com/KybesRusherhackPlugins/middleclick-wind-charge) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/KybesRusherhackPlugins/middleclick-wind-charge?label=Latest%20Release&color=green)](https://github.com/KybesRusherhackPlugins/middleclick-wind-charge/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/KybesRusherhackPlugins/middleclick-wind-charge/total)](https://github.com/KybesRusherhackPlugins/middleclick-wind-charge/releases/download/1.21-1.0.1/rusherhack-middleclick-wind-charge-1.0.1.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)<br>
  Allows you to throw windcharges with the middle mouse button and also jump at the same time so you can boost jump.
 
@@ -449,7 +449,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [GarlicSight](https://github.com/GarlicRot/GarlicSight) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/GarlicRot/GarlicSight?label=Latest%20Release&color=green)](https://github.com/GarlicRot/GarlicSight/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/GarlicRot/GarlicSight/total)](https://github.com/GarlicRot/GarlicSight/releases/tag/v1.0.5)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%205, 1%2020%206, 1%2021, 1%2021%201, 1%2021%202, 1%2021%203, 1%2021%204, 1%2021%205, 1%2021%2011-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.5%2C+1.20.6%2C+1.21%2C+1.21.1%2C+1.21.2%2C+1.21.3%2C+1.21.4%2C+1.21.5%2C+1.21.11&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/GarlicRot.png?size=20" width="20" height="20"> [GarlicRot](https://github.com/GarlicRot)<br>
  A RusherHacks Plugin - Crosshair Info - GarlicSight.
 
@@ -466,7 +466,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [LightningPop](https://github.com/GarlicRot/LightningPop) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/GarlicRot/LightningPop?label=Latest%20Release&color=green)](https://github.com/GarlicRot/LightningPop/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/GarlicRot/LightningPop/total)](https://github.com/GarlicRot/LightningPop/releases/tag/v1.0.8)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%205, 1%2020%206, 1%2021, 1%2021%201, 1%2021%202, 1%2021%203, 1%2021%204, 1%2021%205, 1%2021%206, 1%2021%207, 1%2021%208, 1%2021%209, 1%2021%2010, 1%2021%2011-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.5%2C+1.20.6%2C+1.21%2C+1.21.1%2C+1.21.2%2C+1.21.3%2C+1.21.4%2C+1.21.5%2C+1.21.6%2C+1.21.7%2C+1.21.8%2C+1.21.9%2C+1.21.10%2C+1.21.11&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/GarlicRot.png?size=20" width="20" height="20"> [GarlicRot](https://github.com/GarlicRot)<br>
  A RusherHacks Plugin - Spawns Lightning On Totem Pops And Player Deaths - LightningPop.
 
@@ -481,7 +481,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [AutoBucket](https://github.com/GarlicRot/AutoBucket) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/GarlicRot/AutoBucket?label=Latest%20Release&color=green)](https://github.com/GarlicRot/AutoBucket/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/GarlicRot/AutoBucket/total)](https://github.com/GarlicRot/AutoBucket/releases/tag/v1.0.6)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%205, 1%2020%206, 1%2021, 1%2021%201, 1%2021%202, 1%2021%203, 1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.5%2C+1.20.6%2C+1.21%2C+1.21.1%2C+1.21.2%2C+1.21.3%2C+1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/GarlicRot.png?size=20" width="20" height="20"> [GarlicRot](https://github.com/GarlicRot)<br>
  A RusherHacks Plugin - Auto Bucket Entities - AutoBucket.
 
@@ -496,7 +496,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [RusherHack-BoatExecute](https://github.com/PhilipPanda/RusherHack-BoatExecute) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/PhilipPanda/RusherHack-BoatExecute?label=Latest%20Release&color=green)](https://github.com/PhilipPanda/RusherHack-BoatExecute/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/PhilipPanda/RusherHack-BoatExecute/total)](https://github.com/PhilipPanda/RusherHack-BoatExecute/releases/download/Release-1.20.4/boatexecute-1.20.4.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/PhilipPanda.png?size=20" width="20" height="20"> [PhilipPanda](https://github.com/PhilipPanda)<br>
  A RusherHack module plugin for 1.20.4 that exploits boat movement packets to instantly kill all passengers.
 
@@ -511,7 +511,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [NBT Viewer](https://github.com/Gentleman2292/NBT-viewer) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/Gentleman2292/NBT-viewer?label=Latest%20Release&color=green)](https://github.com/Gentleman2292/NBT-viewer/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/Gentleman2292/NBT-viewer/total)](https://github.com/Gentleman2292/NBT-viewer/releases/download/1.2/NBTViewer-plugin-1.2-release.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201, 1%2020%202, 1%2020%203, 1%2020%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.1%2C+1.20.2%2C+1.20.3%2C+1.20.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/Gentleman2292.png?size=20" width="20" height="20"> [Gentleman2292](https://github.com/Gentleman2292)<br>
  A plugin to view NBT data in Minecraft.
 
@@ -526,7 +526,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Remote Control](https://github.com/KybesRusherhackPlugins/remote-controle) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/KybesRusherhackPlugins/remote-controle?label=Latest%20Release&color=green)](https://github.com/KybesRusherhackPlugins/remote-controle/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/KybesRusherhackPlugins/remote-controle/total)](https://github.com/KybesRusherhackPlugins/remote-controle/releases/download/1.20.4-1.0.0/remote-control-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)<br>
  A plugin for remote controlling RusherHacks.
 
@@ -534,7 +534,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Speed Measure](https://github.com/Lokfid/RusherHackSpeedMeasure) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/Lokfid/RusherHackSpeedMeasure?label=Latest%20Release&color=green)](https://github.com/Lokfid/RusherHackSpeedMeasure/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/Lokfid/RusherHackSpeedMeasure/total)](https://github.com/Lokfid/RusherHackSpeedMeasure/releases/download/1.0.1/SpeedMeasure-1.0.1.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/Lokfid.png?size=20" width="20" height="20"> [Lokfid](https://github.com/Lokfid)<br>
  A plugin to measure speed in RusherHacks.
 
@@ -542,7 +542,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [TNT Bomber](https://github.com/KybesRusherhackPlugins/tnt-bomber) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/KybesRusherhackPlugins/tnt-bomber?label=Latest%20Release&color=green)](https://github.com/KybesRusherhackPlugins/tnt-bomber/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/KybesRusherhackPlugins/tnt-bomber/total)](https://github.com/KybesRusherhackPlugins/tnt-bomber/releases/download/1.20.4/tnt-nuker-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)<br>
  A plugin to automate TNT bombing in Minecraft.
 
@@ -550,7 +550,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [No Render Entities](https://github.com/John200410/norender-entities) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/John200410/norender-entities?label=Latest%20Release&color=green)](https://github.com/John200410/norender-entities/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/John200410/norender-entities/total)](https://github.com/John200410/norender-entities/releases/download/v1.0/norender-entities-1.0-SNAPSHOT.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.1&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/John200410.png?size=20" width="20" height="20"> [John200410](https://github.com/John200410)<br>
  A plugin to disable rendering of entities.
 
@@ -558,7 +558,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [RusherHack Messenger](https://github.com/Gentleman2292/rusherhack-messenger) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/Gentleman2292/rusherhack-messenger?label=Latest%20Release&color=green)](https://github.com/Gentleman2292/rusherhack-messenger/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/Gentleman2292/rusherhack-messenger/total)](https://github.com/Gentleman2292/rusherhack-messenger/releases/download/1.0.3/messenger-plugin-1.0.3.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201, 1%2020%202, 1%2020%203, 1%2020%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.1%2C+1.20.2%2C+1.20.3%2C+1.20.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/Gentleman2292.png?size=20" width="20" height="20"> [Gentleman2292](https://github.com/Gentleman2292)<br>
  A messaging plugin for RusherHacks.
 
@@ -573,7 +573,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [RusherHack Instance Info (Fork)](https://github.com/GarlicRot/rusherhack-instance-info) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/GarlicRot/rusherhack-instance-info?label=Latest%20Release&color=green)](https://github.com/GarlicRot/rusherhack-instance-info/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/GarlicRot/rusherhack-instance-info/total)](https://github.com/GarlicRot/rusherhack-instance-info/releases/download/v1.3/instance-info-1.3.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201, 1%2020%202, 1%2020%203, 1%2020%204, 1%2020%205, 1%2020%206, 1%2021-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.1%2C+1.20.2%2C+1.20.3%2C+1.20.4%2C+1.20.5%2C+1.20.6%2C+1.21&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/GarlicRot.png?size=20" width="20" height="20"> [GarlicRot](https://github.com/GarlicRot)<br>
  A forked version of the [original plugin](https://github.com/John200410/rusherhack-instance-info) with custom settings.
 
@@ -590,7 +590,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [RusherHack NoteBot](https://github.com/Lokfid/RusherHackNoteBot) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/Lokfid/RusherHackNoteBot?label=Latest%20Release&color=green)](https://github.com/Lokfid/RusherHackNoteBot/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/Lokfid/RusherHackNoteBot/total)](https://github.com/Lokfid/RusherHackNoteBot/releases/download/1.0.3/NoteBotPlugin-1.0.3.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%204, 1%2021, 1%2021%201, 1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.4%2C+1.21%2C+1.21.1%2C+1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/Lokfid.png?size=20" width="20" height="20"> [Lokfid](https://github.com/Lokfid)<br>
  A RusherHacks plugin for playing note blocks in Minecraft.
 
@@ -598,7 +598,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [ShulkerViewer](https://github.com/xyzbtw/ShulkerViewer) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/xyzbtw/ShulkerViewer?label=Latest%20Release&color=green)](https://github.com/xyzbtw/ShulkerViewer/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/xyzbtw/ShulkerViewer/total)](https://github.com/xyzbtw/ShulkerViewer/releases/download/1.21.4/shulker-viewer-1.21.4.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201, 1%2020%202, 1%2020%204, 1%2021, 1%2021%201-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.1%2C+1.20.2%2C+1.20.4%2C+1.21%2C+1.21.1&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/xyzbtw.png?size=20" width="20" height="20"> [xyzbtw](https://github.com/xyzbtw)<br>
  A RusherHacks plugin to view the contents of Shulker boxes in the inventory.
 
@@ -606,7 +606,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [RusherWebPlugin](https://github.com/Lokfid/RusherWebPlugin) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/Lokfid/RusherWebPlugin?label=Latest%20Release&color=green)](https://github.com/Lokfid/RusherWebPlugin/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/Lokfid/RusherWebPlugin/total)](https://github.com/Lokfid/RusherWebPlugin/releases/download/1.2/web-1.2.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201, 1%2020%202, 1%2020%203, 1%2020%204, 1%2020%205, 1%2020%206, 1%2021, 1%2021%201, 1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.1%2C+1.20.2%2C+1.20.3%2C+1.20.4%2C+1.20.5%2C+1.20.6%2C+1.21%2C+1.21.1%2C+1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/Lokfid.png?size=20" width="20" height="20"> [Lokfid](https://github.com/Lokfid)<br>
  Web Browser for rh.
 
@@ -614,7 +614,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [UpdatedNCPEfly](https://github.com/xyzbtw/UpdatedNCPEfly) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/xyzbtw/UpdatedNCPEfly?label=Latest%20Release&color=green)](https://github.com/xyzbtw/UpdatedNCPEfly/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/xyzbtw/UpdatedNCPEfly/total)](https://github.com/xyzbtw/UpdatedNCPEfly/releases/download/release/NCP-ElytraFlight-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%204, 1%2020%206-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.4%2C+1.20.6&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/xyzbtw.png?size=20" width="20" height="20"> [xyzbtw](https://github.com/xyzbtw)<br>
  A plugin for an updated version of NCPEfly.
 
@@ -622,7 +622,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [dc-chat-logger](https://github.com/KybesRusherhackPlugins/dc-chat-logger) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/KybesRusherhackPlugins/dc-chat-logger?label=Latest%20Release&color=green)](https://github.com/KybesRusherhackPlugins/dc-chat-logger/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/KybesRusherhackPlugins/dc-chat-logger/total)](https://github.com/KybesRusherhackPlugins/dc-chat-logger/releases/download/3.0.0/dc-chat-logger-3.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)<br>
  A plugin for logging chat messages to discord.
 
@@ -630,7 +630,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [rusherhack-nightvision-plugin](https://github.com/John200410/rusherhack-nightvision-plugin) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/John200410/rusherhack-nightvision-plugin?label=Latest%20Release&color=green)](https://github.com/John200410/rusherhack-nightvision-plugin/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/John200410/rusherhack-nightvision-plugin/total)](https://github.com/John200410/rusherhack-nightvision-plugin/releases/download/v1.0.0/nightvision-1.0.0-1.21.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021, 1%2021%201-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21%2C+1.21.1&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/John200410.png?size=20" width="20" height="20"> [John200410](https://github.com/John200410)<br>
  A replacement for FullBright when using shaders.
 
@@ -638,7 +638,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [AutoNetherite](https://github.com/xyzbtw/AutoNetherite) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/xyzbtw/AutoNetherite?label=Latest%20Release&color=green)](https://github.com/xyzbtw/AutoNetherite/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/xyzbtw/AutoNetherite/total)](https://github.com/xyzbtw/AutoNetherite/releases/download/1.21.4/autonetherite-1.21.4.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%204, 1%2020%206, 1%2021, 1%2021%201, 1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.4%2C+1.20.6%2C+1.21%2C+1.21.1%2C+1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/xyzbtw.png?size=20" width="20" height="20"> [xyzbtw](https://github.com/xyzbtw)<br>
  A plugin that automates the process of upgrading gear to Netherite in Minecraft.
 
@@ -646,7 +646,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [OldSignsPlugin](https://github.com/xyzbtw/OldSignsPlugin) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/xyzbtw/OldSignsPlugin?label=Latest%20Release&color=green)](https://github.com/xyzbtw/OldSignsPlugin/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/xyzbtw/OldSignsPlugin/total)](https://github.com/xyzbtw/OldSignsPlugin/releases/download/release/oldsigns-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/xyzbtw.png?size=20" width="20" height="20"> [xyzbtw](https://github.com/xyzbtw)<br>
  A plugin that brings back old sign functionalities in Minecraft.
 
@@ -654,7 +654,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [StashHunter-rusherhack](https://github.com/CherkaSSH/StashHunter-rusherhack) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/CherkaSSH/StashHunter-rusherhack?label=Latest%20Release&color=green)](https://github.com/CherkaSSH/StashHunter-rusherhack/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/CherkaSSH/StashHunter-rusherhack/total)](https://github.com/CherkaSSH/StashHunter-rusherhack/releases/download/hehe2/StashHunter-rusherhack-1.0.1.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201, 1%2020%202, 1%2020%203, 1%2020%204, 1%2020%205, 1%2020%206, 1%2021, 1%2021%201-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.1%2C+1.20.2%2C+1.20.3%2C+1.20.4%2C+1.20.5%2C+1.20.6%2C+1.21%2C+1.21.1&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/CherkaSSH.png?size=20" width="20" height="20"> [CherkaSSH](https://github.com/CherkaSSH)<br>
  A plugin to help locate stashes in Minecraft using RusherHack.
 
@@ -662,7 +662,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [rusher-elytra-eta](https://github.com/KybesRusherhackPlugins/elytra-eta) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/KybesRusherhackPlugins/elytra-eta?label=Latest%20Release&color=green)](https://github.com/KybesRusherhackPlugins/elytra-eta/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/KybesRusherhackPlugins/elytra-eta/total)](https://github.com/KybesRusherhackPlugins/elytra-eta/releases/download/1.0.0/rusher-elytra-eta-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)<br>
  A rusherhack plugin that allows you to see the ETA of all Elytras in the player's inventory.
 
@@ -677,7 +677,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [rusher-silent-close](https://github.com/KybesRusherhackPlugins/silent-container-close) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/KybesRusherhackPlugins/silent-container-close?label=Latest%20Release&color=green)](https://github.com/KybesRusherhackPlugins/silent-container-close/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/KybesRusherhackPlugins/silent-container-close/total)](https://github.com/KybesRusherhackPlugins/silent-container-close/releases/download/1.0.0/silent-close-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)<br>
  Keeps Container GUI open
 
@@ -685,7 +685,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [rusherhack-addons](https://github.com/miles352/rusherhack-addons) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/miles352/rusherhack-addons?label=Latest%20Release&color=green)](https://github.com/miles352/rusherhack-addons/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/miles352/rusherhack-addons/total)](https://github.com/miles352/rusherhack-addons/releases/download/1.21.1/jefffmod-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/miles352.png?size=20" width="20" height="20"> [miles352](https://github.com/miles352)<br>
  A collection of RusherHacks addons including:
 
@@ -693,7 +693,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [rusher-gtranslate](https://github.com/KybesRusherhackPlugins/google-translate) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/KybesRusherhackPlugins/google-translate?label=Latest%20Release&color=green)](https://github.com/KybesRusherhackPlugins/google-translate/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/KybesRusherhackPlugins/google-translate/total)](https://github.com/KybesRusherhackPlugins/google-translate/releases/download/2.0.0/gtranslate-v2-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)<br>
  A plugin that integrates Google Translate into RusherHack for translating chat messages.
 
@@ -701,7 +701,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [rusher-matrix-nofall](https://github.com/KybesRusherhackPlugins/matrix-nofall) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/KybesRusherhackPlugins/matrix-nofall?label=Latest%20Release&color=green)](https://github.com/KybesRusherhackPlugins/matrix-nofall/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/KybesRusherhackPlugins/matrix-nofall/total)](https://github.com/KybesRusherhackPlugins/matrix-nofall/releases/download/1.0.0/kybe-nofall-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)<br>
  No Fall by setting isFalling flag in movement packets to false (tested on 6b6t).
 
@@ -709,7 +709,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [rusher-autoportal](https://github.com/KybesRusherhackPlugins/auto-portal) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/KybesRusherhackPlugins/auto-portal?label=Latest%20Release&color=green)](https://github.com/KybesRusherhackPlugins/auto-portal/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/KybesRusherhackPlugins/auto-portal/total)](https://github.com/KybesRusherhackPlugins/auto-portal/releases/download/1.20.6-1.21.4/kybe-portal-maker-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%204, 1%2020%206, 1%2021, 1%2021%201, 1%2021%204, 1%2021%2011-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.4%2C+1.20.6%2C+1.21%2C+1.21.1%2C+1.21.4%2C+1.21.11&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)<br>
  Automatically breaks blocks to place obsidian and activate the nether portal.
 
@@ -717,7 +717,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [rusher-air-place](https://github.com/KybesRusherhackPlugins/air-place) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/KybesRusherhackPlugins/air-place?label=Latest%20Release&color=green)](https://github.com/KybesRusherhackPlugins/air-place/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/KybesRusherhackPlugins/air-place/total)](https://github.com/KybesRusherhackPlugins/air-place/releases/download/1.0.0/kybe-airplace-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201, 1%2020%202, 1%2020%204, 1%2021, 1%2021%201-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.1%2C+1.20.2%2C+1.20.4%2C+1.21%2C+1.21.1&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)<br>
  A plugin that allows placing blocks in the air in Minecraft.
 
@@ -725,7 +725,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [rusher-hold-spamm-space](https://github.com/KybesRusherhackPlugins/space-spammer) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/KybesRusherhackPlugins/space-spammer?label=Latest%20Release&color=green)](https://github.com/KybesRusherhackPlugins/space-spammer/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/KybesRusherhackPlugins/space-spammer/total)](https://github.com/KybesRusherhackPlugins/space-spammer/releases/download/1.0.0.1/kybe-holdspace-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021, 1%2021%201-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21%2C+1.21.1&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)<br>
  A plugin that automatically spams or holds the space bar.
 
@@ -733,7 +733,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [rusher-auto-bed-bomber](https://github.com/KybesRusherhackPlugins/auto-bed-bomber) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/KybesRusherhackPlugins/auto-bed-bomber?label=Latest%20Release&color=green)](https://github.com/KybesRusherhackPlugins/auto-bed-bomber/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/KybesRusherhackPlugins/auto-bed-bomber/total)](https://github.com/KybesRusherhackPlugins/auto-bed-bomber/releases/download/idk/kybe-auto-bed-bomb-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)<br>
  A plugin that automates bed bombing in Minecraft.
 
@@ -741,7 +741,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [rusher-crystal-spin](https://github.com/KybesRusherhackPlugins/crystal-spin) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/KybesRusherhackPlugins/crystal-spin?label=Latest%20Release&color=green)](https://github.com/KybesRusherhackPlugins/crystal-spin/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/KybesRusherhackPlugins/crystal-spin/total)](https://github.com/KybesRusherhackPlugins/crystal-spin/releases/download/1.0.0/kybe-holdspace-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)<br>
  A plugin that makes end crystals spin faster or slower.
 
@@ -749,7 +749,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [AutoShear](https://github.com/oisin404/AutoShear) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/oisin404/AutoShear?label=Latest%20Release&color=green)](https://github.com/oisin404/AutoShear/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/oisin404/AutoShear/total)](https://github.com/oisin404/AutoShear/releases/download/1.0.2/auto-shear-1.0.2.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021, 1%2021%201-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21%2C+1.21.1&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/oisin404.png?size=20" width="20" height="20"> [oisin404](https://github.com/oisin404)<br>
  A plugin that automates shearing in Minecraft.
 
@@ -764,7 +764,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [rusher-autokit](https://github.com/KybesRusherhackPlugins/autokit) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/KybesRusherhackPlugins/autokit?label=Latest%20Release&color=green)](https://github.com/KybesRusherhackPlugins/autokit/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/KybesRusherhackPlugins/autokit/total)](https://github.com/KybesRusherhackPlugins/autokit/releases/download/1.0.0/kybe-autokit-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)<br>
  A plugin that automatically equips your preferred kit.
 
@@ -772,7 +772,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [AutoTorch](https://github.com/NinetyUnderScore/AutoTorch) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/NinetyUnderScore/AutoTorch?label=Latest%20Release&color=green)](https://github.com/NinetyUnderScore/AutoTorch/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/NinetyUnderScore/AutoTorch/total)](https://github.com/NinetyUnderScore/AutoTorch/releases/download/Release/autotorch-plugin-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.1&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/NinetyUnderScore.png?size=20" width="20" height="20"> [NinetyUnderScore](https://github.com/NinetyUnderScore)<br>
  Automatically places torches to light up areas in Minecraft.
 
@@ -780,7 +780,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Elytra Swap](https://github.com/cmg-divined/elytra-swap) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/cmg-divined/elytra-swap?label=Latest%20Release&color=green)](https://github.com/cmg-divined/elytra-swap/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/cmg-divined/elytra-swap/total)](https://github.com/cmg-divined/elytra-swap/releases/latest)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%204, 1%2021-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.4%2C+1.21&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/cmg-divined.png?size=20" width="20" height="20"> [cmg-divined](https://github.com/cmg-divined)<br>
  Automatically swaps fully repaired Elytras with damaged ones for efficient XP farm repairs.
 
@@ -788,7 +788,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [HDisabler](https://github.com/CherkaSSH/hdisabler) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/CherkaSSH/hdisabler?label=Latest%20Release&color=green)](https://github.com/CherkaSSH/hdisabler/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/CherkaSSH/hdisabler/total)](https://github.com/CherkaSSH/hdisabler/releases/download/idk/example-plugin-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%201, 1%2021%202, 1%2021%203-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.1%2C+1.21.2%2C+1.21.3&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/CherkaSSH.png?size=20" width="20" height="20"> [CherkaSSH](https://github.com/CherkaSSH)<br>
  2b2t fast bypass.
 
@@ -803,7 +803,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [CoordFollower](https://github.com/CherkaSSH/CoordFollower-plugin) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/CherkaSSH/CoordFollower-plugin?label=Latest%20Release&color=green)](https://github.com/CherkaSSH/CoordFollower-plugin/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/CherkaSSH/CoordFollower-plugin/total)](https://github.com/CherkaSSH/CoordFollower-plugin/releases/tag/1.0)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/CherkaSSH.png?size=20" width="20" height="20"> [CherkaSSH](https://github.com/CherkaSSH)<br>
  A plugin that allows you to save, manage, and follow coordinates with ease.
 
@@ -811,7 +811,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Rusher Chess TUI](https://github.com/CherkaSSH/rusher-chess-tui) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/CherkaSSH/rusher-chess-tui?label=Latest%20Release&color=green)](https://github.com/CherkaSSH/rusher-chess-tui/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/CherkaSSH/rusher-chess-tui/total)](https://github.com/CherkaSSH/rusher-chess-tui/releases/latest)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201, 1%2020%202, 1%2020%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.1%2C+1.20.2%2C+1.20.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/CherkaSSH.png?size=20" width="20" height="20"> [CherkaSSH](https://github.com/CherkaSSH)<br>
  Chess module for RusherHacks, powered by [ChessLib](https://github.com/bhlangonijr/chesslib).
 
@@ -819,7 +819,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [ActivatedSpawnerDetector](https://github.com/un0x9/ActivatedSpawnerDetector) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/un0x9/ActivatedSpawnerDetector?label=Latest%20Release&color=green)](https://github.com/un0x9/ActivatedSpawnerDetector/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/un0x9/ActivatedSpawnerDetector/total)](https://github.com/un0x9/ActivatedSpawnerDetector/releases/download/v1.2.2/ActivatedSpawnerDetector-1.2.2.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021, 1%2021%201-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21%2C+1.21.1&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/un0x9.png?size=20" width="20" height="20"> [un0x9](https://github.com/un0x9)<br>
  Detects activated spawners and provides visual feedback in RusherHacks.
 
@@ -827,7 +827,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Rusher Discord Notifications](https://github.com/KybesRusherhackPlugins/discord-notifications) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/KybesRusherhackPlugins/discord-notifications?label=Latest%20Release&color=green)](https://github.com/KybesRusherhackPlugins/discord-notifications/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/KybesRusherhackPlugins/discord-notifications/total)](https://github.com/KybesRusherhackPlugins/discord-notifications/releases/download/1.0.0/discord-notifier-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.1&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)<br>
  Sends notifications from RusherHacks to a Discord channel.
 
@@ -835,7 +835,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [AutoBonemeal](https://github.com/John200410/rusherhack-autobonemeal) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/John200410/rusherhack-autobonemeal?label=Latest%20Release&color=green)](https://github.com/John200410/rusherhack-autobonemeal/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/John200410/rusherhack-autobonemeal/total)](https://github.com/John200410/rusherhack-autobonemeal/releases/download/v1.0.0/auto-bonemeal-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/John200410.png?size=20" width="20" height="20"> [John200410](https://github.com/John200410)<br>
  A RusherHacks plugin for automatically applying bonemeal to crops.
 
@@ -843,7 +843,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Rocket3](https://github.com/PK268/Rocket3) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/PK268/Rocket3?label=Latest%20Release&color=green)](https://github.com/PK268/Rocket3/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/PK268/Rocket3/total)](https://github.com/PK268/Rocket3/releases/download/v1.2.0/rocket3-1.2.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201, 1%2020%204, 1%2020%206-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.1%2C+1.20.4%2C+1.20.6&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/PK268.png?size=20" width="20" height="20"> [PK268](https://github.com/PK268)<br>
  A RusherHacks plugin for crafting duration 3 rockets.
 
@@ -851,7 +851,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [GarlicBreeder](https://github.com/GarlicRot/GarlicBreeder) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/GarlicRot/GarlicBreeder?label=Latest%20Release&color=green)](https://github.com/GarlicRot/GarlicBreeder/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/GarlicRot/GarlicBreeder/total)](https://github.com/GarlicRot/GarlicBreeder/releases/tag/v1.0.6)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201, 1%2020%202, 1%2020%203, 1%2020%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.1%2C+1.20.2%2C+1.20.3%2C+1.20.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/GarlicRot.png?size=20" width="20" height="20"> [GarlicRot](https://github.com/GarlicRot)<br>
  A RusherHacks plugin that automates the breeding of mobs in Minecraft.
 
@@ -859,7 +859,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Rusher Item Saver](https://github.com/KybesRusherhackPlugins/item-saver) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/KybesRusherhackPlugins/item-saver?label=Latest%20Release&color=green)](https://github.com/KybesRusherhackPlugins/item-saver/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/KybesRusherhackPlugins/item-saver/total)](https://github.com/KybesRusherhackPlugins/item-saver/releases/download/multiversion/item-saver-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021, 1%2021%201, 1%2021%202, 1%2021%203, 1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21%2C+1.21.1%2C+1.21.2%2C+1.21.3%2C+1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)<br>
  A RusherHacks plugin that saves items from being lost.
 
@@ -867,7 +867,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [RusherHack Mace Swap](https://github.com/KybesRusherhackPlugins/mace-swap) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/KybesRusherhackPlugins/mace-swap?label=Latest%20Release&color=green)](https://github.com/KybesRusherhackPlugins/mace-swap/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/KybesRusherhackPlugins/mace-swap/total)](https://github.com/KybesRusherhackPlugins/mace-swap/releases/download/fix1/mace-swap-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021, 1%2021%201, 1%2021%202, 1%2021%203, 1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21%2C+1.21.1%2C+1.21.2%2C+1.21.3%2C+1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)<br>
  A RusherHacks plugin that automatically swaps to a mace when attacking.
 
@@ -875,7 +875,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Example Core Plugin](https://github.com/RusherDevelopment/example-core-plugin) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/RusherDevelopment/example-core-plugin?label=Latest%20Release&color=green)](https://github.com/RusherDevelopment/example-core-plugin/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/RusherDevelopment/example-core-plugin/total)](https://github.com/RusherDevelopment/example-core-plugin/releases/latest)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.1&color=blueviolet)<br>
  ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>
  **Creator**: <img src="https://github.com/RusherDevelopment.png?size=20" width="20" height="20"> [RusherDevelopment](https://github.com/RusherDevelopment)<br>
  A core plugin example demonstrating mixin support in RusherHack.
@@ -884,7 +884,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [CrystalModifierRH](https://github.com/xyzbtw/CrystalModifierRH) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/xyzbtw/CrystalModifierRH?label=Latest%20Release&color=green)](https://github.com/xyzbtw/CrystalModifierRH/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/xyzbtw/CrystalModifierRH/total)](https://github.com/xyzbtw/CrystalModifierRH/releases/latest)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%201-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.1&color=blueviolet)<br>
  ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>
  **Creator**: <img src="https://github.com/xyzbtw.png?size=20" width="20" height="20"> [xyzbtw](https://github.com/xyzbtw)<br>
  A plugin for modifying the rendering of end crystals in Minecraft using mixins in RusherHack.
@@ -893,7 +893,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Tablist Hats](https://github.com/rfresh2/TablistHats-rusherhack) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/rfresh2/TablistHats-rusherhack?label=Latest%20Release&color=green)](https://github.com/rfresh2/TablistHats-rusherhack/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/rfresh2/TablistHats-rusherhack/total)](https://github.com/rfresh2/TablistHats-rusherhack/releases/download/1.1/TablistHats-1.1%2B1.20.1-1.21.11.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201, 1%2020%202, 1%2020%204, 1%2020%206, 1%2021, 1%2021%201, 1%2021%204, 1%2021%2011-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.1%2C+1.20.2%2C+1.20.4%2C+1.20.6%2C+1.21%2C+1.21.1%2C+1.21.4%2C+1.21.11&color=blueviolet)<br>
  ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>
  **Creator**: <img src="https://github.com/rfresh2.png?size=20" width="20" height="20"> [rfresh2](https://github.com/rfresh2)<br>
  Enables hat layer rendering for player heads on the tablist, even if the player isn't in render distance.
@@ -909,7 +909,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [NoSound](https://github.com/John200410/nosound) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/John200410/nosound?label=Latest%20Release&color=green)](https://github.com/John200410/nosound/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/John200410/nosound/total)](https://github.com/John200410/nosound/releases/download/1.0.0/no-sound-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201, 1%2020%202, 1%2020%203, 1%2020%204, 1%2020%205, 1%2020%206, 1%2021, 1%2021%201, 1%2021%202, 1%2021%203, 1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.1%2C+1.20.2%2C+1.20.3%2C+1.20.4%2C+1.20.5%2C+1.20.6%2C+1.21%2C+1.21.1%2C+1.21.2%2C+1.21.3%2C+1.21.4&color=blueviolet)<br>
  ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>
  **Creator**: <img src="https://github.com/John200410.png?size=20" width="20" height="20"> [John200410](https://github.com/John200410)<br>
  A core plugin that disables specific in-game sounds in RusherHack.
@@ -918,7 +918,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Rusherhack Streamer Mode](https://github.com/KybesRusherhackPlugins/streamer-mode) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/KybesRusherhackPlugins/streamer-mode?label=Latest%20Release&color=green)](https://github.com/KybesRusherhackPlugins/streamer-mode/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/KybesRusherhackPlugins/streamer-mode/total)](https://github.com/KybesRusherhackPlugins/streamer-mode/releases/download/1.21.4-v3/streamer-mode-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%202, 1%2021%203, 1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.2%2C+1.21.3%2C+1.21.4&color=blueviolet)<br>
  ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>
  **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)<br>
  A core plugin for spoofing player coordinates in RusherHack.
@@ -927,7 +927,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Rusher Auto Item Frame Dupe](https://github.com/KybesRusherhackPlugins/auto-item-frame-dupe) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/KybesRusherhackPlugins/auto-item-frame-dupe?label=Latest%20Release&color=green)](https://github.com/KybesRusherhackPlugins/auto-item-frame-dupe/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/KybesRusherhackPlugins/auto-item-frame-dupe/total)](https://github.com/KybesRusherhackPlugins/auto-item-frame-dupe/releases/download/1.21.1-1.21.4/rusher-auto-item-frame-dupe-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%201, 1%2021%202, 1%2021%203, 1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.1%2C+1.21.2%2C+1.21.3%2C+1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)<br>
  A plugin for automating item frame duplication in RusherHack.
 
@@ -935,7 +935,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [RusherMoji](https://github.com/Lokfid/RusherMoji) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/Lokfid/RusherMoji?label=Latest%20Release&color=green)](https://github.com/Lokfid/RusherMoji/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/Lokfid/RusherMoji/total)](https://github.com/Lokfid/RusherMoji/releases/download/1.0.4-1.21.4-fix/emoji-1.0.4.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>
  **Creator**: <img src="https://github.com/Lokfid.png?size=20" width="20" height="20"> [Lokfid](https://github.com/Lokfid)<br>
  A core plugin for adding custom emoji functionality in RusherHack.
@@ -944,7 +944,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [RusherHack Piston Pusher](https://github.com/KybesRusherhackPlugins/piston-pusher) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/KybesRusherhackPlugins/piston-pusher?label=Latest%20Release&color=green)](https://github.com/KybesRusherhackPlugins/piston-pusher/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/KybesRusherhackPlugins/piston-pusher/total)](https://github.com/KybesRusherhackPlugins/piston-pusher/releases/download/1.21.4/crystal-pusher-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)<br>
  A plugin that automates pushing end crystals with pistons to attack players in RusherHack.
 
@@ -952,7 +952,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [RusherUtils](https://github.com/0tterware/RusherUtils) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/0tterware/RusherUtils?label=Latest%20Release&color=green)](https://github.com/0tterware/RusherUtils/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/0tterware/RusherUtils/total)](https://github.com/0tterware/RusherUtils/releases/download/v0.1/rusher-utils-0.1-1.21.4.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201, 1%2020%202, 1%2020%204, 1%2020%206, 1%2021, 1%2021%201, 1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.1%2C+1.20.2%2C+1.20.4%2C+1.20.6%2C+1.21%2C+1.21.1%2C+1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/0tterware.png?size=20" width="20" height="20"> [0tterware](https://github.com/0tterware)<br>
  RusherUtils automates Wither and TNT tasks with HUD counters for RusherHack.
 
@@ -967,7 +967,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Rusher Grown ESP](https://github.com/KybesRusherhackPlugins/crop-esp-nuker) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/KybesRusherhackPlugins/crop-esp-nuker?label=Latest%20Release&color=green)](https://github.com/KybesRusherhackPlugins/crop-esp-nuker/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/KybesRusherhackPlugins/crop-esp-nuker/total)](https://github.com/KybesRusherhackPlugins/crop-esp-nuker/releases/download/1.21.4/rusher-grow-esp-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)<br>
  ESP plugin for RusherHack that highlights grown crops and useful farm blocks.
 
@@ -975,7 +975,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Rusherhack-SignFilter](https://github.com/ToxicAven/Rusherhack-SignFilter) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/ToxicAven/Rusherhack-SignFilter?label=Latest%20Release&color=green)](https://github.com/ToxicAven/Rusherhack-SignFilter/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/ToxicAven/Rusherhack-SignFilter/total)](https://github.com/ToxicAven/Rusherhack-SignFilter/releases/download/v1.0.0/SignFilter-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>
  **Creator**: <img src="https://github.com/ToxicAven.png?size=20" width="20" height="20"> [ToxicAven](https://github.com/ToxicAven)<br>
  A plugin for Rusherhack to filter out unwanted/inappropriate sign messages.
@@ -984,7 +984,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Rusher-Vault-Helper](https://github.com/KybesRusherhackPlugins/vault-helper) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/KybesRusherhackPlugins/vault-helper?label=Latest%20Release&color=green)](https://github.com/KybesRusherhackPlugins/vault-helper/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/KybesRusherhackPlugins/vault-helper/total)](https://github.com/KybesRusherhackPlugins/vault-helper/releases/download/1.21-1.21.4/rusher-vault-helper-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021, 1%2021%201, 1%2021%202, 1%2021%204, 1%2021%205-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21%2C+1.21.1%2C+1.21.2%2C+1.21.4%2C+1.21.5&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)<br>
  Marks vaults for you and can play a sound when you render a vault.
 
@@ -1000,7 +1000,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Rusher-Inventory-Drag](https://github.com/KybesRusherhackPlugins/inventory-drag) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/KybesRusherhackPlugins/inventory-drag?label=Latest%20Release&color=green)](https://github.com/KybesRusherhackPlugins/inventory-drag/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/KybesRusherhackPlugins/inventory-drag/total)](https://github.com/KybesRusherhackPlugins/inventory-drag/releases/download/1.21.4/rusher-invetory-drag-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>
  **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)<br>
  Allows you to drag items in your inventory while holding shift.
@@ -1009,7 +1009,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [PlayerLogPlugin-RusherHack](https://github.com/k4n3d4-sh0t4r0/PlayerLogPLugin-RusherHack) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/k4n3d4-sh0t4r0/PlayerLogPLugin-RusherHack?label=Latest%20Release&color=green)](https://github.com/k4n3d4-sh0t4r0/PlayerLogPLugin-RusherHack/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/k4n3d4-sh0t4r0/PlayerLogPLugin-RusherHack/total)](https://github.com/k4n3d4-sh0t4r0/PlayerLogPLugin-RusherHack/releases/download/V1.3.0/PlayerLog-1.3.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/k4n3d4-sh0t4r0.png?size=20" width="20" height="20"> [k4n3d4-sh0t4r0](https://github.com/k4n3d4-sh0t4r0)<br>
  Rusherhack plugin that logs all player encounters in a log file and displays them in the chat.
 
@@ -1025,7 +1025,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [BarrierESP-RusherHack](https://github.com/k4n3d4-sh0t4r0/BarrierESP-RusherHack) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/k4n3d4-sh0t4r0/BarrierESP-RusherHack?label=Latest%20Release&color=green)](https://github.com/k4n3d4-sh0t4r0/BarrierESP-RusherHack/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/k4n3d4-sh0t4r0/BarrierESP-RusherHack/total)](https://github.com/k4n3d4-sh0t4r0/BarrierESP-RusherHack/releases/download/v1.2.0/BarrierESP-1.2.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%201, 1%2021%202, 1%2021%203, 1%2021%204, 1%2021%2011-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.1%2C+1.21.2%2C+1.21.3%2C+1.21.4%2C+1.21.11&color=blueviolet)<br>
  ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>
  **Creator**: <img src="https://github.com/k4n3d4-sh0t4r0.png?size=20" width="20" height="20"> [k4n3d4-sh0t4r0](https://github.com/k4n3d4-sh0t4r0)<br>
  Rusherhack plugin that lets the player see barrier blocks as if holding one.
@@ -1041,7 +1041,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [FovLimiter-Rusherhack](https://github.com/k4n3d4-sh0t4r0/FovLimiter-Rusherhack) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/k4n3d4-sh0t4r0/FovLimiter-Rusherhack?label=Latest%20Release&color=green)](https://github.com/k4n3d4-sh0t4r0/FovLimiter-Rusherhack/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/k4n3d4-sh0t4r0/FovLimiter-Rusherhack/total)](https://github.com/k4n3d4-sh0t4r0/FovLimiter-Rusherhack/releases/download/v1.2.0/FovLimiter-1.2.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%201, 1%2021%202, 1%2021%203, 1%2021%204, 1%2021%2011-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.1%2C+1.21.2%2C+1.21.3%2C+1.21.4%2C+1.21.11&color=blueviolet)<br>
  ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>
  **Creator**: <img src="https://github.com/k4n3d4-sh0t4r0.png?size=20" width="20" height="20"> [k4n3d4-sh0t4r0](https://github.com/k4n3d4-sh0t4r0)<br>
  Limit the FOV multiplier between a max and min value.
@@ -1050,7 +1050,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [NoJumpDelay-Rusherhack](https://github.com/k4n3d4-sh0t4r0/NoJumpDelay-Rusherhack) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/k4n3d4-sh0t4r0/NoJumpDelay-Rusherhack?label=Latest%20Release&color=green)](https://github.com/k4n3d4-sh0t4r0/NoJumpDelay-Rusherhack/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/k4n3d4-sh0t4r0/NoJumpDelay-Rusherhack/total)](https://github.com/k4n3d4-sh0t4r0/NoJumpDelay-Rusherhack/releases/download/v1.2.0/NoJumpDelay-1.2.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%201, 1%2021%202, 1%2021%203, 1%2021%204, 1%2021%2011-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.1%2C+1.21.2%2C+1.21.3%2C+1.21.4%2C+1.21.11&color=blueviolet)<br>
  ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>
  **Creator**: <img src="https://github.com/k4n3d4-sh0t4r0.png?size=20" width="20" height="20"> [k4n3d4-sh0t4r0](https://github.com/k4n3d4-sh0t4r0)<br>
  Set the delay between jumps when holding the space key.
@@ -1059,7 +1059,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [HideNightVision-RusherHack](https://github.com/k4n3d4-sh0t4r0/HideNightVision-RusherHack) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/k4n3d4-sh0t4r0/HideNightVision-RusherHack?label=Latest%20Release&color=green)](https://github.com/k4n3d4-sh0t4r0/HideNightVision-RusherHack/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/k4n3d4-sh0t4r0/HideNightVision-RusherHack/total)](https://github.com/k4n3d4-sh0t4r0/HideNightVision-RusherHack/releases/download/V1.2.0/HideNightVision-1.2.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%201, 1%2021%202, 1%2021%203, 1%2021%204, 1%2021%2011-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.1%2C+1.21.2%2C+1.21.3%2C+1.21.4%2C+1.21.11&color=blueviolet)<br>
  ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>
  **Creator**: <img src="https://github.com/k4n3d4-sh0t4r0.png?size=20" width="20" height="20"> [k4n3d4-sh0t4r0](https://github.com/k4n3d4-sh0t4r0)<br>
  Rusherhack plugin that hides the night vision effect on the HUD.
@@ -1076,7 +1076,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [rusherhack-kybes-utils](https://github.com/KybesRusherhackPlugins/kybes-utils) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/KybesRusherhackPlugins/kybes-utils?label=Latest%20Release&color=green)](https://github.com/KybesRusherhackPlugins/kybes-utils/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/KybesRusherhackPlugins/kybes-utils/total)](https://github.com/KybesRusherhackPlugins/kybes-utils/releases/download/v1.0.0-194c38d40bbc4f6d6aaa514401a70c1b2ba72300/kybes-utils.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>
  **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)<br>
  encrypted chat (CryptoChat) with key management and chunking, auto-mock/quote/reply with regex filters, death-message reactions, random sentence/whisper, and a new in-game User Info window (column view).
@@ -1092,7 +1092,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [AutoAnvilRename](https://github.com/musheck/AutoAnvilRename) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/musheck/AutoAnvilRename?label=Latest%20Release&color=green)](https://github.com/musheck/AutoAnvilRename/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/musheck/AutoAnvilRename/total)](https://github.com/musheck/AutoAnvilRename/releases/download/1.1.0/AutoAnvilRename-1.1.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201, 1%2020%202, 1%2020%203, 1%2020%204, 1%2021%201, 1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.1%2C+1.20.2%2C+1.20.3%2C+1.20.4%2C+1.21.1%2C+1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/musheck.png?size=20" width="20" height="20"> [musheck](https://github.com/musheck)<br>
  A fork of the AutoAnvilRename plugin that automates item renaming in anvils. Includes features like predefined rename text, ID filtering, shulker-only mode, and configurable click delay.
 
@@ -1100,7 +1100,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [rusher-auto-kit-maker](https://github.com/KybesRusherhackPlugins/auto-kit-maker) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/KybesRusherhackPlugins/auto-kit-maker?label=Latest%20Release&color=green)](https://github.com/KybesRusherhackPlugins/auto-kit-maker/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/KybesRusherhackPlugins/auto-kit-maker/total)](https://github.com/KybesRusherhackPlugins/auto-kit-maker/releases/download/1.21.4-11/rusher-auto-kit-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)<br>
  Automatically builds kits inside shulkers.
 
@@ -1115,7 +1115,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [rusherhack-shell-integration](https://github.com/tillay/rusherhack-shell-integration) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/tillay/rusherhack-shell-integration?label=Latest%20Release&color=green)](https://github.com/tillay/rusherhack-shell-integration/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tillay/rusherhack-shell-integration/total)](https://github.com/tillay-rh-plugins/rusherhack-shell-integration/releases/download/release/shell-plugin-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%201, 1%2021%202, 1%2021%203, 1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.1%2C+1.21.2%2C+1.21.3%2C+1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/tillay.png?size=20" width="20" height="20"> [tillay](https://github.com/tillay)<br>
  Provides Linux shell integration for RusherHack, including an in-game terminal, command HUD, and support for triggering commands from external scripts.
 
@@ -1123,7 +1123,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [rusherhack-SmartBounce](https://github.com/tillay/rusherhack-SmartBounce) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/tillay/rusherhack-SmartBounce?label=Latest%20Release&color=green)](https://github.com/tillay/rusherhack-SmartBounce/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tillay/rusherhack-SmartBounce/total)](https://github.com/tillay-rh-plugins/rusherhack-SmartBounce/releases/download/release/ebounce-plugin-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%201, 1%2021%202, 1%2021%203, 1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.1%2C+1.21.2%2C+1.21.3%2C+1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/tillay.png?size=20" width="20" height="20"> [tillay](https://github.com/tillay)<br>
  Automatically adjusts the player's pitch during Elytra bouncing to smoothly jump over 1-block obstacles and return to optimal pitch afterward.
 
@@ -1131,7 +1131,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [AutoRegear](https://github.com/KybesRusherhackPlugins/auto-regear) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/KybesRusherhackPlugins/auto-regear?label=Latest%20Release&color=green)](https://github.com/KybesRusherhackPlugins/auto-regear/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/KybesRusherhackPlugins/auto-regear/total)](https://github.com/KybesRusherhackPlugins/auto-regear/releases/download/1.21.4/rusher-auto-regear-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)<br>
  Automatically equips a saved kit from a chest, matching items and enchantments with configurable sensitivity. Includes commands for saving, renaming, listing, and removing kits.
 
@@ -1139,7 +1139,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [rusherhack-rusherman](https://github.com/tillay/rusherhack-rusherman) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/tillay/rusherhack-rusherman?label=Latest%20Release&color=green)](https://github.com/tillay/rusherhack-rusherman/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tillay/rusherhack-rusherman/total)](https://github.com/tillay-rh-plugins/rusherhack-rusherman/releases/download/3894v4793v93v487cd9/rusherman-plugin-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%201, 1%2021%202, 1%2021%203, 1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.1%2C+1.21.2%2C+1.21.3%2C+1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/tillay.png?size=20" width="20" height="20"> [tillay](https://github.com/tillay)<br>
  Plugin package manager for RusherHack that helps install and manage plugins from a single place.
 
@@ -1155,7 +1155,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [rusherhack-instantloader](https://github.com/tillay/rusherhack-InstantLoader) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/tillay/rusherhack-InstantLoader?label=Latest%20Release&color=green)](https://github.com/tillay/rusherhack-InstantLoader/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tillay/rusherhack-InstantLoader/total)](https://github.com/tillay-rh-plugins/rusherhack-InstantLoader/releases/download/v1.0.0-b21d90/loader-plugin-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%201, 1%2021%202, 1%2021%203, 1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.1%2C+1.21.2%2C+1.21.3%2C+1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/tillay.png?size=20" width="20" height="20"> [tillay](https://github.com/tillay)<br>
  Automatically interacts with a targeted trapdoor as soon as a specified player logs in, enabling instant pearl loading.
 
@@ -1170,7 +1170,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [rusher-waifu-integration](https://github.com/tillay/rusher-waifu-integration) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/tillay/rusher-waifu-integration?label=Latest%20Release&color=green)](https://github.com/tillay/rusher-waifu-integration/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tillay/rusher-waifu-integration/total)](https://github.com/tillay-rh-plugins/rusher-waifu-integration/releases/download/v2.1.0-f4f157/waifu-plugin-2.1.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%201, 1%2021%202, 1%2021%203, 1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.1%2C+1.21.2%2C+1.21.3%2C+1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/tillay.png?size=20" width="20" height="20"> [tillay](https://github.com/tillay)<br>
  Allows adding any custom image to the RusherHack HUD.
 
@@ -1186,7 +1186,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [AutoIgnorehard](https://github.com/IceTank/RusherHack-AutoIgnorehard) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/IceTank/RusherHack-AutoIgnorehard?label=Latest%20Release&color=green)](https://github.com/IceTank/RusherHack-AutoIgnorehard/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/IceTank/RusherHack-AutoIgnorehard/total)](https://github.com/IceTank/RusherHack-AutoIgnorehard/releases/download/v0.0.3/AutoIgnorehard-0.0.3.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/IceTank.png?size=20" width="20" height="20"> [IceTank](https://github.com/IceTank)<br>
  Automatically runs the `/ignorehard <playername>` command on any player that sends a Discord invite in chat.
 
@@ -1194,7 +1194,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Cockpit](https://github.com/TehPicix/rusherhack-Cockpit) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/TehPicix/rusherhack-Cockpit?label=Latest%20Release&color=green)](https://github.com/TehPicix/rusherhack-Cockpit/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/TehPicix/rusherhack-Cockpit/total)](https://github.com/TehPicix/rusherhack-Cockpit/releases/download/v1.3.0/Cockpit-1.3.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%201, 1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.1%2C+1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://crafatar.com/avatars/1eb084b8588e43e6bdd3e05e53682987?size=100" width="20" height="20"> [TehPicix](https://github.com/TehPicix)<br>
  Adds a cockpit HUD to display flight distance and time when using an elytra. Great for players who frequently travel the nether highways while AFK.
 
@@ -1209,7 +1209,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [ChatFilter](https://github.com/TehPicix/rusherhack-ChatFilter) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/TehPicix/rusherhack-ChatFilter?label=Latest%20Release&color=green)](https://github.com/TehPicix/rusherhack-ChatFilter/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/TehPicix/rusherhack-ChatFilter/total)](https://github.com/TehPicix/rusherhack-ChatFilter/releases/download/v1.1.2/rusherhack-chatfilter-1.1.2.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>
  **Creator**: <img src="https://crafatar.com/avatars/1eb084b8588e43e6bdd3e05e53682987?size=100" width="20" height="20"> [TehPicix](https://github.com/TehPicix)<br>
  Allows you to filter chat messages in Minecraft using customizable regular expressions. It reads expressions from a file and applies them to incoming chat messages, blocking those that match.
@@ -1226,7 +1226,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [rusherhack-ai-integration](https://github.com/tillay/rusherhack-ai-integration) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/tillay/rusherhack-ai-integration?label=Latest%20Release&color=green)](https://github.com/tillay/rusherhack-ai-integration/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tillay/rusherhack-ai-integration/total)](https://github.com/tillay-rh-plugins/rusherhack-ai-integration/releases/download/release/ai-plugin-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%201, 1%2021%202, 1%2021%203, 1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.1%2C+1.21.2%2C+1.21.3%2C+1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/tillay.png?size=20" width="20" height="20"> [tillay](https://github.com/tillay)<br>
  Adds AI integration to RusherHack with configurable API, token, and model options. Supports DeepSeek and other APIs with streaming-enabled chat completions.
 
@@ -1234,7 +1234,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Elytra Trajectories](https://github.com/tillay-rh-plugins/elytra-trajectories) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/tillay-rh-plugins/elytra-trajectories?label=Latest%20Release&color=green)](https://github.com/tillay-rh-plugins/elytra-trajectories/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tillay-rh-plugins/elytra-trajectories/total)](https://github.com/tillay-rh-plugins/elytra-trajectories/releases/download/nonplusworks/elytrapath-plugin-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%201, 1%2021%202, 1%2021%203, 1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.1%2C+1.21.2%2C+1.21.3%2C+1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/tillay.png?size=20" width="20" height="20"> [tillay](https://github.com/tillay)<br>
  Renders predicted flight paths for Elytra.
 
@@ -1250,7 +1250,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [AutoReload](https://github.com/tillay-rh-plugins/autoreload) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/tillay-rh-plugins/autoreload?label=Latest%20Release&color=green)](https://github.com/tillay-rh-plugins/autoreload/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tillay-rh-plugins/autoreload/total)](https://github.com/tillay-rh-plugins/autoreload/releases/download/whyDoTagsExist/autoreload-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%201, 1%2021%202, 1%2021%203, 1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.1%2C+1.21.2%2C+1.21.3%2C+1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/tillay.png?size=20" width="20" height="20"> [tillay](https://github.com/tillay)<br>
  Automatically reloads RusherHack whenever changes are detected in the plugins directory.
 
@@ -1258,7 +1258,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [hw-efly-tweaks](https://github.com/KybesRusherhackPlugins/hw-efly-tweaks) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/KybesRusherhackPlugins/hw-efly-tweaks?label=Latest%20Release&color=green)](https://github.com/KybesRusherhackPlugins/hw-efly-tweaks/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/KybesRusherhackPlugins/hw-efly-tweaks/total)](https://github.com/KybesRusherhackPlugins/hw-efly-tweaks/releases/download/1.21.4/hw-efly-tweaks-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)<br>
  Enhances ElytraFly automation by intelligently managing wall-hugging movement. Automatically adjusts flight direction, detects obstacles, and maintains elevation using Baritone-assisted pathing and visual block rendering.
 
@@ -1266,7 +1266,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [icaemas-tweaks](https://github.com/icaema/icaemas-tweaks) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/icaema/icaemas-tweaks?label=Latest%20Release&color=green)](https://github.com/icaema/icaemas-tweaks/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/icaema/icaemas-tweaks/total)](https://github.com/icaema/icaemas-tweaks/releases/download/v0.3.0/icaemas-tweaks-0.3.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/icaema.png?size=20" width="20" height="20"> [icaema](https://github.com/icaema)<br>
  Adds keybinds for quick equipment and inventory management. â€¢ Toggle between Elytra and chestplate, with auto-deploy when falling â€¢ Swap hotbar slots with the row above in the inventory
 
@@ -1274,7 +1274,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [AutoFirework](https://github.com/tillay-rh-plugins/AutoFirework) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/tillay-rh-plugins/AutoFirework?label=Latest%20Release&color=green)](https://github.com/tillay-rh-plugins/AutoFirework/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tillay-rh-plugins/AutoFirework/total)](https://github.com/tillay-rh-plugins/AutoFirework/releases/download/v1.0.0-7f73e20608d2a1ab0970566cf65679d19824b69d/autofirework-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/tillay.png?size=20" width="20" height="20"> [tillay](https://github.com/tillay)<br>
  Automatically uses fireworks to redeploy Elytra flight when speed drops below a specified value.
 
@@ -1282,7 +1282,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [AutoMend](https://github.com/icaema/auto-mend) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/icaema/auto-mend?label=Latest%20Release&color=green)](https://github.com/icaema/auto-mend/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/icaema/auto-mend/total)](https://github.com/icaema/auto-mend/releases/download/v1.0.0/auto-mend-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/icaema.png?size=20" width="20" height="20"> [icaema](https://github.com/icaema)<br>
  Automatically cycles damaged Mending items to repair with XP - swaps items into offhand or equips elytra in chest, can limit to elytras only, temporarily disables AutoTotem/AutoArmor while mending and restores them, and auto-disables when finished.
 
@@ -1297,7 +1297,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Stopwatch](https://github.com/icaema/rusherhacks-stopwatch) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/icaema/rusherhacks-stopwatch?label=Latest%20Release&color=green)](https://github.com/icaema/rusherhacks-stopwatch/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/icaema/rusherhacks-stopwatch/total)](https://github.com/icaema/rusherhacks-stopwatch/releases/download/v1.0.0/stopwatch-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/icaema.png?size=20" width="20" height="20"> [icaema](https://github.com/icaema)<br>
  Stopwatch HUD with lap support and a control module; can auto-start on join and optionally hide when zero.
 
@@ -1315,7 +1315,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [RusherHack Speedometer](https://github.com/tillay-rh-plugins/rusherhack-speedometer) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/tillay-rh-plugins/rusherhack-speedometer?label=Latest%20Release&color=green)](https://github.com/tillay-rh-plugins/rusherhack-speedometer/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tillay-rh-plugins/rusherhack-speedometer/total)](https://github.com/tillay-rh-plugins/rusherhack-speedometer/releases/download/v1.0.0-5872158a4f44c1c69362b63bdc617515a45ca15c/speedometer-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/tillay.png?size=20" width="20" height="20"> [tillay](https://github.com/tillay)<br>
  Adds customizable speed HUD elements including a speed readout with unit conversions (e.g., miles/hour, bananas/second, lightyears/year) and a Mach meter displaying speed relative to the speed of sound.
 
@@ -1323,7 +1323,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Example Chatbot](https://github.com/tillay-rh-plugins/example-chatbot) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/tillay-rh-plugins/example-chatbot?label=Latest%20Release&color=green)](https://github.com/tillay-rh-plugins/example-chatbot/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tillay-rh-plugins/example-chatbot/total)](https://github.com/tillay-rh-plugins/example-chatbot/releases/download/v1.0.0-0e23fd/example-chatbot-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/tillay.png?size=20" width="20" height="20"> [tillay](https://github.com/tillay)<br>
  Example chat automation module that listens to public chat and whispers.
 
@@ -1331,7 +1331,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Polar Spiral EFly](https://github.com/tillay-rh-plugins/polar-spiral-efly) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/tillay-rh-plugins/polar-spiral-efly?label=Latest%20Release&color=green)](https://github.com/tillay-rh-plugins/polar-spiral-efly/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tillay-rh-plugins/polar-spiral-efly/total)](https://github.com/tillay-rh-plugins/polar-spiral-efly/releases/download/v1.1.0-505c7c/polar-efly-plugin-1.1.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/tillay.png?size=20" width="20" height="20"> [tillay](https://github.com/tillay)<br>
  Overworld AFK Elytra flight that flies in a smooth polar spiral pattern for basehunting.
 
@@ -1346,7 +1346,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [HighwayBuilder](https://github.com/musheck/mushack) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/musheck/mushack?label=Latest%20Release&color=green)](https://github.com/musheck/mushack/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/musheck/mushack/total)](https://github.com/musheck/mushack/releases/download/1.0.0/mushack-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/musheck.png?size=20" width="20" height="20"> [musheck](https://github.com/musheck)<br>
  Automated highway builder with full placement, breaking, and rendering controls. Supports adjustable width/height, rails, rotation/airplace modes, placement delay, max breaks per tick, and visual block previews. Runs continuously until disabled.
 
@@ -1354,7 +1354,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Favorite Modules](https://github.com/tillay-rh-plugins/favorite-modules) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/tillay-rh-plugins/favorite-modules?label=Latest%20Release&color=green)](https://github.com/tillay-rh-plugins/favorite-modules/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tillay-rh-plugins/favorite-modules/total)](https://github.com/tillay-rh-plugins/favorite-modules/releases/download/v1.1.0-dca971/favorite-modules-1.1.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/tillay.png?size=20" width="20" height="20"> [tillay](https://github.com/tillay)<br>
  add favorite modules panel to the clickgui
 
@@ -1369,7 +1369,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Ram Usage HUD](https://github.com/tillay-rh-plugins/ram-usage-hud) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/tillay-rh-plugins/ram-usage-hud?label=Latest%20Release&color=green)](https://github.com/tillay-rh-plugins/ram-usage-hud/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tillay-rh-plugins/ram-usage-hud/total)](https://github.com/tillay-rh-plugins/ram-usage-hud/releases/download/v1.1.0-6d4e96/real-ram-usage-1.1.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/tillay.png?size=20" width="20" height="20"> [tillay](https://github.com/tillay)<br>
  see how much ram minecraft is actually using.
 
@@ -1384,7 +1384,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [RusherChat](https://github.com/GarlicRot/RusherChat) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/GarlicRot/RusherChat?label=Latest%20Release&color=green)](https://github.com/GarlicRot/RusherChat/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/GarlicRot/RusherChat/total)](https://github.com/GarlicRot/RusherChat/releases/download/v1.0.8/RusherChat-1.0.8.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%201, 1%2020%202, 1%2020%203, 1%2020%204, 1%2020%205, 1%2020%206, 1%2021, 1%2021%201, 1%2021%202, 1%2021%203, 1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.1%2C+1.20.2%2C+1.20.3%2C+1.20.4%2C+1.20.5%2C+1.20.6%2C+1.21%2C+1.21.1%2C+1.21.2%2C+1.21.3%2C+1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/GarlicRot.png?size=20" width="20" height="20"> [GarlicRot](https://github.com/GarlicRot)<br>
  WebSocket-powered chat for RusherHack
 
@@ -1392,7 +1392,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [AutoAmethyst](https://github.com/GarlicRot/AutoAmethyst) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/GarlicRot/AutoAmethyst?label=Latest%20Release&color=green)](https://github.com/GarlicRot/AutoAmethyst/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/GarlicRot/AutoAmethyst/total)](https://github.com/GarlicRot/AutoAmethyst/releases/download/v1.0.1/AutoAmethyst-1.0.1.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2020%206, 1%2021%201, 1%2021%203, 1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.6%2C+1.21.1%2C+1.21.3%2C+1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/GarlicRot.png?size=20" width="20" height="20"> [GarlicRot](https://github.com/GarlicRot)<br>
  Automatically harvest amethyst shards without breaking Budding Amethyst
 
@@ -1407,7 +1407,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [PlayerTracker](https://github.com/maggyabby/playertracker-plugin) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/maggyabby/playertracker-plugin?label=Latest%20Release&color=green)](https://github.com/maggyabby/playertracker-plugin/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/maggyabby/playertracker-plugin/total)](https://github.com/maggyabby/playertracker-plugin/releases/download/4b9d2aa/playertracker-1.0.1.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/maggyabby.png?size=20" width="20" height="20"> [maggyabby](https://github.com/maggyabby)<br>
  player tracker plugin that locks your view onto the nearest player to your crosshair and continuously tracks them
 
@@ -1415,7 +1415,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [More Huds](https://github.com/FelekDevYT/MoreHuds-rusherhack) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/FelekDevYT/MoreHuds-rusherhack?label=Latest%20Release&color=green)](https://github.com/FelekDevYT/MoreHuds-rusherhack/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/FelekDevYT/MoreHuds-rusherhack/total)](https://github.com/FelekDevYT/MoreHuds-rusherhack/releases/download/1.0/more-huds-1.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/FelekDevYT.png?size=20" width="20" height="20"> [FelekDevYT](https://github.com/FelekDevYT)<br>
  Adds more customizable HUD elements to RusherHacks.
 
@@ -1431,7 +1431,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [RusherClicker](https://github.com/FelekDevYT/RusherClicker) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/FelekDevYT/RusherClicker?label=Latest%20Release&color=green)](https://github.com/FelekDevYT/RusherClicker/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/FelekDevYT/RusherClicker/total)](https://github.com/FelekDevYT/RusherClicker/releases/download/1.0/rusherclicker-1.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/FelekDevYT.png?size=20" width="20" height="20"> [FelekDevYT](https://github.com/FelekDevYT)<br>
  A high-performance, tick-perfect AutoClicker plugin for RusherHack
 
@@ -1446,7 +1446,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [packets_in_out](https://github.com/KybesRusherhackPlugins/packets_in_out) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/KybesRusherhackPlugins/packets_in_out?label=Latest%20Release&color=green)](https://github.com/KybesRusherhackPlugins/packets_in_out/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/KybesRusherhackPlugins/packets_in_out/total)](https://github.com/KybesRusherhackPlugins/packets_in_out/releases/download/init/packets-in-out-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/KybesRusherhackPlugins.png?size=20" width="20" height="20"> [KybesRusherhackPlugins](https://github.com/KybesRusherhackPlugins)<br>
  HUD element that displays incoming and outgoing packet counts
 
@@ -1454,7 +1454,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [hotbar_randomizer](https://github.com/KybesRusherhackPlugins/hotbar_randomizer) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/KybesRusherhackPlugins/hotbar_randomizer?label=Latest%20Release&color=green)](https://github.com/KybesRusherhackPlugins/hotbar_randomizer/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/KybesRusherhackPlugins/hotbar_randomizer/total)](https://github.com/KybesRusherhackPlugins/hotbar_randomizer/releases/download/init/hotbar-randomizer-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/KybesRusherhackPlugins.png?size=20" width="20" height="20"> [KybesRusherhackPlugins](https://github.com/KybesRusherhackPlugins)<br>
  Randomizes your selected hotbar slot after placing, with options to exclude and ignore specific slots
 
@@ -1462,7 +1462,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [RusherSearchTweaks](https://github.com/hx-4/RusherSearchTweaks) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/hx-4/RusherSearchTweaks?label=Latest%20Release&color=green)](https://github.com/hx-4/RusherSearchTweaks/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/hx-4/RusherSearchTweaks/total)](https://github.com/hx-4/RusherSearchTweaks/releases/download/1.0/search-tweaks-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/hx-4.png?size=20" width="20" height="20"> [hx-4](https://github.com/hx-4)<br>
  Adds group toggles to the Search module for quickly enabling or disabling categories.
 
@@ -1470,7 +1470,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [RusherAutoMend](https://github.com/hx-4/RusherAutoMend) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/hx-4/RusherAutoMend?label=Latest%20Release&color=green)](https://github.com/hx-4/RusherAutoMend/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/hx-4/RusherAutoMend/total)](https://github.com/hx-4/RusherAutoMend/releases/download/1.1.0/auto-mend-1.1.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/hx-4.png?size=20" width="20" height="20"> [hx-4](https://github.com/hx-4)<br>
  Automatically switches to low durability armor and tools for AFK XP mending.
 
@@ -1478,7 +1478,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Phoenix](https://github.com/FelekDevYT/phoenix) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/FelekDevYT/phoenix?label=Latest%20Release&color=green)](https://github.com/FelekDevYT/phoenix/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/FelekDevYT/phoenix/total)](https://github.com/FelekDevYT/Phoenix/releases/download/1.3.0/phoenix-1.3.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%2011-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.11&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/FelekDevYT.png?size=20" width="20" height="20"> [FelekDevYT](https://github.com/FelekDevYT)<br>
  A high-performance, all-in-one utility plugin for RusherHack.
 
@@ -1495,7 +1495,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Xaero-Waypoints-ETA](https://github.com/hx-4/Xaero-Waypoints-ETA) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/hx-4/Xaero-Waypoints-ETA?label=Latest%20Release&color=green)](https://github.com/hx-4/Xaero-Waypoints-ETA/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/hx-4/Xaero-Waypoints-ETA/total)](https://github.com/hx-4/Xaero-Waypoints-ETA/releases/download/1.2.0/waypoint-eta-1.2.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/hx-4.png?size=20" width="20" height="20"> [hx-4](https://github.com/hx-4)<br>
  Displays an estimated travel time to Xaero waypoints in-game.
 
@@ -1503,7 +1503,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Rusher Utils](https://github.com/emirplus/Rusher-Utils) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/emirplus/Rusher-Utils?label=Latest%20Release&color=green)](https://github.com/emirplus/Rusher-Utils/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/emirplus/Rusher-Utils/total)](https://github.com/emirplus/rusher-utils/releases/download/1.0.0/rusher-utils-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%2011-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.11&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/emirplus.png?size=20" width="20" height="20"> [emirplus](https://github.com/emirplus)<br>
  A small utility plugin for Rusherhack containing a HighJump (Shulker) module.
 
@@ -1511,7 +1511,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [CustomCapes](https://github.com/FelekDevYT/CustomCapes) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/FelekDevYT/CustomCapes?label=Latest%20Release&color=green)](https://github.com/FelekDevYT/CustomCapes/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/FelekDevYT/CustomCapes/total)](https://github.com/FelekDevYT/CustomCapes/releases/download/latest/customcapes-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>
  **Creator**: <img src="https://github.com/FelekDevYT.png?size=20" width="20" height="20"> [FelekDevYT](https://github.com/FelekDevYT)<br>
  A high-performance, client-side cosmetic extension for RusherHack that allows using any custom cape textures with automatic elytra synchronization.
@@ -1527,7 +1527,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Stricty](https://github.com/FelekDevYT/Stricty) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/FelekDevYT/Stricty?label=Latest%20Release&color=green)](https://github.com/FelekDevYT/Stricty/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/FelekDevYT/Stricty/total)](https://github.com/FelekDevYT/Stricty/releases/download/1.0.0/stricty-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/FelekDevYT.png?size=20" width="20" height="20"> [FelekDevYT](https://github.com/FelekDevYT)<br>
  Stricty is a plugin that makes your game less visible to anti-cheats.
 
@@ -1542,7 +1542,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Plugger](https://github.com/FelekDevYT/Plugger) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/FelekDevYT/Plugger?label=Latest%20Release&color=green)](https://github.com/FelekDevYT/Plugger/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/FelekDevYT/Plugger/total)](https://github.com/FelekDevYT/Plugger/releases/download/1.0.0/plugger-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/FelekDevYT.png?size=20" width="20" height="20"> [FelekDevYT](https://github.com/FelekDevYT)<br>
  In-game plugin manager for RusherHack that allows you to browse, download, and manage other community plugins directly from the official GitHub repository
 
@@ -1557,7 +1557,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [ChestIndexer](https://github.com/FelekDevYT/ChestIndexer) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/FelekDevYT/ChestIndexer?label=Latest%20Release&color=green)](https://github.com/FelekDevYT/ChestIndexer/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/FelekDevYT/ChestIndexer/total)](https://github.com/FelekDevYT/ChestIndexer/releases/download/1.0.0/chest-indexer-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/FelekDevYT.png?size=20" width="20" height="20"> [FelekDevYT](https://github.com/FelekDevYT)<br>
  A powerful, automated container scanner and item counter for RusherHack.
 
@@ -1572,7 +1572,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [RusherHack Pathfinder](https://github.com/tillay-rh-plugins/rusherhack-pathfinder) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/tillay-rh-plugins/rusherhack-pathfinder?label=Latest%20Release&color=green)](https://github.com/tillay-rh-plugins/rusherhack-pathfinder/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/tillay-rh-plugins/rusherhack-pathfinder/total)](https://github.com/tillay-rh-plugins/rusherhack-pathfinder/releases/download/v1.2.0-93a776/rusherhack-pathfinder-1.2.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%204-blueviolet)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/tillay.png?size=20" width="20" height="20"> [tillay](https://github.com/tillay)<br>
  Google Maps for 2b2t highways with route planning, navigation, and ETA guidance.
 
