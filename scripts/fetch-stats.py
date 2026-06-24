@@ -1,51 +1,88 @@
+#!/usr/bin/env python3
 import json
 import os
-import requests
 import time
+from pathlib import Path
 
-JSON_PATH = "generated/json/plugins-and-themes.json"
-TOKEN = os.getenv("GITHUB_TOKEN")
+import requests
+
+JSON_PATH = Path("generated/json/plugins-and-themes.json")
+TOKEN = os.getenv("GITHUB_TOKEN", "").strip()
+
+HEADERS = {
+    "Accept": "application/vnd.github+json",
+    "User-Agent": "rusherhack-plugins-stats",
+}
+
+if TOKEN:
+    HEADERS["Authorization"] = f"Bearer {TOKEN}"
+
+
+def get_json(url):
+    try:
+        res = requests.get(url, headers=HEADERS, timeout=15)
+        if res.status_code == 200:
+            return res.json()
+        print(f"[fetch-stats] GitHub returned {res.status_code}: {url}")
+    except Exception as exc:
+        print(f"[fetch-stats] Error fetching {url}: {exc}")
+    return None
+
 
 def get_github_stats(repo):
-    headers = {"Authorization": f"token {TOKEN}"} if TOKEN else {}
-    stats = {"stars": 0, "downloads": 0}
-    try:
-        #Stars
-        req = requests.get(f"https://api.github.com/repos/{repo}", headers=headers, timeout=10)
-        if (req.status_code) == 200:#its so cool
-            stats["stars"] = req.json().get("stargazers_count", 0)
-        
-        #Downloads
-        req = requests.get(f"https://api.github.com/repos/{repo}/releases", headers=headers, timeout=10)
-        if (req.status_code) == 200:
-            releases = req.json()
-            stats["downloads"] = sum(asset.get("download_count", 0) for release in releases for asset in release.get("assets", []))
-    except Exception as e:
-        print(f"Error fetching stats for {repo}: {e}")
-    
+    stats = {
+        "stars": 0,
+        "downloads": 0,
+    }
+
+    repo_data = get_json(f"https://api.github.com/repos/{repo}")
+    if isinstance(repo_data, dict):
+        stats["stars"] = repo_data.get("stargazers_count", 0) or 0
+
+    releases = get_json(f"https://api.github.com/repos/{repo}/releases?per_page=100")
+    if isinstance(releases, list):
+        stats["downloads"] = sum(
+            asset.get("download_count", 0) or 0
+            for release in releases
+            for asset in release.get("assets", [])
+        )
+
     return stats
 
+
 def main():
-    if (not os.path.exists(JSON_PATH)):
-        print(f"JSON file not found at {JSON_PATH}")
+    if not JSON_PATH.exists():
+        print(f"[fetch-stats] JSON file not found: {JSON_PATH}")
         return
-    
-    with open(JSON_PATH, "r", encoding="utf-8") as f:
-        data = json.load(f)
-    
-    print("Fetching GitHub stats...")
-    for category in ["plugins", "themes"]:
+
+    data = json.loads(JSON_PATH.read_text(encoding="utf-8"))
+
+    print("[fetch-stats] Fetching GitHub stats...")
+
+    cache = {}
+
+    for category in ("plugins", "themes"):
         for item in data.get(category, []):
-            repo = item.get("repo", "")
-            if (repo and "/" in repo):
-                res = get_github_stats(repo)
-                item["stars"] = res["stars"]
-                item["downloads"] = res["downloads"]
-                time.sleep(0.05)#github delay
-    
-    with open(JSON_PATH, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=4)
-    print("Stats updated successfully.")
+            repo = item.get("repo", "").strip()
+
+            if not repo or "/" not in repo:
+                continue
+
+            if repo not in cache:
+                print(f"[fetch-stats] {repo}")
+                cache[repo] = get_github_stats(repo)
+                time.sleep(0.05)
+
+            item["stars"] = cache[repo]["stars"]
+            item["downloads"] = cache[repo]["downloads"]
+
+    JSON_PATH.write_text(
+        json.dumps(data, indent=2, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
+
+    print("[fetch-stats] Stats updated successfully.")
+
 
 if __name__ == "__main__":
     main()
