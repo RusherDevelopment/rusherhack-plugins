@@ -2,9 +2,9 @@ name: Deploy API (GitHub Pages)
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   schedule:
-    - cron: '0 * * * *'
+    - cron: "0 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -19,38 +19,37 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Fetch github stats
+      - name: Fetch GitHub stats
         run: python3 scripts/fetch-stats.py
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
 
       - name: Build static site and API
         run: |
-          set -euo pipefail
-          python3 --version
-
           rm -rf public
+
+          python scripts/API/emit_static_api.py
+
           mkdir -p public
-
-          if [ -d public_html ]; then
-            cp -r public_html/. public/
-          fi
-
-          python3 scripts/API/emit_static_api.py
+          cp -a public_html/. public/
 
           echo "[ls] public/"
-          ls -lah public || true
-          echo "[ls] public/api/"
-          ls -lah public/api || true
-          echo "[ls] public/api/v1/"
-          ls -lah public/api/v1 || true
+          ls -la public/
 
-          test -f public/api/v1/index.json || { echo "::error ::public/api/v1/index.json missing"; exit 1; }
-          test -f public/api/v1/plugins.json || { echo "::error ::public/api/v1/plugins.json missing"; exit 1; }
+          echo "[ls] public/api/"
+          ls -la public/api/
+
+          echo "[ls] public/api/v1/"
+          ls -la public/api/v1/
+
+          test -f public/api/v1/index.json
+          test -f public/api/v1/search-index.json
+          test -f public/api/v1/manifest.json
 
       - name: Debug Queue Manager in built API
         run: |
@@ -65,8 +64,10 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+
     environment:
       name: github-pages
+
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
