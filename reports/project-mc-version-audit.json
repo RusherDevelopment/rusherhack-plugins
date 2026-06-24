@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-24T21:14:51.414Z",
-  "apply": false,
-  "registryLinesChanged": 0,
+  "generatedAt": "2026-06-24T21:19:22.539Z",
+  "apply": true,
+  "registryLinesChanged": 120,
   "registryFile": "data/plugins-and-themes.yml",
   "knownMcVersions": [
     "1.20.1",
