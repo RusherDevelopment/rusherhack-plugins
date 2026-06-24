@@ -1,0 +1,353 @@
+name: Audit MC Versions
+
+on:
+  workflow_dispatch:
+    inputs:
+      apply_suggestions:
+        description: "Rewrite mc_versions using project files"
+        required: true
+        default: false
+        type: boolean
+      commit_report:
+        description: "Commit the generated report"
+        required: true
+        default: true
+        type: boolean
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout fork
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Create audit script
+        run: |
+          mkdir -p scripts reports
+
+          cat > scripts/audit-project-mc-versions.mjs <<'NODE'
+          import fs from "node:fs";
+          import path from "node:path";
+          import child_process from "node:child_process";
+
+          const APPLY = process.argv.includes("--apply");
+          const REGISTRY = "data/plugins-and-themes.yml";
+          const CACHE = ".cache/plugin-repos";
+          const REPORT_JSON = "reports/project-mc-version-audit.json";
+          const REPORT_MD = "reports/project-mc-version-audit.md";
+
+          const VERSIONS = [
+            "1.20.1", "1.20.2", "1.20.3", "1.20.4", "1.20.5", "1.20.6",
+            "1.21", "1.21.1", "1.21.2", "1.21.3", "1.21.4",
+            "1.21.5", "1.21.6", "1.21.7", "1.21.8", "1.21.9",
+            "1.21.10", "1.21.11"
+          ];
+
+          const VERSION_SET = new Set(VERSIONS);
+
+          function sh(cmd) {
+            return child_process.execSync(cmd, { encoding: "utf8", stdio: "pipe" });
+          }
+
+          function q(s) {
+            return `'${String(s).replaceAll("'", "'\\''")}'`;
+          }
+
+          function clean(v) {
+            v = String(v ?? "").trim();
+            if ((v.startsWith("'") && v.endsWith("'")) || (v.startsWith('"') && v.endsWith('"'))) {
+              return v.slice(1, -1).trim();
+            }
+            return v;
+          }
+
+          function yamlQuote(v) {
+            return `'${String(v).replaceAll("'", "''")}'`;
+          }
+
+          function expandRange(a, b) {
+            const ai = VERSIONS.indexOf(a);
+            const bi = VERSIONS.indexOf(b);
+            if (ai === -1 || bi === -1 || ai > bi) return [];
+            return VERSIONS.slice(ai, bi + 1);
+          }
+
+          function extractVersions(text) {
+            const out = [];
+
+            for (const m of String(text).matchAll(/\b(\d+\.\d+(?:\.\d+)?)\s*-\s*(\d+\.\d+(?:\.\d+)?)\b/g)) {
+              out.push(...expandRange(m[1], m[2]));
+            }
+
+            for (const m of String(text).matchAll(/\b\d+\.\d+(?:\.\d+)?\b/g)) {
+              if (VERSION_SET.has(m[0])) out.push(m[0]);
+            }
+
+            return [...new Set(out)].sort((a, b) => VERSIONS.indexOf(a) - VERSIONS.indexOf(b));
+          }
+
+          function formatVersions(list) {
+            return [...new Set(list)]
+              .filter(v => VERSION_SET.has(v))
+              .sort((a, b) => VERSIONS.indexOf(a) - VERSIONS.indexOf(b))
+              .join(", ");
+          }
+
+          function getYamlValue(block, key, first = false) {
+            const dash = first ? "(?:-\\s*)?" : "";
+            const re = new RegExp(`^\\s*${dash}${key}:\\s*(.*?)\\s*$`, "m");
+            return clean(block.match(re)?.[1] ?? "");
+          }
+
+          function parseRegistry(text) {
+            const starts = [];
+            const re = /(?:^|\n)\s*-\s+name:\s*/g;
+            let m;
+
+            while ((m = re.exec(text))) {
+              starts.push(m.index + (m[0].startsWith("\n") ? 1 : 0));
+            }
+
+            const plugins = [];
+
+            for (let i = 0; i < starts.length; i++) {
+              const start = starts[i];
+              const end = starts[i + 1] ?? text.length;
+              const block = text.slice(start, end);
+
+              const name = getYamlValue(block, "name", true);
+              const repo = getYamlValue(block, "repo").replace(/^https:\/\/github.com\//, "").replace(/\.git$/, "");
+              const mc = getYamlValue(block, "mc_versions");
+
+              if (name && repo) {
+                plugins.push({ name, repo, mc, start, end });
+              }
+            }
+
+            return plugins;
+          }
+
+          function walk(dir, depth = 0, out = []) {
+            if (depth > 6) return out;
+
+            let entries = [];
+            try {
+              entries = fs.readdirSync(dir, { withFileTypes: true });
+            } catch {
+              return out;
+            }
+
+            for (const e of entries) {
+              if ([".git", ".gradle", ".idea", "build", "out"].includes(e.name)) continue;
+
+              const full = path.join(dir, e.name);
+
+              if (e.isDirectory()) walk(full, depth + 1, out);
+              else out.push(full);
+            }
+
+            return out;
+          }
+
+          function cloneRepo(repo) {
+            const dir = path.join(CACHE, repo.replaceAll("/", "__"));
+
+            if (!fs.existsSync(path.join(dir, ".git"))) {
+              fs.mkdirSync(CACHE, { recursive: true });
+              sh(`git clone --depth 1 ${q(`https://github.com/${repo}.git`)} ${q(dir)}`);
+            }
+
+            return dir;
+          }
+
+          function projectVersions(repo) {
+            let dir;
+
+            try {
+              dir = cloneRepo(repo);
+            } catch (e) {
+              return { versions: [], files: [], error: "repo unavailable" };
+            }
+
+            const files = walk(dir)
+              .map(f => path.relative(dir, f))
+              .filter(f =>
+                f === "gradle.properties" ||
+                f.endsWith("/gradle.properties") ||
+                f === "rusherhack-plugin.json" ||
+                f.endsWith("/rusherhack-plugin.json") ||
+                f === "fabric.mod.json" ||
+                f.endsWith("/fabric.mod.json")
+              );
+
+            const found = [];
+
+            for (const file of files) {
+              const text = fs.readFileSync(path.join(dir, file), "utf8");
+
+              if (file.endsWith("gradle.properties")) {
+                for (const line of text.split(/\r?\n/)) {
+                  if (/(minecraft|mc).*(version|versions)|version.*(minecraft|mc)/i.test(line)) {
+                    found.push(...extractVersions(line));
+                  }
+                }
+              } else {
+                found.push(...extractVersions(text));
+              }
+            }
+
+            return { versions: found, files, error: null };
+          }
+
+          const original = fs.readFileSync(REGISTRY, "utf8");
+          const plugins = parseRegistry(original);
+          const results = [];
+
+          console.log(`Checking ${plugins.length} plugins...`);
+
+          for (const p of plugins) {
+            const registryVersions = extractVersions(p.mc);
+            const project = projectVersions(p.repo);
+            const suggested = project.versions.length ? project.versions : registryVersions;
+
+            const registryString = formatVersions(registryVersions);
+            const suggestedString = formatVersions(suggested);
+
+            const status =
+              project.error ? "repo-unavailable" :
+              !project.files.length ? "no-project-version-files" :
+              !project.versions.length ? "no-project-versions-found" :
+              registryString !== suggestedString ? "registry-differs-from-project" :
+              "ok";
+
+            results.push({
+              name: p.name,
+              repo: p.repo,
+              registry: p.mc,
+              registryExpanded: registryString,
+              projectSuggestion: suggestedString,
+              files: project.files,
+              status,
+              error: project.error
+            });
+
+            console.log(`[${status}] ${p.name}`);
+          }
+
+          let rewritten = original;
+          let changed = 0;
+
+          if (APPLY) {
+            for (const p of [...plugins].reverse()) {
+              const r = results.find(x => x.repo === p.repo);
+              if (!r || !r.projectSuggestion || r.status === "repo-unavailable") continue;
+
+              const block = rewritten.slice(p.start, p.end);
+              const next = block.replace(
+                /^(\s*mc_versions:\s*).*?(\s*)$/m,
+                `$1${yamlQuote(r.projectSuggestion)}$2`
+              );
+
+              if (next !== block) {
+                rewritten = rewritten.slice(0, p.start) + next + rewritten.slice(p.end);
+                changed++;
+              }
+            }
+
+            fs.writeFileSync(REGISTRY, rewritten);
+          }
+
+          const report = {
+            generatedAt: new Date().toISOString(),
+            apply,
+            changed,
+            knownVersions: VERSIONS,
+            results
+          };
+
+          fs.mkdirSync("reports", { recursive: true });
+          fs.writeFileSync(REPORT_JSON, JSON.stringify(report, null, 2) + "\n");
+
+          const diffs = results.filter(r => r.status === "registry-differs-from-project");
+          const warnings = results.filter(r => !["ok", "registry-differs-from-project"].includes(r.status));
+
+          const md = [
+            "# MC Version Audit",
+            "",
+            `Generated: ${report.generatedAt}`,
+            `Apply mode: ${APPLY ? "yes" : "no"}`,
+            `Registry lines changed: ${changed}`,
+            "",
+            "## Summary",
+            "",
+            `- Plugins checked: ${results.length}`,
+            `- Registry differs from project: ${diffs.length}`,
+            `- Warnings: ${warnings.length}`,
+            "",
+            "## Diffs",
+            "",
+            "| Plugin | Repo | Registry | Project suggestion |",
+            "|---|---|---|---|",
+            ...diffs.map(r => `| ${r.name} | ${r.repo} | ${r.registry} | ${r.projectSuggestion} |`),
+            "",
+            "## Warnings",
+            "",
+            "| Plugin | Repo | Status |",
+            "|---|---|---|",
+            ...warnings.map(r => `| ${r.name} | ${r.repo} | ${r.status} |`),
+            ""
+          ].join("\n");
+
+          fs.writeFileSync(REPORT_MD, md);
+          console.log(`Report written to ${REPORT_MD}`);
+          NODE
+
+      - name: Run audit
+        run: |
+          args=""
+          if [ "${{ inputs.apply_suggestions }}" = "true" ]; then
+            args="$args --apply"
+          fi
+
+          node scripts/audit-project-mc-versions.mjs $args
+
+      - name: Add report to job summary
+        run: cat reports/project-mc-version-audit.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload report artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: mc-version-audit
+          path: |
+            reports/project-mc-version-audit.json
+            reports/project-mc-version-audit.md
+
+      - name: Commit report / changes
+        if: inputs.commit_report == true || inputs.apply_suggestions == true
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if [ "${{ inputs.commit_report }}" = "true" ]; then
+            git add reports/project-mc-version-audit.json reports/project-mc-version-audit.md
+          fi
+
+          if [ "${{ inputs.apply_suggestions }}" = "true" ]; then
+            git add data/plugins-and-themes.yml
+          fi
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Audit Minecraft version metadata"
+            git push
+          fi
