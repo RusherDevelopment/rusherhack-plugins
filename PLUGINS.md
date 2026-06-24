@@ -1503,7 +1503,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 
 - ### [Rusher Utils](https://github.com/emirplus/Rusher-Utils) <br>
  [![Latest Release Date](https://img.shields.io/github/release-date/emirplus/Rusher-Utils?label=Latest%20Release&color=green)](https://github.com/emirplus/Rusher-Utils/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/emirplus/Rusher-Utils/total)](https://github.com/emirplus/rusher-utils/releases/download/1.0.0/rusher-utils-1.0.0.jar)<br>
- ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%201-blueviolet)<br>
+ ![MC Version](https://img.shields.io/badge/MC%20Version-1%2021%2011-blueviolet)<br>
  **Creator**: <img src="https://github.com/emirplus.png?size=20" width="20" height="20"> [emirplus](https://github.com/emirplus)<br>
  A small utility plugin for Rusherhack containing a HighJump (Shulker) module.
 
