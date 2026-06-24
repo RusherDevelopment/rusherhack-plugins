@@ -55,7 +55,7 @@ Please do not manually edit generated files such as:
 - "PLUGINS.md"
 - "THEMES.md"
 - "generated/json/plugins-and-themes.json"
-- "api/v1/**"
+- "public_html/api/v1/**"
 
 Generated files are updated automatically after YAML changes are merged into "main".
 
