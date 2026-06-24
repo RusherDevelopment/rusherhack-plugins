@@ -1,9 +1,15 @@
+#!/usr/bin/env python3
 # -----------------------------------------------------------
 # YAML to JSON Converter - plugins-and-themes.yml
 # -----------------------------------------------------------
 #
 # Converts the validated YAML to JSON format.
-# Output: generated/json/plugins-and-themes.json
+#
+# Input:
+#   data/plugins-and-themes.yml
+#
+# Output:
+#   generated/json/plugins-and-themes.json
 #
 # Usage:
 #   python scripts/yml-to-json.py
@@ -11,23 +17,64 @@
 # Created by: GarlicRot
 # -----------------------------------------------------------
 
-import yaml
+from __future__ import annotations
+
 import json
-import os
+import sys
+from pathlib import Path
+from typing import Any
 
-INPUT_YML_PATH = 'data/plugins-and-themes.yml'
-OUTPUT_JSON_DIR = 'generated/json'
-OUTPUT_JSON_PATH = os.path.join(OUTPUT_JSON_DIR, 'plugins-and-themes.json')
+import yaml
 
-# Ensure output folder exists
-os.makedirs(OUTPUT_JSON_DIR, exist_ok=True)
+INPUT_YML_PATH = Path("data/plugins-and-themes.yml")
+OUTPUT_JSON_DIR = Path("generated/json")
+OUTPUT_JSON_PATH = OUTPUT_JSON_DIR / "plugins-and-themes.json"
 
-# Load YAML
-with open(INPUT_YML_PATH, 'r') as f:
-    data = yaml.safe_load(f)
 
-# Dump JSON
-with open(OUTPUT_JSON_PATH, 'w') as f:
-    json.dump(data, f, indent=2)
+def load_yaml(path: Path) -> Any:
+    if not path.exists():
+        raise FileNotFoundError(f"Input YAML file does not exist: {path}")
 
-print(f"✅ JSON saved to {OUTPUT_JSON_PATH}")
+    with path.open("r", encoding="utf-8") as handle:
+        return yaml.safe_load(handle) or {}
+
+
+def json_text(data: Any) -> str:
+    return (
+        json.dumps(
+            data,
+            indent=2,
+            ensure_ascii=False,
+        )
+        + "\n"
+    )
+
+
+def write_if_changed(path: Path, content: str) -> bool:
+    old_content = path.read_text(encoding="utf-8") if path.exists() else ""
+
+    if old_content == content:
+        return False
+
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(content, encoding="utf-8")
+    return True
+
+
+def main() -> None:
+    try:
+        data = load_yaml(INPUT_YML_PATH)
+        output = json_text(data)
+        changed = write_if_changed(OUTPUT_JSON_PATH, output)
+    except Exception as exc:
+        print(f"❌ Failed to convert YAML to JSON: {exc}")
+        sys.exit(1)
+
+    if changed:
+        print(f"✅ JSON updated: {OUTPUT_JSON_PATH}")
+    else:
+        print(f"✅ JSON already up-to-date: {OUTPUT_JSON_PATH}")
+
+
+if __name__ == "__main__":
+    main()
