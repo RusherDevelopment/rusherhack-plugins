@@ -21,6 +21,7 @@ import re
 import os
 from datetime import datetime
 from typing import Any, Dict, List
+from urllib.parse import urlencode
 
 # -----------------------
 # Load YAML data
@@ -95,6 +96,50 @@ def md_escape(s: Any) -> str:
     if not isinstance(s, str):
         s = str(s)
     return s.replace("<", "&lt;").replace(">", "&gt;")
+
+
+def _shield_badge(label: str, message: Any, color: str = "blueviolet") -> str:
+    """
+    Build a shields.io static badge using query params instead of path params.
+
+    This safely handles:
+      - commas
+      - spaces
+      - dots
+      - parentheses
+      - long Minecraft version lists
+      - special characters
+    """
+    message = "" if message is None else str(message).strip()
+
+    query = urlencode(
+        {
+            "label": label,
+            "message": message,
+            "color": color,
+        }
+    )
+
+    return f"https://img.shields.io/static/v1?{query}"
+
+
+def _mc_versions_badge(mc_versions: Any) -> str:
+    """
+    Render the MC versions badge safely.
+    """
+    if mc_versions is None:
+        return ""
+
+    if isinstance(mc_versions, list):
+        message = ", ".join(str(v).strip() for v in mc_versions if str(v).strip())
+    else:
+        message = str(mc_versions).strip()
+
+    if not message:
+        return ""
+
+    badge_url = _shield_badge("MC Version", message, "blueviolet")
+    return f"![MC Version]({badge_url})"
 
 
 # ---------- Avatar helpers (same logic as Top 6 script) ----------
@@ -256,8 +301,10 @@ def generate_entry_md(entry, is_plugin: bool = True, index: int = 0) -> str:
 
     # MC version and core plugin badge (plugins only)
     if is_plugin and "mc_versions" in entry:
-        mc_versions = entry["mc_versions"].replace("-", "--").replace(".", "%20")
-        md += f" ![MC Version](https://img.shields.io/badge/MC%20Version-{mc_versions}-blueviolet)<br>\n"
+        mc_badge = _mc_versions_badge(entry.get("mc_versions"))
+        if mc_badge:
+            md += f" {mc_badge}<br>\n"
+
     if is_plugin and entry.get("is_core", False):
         md += " ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>\n"
 
