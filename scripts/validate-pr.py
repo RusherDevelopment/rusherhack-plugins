@@ -18,7 +18,10 @@
 #   - PLUGINS.md
 #   - THEMES.md
 #   - generated/json/**
-#   - api/v1/**
+#
+# - Nobody should commit:
+#   - public/**
+#   - public_html/api/**
 #
 # Usage:
 #   python scripts/validate-pr.py
@@ -47,18 +50,27 @@ REGISTRY_ALLOWED = [
 ]
 
 # Contributor website changes are allowed.
-# Keep generated markdown/json/API output out of this list.
+# public_html/ is source website content, not the generated API output.
 WEBSITE_ALLOWED = [
     "public_html/**",
 ]
 
 # Generated output should only be changed by approved automation branches.
+# The generated API is intentionally not listed here because public/ is a
+# temporary deploy artifact and should not be committed.
 GENERATED_OUTPUT_ALLOWED = [
     "README.md",
     "PLUGINS.md",
     "THEMES.md",
     "generated/json/**",
-    "public_html/api/v1/**",
+]
+
+# These should never be changed in PRs.
+# public/ is created during GitHub Pages deploy.
+# public_html/api/ was an older/wrong generated API location.
+ALWAYS_BLOCKED = [
+    "public/**",
+    "public_html/api/**",
 ]
 
 CONTRIBUTOR_ALLOWED = [
@@ -152,6 +164,7 @@ def get_event_value(payload: dict, *keys: str) -> str:
     for key in keys:
         if not isinstance(value, dict) or key not in value:
             return ""
+
         value = value[key]
 
     return value if isinstance(value, str) else ""
@@ -252,6 +265,10 @@ def print_allowed_files(mode: str, allowed: list[str]) -> None:
     for pattern in allowed:
         print(f"  - {pattern}")
 
+    print(f"\n{RED}These paths are always blocked:{RESET}")
+    for pattern in ALWAYS_BLOCKED:
+        print(f"  - {pattern}")
+
 
 def main() -> None:
     event_name = os.environ.get("GITHUB_EVENT_NAME", "").strip()
@@ -290,11 +307,29 @@ def main() -> None:
     for path in changed_files:
         print(f"  - {path}")
 
+    blocked = [
+        path
+        for path in changed_files
+        if matches_any(path, ALWAYS_BLOCKED)
+    ]
+
     disallowed = [
         path
         for path in changed_files
-        if not matches_any(path, allowed)
+        if path not in blocked and not matches_any(path, allowed)
     ]
+
+    if blocked:
+        print(f"\n{YELLOW}--- BLOCKED FILE CHANGES ---{RESET}\n")
+
+        for path in blocked:
+            print(err(path))
+
+        print(
+            f"\n{RED}These files should not be committed. "
+            f"The static API is generated during deploy into public/api/v1/, "
+            f"and public/ is only a temporary deploy artifact.{RESET}"
+        )
 
     if disallowed:
         print(f"\n{YELLOW}--- DISALLOWED FILE CHANGES ---{RESET}\n")
@@ -302,6 +337,7 @@ def main() -> None:
         for path in disallowed:
             print(err(path))
 
+    if blocked or disallowed:
         print_allowed_files(mode, allowed)
 
         print(
