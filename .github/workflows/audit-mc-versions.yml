@@ -268,7 +268,7 @@ jobs:
 
           const report = {
             generatedAt: new Date().toISOString(),
-            apply,
+            apply: APPLY,
             changed,
             knownVersions: VERSIONS,
             results
