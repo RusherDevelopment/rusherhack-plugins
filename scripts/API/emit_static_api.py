@@ -10,7 +10,7 @@
 #   generated/json/plugin-modules.json
 #
 # Output:
-#   public_html/api/v1/**
+#   public/api/v1/**
 #
 # Usage:
 #   python scripts/API/emit_static_api.py
@@ -53,8 +53,9 @@ ROOT = find_repo_root()
 SRC = ROOT / "generated" / "json" / "plugins-and-themes.json"
 MODULES_SRC = ROOT / "generated" / "json" / "plugin-modules.json"
 
-# Website/API output lives under public_html in this repo.
-API = ROOT / "public_html" / "api" / "v1"
+# API output is generated into the temporary GitHub Pages deploy artifact.
+# The deploy workflow copies public_html/ into public/ before this script runs.
+API = ROOT / "public" / "api" / "v1"
 
 WRITTEN: List[pathlib.Path] = []
 
@@ -254,7 +255,10 @@ def normalize_mc_versions(raw: Any, *, item_name: str = "<unknown>") -> List[str
 
 def item_versions(item: Dict[str, Any]) -> List[str]:
     raw = item.get("mc_versions", item.get("versions", None))
-    return normalize_mc_versions(raw, item_name=str(item.get("name") or item.get("repo") or "<unknown>"))
+    return normalize_mc_versions(
+        raw,
+        item_name=str(item.get("name") or item.get("repo") or "<unknown>"),
+    )
 
 
 # -----------------------------------------------------------
