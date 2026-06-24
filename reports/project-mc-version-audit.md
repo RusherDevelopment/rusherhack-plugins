@@ -1,8 +1,8 @@
 # MC Version Audit
 
-Generated: 2026-06-24T21:31:57.551Z
-Apply mode: no
-Registry lines changed: 0
+Generated: 2026-06-24T21:33:43.882Z
+Apply mode: yes
+Registry lines changed: 121
 
 ## Summary
 
