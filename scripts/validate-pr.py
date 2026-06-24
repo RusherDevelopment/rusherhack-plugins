@@ -8,9 +8,10 @@
 # Intended for GitHub Actions on pull_request events.
 #
 # Rules:
-# - Contributor PRs may only change:
+# - Contributor PRs may change:
 #   - data/plugins-and-themes.yml
 #   - Assets/**
+#   - public_html/**
 #
 # - Automation PRs may also change generated outputs:
 #   - README.md
@@ -40,19 +41,35 @@ YELLOW = "\033[93m"
 BLUE = "\033[94m"
 RESET = "\033[0m"
 
-CONTRIBUTOR_ALLOWED = [
+REGISTRY_ALLOWED = [
     "data/plugins-and-themes.yml",
     "Assets/**",
 ]
 
-AUTOMATION_ALLOWED = [
-    "data/plugins-and-themes.yml",
-    "Assets/**",
+# Contributor website changes are allowed.
+# Keep generated markdown/json/API output out of this list.
+WEBSITE_ALLOWED = [
+    "public_html/**",
+]
+
+# Generated output should only be changed by approved automation branches.
+GENERATED_OUTPUT_ALLOWED = [
     "README.md",
     "PLUGINS.md",
     "THEMES.md",
     "generated/json/**",
     "api/v1/**",
+]
+
+CONTRIBUTOR_ALLOWED = [
+    *REGISTRY_ALLOWED,
+    *WEBSITE_ALLOWED,
+]
+
+AUTOMATION_ALLOWED = [
+    *REGISTRY_ALLOWED,
+    *WEBSITE_ALLOWED,
+    *GENERATED_OUTPUT_ALLOWED,
 ]
 
 AUTOMATION_BRANCHES = {
@@ -165,8 +182,7 @@ def fetch_base_branch(base_ref: str) -> None:
     """
     Ensure origin/<base_ref> exists locally.
 
-    This makes the script reliable with checkout fetch-depth: 1 and with
-    manually triggered debug runs.
+    This makes the script reliable with checkout fetch-depth: 1.
     """
     run_git(
         [
