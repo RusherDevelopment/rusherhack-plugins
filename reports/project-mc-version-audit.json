@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T21:22:26.082Z",
+  "generatedAt": "2026-06-24T21:31:57.551Z",
   "apply": false,
   "registryLinesChanged": 0,
   "registryFile": "data/plugins-and-themes.yml",
@@ -46,16 +46,16 @@
     "rusherhack_minecraft_version",
     "rusherhackMinecraftVersion"
   ],
-  "pluginCount": 128,
+  "pluginCount": 133,
   "results": [
     {
       "index": 0,
       "name": "Example Plugin",
       "repo": "RusherDevelopment/example-plugin",
-      "registry": "1.21.4",
-      "registryExpanded": "1.21.4",
+      "registry": "N/A",
+      "registryExpanded": "",
       "registryIgnored": [],
-      "status": "ok",
+      "status": "registry-differs-from-project",
       "projectFilesChecked": [
         "src/main/resources/rusherhack-plugin.json",
         "gradle.properties"
@@ -107,10 +107,10 @@
       "index": 1,
       "name": "2b2t.vc Rusherhack",
       "repo": "rfresh2/2b2t.vc-rusherhack",
-      "registry": "1.20.1, 1.20.2, 1.20.4, 1.20.6, 1.21, 1.21.1, 1.21.2, 1.21.3, 1.21.4",
-      "registryExpanded": "1.20.1, 1.20.2, 1.20.4, 1.20.6, 1.21, 1.21.1, 1.21.2, 1.21.3, 1.21.4",
+      "registry": "1.20.1-1.21.4",
+      "registryExpanded": "1.20.1, 1.20.2, 1.20.3, 1.20.4, 1.20.5, 1.20.6, 1.21, 1.21.1, 1.21.2, 1.21.3, 1.21.4",
       "registryIgnored": [],
-      "status": "ok",
+      "status": "registry-differs-from-project",
       "projectFilesChecked": [
         "src/main/resources/rusherhack-plugin.json",
         "gradle.properties"
@@ -176,67 +176,12 @@
     },
     {
       "index": 2,
-      "name": "ChestIndexer",
-      "repo": "FelekDevYT/ChestIndexer",
-      "registry": "1.21.4",
-      "registryExpanded": "1.21.4",
-      "registryIgnored": [],
-      "status": "ok",
-      "projectFilesChecked": [
-        "src/main/resources/rusherhack-plugin.json",
-        "gradle.properties"
-      ],
-      "projectError": null,
-      "hasExplicitProjectSource": true,
-      "projectSuggestion": "1.21.4",
-      "chosenSources": [
-        {
-          "file": "src/main/resources/rusherhack-plugin.json",
-          "key": "Minecraft-Versions",
-          "raw": "${project.minecraft_version}",
-          "resolvedRaw": "1.21.4",
-          "versions": [
-            "1.21.4"
-          ],
-          "ignored": [],
-          "sourceType": "rusherhack-plugin-json"
-        }
-      ],
-      "allProjectFindings": [
-        {
-          "file": "src/main/resources/rusherhack-plugin.json",
-          "key": "Minecraft-Versions",
-          "raw": "${project.minecraft_version}",
-          "resolvedRaw": "1.21.4",
-          "versions": [
-            "1.21.4"
-          ],
-          "ignored": [],
-          "sourceType": "rusherhack-plugin-json",
-          "priority": 0
-        },
-        {
-          "file": "gradle.properties",
-          "key": "minecraft_version",
-          "raw": "1.21.4",
-          "resolvedRaw": "1.21.4",
-          "versions": [
-            "1.21.4"
-          ],
-          "ignored": [],
-          "sourceType": "gradle-properties",
-          "priority": 1
-        }
-      ]
-    },
-    {
-      "index": 3,
       "name": "RusherHack-HudElement",
       "repo": "Aspect-404/RusherHack-HudElement",
-      "registry": "1.20.4, 1.21",
-      "registryExpanded": "1.20.4, 1.21",
+      "registry": "1.20.4-1.21",
+      "registryExpanded": "1.20.4, 1.20.5, 1.20.6, 1.21",
       "registryIgnored": [],
-      "status": "ok",
+      "status": "registry-differs-from-project",
       "projectFilesChecked": [
         "src/main/resources/rusherhack-plugin.json",
         "gradle.properties"
@@ -287,13 +232,13 @@
       ]
     },
     {
-      "index": 4,
+      "index": 3,
       "name": "Auto Anvil Rename",
       "repo": "IceTank/AutoAnvilRename",
-      "registry": "1.21.4",
-      "registryExpanded": "1.21.4",
+      "registry": "1.20.1-1.21.1",
+      "registryExpanded": "1.20.1, 1.20.2, 1.20.3, 1.20.4, 1.20.5, 1.20.6, 1.21, 1.21.1",
       "registryIgnored": [],
-      "status": "ok",
+      "status": "registry-differs-from-project",
       "projectFilesChecked": [
         "src/main/resources/rusherhack-plugin.json",
         "gradle.properties"
@@ -342,7 +287,7 @@
       ]
     },
     {
-      "index": 5,
+      "index": 4,
       "name": "Queue Manager",
       "repo": "GabiRP/QueueManager",
       "registry": "1.20.1",
@@ -385,10 +330,10 @@
       ]
     },
     {
-      "index": 6,
+      "index": 5,
       "name": "RusherHack Instance Info",
       "repo": "John200410/rusherhack-instance-info",
-      "registry": "1.20.1, 1.20.2, 1.20.3, 1.20.4, 1.20.5, 1.20.6, 1.21, 1.21.1, 1.21.2, 1.21.3, 1.21.4",
+      "registry": "1.20.1-1.21.4",
       "registryExpanded": "1.20.1, 1.20.2, 1.20.3, 1.20.4, 1.20.5, 1.20.6, 1.21, 1.21.1, 1.21.2, 1.21.3, 1.21.4",
       "registryIgnored": [],
       "status": "ok",
@@ -460,13 +405,13 @@
       ]
     },
     {
-      "index": 7,
+      "index": 6,
       "name": "Stash Mover Plugin",
       "repo": "xyzbtw/StashMoverPlugin",
-      "registry": "1.20.1, 1.20.4, 1.20.6, 1.21, 1.21.1, 1.21.4",
-      "registryExpanded": "1.20.1, 1.20.4, 1.20.6, 1.21, 1.21.1, 1.21.4",
+      "registry": "1.20.1-1.21.4",
+      "registryExpanded": "1.20.1, 1.20.2, 1.20.3, 1.20.4, 1.20.5, 1.20.6, 1.21, 1.21.1, 1.21.2, 1.21.3, 1.21.4",
       "registryIgnored": [],
-      "status": "ok",
+      "status": "registry-differs-from-project",
       "projectFilesChecked": [
         "src/main/resources/rusherhack-plugin.json",
         "gradle.properties"
@@ -525,13 +470,72 @@
       ]
     },
     {
-      "index": 8,
+      "index": 7,
       "name": "Combined Bind List",
       "repo": "tr330ne/combined-bindlist",
-      "registry": "1.21.1, 1.21.3, 1.21.4",
-      "registryExpanded": "1.21.1, 1.21.3, 1.21.4",
+      "registry": "1.21.1-1.21.4",
+      "registryExpanded": "1.21.1, 1.21.2, 1.21.3, 1.21.4",
       "registryIgnored": [],
-      "status": "ok",
+      "status": "registry-differs-from-project",
+      "projectFilesChecked": [
+        "src/main/resources/rusherhack-plugin.json",
+        "gradle.properties"
+      ],
+      "projectError": null,
+      "hasExplicitProjectSource": true,
+      "projectSuggestion": "1.21.1, 1.21.3, 1.21.4",
+      "chosenSources": [
+        {
+          "file": "src/main/resources/rusherhack-plugin.json",
+          "key": "Minecraft-Versions",
+          "raw": "1.21.1, 1.21.3, 1.21.4",
+          "resolvedRaw": "1.21.1, 1.21.3, 1.21.4",
+          "versions": [
+            "1.21.1",
+            "1.21.3",
+            "1.21.4"
+          ],
+          "ignored": [],
+          "sourceType": "rusherhack-plugin-json"
+        }
+      ],
+      "allProjectFindings": [
+        {
+          "file": "src/main/resources/rusherhack-plugin.json",
+          "key": "Minecraft-Versions",
+          "raw": "1.21.1, 1.21.3, 1.21.4",
+          "resolvedRaw": "1.21.1, 1.21.3, 1.21.4",
+          "versions": [
+            "1.21.1",
+            "1.21.3",
+            "1.21.4"
+          ],
+          "ignored": [],
+          "sourceType": "rusherhack-plugin-json",
+          "priority": 0
+        },
+        {
+          "file": "gradle.properties",
+          "key": "minecraft_version",
+          "raw": "1.21.4",
+          "resolvedRaw": "1.21.4",
+          "versions": [
+            "1.21.4"
+          ],
+          "ignored": [],
+          "sourceType": "gradle-properties",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "name": "EFlyAutoJump",
+      "repo": "tr330ne/efly-autojump",
+      "registry": "1.21.1-1.21.4",
+      "registryExpanded": "1.21.1, 1.21.2, 1.21.3, 1.21.4",
+      "registryIgnored": [],
+      "status": "registry-differs-from-project",
       "projectFilesChecked": [
         "src/main/resources/rusherhack-plugin.json",
         "gradle.properties"
@@ -585,12 +589,12 @@
     },
     {
       "index": 9,
-      "name": "EFlyAutoJump",
-      "repo": "tr330ne/efly-autojump",
-      "registry": "1.21.1, 1.21.3, 1.21.4",
-      "registryExpanded": "1.21.1, 1.21.3, 1.21.4",
+      "name": "WaypointSync",
+      "repo": "tr330ne/waypointsync",
+      "registry": "1.21.1-1.21.4",
+      "registryExpanded": "1.21.1, 1.21.2, 1.21.3, 1.21.4",
       "registryIgnored": [],
-      "status": "ok",
+      "status": "registry-differs-from-project",
       "projectFilesChecked": [
         "src/main/resources/rusherhack-plugin.json",
         "gradle.properties"
@@ -644,68 +648,9 @@
     },
     {
       "index": 10,
-      "name": "WaypointSync",
-      "repo": "tr330ne/waypointsync",
-      "registry": "1.21.1, 1.21.3, 1.21.4",
-      "registryExpanded": "1.21.1, 1.21.3, 1.21.4",
-      "registryIgnored": [],
-      "status": "ok",
-      "projectFilesChecked": [
-        "src/main/resources/rusherhack-plugin.json",
-        "gradle.properties"
-      ],
-      "projectError": null,
-      "hasExplicitProjectSource": true,
-      "projectSuggestion": "1.21.1, 1.21.3, 1.21.4",
-      "chosenSources": [
-        {
-          "file": "src/main/resources/rusherhack-plugin.json",
-          "key": "Minecraft-Versions",
-          "raw": "1.21.1, 1.21.3, 1.21.4",
-          "resolvedRaw": "1.21.1, 1.21.3, 1.21.4",
-          "versions": [
-            "1.21.1",
-            "1.21.3",
-            "1.21.4"
-          ],
-          "ignored": [],
-          "sourceType": "rusherhack-plugin-json"
-        }
-      ],
-      "allProjectFindings": [
-        {
-          "file": "src/main/resources/rusherhack-plugin.json",
-          "key": "Minecraft-Versions",
-          "raw": "1.21.1, 1.21.3, 1.21.4",
-          "resolvedRaw": "1.21.1, 1.21.3, 1.21.4",
-          "versions": [
-            "1.21.1",
-            "1.21.3",
-            "1.21.4"
-          ],
-          "ignored": [],
-          "sourceType": "rusherhack-plugin-json",
-          "priority": 0
-        },
-        {
-          "file": "gradle.properties",
-          "key": "minecraft_version",
-          "raw": "1.21.4",
-          "resolvedRaw": "1.21.4",
-          "versions": [
-            "1.21.4"
-          ],
-          "ignored": [],
-          "sourceType": "gradle-properties",
-          "priority": 1
-        }
-      ]
-    },
-    {
-      "index": 11,
       "name": "Unified Module List",
       "repo": "czho/unified-modulelist",
-      "registry": "1.20.2, 1.20.3, 1.20.4",
+      "registry": "1.20.2-1.20.4",
       "registryExpanded": "1.20.2, 1.20.3, 1.20.4",
       "registryIgnored": [],
       "status": "ok",
@@ -761,13 +706,13 @@
       ]
     },
     {
-      "index": 12,
+      "index": 11,
       "name": "Container Tweaks",
       "repo": "rfresh2/ContainerTweaks-rusherhack",
-      "registry": "1.21.4, 1.21.11",
-      "registryExpanded": "1.21.4, 1.21.11",
+      "registry": "1.20.1-1.21.4",
+      "registryExpanded": "1.20.1, 1.20.2, 1.20.3, 1.20.4, 1.20.5, 1.20.6, 1.21, 1.21.1, 1.21.2, 1.21.3, 1.21.4",
       "registryIgnored": [],
-      "status": "ok",
+      "status": "registry-differs-from-project",
       "projectFilesChecked": [
         "src/main/resources/rusherhack-plugin.json",
         "gradle.properties"
@@ -818,10 +763,10 @@
       ]
     },
     {
-      "index": 13,
+      "index": 12,
       "name": "RusherHack Spotify Integration",
       "repo": "John200410/rusherhack-spotify",
-      "registry": "1.20.1, 1.20.2, 1.20.3, 1.20.4, 1.20.5, 1.20.6, 1.21, 1.21.1, 1.21.2, 1.21.3, 1.21.4",
+      "registry": "1.20.1-1.21.4",
       "registryExpanded": "1.20.1, 1.20.2, 1.20.3, 1.20.4, 1.20.5, 1.20.6, 1.21, 1.21.1, 1.21.2, 1.21.3, 1.21.4",
       "registryIgnored": [],
       "status": "ok",
@@ -893,7 +838,7 @@
       ]
     },
     {
-      "index": 14,
+      "index": 13,
       "name": "Vanilla Elytra Flight",
       "repo": "FBanna/Rusherhack-Vanilla-Efly",
       "registry": "1.21.4",
@@ -948,10 +893,10 @@
       ]
     },
     {
-      "index": 15,
+      "index": 14,
       "name": "Rusherhack BookBot",
       "repo": "Aspect-404/Rusherhack-BookBot",
-      "registry": "1.20.1, 1.20.2, 1.20.3, 1.20.4, 1.20.5, 1.20.6, 1.21, 1.21.1, 1.21.2, 1.21.3, 1.21.4",
+      "registry": "1.20.1-1.21.4",
       "registryExpanded": "1.20.1, 1.20.2, 1.20.3, 1.20.4, 1.20.5, 1.20.6, 1.21, 1.21.1, 1.21.2, 1.21.3, 1.21.4",
       "registryIgnored": [],
       "status": "ok",
@@ -1023,13 +968,13 @@
       ]
     },
     {
-      "index": 16,
+      "index": 15,
       "name": "Shay's RusherTweaks",
       "repo": "ShayBox/ShaysRusherTweaks",
-      "registry": "1.20.1, 1.20.2, 1.20.4, 1.20.6, 1.21",
-      "registryExpanded": "1.20.1, 1.20.2, 1.20.4, 1.20.6, 1.21",
+      "registry": "1.20.1-1.21",
+      "registryExpanded": "1.20.1, 1.20.2, 1.20.3, 1.20.4, 1.20.5, 1.20.6, 1.21",
       "registryIgnored": [],
-      "status": "ok",
+      "status": "registry-differs-from-project",
       "projectFilesChecked": [
         "1.20.1/src/main/resources/rusherhack-plugin.json",
         "1.20.2/src/main/resources/rusherhack-plugin.json",
@@ -1226,7 +1171,7 @@
       ]
     },
     {
-      "index": 17,
+      "index": 16,
       "name": "Nuker",
       "repo": "beanbag44/Nuker",
       "registry": "1.20.4",
@@ -1281,10 +1226,10 @@
       ]
     },
     {
-      "index": 18,
+      "index": 17,
       "name": "Hold Rusher",
       "repo": "cherosin/hold-rusher",
-      "registry": "1.20.1, 1.20.2, 1.20.3, 1.20.4, 1.20.5, 1.20.6, 1.21, 1.21.1",
+      "registry": "1.20.1-1.21.1",
       "registryExpanded": "1.20.1, 1.20.2, 1.20.3, 1.20.4, 1.20.5, 1.20.6, 1.21, 1.21.1",
       "registryIgnored": [],
       "status": "ok",
@@ -1350,13 +1295,13 @@
       ]
     },
     {
-      "index": 19,
+      "index": 18,
       "name": "No Walk Animation",
       "repo": "Eonexe/NoWalkAnimation",
-      "registry": "1.20.4, 1.20.6, 1.21",
-      "registryExpanded": "1.20.4, 1.20.6, 1.21",
+      "registry": "1.20.4-1.21",
+      "registryExpanded": "1.20.4, 1.20.5, 1.20.6, 1.21",
       "registryIgnored": [],
-      "status": "ok",
+      "status": "registry-differs-from-project",
       "projectFilesChecked": [
         "src/main/resources/rusherhack-plugin.json",
         "gradle.properties"
@@ -1409,7 +1354,7 @@
       ]
     },
     {
-      "index": 20,
+      "index": 19,
       "name": "NBT Utils",
       "repo": "KybesRusherhackPlugins/nbt-utils",
       "registry": "1.20.4",
@@ -1464,7 +1409,7 @@
       ]
     },
     {
-      "index": 21,
+      "index": 20,
       "name": "Rusherhack Executer",
       "repo": "KybesRusherhackPlugins/executer",
       "registry": "1.20.4",
@@ -1519,13 +1464,13 @@
       ]
     },
     {
-      "index": 22,
+      "index": 21,
       "name": "F3 Spoof",
       "repo": "Doogie13/f3-spoof",
-      "registry": "1.20.4, 1.21",
-      "registryExpanded": "1.20.4, 1.21",
+      "registry": "1.20.4-1.21",
+      "registryExpanded": "1.20.4, 1.20.5, 1.20.6, 1.21",
       "registryIgnored": [],
-      "status": "ok",
+      "status": "registry-differs-from-project",
       "projectFilesChecked": [
         "src/main/resources/rusherhack-plugin.json",
         "gradle.properties"
@@ -1576,13 +1521,13 @@
       ]
     },
     {
-      "index": 23,
+      "index": 22,
       "name": "Open Folder",
       "repo": "KybesRusherhackPlugins/open-folder",
-      "registry": "1.21, 1.21.1, 1.21.2, 1.21.3, 1.21.4, 1.21.5, 1.21.6, 1.21.7, 1.21.8",
-      "registryExpanded": "1.21, 1.21.1, 1.21.2, 1.21.3, 1.21.4, 1.21.5, 1.21.6, 1.21.7, 1.21.8",
+      "registry": "1.21",
+      "registryExpanded": "1.21",
       "registryIgnored": [],
-      "status": "ok",
+      "status": "registry-differs-from-project",
       "projectFilesChecked": [
         "src/main/resources/rusherhack-plugin.json",
         "gradle.properties"
@@ -1647,7 +1592,7 @@
       ]
     },
     {
-      "index": 24,
+      "index": 23,
       "name": "Mace Kill",
       "repo": "KybesRusherhackPlugins/mace-kill",
       "registry": "1.21.4",
@@ -1702,7 +1647,7 @@
       ]
     },
     {
-      "index": 25,
+      "index": 24,
       "name": "Weather Changing Plugin",
       "repo": "Lokfid/WeatherChangingPlugin",
       "registry": "1.21.4",
@@ -1757,7 +1702,7 @@
       ]
     },
     {
-      "index": 26,
+      "index": 25,
       "name": "Middleclick Wind Charge",
       "repo": "KybesRusherhackPlugins/middleclick-wind-charge",
       "registry": "1.21",
@@ -1812,13 +1757,13 @@
       ]
     },
     {
-      "index": 27,
+      "index": 26,
       "name": "GarlicSight",
       "repo": "GarlicRot/GarlicSight",
-      "registry": "1.20.5, 1.20.6, 1.21, 1.21.1, 1.21.2, 1.21.3, 1.21.4, 1.21.5, 1.21.11",
-      "registryExpanded": "1.20.5, 1.20.6, 1.21, 1.21.1, 1.21.2, 1.21.3, 1.21.4, 1.21.5, 1.21.11",
+      "registry": "1.21.4-1.21.11",
+      "registryExpanded": "1.21.4, 1.21.5, 1.21.6, 1.21.7, 1.21.8, 1.21.9, 1.21.10, 1.21.11",
       "registryIgnored": [],
-      "status": "ok",
+      "status": "registry-differs-from-project",
       "projectFilesChecked": [
         "src/main/resources/rusherhack-plugin.json",
         "gradle.properties"
@@ -1883,10 +1828,10 @@
       ]
     },
     {
-      "index": 28,
+      "index": 27,
       "name": "LightningPop",
       "repo": "GarlicRot/LightningPop",
-      "registry": "1.20.5, 1.20.6, 1.21, 1.21.1, 1.21.2, 1.21.3, 1.21.4, 1.21.5, 1.21.6, 1.21.7, 1.21.8, 1.21.9, 1.21.10, 1.21.11",
+      "registry": "1.20.5-1.21.11",
       "registryExpanded": "1.20.5, 1.20.6, 1.21, 1.21.1, 1.21.2, 1.21.3, 1.21.4, 1.21.5, 1.21.6, 1.21.7, 1.21.8, 1.21.9, 1.21.10, 1.21.11",
       "registryIgnored": [],
       "status": "ok",
@@ -1964,10 +1909,10 @@
       ]
     },
     {
-      "index": 29,
+      "index": 28,
       "name": "AutoBucket",
       "repo": "GarlicRot/AutoBucket",
-      "registry": "1.20.5, 1.20.6, 1.21, 1.21.1, 1.21.2, 1.21.3, 1.21.4",
+      "registry": "1.20.5-1.21.4",
       "registryExpanded": "1.20.5, 1.20.6, 1.21, 1.21.1, 1.21.2, 1.21.3, 1.21.4",
       "registryIgnored": [],
       "status": "ok",
@@ -2031,7 +1976,7 @@
       ]
     },
     {
-      "index": 30,
+      "index": 29,
       "name": "RusherHack-BoatExecute",
       "repo": "PhilipPanda/RusherHack-BoatExecute",
       "registry": "1.20.4",
@@ -2086,10 +2031,10 @@
       ]
     },
     {
-      "index": 31,
+      "index": 30,
       "name": "NBT Viewer",
       "repo": "Gentleman2292/NBT-viewer",
-      "registry": "1.20.1, 1.20.2, 1.20.3, 1.20.4",
+      "registry": "1.20.1-1.20.4",
       "registryExpanded": "1.20.1, 1.20.2, 1.20.3, 1.20.4",
       "registryIgnored": [],
       "status": "ok",
@@ -2147,7 +2092,7 @@
       ]
     },
     {
-      "index": 32,
+      "index": 31,
       "name": "Remote Control",
       "repo": "KybesRusherhackPlugins/remote-controle",
       "registry": "1.20.4",
@@ -2202,7 +2147,7 @@
       ]
     },
     {
-      "index": 33,
+      "index": 32,
       "name": "Speed Measure",
       "repo": "Lokfid/RusherHackSpeedMeasure",
       "registry": "1.20.4",
@@ -2257,7 +2202,7 @@
       ]
     },
     {
-      "index": 34,
+      "index": 33,
       "name": "TNT Bomber",
       "repo": "KybesRusherhackPlugins/tnt-bomber",
       "registry": "1.20.4",
@@ -2312,7 +2257,7 @@
       ]
     },
     {
-      "index": 35,
+      "index": 34,
       "name": "No Render Entities",
       "repo": "John200410/norender-entities",
       "registry": "1.20.1",
@@ -2355,10 +2300,10 @@
       ]
     },
     {
-      "index": 36,
+      "index": 35,
       "name": "RusherHack Messenger",
       "repo": "Gentleman2292/rusherhack-messenger",
-      "registry": "1.20.1, 1.20.2, 1.20.3, 1.20.4",
+      "registry": "1.20.1-1.20.4",
       "registryExpanded": "1.20.1, 1.20.2, 1.20.3, 1.20.4",
       "registryIgnored": [],
       "status": "ok",
@@ -2416,10 +2361,10 @@
       ]
     },
     {
-      "index": 37,
+      "index": 36,
       "name": "RusherHack Instance Info (Fork)",
       "repo": "GarlicRot/rusherhack-instance-info",
-      "registry": "1.20.1, 1.20.2, 1.20.3, 1.20.4, 1.20.5, 1.20.6, 1.21",
+      "registry": "1.20.1-1.21",
       "registryExpanded": "1.20.1, 1.20.2, 1.20.3, 1.20.4, 1.20.5, 1.20.6, 1.21",
       "registryIgnored": [],
       "status": "ok",
@@ -2483,13 +2428,13 @@
       ]
     },
     {
-      "index": 38,
+      "index": 37,
       "name": "RusherHack NoteBot",
       "repo": "Lokfid/RusherHackNoteBot",
-      "registry": "1.20.4, 1.21, 1.21.1, 1.21.4",
-      "registryExpanded": "1.20.4, 1.21, 1.21.1, 1.21.4",
+      "registry": "1.20.4-1.21.4",
+      "registryExpanded": "1.20.4, 1.20.5, 1.20.6, 1.21, 1.21.1, 1.21.2, 1.21.3, 1.21.4",
       "registryIgnored": [],
-      "status": "ok",
+      "status": "registry-differs-from-project",
       "projectFilesChecked": [
         "src/main/resources/rusherhack-plugin.json",
         "gradle.properties"
@@ -2544,13 +2489,13 @@
       ]
     },
     {
-      "index": 39,
+      "index": 38,
       "name": "ShulkerViewer",
       "repo": "xyzbtw/ShulkerViewer",
-      "registry": "1.20.1, 1.20.2, 1.20.4, 1.21, 1.21.1",
-      "registryExpanded": "1.20.1, 1.20.2, 1.20.4, 1.21, 1.21.1",
+      "registry": "1.20.1-1.21.4",
+      "registryExpanded": "1.20.1, 1.20.2, 1.20.3, 1.20.4, 1.20.5, 1.20.6, 1.21, 1.21.1, 1.21.2, 1.21.3, 1.21.4",
       "registryIgnored": [],
-      "status": "ok",
+      "status": "registry-differs-from-project",
       "projectFilesChecked": [
         "src/main/resources/rusherhack-plugin.json",
         "gradle.properties"
@@ -2607,13 +2552,13 @@
       ]
     },
     {
-      "index": 40,
+      "index": 39,
       "name": "RusherWebPlugin",
       "repo": "Lokfid/RusherWebPlugin",
-      "registry": "1.20.1, 1.20.2, 1.20.3, 1.20.4, 1.20.5, 1.20.6, 1.21, 1.21.1, 1.21.4",
-      "registryExpanded": "1.20.1, 1.20.2, 1.20.3, 1.20.4, 1.20.5, 1.20.6, 1.21, 1.21.1, 1.21.4",
+      "registry": "1.20.1-1.21.1",
+      "registryExpanded": "1.20.1, 1.20.2, 1.20.3, 1.20.4, 1.20.5, 1.20.6, 1.21, 1.21.1",
       "registryIgnored": [],
-      "status": "ok",
+      "status": "registry-differs-from-project",
       "projectFilesChecked": [
         "src/main/resources/rusherhack-plugin.json",
         "gradle.properties"
@@ -2678,13 +2623,13 @@
       ]
     },
     {
-      "index": 41,
+      "index": 40,
       "name": "UpdatedNCPEfly",
       "repo": "xyzbtw/UpdatedNCPEfly",
-      "registry": "1.20.4, 1.20.6",
-      "registryExpanded": "1.20.4, 1.20.6",
+      "registry": "1.20.4-1.20.6",
+      "registryExpanded": "1.20.4, 1.20.5, 1.20.6",
       "registryIgnored": [],
-      "status": "ok",
+      "status": "registry-differs-from-project",
       "projectFilesChecked": [
         "src/main/resources/rusherhack-plugin.json",
         "gradle.properties"
@@ -2735,7 +2680,7 @@
       ]
     },
     {
-      "index": 42,
+      "index": 41,
       "name": "dc-chat-logger",
       "repo": "KybesRusherhackPlugins/dc-chat-logger",
       "registry": "1.21",
@@ -2790,10 +2735,10 @@
       ]
     },
     {
-      "index": 43,
+      "index": 42,
       "name": "rusherhack-nightvision-plugin",
       "repo": "John200410/rusherhack-nightvision-plugin",
-      "registry": "1.21, 1.21.1",
+      "registry": "1.21-1.21.1",
       "registryExpanded": "1.21, 1.21.1",
       "registryIgnored": [],
       "status": "ok",
@@ -2847,13 +2792,13 @@
       ]
     },
     {
-      "index": 44,
+      "index": 43,
       "name": "AutoNetherite",
       "repo": "xyzbtw/AutoNetherite",
-      "registry": "1.20.4, 1.20.6, 1.21, 1.21.1, 1.21.4",
-      "registryExpanded": "1.20.4, 1.20.6, 1.21, 1.21.1, 1.21.4",
+      "registry": "1.20.4-1.21.1",
+      "registryExpanded": "1.20.4, 1.20.5, 1.20.6, 1.21, 1.21.1",
       "registryIgnored": [],
-      "status": "ok",
+      "status": "registry-differs-from-project",
       "projectFilesChecked": [
         "src/main/resources/rusherhack-plugin.json",
         "gradle.properties"
@@ -2910,7 +2855,7 @@
       ]
     },
     {
-      "index": 45,
+      "index": 44,
       "name": "OldSignsPlugin",
       "repo": "xyzbtw/OldSignsPlugin",
       "registry": "1.20.4",
@@ -2965,10 +2910,10 @@
       ]
     },
     {
-      "index": 46,
+      "index": 45,
       "name": "StashHunter-rusherhack",
       "repo": "CherkaSSH/StashHunter-rusherhack",
-      "registry": "1.20.1, 1.20.2, 1.20.3, 1.20.4, 1.20.5, 1.20.6, 1.21, 1.21.1",
+      "registry": "1.20.1-1.21.1",
       "registryExpanded": "1.20.1, 1.20.2, 1.20.3, 1.20.4, 1.20.5, 1.20.6, 1.21, 1.21.1",
       "registryIgnored": [],
       "status": "ok",
@@ -3034,7 +2979,7 @@
       ]
     },
     {
-      "index": 47,
+      "index": 46,
       "name": "rusher-elytra-eta",
       "repo": "KybesRusherhackPlugins/elytra-eta",
       "registry": "1.21",
@@ -3089,7 +3034,7 @@
       ]
     },
     {
-      "index": 48,
+      "index": 47,
       "name": "rusher-silent-close",
       "repo": "KybesRusherhackPlugins/silent-container-close",
       "registry": "1.21",
@@ -3144,7 +3089,7 @@
       ]
     },
     {
-      "index": 49,
+      "index": 48,
       "name": "rusherhack-addons",
       "repo": "miles352/rusherhack-addons",
       "registry": "1.20.4",
@@ -3199,7 +3144,7 @@
       ]
     },
     {
-      "index": 50,
+      "index": 49,
       "name": "rusher-gtranslate",
       "repo": "KybesRusherhackPlugins/google-translate",
       "registry": "1.21.4",
@@ -3254,7 +3199,7 @@
       ]
     },
     {
-      "index": 51,
+      "index": 50,
       "name": "rusher-matrix-nofall",
       "repo": "KybesRusherhackPlugins/matrix-nofall",
       "registry": "1.21",
@@ -3309,13 +3254,13 @@
       ]
     },
     {
-      "index": 52,
+      "index": 51,
       "name": "rusher-autoportal",
       "repo": "KybesRusherhackPlugins/auto-portal",
-      "registry": "1.20.4, 1.20.6, 1.21, 1.21.1, 1.21.4, 1.21.11",
-      "registryExpanded": "1.20.4, 1.20.6, 1.21, 1.21.1, 1.21.4, 1.21.11",
+      "registry": "1.20.4-1.21.1",
+      "registryExpanded": "1.20.4, 1.20.5, 1.20.6, 1.21, 1.21.1",
       "registryIgnored": [],
-      "status": "ok",
+      "status": "registry-differs-from-project",
       "projectFilesChecked": [
         "src/main/resources/rusherhack-plugin.json",
         "gradle.properties"
@@ -3374,13 +3319,13 @@
       ]
     },
     {
-      "index": 53,
+      "index": 52,
       "name": "rusher-air-place",
       "repo": "KybesRusherhackPlugins/air-place",
-      "registry": "1.20.1, 1.20.2, 1.20.4, 1.21, 1.21.1",
-      "registryExpanded": "1.20.1, 1.20.2, 1.20.4, 1.21, 1.21.1",
+      "registry": "1.20.1-1.21.1",
+      "registryExpanded": "1.20.1, 1.20.2, 1.20.3, 1.20.4, 1.20.5, 1.20.6, 1.21, 1.21.1",
       "registryIgnored": [],
-      "status": "ok",
+      "status": "registry-differs-from-project",
       "projectFilesChecked": [
         "src/main/resources/rusherhack-plugin.json",
         "gradle.properties"
@@ -3437,10 +3382,10 @@
       ]
     },
     {
-      "index": 54,
+      "index": 53,
       "name": "rusher-hold-spamm-space",
       "repo": "KybesRusherhackPlugins/space-spammer",
-      "registry": "1.21, 1.21.1",
+      "registry": "1.21-1.21.1",
       "registryExpanded": "1.21, 1.21.1",
       "registryIgnored": [],
       "status": "ok",
@@ -3494,7 +3439,7 @@
       ]
     },
     {
-      "index": 55,
+      "index": 54,
       "name": "rusher-auto-bed-bomber",
       "repo": "KybesRusherhackPlugins/auto-bed-bomber",
       "registry": "1.21",
@@ -3549,7 +3494,7 @@
       ]
     },
     {
-      "index": 56,
+      "index": 55,
       "name": "rusher-crystal-spin",
       "repo": "KybesRusherhackPlugins/crystal-spin",
       "registry": "1.21",
@@ -3604,10 +3549,10 @@
       ]
     },
     {
-      "index": 57,
+      "index": 56,
       "name": "AutoShear",
       "repo": "oisin404/AutoShear",
-      "registry": "1.21, 1.21.1",
+      "registry": "1.21-1.21.1",
       "registryExpanded": "1.21, 1.21.1",
       "registryIgnored": [],
       "status": "ok",
@@ -3661,7 +3606,7 @@
       ]
     },
     {
-      "index": 58,
+      "index": 57,
       "name": "rusher-autokit",
       "repo": "KybesRusherhackPlugins/autokit",
       "registry": "1.20.4",
@@ -3716,7 +3661,7 @@
       ]
     },
     {
-      "index": 59,
+      "index": 58,
       "name": "AutoTorch",
       "repo": "NinetyUnderScore/AutoTorch",
       "registry": "1.20.1",
@@ -3771,13 +3716,13 @@
       ]
     },
     {
-      "index": 60,
+      "index": 59,
       "name": "Elytra Swap",
       "repo": "cmg-divined/elytra-swap",
-      "registry": "1.20.4, 1.21",
-      "registryExpanded": "1.20.4, 1.21",
+      "registry": "1.20.4-1.21",
+      "registryExpanded": "1.20.4, 1.20.5, 1.20.6, 1.21",
       "registryIgnored": [],
-      "status": "ok",
+      "status": "registry-differs-from-project",
       "projectFilesChecked": [
         "src/main/resources/rusherhack-plugin.json",
         "gradle.properties"
@@ -3828,10 +3773,10 @@
       ]
     },
     {
-      "index": 61,
+      "index": 60,
       "name": "HDisabler",
       "repo": "CherkaSSH/hdisabler",
-      "registry": "1.21.1, 1.21.2, 1.21.3",
+      "registry": "1.21.1-1.21.3",
       "registryExpanded": "1.21.1, 1.21.2, 1.21.3",
       "registryIgnored": [],
       "status": "ok",
@@ -3887,7 +3832,7 @@
       ]
     },
     {
-      "index": 62,
+      "index": 61,
       "name": "CoordFollower",
       "repo": "CherkaSSH/CoordFollower-plugin",
       "registry": "1.20.4",
@@ -3942,13 +3887,13 @@
       ]
     },
     {
-      "index": 63,
+      "index": 62,
       "name": "Rusher Chess TUI",
       "repo": "CherkaSSH/rusher-chess-tui",
-      "registry": "1.20.1, 1.20.2, 1.20.4",
-      "registryExpanded": "1.20.1, 1.20.2, 1.20.4",
+      "registry": "1.20.1-1.20.4",
+      "registryExpanded": "1.20.1, 1.20.2, 1.20.3, 1.20.4",
       "registryIgnored": [],
-      "status": "ok",
+      "status": "registry-differs-from-project",
       "projectFilesChecked": [
         "src/main/resources/rusherhack-plugin.json",
         "gradle.properties"
@@ -4001,10 +3946,10 @@
       ]
     },
     {
-      "index": 64,
+      "index": 63,
       "name": "ActivatedSpawnerDetector",
       "repo": "un0x9/ActivatedSpawnerDetector",
-      "registry": "1.21, 1.21.1",
+      "registry": "1.21-1.21.1",
       "registryExpanded": "1.21, 1.21.1",
       "registryIgnored": [],
       "status": "ok",
@@ -4058,7 +4003,7 @@
       ]
     },
     {
-      "index": 65,
+      "index": 64,
       "name": "Rusher Discord Notifications",
       "repo": "KybesRusherhackPlugins/discord-notifications",
       "registry": "1.20.1",
@@ -4113,7 +4058,7 @@
       ]
     },
     {
-      "index": 66,
+      "index": 65,
       "name": "AutoBonemeal",
       "repo": "John200410/rusherhack-autobonemeal",
       "registry": "1.20.4",
@@ -4168,13 +4113,13 @@
       ]
     },
     {
-      "index": 67,
+      "index": 66,
       "name": "Rocket3",
       "repo": "PK268/Rocket3",
-      "registry": "1.20.1, 1.20.4, 1.20.6",
-      "registryExpanded": "1.20.1, 1.20.4, 1.20.6",
+      "registry": "1.20.1-1.20.6",
+      "registryExpanded": "1.20.1, 1.20.2, 1.20.3, 1.20.4, 1.20.5, 1.20.6",
       "registryIgnored": [],
-      "status": "ok",
+      "status": "registry-differs-from-project",
       "projectFilesChecked": [
         "src/main/resources/rusherhack-plugin.json",
         "gradle.properties"
@@ -4227,13 +4172,13 @@
       ]
     },
     {
-      "index": 68,
+      "index": 67,
       "name": "GarlicBreeder",
       "repo": "GarlicRot/GarlicBreeder",
-      "registry": "1.20.1, 1.20.2, 1.20.3, 1.20.4",
-      "registryExpanded": "1.20.1, 1.20.2, 1.20.3, 1.20.4",
+      "registry": "1.20.4",
+      "registryExpanded": "1.20.4",
       "registryIgnored": [],
-      "status": "ok",
+      "status": "registry-differs-from-project",
       "projectFilesChecked": [
         "src/main/resources/rusherhack-plugin.json",
         "gradle.properties"
@@ -4288,13 +4233,76 @@
       ]
     },
     {
-      "index": 69,
+      "index": 68,
       "name": "Rusher Item Saver",
       "repo": "KybesRusherhackPlugins/item-saver",
-      "registry": "1.21, 1.21.1, 1.21.2, 1.21.3, 1.21.4",
-      "registryExpanded": "1.21, 1.21.1, 1.21.2, 1.21.3, 1.21.4",
+      "registry": "1.21.1-1.21.4",
+      "registryExpanded": "1.21.1, 1.21.2, 1.21.3, 1.21.4",
       "registryIgnored": [],
-      "status": "ok",
+      "status": "registry-differs-from-project",
+      "projectFilesChecked": [
+        "src/main/resources/rusherhack-plugin.json",
+        "gradle.properties"
+      ],
+      "projectError": null,
+      "hasExplicitProjectSource": true,
+      "projectSuggestion": "1.21, 1.21.1, 1.21.2, 1.21.3, 1.21.4",
+      "chosenSources": [
+        {
+          "file": "src/main/resources/rusherhack-plugin.json",
+          "key": "Minecraft-Versions",
+          "raw": "${project.minecraft_version}, 1.21.1, 1.21.2, 1.21.3, 1.21.4",
+          "resolvedRaw": "1.21, 1.21.1, 1.21.2, 1.21.3, 1.21.4",
+          "versions": [
+            "1.21",
+            "1.21.1",
+            "1.21.2",
+            "1.21.3",
+            "1.21.4"
+          ],
+          "ignored": [],
+          "sourceType": "rusherhack-plugin-json"
+        }
+      ],
+      "allProjectFindings": [
+        {
+          "file": "src/main/resources/rusherhack-plugin.json",
+          "key": "Minecraft-Versions",
+          "raw": "${project.minecraft_version}, 1.21.1, 1.21.2, 1.21.3, 1.21.4",
+          "resolvedRaw": "1.21, 1.21.1, 1.21.2, 1.21.3, 1.21.4",
+          "versions": [
+            "1.21",
+            "1.21.1",
+            "1.21.2",
+            "1.21.3",
+            "1.21.4"
+          ],
+          "ignored": [],
+          "sourceType": "rusherhack-plugin-json",
+          "priority": 0
+        },
+        {
+          "file": "gradle.properties",
+          "key": "minecraft_version",
+          "raw": "1.21",
+          "resolvedRaw": "1.21",
+          "versions": [
+            "1.21"
+          ],
+          "ignored": [],
+          "sourceType": "gradle-properties",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "index": 69,
+      "name": "RusherHack Mace Swap",
+      "repo": "KybesRusherhackPlugins/mace-swap",
+      "registry": "1.21.1-1.21.4",
+      "registryExpanded": "1.21.1, 1.21.2, 1.21.3, 1.21.4",
+      "registryIgnored": [],
+      "status": "registry-differs-from-project",
       "projectFilesChecked": [
         "src/main/resources/rusherhack-plugin.json",
         "gradle.properties"
@@ -4352,75 +4360,12 @@
     },
     {
       "index": 70,
-      "name": "RusherHack Mace Swap",
-      "repo": "KybesRusherhackPlugins/mace-swap",
-      "registry": "1.21, 1.21.1, 1.21.2, 1.21.3, 1.21.4",
-      "registryExpanded": "1.21, 1.21.1, 1.21.2, 1.21.3, 1.21.4",
-      "registryIgnored": [],
-      "status": "ok",
-      "projectFilesChecked": [
-        "src/main/resources/rusherhack-plugin.json",
-        "gradle.properties"
-      ],
-      "projectError": null,
-      "hasExplicitProjectSource": true,
-      "projectSuggestion": "1.21, 1.21.1, 1.21.2, 1.21.3, 1.21.4",
-      "chosenSources": [
-        {
-          "file": "src/main/resources/rusherhack-plugin.json",
-          "key": "Minecraft-Versions",
-          "raw": "${project.minecraft_version}, 1.21.1, 1.21.2, 1.21.3, 1.21.4",
-          "resolvedRaw": "1.21, 1.21.1, 1.21.2, 1.21.3, 1.21.4",
-          "versions": [
-            "1.21",
-            "1.21.1",
-            "1.21.2",
-            "1.21.3",
-            "1.21.4"
-          ],
-          "ignored": [],
-          "sourceType": "rusherhack-plugin-json"
-        }
-      ],
-      "allProjectFindings": [
-        {
-          "file": "src/main/resources/rusherhack-plugin.json",
-          "key": "Minecraft-Versions",
-          "raw": "${project.minecraft_version}, 1.21.1, 1.21.2, 1.21.3, 1.21.4",
-          "resolvedRaw": "1.21, 1.21.1, 1.21.2, 1.21.3, 1.21.4",
-          "versions": [
-            "1.21",
-            "1.21.1",
-            "1.21.2",
-            "1.21.3",
-            "1.21.4"
-          ],
-          "ignored": [],
-          "sourceType": "rusherhack-plugin-json",
-          "priority": 0
-        },
-        {
-          "file": "gradle.properties",
-          "key": "minecraft_version",
-          "raw": "1.21",
-          "resolvedRaw": "1.21",
-          "versions": [
-            "1.21"
-          ],
-          "ignored": [],
-          "sourceType": "gradle-properties",
-          "priority": 1
-        }
-      ]
-    },
-    {
-      "index": 71,
       "name": "Example Core Plugin",
       "repo": "RusherDevelopment/example-core-plugin",
-      "registry": "1.20.1",
-      "registryExpanded": "1.20.1",
+      "registry": "N/A",
+      "registryExpanded": "",
       "registryIgnored": [],
-      "status": "ok",
+      "status": "registry-differs-from-project",
       "projectFilesChecked": [
         "src/main/resources/rusherhack-plugin.json",
         "gradle.properties"
@@ -4469,7 +4414,7 @@
       ]
     },
     {
-      "index": 72,
+      "index": 71,
       "name": "CrystalModifierRH",
       "repo": "xyzbtw/CrystalModifierRH",
       "registry": "1.21.1",
@@ -4524,13 +4469,13 @@
       ]
     },
     {
-      "index": 73,
+      "index": 72,
       "name": "Tablist Hats",
       "repo": "rfresh2/TablistHats-rusherhack",
-      "registry": "1.20.1, 1.20.2, 1.20.4, 1.20.6, 1.21, 1.21.1, 1.21.4, 1.21.11",
-      "registryExpanded": "1.20.1, 1.20.2, 1.20.4, 1.20.6, 1.21, 1.21.1, 1.21.4, 1.21.11",
+      "registry": "1.20.1-1.21.4",
+      "registryExpanded": "1.20.1, 1.20.2, 1.20.3, 1.20.4, 1.20.5, 1.20.6, 1.21, 1.21.1, 1.21.2, 1.21.3, 1.21.4",
       "registryIgnored": [],
-      "status": "ok",
+      "status": "registry-differs-from-project",
       "projectFilesChecked": [
         "src/main/resources/rusherhack-plugin.json",
         "gradle.properties"
@@ -4593,13 +4538,13 @@
       ]
     },
     {
-      "index": 74,
+      "index": 73,
       "name": "NoSound",
       "repo": "John200410/nosound",
-      "registry": "1.20.1, 1.20.2, 1.20.3, 1.20.4, 1.20.5, 1.20.6, 1.21, 1.21.1, 1.21.2, 1.21.3, 1.21.4",
-      "registryExpanded": "1.20.1, 1.20.2, 1.20.3, 1.20.4, 1.20.5, 1.20.6, 1.21, 1.21.1, 1.21.2, 1.21.3, 1.21.4",
+      "registry": "1.20.1-1.21.1",
+      "registryExpanded": "1.20.1, 1.20.2, 1.20.3, 1.20.4, 1.20.5, 1.20.6, 1.21, 1.21.1",
       "registryIgnored": [],
-      "status": "ok",
+      "status": "registry-differs-from-project",
       "projectFilesChecked": [
         "src/main/resources/rusherhack-plugin.json",
         "gradle.properties"
@@ -4668,10 +4613,10 @@
       ]
     },
     {
-      "index": 75,
+      "index": 74,
       "name": "Rusherhack Streamer Mode",
       "repo": "KybesRusherhackPlugins/streamer-mode",
-      "registry": "1.21.2, 1.21.3, 1.21.4",
+      "registry": "1.21.2-1.21.4",
       "registryExpanded": "1.21.2, 1.21.3, 1.21.4",
       "registryIgnored": [],
       "status": "ok",
@@ -4727,10 +4672,10 @@
       ]
     },
     {
-      "index": 76,
+      "index": 75,
       "name": "Rusher Auto Item Frame Dupe",
       "repo": "KybesRusherhackPlugins/auto-item-frame-dupe",
-      "registry": "1.21.1, 1.21.2, 1.21.3, 1.21.4",
+      "registry": "1.21.1-1.21.4",
       "registryExpanded": "1.21.1, 1.21.2, 1.21.3, 1.21.4",
       "registryIgnored": [],
       "status": "ok",
@@ -4788,7 +4733,7 @@
       ]
     },
     {
-      "index": 77,
+      "index": 76,
       "name": "RusherMoji",
       "repo": "Lokfid/RusherMoji",
       "registry": "1.21.4",
@@ -4843,7 +4788,7 @@
       ]
     },
     {
-      "index": 78,
+      "index": 77,
       "name": "RusherHack Piston Pusher",
       "repo": "KybesRusherhackPlugins/piston-pusher",
       "registry": "1.21.4",
@@ -4898,13 +4843,13 @@
       ]
     },
     {
-      "index": 79,
+      "index": 78,
       "name": "RusherUtils",
       "repo": "0tterware/RusherUtils",
-      "registry": "1.20.1, 1.20.2, 1.20.4, 1.20.6, 1.21, 1.21.1, 1.21.4",
-      "registryExpanded": "1.20.1, 1.20.2, 1.20.4, 1.20.6, 1.21, 1.21.1, 1.21.4",
+      "registry": "1.20.1-1.21.4",
+      "registryExpanded": "1.20.1, 1.20.2, 1.20.3, 1.20.4, 1.20.5, 1.20.6, 1.21, 1.21.1, 1.21.2, 1.21.3, 1.21.4",
       "registryIgnored": [],
-      "status": "ok",
+      "status": "registry-differs-from-project",
       "projectFilesChecked": [
         "src/main/resources/rusherhack-plugin.json",
         "gradle.properties"
@@ -4965,7 +4910,7 @@
       ]
     },
     {
-      "index": 80,
+      "index": 79,
       "name": "Rusher Grown ESP",
       "repo": "KybesRusherhackPlugins/crop-esp-nuker",
       "registry": "1.21.4",
@@ -5020,7 +4965,7 @@
       ]
     },
     {
-      "index": 81,
+      "index": 80,
       "name": "Rusherhack-SignFilter",
       "repo": "ToxicAven/Rusherhack-SignFilter",
       "registry": "1.21.4",
@@ -5075,13 +5020,13 @@
       ]
     },
     {
-      "index": 82,
+      "index": 81,
       "name": "Rusher-Vault-Helper",
       "repo": "KybesRusherhackPlugins/vault-helper",
-      "registry": "1.21, 1.21.1, 1.21.2, 1.21.4, 1.21.5",
-      "registryExpanded": "1.21, 1.21.1, 1.21.2, 1.21.4, 1.21.5",
+      "registry": "1.21.1-1.21.5",
+      "registryExpanded": "1.21.1, 1.21.2, 1.21.3, 1.21.4, 1.21.5",
       "registryIgnored": [],
-      "status": "ok",
+      "status": "registry-differs-from-project",
       "projectFilesChecked": [
         "src/main/resources/rusherhack-plugin.json",
         "gradle.properties"
@@ -5138,7 +5083,7 @@
       ]
     },
     {
-      "index": 83,
+      "index": 82,
       "name": "Rusher-Inventory-Drag",
       "repo": "KybesRusherhackPlugins/inventory-drag",
       "registry": "1.21.4",
@@ -5193,7 +5138,7 @@
       ]
     },
     {
-      "index": 84,
+      "index": 83,
       "name": "PlayerLogPlugin-RusherHack",
       "repo": "k4n3d4-sh0t4r0/PlayerLogPLugin-RusherHack",
       "registry": "1.21.4",
@@ -5248,13 +5193,76 @@
       ]
     },
     {
-      "index": 85,
+      "index": 84,
       "name": "BarrierESP-RusherHack",
       "repo": "k4n3d4-sh0t4r0/BarrierESP-RusherHack",
-      "registry": "1.21.1, 1.21.2, 1.21.3, 1.21.4, 1.21.11",
-      "registryExpanded": "1.21.1, 1.21.2, 1.21.3, 1.21.4, 1.21.11",
+      "registry": "1.21.4",
+      "registryExpanded": "1.21.4",
       "registryIgnored": [],
-      "status": "ok",
+      "status": "registry-differs-from-project",
+      "projectFilesChecked": [
+        "src/main/resources/rusherhack-plugin.json",
+        "gradle.properties"
+      ],
+      "projectError": null,
+      "hasExplicitProjectSource": true,
+      "projectSuggestion": "1.21.1, 1.21.2, 1.21.3, 1.21.4, 1.21.11",
+      "chosenSources": [
+        {
+          "file": "src/main/resources/rusherhack-plugin.json",
+          "key": "Minecraft-Versions",
+          "raw": "1.21.11, 1.21.4, 1.21.3, 1.21.2, 1.21.1",
+          "resolvedRaw": "1.21.11, 1.21.4, 1.21.3, 1.21.2, 1.21.1",
+          "versions": [
+            "1.21.1",
+            "1.21.2",
+            "1.21.3",
+            "1.21.4",
+            "1.21.11"
+          ],
+          "ignored": [],
+          "sourceType": "rusherhack-plugin-json"
+        }
+      ],
+      "allProjectFindings": [
+        {
+          "file": "src/main/resources/rusherhack-plugin.json",
+          "key": "Minecraft-Versions",
+          "raw": "1.21.11, 1.21.4, 1.21.3, 1.21.2, 1.21.1",
+          "resolvedRaw": "1.21.11, 1.21.4, 1.21.3, 1.21.2, 1.21.1",
+          "versions": [
+            "1.21.1",
+            "1.21.2",
+            "1.21.3",
+            "1.21.4",
+            "1.21.11"
+          ],
+          "ignored": [],
+          "sourceType": "rusherhack-plugin-json",
+          "priority": 0
+        },
+        {
+          "file": "gradle.properties",
+          "key": "minecraft_version",
+          "raw": "1.21.4",
+          "resolvedRaw": "1.21.4",
+          "versions": [
+            "1.21.4"
+          ],
+          "ignored": [],
+          "sourceType": "gradle-properties",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "index": 85,
+      "name": "FovLimiter-Rusherhack",
+      "repo": "k4n3d4-sh0t4r0/FovLimiter-Rusherhack",
+      "registry": "1.21.4",
+      "registryExpanded": "1.21.4",
+      "registryIgnored": [],
+      "status": "registry-differs-from-project",
       "projectFilesChecked": [
         "src/main/resources/rusherhack-plugin.json",
         "gradle.properties"
@@ -5312,12 +5320,12 @@
     },
     {
       "index": 86,
-      "name": "FovLimiter-Rusherhack",
-      "repo": "k4n3d4-sh0t4r0/FovLimiter-Rusherhack",
-      "registry": "1.21.1, 1.21.2, 1.21.3, 1.21.4, 1.21.11",
-      "registryExpanded": "1.21.1, 1.21.2, 1.21.3, 1.21.4, 1.21.11",
+      "name": "NoJumpDelay-Rusherhack",
+      "repo": "k4n3d4-sh0t4r0/NoJumpDelay-Rusherhack",
+      "registry": "1.21.4",
+      "registryExpanded": "1.21.4",
       "registryIgnored": [],
-      "status": "ok",
+      "status": "registry-differs-from-project",
       "projectFilesChecked": [
         "src/main/resources/rusherhack-plugin.json",
         "gradle.properties"
@@ -5375,12 +5383,12 @@
     },
     {
       "index": 87,
-      "name": "NoJumpDelay-Rusherhack",
-      "repo": "k4n3d4-sh0t4r0/NoJumpDelay-Rusherhack",
-      "registry": "1.21.1, 1.21.2, 1.21.3, 1.21.4, 1.21.11",
-      "registryExpanded": "1.21.1, 1.21.2, 1.21.3, 1.21.4, 1.21.11",
+      "name": "HideNightVision-RusherHack",
+      "repo": "k4n3d4-sh0t4r0/HideNightVision-RusherHack",
+      "registry": "1.21.4",
+      "registryExpanded": "1.21.4",
       "registryIgnored": [],
-      "status": "ok",
+      "status": "registry-differs-from-project",
       "projectFilesChecked": [
         "src/main/resources/rusherhack-plugin.json",
         "gradle.properties"
@@ -5438,69 +5446,6 @@
     },
     {
       "index": 88,
-      "name": "HideNightVision-RusherHack",
-      "repo": "k4n3d4-sh0t4r0/HideNightVision-RusherHack",
-      "registry": "1.21.1, 1.21.2, 1.21.3, 1.21.4, 1.21.11",
-      "registryExpanded": "1.21.1, 1.21.2, 1.21.3, 1.21.4, 1.21.11",
-      "registryIgnored": [],
-      "status": "ok",
-      "projectFilesChecked": [
-        "src/main/resources/rusherhack-plugin.json",
-        "gradle.properties"
-      ],
-      "projectError": null,
-      "hasExplicitProjectSource": true,
-      "projectSuggestion": "1.21.1, 1.21.2, 1.21.3, 1.21.4, 1.21.11",
-      "chosenSources": [
-        {
-          "file": "src/main/resources/rusherhack-plugin.json",
-          "key": "Minecraft-Versions",
-          "raw": "1.21.11, 1.21.4, 1.21.3, 1.21.2, 1.21.1",
-          "resolvedRaw": "1.21.11, 1.21.4, 1.21.3, 1.21.2, 1.21.1",
-          "versions": [
-            "1.21.1",
-            "1.21.2",
-            "1.21.3",
-            "1.21.4",
-            "1.21.11"
-          ],
-          "ignored": [],
-          "sourceType": "rusherhack-plugin-json"
-        }
-      ],
-      "allProjectFindings": [
-        {
-          "file": "src/main/resources/rusherhack-plugin.json",
-          "key": "Minecraft-Versions",
-          "raw": "1.21.11, 1.21.4, 1.21.3, 1.21.2, 1.21.1",
-          "resolvedRaw": "1.21.11, 1.21.4, 1.21.3, 1.21.2, 1.21.1",
-          "versions": [
-            "1.21.1",
-            "1.21.2",
-            "1.21.3",
-            "1.21.4",
-            "1.21.11"
-          ],
-          "ignored": [],
-          "sourceType": "rusherhack-plugin-json",
-          "priority": 0
-        },
-        {
-          "file": "gradle.properties",
-          "key": "minecraft_version",
-          "raw": "1.21.4",
-          "resolvedRaw": "1.21.4",
-          "versions": [
-            "1.21.4"
-          ],
-          "ignored": [],
-          "sourceType": "gradle-properties",
-          "priority": 1
-        }
-      ]
-    },
-    {
-      "index": 89,
       "name": "rusherhack-kybes-utils",
       "repo": "KybesRusherhackPlugins/kybes-utils",
       "registry": "1.21.4",
@@ -5555,13 +5500,13 @@
       ]
     },
     {
-      "index": 90,
+      "index": 89,
       "name": "AutoAnvilRename",
       "repo": "musheck/AutoAnvilRename",
-      "registry": "1.20.1, 1.20.2, 1.20.3, 1.20.4, 1.21.1, 1.21.4",
-      "registryExpanded": "1.20.1, 1.20.2, 1.20.3, 1.20.4, 1.21.1, 1.21.4",
+      "registry": "1.20.1-1.21.4",
+      "registryExpanded": "1.20.1, 1.20.2, 1.20.3, 1.20.4, 1.20.5, 1.20.6, 1.21, 1.21.1, 1.21.2, 1.21.3, 1.21.4",
       "registryIgnored": [],
-      "status": "ok",
+      "status": "registry-differs-from-project",
       "projectFilesChecked": [
         "src/main/resources/rusherhack-plugin.json",
         "gradle.properties"
@@ -5620,7 +5565,7 @@
       ]
     },
     {
-      "index": 91,
+      "index": 90,
       "name": "rusher-auto-kit-maker",
       "repo": "KybesRusherhackPlugins/auto-kit-maker",
       "registry": "1.21.4",
@@ -5675,10 +5620,71 @@
       ]
     },
     {
-      "index": 92,
+      "index": 91,
       "name": "rusherhack-shell-integration",
       "repo": "tillay/rusherhack-shell-integration",
-      "registry": "1.21.1, 1.21.2, 1.21.3, 1.21.4",
+      "registry": "1.21.1-1.21.4",
+      "registryExpanded": "1.21.1, 1.21.2, 1.21.3, 1.21.4",
+      "registryIgnored": [],
+      "status": "ok",
+      "projectFilesChecked": [
+        "src/main/resources/rusherhack-plugin.json",
+        "gradle.properties"
+      ],
+      "projectError": null,
+      "hasExplicitProjectSource": true,
+      "projectSuggestion": "1.21.1, 1.21.2, 1.21.3, 1.21.4",
+      "chosenSources": [
+        {
+          "file": "src/main/resources/rusherhack-plugin.json",
+          "key": "Minecraft-Versions",
+          "raw": "1.21.4, 1.21.3, 1.21.2, 1.21.1",
+          "resolvedRaw": "1.21.4, 1.21.3, 1.21.2, 1.21.1",
+          "versions": [
+            "1.21.1",
+            "1.21.2",
+            "1.21.3",
+            "1.21.4"
+          ],
+          "ignored": [],
+          "sourceType": "rusherhack-plugin-json"
+        }
+      ],
+      "allProjectFindings": [
+        {
+          "file": "src/main/resources/rusherhack-plugin.json",
+          "key": "Minecraft-Versions",
+          "raw": "1.21.4, 1.21.3, 1.21.2, 1.21.1",
+          "resolvedRaw": "1.21.4, 1.21.3, 1.21.2, 1.21.1",
+          "versions": [
+            "1.21.1",
+            "1.21.2",
+            "1.21.3",
+            "1.21.4"
+          ],
+          "ignored": [],
+          "sourceType": "rusherhack-plugin-json",
+          "priority": 0
+        },
+        {
+          "file": "gradle.properties",
+          "key": "minecraft_version",
+          "raw": "1.21.4",
+          "resolvedRaw": "1.21.4",
+          "versions": [
+            "1.21.4"
+          ],
+          "ignored": [],
+          "sourceType": "gradle-properties",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "index": 92,
+      "name": "rusherhack-SmartBounce",
+      "repo": "tillay/rusherhack-SmartBounce",
+      "registry": "1.21.1-1.21.4",
       "registryExpanded": "1.21.1, 1.21.2, 1.21.3, 1.21.4",
       "registryIgnored": [],
       "status": "ok",
@@ -5737,9 +5743,64 @@
     },
     {
       "index": 93,
-      "name": "rusherhack-SmartBounce",
-      "repo": "tillay/rusherhack-SmartBounce",
-      "registry": "1.21.1, 1.21.2, 1.21.3, 1.21.4",
+      "name": "AutoRegear",
+      "repo": "KybesRusherhackPlugins/auto-regear",
+      "registry": "1.21.4",
+      "registryExpanded": "1.21.4",
+      "registryIgnored": [],
+      "status": "ok",
+      "projectFilesChecked": [
+        "src/main/resources/rusherhack-plugin.json",
+        "gradle.properties"
+      ],
+      "projectError": null,
+      "hasExplicitProjectSource": true,
+      "projectSuggestion": "1.21.4",
+      "chosenSources": [
+        {
+          "file": "src/main/resources/rusherhack-plugin.json",
+          "key": "Minecraft-Versions",
+          "raw": "${project.minecraft_version}",
+          "resolvedRaw": "1.21.4",
+          "versions": [
+            "1.21.4"
+          ],
+          "ignored": [],
+          "sourceType": "rusherhack-plugin-json"
+        }
+      ],
+      "allProjectFindings": [
+        {
+          "file": "src/main/resources/rusherhack-plugin.json",
+          "key": "Minecraft-Versions",
+          "raw": "${project.minecraft_version}",
+          "resolvedRaw": "1.21.4",
+          "versions": [
+            "1.21.4"
+          ],
+          "ignored": [],
+          "sourceType": "rusherhack-plugin-json",
+          "priority": 0
+        },
+        {
+          "file": "gradle.properties",
+          "key": "minecraft_version",
+          "raw": "1.21.4",
+          "resolvedRaw": "1.21.4",
+          "versions": [
+            "1.21.4"
+          ],
+          "ignored": [],
+          "sourceType": "gradle-properties",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "index": 94,
+      "name": "rusherhack-rusherman",
+      "repo": "tillay/rusherhack-rusherman",
+      "registry": "1.21.1-1.21.4",
       "registryExpanded": "1.21.1, 1.21.2, 1.21.3, 1.21.4",
       "registryIgnored": [],
       "status": "ok",
@@ -5797,65 +5858,10 @@
       ]
     },
     {
-      "index": 94,
-      "name": "AutoRegear",
-      "repo": "KybesRusherhackPlugins/auto-regear",
-      "registry": "1.21.4",
-      "registryExpanded": "1.21.4",
-      "registryIgnored": [],
-      "status": "ok",
-      "projectFilesChecked": [
-        "src/main/resources/rusherhack-plugin.json",
-        "gradle.properties"
-      ],
-      "projectError": null,
-      "hasExplicitProjectSource": true,
-      "projectSuggestion": "1.21.4",
-      "chosenSources": [
-        {
-          "file": "src/main/resources/rusherhack-plugin.json",
-          "key": "Minecraft-Versions",
-          "raw": "${project.minecraft_version}",
-          "resolvedRaw": "1.21.4",
-          "versions": [
-            "1.21.4"
-          ],
-          "ignored": [],
-          "sourceType": "rusherhack-plugin-json"
-        }
-      ],
-      "allProjectFindings": [
-        {
-          "file": "src/main/resources/rusherhack-plugin.json",
-          "key": "Minecraft-Versions",
-          "raw": "${project.minecraft_version}",
-          "resolvedRaw": "1.21.4",
-          "versions": [
-            "1.21.4"
-          ],
-          "ignored": [],
-          "sourceType": "rusherhack-plugin-json",
-          "priority": 0
-        },
-        {
-          "file": "gradle.properties",
-          "key": "minecraft_version",
-          "raw": "1.21.4",
-          "resolvedRaw": "1.21.4",
-          "versions": [
-            "1.21.4"
-          ],
-          "ignored": [],
-          "sourceType": "gradle-properties",
-          "priority": 1
-        }
-      ]
-    },
-    {
       "index": 95,
-      "name": "rusherhack-rusherman",
-      "repo": "tillay/rusherhack-rusherman",
-      "registry": "1.21.1, 1.21.2, 1.21.3, 1.21.4",
+      "name": "rusherhack-instantloader",
+      "repo": "tillay/rusherhack-InstantLoader",
+      "registry": "1.21.1-1.21.4",
       "registryExpanded": "1.21.1, 1.21.2, 1.21.3, 1.21.4",
       "registryIgnored": [],
       "status": "ok",
@@ -5914,9 +5920,9 @@
     },
     {
       "index": 96,
-      "name": "rusherhack-instantloader",
-      "repo": "tillay/rusherhack-InstantLoader",
-      "registry": "1.21.1, 1.21.2, 1.21.3, 1.21.4",
+      "name": "rusher-waifu-integration",
+      "repo": "tillay/rusher-waifu-integration",
+      "registry": "1.21.1-1.21.4",
       "registryExpanded": "1.21.1, 1.21.2, 1.21.3, 1.21.4",
       "registryIgnored": [],
       "status": "ok",
@@ -5975,9 +5981,176 @@
     },
     {
       "index": 97,
-      "name": "rusher-waifu-integration",
-      "repo": "tillay/rusher-waifu-integration",
-      "registry": "1.21.1, 1.21.2, 1.21.3, 1.21.4",
+      "name": "AutoIgnorehard",
+      "repo": "IceTank/RusherHack-AutoIgnorehard",
+      "registry": "1.21.4",
+      "registryExpanded": "1.21.4",
+      "registryIgnored": [],
+      "status": "ok",
+      "projectFilesChecked": [
+        "src/main/resources/rusherhack-plugin.json",
+        "gradle.properties"
+      ],
+      "projectError": null,
+      "hasExplicitProjectSource": true,
+      "projectSuggestion": "1.21.4",
+      "chosenSources": [
+        {
+          "file": "src/main/resources/rusherhack-plugin.json",
+          "key": "Minecraft-Versions",
+          "raw": "${project.minecraft_version}",
+          "resolvedRaw": "1.21.4",
+          "versions": [
+            "1.21.4"
+          ],
+          "ignored": [],
+          "sourceType": "rusherhack-plugin-json"
+        }
+      ],
+      "allProjectFindings": [
+        {
+          "file": "src/main/resources/rusherhack-plugin.json",
+          "key": "Minecraft-Versions",
+          "raw": "${project.minecraft_version}",
+          "resolvedRaw": "1.21.4",
+          "versions": [
+            "1.21.4"
+          ],
+          "ignored": [],
+          "sourceType": "rusherhack-plugin-json",
+          "priority": 0
+        },
+        {
+          "file": "gradle.properties",
+          "key": "minecraft_version",
+          "raw": "1.21.4",
+          "resolvedRaw": "1.21.4",
+          "versions": [
+            "1.21.4"
+          ],
+          "ignored": [],
+          "sourceType": "gradle-properties",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "index": 98,
+      "name": "Cockpit",
+      "repo": "TehPicix/rusherhack-Cockpit",
+      "registry": "1.21.1-1.21.4",
+      "registryExpanded": "1.21.1, 1.21.2, 1.21.3, 1.21.4",
+      "registryIgnored": [],
+      "status": "registry-differs-from-project",
+      "projectFilesChecked": [
+        "src/main/resources/rusherhack-plugin.json",
+        "gradle.properties"
+      ],
+      "projectError": null,
+      "hasExplicitProjectSource": true,
+      "projectSuggestion": "1.21.1, 1.21.4",
+      "chosenSources": [
+        {
+          "file": "src/main/resources/rusherhack-plugin.json",
+          "key": "Minecraft-Versions",
+          "raw": "1.21.1, 1.21.4",
+          "resolvedRaw": "1.21.1, 1.21.4",
+          "versions": [
+            "1.21.1",
+            "1.21.4"
+          ],
+          "ignored": [],
+          "sourceType": "rusherhack-plugin-json"
+        }
+      ],
+      "allProjectFindings": [
+        {
+          "file": "src/main/resources/rusherhack-plugin.json",
+          "key": "Minecraft-Versions",
+          "raw": "1.21.1, 1.21.4",
+          "resolvedRaw": "1.21.1, 1.21.4",
+          "versions": [
+            "1.21.1",
+            "1.21.4"
+          ],
+          "ignored": [],
+          "sourceType": "rusherhack-plugin-json",
+          "priority": 0
+        },
+        {
+          "file": "gradle.properties",
+          "key": "minecraft_version",
+          "raw": "1.21.4",
+          "resolvedRaw": "1.21.4",
+          "versions": [
+            "1.21.4"
+          ],
+          "ignored": [],
+          "sourceType": "gradle-properties",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "index": 99,
+      "name": "ChatFilter",
+      "repo": "TehPicix/rusherhack-ChatFilter",
+      "registry": "1.21.4",
+      "registryExpanded": "1.21.4",
+      "registryIgnored": [],
+      "status": "ok",
+      "projectFilesChecked": [
+        "src/main/resources/rusherhack-plugin.json",
+        "gradle.properties"
+      ],
+      "projectError": null,
+      "hasExplicitProjectSource": true,
+      "projectSuggestion": "1.21.4",
+      "chosenSources": [
+        {
+          "file": "src/main/resources/rusherhack-plugin.json",
+          "key": "Minecraft-Versions",
+          "raw": "${project.minecraft_version}",
+          "resolvedRaw": "1.21.4",
+          "versions": [
+            "1.21.4"
+          ],
+          "ignored": [],
+          "sourceType": "rusherhack-plugin-json"
+        }
+      ],
+      "allProjectFindings": [
+        {
+          "file": "src/main/resources/rusherhack-plugin.json",
+          "key": "Minecraft-Versions",
+          "raw": "${project.minecraft_version}",
+          "resolvedRaw": "1.21.4",
+          "versions": [
+            "1.21.4"
+          ],
+          "ignored": [],
+          "sourceType": "rusherhack-plugin-json",
+          "priority": 0
+        },
+        {
+          "file": "gradle.properties",
+          "key": "minecraft_version",
+          "raw": "1.21.4",
+          "resolvedRaw": "1.21.4",
+          "versions": [
+            "1.21.4"
+          ],
+          "ignored": [],
+          "sourceType": "gradle-properties",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "index": 100,
+      "name": "rusherhack-ai-integration",
+      "repo": "tillay/rusherhack-ai-integration",
+      "registry": "1.21.1-1.21.4",
       "registryExpanded": "1.21.1, 1.21.2, 1.21.3, 1.21.4",
       "registryIgnored": [],
       "status": "ok",
@@ -6035,177 +6208,10 @@
       ]
     },
     {
-      "index": 98,
-      "name": "AutoIgnorehard",
-      "repo": "IceTank/RusherHack-AutoIgnorehard",
-      "registry": "1.21.4",
-      "registryExpanded": "1.21.4",
-      "registryIgnored": [],
-      "status": "ok",
-      "projectFilesChecked": [
-        "src/main/resources/rusherhack-plugin.json",
-        "gradle.properties"
-      ],
-      "projectError": null,
-      "hasExplicitProjectSource": true,
-      "projectSuggestion": "1.21.4",
-      "chosenSources": [
-        {
-          "file": "src/main/resources/rusherhack-plugin.json",
-          "key": "Minecraft-Versions",
-          "raw": "${project.minecraft_version}",
-          "resolvedRaw": "1.21.4",
-          "versions": [
-            "1.21.4"
-          ],
-          "ignored": [],
-          "sourceType": "rusherhack-plugin-json"
-        }
-      ],
-      "allProjectFindings": [
-        {
-          "file": "src/main/resources/rusherhack-plugin.json",
-          "key": "Minecraft-Versions",
-          "raw": "${project.minecraft_version}",
-          "resolvedRaw": "1.21.4",
-          "versions": [
-            "1.21.4"
-          ],
-          "ignored": [],
-          "sourceType": "rusherhack-plugin-json",
-          "priority": 0
-        },
-        {
-          "file": "gradle.properties",
-          "key": "minecraft_version",
-          "raw": "1.21.4",
-          "resolvedRaw": "1.21.4",
-          "versions": [
-            "1.21.4"
-          ],
-          "ignored": [],
-          "sourceType": "gradle-properties",
-          "priority": 1
-        }
-      ]
-    },
-    {
-      "index": 99,
-      "name": "Cockpit",
-      "repo": "TehPicix/rusherhack-Cockpit",
-      "registry": "1.21.1, 1.21.4",
-      "registryExpanded": "1.21.1, 1.21.4",
-      "registryIgnored": [],
-      "status": "ok",
-      "projectFilesChecked": [
-        "src/main/resources/rusherhack-plugin.json",
-        "gradle.properties"
-      ],
-      "projectError": null,
-      "hasExplicitProjectSource": true,
-      "projectSuggestion": "1.21.1, 1.21.4",
-      "chosenSources": [
-        {
-          "file": "src/main/resources/rusherhack-plugin.json",
-          "key": "Minecraft-Versions",
-          "raw": "1.21.1, 1.21.4",
-          "resolvedRaw": "1.21.1, 1.21.4",
-          "versions": [
-            "1.21.1",
-            "1.21.4"
-          ],
-          "ignored": [],
-          "sourceType": "rusherhack-plugin-json"
-        }
-      ],
-      "allProjectFindings": [
-        {
-          "file": "src/main/resources/rusherhack-plugin.json",
-          "key": "Minecraft-Versions",
-          "raw": "1.21.1, 1.21.4",
-          "resolvedRaw": "1.21.1, 1.21.4",
-          "versions": [
-            "1.21.1",
-            "1.21.4"
-          ],
-          "ignored": [],
-          "sourceType": "rusherhack-plugin-json",
-          "priority": 0
-        },
-        {
-          "file": "gradle.properties",
-          "key": "minecraft_version",
-          "raw": "1.21.4",
-          "resolvedRaw": "1.21.4",
-          "versions": [
-            "1.21.4"
-          ],
-          "ignored": [],
-          "sourceType": "gradle-properties",
-          "priority": 1
-        }
-      ]
-    },
-    {
-      "index": 100,
-      "name": "ChatFilter",
-      "repo": "TehPicix/rusherhack-ChatFilter",
-      "registry": "1.21.4",
-      "registryExpanded": "1.21.4",
-      "registryIgnored": [],
-      "status": "ok",
-      "projectFilesChecked": [
-        "src/main/resources/rusherhack-plugin.json",
-        "gradle.properties"
-      ],
-      "projectError": null,
-      "hasExplicitProjectSource": true,
-      "projectSuggestion": "1.21.4",
-      "chosenSources": [
-        {
-          "file": "src/main/resources/rusherhack-plugin.json",
-          "key": "Minecraft-Versions",
-          "raw": "${project.minecraft_version}",
-          "resolvedRaw": "1.21.4",
-          "versions": [
-            "1.21.4"
-          ],
-          "ignored": [],
-          "sourceType": "rusherhack-plugin-json"
-        }
-      ],
-      "allProjectFindings": [
-        {
-          "file": "src/main/resources/rusherhack-plugin.json",
-          "key": "Minecraft-Versions",
-          "raw": "${project.minecraft_version}",
-          "resolvedRaw": "1.21.4",
-          "versions": [
-            "1.21.4"
-          ],
-          "ignored": [],
-          "sourceType": "rusherhack-plugin-json",
-          "priority": 0
-        },
-        {
-          "file": "gradle.properties",
-          "key": "minecraft_version",
-          "raw": "1.21.4",
-          "resolvedRaw": "1.21.4",
-          "versions": [
-            "1.21.4"
-          ],
-          "ignored": [],
-          "sourceType": "gradle-properties",
-          "priority": 1
-        }
-      ]
-    },
-    {
       "index": 101,
-      "name": "rusherhack-ai-integration",
-      "repo": "tillay/rusherhack-ai-integration",
-      "registry": "1.21.1, 1.21.2, 1.21.3, 1.21.4",
+      "name": "Elytra Trajectories",
+      "repo": "tillay-rh-plugins/elytra-trajectories",
+      "registry": "1.21.1-1.21.4",
       "registryExpanded": "1.21.1, 1.21.2, 1.21.3, 1.21.4",
       "registryIgnored": [],
       "status": "ok",
@@ -6264,9 +6270,9 @@
     },
     {
       "index": 102,
-      "name": "Elytra Trajectories",
-      "repo": "tillay-rh-plugins/elytra-trajectories",
-      "registry": "1.21.1, 1.21.2, 1.21.3, 1.21.4",
+      "name": "AutoReload",
+      "repo": "tillay-rh-plugins/autoreload",
+      "registry": "1.21.1-1.21.4",
       "registryExpanded": "1.21.1, 1.21.2, 1.21.3, 1.21.4",
       "registryIgnored": [],
       "status": "ok",
@@ -6281,8 +6287,8 @@
         {
           "file": "src/main/resources/rusherhack-plugin.json",
           "key": "Minecraft-Versions",
-          "raw": "1.21.4, 1.21.3, 1.21.2, 1.21.1",
-          "resolvedRaw": "1.21.4, 1.21.3, 1.21.2, 1.21.1",
+          "raw": "1.21.1, 1.21.2, 1.21.3, 1.21.4",
+          "resolvedRaw": "1.21.1, 1.21.2, 1.21.3, 1.21.4",
           "versions": [
             "1.21.1",
             "1.21.2",
@@ -6297,8 +6303,8 @@
         {
           "file": "src/main/resources/rusherhack-plugin.json",
           "key": "Minecraft-Versions",
-          "raw": "1.21.4, 1.21.3, 1.21.2, 1.21.1",
-          "resolvedRaw": "1.21.4, 1.21.3, 1.21.2, 1.21.1",
+          "raw": "1.21.1, 1.21.2, 1.21.3, 1.21.4",
+          "resolvedRaw": "1.21.1, 1.21.2, 1.21.3, 1.21.4",
           "versions": [
             "1.21.1",
             "1.21.2",
@@ -6325,67 +6331,6 @@
     },
     {
       "index": 103,
-      "name": "AutoReload",
-      "repo": "tillay-rh-plugins/autoreload",
-      "registry": "1.21.1, 1.21.2, 1.21.3, 1.21.4",
-      "registryExpanded": "1.21.1, 1.21.2, 1.21.3, 1.21.4",
-      "registryIgnored": [],
-      "status": "ok",
-      "projectFilesChecked": [
-        "src/main/resources/rusherhack-plugin.json",
-        "gradle.properties"
-      ],
-      "projectError": null,
-      "hasExplicitProjectSource": true,
-      "projectSuggestion": "1.21.1, 1.21.2, 1.21.3, 1.21.4",
-      "chosenSources": [
-        {
-          "file": "src/main/resources/rusherhack-plugin.json",
-          "key": "Minecraft-Versions",
-          "raw": "1.21.1, 1.21.2, 1.21.3, 1.21.4",
-          "resolvedRaw": "1.21.1, 1.21.2, 1.21.3, 1.21.4",
-          "versions": [
-            "1.21.1",
-            "1.21.2",
-            "1.21.3",
-            "1.21.4"
-          ],
-          "ignored": [],
-          "sourceType": "rusherhack-plugin-json"
-        }
-      ],
-      "allProjectFindings": [
-        {
-          "file": "src/main/resources/rusherhack-plugin.json",
-          "key": "Minecraft-Versions",
-          "raw": "1.21.1, 1.21.2, 1.21.3, 1.21.4",
-          "resolvedRaw": "1.21.1, 1.21.2, 1.21.3, 1.21.4",
-          "versions": [
-            "1.21.1",
-            "1.21.2",
-            "1.21.3",
-            "1.21.4"
-          ],
-          "ignored": [],
-          "sourceType": "rusherhack-plugin-json",
-          "priority": 0
-        },
-        {
-          "file": "gradle.properties",
-          "key": "minecraft_version",
-          "raw": "1.21.4",
-          "resolvedRaw": "1.21.4",
-          "versions": [
-            "1.21.4"
-          ],
-          "ignored": [],
-          "sourceType": "gradle-properties",
-          "priority": 1
-        }
-      ]
-    },
-    {
-      "index": 104,
       "name": "hw-efly-tweaks",
       "repo": "KybesRusherhackPlugins/hw-efly-tweaks",
       "registry": "1.21.4",
@@ -6440,7 +6385,7 @@
       ]
     },
     {
-      "index": 105,
+      "index": 104,
       "name": "icaemas-tweaks",
       "repo": "icaema/icaemas-tweaks",
       "registry": "1.21.4",
@@ -6495,7 +6440,7 @@
       ]
     },
     {
-      "index": 106,
+      "index": 105,
       "name": "AutoFirework",
       "repo": "tillay-rh-plugins/AutoFirework",
       "registry": "1.21.4",
@@ -6550,7 +6495,7 @@
       ]
     },
     {
-      "index": 107,
+      "index": 106,
       "name": "AutoMend",
       "repo": "icaema/auto-mend",
       "registry": "1.21.4",
@@ -6605,7 +6550,7 @@
       ]
     },
     {
-      "index": 108,
+      "index": 107,
       "name": "Stopwatch",
       "repo": "icaema/rusherhacks-stopwatch",
       "registry": "1.21.4",
@@ -6660,7 +6605,7 @@
       ]
     },
     {
-      "index": 109,
+      "index": 108,
       "name": "RusherHack Speedometer",
       "repo": "tillay-rh-plugins/rusherhack-speedometer",
       "registry": "1.21.4",
@@ -6715,7 +6660,7 @@
       ]
     },
     {
-      "index": 110,
+      "index": 109,
       "name": "Example Chatbot",
       "repo": "tillay-rh-plugins/example-chatbot",
       "registry": "1.21.4",
@@ -6770,7 +6715,7 @@
       ]
     },
     {
-      "index": 111,
+      "index": 110,
       "name": "Polar Spiral EFly",
       "repo": "tillay-rh-plugins/polar-spiral-efly",
       "registry": "1.21.4",
@@ -6825,7 +6770,7 @@
       ]
     },
     {
-      "index": 112,
+      "index": 111,
       "name": "HighwayBuilder",
       "repo": "musheck/mushack",
       "registry": "1.21.4",
@@ -6880,7 +6825,7 @@
       ]
     },
     {
-      "index": 113,
+      "index": 112,
       "name": "Favorite Modules",
       "repo": "tillay-rh-plugins/favorite-modules",
       "registry": "1.21.4",
@@ -6935,7 +6880,7 @@
       ]
     },
     {
-      "index": 114,
+      "index": 113,
       "name": "Ram Usage HUD",
       "repo": "tillay-rh-plugins/ram-usage-hud",
       "registry": "1.21.4",
@@ -6990,10 +6935,10 @@
       ]
     },
     {
-      "index": 115,
+      "index": 114,
       "name": "RusherChat",
       "repo": "GarlicRot/RusherChat",
-      "registry": "1.20.1, 1.20.2, 1.20.3, 1.20.4, 1.20.5, 1.20.6, 1.21, 1.21.1, 1.21.2, 1.21.3, 1.21.4",
+      "registry": "1.20.1-1.21.4",
       "registryExpanded": "1.20.1, 1.20.2, 1.20.3, 1.20.4, 1.20.5, 1.20.6, 1.21, 1.21.1, 1.21.2, 1.21.3, 1.21.4",
       "registryIgnored": [],
       "status": "ok",
@@ -7065,13 +7010,13 @@
       ]
     },
     {
-      "index": 116,
+      "index": 115,
       "name": "AutoAmethyst",
       "repo": "GarlicRot/AutoAmethyst",
-      "registry": "1.20.6, 1.21.1, 1.21.3, 1.21.4",
-      "registryExpanded": "1.20.6, 1.21.1, 1.21.3, 1.21.4",
+      "registry": "1.21.4",
+      "registryExpanded": "1.21.4",
       "registryIgnored": [],
-      "status": "ok",
+      "status": "registry-differs-from-project",
       "projectFilesChecked": [
         "src/main/resources/rusherhack-plugin.json",
         "gradle.properties"
@@ -7126,7 +7071,7 @@
       ]
     },
     {
-      "index": 117,
+      "index": 116,
       "name": "PlayerTracker",
       "repo": "maggyabby/playertracker-plugin",
       "registry": "1.21.4",
@@ -7181,7 +7126,7 @@
       ]
     },
     {
-      "index": 118,
+      "index": 117,
       "name": "More Huds",
       "repo": "FelekDevYT/MoreHuds-rusherhack",
       "registry": "1.21.4",
@@ -7236,7 +7181,7 @@
       ]
     },
     {
-      "index": 119,
+      "index": 118,
       "name": "RusherClicker",
       "repo": "FelekDevYT/RusherClicker",
       "registry": "1.21.4",
@@ -7291,7 +7236,7 @@
       ]
     },
     {
-      "index": 120,
+      "index": 119,
       "name": "packets_in_out",
       "repo": "KybesRusherhackPlugins/packets_in_out",
       "registry": "1.21.4",
@@ -7346,7 +7291,7 @@
       ]
     },
     {
-      "index": 121,
+      "index": 120,
       "name": "hotbar_randomizer",
       "repo": "KybesRusherhackPlugins/hotbar_randomizer",
       "registry": "1.21.4",
@@ -7401,7 +7346,7 @@
       ]
     },
     {
-      "index": 122,
+      "index": 121,
       "name": "RusherSearchTweaks",
       "repo": "hx-4/RusherSearchTweaks",
       "registry": "1.21.4",
@@ -7456,7 +7401,7 @@
       ]
     },
     {
-      "index": 123,
+      "index": 122,
       "name": "RusherAutoMend",
       "repo": "hx-4/RusherAutoMend",
       "registry": "1.21.4",
@@ -7511,13 +7456,13 @@
       ]
     },
     {
-      "index": 124,
+      "index": 123,
       "name": "Phoenix",
       "repo": "FelekDevYT/phoenix",
-      "registry": "1.21.11",
-      "registryExpanded": "1.21.11",
+      "registry": "1.21.4-1.21.11",
+      "registryExpanded": "1.21.4, 1.21.5, 1.21.6, 1.21.7, 1.21.8, 1.21.9, 1.21.10, 1.21.11",
       "registryIgnored": [],
-      "status": "ok",
+      "status": "registry-differs-from-project",
       "projectFilesChecked": [
         "src/main/resources/rusherhack-plugin.json",
         "gradle.properties"
@@ -7566,7 +7511,7 @@
       ]
     },
     {
-      "index": 125,
+      "index": 124,
       "name": "Xaero-Waypoints-ETA",
       "repo": "hx-4/Xaero-Waypoints-ETA",
       "registry": "1.21.4",
@@ -7621,13 +7566,343 @@
       ]
     },
     {
-      "index": 126,
-      "name": "Nhack Theme",
-      "repo": "h1tm4nqq/Nhack-theme",
-      "registry": "1.20.1, 1.20.2, 1.20.3, 1.20.4, 1.20.5, 1.20.6, 1.21, 1.21.1, 1.21.4",
-      "registryExpanded": "1.20.1, 1.20.2, 1.20.3, 1.20.4, 1.20.5, 1.20.6, 1.21, 1.21.1, 1.21.4",
+      "index": 125,
+      "name": "Rusher Utils",
+      "repo": "emirplus/Rusher-Utils",
+      "registry": "1.21.11",
+      "registryExpanded": "1.21.11",
       "registryIgnored": [],
       "status": "ok",
+      "projectFilesChecked": [
+        "src/main/resources/rusherhack-plugin.json",
+        "gradle.properties"
+      ],
+      "projectError": null,
+      "hasExplicitProjectSource": true,
+      "projectSuggestion": "1.21.11",
+      "chosenSources": [
+        {
+          "file": "src/main/resources/rusherhack-plugin.json",
+          "key": "Minecraft-Versions",
+          "raw": "${project.minecraft_version}",
+          "resolvedRaw": "1.21.11",
+          "versions": [
+            "1.21.11"
+          ],
+          "ignored": [],
+          "sourceType": "rusherhack-plugin-json"
+        }
+      ],
+      "allProjectFindings": [
+        {
+          "file": "src/main/resources/rusherhack-plugin.json",
+          "key": "Minecraft-Versions",
+          "raw": "${project.minecraft_version}",
+          "resolvedRaw": "1.21.11",
+          "versions": [
+            "1.21.11"
+          ],
+          "ignored": [],
+          "sourceType": "rusherhack-plugin-json",
+          "priority": 0
+        },
+        {
+          "file": "gradle.properties",
+          "key": "minecraft_version",
+          "raw": "1.21.11",
+          "resolvedRaw": "1.21.11",
+          "versions": [
+            "1.21.11"
+          ],
+          "ignored": [],
+          "sourceType": "gradle-properties",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "index": 126,
+      "name": "CustomCapes",
+      "repo": "FelekDevYT/CustomCapes",
+      "registry": "1.21.4",
+      "registryExpanded": "1.21.4",
+      "registryIgnored": [],
+      "status": "ok",
+      "projectFilesChecked": [
+        "src/main/resources/rusherhack-plugin.json",
+        "gradle.properties"
+      ],
+      "projectError": null,
+      "hasExplicitProjectSource": true,
+      "projectSuggestion": "1.21.4",
+      "chosenSources": [
+        {
+          "file": "src/main/resources/rusherhack-plugin.json",
+          "key": "Minecraft-Versions",
+          "raw": "${project.minecraft_version}",
+          "resolvedRaw": "1.21.4",
+          "versions": [
+            "1.21.4"
+          ],
+          "ignored": [],
+          "sourceType": "rusherhack-plugin-json"
+        }
+      ],
+      "allProjectFindings": [
+        {
+          "file": "src/main/resources/rusherhack-plugin.json",
+          "key": "Minecraft-Versions",
+          "raw": "${project.minecraft_version}",
+          "resolvedRaw": "1.21.4",
+          "versions": [
+            "1.21.4"
+          ],
+          "ignored": [],
+          "sourceType": "rusherhack-plugin-json",
+          "priority": 0
+        },
+        {
+          "file": "gradle.properties",
+          "key": "minecraft_version",
+          "raw": "1.21.4",
+          "resolvedRaw": "1.21.4",
+          "versions": [
+            "1.21.4"
+          ],
+          "ignored": [],
+          "sourceType": "gradle-properties",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "index": 127,
+      "name": "Stricty",
+      "repo": "FelekDevYT/Stricty",
+      "registry": "1.21.4",
+      "registryExpanded": "1.21.4",
+      "registryIgnored": [],
+      "status": "ok",
+      "projectFilesChecked": [
+        "src/main/resources/rusherhack-plugin.json",
+        "gradle.properties"
+      ],
+      "projectError": null,
+      "hasExplicitProjectSource": true,
+      "projectSuggestion": "1.21.4",
+      "chosenSources": [
+        {
+          "file": "src/main/resources/rusherhack-plugin.json",
+          "key": "Minecraft-Versions",
+          "raw": "${project.minecraft_version}",
+          "resolvedRaw": "1.21.4",
+          "versions": [
+            "1.21.4"
+          ],
+          "ignored": [],
+          "sourceType": "rusherhack-plugin-json"
+        }
+      ],
+      "allProjectFindings": [
+        {
+          "file": "src/main/resources/rusherhack-plugin.json",
+          "key": "Minecraft-Versions",
+          "raw": "${project.minecraft_version}",
+          "resolvedRaw": "1.21.4",
+          "versions": [
+            "1.21.4"
+          ],
+          "ignored": [],
+          "sourceType": "rusherhack-plugin-json",
+          "priority": 0
+        },
+        {
+          "file": "gradle.properties",
+          "key": "minecraft_version",
+          "raw": "1.21.4",
+          "resolvedRaw": "1.21.4",
+          "versions": [
+            "1.21.4"
+          ],
+          "ignored": [],
+          "sourceType": "gradle-properties",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "index": 128,
+      "name": "Plugger",
+      "repo": "FelekDevYT/Plugger",
+      "registry": "1.21.4",
+      "registryExpanded": "1.21.4",
+      "registryIgnored": [],
+      "status": "ok",
+      "projectFilesChecked": [
+        "src/main/resources/rusherhack-plugin.json",
+        "gradle.properties"
+      ],
+      "projectError": null,
+      "hasExplicitProjectSource": true,
+      "projectSuggestion": "1.21.4",
+      "chosenSources": [
+        {
+          "file": "src/main/resources/rusherhack-plugin.json",
+          "key": "Minecraft-Versions",
+          "raw": "1.21.4",
+          "resolvedRaw": "1.21.4",
+          "versions": [
+            "1.21.4"
+          ],
+          "ignored": [],
+          "sourceType": "rusherhack-plugin-json"
+        }
+      ],
+      "allProjectFindings": [
+        {
+          "file": "src/main/resources/rusherhack-plugin.json",
+          "key": "Minecraft-Versions",
+          "raw": "1.21.4",
+          "resolvedRaw": "1.21.4",
+          "versions": [
+            "1.21.4"
+          ],
+          "ignored": [],
+          "sourceType": "rusherhack-plugin-json",
+          "priority": 0
+        },
+        {
+          "file": "gradle.properties",
+          "key": "minecraft_version",
+          "raw": "1.21.4",
+          "resolvedRaw": "1.21.4",
+          "versions": [
+            "1.21.4"
+          ],
+          "ignored": [],
+          "sourceType": "gradle-properties",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "index": 129,
+      "name": "ChestIndexer",
+      "repo": "FelekDevYT/ChestIndexer",
+      "registry": "1.21.4",
+      "registryExpanded": "1.21.4",
+      "registryIgnored": [],
+      "status": "ok",
+      "projectFilesChecked": [
+        "src/main/resources/rusherhack-plugin.json",
+        "gradle.properties"
+      ],
+      "projectError": null,
+      "hasExplicitProjectSource": true,
+      "projectSuggestion": "1.21.4",
+      "chosenSources": [
+        {
+          "file": "src/main/resources/rusherhack-plugin.json",
+          "key": "Minecraft-Versions",
+          "raw": "${project.minecraft_version}",
+          "resolvedRaw": "1.21.4",
+          "versions": [
+            "1.21.4"
+          ],
+          "ignored": [],
+          "sourceType": "rusherhack-plugin-json"
+        }
+      ],
+      "allProjectFindings": [
+        {
+          "file": "src/main/resources/rusherhack-plugin.json",
+          "key": "Minecraft-Versions",
+          "raw": "${project.minecraft_version}",
+          "resolvedRaw": "1.21.4",
+          "versions": [
+            "1.21.4"
+          ],
+          "ignored": [],
+          "sourceType": "rusherhack-plugin-json",
+          "priority": 0
+        },
+        {
+          "file": "gradle.properties",
+          "key": "minecraft_version",
+          "raw": "1.21.4",
+          "resolvedRaw": "1.21.4",
+          "versions": [
+            "1.21.4"
+          ],
+          "ignored": [],
+          "sourceType": "gradle-properties",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "index": 130,
+      "name": "RusherHack Pathfinder",
+      "repo": "tillay-rh-plugins/rusherhack-pathfinder",
+      "registry": "1.21.4",
+      "registryExpanded": "1.21.4",
+      "registryIgnored": [],
+      "status": "ok",
+      "projectFilesChecked": [
+        "src/main/resources/rusherhack-plugin.json",
+        "gradle.properties"
+      ],
+      "projectError": null,
+      "hasExplicitProjectSource": true,
+      "projectSuggestion": "1.21.4",
+      "chosenSources": [
+        {
+          "file": "src/main/resources/rusherhack-plugin.json",
+          "key": "Minecraft-Versions",
+          "raw": "${project.minecraft_version}",
+          "resolvedRaw": "1.21.4",
+          "versions": [
+            "1.21.4"
+          ],
+          "ignored": [],
+          "sourceType": "rusherhack-plugin-json"
+        }
+      ],
+      "allProjectFindings": [
+        {
+          "file": "src/main/resources/rusherhack-plugin.json",
+          "key": "Minecraft-Versions",
+          "raw": "${project.minecraft_version}",
+          "resolvedRaw": "1.21.4",
+          "versions": [
+            "1.21.4"
+          ],
+          "ignored": [],
+          "sourceType": "rusherhack-plugin-json",
+          "priority": 0
+        },
+        {
+          "file": "gradle.properties",
+          "key": "minecraft_version",
+          "raw": "1.21.4",
+          "resolvedRaw": "1.21.4",
+          "versions": [
+            "1.21.4"
+          ],
+          "ignored": [],
+          "sourceType": "gradle-properties",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "index": 131,
+      "name": "Nhack Theme",
+      "repo": "h1tm4nqq/Nhack-theme",
+      "registry": "1.20.1-1.21.4",
+      "registryExpanded": "1.20.1, 1.20.2, 1.20.3, 1.20.4, 1.20.5, 1.20.6, 1.21, 1.21.1, 1.21.2, 1.21.3, 1.21.4",
+      "registryIgnored": [],
+      "status": "registry-differs-from-project",
       "projectFilesChecked": [
         "src/main/resources/rusherhack-plugin.json",
         "gradle.properties"
@@ -7692,10 +7967,10 @@
       ]
     },
     {
-      "index": 127,
+      "index": 132,
       "name": "RusherGUI",
       "repo": "xyzbtw/rusherGUI",
-      "registry": "1.20.1, 1.20.2, 1.20.3, 1.20.4",
+      "registry": "1.20.1-1.20.4",
       "registryExpanded": "1.20.1, 1.20.2, 1.20.3, 1.20.4",
       "registryIgnored": [],
       "status": "ok",
