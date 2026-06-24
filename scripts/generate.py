@@ -2,13 +2,12 @@
 # Markdown Generator - plugins-and-themes.yml
 # -----------------------------------------------------------
 #
-# This script generates the following markdown files:
+# Generates:
 #   - PLUGINS.md
 #   - THEMES.md
-#   - README.md (badges section only)
+#   - README.md badge counts
 #
-# Relies on the validated data from plugins-and-themes.yml.
-# Should only be run after validate-yml.py passes.
+# Relies on validated data from data/plugins-and-themes.yml.
 #
 # Usage:
 #   python scripts/generate.py
@@ -16,37 +15,121 @@
 # Created by: GarlicRot
 # -----------------------------------------------------------
 
-import yaml
+from __future__ import annotations
+
+import html
 import re
-import os
-from datetime import datetime
+from datetime import datetime, timezone
+from pathlib import Path
 from typing import Any, Dict, List
 from urllib.parse import urlencode
 
+import yaml
+
+DATA_FILE = Path("data/plugins-and-themes.yml")
+PLUGINS_MD = Path("PLUGINS.md")
+THEMES_MD = Path("THEMES.md")
+README_MD = Path("README.md")
+
+PLUGIN_BLOCK_START = "<!--- Plugins Start -->"
+PLUGIN_BLOCK_END = "<!--- Plugins End -->"
+
+RECENT_BLOCK_START = "<!--- Recently Added Plugins Start -->"
+RECENT_BLOCK_END = "<!--- Recently Added Plugins End -->"
+
+THEMES_BLOCK_START = "<!--- THEMES START -->"
+THEMES_BLOCK_END = "<!--- THEMES END -->"
+
+
 # -----------------------
-# Load YAML data
+# Basic helpers
 # -----------------------
 
-with open("data/plugins-and-themes.yml", "r", encoding="utf-8") as f:
-    data = yaml.safe_load(f)
+def to_text(value: Any) -> str:
+    if value is None:
+        return ""
+    if isinstance(value, str):
+        return value
+    return str(value)
+
+
+def md_escape(value: Any) -> str:
+    """
+    Light Markdown/HTML-safe text escaping.
+    """
+    text = to_text(value).strip()
+    return text.replace("<", "&lt;").replace(">", "&gt;")
+
+
+def html_attr(value: Any) -> str:
+    return html.escape(to_text(value), quote=True)
+
+
+def md_url(value: Any) -> str:
+    """
+    Keep Markdown links from breaking on spaces or parentheses.
+    """
+    url = to_text(value).strip()
+    return (
+        url.replace(" ", "%20")
+        .replace("(", "%28")
+        .replace(")", "%29")
+    )
+
+
+def write_if_changed(path: Path, content: str) -> bool:
+    old = path.read_text(encoding="utf-8") if path.exists() else ""
+
+    if old == content:
+        return False
+
+    path.write_text(content, encoding="utf-8")
+    return True
+
+
+def replace_between_markers(
+    content: str,
+    start_marker: str,
+    end_marker: str,
+    replacement: str,
+    label: str,
+) -> str:
+    pattern = re.compile(
+        rf"{re.escape(start_marker)}.*?{re.escape(end_marker)}",
+        flags=re.DOTALL,
+    )
+
+    new_content, count = pattern.subn(
+        f"{start_marker}\n{replacement}{end_marker}",
+        content,
+        count=1,
+    )
+
+    if count != 1:
+        raise RuntimeError(
+            f"[generate] Could not replace {label}: expected exactly 1 marker block, found {count}."
+        )
+
+    return new_content
+
 
 # -----------------------
-# Helpers
+# Dates
 # -----------------------
 
-def _parse_date_safe(s: str | None) -> datetime:
+def parse_date_safe(value: Any) -> datetime:
     """
     Parse ISO-ish date strings for added_at/updated_at.
-    Falls back to datetime.min if missing/invalid so items without dates
-    naturally sink to the bottom when sorting by "most recent".
+
+    Returns datetime.min when missing/invalid so invalid dates sink to the bottom.
     """
-    if not s or not isinstance(s, str):
-        return datetime.min
-    s = s.strip()
-    if not s:
+    if not isinstance(value, str):
         return datetime.min
 
-    # Try a few common formats first
+    text = value.strip()
+    if not text:
+        return datetime.min
+
     for fmt in (
         "%Y-%m-%d",
         "%Y-%m-%dT%H:%M:%S%z",
@@ -54,55 +137,43 @@ def _parse_date_safe(s: str | None) -> datetime:
         "%Y-%m-%dT%H:%M:%S.%fZ",
     ):
         try:
-            return datetime.strptime(s, fmt)
+            parsed = datetime.strptime(text, fmt)
+            if parsed.tzinfo is None:
+                parsed = parsed.replace(tzinfo=timezone.utc)
+            return parsed
         except ValueError:
             continue
 
-    # Fallback: fromisoformat for other variants
     try:
-        return datetime.fromisoformat(s)
+        parsed = datetime.fromisoformat(text)
+        if parsed.tzinfo is None:
+            parsed = parsed.replace(tzinfo=timezone.utc)
+        return parsed
     except Exception:
         return datetime.min
 
 
-def _recent_plugins(entries: List[Dict[str, Any]], limit: int = 6) -> List[Dict[str, Any]]:
-    """
-    Return up to `limit` most recently added plugins by `added_at` (desc).
-    If `added_at` is missing/invalid, that entry will sort as very old.
-    """
-    plugins_only = [e for e in entries if isinstance(e, dict)]
-    plugins_only.sort(
-        key=lambda e: _parse_date_safe(e.get("added_at")),
-        reverse=True,
-    )
-    return plugins_only[:limit]
+def date_to_unix(value: Any) -> int | None:
+    parsed = parse_date_safe(value)
+
+    if parsed == datetime.min:
+        return None
+
+    if parsed.tzinfo is None:
+        parsed = parsed.replace(tzinfo=timezone.utc)
+
+    return int(parsed.timestamp())
 
 
-def _escape_inline(text: Any) -> str:
-    """
-    Light inline escaping/sanitizing for markdown text.
-    Not for tables – just make sure we have a clean string.
-    """
-    if not isinstance(text, str):
-        return ""
-    return text.strip()
+# -----------------------
+# Shields badge helpers
+# -----------------------
 
-
-def md_escape(s: Any) -> str:
+def shield_static_badge(label: str, message: Any, color: str = "blueviolet") -> str:
     """
-    Match the Top 6 helper: escape < and > so HTML isn't broken.
-    """
-    s = s or ""
-    if not isinstance(s, str):
-        s = str(s)
-    return s.replace("<", "&lt;").replace(">", "&gt;")
+    Build a Shields static badge using query params instead of path params.
 
-
-def _shield_badge(label: str, message: Any, color: str = "blueviolet") -> str:
-    """
-    Build a shields.io static badge using query params instead of path params.
-
-    This safely handles:
+    This avoids badge breakage from:
       - commas
       - spaces
       - dots
@@ -110,12 +181,10 @@ def _shield_badge(label: str, message: Any, color: str = "blueviolet") -> str:
       - long Minecraft version lists
       - special characters
     """
-    message = "" if message is None else str(message).strip()
-
     query = urlencode(
         {
             "label": label,
-            "message": message,
+            "message": to_text(message).strip(),
             "color": color,
         }
     )
@@ -123,383 +192,421 @@ def _shield_badge(label: str, message: Any, color: str = "blueviolet") -> str:
     return f"https://img.shields.io/static/v1?{query}"
 
 
-def _mc_versions_badge(mc_versions: Any) -> str:
-    """
-    Render the MC versions badge safely.
-    """
+def mc_versions_message(mc_versions: Any) -> str:
     if mc_versions is None:
         return ""
 
     if isinstance(mc_versions, list):
-        message = ", ".join(str(v).strip() for v in mc_versions if str(v).strip())
-    else:
-        message = str(mc_versions).strip()
+        return ", ".join(
+            to_text(version).strip()
+            for version in mc_versions
+            if to_text(version).strip()
+        )
+
+    return to_text(mc_versions).strip()
+
+
+def mc_versions_badge(mc_versions: Any) -> str:
+    message = mc_versions_message(mc_versions)
 
     if not message:
         return ""
 
-    badge_url = _shield_badge("MC Version", message, "blueviolet")
+    badge_url = shield_static_badge("MC Version", message, "blueviolet")
     return f"![MC Version]({badge_url})"
 
 
-# ---------- Avatar helpers (same logic as Top 6 script) ----------
+# -----------------------
+# Avatar helpers
+# -----------------------
 
-def _is_github_avatar(url: str) -> bool:
+def is_github_avatar(url: str | None) -> bool:
     if not url:
         return False
+
     return ("avatars.githubusercontent.com" in url) or bool(
         re.search(r"github\.com/.+\.png$", url)
     )
 
 
-def _sharp_github_avatar(url: str, px: int = 400) -> str:
-    """Force a crisp GitHub avatar by requesting a larger size, displayed at 100x100."""
+def sharp_github_avatar(url: str, px: int = 400) -> str:
+    """
+    Force crisp GitHub avatars by requesting a larger size.
+    """
     if not url:
         return url
+
     if "avatars.githubusercontent.com" in url:
         return url + (f"&s={px}" if "?" in url else f"?s={px}")
+
     if re.search(r"github\.com/.+\.png$", url):
         return url + (f"&size={px}" if "?" in url else f"?size={px}")
+
     return url
 
 
-# ---------- Recently-added cards (Top-6 style) ----------
+# -----------------------
+# Recently added plugin cards
+# -----------------------
 
-def _recent_items_for_cards(entries: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-    """
-    Normalize YAML plugin entries into the mini dicts that our card
-    renderer expects, mirroring the Top 6 structure:
-      - repo, name, desc
-      - creatorAvatar (hi-res GitHub if possible)
-      - ownerAvatar fallback (GitHub owner avatar)
-      - addedUnix: unix timestamp from added_at
-    """
+def recent_plugins(entries: List[Dict[str, Any]], limit: int = 6) -> List[Dict[str, Any]]:
+    plugins_only = [entry for entry in entries if isinstance(entry, dict)]
+    plugins_only.sort(
+        key=lambda entry: parse_date_safe(entry.get("added_at")),
+        reverse=True,
+    )
+    return plugins_only[:limit]
+
+
+def recent_items_for_cards(entries: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     items: List[Dict[str, Any]] = []
-    for e in entries:
-        repo = (e.get("repo") or "").strip()
+
+    for entry in entries:
+        repo = to_text(entry.get("repo")).strip()
+
         if not repo or "/" not in repo:
             continue
 
-        creator = e.get("creator") or {}
+        creator = entry.get("creator") or {}
         creator_avatar = creator.get("avatar")
 
-        # Only keep creator avatar if it's GitHub-hosted (can request hi-res)
-        if _is_github_avatar(creator_avatar):
-            creator_avatar = _sharp_github_avatar(creator_avatar, 400)
+        if is_github_avatar(creator_avatar):
+            creator_avatar = sharp_github_avatar(creator_avatar, 400)
         else:
-            creator_avatar = None  # force fallback to owner avatar for sharpness
+            creator_avatar = None
 
         owner = repo.split("/", 1)[0]
         owner_avatar = f"https://avatars.githubusercontent.com/{owner}?s=400"
 
-        # Date -> unix for "added" badge
-        added_at_raw = e.get("added_at")
-        dt = _parse_date_safe(added_at_raw) if added_at_raw else datetime.min
-        added_unix = int(dt.timestamp()) if dt != datetime.min else None
-
         items.append(
             {
                 "repo": repo,
-                "name": e.get("name"),
-                "desc": e.get("description", ""),
+                "name": entry.get("name"),
+                "desc": entry.get("description", ""),
                 "creatorAvatar": creator_avatar,
                 "ownerAvatar": owner_avatar,
-                "addedUnix": added_unix,
+                "addedUnix": date_to_unix(entry.get("added_at")),
             }
         )
+
     return items
 
 
-def _render_recent_cards(items: List[Dict[str, Any]]) -> str:
-    """
-    Render a list of items using the exact same layout as the Top 6
-    cards in README (avatar, title + `plugin`, description, badges),
-    but using `addedUnix` for a green 'added' date badge.
-    """
+def render_recent_cards(items: List[Dict[str, Any]]) -> str:
     if not items:
         return ""
 
-    TWO_COL_WIDTH = "50%"
     cells: List[str] = []
 
-    for t in items:
-        # Prefer creator avatar only if it's GitHub-hosted (sharp). Otherwise use owner avatar (400px).
-        img = t.get("creatorAvatar") or t.get("ownerAvatar")
-        repo = t["repo"]
-        name = md_escape(t.get("name") or repo.split("/")[1])
-        desc = md_escape(t.get("desc") or "")
-
-        added_unix = t.get("addedUnix")
+    for item in items:
+        repo = to_text(item.get("repo")).strip()
+        repo_url = f"https://github.com/{repo}"
+        img = item.get("creatorAvatar") or item.get("ownerAvatar")
+        name = html.escape(to_text(item.get("name") or repo.split("/", 1)[1]))
+        desc = html.escape(to_text(item.get("desc") or "")) or "&nbsp;"
+        added_unix = item.get("addedUnix")
 
         cell = f"""
-<td align="left" valign="top" width="{TWO_COL_WIDTH}">
-  <a href="https://github.com/{repo}"><img src="{img}" alt="{name}" width="100" height="100" style="border-radius:12px;"></a>
-  <div><strong><a href="https://github.com/{repo}">{name}</a></strong>&nbsp;<code>plugin</code></div>
-  <div style="margin:4px 0 6px 0;">{(desc or "&nbsp;")}</div>
+<td align="left" valign="top" width="50%">
+  <a href="{html_attr(repo_url)}"><img src="{html_attr(img)}" alt="{name}" width="100" height="100" style="border-radius:12px;"></a>
+  <div><strong><a href="{html_attr(repo_url)}">{name}</a></strong>&nbsp;<code>plugin</code></div>
+  <div style="margin:4px 0 6px 0;">{desc}</div>
   <div>
-    <img alt="stars" src="https://img.shields.io/github/stars/{repo}?style=flat">
-    &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/{repo}/total?style=flat">"""
+    <img alt="stars" src="https://img.shields.io/github/stars/{html_attr(repo)}?style=flat">
+    &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/{html_attr(repo)}/total?style=flat">"""
+
         if added_unix is not None:
             cell += f"""
     &nbsp;<img alt="added" src="https://img.shields.io/date/{added_unix}?label=added&style=flat">"""
+
         cell += """
   </div>
 </td>""".rstrip()
 
         cells.append(cell)
 
-    rows = ["<tr>" + "".join(cells[i : i + 2]) + "</tr>" for i in range(0, len(cells), 2)]
+    rows = [
+        "<tr>" + "".join(cells[index : index + 2]) + "</tr>"
+        for index in range(0, len(cells), 2)
+    ]
+
     return "\n".join(["<table>", *rows, "</table>"])
 
 
 def generate_recent_plugins_md(entries: List[Dict[str, Any]]) -> str:
-    """
-    Build the 'Recently Added Plugins' section content for PLUGINS.md.
-
-    Injected between:
-      <!--- Recently Added Plugins Start -->
-      <!--- Recently Added Plugins End -->
-
-    Renders as a 2-column card grid using the Top 6 card layout.
-    """
     if not entries:
         return "No recently added plugins found.\n"
 
-    items = _recent_items_for_cards(entries)
-    cards_html = _render_recent_cards(items)
+    cards_html = render_recent_cards(recent_items_for_cards(entries))
 
-    lines: List[str] = []
-    lines.append("> These are the six most recently added plugins (based on `added_at`).")
-    lines.append("")
-    lines.append(cards_html)
-    lines.append("")
+    return "\n".join(
+        [
+            "> These are the six most recently added plugins (based on `added_at`).",
+            "",
+            cards_html,
+            "",
+        ]
+    )
+
+
+# -----------------------
+# Entry renderer
+# -----------------------
+
+def clean_description(description: Any) -> str:
+    text = to_text(description)
+    text = re.sub(r"!\[.*?\]\(.*?\)", "", text)
+    return md_escape(text.strip())
+
+
+def render_screenshots(screenshots: List[Dict[str, Any]]) -> str:
+    if not screenshots:
+        return ""
+
+    lines = [
+        ' <details>',
+        ' <summary>Show Screenshots</summary>',
+        ' <p align="center">',
+    ]
+
+    for screenshot in screenshots:
+        url = to_text(screenshot.get("url")).strip()
+        alt = html.escape(to_text(screenshot.get("alt")).strip())
+        width = screenshot.get("width", 250)
+
+        youtube_match = re.match(r"https://img\.youtube\.com/vi/([^/]+)/[^/]+\.jpg", url)
+
+        if youtube_match:
+            video_id = youtube_match.group(1)
+            video_url = f"https://www.youtube.com/watch?v={video_id}"
+            lines.append(
+                f' <a href="{html_attr(video_url)}" target="_blank"><img src="{html_attr(url)}" alt="{alt}" width="{html_attr(width)}"></a>'
+            )
+        else:
+            lines.append(
+                f' <img src="{html_attr(url)}" alt="{alt}" width="{html_attr(width)}">'
+            )
+
+    lines.extend(
+        [
+            " </p>",
+            " </details>",
+            "",
+        ]
+    )
+
     return "\n".join(lines)
 
 
-# -----------------------
-# Markdown generator for each plugin/theme entry
-# -----------------------
+def generate_entry_md(entry: Dict[str, Any], is_plugin: bool = True) -> str:
+    repo = to_text(entry.get("repo")).strip()
+    name = md_escape(entry.get("name") or repo)
+    repo_url = f"https://github.com/{repo}"
 
-def generate_entry_md(entry, is_plugin: bool = True, index: int = 0) -> str:
-    # Badge: repo release date (links to releases page)
     latest_release_badge = (
         f"[![Latest Release Date]"
-        f"(https://img.shields.io/github/release-date/{entry['repo']}?label=Latest%20Release&color=green)]"
-        f"(https://github.com/{entry['repo']}/releases)"
+        f"(https://img.shields.io/github/release-date/{repo}?label=Latest%20Release&color=green)]"
+        f"({md_url(repo_url + '/releases')})"
     )
 
-    # Downloads badge image is repo-wide total; the LINK now uses jar_url (or latest release page)
-    downloads_link = entry.get("jar_url") or f"https://github.com/{entry['repo']}/releases/latest"
+    downloads_link = entry.get("jar_url") or f"{repo_url}/releases/latest"
     downloads_badge = (
-        f"[![GitHub Downloads](https://img.shields.io/github/downloads/{entry['repo']}/total)]"
-        f"({downloads_link})"
+        f"[![GitHub Downloads](https://img.shields.io/github/downloads/{repo}/total)]"
+        f"({md_url(downloads_link)})"
     )
 
-    # Top line: name with repo link
-    md = f"- ### [{entry['name']}](https://github.com/{entry['repo']}) <br>\n"
+    md = f"- ### [{name}]({md_url(repo_url)}) <br>\n"
     md += f" {latest_release_badge} {downloads_badge}<br>\n"
 
-    # MC version and core plugin badge (plugins only)
     if is_plugin and "mc_versions" in entry:
-        mc_badge = _mc_versions_badge(entry.get("mc_versions"))
-        if mc_badge:
-            md += f" {mc_badge}<br>\n"
+        badge = mc_versions_badge(entry.get("mc_versions"))
+        if badge:
+            md += f" {badge}<br>\n"
 
     if is_plugin and entry.get("is_core", False):
-        md += " ![Core Plugin](https://img.shields.io/badge/Core%20Plugin-blue)<br>\n"
+        md += " ![Core Plugin](https://img.shields.io/static/v1?label=Core&message=Plugin&color=blue)<br>\n"
 
-    # Creator section with avatar
-    creator = entry.get("creator", {})
-    avatar = creator.get("avatar", "")
-    creator_name = creator.get("name", "Unknown")
-    creator_url = creator.get("url", "#")
-    if avatar:
-        md += f' **Creator**: <img src="{avatar}" width="20" height="20"> [{creator_name}]({creator_url})<br>\n'
+    creator = entry.get("creator") or {}
+    creator_avatar = to_text(creator.get("avatar")).strip()
+    creator_name = md_escape(creator.get("name") or "Unknown")
+    creator_url = md_url(creator.get("url") or "#")
+
+    if creator_avatar:
+        md += (
+            f' **Creator**: <img src="{html_attr(creator_avatar)}" width="20" height="20"> '
+            f"[{creator_name}]({creator_url})<br>\n"
+        )
     else:
         md += f" **Creator**: [{creator_name}]({creator_url})<br>\n"
 
-    # Description (cleaned of embedded images)
-    desc = entry.get("description", "")
-    cleaned_description = re.sub(r"!\[.*?\]\(.*?\)", "", desc)
-    md += f" {cleaned_description.strip()}\n\n"
+    description = clean_description(entry.get("description", ""))
+    md += f" {description}\n\n"
 
-    # Screenshots section (standard and YouTube thumbnails)
     screenshots = entry.get("screenshots") or []
     if screenshots:
-        md += " <details>\n <summary>Show Screenshots</summary>\n <p align=\"center\">\n"
-        for ss in screenshots:
-            url = ss.get("url", "")
-            alt = ss.get("alt", "")
-            width = ss.get("width", 250)
-            youtube_match = re.match(r"https://img\.youtube\.com/vi/([^/]+)/[^/]+\.jpg", url)
-            if youtube_match:
-                video_id = youtube_match.group(1)
-                video_url = f"https://www.youtube.com/watch?v={video_id}"
-                md += (
-                    f' <a href="{video_url}" target="_blank"><img src="{url}" alt="{alt}" '
-                    f'width="{width}"></a>\n'
-                )
-            else:
-                md += f' <img src="{url}" alt="{alt}" width="{width}">\n'
-        md += " </p>\n </details>\n\n"
+        md += render_screenshots(screenshots)
+        md += "\n"
 
     md += "---\n\n"
     return md
 
 
 # -----------------------
-# Count plugin and theme entries
+# Badge count updates
 # -----------------------
 
-plugin_count = len(data.get("plugins", []) or [])
-theme_count = len(data.get("themes", []) or [])
-
-# -----------------------
-# Update PLUGINS.md
-# -----------------------
-
-with open("PLUGINS.md", "r", encoding="utf-8") as f:
-    plugins_content = f.read()
-
-plugin_entries = "".join(
-    generate_entry_md(p, is_plugin=True, index=i)
-    for i, p in enumerate(data.get("plugins", []) or [])
-)
-
-# Update plugin badge count (in PLUGINS.md itself)
-plugins_content, badge_repl = re.subn(
-    r"\[!\[Plugins\].*?\]\(#plugins-list\)",
-    f"[![Plugins](https://img.shields.io/badge/Plugins-{plugin_count}-green)](#plugins-list)",
-    plugins_content,
-)
-if badge_repl == 0:
-    print("[generate] NOTE: Plugins badge pattern not found in PLUGINS.md (badge count not updated).")
-
-# Inject plugin entries between comments
-plugins_block_pattern = r"<!--- Plugins Start -->.*?<!--- Plugins End -->"
-plugins_replacement = f"<!--- Plugins Start -->\n{plugin_entries}<!--- Plugins End -->"
-
-plugins_content, plugins_block_repl = re.subn(
-    plugins_block_pattern,
-    plugins_replacement,
-    plugins_content,
-    flags=re.DOTALL,
-)
-if plugins_block_repl == 0:
-    print("[generate] WARNING: 'Plugins Start/End' markers not found – plugin list not injected.")
-
-# Inject "Recently Added Plugins" section (top 6 by added_at) as card grid
-recent_plugins = _recent_plugins(data.get("plugins", []) or [], limit=6)
-recent_md_block = generate_recent_plugins_md(recent_plugins)
-
-recent_block_pattern = r"<!--- Recently Added Plugins Start -->.*?<!--- Recently Added Plugins End -->"
-recent_replacement = (
-    f"<!--- Recently Added Plugins Start -->\n"
-    f"{recent_md_block}"
-    f"<!--- Recently Added Plugins End -->"
-)
-
-plugins_content, recent_block_repl = re.subn(
-    recent_block_pattern,
-    recent_replacement,
-    plugins_content,
-    flags=re.DOTALL,
-)
-if recent_block_repl == 0:
-    print("[generate] WARNING: 'Recently Added Plugins Start/End' markers not found – cards not injected.")
-
-with open("PLUGINS.md", "w", encoding="utf-8") as f:
-    f.write(plugins_content)
-
-print(
-    f"[generate] PLUGINS.md updated "
-    f"(badge={badge_repl}, plugins_block={plugins_block_repl}, recent_block={recent_block_repl})"
-)
-
-# -----------------------
-# Update THEMES.md
-# -----------------------
-
-with open("THEMES.md", "r", encoding="utf-8") as f:
-    themes_content = f.read()
-
-theme_entries = "".join(
-    generate_entry_md(t, is_plugin=False, index=i)
-    for i, t in enumerate(data.get("themes", []) or [])
-)
-
-# Update theme badge count
-themes_content, theme_badge_repl = re.subn(
-    r"\[!\[Themes\].*?\]\(#themes-list\)",
-    f"[![Themes](https://img.shields.io/badge/Themes-{theme_count}-green)](#themes-list)",
-    themes_content,
-)
-if theme_badge_repl == 0:
-    print("[generate] NOTE: Themes badge pattern not found in THEMES.md (badge count not updated).")
-
-# Inject theme entries between comments
-themes_block_pattern = r"<!--- THEMES START -->.*?<!--- THEMES END -->"
-themes_replacement = f"<!--- THEMES START -->\n{theme_entries}<!--- THEMES END -->"
-
-themes_content, themes_block_repl = re.subn(
-    themes_block_pattern,
-    themes_replacement,
-    themes_content,
-    flags=re.DOTALL,
-)
-if themes_block_repl == 0:
-    print("[generate] WARNING: 'THEMES START/END' markers not found – theme list not injected.")
-
-with open("THEMES.md", "w", encoding="utf-8") as f:
-    f.write(themes_content)
-
-print(
-    f"[generate] THEMES.md updated "
-    f"(badge={theme_badge_repl}, themes_block={themes_block_repl})"
-)
-
-# -----------------------
-# Update badge counts in README.md
-# -----------------------
-
-with open("README.md", "r", encoding="utf-8") as f:
-    readme_original = f.read()
-
-# Match the exact badge formats you use in README:
-# [![Plugins](https://img.shields.io/badge/Plugins-113-green)](./PLUGINS.md)
-# [![Themes](https://img.shields.io/badge/Themes-2-green)](./THEMES.md)
-
-plugins_pattern = (
-    r"\[!\[Plugins\]\(https://img\.shields\.io/badge/Plugins-\d+-green\)\]\(./PLUGINS\.md\)"
-)
-themes_pattern = (
-    r"\[!\[Themes\]\(https://img\.shields\.io/badge/Themes-\d+-green\)\]\(./THEMES\.md\)"
-)
-
-readme_updated, plugins_repl = re.subn(
-    plugins_pattern,
-    f"[![Plugins](https://img.shields.io/badge/Plugins-{plugin_count}-green)](./PLUGINS.md)",
-    readme_original,
-    count=1,
-)
-
-readme_updated, themes_repl = re.subn(
-    themes_pattern,
-    f"[![Themes](https://img.shields.io/badge/Themes-{theme_count}-green)](./THEMES.md)",
-    readme_updated,
-    count=1,
-)
-
-if readme_original != readme_updated:
-    with open("README.md", "w", encoding="utf-8") as f:
-        f.write(readme_updated)
-    print(
-        f"[generate] README.md updated "
-        f"(plugins_badge={plugins_repl}, themes_badge={themes_repl})"
+def update_badge_count(
+    content: str,
+    label: str,
+    count: int,
+    target: str,
+    anchor_label: str,
+) -> tuple[str, int]:
+    pattern = (
+        rf"\[!\[{re.escape(label)}\]"
+        rf"\(https://img\.shields\.io/badge/{re.escape(label)}-\d+-green\)"
+        rf"\]\({re.escape(target)}\)"
     )
-else:
-    # More precise logging:
-    if plugins_repl == 0 and themes_repl == 0:
-        print("[generate] README.md unchanged (badge patterns NOT found).")
-    else:
-        print("[generate] README.md unchanged (badge counts already up-to-date).")
+
+    replacement = (
+        f"[![{label}](https://img.shields.io/badge/{label}-{count}-green)]({target})"
+    )
+
+    updated, count_replaced = re.subn(pattern, replacement, content, count=1)
+
+    if count_replaced == 0:
+        print(f"[generate] NOTE: {anchor_label} badge pattern not found.")
+
+    return updated, count_replaced
+
+
+# -----------------------
+# Main generation
+# -----------------------
+
+def main() -> None:
+    if not DATA_FILE.exists():
+        raise FileNotFoundError(f"Missing data file: {DATA_FILE}")
+
+    with DATA_FILE.open("r", encoding="utf-8") as handle:
+        data = yaml.safe_load(handle) or {}
+
+    plugins = data.get("plugins", []) or []
+    themes = data.get("themes", []) or []
+
+    plugin_count = len(plugins)
+    theme_count = len(themes)
+
+    # -----------------------
+    # PLUGINS.md
+    # -----------------------
+
+    plugins_content = PLUGINS_MD.read_text(encoding="utf-8")
+
+    plugin_entries = "".join(
+        generate_entry_md(plugin, is_plugin=True)
+        for plugin in plugins
+    )
+
+    plugins_content, plugin_badge_repl = update_badge_count(
+        plugins_content,
+        label="Plugins",
+        count=plugin_count,
+        target="#plugins-list",
+        anchor_label="PLUGINS.md plugin count",
+    )
+
+    plugins_content = replace_between_markers(
+        plugins_content,
+        PLUGIN_BLOCK_START,
+        PLUGIN_BLOCK_END,
+        plugin_entries,
+        "plugin list",
+    )
+
+    recent_block = generate_recent_plugins_md(recent_plugins(plugins, limit=6))
+
+    plugins_content = replace_between_markers(
+        plugins_content,
+        RECENT_BLOCK_START,
+        RECENT_BLOCK_END,
+        recent_block,
+        "recent plugins",
+    )
+
+    plugins_changed = write_if_changed(PLUGINS_MD, plugins_content)
+
+    print(
+        "[generate] PLUGINS.md "
+        f"{'updated' if plugins_changed else 'unchanged'} "
+        f"(badge={plugin_badge_repl})"
+    )
+
+    # -----------------------
+    # THEMES.md
+    # -----------------------
+
+    themes_content = THEMES_MD.read_text(encoding="utf-8")
+
+    theme_entries = "".join(
+        generate_entry_md(theme, is_plugin=False)
+        for theme in themes
+    )
+
+    themes_content, theme_badge_repl = update_badge_count(
+        themes_content,
+        label="Themes",
+        count=theme_count,
+        target="#themes-list",
+        anchor_label="THEMES.md theme count",
+    )
+
+    themes_content = replace_between_markers(
+        themes_content,
+        THEMES_BLOCK_START,
+        THEMES_BLOCK_END,
+        theme_entries,
+        "theme list",
+    )
+
+    themes_changed = write_if_changed(THEMES_MD, themes_content)
+
+    print(
+        "[generate] THEMES.md "
+        f"{'updated' if themes_changed else 'unchanged'} "
+        f"(badge={theme_badge_repl})"
+    )
+
+    # -----------------------
+    # README.md badge counts
+    # -----------------------
+
+    readme_content = README_MD.read_text(encoding="utf-8")
+
+    readme_content, readme_plugin_badge_repl = update_badge_count(
+        readme_content,
+        label="Plugins",
+        count=plugin_count,
+        target="./PLUGINS.md",
+        anchor_label="README.md plugin count",
+    )
+
+    readme_content, readme_theme_badge_repl = update_badge_count(
+        readme_content,
+        label="Themes",
+        count=theme_count,
+        target="./THEMES.md",
+        anchor_label="README.md theme count",
+    )
+
+    readme_changed = write_if_changed(README_MD, readme_content)
+
+    print(
+        "[generate] README.md "
+        f"{'updated' if readme_changed else 'unchanged'} "
+        f"(plugins_badge={readme_plugin_badge_repl}, themes_badge={readme_theme_badge_repl})"
+    )
+
+
+if __name__ == "__main__":
+    main()
