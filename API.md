@@ -16,7 +16,31 @@ https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/
 ```
 
 > **Note**  
-> Endpoints are **static**. They update only when the repo is updated.
+> Endpoints are **static**. They update only when the repo data or scheduled workflow updates.
+
+---
+
+## Build / Deploy Location
+
+The committed website source lives in:
+
+```text
+public_html/
+```
+
+During the GitHub Pages workflow, `public_html/` is copied into a temporary deploy artifact folder:
+
+```text
+public/
+```
+
+The static API is generated during deploy into:
+
+```text
+public/api/v1/
+```
+
+That temporary `public/` folder is then uploaded to GitHub Pages. The API should not be committed under `public_html/api/` or `public/api/`.
 
 ---
 
@@ -24,24 +48,30 @@ https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/
 
 The API remains **additive**.
 
-Existing endpoints stay the same, and existing fields are preserved.  
-Plugin-related endpoints may now include extra metadata fields such as:
+Existing endpoints stay the same, and existing fields are preserved when possible.
+
+Plugin-related endpoints may include extra metadata fields such as:
 
 - `features`
 - `feature_counts`
 - `has_features`
+- `versions_canonical`
+- `owner`
+- `repo_name`
+- `repo_url`
+- `creator_slug`
 
 ---
 
 ## Endpoints
 
 ### Core
+
 - **[`index.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/index.json)**  
-  Full dataset (plugins + themes).
+  Full dataset containing plugins and themes.
 
 - **[`plugins.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/plugins.json)**  
-  Plugins only.  
-  Plugin entries may now include module / HUD metadata.
+  Plugins only. Plugin entries may include module / HUD metadata.
 
 - **[`themes.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/themes.json)**  
   Themes only.
@@ -50,12 +80,14 @@ Plugin-related endpoints may now include extra metadata fields such as:
 
 ## Plugin Feature Metadata
 
-Plugin objects may now include the following fields:
+Plugin objects may include the following fields when extracted feature metadata is available.
 
 ### `features`
+
 A list of extracted plugin features, such as modules and HUD elements.
 
 Example:
+
 ```json
 [
   {
@@ -69,9 +101,11 @@ Example:
 ```
 
 ### `feature_counts`
+
 A compact summary of extracted feature counts.
 
 Example:
+
 ```json
 {
   "total": 3,
@@ -81,9 +115,11 @@ Example:
 ```
 
 ### `has_features`
+
 Boolean indicating whether extracted module or HUD metadata exists.
 
 Example:
+
 ```json
 true
 ```
@@ -96,46 +132,72 @@ true
 ## Metadata
 
 - **[`stats.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/stats.json)**  
-  Aggregate counts by type, Minecraft version, and creator.  
-  Also includes feature-related plugin stats.
+  Aggregate counts by type, Minecraft version, and creator. Also includes feature-related plugin stats.
 
 - **[`versions.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/versions.json)**  
-  List of all supported Minecraft versions.
+  List of Minecraft versions currently present in the API output.
 
 - **[`creators.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/creators.json)**  
-  List of all creators with plugin/theme counts.
+  List of creators with plugin/theme counts.
 
 - **[`meta.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/meta.json)**  
-  Metadata about generation time, counts, and source files.
+  Metadata about source files, source hash, counts, and canonical versions.
 
 - **[`manifest.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/manifest.json)**  
-  SHA256 & size for all API files.
+  SHA256 hash and file size for all generated API files.
 
 - **[`search-index.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/search-index.json)**  
-  Compact search index.  
-  Includes feature-related search hints for plugins.
+  Compact search index for client-side search UIs. Includes feature-related search hints for plugins.
 
 ---
 
-## Activity (New & Recently Updated)
+## Minecraft Versions
+
+Registry entries use `mc_versions` as a comma-separated string.
+
+Examples:
+
+```yaml
+mc_versions: "1.21.4"
+mc_versions: "1.20.1, 1.20.2, 1.21, 1.21.1, 1.21.4"
+mc_versions: "N/A"
+```
+
+The API may also expose a normalized helper field:
+
+```json
+"versions_canonical": ["1.20.1", "1.20.2", "1.21", "1.21.1", "1.21.4"]
+```
+
+Dash ranges such as `1.20.1-1.21.4` should not be used in new registry entries.
+
+---
+
+## Activity: New & Recently Updated
 
 These files rely on the YAML fields `added_at` and `updated_at`:
 
 - **[`new.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/new.json)**  
-  Recently added items (sorted by newest `added_at`).
+  Recently added items, sorted by newest `added_at`.
 
 - **[`recent.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/recent.json)**  
-  Recently updated items (sorted by newest `updated_at` or `added_at`).
+  Recently updated items, sorted by newest `updated_at`, falling back to `added_at`.
 
 ---
 
 ## Per-Item
 
-- **`/items/{owner}/{repo}.json`**  
-  Example:  
-  [`items/kybe236/rusher-silent-close.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/items/kybe236/rusher-silent-close.json)
+There is no `/items/` directory index endpoint. Use `index.json` or `search-index.json` to discover items, then fetch individual item docs.
 
-Per-item docs preserve the original item shape and may also include normalized helper fields such as:
+Per-item docs use this path format:
+
+- **`/items/{owner}/{repo}.json`**
+
+Example:
+
+- **[`items/kybesrusherhackplugins/auto-kit-maker.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/items/kybesrusherhackplugins/auto-kit-maker.json)**
+
+Per-item docs preserve the original item shape and may also include normalized helper fields:
 
 - `versions_canonical`
 - `owner`
@@ -143,7 +205,7 @@ Per-item docs preserve the original item shape and may also include normalized h
 - `repo_url`
 - `creator_slug`
 
-Plugin item docs may also include:
+Plugin item docs may also include feature metadata:
 
 - `features`
 - `feature_counts`
@@ -151,15 +213,19 @@ Plugin item docs may also include:
 
 ---
 
-## Buckets (Filtered Views)
+## Buckets: Filtered Views
 
-- **`/by-version/{mc_version}.json`**  
-  Example:  
-  [`by-version/1.21.4.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/by-version/1.21.4.json)
+- **`/by-version/{mc_version}.json`**
 
-- **`/by-creator/{creator}.json`**  
-  Example:  
-  [`by-creator/tillay.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/by-creator/tillay.json)
+Example:
+
+- **[`by-version/1.21.4.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/by-version/1.21.4.json)**
+
+- **`/by-creator/{creator}.json`**
+
+Example:
+
+- **[`by-creator/tillay.json`](https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/by-creator/tillay.json)**
 
 These filtered views preserve the same item structure as the main API output.
 
@@ -168,33 +234,45 @@ These filtered views preserve the same item structure as the main API output.
 ## Usage Examples
 
 ### Fetch plugins via curl
+
 ```bash
 curl -s https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/plugins.json | jq length
 ```
 
-### Find all Kybe's plugins
+### Find all Kybe plugins
+
 ```bash
 curl -s https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/by-creator/kybe236.json | jq '.[].name'
 ```
 
 ### Get stats
+
 ```bash
 curl -s https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/stats.json | jq .
 ```
 
+### List all versions currently present
+
+```bash
+curl -s https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/versions.json | jq .
+```
+
 ### Check extracted features for a plugin
+
 ```bash
 curl -s https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/plugins.json \
   | jq '.[] | select(.repo=="GabiRP/QueueManager") | {name, features, feature_counts, has_features}'
 ```
 
 ### List plugins with HUD elements
+
 ```bash
 curl -s https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/plugins.json \
-  | jq '.[] | select(.feature_counts.hud_elements > 0) | {name, repo, feature_counts}'
+  | jq '.[] | select((.feature_counts.hud_elements // 0) > 0) | {name, repo, feature_counts}'
 ```
 
 ### Search for a feature name in the compact search index
+
 ```bash
 curl -s https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/search-index.json \
   | jq '.[] | select((.feature_names // []) | index("Spotify"))'
@@ -204,7 +282,7 @@ curl -s https://rusherdevelopment.github.io/rusherhack-plugins/api/v1/search-ind
 
 ## Stats Notes
 
-`stats.json` now includes feature-related aggregate counts for plugins:
+`stats.json` includes feature-related aggregate counts for plugins:
 
 - `plugins_with_features`
 - `plugins_without_features`
@@ -218,7 +296,7 @@ This makes it easier for clients to show ecosystem-wide module / HUD totals with
 
 ## Search Index Notes
 
-`search-index.json` remains a compact client-friendly file and may now include:
+`search-index.json` remains a compact client-friendly file and may include:
 
 - `has_features`
 - `feature_counts`
@@ -229,6 +307,7 @@ This helps search UIs filter plugins by extracted modules / HUD elements without
 ---
 
 ## Showcase
+
 - **[RusherSearch](https://garlicrot.github.io/RusherSearch/)**  
   Instant search UI consuming the API.
 
