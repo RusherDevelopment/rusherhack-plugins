@@ -87,6 +87,7 @@ AUTOMATION_ALLOWED = [
 AUTOMATION_BRANCHES = {
     "automation/repo-sync",
     "automation/top6-refresh",
+    "automation/plugin-modules-sync",
 }
 
 AUTOMATION_BRANCH_PREFIXES = (
@@ -191,12 +192,15 @@ def get_actor(payload: dict) -> str:
     )
 
 
-def fetch_base_branch(base_ref: str) -> None:
+def fetch_base_branch(base_ref: str) -> str:
     """
-    Ensure origin/<base_ref> exists locally.
+    Ensure the PR base branch exists locally and return the ref to diff against.
 
-    This makes the script reliable with checkout fetch-depth: 1.
+    GitHub Actions checkouts can be shallow or detached, so do not assume
+    origin/<base_ref> already exists.
     """
+    remote_ref = f"refs/remotes/origin/{base_ref}"
+
     run_git(
         [
             "fetch",
@@ -204,18 +208,46 @@ def fetch_base_branch(base_ref: str) -> None:
             "--prune",
             "--depth=1",
             "origin",
-            f"{base_ref}:refs/remotes/origin/{base_ref}",
+            f"+refs/heads/{base_ref}:{remote_ref}",
         ]
     )
 
+    resolved = run_git(
+        [
+            "rev-parse",
+            "--verify",
+            remote_ref,
+        ],
+        check=False,
+    )
 
-def get_changed_files(base_ref: str) -> list[str]:
+    if resolved:
+        return remote_ref
+
+    # Last-resort fallback for unusual checkout states.
+    fetched = run_git(
+        [
+            "rev-parse",
+            "--verify",
+            "FETCH_HEAD",
+        ],
+        check=False,
+    )
+
+    if fetched:
+        return "FETCH_HEAD"
+
+    print(err(f"Could not fetch or resolve base branch: {base_ref}"))
+    sys.exit(1)
+
+
+def get_changed_files(base_ref_to_diff: str) -> list[str]:
     output = run_git(
         [
             "diff",
             "--name-only",
             "--diff-filter=ACMRDTUXB",
-            f"origin/{base_ref}...HEAD",
+            f"{base_ref_to_diff}...HEAD",
         ]
     )
 
@@ -295,8 +327,10 @@ def main() -> None:
     print(info(f"Head branch: {head_ref or '<unknown>'}"))
     print(info(f"Actor: {actor or '<unknown>'}"))
 
-    fetch_base_branch(base_ref)
-    changed_files = get_changed_files(base_ref)
+    base_ref_to_diff = fetch_base_branch(base_ref)
+    print(info(f"Diff base ref: {base_ref_to_diff}"))
+
+    changed_files = get_changed_files(base_ref_to_diff)
 
     if not changed_files:
         print(warn("No changed files detected in PR diff."))
