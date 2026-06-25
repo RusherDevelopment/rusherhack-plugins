@@ -126,6 +126,13 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 > [!TIP]
 > Use the **Outline** on the right side of this page to quickly navigate to a specific plugin. Alternatively, press **Ctrl + F** to search for a plugin name directly.
 
+## Latest Supported Version
+
+> [!IMPORTANT]
+> The newest Minecraft/RusherHack version currently represented in this plugin registry is **1.21.11**.
+>
+> Always check each pluginâ€™s **MC Version** badge before downloading, because not every plugin supports every version.
+
 ---
 <!--- Plugins Start -->
 - ### [Example Plugin](https://github.com/RusherDevelopment/example-plugin) <br>
