@@ -240,14 +240,21 @@ def fetch_base_branch(base_ref: str) -> str:
     print(err(f"Could not fetch or resolve base branch: {base_ref}"))
     sys.exit(1)
 
-
 def get_changed_files(base_ref_to_diff: str) -> list[str]:
+    """
+    Return files changed between the PR base ref and HEAD.
+
+    Use a direct tree diff instead of triple-dot merge-base diff because
+    GitHub Actions checkouts can be shallow and may not have enough history
+    to calculate a merge base.
+    """
     output = run_git(
         [
             "diff",
             "--name-only",
             "--diff-filter=ACMRDTUXB",
-            f"{base_ref_to_diff}...HEAD",
+            base_ref_to_diff,
+            "HEAD",
         ]
     )
 
@@ -261,7 +268,6 @@ def get_changed_files(base_ref_to_diff: str) -> list[str]:
             if normalize_path(line)
         }
     )
-
 
 def matches_any(path: str, patterns: Iterable[str]) -> bool:
     normalized = normalize_path(path)
