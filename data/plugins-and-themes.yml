@@ -2078,7 +2078,7 @@ plugins:
       name: tillay
       url: https://github.com/tillay
       avatar: https://github.com/tillay.png?size=20
-    latest_release_tag: v1.2.0-93a776
+    latest_release_tag: v1.2.0-7eb361
     screenshots:
       - url: ./Assets/rusherhack-pathfinder/ss1.png
         alt: Pathfinder navigation overlay with ETA and turn-by-turn directions
@@ -2094,7 +2094,7 @@ plugins:
         width: 550
     is_core: false
     mc_versions: '1.21.4'
-    jar_url: https://github.com/tillay-rh-plugins/rusherhack-pathfinder/releases/download/v1.2.0-93a776/rusherhack-pathfinder-1.2.0.jar
+    jar_url: https://github.com/tillay-rh-plugins/rusherhack-pathfinder/releases/download/v1.2.0-7eb361/rusherhack-pathfinder-1.2.0.jar
     added_at: '2026-06-09'
     updated_at: '2026-06-09'
 themes:
