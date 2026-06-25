@@ -213,7 +213,7 @@
     {
       "name": "EFlyAutoJump",
       "repo": "tr330ne/efly-autojump",
-      "description": "Enhances Baritone elytra flight with smart auto-jump start/stop and visual display, compatible with Xaero Plus \u00abBaritone Elytra Here\u00bb, also supports manual Baritone commands input in addition to automation.",
+      "description": "Enhances Baritone elytra flight with smart auto-jump start/stop and visual display, compatible with Xaero Plus «Baritone Elytra Here», also supports manual Baritone commands input in addition to automation.",
       "creator": {
         "name": "tr330ne",
         "url": "https://github.com/tr330ne",
@@ -2087,7 +2087,7 @@
     {
       "name": "icaemas-tweaks",
       "repo": "icaema/icaemas-tweaks",
-      "description": "Adds keybinds for quick equipment and inventory management. \u2022 Toggle between Elytra and chestplate, with auto-deploy when falling \u2022 Swap hotbar slots with the row above in the inventory",
+      "description": "Adds keybinds for quick equipment and inventory management. • Toggle between Elytra and chestplate, with auto-deploy when falling • Swap hotbar slots with the row above in the inventory",
       "creator": {
         "name": "icaema",
         "url": "https://github.com/icaema",
