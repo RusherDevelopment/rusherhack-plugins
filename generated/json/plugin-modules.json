@@ -86,38 +86,6 @@
       ]
     },
     {
-      "plugin": "CustomCapes",
-      "repo": "FelekDevYT/CustomCapes",
-      "features": [
-        {
-          "name": "CustomCape",
-          "class_name": "CustomCapeModule",
-          "feature_type": "module",
-          "description": "Allows you to use a custom cape",
-          "settings": [
-            {
-              "name": "Cape",
-              "var_name": "cape",
-              "description": null,
-              "type": "string",
-              "setting_class": "StringSetting",
-              "default": "None",
-              "children": []
-            },
-            {
-              "name": "Only For Me",
-              "var_name": "onlyForMe",
-              "description": "Show the cape only for yourself",
-              "type": "boolean",
-              "setting_class": "BooleanSetting",
-              "default": true,
-              "children": []
-            }
-          ]
-        }
-      ]
-    },
-    {
       "plugin": "2b2t.vc Rusherhack",
       "repo": "rfresh2/2b2t.vc-rusherhack",
       "features": [
@@ -152,83 +120,6 @@
               "type": "boolean",
               "setting_class": "BooleanSetting",
               "default": false,
-              "children": []
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "plugin": "ChestIndexer",
-      "repo": "FelekDevYT/ChestIndexer",
-      "features": [
-        {
-          "name": "ChestIndex",
-          "class_name": "ChestIndexer",
-          "feature_type": "module",
-          "description": "Scans items in containers (chests, barrels, shulkers) to count them.",
-          "settings": [
-            {
-              "name": "Range",
-              "var_name": "searchRange",
-              "description": "Search radius for containers.",
-              "type": "number",
-              "setting_class": "NumberSetting",
-              "default": 4,
-              "children": []
-            },
-            {
-              "name": "Delay",
-              "var_name": "delay",
-              "description": "Delay in ticks between container interactions.",
-              "type": "number",
-              "setting_class": "NumberSetting",
-              "default": 5,
-              "children": []
-            },
-            {
-              "name": "Highlight Searched",
-              "var_name": "highlightSearched",
-              "description": "Highlight containers already scanned.",
-              "type": "boolean",
-              "setting_class": "BooleanSetting",
-              "default": true,
-              "children": []
-            },
-            {
-              "name": "Render Fill",
-              "var_name": "renderFill",
-              "description": "Render box fill for highlight.",
-              "type": "boolean",
-              "setting_class": "BooleanSetting",
-              "default": true,
-              "children": []
-            },
-            {
-              "name": "Render Outline",
-              "var_name": "renderOutline",
-              "description": "Render box outline for highlight.",
-              "type": "boolean",
-              "setting_class": "BooleanSetting",
-              "default": true,
-              "children": []
-            },
-            {
-              "name": "Fill Color",
-              "var_name": "fillColor",
-              "description": "new Color(16, 106, 144, 100)",
-              "type": "color",
-              "setting_class": "ColorSetting",
-              "default": null,
-              "children": []
-            },
-            {
-              "name": "Line Color",
-              "var_name": "lineColor",
-              "description": "new Color(16, 106, 144, 255)",
-              "type": "color",
-              "setting_class": "ColorSetting",
-              "default": null,
               "children": []
             }
           ]
@@ -8833,6 +8724,23 @@
           ]
         },
         {
+          "name": "CrystalsPerSecond",
+          "class_name": "CrystalsPerSecondHud",
+          "feature_type": "hud",
+          "description": null,
+          "settings": [
+            {
+              "name": "Color",
+              "var_name": "colorSetting",
+              "description": "new Color(RusherHackAPI.colors().primaryColor().getValueRGB())",
+              "type": "color",
+              "setting_class": "ColorSetting",
+              "default": null,
+              "children": []
+            }
+          ]
+        },
+        {
           "name": "CustomLabel",
           "class_name": "CustomLabel",
           "feature_type": "hud",
@@ -9134,6 +9042,32 @@
           ]
         },
         {
+          "name": "FakeLag",
+          "class_name": "FakeLagModule",
+          "feature_type": "module",
+          "description": "Withholds packets to create artificial lag.",
+          "settings": [
+            {
+              "name": "Packets",
+              "var_name": "packets",
+              "description": "The amount of packets to buffer before sending them.",
+              "type": "number",
+              "setting_class": "NumberSetting",
+              "default": 20,
+              "children": []
+            },
+            {
+              "name": "Pulse",
+              "var_name": "pulse",
+              "description": "Send packets in bursts when the buffer is full.",
+              "type": "boolean",
+              "setting_class": "BooleanSetting",
+              "default": true,
+              "children": []
+            }
+          ]
+        },
+        {
           "name": "FastClimb",
           "class_name": "FastClimbModule",
           "feature_type": "module",
@@ -9222,6 +9156,113 @@
               "type": "boolean",
               "setting_class": "BooleanSetting",
               "default": true,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "PacketFly",
+          "class_name": "PacketFlyModule",
+          "feature_type": "module",
+          "description": "Fly using packets.",
+          "settings": [
+            {
+              "name": "Horizontal Speed",
+              "var_name": "horizontalSpeed",
+              "description": "Horizontal speed in blocks per second.",
+              "type": "number",
+              "setting_class": "NumberSetting",
+              "default": 5.2,
+              "children": []
+            },
+            {
+              "name": "Vertical Speed",
+              "var_name": "verticalSpeed",
+              "description": "Vertical speed in blocks per second.",
+              "type": "number",
+              "setting_class": "NumberSetting",
+              "default": 1.24,
+              "children": []
+            },
+            {
+              "name": "Teleport",
+              "var_name": "sendTeleport",
+              "description": "Sends teleport packets.",
+              "type": "boolean",
+              "setting_class": "BooleanSetting",
+              "default": true,
+              "children": []
+            },
+            {
+              "name": "Set Yaw",
+              "var_name": "setYaw",
+              "description": "Sets yaw client side.",
+              "type": "boolean",
+              "setting_class": "BooleanSetting",
+              "default": true,
+              "children": []
+            },
+            {
+              "name": "Set Move",
+              "var_name": "setMove",
+              "description": "Sets movement client side.",
+              "type": "boolean",
+              "setting_class": "BooleanSetting",
+              "default": false,
+              "children": []
+            },
+            {
+              "name": "Set Pos",
+              "var_name": "setPos",
+              "description": "Sets position client side.",
+              "type": "boolean",
+              "setting_class": "BooleanSetting",
+              "default": false,
+              "children": []
+            },
+            {
+              "name": "Set ID",
+              "var_name": "setID",
+              "description": "Updates teleport id when a position packet is received.",
+              "type": "boolean",
+              "setting_class": "BooleanSetting",
+              "default": false,
+              "children": []
+            },
+            {
+              "name": "Anti Kick",
+              "var_name": "antiKick",
+              "description": "Moves down occasionally to prevent kicks.",
+              "type": "boolean",
+              "setting_class": "BooleanSetting",
+              "default": true,
+              "children": []
+            },
+            {
+              "name": "Down Delay",
+              "var_name": "downDelay",
+              "description": "How often you move down when not flying upwards.",
+              "type": "number",
+              "setting_class": "NumberSetting",
+              "default": 4,
+              "children": []
+            },
+            {
+              "name": "Flying Down Delay",
+              "var_name": "downDelayFlying",
+              "description": "How often you move down when flying upwards.",
+              "type": "number",
+              "setting_class": "NumberSetting",
+              "default": 10,
+              "children": []
+            },
+            {
+              "name": "Invalid Packet",
+              "var_name": "invalidPacket",
+              "description": "Sends invalid movement packets.",
+              "type": "boolean",
+              "setting_class": "BooleanSetting",
+              "default": false,
               "children": []
             }
           ]
@@ -9575,6 +9616,485 @@
                   "children": []
                 }
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "plugin": "Rusher Utils",
+      "repo": "emirplus/Rusher-Utils",
+      "features": [
+        {
+          "name": "HighJump",
+          "class_name": "HighJump",
+          "feature_type": "module",
+          "description": "Jumps higher under specific conditions.",
+          "settings": [
+            {
+              "name": "Mode",
+              "var_name": "mode",
+              "description": null,
+              "type": "string",
+              "setting_class": "StringSetting",
+              "default": "Shulker",
+              "children": []
+            },
+            {
+              "name": "Range",
+              "var_name": "range",
+              "description": null,
+              "type": "number",
+              "setting_class": "NumberSetting",
+              "default": 6.0,
+              "children": []
+            },
+            {
+              "name": "Power",
+              "var_name": "power",
+              "description": null,
+              "type": "number",
+              "setting_class": "NumberSetting",
+              "default": 2.0,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "plugin": "CustomCapes",
+      "repo": "FelekDevYT/CustomCapes",
+      "features": [
+        {
+          "name": "CustomCape",
+          "class_name": "CustomCapeModule",
+          "feature_type": "module",
+          "description": "Allows you to use a custom cape",
+          "settings": [
+            {
+              "name": "Cape",
+              "var_name": "cape",
+              "description": null,
+              "type": "string",
+              "setting_class": "StringSetting",
+              "default": "None",
+              "children": []
+            },
+            {
+              "name": "Only For Me",
+              "var_name": "onlyForMe",
+              "description": "Show the cape only for yourself",
+              "type": "boolean",
+              "setting_class": "BooleanSetting",
+              "default": true,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "plugin": "Stricty",
+      "repo": "FelekDevYT/Stricty",
+      "features": [
+        {
+          "name": "AutoBridge",
+          "class_name": "AutoBridge",
+          "feature_type": "module",
+          "description": "Automatically builds a bridge",
+          "settings": [
+            {
+              "name": "AutoSneak",
+              "var_name": "autoSneak",
+              "description": null,
+              "type": "boolean",
+              "setting_class": "BooleanSetting",
+              "default": true,
+              "children": []
+            },
+            {
+              "name": "Sneak Delay",
+              "var_name": "sneakDelay",
+              "description": null,
+              "type": "number",
+              "setting_class": "NumberSetting",
+              "default": 50,
+              "children": []
+            },
+            {
+              "name": "AutoPlace",
+              "var_name": "autoPlace",
+              "description": null,
+              "type": "boolean",
+              "setting_class": "BooleanSetting",
+              "default": true,
+              "children": []
+            },
+            {
+              "name": "Place Delay",
+              "var_name": "placeDelay",
+              "description": null,
+              "type": "number",
+              "setting_class": "NumberSetting",
+              "default": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "AutoHop",
+          "class_name": "AutoHop",
+          "feature_type": "module",
+          "description": "Automatically hops when on ground",
+          "settings": [
+            {
+              "name": "NoSlabs",
+              "var_name": "noSlabs",
+              "description": null,
+              "type": "boolean",
+              "setting_class": "BooleanSetting",
+              "default": true,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Killaura",
+          "class_name": "KillAuraStrict",
+          "feature_type": "module",
+          "description": "Attacks nearby enemies",
+          "settings": [
+            {
+              "name": "Range",
+              "var_name": "tange",
+              "description": null,
+              "type": "number",
+              "setting_class": "NumberSetting",
+              "default": 3.0,
+              "children": []
+            },
+            {
+              "name": "Rotation Speed",
+              "var_name": "rotationStep",
+              "description": null,
+              "type": "number",
+              "setting_class": "NumberSetting",
+              "default": 15.0,
+              "children": []
+            },
+            {
+              "name": "Reaction Time (ms)",
+              "var_name": "reactionTime",
+              "description": null,
+              "type": "number",
+              "setting_class": "NumberSetting",
+              "default": 150,
+              "children": []
+            },
+            {
+              "name": "Priority",
+              "var_name": "priority",
+              "description": null,
+              "type": "enum",
+              "setting_class": "EnumSetting",
+              "default": "PriorityMode.DISTANCE",
+              "children": []
+            },
+            {
+              "name": "Players",
+              "var_name": "players",
+              "description": null,
+              "type": "boolean",
+              "setting_class": "BooleanSetting",
+              "default": true,
+              "children": []
+            },
+            {
+              "name": "Animals",
+              "var_name": "animals",
+              "description": null,
+              "type": "boolean",
+              "setting_class": "BooleanSetting",
+              "default": false,
+              "children": []
+            },
+            {
+              "name": "Monsters",
+              "var_name": "monsters",
+              "description": null,
+              "type": "boolean",
+              "setting_class": "BooleanSetting",
+              "default": true,
+              "children": []
+            },
+            {
+              "name": "Neutrals",
+              "var_name": "neutals",
+              "description": null,
+              "type": "boolean",
+              "setting_class": "BooleanSetting",
+              "default": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "ShieldTrigger",
+          "class_name": "ShieldTrigger",
+          "feature_type": "module",
+          "description": "Swaps to axe when hitting a shielded player",
+          "settings": [
+            {
+              "name": "Swap Delay",
+              "var_name": "swapDelay",
+              "description": null,
+              "type": "number",
+              "setting_class": "NumberSetting",
+              "default": 4,
+              "children": []
+            },
+            {
+              "name": "Swap Back",
+              "var_name": "swapBack",
+              "description": null,
+              "type": "boolean",
+              "setting_class": "BooleanSetting",
+              "default": true,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "ThrowPots",
+          "class_name": "ThrowPots",
+          "feature_type": "module",
+          "description": "Automatically throws health potions",
+          "settings": [
+            {
+              "name": "Health Threshold",
+              "var_name": "healthThreshold",
+              "description": null,
+              "type": "number",
+              "setting_class": "NumberSetting",
+              "default": 10,
+              "children": []
+            },
+            {
+              "name": "Delay",
+              "var_name": "delay",
+              "description": null,
+              "type": "number",
+              "setting_class": "NumberSetting",
+              "default": 5,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "TriggerPlus",
+          "class_name": "TriggerPlus",
+          "feature_type": "module",
+          "description": "TriggerBot for strict servers",
+          "settings": [
+            {
+              "name": "Mode",
+              "var_name": "pvpMode",
+              "description": null,
+              "type": "enum",
+              "setting_class": "EnumSetting",
+              "default": "PvpMode.NEW",
+              "children": []
+            },
+            {
+              "name": "Jitter",
+              "var_name": "jitter",
+              "description": null,
+              "type": "number",
+              "setting_class": "NumberSetting",
+              "default": 0.0,
+              "children": []
+            },
+            {
+              "name": "OnlyWeapon",
+              "var_name": "onlyWeapon",
+              "description": null,
+              "type": "boolean",
+              "setting_class": "BooleanSetting",
+              "default": true,
+              "children": []
+            },
+            {
+              "name": "OnlyWhenHolding",
+              "var_name": "onlyWhenHolding",
+              "description": null,
+              "type": "boolean",
+              "setting_class": "BooleanSetting",
+              "default": true,
+              "children": []
+            },
+            {
+              "name": "NoShield",
+              "var_name": "noShield",
+              "description": null,
+              "type": "boolean",
+              "setting_class": "BooleanSetting",
+              "default": true,
+              "children": []
+            },
+            {
+              "name": "CPS",
+              "var_name": "cps",
+              "description": null,
+              "type": "number",
+              "setting_class": "NumberSetting",
+              "default": 10,
+              "children": []
+            },
+            {
+              "name": "MissChance",
+              "var_name": "missChance",
+              "description": null,
+              "type": "number",
+              "setting_class": "NumberSetting",
+              "default": 0,
+              "children": []
+            },
+            {
+              "name": "Players",
+              "var_name": "players",
+              "description": null,
+              "type": "boolean",
+              "setting_class": "BooleanSetting",
+              "default": true,
+              "children": []
+            },
+            {
+              "name": "Monsters",
+              "var_name": "monsters",
+              "description": null,
+              "type": "boolean",
+              "setting_class": "BooleanSetting",
+              "default": true,
+              "children": []
+            },
+            {
+              "name": "Neutrals",
+              "var_name": "neutals",
+              "description": null,
+              "type": "boolean",
+              "setting_class": "BooleanSetting",
+              "default": false,
+              "children": []
+            },
+            {
+              "name": "Animals",
+              "var_name": "animals",
+              "description": null,
+              "type": "boolean",
+              "setting_class": "BooleanSetting",
+              "default": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "plugin": "ChestIndexer",
+      "repo": "FelekDevYT/ChestIndexer",
+      "features": [
+        {
+          "name": "ChestIndex",
+          "class_name": "ChestIndexer",
+          "feature_type": "module",
+          "description": "Scans items in containers (chests, barrels, shulkers) to count them.",
+          "settings": [
+            {
+              "name": "Range",
+              "var_name": "searchRange",
+              "description": "Search radius for containers.",
+              "type": "number",
+              "setting_class": "NumberSetting",
+              "default": 4,
+              "children": []
+            },
+            {
+              "name": "Delay",
+              "var_name": "delay",
+              "description": "Delay in ticks between container interactions.",
+              "type": "number",
+              "setting_class": "NumberSetting",
+              "default": 5,
+              "children": []
+            },
+            {
+              "name": "Highlight Searched",
+              "var_name": "highlightSearched",
+              "description": "Highlight containers already scanned.",
+              "type": "boolean",
+              "setting_class": "BooleanSetting",
+              "default": true,
+              "children": []
+            },
+            {
+              "name": "Render Fill",
+              "var_name": "renderFill",
+              "description": "Render box fill for highlight.",
+              "type": "boolean",
+              "setting_class": "BooleanSetting",
+              "default": true,
+              "children": []
+            },
+            {
+              "name": "Render Outline",
+              "var_name": "renderOutline",
+              "description": "Render box outline for highlight.",
+              "type": "boolean",
+              "setting_class": "BooleanSetting",
+              "default": true,
+              "children": []
+            },
+            {
+              "name": "Fill Color",
+              "var_name": "fillColor",
+              "description": "new Color(16, 106, 144, 100)",
+              "type": "color",
+              "setting_class": "ColorSetting",
+              "default": null,
+              "children": []
+            },
+            {
+              "name": "Line Color",
+              "var_name": "lineColor",
+              "description": "new Color(16, 106, 144, 255)",
+              "type": "color",
+              "setting_class": "ColorSetting",
+              "default": null,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "plugin": "RusherHack Pathfinder",
+      "repo": "tillay-rh-plugins/rusherhack-pathfinder",
+      "features": [
+        {
+          "name": "Pathfinder",
+          "class_name": "PathfinderHudElement",
+          "feature_type": "hud",
+          "description": null,
+          "settings": [
+            {
+              "name": "RenderTracer",
+              "var_name": "renderTracer",
+              "description": "Render a tracer on the highway outlining the route",
+              "type": "boolean",
+              "setting_class": "BooleanSetting",
+              "default": true,
+              "children": []
             }
           ]
         }
