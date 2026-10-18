@@ -2111,6 +2111,20 @@ plugins:
     jar_url: https://github.com/Anxious112/TIM-RUSHER-PLUGIN-1.21.4/releases/download/tim/tim-1.0.0.jar
     added_at: '2026-08-31'
     updated_at: '2026-08-31'
+  - name: Custom-Cape-1.21.11
+    repo: Esat32/Custom-Cape-1.21.11
+    description: Adds support for custom PNG capes in RusherHack, with a command to reload capes without restarting Minecraft.
+    creator:
+      name: Esat32
+      url: https://github.com/Esat32
+      avatar: https://github.com/Esat32.png?size=20
+    latest_release_tag: 'Releas'
+    screenshots: []
+    is_core: true
+    mc_versions: 1.21.11
+    jar_url: https://github.com/Esat32/Custom-Cape-1.21.11/releases/download/Releas/custom-capes-1.0.0.jar
+    added_at: '2026-10-18'
+    updated_at: '2026-10-18'
 themes:
   - name: Nhack Theme
     repo: h1tm4nqq/Nhack-theme
