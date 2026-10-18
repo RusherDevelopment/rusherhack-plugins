@@ -2164,7 +2164,6 @@ themes:
       - url: ./Assets/AsteraTheme1.21.11RH/ss1.png
         alt: Astera Theme ClickGUI preview
         width: 550
-    is_core: false
     mc_versions: 1.21.11
     jar_url: https://github.com/Esat32/AsteraTheme1.21.11RH/releases/download/Releas/astera-theme-1.0.0.jar
     added_at: '2026-10-18'
