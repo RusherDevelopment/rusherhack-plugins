@@ -10,7 +10,7 @@
 
 # Plugins List
 
-[![Plugins](https://img.shields.io/badge/Plugins-132-green)](#plugins-list)
+[![Plugins](https://img.shields.io/badge/Plugins-133-green)](#plugins-list)
 [![RusherHack v2.0.8](https://img.shields.io/badge/RusherHack-v2.0.8-purple?logo=data:image/png;base64,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)](https://rusherhack.org/changelog.html)
 [![â†“ Go to Bottom](https://img.shields.io/badge/â†“-Go%20to%20Bottom-blue?style=flat)](#plugins-bottom)
 
@@ -44,6 +44,16 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
 <table>
 <tr>
 <td align="left" valign="top" width="50%">
+  <a href="https://github.com/Esat32/Custom-Cape-1.21.11"><img src="https://avatars.githubusercontent.com/Esat32?s=400" alt="Custom-Cape-1.21.11" width="100" height="100" style="border-radius:12px;"></a>
+  <div><strong><a href="https://github.com/Esat32/Custom-Cape-1.21.11">Custom-Cape-1.21.11</a></strong>&nbsp;<code>plugin</code></div>
+  <div style="margin:4px 0 6px 0;">Adds support for custom PNG capes in RusherHack, with a command to reload capes without restarting Minecraft.</div>
+  <div>
+    <img alt="stars" src="https://img.shields.io/github/stars/Esat32/Custom-Cape-1.21.11?style=flat">
+    &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/Esat32/Custom-Cape-1.21.11/total?style=flat">
+    &nbsp;<img alt="added" src="https://img.shields.io/date/1792281600?label=added&style=flat">
+  </div>
+</td>
+<td align="left" valign="top" width="50%">
   <a href="https://github.com/Anxious112/TIM-RUSHER-PLUGIN-1.21.4"><img src="https://avatars.githubusercontent.com/Anxious112?s=400" alt="Tim" width="100" height="100" style="border-radius:12px;"></a>
   <div><strong><a href="https://github.com/Anxious112/TIM-RUSHER-PLUGIN-1.21.4">Tim</a></strong>&nbsp;<code>plugin</code></div>
   <div style="margin:4px 0 6px 0;">RusherHack port of the Tim Meteor addon - trail and stash hunting utilities including the Baromine Baritone auto-miner, dungeon/city/manor/chambers assistants, portal and gateway trackers, and 20+ HUDs.</div>
@@ -52,7 +62,8 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
     &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/Anxious112/TIM-RUSHER-PLUGIN-1.21.4/total?style=flat">
     &nbsp;<img alt="added" src="https://img.shields.io/date/1788134400?label=added&style=flat">
   </div>
-</td>
+</td></tr>
+<tr>
 <td align="left" valign="top" width="50%">
   <a href="https://github.com/tillay-rh-plugins/rusherhack-pathfinder"><img src="https://avatars.githubusercontent.com/tillay-rh-plugins?s=400" alt="RusherHack Pathfinder" width="100" height="100" style="border-radius:12px;"></a>
   <div><strong><a href="https://github.com/tillay-rh-plugins/rusherhack-pathfinder">RusherHack Pathfinder</a></strong>&nbsp;<code>plugin</code></div>
@@ -62,8 +73,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
     &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/tillay-rh-plugins/rusherhack-pathfinder/total?style=flat">
     &nbsp;<img alt="added" src="https://img.shields.io/date/1780963200?label=added&style=flat">
   </div>
-</td></tr>
-<tr>
+</td>
 <td align="left" valign="top" width="50%">
   <a href="https://github.com/emirplus/Rusher-Utils"><img src="https://avatars.githubusercontent.com/emirplus?s=400" alt="Rusher Utils" width="100" height="100" style="border-radius:12px;"></a>
   <div><strong><a href="https://github.com/emirplus/Rusher-Utils">Rusher Utils</a></strong>&nbsp;<code>plugin</code></div>
@@ -73,7 +83,8 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
     &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/emirplus/Rusher-Utils/total?style=flat">
     &nbsp;<img alt="added" src="https://img.shields.io/date/1780531200?label=added&style=flat">
   </div>
-</td>
+</td></tr>
+<tr>
 <td align="left" valign="top" width="50%">
   <a href="https://github.com/FelekDevYT/Stricty"><img src="https://avatars.githubusercontent.com/FelekDevYT?s=400" alt="Stricty" width="100" height="100" style="border-radius:12px;"></a>
   <div><strong><a href="https://github.com/FelekDevYT/Stricty">Stricty</a></strong>&nbsp;<code>plugin</code></div>
@@ -83,8 +94,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
     &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/FelekDevYT/Stricty/total?style=flat">
     &nbsp;<img alt="added" src="https://img.shields.io/date/1778025600?label=added&style=flat">
   </div>
-</td></tr>
-<tr>
+</td>
 <td align="left" valign="top" width="50%">
   <a href="https://github.com/FelekDevYT/Plugger"><img src="https://avatars.githubusercontent.com/FelekDevYT?s=400" alt="Plugger" width="100" height="100" style="border-radius:12px;"></a>
   <div><strong><a href="https://github.com/FelekDevYT/Plugger">Plugger</a></strong>&nbsp;<code>plugin</code></div>
@@ -93,16 +103,6 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
     <img alt="stars" src="https://img.shields.io/github/stars/FelekDevYT/Plugger?style=flat">
     &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/FelekDevYT/Plugger/total?style=flat">
     &nbsp;<img alt="added" src="https://img.shields.io/date/1775952000?label=added&style=flat">
-  </div>
-</td>
-<td align="left" valign="top" width="50%">
-  <a href="https://github.com/FelekDevYT/CustomCapes"><img src="https://avatars.githubusercontent.com/FelekDevYT?s=400" alt="CustomCapes" width="100" height="100" style="border-radius:12px;"></a>
-  <div><strong><a href="https://github.com/FelekDevYT/CustomCapes">CustomCapes</a></strong>&nbsp;<code>plugin</code></div>
-  <div style="margin:4px 0 6px 0;">A high-performance, client-side cosmetic extension for RusherHack that allows using any custom cape textures with automatic elytra synchronization.</div>
-  <div>
-    <img alt="stars" src="https://img.shields.io/github/stars/FelekDevYT/CustomCapes?style=flat">
-    &nbsp;<img alt="downloads" src="https://img.shields.io/github/downloads/FelekDevYT/CustomCapes/total?style=flat">
-    &nbsp;<img alt="added" src="https://img.shields.io/date/1775347200?label=added&style=flat">
   </div>
 </td></tr>
 </table>
@@ -388,7 +388,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  [![Latest Release Date](https://img.shields.io/github/release-date/KybesRusherhackPlugins/executer?label=Latest%20Release&color=green)](https://github.com/KybesRusherhackPlugins/executer/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/KybesRusherhackPlugins/executer/total)](https://github.com/KybesRusherhackPlugins/executer/releases/download/1.20.4-5.0.0/kybes-executer-5.0.0.jar)<br>
  ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.20.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/kybe236.png?size=20" width="20" height="20"> [kybe236](https://github.com/kybe236)<br>
- Executes commands and resolves `<player>` to every player online.
+ Executes commands and resolves `&lt;player&gt;` to every player online.
 
 ---
 
@@ -1091,7 +1091,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  <details>
  <summary>Show Screenshots</summary>
  <p align="center">
- <img src="./Assets/rusherhack-kybes-utils/chat-example.png" alt="Example chat messages from kybe's utils" width="550">
+ <img src="./Assets/rusherhack-kybes-utils/chat-example.png" alt="Example chat messages from kybe&#x27;s utils" width="550">
  </p>
  </details>
 
@@ -1195,7 +1195,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  [![Latest Release Date](https://img.shields.io/github/release-date/IceTank/RusherHack-AutoIgnorehard?label=Latest%20Release&color=green)](https://github.com/IceTank/RusherHack-AutoIgnorehard/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/IceTank/RusherHack-AutoIgnorehard/total)](https://github.com/IceTank/RusherHack-AutoIgnorehard/releases/download/v0.0.3/AutoIgnorehard-0.0.3.jar)<br>
  ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/IceTank.png?size=20" width="20" height="20"> [IceTank](https://github.com/IceTank)<br>
- Automatically runs the `/ignorehard <playername>` command on any player that sends a Discord invite in chat.
+ Automatically runs the `/ignorehard &lt;playername&gt;` command on any player that sends a Discord invite in chat.
 
 ---
 
@@ -1430,7 +1430,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  <summary>Show Screenshots</summary>
  <p align="center">
  <img src="./Assets/MoreHuds/example.png" alt="Some hud elements added by the plugin" width="429">
- <img src="./Assets/MoreHuds/settings.png" alt="TargetHUD's settings" width="171">
+ <img src="./Assets/MoreHuds/settings.png" alt="TargetHUD&#x27;s settings" width="171">
  </p>
  </details>
 
@@ -1541,7 +1541,7 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  <details>
  <summary>Show Screenshots</summary>
  <p align="center">
- <img src="./Assets/Stricty/settings.png" alt="Stricty's settings" width="168">
+ <img src="./Assets/Stricty/settings.png" alt="Stricty&#x27;s settings" width="168">
  </p>
  </details>
 
@@ -1600,6 +1600,15 @@ Core plugins provide deeper integration with RusherHack by modifying Minecraftâ€
  ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.4&color=blueviolet)<br>
  **Creator**: <img src="https://github.com/Anxious112.png?size=20" width="20" height="20"> [Anxious112](https://github.com/Anxious112)<br>
  RusherHack port of the Tim Meteor addon - trail and stash hunting utilities including the Baromine Baritone auto-miner, dungeon/city/manor/chambers assistants, portal and gateway trackers, and 20+ HUDs.
+
+---
+
+- ### [Custom-Cape-1.21.11](https://github.com/Esat32/Custom-Cape-1.21.11) <br>
+ [![Latest Release Date](https://img.shields.io/github/release-date/Esat32/Custom-Cape-1.21.11?label=Latest%20Release&color=green)](https://github.com/Esat32/Custom-Cape-1.21.11/releases) [![GitHub Downloads](https://img.shields.io/github/downloads/Esat32/Custom-Cape-1.21.11/total)](https://github.com/Esat32/Custom-Cape-1.21.11/releases/download/Releas/custom-capes-1.0.0.jar)<br>
+ ![MC Version](https://img.shields.io/static/v1?label=MC+Version&message=1.21.11&color=blueviolet)<br>
+ ![Core Plugin](https://img.shields.io/static/v1?label=Core&message=Plugin&color=blue)<br>
+ **Creator**: <img src="https://github.com/Esat32.png?size=20" width="20" height="20"> [Esat32](https://github.com/Esat32)<br>
+ Adds support for custom PNG capes in RusherHack, with a command to reload capes without restarting Minecraft.
 
 ---
 
