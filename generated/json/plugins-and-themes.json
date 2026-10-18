@@ -2738,6 +2738,28 @@
       "jar_url": "https://github.com/xyzbtw/rusherGUI/releases/download/rusherhack/rushergui-1.0.0.jar",
       "added_at": "2024-04-13",
       "updated_at": "2024-05-29"
+    },
+    {
+      "name": "AsteraTheme1.21.11RH",
+      "repo": "Esat32/AsteraTheme1.21.11RH",
+      "description": "A custom visual theme for the RusherHack ClickGUI.",
+      "creator": {
+        "name": "Esat32",
+        "url": "https://github.com/Esat32",
+        "avatar": "https://github.com/Esat32.png?size=20"
+      },
+      "latest_release_tag": "Releas",
+      "screenshots": [
+        {
+          "url": "./Assets/AsteraTheme1.21.11RH/ss1.png",
+          "alt": "Astera Theme ClickGUI preview",
+          "width": 550
+        }
+      ],
+      "mc_versions": "1.21.11",
+      "jar_url": "https://github.com/Esat32/AsteraTheme1.21.11RH/releases/download/Releas/astera-theme-1.0.0.jar",
+      "added_at": "2026-10-18",
+      "updated_at": "2026-10-18"
     }
   ]
 }
