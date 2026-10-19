@@ -8034,67 +8034,21 @@
           "name": "AutoAmethyst",
           "class_name": "AutoAmethystModule",
           "feature_type": "module",
-          "description": "Automatically breaks amethyst buds/clusters without breaking Budding Amethyst.",
+          "description": "Safely harvest amethyst buds/clusters using normal mining progression.",
           "settings": [
             {
-              "name": "Break",
-              "var_name": "breakSetting",
-              "description": "Which growth stage(s) to break.",
+              "name": "Harvest",
+              "var_name": "harvestMode",
+              "description": "Mature Only collects shards; All Growth also removes immature buds.",
               "type": "enum",
               "setting_class": "EnumSetting",
-              "default": "BreakStage.ALL",
+              "default": "HarvestRules.HarvestMode.MATURE_ONLY",
               "children": []
             },
             {
-              "name": "Render",
-              "var_name": "renderSettings",
-              "description": "Render budding + targets.",
-              "type": "boolean",
-              "setting_class": "BooleanSetting",
-              "default": true,
-              "children": [
-                {
-                  "name": "Budding Color",
-                  "var_name": "buddingColor",
-                  "description": "new Color(170, 60, 255, 60)",
-                  "type": "color",
-                  "setting_class": "ColorSetting",
-                  "default": null,
-                  "children": []
-                },
-                {
-                  "name": "Target Color",
-                  "var_name": "targetColor",
-                  "description": "new Color(60, 255, 120, 80)",
-                  "type": "color",
-                  "setting_class": "ColorSetting",
-                  "default": null,
-                  "children": []
-                },
-                {
-                  "name": "Line Width",
-                  "var_name": "lineWidth",
-                  "description": "Outline width.",
-                  "type": "number",
-                  "setting_class": "NumberSetting",
-                  "default": 1.0,
-                  "children": []
-                }
-              ]
-            },
-            {
-              "name": "Retry Cooldown",
-              "var_name": "retryCooldownTicks",
-              "description": "Ticks before retrying the same target.",
-              "type": "number",
-              "setting_class": "NumberSetting",
-              "default": 4,
-              "children": []
-            },
-            {
-              "name": "Swing",
-              "var_name": "swing",
-              "description": "Swing hand when breaking (visual).",
+              "name": "Show Targets",
+              "var_name": "render",
+              "description": "Highlight Budding Amethyst and crystals within mining reach.",
               "type": "boolean",
               "setting_class": "BooleanSetting",
               "default": true,
@@ -19056,6 +19010,54 @@
               "children": []
             }
           ]
+        }
+      ]
+    },
+    {
+      "plugin": "Custom-Cape-1.21.11",
+      "repo": "Esat32/Custom-Cape-1.21.11",
+      "features": [
+        {
+          "name": "Elytra sync",
+          "class_name": null,
+          "feature_type": "unknown",
+          "description": null,
+          "settings": []
+        },
+        {
+          "name": "None",
+          "class_name": null,
+          "feature_type": "unknown",
+          "description": null,
+          "settings": []
+        },
+        {
+          "name": "Real-time selection",
+          "class_name": null,
+          "feature_type": "unknown",
+          "description": null,
+          "settings": []
+        },
+        {
+          "name": "Remembers your pick",
+          "class_name": null,
+          "feature_type": "unknown",
+          "description": null,
+          "settings": []
+        },
+        {
+          "name": "Your own capes",
+          "class_name": null,
+          "feature_type": "unknown",
+          "description": null,
+          "settings": []
+        },
+        {
+          "name": "Zero setup",
+          "class_name": null,
+          "feature_type": "unknown",
+          "description": null,
+          "settings": []
         }
       ]
     }
