@@ -2168,6 +2168,28 @@ themes:
     jar_url: https://github.com/Esat32/AsteraTheme1.21.11RH/releases/download/Releas/astera-theme-1.0.0.jar
     added_at: '2026-10-18'
     updated_at: '2026-10-18'
+  - name: Celestial Theme
+    repo: eclipxia/CelestialTheme1.21.11RH
+    description: ClickGUI theme with HUD elements and windows in a gradient style.
+    creator:
+      name: eclipxia
+      url: https://github.com/eclipxia
+      avatar: https://github.com/eclipxia.png?size=20
+    latest_release_tag: v1.0.1
+    screenshots:
+      - url: ./Assets/Celestial Theme/clickgui.png
+        alt: Celestial Theme ClickGUI
+        width: 550
+      - url: ./Assets/Celestial Theme/hud.png
+        alt: Celestial Theme HUD
+        width: 550
+      - url: ./Assets/Celestial Theme/windows.png
+        alt: Celestial Theme windows
+        width: 550
+    mc_versions: '1.21.4, 1.21.11, 26.2'
+    jar_url: https://github.com/eclipxia/CelestialTheme1.21.11RH/releases/download/v1.0.1/celestial-theme-1.0.1+mc1.21.11.jar
+    added_at: '2026-11-03'
+    updated_at: '2026-11-03'
 
 # -----------------------------------------------------------
 #
