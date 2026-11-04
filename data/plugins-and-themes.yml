@@ -2135,7 +2135,7 @@ plugins:
     latest_release_tag: v1.0.0
     screenshots: []
     is_core: false
-    mc_versions: '1.21.4, 1.21.11, 26.2'
+    mc_versions: '1.21.4, 1.21.11'
     jar_url: https://github.com/eclipxia/auto-raid/releases/download/v1.0.0/auto-raid-1.21.11-1.0.0.jar
     added_at: '2026-11-03'
     updated_at: '2026-11-03'
