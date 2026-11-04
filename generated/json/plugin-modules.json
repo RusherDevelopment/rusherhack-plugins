@@ -19060,6 +19060,74 @@
           "settings": []
         }
       ]
+    },
+    {
+      "plugin": "auto-raid",
+      "repo": "eclipxia/auto-raid",
+      "features": [
+        {
+          "name": "AutoRaid",
+          "class_name": "AutoRaidModule",
+          "feature_type": "module",
+          "description": "Automatically drinks an Ominous Bottle on raid victory",
+          "settings": [
+            {
+              "name": "HotbarSlot",
+              "var_name": "hotbarSlot",
+              "description": null,
+              "type": "number",
+              "setting_class": "NumberSetting",
+              "default": 9,
+              "children": []
+            },
+            {
+              "name": "Delay",
+              "var_name": "delay",
+              "description": null,
+              "type": "number",
+              "setting_class": "NumberSetting",
+              "default": 10,
+              "children": []
+            },
+            {
+              "name": "SkipIfOmen",
+              "var_name": "skipIfOmen",
+              "description": "Don't drink if Bad Omen or Raid Omen is already active",
+              "type": "boolean",
+              "setting_class": "BooleanSetting",
+              "default": true,
+              "children": []
+            },
+            {
+              "name": "AutoDisconnect",
+              "var_name": "autoDisconnect",
+              "description": "Disconnect when no Ominous Bottles are left",
+              "type": "boolean",
+              "setting_class": "BooleanSetting",
+              "default": false,
+              "children": []
+            },
+            {
+              "name": "TextDetection",
+              "var_name": "textDetection",
+              "description": "Also detect victory from the boss bar text (for servers that strip translation keys)",
+              "type": "boolean",
+              "setting_class": "BooleanSetting",
+              "default": true,
+              "children": []
+            },
+            {
+              "name": "Notifications",
+              "var_name": "notifications",
+              "description": "Print chat messages when acting",
+              "type": "boolean",
+              "setting_class": "BooleanSetting",
+              "default": true,
+              "children": []
+            }
+          ]
+        }
+      ]
     }
   ]
 }
