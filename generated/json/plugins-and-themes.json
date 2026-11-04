@@ -2704,6 +2704,23 @@
       "jar_url": "https://github.com/Esat32/Custom-Cape-1.21.11/releases/download/Releas/custom-capes-1.0.0.jar",
       "added_at": "2026-10-18",
       "updated_at": "2026-10-18"
+    },
+    {
+      "name": "auto-raid",
+      "repo": "eclipxia/auto-raid",
+      "description": "Automatically drinks an Ominous Bottle when the raid victory boss bar appears.",
+      "creator": {
+        "name": "eclipxia",
+        "url": "https://github.com/eclipxia",
+        "avatar": "https://github.com/eclipxia.png?size=20"
+      },
+      "latest_release_tag": "v1.0.0",
+      "screenshots": [],
+      "is_core": false,
+      "mc_versions": "1.21.4, 1.21.11",
+      "jar_url": "https://github.com/eclipxia/auto-raid/releases/download/v1.0.0/auto-raid-1.21.11-1.0.0.jar",
+      "added_at": "2026-11-03",
+      "updated_at": "2026-11-03"
     }
   ],
   "themes": [
