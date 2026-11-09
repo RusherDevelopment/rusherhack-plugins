@@ -80,6 +80,7 @@ CANON_VERSIONS: List[str] = [
     "1.21.7",
     "1.21.8",
     "1.21.11",
+    "26.2",
 ]
 
 CANON_INDEX = {version: index for index, version in enumerate(CANON_VERSIONS)}
