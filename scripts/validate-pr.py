@@ -55,6 +55,423 @@ WEBSITE_ALLOWED = [
     "public_html/**",
 ]
 
+# Explicit source and regression-test changes for reviewed maintenance PRs.
+# Keep this narrow; do not permit arbitrary workflow or script modifications.
+MAINTENANCE_ALLOWED = [
+    "scripts/API/emit_static_api.py",
+    "scripts/validate-yml.py",
+    "scripts/validate-pr.py",
+    ".github/workflows/validate-pr.yml",
+    "tests/test_mc_versions.py",
+]
+
+# Generated output should only be changed by approved automation branches.
+# The generated API is intentionally not listed here because public/ is a
+# temporary deploy artifact and should not be committed.
+GENERATED_OUTPUT_ALLOWED = [
+    "README.md",
+    "PLUGINS.md",
+    "THEMES.md",
+    "generated/json/**",
+]
+
+# These should never be changed in PRs.
+# public/ is created during GitHub Pages deploy.
+# public_html/api/ was an older/wrong generated API location.
+ALWAYS_BLOCKED = [
+    "public/**",
+    "public_html/api/**",
+]
+
+CONTRIBUTOR_ALLOWED = [
+    *REGISTRY_ALLOWED,
+    *WEBSITE_ALLOWED,
+]
+
+AUTOMATION_ALLOWED = [
+    *REGISTRY_ALLOWED,
+    *WEBSITE_ALLOWED,
+    *GENERATED_OUTPUT_ALLOWED,
+]
+
+AUTOMATION_BRANCHES = {
+    "automation/repo-sync",
+    "automation/top6-refresh",
+    "automation/plugin-modules-sync",
+}
+
+AUTOMATION_BRANCH_PREFIXES = (
+    "automation/",
+)
+
+AUTOMATION_ACTORS = {
+    "github-actions[bot]",
+    "dependabot[bot]",
+}
+
+
+def info(msg: str) -> str:
+    return f"{BLUE}ℹ️ {msg}{RESET}"
+
+
+def warn(msg: str) -> str:
+    return f"{YELLOW}⚠️ {msg}{RESET}"
+
+
+def err(msg: str) -> str:
+    return f"{RED}❌ {msg}{RESET}"
+
+
+def ok(msg: str) -> str:
+    return f"{GREEN}✅ {msg}{RESET}"
+
+
+def run_git(args: list[str], *, check: bool = True) -> str:
+    result = subprocess.run(
+        ["git", *args],
+        capture_output=True,
+        text=True,
+    )
+
+    if check and result.returncode != 0:
+        print(err(f"Git command failed: git {' '.join(args)}"))
+
+        if result.stdout.strip():
+            print(result.stdout.strip())
+
+        if result.stderr.strip():
+            print(result.stderr.strip())
+
+        sys.exit(1)
+
+    return result.stdout.strip()
+
+
+def normalize_path(path: str) -> str:
+    return path.strip().replace("\\", "/")
+
+
+def load_event_payload() -> dict:
+    event_path = os.environ.get("GITHUB_EVENT_PATH", "").strip()
+
+    if not event_path:
+        return {}
+
+    path = Path(event_path)
+
+    if not path.exists():
+        return {}
+
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except Exception as exc:
+        print(warn(f"Could not parse GITHUB_EVENT_PATH payload: {exc}"))
+        return {}
+
+
+def get_event_value(payload: dict, *keys: str) -> str:
+    value = payload
+
+    for key in keys:
+        if not isinstance(value, dict) or key not in value:
+            return ""
+
+        value = value[key]
+
+    return value if isinstance(value, str) else ""
+
+
+def get_base_ref(payload: dict) -> str:
+    return (
+        os.environ.get("GITHUB_BASE_REF", "").strip()
+        or get_event_value(payload, "pull_request", "base", "ref").strip()
+    )
+
+
+def get_head_ref(payload: dict) -> str:
+    return (
+        os.environ.get("GITHUB_HEAD_REF", "").strip()
+        or get_event_value(payload, "pull_request", "head", "ref").strip()
+    )
+
+
+def get_actor(payload: dict) -> str:
+    return (
+        os.environ.get("GITHUB_ACTOR", "").strip()
+        or get_event_value(payload, "sender", "login").strip()
+    )
+
+
+def fetch_base_branch(base_ref: str) -> str:
+    """
+    Ensure the PR base branch exists locally and return the ref to diff against.
+
+    GitHub Actions checkouts can be shallow or detached, so do not assume
+    origin/<base_ref> already exists.
+    """
+    remote_ref = f"refs/remotes/origin/{base_ref}"
+
+    run_git(
+        [
+            "fetch",
+            "--no-tags",
+            "--prune",
+            "--depth=1",
+            "origin",
+            f"+refs/heads/{base_ref}:{remote_ref}",
+        ]
+    )
+
+    resolved = run_git(
+        [
+            "rev-parse",
+            "--verify",
+            remote_ref,
+        ],
+        check=False,
+    )
+
+    if resolved:
+        return remote_ref
+
+    # Last-resort fallback for unusual checkout states.
+    fetched = run_git(
+        [
+            "rev-parse",
+            "--verify",
+            "FETCH_HEAD",
+        ],
+        check=False,
+    )
+
+    if fetched:
+        return "FETCH_HEAD"
+
+    print(err(f"Could not fetch or resolve base branch: {base_ref}"))
+    sys.exit(1)
+
+def get_changed_files(base_ref_to_diff: str) -> list[str]:
+    """
+    Return files changed between the PR base ref and HEAD.
+
+    Use a direct tree diff instead of triple-dot merge-base diff because
+    GitHub Actions checkouts can be shallow and may not have enough history
+    to calculate a merge base.
+    """
+    output = run_git(
+        [
+            "diff",
+            "--name-only",
+            "--diff-filter=ACMRDTUXB",
+            base_ref_to_diff,
+            "HEAD",
+        ]
+    )
+
+    if not output:
+        return []
+
+    return sorted(
+        {
+            normalize_path(line)
+            for line in output.splitlines()
+            if normalize_path(line)
+        }
+    )
+
+def matches_any(path: str, patterns: Iterable[str]) -> bool:
+    normalized = normalize_path(path)
+
+    for pattern in patterns:
+        normalized_pattern = normalize_path(pattern)
+
+        if fnmatch.fnmatch(normalized, normalized_pattern):
+            return True
+
+    return False
+
+
+def is_trusted_maintenance_pr(payload: dict) -> bool:
+    """Allow maintenance source changes only from branches in this repository.
+
+    A fork must not be able to edit the validator, CI workflow, or other
+    maintenance code merely by choosing a matching branch name.
+    """
+    base_repo = get_event_value(payload, "repository", "full_name")
+    head_repo = get_event_value(payload, "pull_request", "head", "repo", "full_name")
+    return bool(base_repo and head_repo and base_repo.lower() == head_repo.lower())
+
+
+def detect_pr_mode(head_ref: str, actor: str) -> str:
+    if head_ref in AUTOMATION_BRANCHES:
+        return "automation"
+
+    if any(head_ref.startswith(prefix) for prefix in AUTOMATION_BRANCH_PREFIXES):
+        return "automation"
+
+    if actor in AUTOMATION_ACTORS and any(
+        head_ref.startswith(prefix) for prefix in AUTOMATION_BRANCH_PREFIXES
+    ):
+        return "automation"
+
+    return "contributor"
+
+
+def print_allowed_files(mode: str, allowed: list[str]) -> None:
+    label = "Automation" if mode == "automation" else "Contributor"
+
+    print(f"\n{RED}{label} PRs may only change:{RESET}")
+    for pattern in allowed:
+        print(f"  - {pattern}")
+
+    print(f"\n{RED}These paths are always blocked:{RESET}")
+    for pattern in ALWAYS_BLOCKED:
+        print(f"  - {pattern}")
+
+
+def main() -> None:
+    event_name = os.environ.get("GITHUB_EVENT_NAME", "").strip()
+    payload = load_event_payload()
+
+    if event_name and event_name != "pull_request":
+        print(info(f"Skipping PR validation for non-PR event: {event_name}"))
+        print(ok("PR validation skipped."))
+        return
+
+    base_ref = get_base_ref(payload)
+    head_ref = get_head_ref(payload)
+    actor = get_actor(payload)
+
+    if not base_ref:
+        print(err("Could not determine PR base branch. GITHUB_BASE_REF is not set."))
+        sys.exit(1)
+
+    mode = detect_pr_mode(head_ref=head_ref, actor=actor)
+    allowed = list(AUTOMATION_ALLOWED if mode == "automation" else CONTRIBUTOR_ALLOWED)
+    if is_trusted_maintenance_pr(payload):
+        allowed.extend(MAINTENANCE_ALLOWED)
+
+    print(info(f"PR mode: {mode}"))
+    print(info(f"Base branch: {base_ref}"))
+    print(info(f"Head branch: {head_ref or '<unknown>'}"))
+    print(info(f"Actor: {actor or '<unknown>'}"))
+
+    base_ref_to_diff = fetch_base_branch(base_ref)
+    print(info(f"Diff base ref: {base_ref_to_diff}"))
+
+    changed_files = get_changed_files(base_ref_to_diff)
+
+    if not changed_files:
+        print(warn("No changed files detected in PR diff."))
+        print(ok("PR file validation passed."))
+        return
+
+    print(info(f"Changed files ({len(changed_files)}):"))
+    for path in changed_files:
+        print(f"  - {path}")
+
+    blocked = [
+        path
+        for path in changed_files
+        if matches_any(path, ALWAYS_BLOCKED)
+    ]
+
+    disallowed = [
+        path
+        for path in changed_files
+        if path not in blocked and not matches_any(path, allowed)
+    ]
+
+    if blocked:
+        print(f"\n{YELLOW}--- BLOCKED FILE CHANGES ---{RESET}\n")
+
+        for path in blocked:
+            print(err(path))
+
+        print(
+            f"\n{RED}These files should not be committed. "
+            f"The static API is generated during deploy into public/api/v1/, "
+            f"and public/ is only a temporary deploy artifact.{RESET}"
+        )
+
+    if disallowed:
+        print(f"\n{YELLOW}--- DISALLOWED FILE CHANGES ---{RESET}\n")
+
+        for path in disallowed:
+            print(err(path))
+
+    if blocked or disallowed:
+        print_allowed_files(mode, allowed)
+
+        print(
+            f"\n{RED}Fix this by moving unrelated changes to a separate PR, "
+            f"or by using an approved automation branch if this is an automation update.{RESET}"
+        )
+
+        sys.exit(1)
+
+    print(ok("PR file validation passed."))
+
+
+if __name__ == "__main__":
+    main()
+#!/usr/bin/env python3
+# -----------------------------------------------------------
+# PR Validator
+# -----------------------------------------------------------
+#
+# Validates which files were changed in a pull request.
+#
+# Intended for GitHub Actions on pull_request events.
+#
+# Rules:
+# - Contributor PRs may change:
+#   - data/plugins-and-themes.yml
+#   - Assets/**
+#   - public_html/**
+#
+# - Automation PRs may also change generated outputs:
+#   - README.md
+#   - PLUGINS.md
+#   - THEMES.md
+#   - generated/json/**
+#
+# - Nobody should commit:
+#   - public/**
+#   - public_html/api/**
+#
+# Usage:
+#   python scripts/validate-pr.py
+#
+# -----------------------------------------------------------
+
+from __future__ import annotations
+
+import fnmatch
+import json
+import os
+import subprocess
+import sys
+from pathlib import Path
+from typing import Iterable
+
+RED = "\033[91m"
+GREEN = "\033[92m"
+YELLOW = "\033[93m"
+BLUE = "\033[94m"
+RESET = "\033[0m"
+
+REGISTRY_ALLOWED = [
+    "data/plugins-and-themes.yml",
+    "Assets/**",
+]
+
+# Contributor website changes are allowed.
+# public_html/ is source website content, not the generated API output.
+WEBSITE_ALLOWED = [
+    "public_html/**",
+]
+
 # Generated output should only be changed by approved automation branches.
 # The generated API is intentionally not listed here because public/ is a
 # temporary deploy artifact and should not be committed.
