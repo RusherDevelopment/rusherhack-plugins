@@ -91,6 +91,7 @@ ALLOWED_MC_VERSIONS = [
     "1.21.7",
     "1.21.8",
     "1.21.11",
+    "26.2",
 ]
 
 ALLOWED_MC_VERSION_SET = set(ALLOWED_MC_VERSIONS)
