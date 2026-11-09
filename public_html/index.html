@@ -37,12 +37,6 @@
                 </select>
                 <select id="versionFilter" class="px-4 py-3 rounded-xl text-sm cursor-pointer min-w-[140px]">
                     <option value="all">All Versions</option>
-                    <option value="1.21.11">1.21.11</option>
-                    <option value="1.21.4">1.21.4</option>
-                    <option value="1.21.1">1.21.1</option>
-                    <option value="1.21">1.21</option>
-                    <option value="1.20.4">1.20.4</option>
-                    <option value="1.20.1">1.20.1</option>
                 </select>
             </div>
             <div id="resultsCount" class="mt-4 px-2 text-sm text-slate-500 font-medium"></div>
@@ -56,29 +50,44 @@
 
         <script>
             let allItems = []
-            const RUSHERHACK_VERSIONS = ['1.20.1', '1.20.2', '1.20.4', '1.20.6', '1.21', '1.21.1', '1.21.2', '1.21.3', '1.21.4', '1.21.11'];
-
+            // The deployed API is authoritative for available Minecraft versions.
+            // Do not expand dash ranges; the registry requires explicit versions.
             function parseVersions(available_versions) {
                 if (!available_versions || available_versions === 'N/A') return [];
-                let support = new Set();
-                let parts = available_versions.toString().split(',');
-                parts.forEach(el => {
-                    el = el.trim();
-                    if (el.includes('-')) {
-                        let [start, end] = el.split('-').map(s => s.trim());
-                        let lol = RUSHERHACK_VERSIONS.indexOf(start), ie = RUSHERHACK_VERSIONS.indexOf(end);
-                        if (lol !== -1 && ie !== -1) {
-                            for (let i = Math.min(lol, ie); i <= Math.max(lol, ie); i++) support.add(RUSHERHACK_VERSIONS[i]);
-                        }
-                    } else if (RUSHERHACK_VERSIONS.includes(el)) support.add(el);
-                });
-                return Array.from(support)
+                const parts = Array.isArray(available_versions)
+                    ? available_versions
+                    : String(available_versions).split(',');
+                return [...new Set(parts
+                    .map(version => String(version).trim())
+                    .filter(version => /^\d+(?:\.\d+){1,2}$/.test(version)))];
+            }
+
+            function populateVersionFilter(versions) {
+                const select = document.getElementById('versionFilter');
+                const options = [new Option('All Versions', 'all')];
+                for (const version of [...versions].reverse()) {
+                    options.push(new Option(version, version));
+                }
+                select.replaceChildren(...options);
             }
 
             async function loadAddons() {
                 try {
-                    const response = await fetch('./api/v1/index.json')
-                    const data = await response.json()
+                    const [response, versionsResponse] = await Promise.all([
+                        fetch('./api/v1/index.json'),
+                        fetch('./api/v1/versions.json'),
+                    ]);
+                    if (!response.ok || !versionsResponse.ok) {
+                        throw new Error('Failed to load RusherHack addon API');
+                    }
+                    const [data, versionData] = await Promise.all([
+                        response.json(),
+                        versionsResponse.json(),
+                    ]);
+                    const versions = Array.isArray(versionData.versions)
+                        ? versionData.versions.filter(version => /^\d+(?:\.\d+){1,2}$/.test(version))
+                        : [];
+                    populateVersionFilter(versions);
 
                     let plugins = data.plugins
                     for (let i = 0; i < plugins.length; i++) {
