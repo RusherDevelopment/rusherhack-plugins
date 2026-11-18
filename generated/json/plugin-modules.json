@@ -1944,38 +1944,6 @@
       ]
     },
     {
-      "plugin": "RusherHack Messenger",
-      "repo": "Gentleman2292/rusherhack-messenger",
-      "features": [
-        {
-          "name": "Messenger settings",
-          "class_name": "MessengerSettings",
-          "feature_type": "module",
-          "description": "settings for the messenger plugin",
-          "settings": [
-            {
-              "name": "in-game notifications",
-              "var_name": "Notifications",
-              "description": null,
-              "type": "boolean",
-              "setting_class": "BooleanSetting",
-              "default": true,
-              "children": []
-            },
-            {
-              "name": "Show offline friends",
-              "var_name": "showOfflineFriends",
-              "description": null,
-              "type": "boolean",
-              "setting_class": "BooleanSetting",
-              "default": false,
-              "children": []
-            }
-          ]
-        }
-      ]
-    },
-    {
       "plugin": "RusherHack Instance Info (Fork)",
       "repo": "GarlicRot/rusherhack-instance-info",
       "features": [
